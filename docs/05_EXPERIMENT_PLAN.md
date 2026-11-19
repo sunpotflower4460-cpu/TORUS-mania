@@ -1,7 +1,7 @@
 # 実験計画 E01–E08
 
 更新日：2026-11-20（日本時間）  
-状態：計画のみ。本ファイルは実験結果や実装完了報告ではない。
+準備時の実験計画。E01・E02を実行した条件と結果は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)、E03以降の再開地点は[研究メモ](../research/STATUS.md)を参照。
 
 正式な主張IDは [02_HYPOTHESES_AND_TERMS.md](02_HYPOTHESES_AND_TERMS.md) と [research/claims.json](../research/claims.json) に従う。H-P 等は分類略称として併記する。
 
@@ -57,7 +57,7 @@ predictions_before_run
 実行後は全試行の設定・結果・失敗を保存し、図に物理空間／状態空間、線の種類、時間・尺度を表示する。
 内部計算に用いた量と、表示に用いた変換を両方残す。
 結果は「言えること」「言えないこと」「次に切り分けること」で記録する。
-実験コードは `experiments/E01_.../` のように実験IDごと、結果・図は `research/results/` に保存する。現時点では未作成。
+実験コードは `experiments/E01_.../` のように実験IDごと、結果・図は `research/results/` に保存する。
 
 ### 数値確認の順番
 

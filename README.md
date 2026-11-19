@@ -6,6 +6,10 @@
 
 このリポジトリは、その問いを、定義・一次資料・比較・再現可能な実験へつなぐ研究拠点です。結論を先に決めず、仮説の強い意味を保ったまま、どこまで支持できるかを調べます。
 
+## 最初の研究結果
+
+E01・E02を実行した。円運動と直線振動は同じ正弦波を与え、長周期の閉軌道は二位相の観測方眼を全区画訪れた。観測から識別できた範囲、分野横断の生成仮説に残る問い、再実行の手順を公開している。[第1回研究報告](docs/10_FIRST_RESEARCH_REPORT.md)・[再開メモ](research/STATUS.md)
+
 ## 最初に読む
 
 1. [START_HERE.md](START_HERE.md) — 研究の入口と読む順序
@@ -23,7 +27,7 @@
 | 一次論文・大学教材・研究機関資料 | [読む順序](docs/06_SOURCE_GUIDE.md) / [資料索引](sources/catalog.json) |
 | 公開資料へのアクセス手段 | [アクセスガイド](docs/07_ACCESS_GUIDE.md) / [取得補助CLI](scripts/research_access.py) |
 | 着想となった2本の動画 | [動画の扱いと検証課題](docs/08_VIDEO_NOTES.md) / [動画メタデータ](sources/videos.json) |
-| 再開地点と未実施事項 | [初期状態](research/INITIAL_STATUS.md) |
+| 再開地点と未実施事項 | [現在の状態](research/STATUS.md) / [準備時点](research/INITIAL_STATUS.md) |
 | 結果の記録 | [実験テンプレート](research/templates/experiment-report.md) / [文献メモ](research/templates/source-note.md) |
 
 ## この準備段階で分かっていること

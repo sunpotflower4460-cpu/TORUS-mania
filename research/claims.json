@@ -2,14 +2,24 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "research_preparation",
-  "experiments_run": false,
+  "stage": "first_calibration",
+  "experiments_run": true,
+  "completed_experiments": [
+    "E01",
+    "E02"
+  ],
+  "independent_external_data_reanalyses": 0,
+  "evidence_fields": {
+    "literature_notes": "今回の閲読段階を記録したカード。パスはリポジトリ基準。",
+    "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
+    "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。"
+  },
   "claims": [
     {
       "id": "H01",
       "statement": "一定の円運動の一成分を時間表示すると正弦波になる",
-      "status": "analytic_baseline",
-      "scope": "回転の角速度が一定で、観測座標と時間軸を固定した場合。一般の波から背後の実体を一意に特定する主張ではない。",
+      "status": "supported_within_scope",
+      "scope": "等速円の世界座標yを時刻に対して測る。実空間の軌道は円 S¹ で足りる。T-Gは比較対象で、波形から身体や場の形を逆算する主張ではない。",
       "torus_kinds": [
         "T-G"
       ],
@@ -19,16 +29,26 @@
       "evidence_urls": [
         "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
-      "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "evidence_role": "S001の解析基準を自作の回転合成と直接式で照合。外部観測データの再解析は未実施。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "analytic_calibration",
+          "path": "research/results/E01/summary.json",
+          "finding": "半径1 m、1 Hz、2秒、2初期位相×2刻み。円のyと正弦式の最大絶対誤差は4.22e-15 m以下、側面のz幅は0 m。"
+        }
+      ],
+      "next_action": "E03で、同じ観測写像を物理的な速度場・粒子の測定へ移す。",
+      "literature_notes": [
+        "research/notes/S001_rotation.md"
+      ]
     },
     {
       "id": "H02",
       "statement": "二つの周期的自由度の組が状態空間のトーラスを構成する",
-      "status": "analytic_baseline",
-      "scope": "状態空間と実際の軌道を区別。位相間に拘束や同期があれば軌道は低次元となり得る。",
+      "status": "supported_within_scope",
+      "scope": "各初期位相を独立に選べ、各角を2πで同一視するモデルの全状態 S¹×S¹。周波数比・過渡・結合に応じた軌道と有限精度の測定を区別する。",
       "torus_kinds": [
         "T-P"
       ],
@@ -38,10 +58,22 @@
       "evidence_urls": [
         "https://ocw.mit.edu/courses/12-006j-nonlinear-dynamics-chaos-fall-2022/mit12_006jf22_lec19.pdf"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
-      "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "evidence_role": "S003の二周期モデルの解析的帰結を自作の位相計算で照合。積空間の構造は仮定。S008は別の実データでの文献報告で、その追試は未実施。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "analytic_calibration",
+          "path": "research/results/E02/summary.json",
+          "finding": "無結合の周波数比1、3/2、99/70の初再帰は1、2、70秒（64・128標本/秒、許容0.02 rad）。√2指定と99/70は80秒でともに256/256区画を訪問。"
+        }
+      ],
+      "next_action": "未知の観測波形から状態空間を推定する試験には、長周期・一周期・観測雑音の対照を持ち込む。",
+      "literature_notes": [
+        "research/notes/S002_surface.md",
+        "research/notes/S003_phase.md",
+        "research/notes/S008_grid_cells.md"
+      ]
     },
     {
       "id": "H03",
@@ -60,10 +92,21 @@
       "evidence_urls": [
         "https://www.einstein-online.info/en/spacetime/"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "幾何学対照で観測の識別力を校正。渦の速度場はまだ与えていない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "calibration_only",
+          "path": "research/results/E01/summary.json",
+          "finding": "上面だけでは非トーラス4面中2面が陽性。正面を足すと0/4。この幾何学対照に共通の流速場は入れていない。"
+        }
+      ],
+      "next_action": "E03の既知の渦輪とせん断・一方向流で、速度・渦度・粒子通過を同時に測る。",
+      "literature_notes": [
+        "research/notes/S002_surface.md",
+        "research/notes/S007_vortices.md"
+      ]
     },
     {
       "id": "H04",
@@ -78,10 +121,18 @@
         "E05"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "符号と色の対応は研究側が指定した表示規則。象徴の物理的説明を支持する実験結果には数えない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "calibration_only",
+          "path": "research/results/E01/summary.json",
+          "finding": "全運動を固定軸のdy/dtの正負で着色した。色以外に独立した物理量・伝統的な意味との対応は測っていない。"
+        }
+      ],
+      "next_action": "E05等で物理量（例えば指定断面の符号付き流束）と独立した予測を先に定める。",
+      "literature_notes": []
     },
     {
       "id": "H05",
@@ -98,12 +149,17 @@
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
+        "https://doi.org/10.1103/PhysRevLett.104.048704"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "植物教材の輸送の説明と、損傷・負荷変動を明示した一次研究の代替モデル。根・幹・枝葉の共通生成則は未検証。",
       "independently_reproduced": false,
       "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "next_action": "E04で供給消費・材料量を固定し、固定需要・変動需要・損傷で未供給量と独立閉路数を比べる。",
+      "literature_notes": [
+        "research/notes/S009_transport.md",
+        "research/notes/Katifori_transport_networks.md"
+      ]
     },
     {
       "id": "H06",
@@ -121,10 +177,20 @@
       "evidence_urls": [
         "https://doi.org/10.1088/0169-5983/46/3/031415"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "位相の引き込みと渦輪の物理的な相互作用は段階の異なる証拠。境界・交換・摂動からの回復は未測定。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "calibration_only",
+          "path": "research/results/E02/summary.json",
+          "finding": "K=2 rad/sで位相差が同期。二位相の関係を測った段階で、物理的な個体や階層は定義していない。"
+        }
+      ],
+      "next_action": "E03の単体を校正した後にE05で結合介入、無結合・共有外力対照、交換・回復を測る。",
+      "literature_notes": [
+        "research/notes/S007_vortices.md"
+      ]
     },
     {
       "id": "H07",
@@ -140,10 +206,15 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "磁場・渦輪・神経集団の資料は目的選択した事例。自然標本の分母は未登録。",
       "independently_reproduced": false,
       "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "next_action": "E08の分野別母集団・現象名検索・重複除外・欠測の扱いを採択前に登録する。",
+      "literature_notes": [
+        "research/notes/S005_magnetic_field.md",
+        "research/notes/S007_vortices.md",
+        "research/notes/S008_grid_cells.md"
+      ]
     },
     {
       "id": "H08",
@@ -159,10 +230,21 @@
         "E07"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "校正で利用した各モデルから、共通方程式で別分野を予測する試行へは進んでいない。トーラスを必須としない輸送モデルも候補に残す。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "calibration_only",
+          "path": "research/results/E02/summary.json",
+          "finding": "位相の2π同一視とT²への表示写像が入力。別分野に対する共通生成則の予測試験は0件。"
+        }
+      ],
+      "next_action": "E03・E04を基に共通変数と境界条件を定め、E07でトーラス必須モデルと輸送・適応モデルの未見予測を比べる。",
+      "literature_notes": [
+        "research/notes/Katifori_transport_networks.md",
+        "research/notes/S005_magnetic_field.md"
+      ]
     },
     {
       "id": "H09",
@@ -178,10 +260,11 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "円や直線の波形は限定的な対照。全現象における必要性の検定は未実施。",
       "independently_reproduced": false,
       "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "next_action": "E08で対象範囲とトーラス性を固定してから、トーラスを持たず機能する反例候補を調べる。",
+      "literature_notes": []
     },
     {
       "id": "H10",
@@ -200,10 +283,13 @@
         "https://arxiv.org/abs/1502.01593",
         "https://arxiv.org/abs/2211.02603"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "PlanckのCMBに基づくT³等への制約は文献報告。循環同士が宇宙を構成するH10への直接の検定はない。",
       "independently_reproduced": false,
       "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "next_action": "動的モデル固有の観測予測と既存宇宙論の予測を同じ量で比較できるように定式化する。",
+      "literature_notes": [
+        "research/notes/S015_cosmic_topology.md"
+      ]
     },
     {
       "id": "H11",
@@ -218,10 +304,21 @@
         "E02"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "二つの直線振動の位相でも同じ T² を表せるという反例。台帳の肯定命題は再現済みにしない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "counterexample",
+          "path": "research/results/E02/summary.json",
+          "finding": "二つの位相のsinを直線上の変位として観測できる。同じ標本をトーラス面に埋め込むこともできる。身体の立体形状はこの観測では識別できない。"
+        }
+      ],
+      "next_action": "T-PとT-Gを主張するデータは別々に測り、実空間の測定・単位・対応付けを確認する。",
+      "literature_notes": [
+        "research/notes/S003_phase.md",
+        "research/notes/S008_grid_cells.md"
+      ]
     },
     {
       "id": "H12",
@@ -237,10 +334,21 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "異なる実空間運動に同じ一座標の時間記録を与えられる反例。台帳の肯定命題は再現済みにしない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "counterexample",
+          "path": "research/results/E01/summary.json",
+          "finding": "円運動と直線ばね振動のy(t)の差は全条件で4.45e-15 m未満。別の座標xでは区別できる。"
+        }
+      ],
+      "next_action": "E03・E08でも視点を固定し、似た輪郭を持つ対照と物理量の異なる予測を比較する。",
+      "literature_notes": [
+        "research/notes/S001_rotation.md",
+        "research/notes/S002_surface.md"
+      ]
     }
   ]
 }
