@@ -1,0 +1,1268 @@
+{
+  "experiment": "E02",
+  "pilot": false,
+  "initial_phase_rad": [
+    0.17,
+    0.49
+  ],
+  "omega1_rad_s": 6.283185307179586,
+  "tolerances_rad": [
+    0.02,
+    0.05
+  ],
+  "density_grid": [
+    16,
+    16
+  ],
+  "runs": [
+    {
+      "case": "single",
+      "rate_hz": 64,
+      "frequency_ratio": 0.0,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 16,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 0.0,
+          "delta_final_rad": -49.94548245743669,
+          "delta_tail_drift_rad_s": -6.283185307179585,
+          "delta_tail_span_rad": 25.13274122871834,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 8,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 8,
+              "first_s": 1.0
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 16,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 0.0,
+          "delta_final_rad": -502.3348245743669,
+          "delta_tail_drift_rad_s": -6.283185307179587,
+          "delta_tail_span_rad": 251.32741228718348,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 80,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 80,
+              "first_s": 1.0
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 3.780087354243733e-11
+    },
+    {
+      "case": "equal",
+      "rate_hz": 64,
+      "frequency_ratio": 1.0,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 32,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 1.0,
+          "delta_final_rad": 0.3200000000000003,
+          "delta_tail_drift_rad_s": 8.881784197001252e-16,
+          "delta_tail_span_rad": 3.552713678800501e-15,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 8,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 8,
+              "first_s": 1.0
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 32,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 1.0,
+          "delta_final_rad": 0.3199999999999932,
+          "delta_tail_drift_rad_s": -7.105427357601002e-16,
+          "delta_tail_span_rad": 2.842170943040401e-14,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 80,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 80,
+              "first_s": 1.0
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 3.785771696129814e-11
+    },
+    {
+      "case": "three_halves",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 64,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.5,
+          "delta_final_rad": 25.452741228718338,
+          "delta_tail_drift_rad_s": 3.1415926535897913,
+          "delta_tail_span_rad": 12.566370614359165,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 4,
+              "first_s": 2.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 4,
+              "first_s": 2.0
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 64,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.4999999999999998,
+          "delta_final_rad": 251.64741228718339,
+          "delta_tail_drift_rad_s": 3.141592653589792,
+          "delta_tail_span_rad": 125.66370614359167,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 40,
+              "first_s": 2.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 40,
+              "first_s": 2.0
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 5.4001247917767614e-11
+    },
+    {
+      "case": "sqrt2",
+      "rate_hz": 64,
+      "frequency_ratio": 1.4142135623730951,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 212,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.4142135623730951,
+          "delta_final_rad": 21.14064455309716,
+          "delta_tail_drift_rad_s": 2.602580569137144,
+          "delta_tail_span_rad": 10.410322276548577,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 16,
+          "rotation_ratio": 1.4142135623730951,
+          "delta_final_rad": 208.52644553097167,
+          "delta_tail_drift_rad_s": 2.602580569137145,
+          "delta_tail_span_rad": 104.10322276548581,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 70.0
+            }
+          ],
+          "distance_at_70s_rad": 0.03173406860783601
+        }
+      ],
+      "rk4_vs_direct_max_rad": 6.264144758461043e-11
+    },
+    {
+      "case": "rational_99_70",
+      "rate_hz": 64,
+      "frequency_ratio": 1.4142857142857144,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 212,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.4142857142857144,
+          "delta_final_rad": 21.144271303795193,
+          "delta_tail_drift_rad_s": 2.6030339129743982,
+          "delta_tail_span_rad": 10.412135651897593,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 16,
+          "rotation_ratio": 1.4142857142857144,
+          "delta_final_rad": 208.56271303795205,
+          "delta_tail_drift_rad_s": 2.6030339129744,
+          "delta_tail_span_rad": 104.121356518976,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 1,
+              "first_s": 70.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 70.0
+            }
+          ],
+          "distance_at_70s_rad": 3.907985046680551e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 4.672529030358419e-11
+    },
+    {
+      "case": "slip",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 1.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 196,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.363067107286817,
+          "delta_final_rad": 19.627263064940465,
+          "delta_tail_drift_rad_s": 2.75047708219579,
+          "delta_tail_span_rad": 11.00190832878316,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 52,
+          "rotation_ratio": 1.363569655058724,
+          "delta_final_rad": 193.6187682349115,
+          "delta_tail_drift_rad_s": 2.436797852216402,
+          "delta_tail_span_rad": 97.47191408865609,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 70.0
+            }
+          ],
+          "distance_at_70s_rad": 0.02922107105206706
+        }
+      ],
+      "phase_sum_max_residual_rad": 2.7284841053187847e-12
+    },
+    {
+      "case": "lock",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 2.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 41,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.0093274288125826,
+          "delta_final_rad": 0.9033391096802603,
+          "delta_tail_drift_rad_s": 5.433073152261159e-06,
+          "delta_tail_span_rad": 2.1732292609044634e-05,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 41,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.0009288442053044,
+          "delta_final_rad": 0.9033391107665238,
+          "delta_tail_drift_rad_s": 1.4210854715202005e-15,
+          "delta_tail_span_rad": 1.1368683772161603e-13,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ],
+          "distance_at_70s_rad": 2.8499230982697092
+        }
+      ],
+      "phase_sum_max_residual_rad": 1.609805622138083e-10,
+      "lock_prediction_rad": 0.9033391107665127,
+      "lock_error_rad": 1.1102230246251565e-14
+    },
+    {
+      "case": "noise_11",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 11,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 92,
+          "occupied_cells_1hz_strobe": 3,
+          "rotation_ratio": 1.4977388093849167,
+          "delta_final_rad": 25.45349608899415,
+          "delta_tail_drift_rad_s": 3.1090461812234373,
+          "delta_tail_span_rad": 12.755334787755224,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 1,
+              "first_s": 6.015625
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 6.015625
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 123,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.499894160552208,
+          "delta_final_rad": 251.6532625575813,
+          "delta_tail_drift_rad_s": 3.139945387623353,
+          "delta_tail_span_rad": 125.72080577827137,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 3,
+              "first_s": 6.015625
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 7,
+              "first_s": 6.015625
+            }
+          ],
+          "distance_at_70s_rad": 0.09320545322625762
+        }
+      ],
+      "rk4_vs_direct_max_rad": 5.4001247917767614e-11
+    },
+    {
+      "case": "noise_29",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 29,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 88,
+          "occupied_cells_1hz_strobe": 3,
+          "rotation_ratio": 1.4987717725511875,
+          "delta_final_rad": 25.45744479255024,
+          "delta_tail_drift_rad_s": 3.1157250714973266,
+          "delta_tail_span_rad": 12.642793825563398,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 6.0
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 123,
+          "occupied_cells_1hz_strobe": 4,
+          "rotation_ratio": 1.5000538784384065,
+          "delta_final_rad": 251.69003646682307,
+          "delta_tail_drift_rad_s": 3.1371228330939784,
+          "delta_tail_span_rad": 125.76416546405662,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 9,
+              "first_s": 6.0
+            }
+          ],
+          "distance_at_70s_rad": 0.05830462906058287
+        }
+      ],
+      "rk4_vs_direct_max_rad": 5.4001247917767614e-11
+    },
+    {
+      "case": "noise_47",
+      "rate_hz": 64,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 47,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 512,
+          "occupied_cells_of_256": 94,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.499118920859444,
+          "delta_final_rad": 25.50366109026522,
+          "delta_tail_drift_rad_s": 3.1048092945040464,
+          "delta_tail_span_rad": 12.76968219878919,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 5120,
+          "occupied_cells_of_256": 120,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.5000106441863104,
+          "delta_final_rad": 251.7000251763572,
+          "delta_tail_drift_rad_s": 3.140840149606192,
+          "delta_tail_span_rad": 125.77520233738244,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 3,
+              "first_s": 12.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 8,
+              "first_s": 12.0
+            }
+          ],
+          "distance_at_70s_rad": 0.20154919747321642
+        }
+      ],
+      "rk4_vs_direct_max_rad": 5.4001247917767614e-11
+    },
+    {
+      "case": "single",
+      "rate_hz": 128,
+      "frequency_ratio": 0.0,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 16,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 0.0,
+          "delta_final_rad": -49.94548245743669,
+          "delta_tail_drift_rad_s": -6.283185307179585,
+          "delta_tail_span_rad": 25.13274122871834,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 8,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 8,
+              "first_s": 0.9921875
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 16,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 0.0,
+          "delta_final_rad": -502.3348245743669,
+          "delta_tail_drift_rad_s": -6.283185307179587,
+          "delta_tail_span_rad": 251.32741228718348,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 80,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 80,
+              "first_s": 0.9921875
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "equal",
+      "rate_hz": 128,
+      "frequency_ratio": 1.0,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 32,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 1.0,
+          "delta_final_rad": 0.3200000000000003,
+          "delta_tail_drift_rad_s": 8.881784197001252e-16,
+          "delta_tail_span_rad": 3.552713678800501e-15,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 8,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 8,
+              "first_s": 0.9921875
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 32,
+          "occupied_cells_1hz_strobe": 1,
+          "rotation_ratio": 1.0,
+          "delta_final_rad": 0.3199999999999932,
+          "delta_tail_drift_rad_s": -7.105427357601002e-16,
+          "delta_tail_span_rad": 2.842170943040401e-14,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 80,
+              "first_s": 1.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 80,
+              "first_s": 0.9921875
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.771383702172898e-11
+    },
+    {
+      "case": "three_halves",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 64,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.5,
+          "delta_final_rad": 25.452741228718338,
+          "delta_tail_drift_rad_s": 3.1415926535897913,
+          "delta_tail_span_rad": 12.566370614359165,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 4,
+              "first_s": 2.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 4,
+              "first_s": 2.0
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 64,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.4999999999999998,
+          "delta_final_rad": 251.64741228718339,
+          "delta_tail_drift_rad_s": 3.141592653589792,
+          "delta_tail_span_rad": 125.66370614359167,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 40,
+              "first_s": 2.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 40,
+              "first_s": 2.0
+            }
+          ],
+          "distance_at_70s_rad": 2.4868995751603507e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "sqrt2",
+      "rate_hz": 128,
+      "frequency_ratio": 1.4142135623730951,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 223,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.4142135623730951,
+          "delta_final_rad": 21.14064455309716,
+          "delta_tail_drift_rad_s": 2.602580569137144,
+          "delta_tail_span_rad": 10.410322276548577,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 16,
+          "rotation_ratio": 1.4142135623730951,
+          "delta_final_rad": 208.52644553097167,
+          "delta_tail_drift_rad_s": 2.602580569137145,
+          "delta_tail_span_rad": 104.10322276548581,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 3,
+              "first_s": 28.9921875
+            }
+          ],
+          "distance_at_70s_rad": 0.03173406860783601
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "rational_99_70",
+      "rate_hz": 128,
+      "frequency_ratio": 1.4142857142857144,
+      "K_rad_s": 0.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 223,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.4142857142857144,
+          "delta_final_rad": 21.144271303795193,
+          "delta_tail_drift_rad_s": 2.6030339129743982,
+          "delta_tail_span_rad": 10.412135651897593,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 16,
+          "rotation_ratio": 1.4142857142857144,
+          "delta_final_rad": 208.56271303795205,
+          "delta_tail_drift_rad_s": 2.6030339129744,
+          "delta_tail_span_rad": 104.121356518976,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 1,
+              "first_s": 70.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 3,
+              "first_s": 28.9921875
+            }
+          ],
+          "distance_at_70s_rad": 3.907985046680551e-14
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "slip",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 1.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 205,
+          "occupied_cells_1hz_strobe": 8,
+          "rotation_ratio": 1.3630671085251407,
+          "delta_final_rad": 19.62726312067469,
+          "delta_tail_drift_rad_s": 2.7504770914910646,
+          "delta_tail_span_rad": 11.001908365964258,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 256,
+          "occupied_cells_1hz_strobe": 52,
+          "rotation_ratio": 1.3635696586536403,
+          "delta_final_rad": 193.61876985221556,
+          "delta_tail_drift_rad_s": 2.4367978876629026,
+          "delta_tail_span_rad": 97.4719155065161,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 2,
+              "first_s": 10.3984375
+            }
+          ],
+          "distance_at_70s_rad": 0.029220694585209372
+        }
+      ],
+      "phase_sum_max_residual_rad": 4.320099833421409e-12,
+      "coarse_fine_max_rad": 8.340679187313071e-07
+    },
+    {
+      "case": "lock",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 2.0,
+      "noise_seed": null,
+      "measurement_sigma_rad": 0.0,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 42,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.0093274288125826,
+          "delta_final_rad": 0.9033391096802532,
+          "delta_tail_drift_rad_s": 5.433071959437541e-06,
+          "delta_tail_span_rad": 2.1732287837750164e-05,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 42,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.0009288442053041,
+          "delta_final_rad": 0.9033391107664102,
+          "delta_tail_drift_rad_s": -1.4210854715202005e-15,
+          "delta_tail_span_rad": 5.684341886080802e-14,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 0,
+              "first_s": null
+            }
+          ],
+          "distance_at_70s_rad": 2.849923098299154
+        }
+      ],
+      "phase_sum_max_residual_rad": 2.1964297047816217e-10,
+      "coarse_fine_max_rad": 5.424300120182579e-09,
+      "lock_prediction_rad": 0.9033391107665127,
+      "lock_error_rad": 1.0258460747536446e-13
+    },
+    {
+      "case": "noise_11",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 11,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 101,
+          "occupied_cells_1hz_strobe": 3,
+          "rotation_ratio": 1.4977388093849167,
+          "delta_final_rad": 25.45349608899415,
+          "delta_tail_drift_rad_s": 3.1090461812234373,
+          "delta_tail_span_rad": 12.772328908772646,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 1,
+              "first_s": 6.015625
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 2,
+              "first_s": 2.0078125
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 128,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.499894160552208,
+          "delta_final_rad": 251.6532625575813,
+          "delta_tail_drift_rad_s": 3.139945387623353,
+          "delta_tail_span_rad": 125.8748587583888,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 7,
+              "first_s": 6.015625
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 18,
+              "first_s": 2.0078125
+            }
+          ],
+          "distance_at_70s_rad": 0.09320545322625762
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "noise_29",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 29,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 102,
+          "occupied_cells_1hz_strobe": 3,
+          "rotation_ratio": 1.4987717725511875,
+          "delta_final_rad": 25.45744479255024,
+          "delta_tail_drift_rad_s": 3.1157250714973266,
+          "delta_tail_span_rad": 12.649416612804114,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 2,
+              "first_s": 2.0078125
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 131,
+          "occupied_cells_1hz_strobe": 4,
+          "rotation_ratio": 1.5000538784384065,
+          "delta_final_rad": 251.69003646682307,
+          "delta_tail_drift_rad_s": 3.1371228330939784,
+          "delta_tail_span_rad": 125.80628491753583,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 17,
+              "first_s": 2.0078125
+            }
+          ],
+          "distance_at_70s_rad": 0.05830462906058287
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    },
+    {
+      "case": "noise_47",
+      "rate_hz": 128,
+      "frequency_ratio": 1.5,
+      "K_rad_s": 0.0,
+      "noise_seed": 47,
+      "measurement_sigma_rad": 0.08,
+      "windows": [
+        {
+          "duration_s": 8,
+          "density_samples": 1024,
+          "occupied_cells_of_256": 103,
+          "occupied_cells_1hz_strobe": 2,
+          "rotation_ratio": 1.499118920859444,
+          "delta_final_rad": 25.50366109026522,
+          "delta_tail_drift_rad_s": 3.1048092945040464,
+          "delta_tail_span_rad": 12.839926819660274,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 0,
+              "first_s": null
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 1,
+              "first_s": 6.0078125
+            }
+          ]
+        },
+        {
+          "duration_s": 80,
+          "density_samples": 10240,
+          "occupied_cells_of_256": 128,
+          "occupied_cells_1hz_strobe": 5,
+          "rotation_ratio": 1.5000106441863104,
+          "delta_final_rad": 251.7000251763572,
+          "delta_tail_drift_rad_s": 3.140840149606192,
+          "delta_tail_span_rad": 125.77520233738244,
+          "recurrences": [
+            {
+              "epsilon_rad": 0.02,
+              "count": 4,
+              "first_s": 12.0
+            },
+            {
+              "epsilon_rad": 0.05,
+              "count": 14,
+              "first_s": 6.0078125
+            }
+          ],
+          "distance_at_70s_rad": 0.20154919747321642
+        }
+      ],
+      "rk4_vs_direct_max_rad": 9.760015018400736e-11
+    }
+  ],
+  "near_ratio_comparison": [
+    {
+      "rate_hz": 64,
+      "t_s": 8,
+      "pair_phase_gap_rad": 0.0036267506980323105,
+      "predicted_rad": 0.0036267506980320443
+    },
+    {
+      "rate_hz": 64,
+      "t_s": 70,
+      "pair_phase_gap_rad": 0.03173406860787509,
+      "predicted_rad": 0.031734068607780386
+    },
+    {
+      "rate_hz": 64,
+      "t_s": 80,
+      "pair_phase_gap_rad": 0.03626750698037995,
+      "predicted_rad": 0.03626750698032044
+    },
+    {
+      "rate_hz": 128,
+      "t_s": 8,
+      "pair_phase_gap_rad": 0.0036267506980323105,
+      "predicted_rad": 0.0036267506980320443
+    },
+    {
+      "rate_hz": 128,
+      "t_s": 70,
+      "pair_phase_gap_rad": 0.03173406860787509,
+      "predicted_rad": 0.031734068607780386
+    },
+    {
+      "rate_hz": 128,
+      "t_s": 80,
+      "pair_phase_gap_rad": 0.03626750698037995,
+      "predicted_rad": 0.03626750698032044
+    }
+  ],
+  "checks": {
+    "single_64/direct_solution": true,
+    "single_64/density_8s": true,
+    "single_64/density_80s": true,
+    "single_64/known_return": true,
+    "equal_64/direct_solution": true,
+    "equal_64/density_8s": true,
+    "equal_64/density_80s": true,
+    "equal_64/known_return": true,
+    "three_halves_64/direct_solution": true,
+    "three_halves_64/density_8s": true,
+    "three_halves_64/density_80s": true,
+    "three_halves_64/known_return": true,
+    "sqrt2_64/direct_solution": true,
+    "sqrt2_64/density_8s": true,
+    "sqrt2_64/density_80s": true,
+    "rational_99_70_64/direct_solution": true,
+    "rational_99_70_64/density_8s": true,
+    "rational_99_70_64/density_80s": true,
+    "rational_99_70_64/known_return": true,
+    "slip_64/phase_sum": true,
+    "slip_64/density_8s": true,
+    "slip_64/density_80s": true,
+    "slip_64/slipping": true,
+    "lock_64/phase_sum": true,
+    "lock_64/density_8s": true,
+    "lock_64/density_80s": true,
+    "lock_64/locked_phase": true,
+    "noise_11_64/direct_solution": true,
+    "noise_11_64/density_8s": true,
+    "noise_11_64/density_80s": true,
+    "noise_29_64/direct_solution": true,
+    "noise_29_64/density_8s": true,
+    "noise_29_64/density_80s": true,
+    "noise_47_64/direct_solution": true,
+    "noise_47_64/density_8s": true,
+    "noise_47_64/density_80s": true,
+    "pair_64/short_window": true,
+    "pair_64/70s_thresholds": true,
+    "single_128/direct_solution": true,
+    "single_128/density_8s": true,
+    "single_128/density_80s": true,
+    "single_128/known_return": true,
+    "equal_128/direct_solution": true,
+    "equal_128/density_8s": true,
+    "equal_128/density_80s": true,
+    "equal_128/known_return": true,
+    "three_halves_128/direct_solution": true,
+    "three_halves_128/density_8s": true,
+    "three_halves_128/density_80s": true,
+    "three_halves_128/known_return": true,
+    "sqrt2_128/direct_solution": true,
+    "sqrt2_128/density_8s": true,
+    "sqrt2_128/density_80s": true,
+    "rational_99_70_128/direct_solution": true,
+    "rational_99_70_128/density_8s": true,
+    "rational_99_70_128/density_80s": true,
+    "rational_99_70_128/known_return": true,
+    "slip_128/phase_sum": true,
+    "slip_128/step_halving": true,
+    "slip_128/density_8s": true,
+    "slip_128/density_80s": true,
+    "slip_128/slipping": true,
+    "lock_128/phase_sum": true,
+    "lock_128/step_halving": true,
+    "lock_128/density_8s": true,
+    "lock_128/density_80s": true,
+    "lock_128/locked_phase": true,
+    "noise_11_128/direct_solution": true,
+    "noise_11_128/density_8s": true,
+    "noise_11_128/density_80s": true,
+    "noise_29_128/direct_solution": true,
+    "noise_29_128/density_8s": true,
+    "noise_29_128/density_80s": true,
+    "noise_47_128/direct_solution": true,
+    "noise_47_128/density_8s": true,
+    "noise_47_128/density_80s": true,
+    "pair_128/short_window": true,
+    "pair_128/70s_thresholds": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E02_phase_space/run.py": "996fb7f13cecf2e7e336d171345f390e2dd9001ec8d77af4ee90d5485e21a5e7",
+    "E02_phase_space/figures.py": "2585d8e7db399d77069048a045253a6e7c90d18bbdc98fd569ae214be7047304"
+  }
+}
