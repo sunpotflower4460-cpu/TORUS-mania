@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "timezone": "Asia/Tokyo",
+  "scope": "inspiration_and_claim_inventory",
+  "analysis_limit": "vidIQの自動映像・音声解析に基づく短いメモ。担当者による直接フレーム確認・字幕照合・原典画像の同定は未実施。時刻は概算。映像内の主張を科学的事実と判定したものではない。",
+  "videos": [
+    {
+      "id": "V001",
+      "youtube_id": "f6UAHhek7Ps",
+      "url": "https://www.youtube.com/watch?v=f6UAHhek7Ps",
+      "title": "Love transcends dimensions of time and space #love #spirituality #electromagnetic",
+      "channel_title": "Vanquish the Veil",
+      "published_at": "2026-06-01T19:20:39Z",
+      "duration_seconds": 126,
+      "metadata_status": "provider_verified",
+      "analysis_status": "automated_analysis_only",
+      "verified_at": "2026-11-20",
+      "short_summary": "中心の砂時計状の形と外側のトーラスを結び、心臓・地球・愛へ説明を広げる。大気の電位差を重力の説明へ結びつける主張も含む。これらの主張は個別に検証する必要がある。",
+      "visual_entry_points": [
+        {
+          "approx_time": "00:23–01:33",
+          "topic": "中心と外側の幾何モデル"
+        }
+      ],
+      "raw_video_stored": false,
+      "full_transcript_stored": false,
+      "user_endorsement": "提供された参照資料。発案者が動画内の全主張を支持したとはみなさない。"
+    },
+    {
+      "id": "V002",
+      "youtube_id": "nxNWNSW9x8g",
+      "url": "https://www.youtube.com/watch?v=nxNWNSW9x8g",
+      "title": "Torus everywhere #torus #magnetism #cosmology",
+      "channel_title": "Vanquish the Veil",
+      "published_at": "2026-11-03T22:45:17Z",
+      "duration_seconds": 146,
+      "metadata_status": "provider_verified",
+      "analysis_status": "automated_analysis_only",
+      "verified_at": "2026-11-20",
+      "short_summary": "花・人体・樹木と根を幾何図と比較し、放電や磁場の写真、天体の見かけの軌跡へ話を広げる。普遍的な生命力や地球中心の宇宙像として解釈するが、解析で数式・定量データ・論文出典は同定できていない。",
+      "visual_entry_points": [
+        {
+          "approx_time": "00:10–01:03",
+          "topic": "双曲面と自然物の形態比較"
+        },
+        {
+          "approx_time": "01:04–01:43",
+          "topic": "放電・磁場に関する画像"
+        },
+        {
+          "approx_time": "01:44–02:25",
+          "topic": "天体軌跡と分岐構造の比較"
+        }
+      ],
+      "raw_video_stored": false,
+      "full_transcript_stored": false,
+      "user_endorsement": "提供された参照資料。発案者が動画内の全主張を支持したとはみなさない。"
+    }
+  ]
+}

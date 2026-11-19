@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-20T08:22:21.103410+09:00",
+  "timezone": "Asia/Tokyo",
+  "scope": "Preparation, document consistency, and source-access tooling only; no scientific experiments have been implemented or run.",
+  "scientific_experiments_run": false,
+  "independent_paper_reproductions_completed": 0,
+  "inventory": {
+    "repository_text_files": 23,
+    "sources": 24,
+    "claims": 12,
+    "video_records": 2,
+    "planned_experiments": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08"
+    ],
+    "source_types": {
+      "official_education": 9,
+      "primary_paper": 11,
+      "official_documentation": 4
+    },
+    "source_review_statuses": {
+      "web_verified": 19,
+      "metadata_verified": 5
+    }
+  },
+  "local_checks": {
+    "json_parse": {
+      "status": "passed",
+      "files": [
+        "research/PREPARATION_VALIDATION.json",
+        "research/claims.json",
+        "sources/catalog.json",
+        "sources/videos.json"
+      ]
+    },
+    "ids_and_claim_experiment_references": {
+      "status": "passed"
+    },
+    "markdown_local_file_links": {
+      "status": "passed",
+      "checked": 51,
+      "broken": [],
+      "fragment_anchors_checked": false
+    },
+    "source_access_unit_tests": {
+      "status": "passed",
+      "command": "python3 -m unittest discover -s tests -v",
+      "tests_run": 19,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 0.012,
+      "python_version": "3.12.14",
+      "scope": "Offline unit tests of research_access.py; these are not E01-E08 scientific experiments."
+    },
+    "downloaded_pdf_bytes_header_and_sha256": {
+      "status": "passed",
+      "source_id": "S001"
+    },
+    "independent_editorial_review": {
+      "status": "completed_with_corrections",
+      "corrections": [
+        "Removed an unsupported description of an earlier assistant reply.",
+        "Separated user statements from distinctions and related questions added during research preparation."
+      ],
+      "limitations": "Editorial and internal consistency review; not scientific peer review."
+    }
+  },
+  "network_attempts": [
+    {
+      "source_id": "S012",
+      "action": "check",
+      "accessed_at": "2026-11-19T23:12:10.617230+00:00",
+      "requested_url": "https://api.crossref.org/works/10.1098/rsif.2020.0624",
+      "method": "HEAD",
+      "http_status": 200,
+      "content_type": "application/json",
+      "status": "headers_reachable",
+      "full_text_reviewed": false,
+      "payload_committed": false,
+      "evidence": "reported_by_access_tooling_reviewer",
+      "note": "The reviewer reported the live check; its temporary raw log was not retained. No response body was downloaded."
+    },
+    {
+      "source_id": "S012",
+      "action": "fetch",
+      "accessed_at": "2026-11-19T23:15:51.763944+00:00",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
+      "status": "rate_limited",
+      "bytes_read": 0,
+      "full_text_reviewed": false,
+      "requested_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7879751/unicode",
+      "method": "GET",
+      "http_status": 429,
+      "error_type": "HTTPError",
+      "error": "HTTP Error 429: Too Many Requests",
+      "retry_after": "",
+      "evidence": "observed_cli_log",
+      "payload_committed": false
+    },
+    {
+      "source_id": "S001",
+      "action": "fetch",
+      "accessed_at": "2026-11-19T23:18:19.329033+00:00",
+      "source_url": "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf",
+      "status": "payload_saved",
+      "bytes_read": 1273421,
+      "full_text_reviewed": false,
+      "requested_url": "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf",
+      "method": "GET",
+      "http_status": 200,
+      "resolved_url": "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf",
+      "content_type": "application/pdf",
+      "content_kind": "pdf",
+      "pdf_header_mismatch": false,
+      "path": "data/raw/S001.pdf",
+      "sha256": "57f42eb6302120de771e26b49768c053c74b3a8c7d2220f3883a5a74c441bd77",
+      "evidence": "observed_cli_log",
+      "payload_committed": false
+    }
+  ],
+  "limitations": [
+    "Web-source verification, CLI reachability, file retrieval, full reading, and scientific reproduction are different states.",
+    "The S001 PDF was retrieved only for access verification and is not included in the repository.",
+    "The S012 BioC endpoint returned HTTP 429; no body was retrieved and no automatic retry was made.",
+    "Research datasets and external analysis code have not been downloaded or run.",
+    "Video notes use limited automated analysis; complete frame-by-frame inspection and source tracing remain to be done.",
+    "Network results describe this environment and time, not guaranteed availability in a later Codex environment."
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "timezone": "Asia/Tokyo",
+  "stage": "research_preparation",
+  "experiments_run": false,
+  "claims": [
+    {
+      "id": "H01",
+      "statement": "一定の円運動の一成分を時間表示すると正弦波になる",
+      "status": "analytic_baseline",
+      "scope": "回転の角速度が一定で、観測座標と時間軸を固定した場合。一般の波から背後の実体を一意に特定する主張ではない。",
+      "torus_kinds": [
+        "T-G"
+      ],
+      "planned_experiments": [
+        "E01"
+      ],
+      "evidence_urls": [
+        "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H02",
+      "statement": "二つの周期的自由度の組が状態空間のトーラスを構成する",
+      "status": "analytic_baseline",
+      "scope": "状態空間と実際の軌道を区別。位相間に拘束や同期があれば軌道は低次元となり得る。",
+      "torus_kinds": [
+        "T-P"
+      ],
+      "planned_experiments": [
+        "E02"
+      ],
+      "evidence_urls": [
+        "https://ocw.mit.edu/courses/12-006j-nonlinear-dynamics-chaos-fall-2022/mit12_006jf22_lec19.pdf"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H03",
+      "statement": "砂時計・双曲面・渦・トーラスが単一の流れの異なる側面として成立する",
+      "status": "open",
+      "scope": "単一の流速場と観測写像を固定して確かめる。光円錐など異なる軸の図は別に扱う。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E01",
+        "E03",
+        "E06"
+      ],
+      "evidence_urls": [
+        "https://www.einstein-online.info/en/spacetime/"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H04",
+      "statement": "陰陽的な対が一つの循環の補完する局面として記述できる",
+      "status": "open",
+      "scope": "符号、方向、位相、領域など何との対応を提案するかを先に明記。伝統的意味の唯一の物理解釈とはしない。",
+      "torus_kinds": [
+        "T-M"
+      ],
+      "planned_experiments": [
+        "E01",
+        "E05"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H05",
+      "statement": "根・幹・枝葉の生成をトーラス的循環と共通する機構から導ける",
+      "status": "open",
+      "scope": "形、輸送、成長、閉路を分ける。同じ生成則から分岐と循環が生じる条件と対照を示す。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E04",
+        "E06",
+        "E07"
+      ],
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H06",
+      "statement": "循環するまとまり同士の相互作用が持続する個体性や階層をつくる",
+      "status": "open",
+      "scope": "持続時間、交換、摂動への応答、境界を操作的に定義。単なる相互作用の存在を生命の成立と解釈しない。",
+      "torus_kinds": [
+        "T-F",
+        "T-P"
+      ],
+      "planned_experiments": [
+        "E05",
+        "E06"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1088/0169-5983/46/3/031415"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H07",
+      "statement": "トーラス的構造が複数分野で高頻度に出現する",
+      "status": "open",
+      "scope": "母集団、選択法、分母、分類法、非トーラス対照を固定する。種類ごとに集計する。",
+      "torus_kinds": [
+        "T-G",
+        "T-P",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E08"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H08",
+      "statement": "複数分野を説明する共通生成原理がトーラス的である",
+      "status": "open",
+      "scope": "共通の変数・方程式・許す条件差を明示。未使用の対象に対する予測と代替モデル比較が必要。",
+      "torus_kinds": [
+        "T-F",
+        "T-P"
+      ],
+      "planned_experiments": [
+        "E06",
+        "E07"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H09",
+      "statement": "対象範囲内の全現象の成立にトーラス的機構が必要である",
+      "status": "open",
+      "scope": "最も強い必須性の命題。対象とトーラス性を固定し、反例を扱う。有限個の支持例で普遍性を確定しない。",
+      "torus_kinds": [
+        "T-G",
+        "T-P",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E08"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H10",
+      "statement": "宇宙全体がトーラス状の流れや循環同士の相互作用として記述できる",
+      "status": "open",
+      "scope": "実空間の流れの仮説と宇宙の3トーラス位相を分ける。既知観測に対する独立予測が必要。",
+      "torus_kinds": [
+        "T-F",
+        "T-C"
+      ],
+      "planned_experiments": [
+        "E07",
+        "E08"
+      ],
+      "evidence_urls": [
+        "https://arxiv.org/abs/1502.01593",
+        "https://arxiv.org/abs/2211.02603"
+      ],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H11",
+      "statement": "状態空間T²の成立から、実空間の身体がトーラスだと一般に推論できる",
+      "status": "invalid_general_inference",
+      "scope": "二周期の表現だけでは身体の形を特定できない。個別の実空間対応を別途示す。",
+      "torus_kinds": [
+        "T-P",
+        "T-G"
+      ],
+      "planned_experiments": [
+        "E02"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    },
+    {
+      "id": "H12",
+      "statement": "図の形の類似だけで同じ物理的原因を一般に推論できる",
+      "status": "invalid_general_inference",
+      "scope": "複数の原因が似た観測を生む可能性がある。軸、単位、観測写像、因果的介入を必要とする。",
+      "torus_kinds": [
+        "T-G",
+        "T-M"
+      ],
+      "planned_experiments": [
+        "E01",
+        "E08"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "independently_reproduced": false,
+      "results": [],
+      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+    }
+  ]
+}

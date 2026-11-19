@@ -1,0 +1,852 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-20",
+  "description": "TORUS-mania: 仮説を支持・限定・比較するための一次資料と公式資料。着想動画は科学的根拠のカタログに含めない。",
+  "access_status_definitions": {
+    "web_verified": "公式/一次ページまたはPDFの本文・関連箇所をWeb取得で確認。全内容の読了やCLI到達、PDF保存、API成功を意味しない。",
+    "metadata_verified": "書誌・抄録・検索索引上の関連記述を確認。本文の直接取得が未実施またはブロックされた。",
+    "not_checked": "未確認。推測で確認済みに更新しない。"
+  },
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Calculus, Chapter 12: Motion Along a Curve",
+      "authors_or_org": "Gilbert Strang / MIT OpenCourseWare",
+      "year": null,
+      "domain": "mathematics",
+      "source_type": "official_education",
+      "url": "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "等速円運動の座標は正弦・余弦で表せる。",
+        "一定の軸方向移動を伴う螺旋と、その投影を具体的に計算できる。"
+      ],
+      "does_not_support": [
+        "正弦波が観測されたことだけで、背後に物理的なトーラスがあるとは特定できない。"
+      ],
+      "relevance": [
+        "回転と波",
+        "投影",
+        "時間軸と空間軸"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "MIT公式PDFのテキストをWeb閲覧で確認。円運動の例6と螺旋の例7を読む。2026-11-20（Asia/Tokyo）のCLI動作確認でPDF 1,273,421 bytesを取得し、PDFヘッダとSHA-256を記録した。取得物は一時作業用で、リポジトリには複製していない。全文精読・独立再現は未実施。記録：research/PREPARATION_VALIDATION.json。",
+      "keywords": [
+        "uniform circular motion",
+        "projection",
+        "helix",
+        "sine"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S002",
+      "title": "Multivariable Calculus lecture notes: Parametrize torus (lectures 31–38)",
+      "authors_or_org": "MIT Mathematics",
+      "year": 2007,
+      "domain": "mathematics",
+      "source_type": "official_education",
+      "url": "https://math.mit.edu/~larsh/teaching/F2007/handouts/lectures_31-38.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://math.mit.edu/~larsh/teaching/F2007/handouts/lectures_31-38.pdf",
+      "access_status": "metadata_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "標準トーラスを二つの角度でパラメータ表示する具体例がある。"
+      ],
+      "does_not_support": [
+        "幾何学的な曲面の式は、それを生成・維持する物理法則を指定しない。"
+      ],
+      "relevance": [
+        "T2",
+        "幾何学",
+        "パラメータ表示"
+      ],
+      "license_note": "MIT教員サイト掲載の教材。MIT OCWと同じライセンスとは推定しない。配布条件は未確認、本文再配布未実施。",
+      "access_notes": "MIT公式PDFの検索索引で標準パラメータ式を確認。直接openは取得エラーとなり、全文・PDF保存は未確認。必要ならS003の角度座標の説明も併用。",
+      "keywords": [
+        "parametrize torus",
+        "surface",
+        "two angles"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S003",
+      "title": "Lecture 19: Introduction to Strange Attractors",
+      "authors_or_org": "Daniel H. Rothman / MIT OpenCourseWare",
+      "year": 2022,
+      "domain": "dynamical_systems",
+      "source_type": "official_education",
+      "url": "https://ocw.mit.edu/courses/12-006j-nonlinear-dynamics-chaos-fall-2022/mit12_006jf22_lec19.pdf",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://ocw.mit.edu/courses/12-006j-nonlinear-dynamics-chaos-fall-2022/mit12_006jf22_lec19.pdf",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "二つの周期の角度から状態空間T²を表せる。",
+        "周波数比が有理数か無理数かで、閉じる軌道と準周期軌道を区別できる。"
+      ],
+      "does_not_support": [
+        "状態空間のトーラスは物体の形や宇宙の空間形状と同じ意味ではない。",
+        "講義の滑らかな流れ・アトラクタの前提を、任意の離散写像へ無条件に適用できない。"
+      ],
+      "relevance": [
+        "準周期",
+        "状態空間",
+        "カオスとの比較"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "公式PDF本文をWeb確認。補助教材：R. Rosales, MIT 2024 P-set 07 https://math.mit.edu/classes/18.353J/PSetAnswers/AnswerPSet_2024_07.pdf の§3はLissajous図と有限精度で無理数を近似する注意を扱う（PDF本文確認、保存未実施）。",
+      "keywords": [
+        "quasiperiodic torus",
+        "rational irrational",
+        "attractor"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S004",
+      "title": "Deterministic Nonperiodic Flow",
+      "authors_or_org": "Edward N. Lorenz",
+      "year": 1963,
+      "domain": "dynamical_systems",
+      "source_type": "primary_paper",
+      "url": "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
+      "doi": "10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2",
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": null,
+      "access_status": "metadata_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "低次元の決定論的方程式から、初期値に敏感な非周期運動が生じる例を提供する。"
+      ],
+      "does_not_support": [
+        "二つの渦巻きに見える図を二つのトーラスと呼ぶことは、トポロジーの判定にならない。",
+        "一つの非トーラス例は『多くの条件でトーラスが現れる』という限定命題を否定しない。"
+      ],
+      "relevance": [
+        "対照モデル",
+        "カオス",
+        "非トーラス候補"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "出版社の抄録・DOIを検索で確認。全文の利用条件・PDF取得は未確認。数値再現では方程式とパラメータを一次本文で再確認する。",
+      "keywords": [
+        "Lorenz 1963",
+        "strange attractor",
+        "nonperiodic"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S005",
+      "title": "DOE Explains...Tokamaks",
+      "authors_or_org": "U.S. Department of Energy",
+      "year": 2026,
+      "domain": "plasma_physics",
+      "source_type": "official_education",
+      "url": "https://www.energy.gov/science/doe-explainstokamaks",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.energy.gov/science/doe-explainstokamaks",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "トロイダル方向とポロイダル方向の磁場を組み合わせた、トーラス状プラズマ閉じ込めの実例。"
+      ],
+      "does_not_support": [
+        "装置が与えたトーラス形状は、自然界の全系が自発的にトーラスを作る証明にならない。",
+        "磁力線と個々の粒子の軌跡を同一視できない。"
+      ],
+      "relevance": [
+        "磁場",
+        "トロイダル・ポロイダル",
+        "境界条件"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "公式本文を確認。ページ更新日2026-06-01。装置の実績値ではなく、二方向の磁場と構造の説明を使用する。",
+      "keywords": [
+        "tokamak",
+        "toroidal",
+        "poloidal"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S006",
+      "title": "The dynamics of vortex rings: leapfrogging in an ideal and viscous fluid",
+      "authors_or_org": "Alexey V. Borisov, Alexander A. Kilin, Ivan S. Mamaev, Valentin A. Tenenev",
+      "year": 2014,
+      "domain": "fluid_dynamics",
+      "source_type": "primary_paper",
+      "url": "https://doi.org/10.1088/0169-5983/46/3/031415",
+      "doi": "10.1088/0169-5983/46/3/031415",
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": null,
+      "access_status": "metadata_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "軸対称の渦輪同士が相互作用し、条件によって追い抜き合う数値解を研究している。"
+      ],
+      "does_not_support": [
+        "この論文の数値検証を、そのまま実験観測と記載しない。",
+        "渦輪の相互作用は細胞・意識・宇宙の基本単位を証明しない。"
+      ],
+      "relevance": [
+        "渦輪",
+        "相互作用",
+        "関係"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "出版社の書誌・抄録を確認。全文PDFは未取得。DOIのメタデータから出版社版・著者公開版を探索できるが、未確認コピーは使わない。",
+      "keywords": [
+        "vortex ring leapfrogging",
+        "Navier Stokes"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S007",
+      "title": "Creation and dynamics of knotted vortices",
+      "authors_or_org": "Dustin Kleckner, William T. M. Irvine",
+      "year": 2013,
+      "domain": "fluid_dynamics",
+      "source_type": "primary_paper",
+      "url": "https://www.nature.com/articles/nphys2560",
+      "doi": "10.1038/nphys2560",
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": null,
+      "access_status": "metadata_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "水中で結び目状・リンク状の渦を生成し、三次元の形状変化と再結合を測定した実験。"
+      ],
+      "does_not_support": [
+        "単純な丸い渦輪だけが渦の唯一の形だとはいえない。",
+        "渦芯の閉曲線・その管状近傍・流れ全体のトポロジーは同じ対象ではない。"
+      ],
+      "relevance": [
+        "実測",
+        "渦のトポロジー",
+        "再結合"
+      ],
+      "license_note": "出版社の購読論文。抄録の短い独自要約のみ収録。補助動画・図の再利用条件は未確認。",
+      "access_notes": "出版社抄録とSupplementary Information / Supplementary Movies 1–11の存在を確認。本文は購読表示。動画・PDFは未ダウンロード。原ページの補助資料リンクから測定映像へ進む。",
+      "keywords": [
+        "knotted vortices",
+        "reconnection",
+        "hydrofoil"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S008",
+      "title": "Toroidal topology of population activity in grid cells",
+      "authors_or_org": "Richard J. Gardner, Erik Hermansen et al.",
+      "year": 2022,
+      "domain": "neuroscience",
+      "source_type": "primary_paper",
+      "url": "https://www.nature.com/articles/s41586-021-04268-7",
+      "doi": "10.1038/s41586-021-04268-7",
+      "arxiv_id": null,
+      "pmcid": "PMC8810387",
+      "open_access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8810387/",
+      "access_status": "metadata_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "記録した格子細胞モジュールの集団活動に、トーラス状の状態空間構造を検出した例。",
+        "見た目の埋め込みに加え、トポロジカルデータ解析と複数の行動状態の比較を行っている。"
+      ],
+      "does_not_support": [
+        "脳の物理的な形や人体周囲の場がドーナツ形である証拠ではない。",
+        "一部の神経集団の結果を、全脳・全生命・宇宙全体へ一般化できない。"
+      ],
+      "relevance": [
+        "実データ",
+        "状態空間",
+        "トポロジカルデータ解析"
+      ],
+      "license_note": "出版社はOpen accessと表示。論文・Figshareデータ・コードそれぞれのライセンスを取得時に確認する。本文やデータは未複製。",
+      "access_notes": "出版社とPMCの検索索引で抄録・Data/Code availabilityを確認。直接openはNatureのcookie redirect、PMCのCAPTCHAで未取得。著者が指定するデータ・再現コードURL：https://figshare.com/articles/dataset/Toroidal_topology_of_population_activity_in_grid_cells/16764508 。Figshare本文は403、API https://api.figshare.com/v2/articles/16764508 も本環境で取得不可。実データ・コード・BioC応答は未ダウンロード。論文URLを起点に別環境で正規アクセスし、版・サイズ・個別ライセンスを確認する。",
+      "keywords": [
+        "grid cells toroidal topology",
+        "persistent cohomology"
+      ],
+      "priority": 1,
+      "automated_access_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC8810387/unicode"
+    },
+    {
+      "id": "S009",
+      "title": "Virginia Master Naturalist Basic Training Course: Botany",
+      "authors_or_org": "W. John Hayden / University of Richmond; Virginia Tech",
+      "year": null,
+      "domain": "plant_biology",
+      "source_type": "official_education",
+      "url": "https://www.pubs.ext.vt.edu/ANR/ANR-10/ANR-10.html",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.pubs.ext.vt.edu/ANR/ANR-10/ANR-10.html",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "木部の水・無機養分輸送と師部のsource-to-sink輸送を区別できる。",
+        "根と葉は互いを支えるが、水の多くは蒸散で植物外へ出る。"
+      ],
+      "does_not_support": [
+        "根から葉へ行った同じ物質が一本の閉じた輪を必ず戻るとはいえない。",
+        "植物内部の輸送は、外部のトーラス場による成長を実証していない。"
+      ],
+      "relevance": [
+        "根・幹・枝葉",
+        "開放系",
+        "物質輸送"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "公式本文のNutrients、Transport via Phloem and Xylem節を確認。春には貯蔵器官が供給源になるなど役割の変化も読む。",
+      "keywords": [
+        "xylem phloem",
+        "source sink",
+        "transpiration"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S010",
+      "title": "Antagonistic cell surface and intracellular auxin signalling regulate plasma membrane H+-fluxes for root growth",
+      "authors_or_org": "Lanxin Li, Inge Verstraeten et al.",
+      "year": 2021,
+      "domain": "plant_biology",
+      "source_type": "primary_paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612300/",
+      "doi": "10.1038/s41586-021-04037-6",
+      "arxiv_id": null,
+      "pmcid": "PMC7612300",
+      "open_access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7612300/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "同じ植物ホルモンでも組織・経路によって異なる成長応答が生じる。",
+        "根の成長では互いに拮抗する信号経路が働く具体例。"
+      ],
+      "does_not_support": [
+        "生化学的な拮抗を、そのまま宇宙の陰陽やトーラスの実証とは呼べない。"
+      ],
+      "relevance": [
+        "二つの働き",
+        "成長方向",
+        "機構"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "PMC掲載の著者原稿と結論をWeb確認。BioC個別API応答、PDF保存および転載ライセンスは未確認。",
+      "keywords": [
+        "auxin roots shoots",
+        "antagonistic signalling"
+      ],
+      "priority": 2,
+      "automated_access_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7612300/unicode"
+    },
+    {
+      "id": "S011",
+      "title": "Receptor kinase module targets PIN-dependent auxin transport during canalization",
+      "authors_or_org": "Jakub Hajný et al.",
+      "year": 2020,
+      "domain": "plant_biology",
+      "source_type": "primary_paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
+      "doi": "10.1126/science.aba3178",
+      "arxiv_id": null,
+      "pmcid": "PMC7116426",
+      "open_access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "オーキシン信号と方向性輸送のフィードバックに関わる分子を調べた実験。",
+        "流れ・輸送方向・維管束形成を結びつける限定された生物学的機構。"
+      ],
+      "does_not_support": [
+        "流れだけで全植物の形が説明されるとはいえない。",
+        "この実験はトーラスが樹木の生成原因であると検証したものではない。"
+      ],
+      "relevance": [
+        "流れが形を変える",
+        "自己組織化",
+        "フィードバック"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "PMC本文をWeb確認。生理学的・遺伝学的条件を読む。BioC個別API応答・PDF保存は未実施。",
+      "keywords": [
+        "auxin canalization",
+        "PIN",
+        "CAMEL CANAR"
+      ],
+      "priority": 1,
+      "automated_access_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7116426/unicode"
+    },
+    {
+      "id": "S012",
+      "title": "Branching principles of animal and plant networks identified by combining extensive data, machine learning and modelling",
+      "authors_or_org": "Alexander B. Brummer et al.",
+      "year": 2021,
+      "domain": "biological_networks",
+      "source_type": "primary_paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
+      "doi": "10.1098/rsif.2020.0624",
+      "arxiv_id": null,
+      "pmcid": "PMC7879751",
+      "open_access_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "動植物の分岐網について、共通点と系統的な違いを実データから比較している。",
+        "太さ・長さ・輸送や力学の制約に着目して形を定量比較できる。"
+      ],
+      "does_not_support": [
+        "似た分岐形だけで、全分野の生成方程式が同一とは結論できない。"
+      ],
+      "relevance": [
+        "分岐",
+        "共通原理",
+        "分野横断比較"
+      ],
+      "license_note": "PMCに論文CC BY 4.0の明記を確認。補助データには別途ライセンス確認が必要。本文・図は複製していない。",
+      "access_notes": "PMC抄録・本文・ライセンスをWeb確認。論文内の補助資料導線：https://doi.org/10.6084/m9.figshare.c.5238488 。補助データ・PDFは未取得。2026-11-20（Asia/Tokyo）にBioC個別APIを1回試行したがHTTP 429で停止し、本文は取得していない。記録：research/PREPARATION_VALIDATION.json。",
+      "keywords": [
+        "branching networks plant animal",
+        "transport scaling"
+      ],
+      "priority": 1,
+      "automated_access_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7879751/unicode"
+    },
+    {
+      "id": "S013",
+      "title": "Tropical Cyclone Structure",
+      "authors_or_org": "NOAA JetStream",
+      "year": null,
+      "domain": "atmospheric_science",
+      "source_type": "official_education",
+      "url": "https://www.noaa.gov/jetstream/tropical/tropical-cyclone-introduction/tropical-cyclone-structure",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.noaa.gov/jetstream/tropical/tropical-cyclone-introduction/tropical-cyclone-structure",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "台風の目・眼壁・流入・上昇・流出・中心付近の下降を区別できる。"
+      ],
+      "does_not_support": [
+        "台風を標準的な幾何学トーラスと無条件に同一視できない。",
+        "目の比較的弱い風は、中心がエネルギーゼロであることを意味しない。"
+      ],
+      "relevance": [
+        "渦",
+        "中心",
+        "流れの断面"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "NOAA公式本文と断面図へのリンクを確認。図は未ダウンロード。台風の一次観測データは本項には含めていない。",
+      "keywords": [
+        "hurricane eye eyewall",
+        "secondary circulation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "S014",
+      "title": "Special relativity / Elementary Tour part 5: Spacetime",
+      "authors_or_org": "Max Planck Institute for Gravitational Physics / Einstein Online",
+      "year": null,
+      "domain": "relativity",
+      "source_type": "official_education",
+      "url": "https://www.einstein-online.info/en/spacetime/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.einstein-online.info/en/spacetime/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "光円錐は時間と空間を用いて因果的到達可能性を表す。",
+        "過去から現在へ、現在から未来へという因果の方向を確認できる。"
+      ],
+      "does_not_support": [
+        "光円錐の砂時計形は空間の渦や宇宙の中心の写真ではない。"
+      ],
+      "relevance": [
+        "砂時計",
+        "光円錐",
+        "表現の混同防止"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "Web検索・閲覧による確認。Codex実行環境からの到達・全文ダウンロードは未確認。",
+      "keywords": [
+        "light cone",
+        "causal structure",
+        "spacetime"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S015",
+      "title": "Planck 2015 results. XVIII. Background geometry and topology of the Universe",
+      "authors_or_org": "Planck Collaboration",
+      "year": 2016,
+      "domain": "cosmology",
+      "source_type": "primary_paper",
+      "url": "https://arxiv.org/abs/1502.01593",
+      "doi": "10.1051/0004-6361/201525829",
+      "arxiv_id": "1502.01593",
+      "pmcid": null,
+      "open_access_url": "https://arxiv.org/abs/1502.01593",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "3トーラス等の宇宙トポロジーを観測から制約する方法。",
+        "検討したモデル・規模の範囲でcompact topologyを検出しなかった。"
+      ],
+      "does_not_support": [
+        "宇宙が外から見た巨大なドーナツ状流体であるという主張ではない。",
+        "非検出は、全規模・全トポロジーの排除ではない。"
+      ],
+      "relevance": [
+        "T3",
+        "宇宙",
+        "観測制約"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "arXiv抄録・v2（2016-06-06）を確認。元題は2015 results、出版年は2016。PDF・CMB実データは未取得。",
+      "keywords": [
+        "Planck topology cubic torus",
+        "matched circles"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S016",
+      "title": "Cosmic topology. Part I. Limits on orientable Euclidean manifolds from circle searches",
+      "authors_or_org": "Pip Petersen et al. / COMPACT Collaboration",
+      "year": 2023,
+      "domain": "cosmology",
+      "source_type": "primary_paper",
+      "url": "https://arxiv.org/abs/2211.02603",
+      "doi": "10.1088/1475-7516/2023/01/030",
+      "arxiv_id": "2211.02603",
+      "pmcid": null,
+      "open_access_url": "https://arxiv.org/abs/2211.02603",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "WMAP/Planckのmatching circles非検出から、複数のEuclidean topologyに制約を与える。",
+        "観測者位置や形状により、許される範囲が単純な説明より広い可能性を示す。"
+      ],
+      "does_not_support": [
+        "観測されていないトポロジーを実在が証明されたものとして扱えない。"
+      ],
+      "relevance": [
+        "観測の限界",
+        "宇宙トポロジー",
+        "代替モデル"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "arXiv v4（2024-11-27）・JCAP掲載情報を確認。v3はErratumに伴う図の修正を含む。制約計算コードの提供を論文が述べるが、コード本体・データは未ダウンロード。",
+      "keywords": [
+        "COMPACT cosmic topology",
+        "orientable Euclidean manifolds"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "S017",
+      "title": "Webb Telescope & The Big Bang: A Short Q&A with John Mather",
+      "authors_or_org": "NASA Science / John C. Mather",
+      "year": null,
+      "domain": "cosmology",
+      "source_type": "official_education",
+      "url": "https://science.nasa.gov/mission/webb/big-bang-q-and-a/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://science.nasa.gov/mission/webb/big-bang-q-and-a/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "標準的な膨張宇宙を、空間内の一点からの爆発と混同しないための説明。"
+      ],
+      "does_not_support": [
+        "局所渦の中心を、そのまま宇宙全体の中心に拡張できない。",
+        "解説文だけから宇宙の大域的トポロジーを確定できない。"
+      ],
+      "relevance": [
+        "中心",
+        "観測者",
+        "宇宙の膨張"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "NASA公式ページをWeb確認。What Is The Big Bang?節を対象にし、サイトのニュース欄や時点依存の計画説明を研究根拠へ混ぜない。",
+      "keywords": [
+        "Big Bang no center",
+        "expanding universe"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "S018",
+      "title": "Complex Patterns in a Simple System",
+      "authors_or_org": "John E. Pearson",
+      "year": 1993,
+      "domain": "pattern_formation",
+      "source_type": "primary_paper",
+      "url": "https://arxiv.org/abs/patt-sol/9304003",
+      "doi": "10.1126/science.261.5118.189",
+      "arxiv_id": "patt-sol/9304003",
+      "pmcid": null,
+      "open_access_url": "https://arxiv.org/abs/patt-sol/9304003",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "単純な反応拡散モデルが、分裂する斑点など多様な時空間パターンを生む数値例。"
+      ],
+      "does_not_support": [
+        "生命に似た模様が出ても、それだけで生命・自己維持・トーラス原理が実証されたとはいえない。",
+        "周期境界を使った計算領域のトーラス性を、生成した模様のトーラス性と取り違えない。"
+      ],
+      "relevance": [
+        "代替生成機構",
+        "対照",
+        "反応拡散"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "arXiv抄録・Science DOIを確認。一次本文の数値条件を確認してから再現する。境界条件変更の対照を設ける。PDF保存は未実施。",
+      "keywords": [
+        "Gray Scott",
+        "reaction diffusion",
+        "pattern formation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "S019",
+      "title": "For Developers",
+      "authors_or_org": "PubMed Central / NCBI",
+      "year": 2026,
+      "domain": "access",
+      "source_type": "official_documentation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/tools/developers/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://pmc.ncbi.nlm.nih.gov/tools/developers/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "PMCが認める自動本文取得経路、ID変換、ライセンス確認の入口。"
+      ],
+      "does_not_support": [
+        "PMC掲載だけで全文再配布や無制限のスクレイピングが許可されるわけではない。"
+      ],
+      "relevance": [
+        "アクセス",
+        "PMC",
+        "利用条件"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "2026-08-20更新の公式文書を確認。現行自動取得はCloud/OAI-PMH/E-Utilities/BioC。旧OA Web Service廃止は https://pmc.ncbi.nlm.nih.gov/tools/oa-service/ の2026-08-25告知で確認。旧 oa.fcgi を新規アクセス手段に採用しない。",
+      "keywords": [
+        "PMC developers",
+        "BioC",
+        "OAI-PMH"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S020",
+      "title": "BioC API for PMC Open Access",
+      "authors_or_org": "NCBI / National Library of Medicine",
+      "year": null,
+      "domain": "access",
+      "source_type": "official_documentation",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/BioC-PMC/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/BioC-PMC/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "PMCID/PMIDを用いてBioC XMLまたはJSONを取得する公式仕様。"
+      ],
+      "does_not_support": [
+        "すべてのPMC論文が取得できるわけではない。",
+        "API取得成功は、取得本文の再配布許諾を自動的に与えない。"
+      ],
+      "relevance": [
+        "アクセス",
+        "機械可読全文"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "仕様本文を確認。書式は https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_[format]/[ID]/[encoding] 。formatはxml/json、encodingはunicode/ascii。OA SubsetおよびAuthor Manuscript Collectionを案内。個別論文のAPI応答は未確認。",
+      "keywords": [
+        "BioC PMC REST API",
+        "PMC XML JSON"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S021",
+      "title": "arXiv API User's Manual",
+      "authors_or_org": "arXiv",
+      "year": null,
+      "domain": "access",
+      "source_type": "official_documentation",
+      "url": "https://info.arxiv.org/help/api/user-manual.html",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://info.arxiv.org/help/api/user-manual.html",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "検索・ID指定・版指定・Atomメタデータ・PDFリンクの取得方法。"
+      ],
+      "does_not_support": [
+        "arXiv掲載が査読済みであるとは限らない。",
+        "公開PDFの閲覧可能性と再配布許諾は別。"
+      ],
+      "relevance": [
+        "アクセス",
+        "arXiv",
+        "版管理"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "公式マニュアルを確認。メタデータAPI基底は export.arxiv.org/api/query 。複数呼出しは少なくとも3秒程度の間隔を取るという公式案内を参照し、現行Terms of Useも確認する。API個別応答・PDF一括取得は未実施。",
+      "keywords": [
+        "arxiv API id_list",
+        "Atom metadata"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S022",
+      "title": "REST API",
+      "authors_or_org": "Crossref",
+      "year": null,
+      "domain": "access",
+      "source_type": "official_documentation",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "DOIから書誌・著者・ライセンス情報・訂正情報などのメタデータを確認する公式API。"
+      ],
+      "does_not_support": [
+        "メタデータは論文本文の代わりにならない。",
+        "メタデータ内の抄録にも著作権があり得る。"
+      ],
+      "relevance": [
+        "アクセス",
+        "DOI",
+        "書誌照合"
+      ],
+      "license_note": "閲覧可能性と再配布許諾は別。本文・図・PDFはリポジトリへ複製していない。",
+      "access_notes": "公式仕様を確認。https://api.crossref.org/works/{doi} を利用し、DOIを適切にURLエンコードする。無登録で公開APIを利用できる。mailtoはユーザーが明示設定した場合だけ使い、個人情報を推定して送らない。個別API応答は未確認。",
+      "keywords": [
+        "Crossref REST works DOI",
+        "metadata"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "S023",
+      "title": "Ripser: efficient computation of Vietoris–Rips persistence barcodes",
+      "authors_or_org": "Ulrich Bauer",
+      "year": 2021,
+      "domain": "computational_topology",
+      "source_type": "primary_paper",
+      "url": "https://arxiv.org/abs/1908.02518",
+      "doi": "10.1007/s41468-021-00071-5",
+      "arxiv_id": "1908.02518",
+      "pmcid": null,
+      "open_access_url": "https://arxiv.org/abs/1908.02518",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "点群・距離行列からpersistent homology/cohomologyを計算する手法と再現用ソフト。"
+      ],
+      "does_not_support": [
+        "バーコードだけで対象の物理的生成機構が同定されるわけではない。",
+        "有限標本・ノイズ・距離・前処理・次元削減による偽陽性を無視できない。"
+      ],
+      "relevance": [
+        "判定手段",
+        "位相的データ解析",
+        "トーラス検出"
+      ],
+      "license_note": "出版社版のCC BY 4.0表記と、論文が案内するRipserコードのMIT license表記を確認。使用するコード版のLICENSEを別途確認する。",
+      "access_notes": "arXiv v2と出版社の論文書誌を確認。実装公式導線 https://ripser.org/ 、リポジトリ https://github.com/Ripser/ripser 。本整備ではコードをダウンロード・インストール・実行していない。",
+      "keywords": [
+        "Ripser",
+        "Vietoris Rips persistence",
+        "point cloud"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "S024",
+      "title": "Two Worlds, Two Analemmas",
+      "authors_or_org": "Robert Nemiroff and Jerry Bonnell / NASA Astronomy Picture of the Day",
+      "year": 2025,
+      "domain": "astronomy",
+      "source_type": "official_education",
+      "url": "https://science.nasa.gov/image-article/apod-2025-june-21-two-worlds-two-analemmas/",
+      "doi": null,
+      "arxiv_id": null,
+      "pmcid": null,
+      "open_access_url": "https://science.nasa.gov/image-article/apod-2025-june-21-two-worlds-two-analemmas/",
+      "access_status": "web_verified",
+      "verified_at": "2026-11-20",
+      "supports": [
+        "一定の場所・時刻から繰り返し見た太陽の位置は、地軸の傾きと軌道離心率に応じたアナレンマを描く。",
+        "地球の8字と火星の涙滴形を比較し、観測条件・軌道条件による模様の違いを調べられる。"
+      ],
+      "does_not_support": [
+        "見かけの8字は、宇宙全体がトーラスである証拠にはならない。",
+        "太陽のアナレンマの説明だけで月の見かけの軌跡や惑星の全模様を説明済みとはいえない。"
+      ],
+      "relevance": [
+        "アナレンマ",
+        "投影",
+        "観測条件",
+        "動画の主張を確かめる"
+      ],
+      "license_note": "説明文と図の利用条件を別々に確認する。掲載された地球の写真は第三者のCopyright表示あり。画像の転載・保存は行っていない。",
+      "access_notes": "NASA公式本文をWeb取得で確認。記事日付2025-06-21。地球と火星の比較および撮影方法を読む。元画像・観測データのダウンロードは未実施。動画が示す月や惑星の個別図は、別途原典と観測条件の確認が必要。",
+      "keywords": [
+        "analemma",
+        "axial tilt",
+        "orbital eccentricity",
+        "Mars Earth",
+        "apparent solar motion"
+      ],
+      "priority": 1
+    }
+  ]
+}
