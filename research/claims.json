@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "root_and_vortex_evidence",
+  "stage": "tracer_path_history_and_formation",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -42,17 +42,22 @@
     "E35",
     "E36",
     "E37",
-    "E38"
+    "E38",
+    "E39",
+    "E40",
+    "E41",
+    "E42",
+    "E43"
   ],
-  "independent_external_data_reanalyses": 2,
+  "independent_external_data_reanalyses": 3,
   "evidence_fields": {
     "literature_notes": "今回の閲読段階を記録したカード。パスはリポジトリ基準。",
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
-    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。"
   },
   "claims": [
@@ -383,9 +388,15 @@
           "role": "seedling_clustered_reporter_contrasts",
           "path": "research/results/E38/summary.json",
           "finding": "67株の早期原基。第I段階の記録法間の処置効果差は+0.875細胞、95%個体単位区間+0.255〜+1.490。"
+        },
+        {
+          "experiment_id": "E40",
+          "role": "outer_passage_vs_ordinary_tracer",
+          "path": "research/results/E40/summary.json",
+          "finding": "全領域の通常標識量が同じになる別経路を比較。外層の通過を記録すると、基本条件の初回帰還量は6.88%対0.14%。模型に限る。"
         }
       ],
-      "next_action": "同じ根で成熟皮層細胞長と伸長を測って細胞生産率を揃え、外層を経た同じ標識の再到達が準備信号・初回分裂・出現側根に与える影響を、前向き輸送と局所補充を対照にして比べる。",
+      "next_action": "同じ根で外層を経た天然IAAの出発領域への帰還と、伸長・成熟皮層細胞長・準備信号・初回分裂・出現側根を記録する。前向き輸送と局所補充をそろえる。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
@@ -398,7 +409,8 @@
         "research/notes/E24_E26_root_tissue_evidence.md",
         "research/notes/E27_E29_root_reflux_literature.md",
         "research/notes/E30_E32_root_clock_evidence.md",
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -698,9 +710,15 @@
           "role": "common_driven_transport_power_balance",
           "path": "research/results/E37/summary.json",
           "finding": "線形抵抗網で、定常の仕事率の和が散逸に等しい。無駆動の閉路と切断した閉網の定常流束はゼロ。圧力・電気・化学輸送の変数で一致。"
+        },
+        {
+          "experiment_id": "E43",
+          "role": "matched_kinetic_energy_pathway_comparison",
+          "path": "research/results/E43/summary.json",
+          "finding": "事前に与えた三次元トーラス殻で点ごとの運動エネルギーをそろえ、流れの方向と帰路を変えて材料の分布と生成量を比較。帰路の働きを外部補充で再現できた。"
         }
       ],
-      "next_action": "根で同じ標識の帰還と成長の時系列を照合する。物理では同時刻・同じ境界で渦輪の量と駆動をそろえて将来の観測を予測し、形やエネルギーの共通式の適用範囲を調べる。",
+      "next_action": "根で天然IAAの外層通過と帰還を追う。発生では局所の形が現れる前の流束と仕事を測り、三次元循環を変えた時の形を予測する。渦輪では時刻・境界・駆動をそろえた量を比較する。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -718,7 +736,8 @@
         "research/notes/E24_E26_root_tissue_evidence.md",
         "research/notes/E27_E29_root_reflux_literature.md",
         "research/notes/E30_E32_root_clock_evidence.md",
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1186,12 +1205,19 @@
           "role": "published_root_and_leaf_interventions",
           "path": "research/results/E18/summary.json",
           "finding": "同一位置の側根と葉の発生を対照と照合。葉は14/73と10/55、擬似処置は0/26と0/28。"
+        },
+        {
+          "experiment_id": "E42",
+          "role": "embryo_level_reanalysis_of_mechanical_intervention",
+          "path": "research/results/E42/summary.json",
+          "finding": "ゼブラフィッシュの脊索切除で、内腔中心の移動速度と上皮細胞の頂端幅の前後差が小さくなった。内腔の形状比は群間差を判定できなかった。"
         }
       ],
-      "next_action": "器官の初期位置が変わる前の三次元流れと機械刺激を観測し、閉じた循環の効果を方向性だけの効果と比べる。",
+      "next_action": "器官の形が変わる前の三次元の流れと境界の仕事を測り、流れの閉路の変更と周囲組織からの直接作用を比べる。",
       "literature_notes": [
         "research/notes/E16_developmental_forces.md",
-        "research/notes/E18_plant_organ_placement.md"
+        "research/notes/E18_plant_organ_placement.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1238,10 +1264,18 @@
           "role": "allocation_with_capacity",
           "path": "research/results/E19/grid512/summary.json",
           "finding": "固定率の2地点の材料配分比は開・閉で同じ。有限容量では下流側の配分が52.59%から69.02%。"
+        },
+        {
+          "experiment_id": "E43",
+          "role": "matched_energy_growth_proxy",
+          "path": "research/results/E43/summary.json",
+          "finding": "等しい運動エネルギー密度でも流れの向きによって材料分布は変わった。閉路の帰り分を開路から補充すると閉路の数値を再現。"
         }
       ],
       "next_action": "循環と貫流の境界条件の差を管理し、実測の再流入、資源濃度、供給量から成長位置を事前予測する。エネルギーの仕事率を独立に測る。",
-      "literature_notes": [],
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
       "tested_subclaims": [
         {
           "statement": "先行するトーラス状流れを反転すると、同じエネルギー密度のもとで取り込み重心が半径の2%以上変わる。",
@@ -1385,12 +1419,19 @@
           "role": "published_directional_perturbation",
           "path": "research/results/E33/summary.json",
           "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
+        },
+        {
+          "experiment_id": "E39",
+          "role": "measured_identity_of_applied_fluorescent_probe",
+          "path": "research/results/E39/summary.json",
+          "finding": "投与した2,4-D蛍光誘導体と遊離した2,4-Dは別に定量された。根全体をまとめた測定で、組織間の移動経路は未測定。"
         }
       ],
       "next_action": "標識を同じ根で追い、外層を経たものが中心側へ再流入する量と、後の原基・出現した側根を測る。",
       "literature_notes": [
         "research/notes/E21_polar_auxin_and_branching.md",
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1441,12 +1482,19 @@
           "role": "matched_supply_counterexample_with_first_pass_tracer",
           "path": "research/results/E28/summary.json",
           "finding": "初回帰還を待つ条件で生産率0.5→1.5に対し頻度0.190→0.386、間隔2.63→3.89細胞分。同じ待ち時間を与えた独立供給が両者を再現。"
+        },
+        {
+          "experiment_id": "E40",
+          "role": "matched_ordinary_tracer_counterexample",
+          "path": "research/results/E40/summary.json",
+          "finding": "通常の標識量が全時刻・全区画で一致する二つの模型では、外層通過時の標識と初回帰還を組み合わせると外層を経る帰路が識別できる。"
         }
       ],
-      "next_action": "Mellorの原形質連絡を候補の通路とし、成長率と外側への初回の流れを測ったうえで外層からの標識再到達と準備シグナルを追う。開いた独立供給との違いを検査する。",
+      "next_action": "同じ天然IAAの化学形を確認し、外層を経たことを識別する標識と初回帰還を組み合わせる。内部経路との取り違えと代謝を別に見積もる。",
       "literature_notes": [
         "research/notes/E21_polar_auxin_and_branching.md",
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1940,11 +1988,18 @@
           "role": "published_directional_perturbation",
           "path": "research/results/E33/summary.json",
           "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
+        },
+        {
+          "experiment_id": "E39",
+          "role": "chemical_provenance_limit",
+          "path": "research/results/E39/summary.json",
+          "finding": "蛍光誘導体とその生成物が別の化学形として定量される例を確認。中心柱の蛍光応答からは移動した分子の同一性と帰還経路を確定できない。"
         }
       ],
       "next_action": "同じ根の外側と中心の標識の時系列をそろえ、特定の経路と原形質連絡の作用を比較する。",
       "literature_notes": [
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E39_E43_path_and_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2144,8 +2199,279 @@
           "status": "not_identifiable"
         }
       ]
+    },
+    {
+      "id": "H39",
+      "statement": "根に投与した蛍光性オーキシン誘導体と、そこから生じた遊離化合物の量を別々に測れる。",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの根全体をまとめたLC–MS/MS。FluorA I・IIと遊離2,4-Dの公表図2A/B。天然IAAの標識とは化学形が異なる。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E39"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1111/nph.17183"
+      ],
+      "evidence_role": "四つの時点の公表値を抽出し、2成分のうちの遊離型の割合を求めた。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E39",
+          "role": "probe_metabolite_identity_reanalysis",
+          "path": "research/results/E39/summary.json",
+          "finding": "3時間の遊離2,4-Dは約22・29 pmol/50根。測定2成分中の遊離型は5.7%・5.4%。"
+        }
+      ],
+      "next_action": "天然IAAの化学形と空間的な経路の記録を、根の同じ領域と時刻で照合する。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "根全体の化学測定から、同じ分子が外層を通って根の中心側に戻ったことを判定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H40",
+      "statement": "普通の標識が全領域で同じ時系列を示しても、外層を経た履歴と出発領域への初回帰還から帰路を識別できる条件がある。",
+      "status": "supported_within_scope",
+      "scope": "初期投入量が同じ保存型の輸送模型。二枝が等量・同じ率で輸送される場合。規格化時間とGaussian雑音の設定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E40"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "全時刻で等しい通常標識の解析式を数値と照合。外層標識と初回帰還の区別を81条件で検査した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E40",
+          "role": "route_history_assay_design",
+          "path": "research/results/E40/summary.json",
+          "finding": "通過場所の取り違え2%における基本条件の初回帰還は6.88%対0.14%。感度80%、誤検出5%の基準で標準偏差の上限は投入量の1.66%。"
+        }
+      ],
+      "next_action": "生体で使える経路選択性と標識の化学的同一性を確認し、実測できる量が模型での識別条件を満たすか調べる。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "外層を経る回帰と内部の回帰を、通常の標識の全時系列から区別できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H41",
+      "statement": "強い後期の細胞質流が、すでに指定された卵母細胞後端での局在と、その後の極細胞形成に寄与する。",
+      "status": "supported_within_scope",
+      "scope": "ショウジョウバエのKhc-mutAとKHCの部分補完。早期のStaufen局在、後期の蛍光曲線、極細胞、孵化を段階と分母ごとに比較。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E41"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1083/jcb.201709174",
+        "https://doi.org/10.1038/s41567-023-02372-1"
+      ],
+      "evidence_role": "Luらの図3、図4C、表1を再集計。Duttaらの三次元計算とライブ像は流れの候補の根拠。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E41",
+          "role": "staged_flow_perturbation_and_partial_rescue",
+          "path": "research/results/E41/summary.json",
+          "finding": "早期の局在は流れを弱めても約22/23卵母細胞で確認。後期には蛍光曲線の幅が増した。流れの部分補完群の極細胞は図の値52.8%、全胚の孵化は0.8%。"
+        }
+      ],
+      "next_action": "局在前と局在後で三次元流の経路と仕事を記録し、係留と早期輸送を測りながら流れの作用を比べる。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "強い後期の細胞質流が、早期の後端局在に必須である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "この試験で三次元トーラス成分のみの因果効果を推定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H42",
+      "statement": "ゼブラフィッシュの脊索切除は、左右形成器官の移動と上皮細胞の頂端幅の前後差に影響する。",
+      "status": "supported_within_scope",
+      "scope": "Mannaらの公開実験。胚ごとに集計した体節5〜7の内腔中心の移動速度と、頂端幅の前後差。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E42"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1073/pnas.2418111122",
+        "https://doi.org/10.5061/dryad.w9ghx3g2h"
+      ],
+      "evidence_role": "個体を単位に再標本化し、未処置・擬似切除等の対照と比較。上皮の変形と器官全体の動きを測る。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E42",
+          "role": "embryo_clustered_motion_and_cell_shape",
+          "path": "research/results/E42/summary.json",
+          "finding": "脊索切除で内腔中心の移動速度は−0.440 µm/分、上皮細胞の頂端幅の前後差は−4.05 µm。95%区間はそれぞれ−0.620〜−0.270と−7.53〜−0.55。"
+        }
+      ],
+      "next_action": "形の変化より前の内部の流速と内外の力を同じ胚で測る。内腔形状比の推定精度と後方組織の速度予測を別のデータで検査する。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "内腔の前後／左右の形状比の変化方向を各介入で判定できる。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H43",
+      "statement": "三次元で点ごとの運動エネルギー密度が同じでも、流れる方向と供給の帰路が後の材料の分布に影響し得る。",
+      "status": "supported_within_scope",
+      "scope": "外部から設定したトーラス殻の非圧縮定常流と受動的に輸送・取り込まれる材料。二方向は各点で同じ速さ。圧力一定の非粘性参照場。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E43"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "有限体積で輸送し、質量収支と閉路の解析解を比較した。閉路、帰路切断、同量を外から補充する場合を照合。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E43",
+          "role": "equal_kinetic_density_distinct_flux_and_material",
+          "path": "research/results/E43/summary.json",
+          "finding": "二つの閉路で材料量は同じ92.27%、広がる方向は別。帰路を切ると24.14%、閉路の戻る分を開路に補充すると閉路の分布が再現された。"
+        }
+      ],
+      "next_action": "既知の機械エネルギーの入出力を持つ物理実験で、局所の速度分布を照合し、流れる経路と材料の成長分布を比較する。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "この模型でスカラーの運動エネルギー密度から材料分布を一意に決められる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H44",
+      "statement": "同じ天然IAA分子が根端から外層を経て、内側の出発領域に帰還する。",
+      "status": "open",
+      "scope": "シロイヌナズナの根端付近。投与した同じ標識の天然IAAの化学形と一周の経路を同じ根で記録する。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E39",
+        "E40"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1111/nph.17183",
+        "https://doi.org/10.1038/s41586-021-03425-2"
+      ],
+      "evidence_role": "輸送方向の観測、組織ごとの応答、濃度センサー、根全体の化学測定は判別に必要な要素。外層を経た天然IAAの帰還量は未取得。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E39",
+          "role": "limit_of_probe_identity_evidence",
+          "path": "research/results/E39/summary.json",
+          "finding": "投与した蛍光誘導体と遊離型が別に測定された。測定化学形は天然IAAとは異なる。"
+        },
+        {
+          "experiment_id": "E40",
+          "role": "calibration_only",
+          "path": "research/results/E40/summary.json",
+          "finding": "外層の通過履歴がある場合の帰還量予測を、内部の経路と比較した。"
+        }
+      ],
+      "next_action": "時刻つきの化学形の確認と外層経由の確認を組み合わせ、出発領域への初回帰還を前向き輸送・別経路・局所補充と比べる。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "実測で天然IAAが外層を経て出発領域に帰還する。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H45",
+      "statement": "生体で形が成立する前からある三次元トーラス状エネルギー循環が、後の形の形成を先導する。",
+      "status": "open",
+      "scope": "対象の器官または身体の形と形成開始時刻を指定。三次元の循環の経路、単位のあるエネルギー流束と組織への仕事、経路を変えた後の形を測る。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E41",
+        "E42",
+        "E43"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1083/jcb.201709174",
+        "https://doi.org/10.1038/s41567-023-02372-1",
+        "https://doi.org/10.1073/pnas.2418111122"
+      ],
+      "evidence_role": "既存の介入は局所の配置と形の形成への流れや力の作用を支持する。先行するトーラス状エネルギー流束の固有効果は未測定。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E41",
+          "role": "timing_and_rescue_limit",
+          "path": "research/results/E41/summary.json",
+          "finding": "卵母細胞の強い後期の流れを弱めても早期の後端局在は起こった。部分補完は極細胞と孵化に異なる結果を与えた。"
+        },
+        {
+          "experiment_id": "E42",
+          "role": "local_tissue_mechanical_effect",
+          "path": "research/results/E42/summary.json",
+          "finding": "既存の周囲組織への介入で、器官の移動と上皮細胞の形が変わった。"
+        },
+        {
+          "experiment_id": "E43",
+          "role": "calibration_only",
+          "path": "research/results/E43/summary.json",
+          "finding": "人工トーラス殻に与えた流れの方向と資源の帰路を比べ、等しい運動エネルギーでも後の材料分布が変わる条件を示した。"
+        }
+      ],
+      "next_action": "形が現れる前に三次元の物質経路と圧力・粘性を含む機械エネルギーの収支を測定し、総供給を照合した経路介入で後の形を事前予測する。",
+      "literature_notes": [
+        "research/notes/E39_E43_path_and_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "生体を測った同一の試験で、三次元トーラス状エネルギー流束の時間的先行と後の形への因果効果を確認できる。",
+          "status": "open"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 22,
+  "published_measurement_reanalyses": 24,
   "archived_experimental_figure_array_reanalyses": 4
 }

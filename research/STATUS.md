@@ -1,6 +1,35 @@
-# 再開メモ　根の方向性と周期、循環エネルギーのE33〜E38まで実行済み
+# 再開メモ　根の分子の帰路と形に先行する流れのE39〜E43まで実行済み
 
-更新2026-11-20 UTC。E30〜E32の `131260e` を継承した。E33〜E38で、他の生体試験と流体の測定に対象を広げた。[第11回報告](../docs/20_RETURN_AND_ENERGY_REPORT.md)・[全38主張の台帳](claims.json)
+更新2026-11-20 UTC。E33〜E38を記録した `2e0659d` を継承した。今回、同じ分子の帰還、胚の局所的な形成、三次元の流れとエネルギーの経路を比較した。[第12回報告](../docs/21_PATH_HISTORY_AND_FORMATION_REPORT.md)・[全45主張の台帳](claims.json)
+
+## 第12回の結果と追試
+
+| 実験 | 主な結果 |
+|---|---|
+| [E39](results/E39/summary.json) | 根の公表化学測定から蛍光誘導体と遊離2,4-Dを別々に抽出。3時間で後者は両者の合計の約5.7%と5.4%。 |
+| [E40](results/E40/summary.json) | 普通の標識では全時刻を通じて区別できない帰路を、外層を通った履歴で判別。通過場所の取り違え2%で、基本条件の初回帰還は投入量の6.88%と0.14%。 |
+| [E41](results/E41/summary.json) | 細胞質流を弱めた卵母細胞で早期の後端の指標が確認され、後期には局在が広がった。部分補完群の極細胞は図で52.8%、孵化は全胚の0.8%。 |
+| [E42](results/E42/summary.json) | 胚単位の公開データ。脊索切除で内腔中心の移動速度は−0.440 µm/分、頂端幅の前後差は−4.05 µm。内腔の形状比には幅のある区間が残った。 |
+| [E43](results/E43/summary.json) | 三次元の定常流の局所エネルギーをそろえても材料の分布の向きが変わった。資源の帰路を切ると材料量は92.27%から24.14%になり、補充で閉路の結果を再現できた。 |
+
+実験登録は `a55ca44` と `8105345`。原著図表の数値を抽出する前にE41の評価項目とE42の集計単位を `319fd68` で追記した。計算の版は `81350a3`。Gitから展開したコードで公開原本4件を再取得し、5つの数値結果と図2点がバイト単位で一致した。今回の検証21項目、既存テスト22件、過去の11組169項目のハッシュも確認した。[実行ログ](results/PATH_FORMATION_RUN.json)・[今回のSHA-256](results/PATH_FORMATION_SHA256SUMS)
+
+原本の版、ワークブックのハッシュ、一括取得コマンドは取得記録にある。既設の環境がない場合は依存を入れて実行する。[取得と再実行](access/2026-11-20-path-and-formation.md#取得と再実行)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt \
+  -r experiments/E29_growth_holdout/requirements.txt \
+  -r experiments/E23_nitrate_pin2/requirements.txt
+run_dir=$(mktemp -d)
+python3 -m experiments.run_path_formation --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/PATH_FORMATION_SHA256SUMS | sha256sum -c -
+```
+
+上の手順は `data/raw/path_and_formation/` に原本を置く場合。別の場所は `--raw` で指定する。H44の判定には、天然IAAの化学形と外層を通った履歴を同じ根で記録し、内部の別経路や局所の補充と比較する。H45の判定には、形成する器官を定め、出現前の三次元の流れと仕事の収支、循環経路を選択的に変えたあとの形を同じ計画で追う。[測定と対照](../docs/21_PATH_HISTORY_AND_FORMATION_REPORT.md#二つの仮説を次に判定する測定)
+
+## 引き継いだ第11回
+
+E30〜E32の `131260e` を継承した。E33〜E38で、他の生体試験と流体の測定に対象を広げた。[第11回報告](../docs/20_RETURN_AND_ENERGY_REPORT.md)
 
 ## 第11回の結果と追試
 
