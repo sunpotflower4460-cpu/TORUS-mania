@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E66を実行済み。第16回はゼブラフィッシュの三次元の帰還候補を、同じ撮影からの別追跡版と体積像で照合した。ニワトリ胚の介入では表面の回転と原条の伸長を変える条件、先行する外部張力が後の体軸に与える影響を確かめた。根では、帰還したIAAの経路と抱合履歴をどう読めば一周の判定に届くかを数値化した。[第16回報告](docs/25_EMBRYO_RETURNS_AND_ROOT_LABELS_REPORT.md)・[一次資料の届いた範囲](research/notes/E61_E66_embryo_history_evidence.md)・[実験の再開点](research/STATUS.md)
+E01〜E71を実行済み。第17回は、根への標識の再取り込み、根端での化学変換、短時間に取り込まれたIAAの化学形を確認した。胚では前回より細かい体積像を使い、核候補の一周の判定を見直した。胚帯の伸長の公表介入と、同じ物質トーラスに機械仕事が入る数値対照を加えた。[第17回報告](docs/26_IAA_REENTRY_AND_EMBRYO_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E67_E71_iaa_embryo_work_evidence.md)・[実験の再開点](research/STATUS.md)
 
 ## 準備時点での最初の作業
 
