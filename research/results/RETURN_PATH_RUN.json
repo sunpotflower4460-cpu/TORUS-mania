@@ -1,0 +1,79 @@
+{
+  "date_utc": "2026-11-20",
+  "source_commit": "816f38225ab89c569ff3eea2efbbb08eb6dad609",
+  "system": "Debian GNU/Linux 13 (trixie)",
+  "architecture": "x86_64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "pillow": "13.0.0",
+  "random_seeds": [],
+  "identical_clean_replay_files": 9,
+  "reextraction_of_figure_matches_frozen_input": true,
+  "checks_by_experiment": {
+    "E19": 12,
+    "E20": 3
+  },
+  "existing_unit_tests_passed": 22,
+  "first_run": {
+    "wall_s": 4.099,
+    "runs": [
+      {
+        "case": "E19_grid128",
+        "returncode": 0,
+        "wall_s": 0.294
+      },
+      {
+        "case": "E19_grid256",
+        "returncode": 0,
+        "wall_s": 0.54
+      },
+      {
+        "case": "E19_grid512",
+        "returncode": 0,
+        "wall_s": 1.078
+      },
+      {
+        "case": "E20",
+        "returncode": 0,
+        "wall_s": 1.184
+      },
+      {
+        "case": "figures",
+        "returncode": 0,
+        "wall_s": 1.002
+      }
+    ]
+  },
+  "clean_git_archive_replay": {
+    "wall_s": 4.179,
+    "runs": [
+      {
+        "case": "E19_grid128",
+        "returncode": 0,
+        "wall_s": 0.364
+      },
+      {
+        "case": "E19_grid256",
+        "returncode": 0,
+        "wall_s": 0.435
+      },
+      {
+        "case": "E19_grid512",
+        "returncode": 0,
+        "wall_s": 1.22
+      },
+      {
+        "case": "E20",
+        "returncode": 0,
+        "wall_s": 0.883
+      },
+      {
+        "case": "figures",
+        "returncode": 0,
+        "wall_s": 1.277
+      }
+    ]
+  }
+}

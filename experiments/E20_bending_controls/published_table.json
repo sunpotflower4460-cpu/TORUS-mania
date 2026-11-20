@@ -1,0 +1,19 @@
+{
+  "source": "Kircher & Schopfer (2016), Table 1 and Materials and methods",
+  "doi": "10.1093/jxb/erv541",
+  "units": "lateral roots per seedling",
+  "independent_experiments": 10,
+  "seedlings_per_treatment_per_experiment": [8, 10],
+  "error_type": "standard error, as described in Methods",
+  "table_columns": ["intact", "intact_bent", "cut", "cut_bent"],
+  "regions": {
+    "five_mm_above_cutting_or_mark": [[3.3, 0.1], [3.6, 0.2], [5.1, 0.3], [5.4, 0.2]],
+    "total_above_cutting_or_mark": [[13.2, 0.4], [13.4, 0.4], [15.4, 0.7], [15.8, 1.1]]
+  },
+  "reported_convex_position": {
+    "bent_cut_and_intact": 1.0,
+    "unbent": 0.52,
+    "n_for_position_comparison": null,
+    "evidence": "Table 1 legend. Group counts for this particular positioning observation are unspecified."
+  }
+}
