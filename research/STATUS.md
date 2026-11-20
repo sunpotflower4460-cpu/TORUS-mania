@@ -1,6 +1,34 @@
-# 再開メモ　側根の準備シグナルと発生段階のE30〜E32まで実行済み
+# 再開メモ　根の方向性と周期、循環エネルギーのE33〜E38まで実行済み
 
-更新2026-11-20 UTC。E27〜E29の `b66b4bf` を継承した。別の公開生体試験で、小胞輸送の介入と側根予定部位（H30）、オーキシン応答と初回分裂以降の進行（H31）を確認した。模型では、同じ周期の一部が弱まる場合と、周期が変動して長くなる場合で、同じ部位の配列が生じた（H32）。[第10回報告](../docs/19_ROOT_CLOCK_REPORT.md)・[全32主張の台帳](claims.json)
+更新2026-11-20 UTC。E30〜E32の `131260e` を継承した。E33〜E38で、他の生体試験と流体の測定に対象を広げた。[第11回報告](../docs/20_RETURN_AND_ENERGY_REPORT.md)・[全38主張の台帳](claims.json)
+
+## 第11回の結果と追試
+
+| 実験 | 主な結果 |
+|---|---|
+| [E33](results/E33/summary.json) | 表皮で誘導したあと中心柱で読んだDR5の蛍光は、NPAで誘導単独の2.4%、1-NOAで88.2%。内側から外側では1-NOAで29.7%。 |
+| [E34](results/E34/summary.json) | 別の公開試験で野生型だけを参照し、4系統の周期を採点。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。 |
+| [E35](results/E35/summary.json) | 変異型の根の分岐数は野生型の穂木で中央値14→48。通常光の糖1→3%で主根長0.93→1.71 cm、出現側根密度の中央値は約0。 |
+| [E36](results/E36/summary.json) | オリフィスの比は終盤5/5が0.33±0.05。時間変化する装置の終盤は約0.254。オリフィスの3図から算出し直すと0.383（中央値）。 |
+| [E37](results/E37/summary.json) | 圧力・電気・化学ポテンシャルに共通する線形網の仕事率を照合。外部から供給のない受動閉路では、初期エネルギーを与えても定常の流束はゼロ。 |
+| [E38](results/E38/summary.json) | 67株の公表データ。第I段階の記録法間の処置効果差は+0.875細胞、2反復内の個体単位での再標本化で95%区間+0.255〜+1.490。 |
+
+E33〜E37の登録は `692e185`、E38の登録は `999c6d9`。E38は表の対応を診断した後、違いのある2株を除く感度分析を追記。計算の版は `44c9176`。新しい作業場所で原本11点を取得し、数値・図9点を再現。検証23項目、既存のテスト22件、過去のハッシュ160項目も照合済み。[実行ログ](results/RETURN_ENERGY_RUN.json)・[SHA-256](results/RETURN_ENERGY_SHA256SUMS)
+
+既設のPython環境がない場合は次で依存をそろえる。追試に使う原本の版・URL・一括取得コマンドは取得記録にある。E34の固定待ち時間は既存のE29の予測ファイルから読む。[取得と再実行](access/2026-11-20-return-and-energy.md#原本を一括で取得する)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt \
+  -r experiments/E29_growth_holdout/requirements.txt \
+  -r experiments/E23_nitrate_pin2/requirements.txt
+run_dir=$(mktemp -d)
+python3 -m experiments.run_return_energy --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/RETURN_ENERGY_SHA256SUMS | sha256sum -c -
+```
+
+上の実行は `data/raw/root_and_vortex/` に原本がある場合。別の保存先を使う場合は `--raw` で指定する。次に研究を進める際は、同じ根の成熟皮層細胞長・伸長速度と弱い信号を含む周期をそろえ、外側を経た同じ標識の内側への再到達を比較する。物理側では同時刻・同じ境界の速度計測から循環・力積・エネルギーをそろえ、駆動履歴を入力にして別条件の係数を予測する。[第11回報告](../docs/20_RETURN_AND_ENERGY_REPORT.md)
+
+第10回では小胞輸送の介入と側根予定部位（H30）、オーキシン応答と初回分裂以降の進行（H31）を確認した。同じ周期の一部が弱まる場合と、周期が変動して長くなる場合で、同じ部位の配列が生じることを模型で示した（H32）。[第10回報告](../docs/19_ROOT_CLOCK_REPORT.md)
 
 ## 第10回の結果と追試
 

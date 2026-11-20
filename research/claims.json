@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "root_priming_visibility_and_stage_progression",
+  "stage": "root_and_vortex_evidence",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -36,18 +36,24 @@
     "E29",
     "E30",
     "E31",
-    "E32"
+    "E32",
+    "E33",
+    "E34",
+    "E35",
+    "E36",
+    "E37",
+    "E38"
   ],
-  "independent_external_data_reanalyses": 1,
+  "independent_external_data_reanalyses": 2,
   "evidence_fields": {
     "literature_notes": "今回の閲読段階を記録したカード。パスはリポジトリ基準。",
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
-    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。"
   },
   "claims": [
     {
@@ -231,7 +237,11 @@
         "E29",
         "E30",
         "E31",
-        "E32"
+        "E32",
+        "E33",
+        "E34",
+        "E35",
+        "E38"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -256,9 +266,14 @@
         "https://doi.org/10.1242/dev.181669",
         "https://doi.org/10.1016/j.devcel.2021.07.005",
         "https://doi.org/10.1126/science.abb7250",
-        "https://doi.org/10.1126/sciadv.abd4722"
+        "https://doi.org/10.1126/sciadv.abd4722",
+        "https://doi.org/10.1038/s41467-021-21802-3",
+        "https://doi.org/10.1093/plphys/kiaf382",
+        "https://doi.org/10.1093/plphys/kiaa032",
+        "https://doi.org/10.1093/genetics/iyag120",
+        "https://doi.org/10.5061/dryad.g4f4qrg51"
       ],
-      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。 別の研究で小胞輸送に関わる介入により予定部位の密度が変わり、始原細胞マーカーと初回分裂後の器官が異なる反応を示した。",
+      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。 別の研究で小胞輸送に関わる介入により予定部位の密度が変わり、始原細胞マーカーと初回分裂後の器官が異なる反応を示した。 表皮のオーキシン合成後に中心柱の応答が出て、阻害剤で方向別に変わる。別試料の成長介入の周期を二待ち時間式で予測した。野生型の地上部を接ぐと変異型の根の分岐が増えた。",
       "independently_reproduced": false,
       "results": [
         {
@@ -344,9 +359,33 @@
           "role": "counterexample",
           "path": "research/results/E32/summary.json",
           "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
+        },
+        {
+          "experiment_id": "E33",
+          "role": "published_directional_perturbation",
+          "path": "research/results/E33/summary.json",
+          "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
+        },
+        {
+          "experiment_id": "E34",
+          "role": "held_out_treatments_in_separate_study",
+          "path": "research/results/E34/summary.json",
+          "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
+        },
+        {
+          "experiment_id": "E35",
+          "role": "reciprocal_grafts_and_resource_response",
+          "path": "research/results/E35/summary.json",
+          "finding": "変異型の根で穂木を野生型に替えると総分岐数は中央値約14→48。通常光のショ糖1→3%で変異型の主根長0.93→1.71 cm、出現側根密度の中央値は約0。"
+        },
+        {
+          "experiment_id": "E38",
+          "role": "seedling_clustered_reporter_contrasts",
+          "path": "research/results/E38/summary.json",
+          "finding": "67株の早期原基。第I段階の記録法間の処置効果差は+0.875細胞、95%個体単位区間+0.255〜+1.490。"
         }
       ],
-      "next_action": "同じ根で成長率を照合し、弱いピークも含む準備シグナル、予定部位の保持、初回分裂、側根出現を測る。外層を経た同じ標識の再到達と各段階に対する効果を局所の独立した補充と比較する。",
+      "next_action": "同じ根で成熟皮層細胞長と伸長を測って細胞生産率を揃え、外層を経た同じ標識の再到達が準備信号・初回分裂・出現側根に与える影響を、前向き輸送と局所補充を対照にして比べる。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
@@ -358,7 +397,8 @@
         "research/notes/E23_pin2_nitrate.md",
         "research/notes/E24_E26_root_tissue_evidence.md",
         "research/notes/E27_E29_root_reflux_literature.md",
-        "research/notes/E30_E32_root_clock_evidence.md"
+        "research/notes/E30_E32_root_clock_evidence.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -540,12 +580,21 @@
         "E29",
         "E30",
         "E31",
-        "E32"
+        "E32",
+        "E33",
+        "E34",
+        "E36",
+        "E37"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1186/s13036-018-0126-3"
+        "https://doi.org/10.1186/s13036-018-0126-3",
+        "https://doi.org/10.1038/s41467-021-21802-3",
+        "https://doi.org/10.1093/plphys/kiaf382",
+        "https://doi.org/10.1017/jfm.2022.275",
+        "https://doi.org/10.1017/jfm.2021.36",
+        "https://doi.org/10.1017/flo.2022.9"
       ],
-      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。 予定部位の時系列は、弱いピークのある一定周期と、変動する遅い周期でも一致し得る。",
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。 予定部位の時系列は、弱いピークのある一定周期と、変動する遅い周期でも一致し得る。 正の抵抗を持つ線形網で圧力・電気・化学輸送に仕事率の共通式。輪の運動エネルギーの固定係数は別装置に一般化できなかった。植物の成長と渦輪を同じ生成則で予測した試験は残る。",
       "independently_reproduced": false,
       "results": [
         {
@@ -625,9 +674,33 @@
           "role": "counterexample",
           "path": "research/results/E32/summary.json",
           "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
+        },
+        {
+          "experiment_id": "E33",
+          "role": "published_directional_perturbation",
+          "path": "research/results/E33/summary.json",
+          "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
+        },
+        {
+          "experiment_id": "E34",
+          "role": "held_out_treatments_in_separate_study",
+          "path": "research/results/E34/summary.json",
+          "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
+        },
+        {
+          "experiment_id": "E36",
+          "role": "transferred_dimensionless_energy_against_measurements",
+          "path": "research/results/E36/summary.json",
+          "finding": "固定値0.33±0.05にオリフィスの原著の主要5点すべて、時間変化する装置の終盤は0/2点。三図から組んだオリフィスのエネルギー予測誤差中央値13.8%。"
+        },
+        {
+          "experiment_id": "E37",
+          "role": "common_driven_transport_power_balance",
+          "path": "research/results/E37/summary.json",
+          "finding": "線形抵抗網で、定常の仕事率の和が散逸に等しい。無駆動の閉路と切断した閉網の定常流束はゼロ。圧力・電気・化学輸送の変数で一致。"
         }
       ],
-      "next_action": "閉路と開路が異なる標識再到達の予測を、同じ根での細胞生産率・弱いピークを含む準備信号・後の分岐へつなぐ。別分野へ同じ力学とエネルギーの式を適用する予測も独立データで評価する。",
+      "next_action": "根で同じ標識の帰還と成長の時系列を照合する。物理では同時刻・同じ境界で渦輪の量と駆動をそろえて将来の観測を予測し、形やエネルギーの共通式の適用範囲を調べる。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -644,7 +717,8 @@
         "research/notes/E23_pin2_nitrate.md",
         "research/notes/E24_E26_root_tissue_evidence.md",
         "research/notes/E27_E29_root_reflux_literature.md",
-        "research/notes/E30_E32_root_clock_evidence.md"
+        "research/notes/E30_E32_root_clock_evidence.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -864,7 +938,8 @@
       "planned_experiments": [
         "E09",
         "E10",
-        "E11"
+        "E11",
+        "E37"
       ],
       "evidence_urls": [
         "https://doi.org/10.1080/00029890.2002.11919870",
@@ -874,7 +949,7 @@
         "https://doi.org/10.1038/micronano.2017.82",
         "https://doi.org/10.1088/1367-2630/18/2/025001"
       ],
-      "evidence_role": "調和場の変分原理と閉形式、3格子の切断介入を照合。独立の装置仕様で公表磁場を予測し、超流動で穴の保持と循環の持続の関係を再計算。",
+      "evidence_role": "調和場の変分原理と閉形式、3格子の切断介入を照合。独立の装置仕様で公表磁場を予測し、超流動で穴の保持と循環の持続の関係を再計算。 E37は正の抵抗がある線形輸送網の定常の仕事率を扱う。調和場の静的な蓄積エネルギーに加え、閉じた経路と駆動の関係を別の条件で検証した。",
       "independently_reproduced": true,
       "results": [
         {
@@ -894,12 +969,19 @@
           "role": "scope_limit",
           "path": "research/results/E10/summary.json",
           "finding": "芯のみのMEMSインダクタンス、写真半径を用いた超流動回転率の中央値誤差57.3%、46.5%。両方とも事前基準に未達。"
+        },
+        {
+          "experiment_id": "E37",
+          "role": "common_driven_transport_power_balance",
+          "path": "research/results/E37/summary.json",
+          "finding": "線形抵抗網で、定常の仕事率の和が散逸に等しい。無駆動の閉路と切断した閉網の定常流束はゼロ。圧力・電気・化学輸送の変数で一致。"
         }
       ],
       "next_action": "同じ装置の閉経路を開閉し、圧力・流束・損失を独立測定できるデータでエネルギーの絶対値を比べる。",
       "literature_notes": [
         "research/notes/Cantarella_topology_energy.md",
-        "research/notes/E10_energy_observations.md"
+        "research/notes/E10_energy_observations.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1022,13 +1104,17 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E14"
+        "E14",
+        "E36"
       ],
       "evidence_urls": [
         "https://doi.org/10.1103/PhysRevE.54.889",
-        "https://doi.org/10.1038/s41467-021-26037-w"
+        "https://doi.org/10.1038/s41467-021-26037-w",
+        "https://doi.org/10.1017/jfm.2022.275",
+        "https://doi.org/10.1017/jfm.2021.36",
+        "https://doi.org/10.1017/flo.2022.9"
       ],
-      "evidence_role": "移動領域の収支を、固定領域、理想平面波、別パルス、格子と求積精度の変更で比較。TE場の重心速度をブーストの解析式と照合。",
+      "evidence_role": "移動領域の収支を、固定領域、理想平面波、別パルス、格子と求積精度の変更で比較。TE場の重心速度をブーストの解析式と照合。 別装置の渦輪では無次元エネルギーが異なった。各装置の設定と領域の定義、時刻をそろえた比較が必要。",
       "independently_reproduced": true,
       "results": [
         {
@@ -1042,12 +1128,19 @@
           "role": "moving_energy_exchange",
           "path": "research/results/E14/flow64/summary.json",
           "finding": "初期の領域内運動エネルギーに対し外向き移流30.56%、内向き13.10%。等値領域では方位渦度の輪候補が9時点で続いた。"
+        },
+        {
+          "experiment_id": "E36",
+          "role": "transferred_dimensionless_energy_against_measurements",
+          "path": "research/results/E36/summary.json",
+          "finding": "固定値0.33±0.05にオリフィスの原著の主要5点すべて、時間変化する装置の終盤は0/2点。三図から組んだオリフィスのエネルギー予測誤差中央値13.8%。"
         }
       ],
       "next_action": "時空間分解した電磁場またはPIV速度場から、同様の移動境界の流束を再計算する。",
       "literature_notes": [
         "research/notes/E14_energy_transport.md",
-        "research/notes/E11_toroidal_light.md"
+        "research/notes/E11_toroidal_light.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1262,15 +1355,17 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E21"
+        "E21",
+        "E33"
       ],
       "evidence_urls": [
         "https://doi.org/10.1104/pp.118.4.1369",
         "https://doi.org/10.1104/pp.122.2.481",
         "https://doi.org/10.1104/pp.104.900172",
-        "https://doi.org/10.1105/tpc.13.4.843"
+        "https://doi.org/10.1105/tpc.13.4.843",
+        "https://doi.org/10.1038/s41467-021-21802-3"
       ],
-      "evidence_role": "独立した方向別の標識試験と、輸送阻害後の密度および補充での回復を照合。公表表・図からの再集計であり、新しい生体試験は未実施。",
+      "evidence_role": "独立した方向別の標識試験と、輸送阻害後の密度および補充での回復を照合。公表表・図からの再集計であり、新しい生体試験は未実施。 根の層に特異的にオーキシン合成を誘導した公開測定で、外側から内側への応答も支持。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1284,11 +1379,18 @@
           "role": "corrected_directional_radiotracer",
           "path": "research/results/E21/summary.json",
           "finding": "Rashotteの別の二試験で野生型→eir1の標識IAAは根先から地上部へ6.18→4.40 fmol、根先へ7.96→7.39 fmol。2005年訂正の単位を採用。"
+        },
+        {
+          "experiment_id": "E33",
+          "role": "published_directional_perturbation",
+          "path": "research/results/E33/summary.json",
+          "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
         }
       ],
       "next_action": "標識を同じ根で追い、外層を経たものが中心側へ再流入する量と、後の原基・出現した側根を測る。",
       "literature_notes": [
-        "research/notes/E21_polar_auxin_and_branching.md"
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1544,12 +1646,14 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E27"
+        "E27",
+        "E33"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1242/dev.181669"
+        "https://doi.org/10.1242/dev.181669",
+        "https://doi.org/10.1038/s41467-021-21802-3"
       ],
-      "evidence_role": "公表されたモデル出力と指標の観測を図から再集計。原形質連絡を含むモデルは外側から内側への戻りを予測した。戻り流束は図の実測量ではない。",
+      "evidence_role": "公表されたモデル出力と指標の観測を図から再集計。原形質連絡を含むモデルは外側から内側への戻りを予測した。戻り流束は図の実測量ではない。 Huらは表皮から中心柱への応答を生体介入で報告。異なる部位・指標のため、原形質連絡と輸送タンパク質の寄与を分けるために同じ試料での測定が必要。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1557,11 +1661,18 @@
           "role": "published_profile_and_permeability_contrasts",
           "path": "research/results/E27/summary.json",
           "finding": "原形質連絡追加でDII-VENUSの分布の平均差が野生型23.45→6.01、pin2 26.74→6.40、aux1 18.22→6.98。掲載図の尺度。"
+        },
+        {
+          "experiment_id": "E33",
+          "role": "published_directional_perturbation",
+          "path": "research/results/E33/summary.json",
+          "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
         }
       ],
       "next_action": "原形質連絡の作用で、外層を経由した同じ標識が内側へ戻る量と時刻を測る。",
       "literature_notes": [
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1625,12 +1736,14 @@
         "E29",
         "E30",
         "E31",
-        "E32"
+        "E32",
+        "E34"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1016/j.devcel.2021.07.005"
+        "https://doi.org/10.1016/j.devcel.2021.07.005",
+        "https://doi.org/10.1093/plphys/kiaf382"
       ],
-      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。 E30・E31で確認した別の介入には同じ根での細胞生産率と周期がそろわず、数値予測の外部検証は保留。",
+      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。 E30・E31で確認した別の介入には同じ根での細胞生産率と周期がそろわず、数値予測の外部検証は保留。 2025年の別試料で固定待ち時間を使った相対予測は条件内で支持。野生型1群で基準をそろえ、成熟皮層細胞長の一定を仮定した。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1644,12 +1757,19 @@
           "role": "counterexample",
           "path": "research/results/E32/summary.json",
           "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
+        },
+        {
+          "experiment_id": "E34",
+          "role": "held_out_treatments_in_separate_study",
+          "path": "research/results/E34/summary.json",
+          "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
         }
       ],
-      "next_action": "別の培養で同じ根の輸送時間、細胞生産率、弱いピークを含む信号時系列を測る。予定部位の保持と発生を記録し、処置を丸ごと保留して準備信号の予測を比べる。",
+      "next_action": "別試料で細胞生産率と周期を同じ根で測り、E29の2係数をそのまま使う予測と、弱いピークを含む時系列を比べる。",
       "literature_notes": [
         "research/notes/E27_E29_root_reflux_literature.md",
-        "research/notes/E30_E32_root_clock_evidence.md"
+        "research/notes/E30_E32_root_clock_evidence.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1663,6 +1783,10 @@
         {
           "statement": "別の試料で、輸送と成長の二待ち時間式が周期を再調整なしで予測できる。",
           "status": "open"
+        },
+        {
+          "statement": "別の試料の4系統で、E29の待ち時間と野生型の基準を使った相対予測が、固定周期・固定距離よりよく合う。",
+          "status": "supported_within_scope"
         }
       ]
     },
@@ -1714,12 +1838,15 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E31"
+        "E31",
+        "E38"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1126/sciadv.abd4722"
+        "https://doi.org/10.1126/sciadv.abd4722",
+        "https://doi.org/10.1093/genetics/iyag120",
+        "https://doi.org/10.5061/dryad.g4f4qrg51"
       ],
-      "evidence_role": "Fig. 1Eは誘導72時間後のpSKP2Bマーカー陽性細胞。S2Cは形態とpSCR・pWOX5を使った原基と側根の合計。初回分裂前の停止の像も公開されている。",
+      "evidence_role": "Fig. 1Eは誘導72時間後のpSKP2Bマーカー陽性細胞。S2Cは形態とpSCR・pWOX5を使った原基と側根の合計。初回分裂前の停止の像も公開されている。 別の公開測定でGATA23陽性細胞数への介入の効果が記録法で異なった。細胞の指標と後の分岐を独立に評価する。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1727,11 +1854,18 @@
           "role": "founder_marker_and_post_initiation_observations",
           "path": "research/results/E31/summary.json",
           "finding": "Fig. 1Eで変異型IAA18の誘導により始原細胞マーカー陽性細胞の平均は19→32、高濃度で約765。別の試験のS2Cでは吸水12日後の原基と側根が野生型28.9、変異株ほぼ0個/株。"
+        },
+        {
+          "experiment_id": "E38",
+          "role": "seedling_clustered_reporter_contrasts",
+          "path": "research/results/E38/summary.json",
+          "finding": "67株の早期原基。第I段階の記録法間の処置効果差は+0.875細胞、95%個体単位区間+0.255〜+1.490。"
         }
       ],
       "next_action": "同じ根・同じ部位の準備シグナル、始原細胞、初回分裂と側根の出現を時系列でそろえる。",
       "literature_notes": [
-        "research/notes/E30_E32_root_clock_evidence.md"
+        "research/notes/E30_E32_root_clock_evidence.md",
+        "research/notes/E33_E38_return_and_energy_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1783,8 +1917,235 @@
           "status": "supported_within_scope"
         }
       ]
+    },
+    {
+      "id": "H33",
+      "statement": "表皮でオーキシン合成を変えると中心柱が応答し、阻害剤への感受性が外向きの応答と異なる",
+      "status": "supported_within_scope",
+      "scope": "HuらのシロイヌナズナFig. 5c、5e。合成を誘導した層、測定位置、DR5:VENUSを指定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E33"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41467-021-21802-3"
+      ],
+      "evidence_role": "公開ワークブックの全六群と、切断の上下での蛍光を再集計。個体番号のない測定領域を独立の植物と扱わない。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E33",
+          "role": "published_directional_perturbation",
+          "path": "research/results/E33/summary.json",
+          "finding": "表皮誘導→中心柱のDR5はNPAで誘導単独の2.4%、1-NOAで88.2%。中心柱→外側は1-NOAで29.7%。"
+        }
+      ],
+      "next_action": "同じ根の外側と中心の標識の時系列をそろえ、特定の経路と原形質連絡の作用を比較する。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "同じ標識分子が内側から外側を経て中心に再流入する。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H34",
+      "statement": "二つの待ち時間を持つ式が、別試料での伸長介入による準備周期の変化を固定周期・固定距離よりよく予測する",
+      "status": "supported_within_scope",
+      "scope": "De GernierらFig. 3、S3の野生型基準から他の4系統を評価。成熟皮層細胞長を共通と仮定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E34"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1093/plphys/kiaf382"
+      ],
+      "evidence_role": "E29の固定待ち時間1.062時を使い、試料の野生型1群で基準をそろえた。読取り幅で969/1,024の組み合わせで最良。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E34",
+          "role": "held_out_treatments_in_separate_study",
+          "path": "research/results/E34/summary.json",
+          "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
+        }
+      ],
+      "next_action": "同じ根で速度・成熟皮層細胞長・準備信号をそろえ、E29の2係数を独立に検証する。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "伸長介入後の周期の図の中央値を四系統に対して固定した対照よりよく予測する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "観測された待ち時間が、同じ物質の外層からの帰還時間に一致する。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H35",
+      "statement": "光合成に関わる地上部の作用が根の分岐に及び、糖の補充に対する主根長と側根出現の効果は異なり得る",
+      "status": "supported_within_scope",
+      "scope": "DuanらFig. 3B、6B–F。CYP38の野生型・変異型の接ぎ木と指定の照度・ショ糖濃度。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E35"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1093/plphys/kiaa032"
+      ],
+      "evidence_role": "地上部の遺伝子型と根の遺伝子型を組み替え、糖の補充で主根長と出現側根密度の中央値を比較。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E35",
+          "role": "reciprocal_grafts_and_resource_response",
+          "path": "research/results/E35/summary.json",
+          "finding": "変異型の根で穂木を野生型に替えると総分岐数は中央値約14→48。通常光のショ糖1→3%で変異型の主根長0.93→1.71 cm、出現側根密度の中央値は約0。"
+        }
+      ],
+      "next_action": "地上部から根に届く糖、IAA、化学仕事率と、枝形成の変化を同一試料で対応付ける。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "地上部が根の分岐数に関わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "糖の供給量だけで変異型での側根の回復を説明できる。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H36",
+      "statement": "固定した無次元係数0.33で循環と力積から渦輪のエネルギーを予測できる",
+      "status": "partially_supported",
+      "scope": "Limbourg・NedićのオリフィスとBaskaran・Mullenersの時間変化する装置のPIV掲載図。終盤の事前誤差幅±0.05。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E36"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1017/jfm.2022.275",
+        "https://doi.org/10.1017/jfm.2021.36",
+        "https://doi.org/10.1017/flo.2022.9"
+      ],
+      "evidence_role": "オリフィスの掲載された比は主要5点で条件内。別図の組み合わせとのずれがあり、時間変化する装置の終盤は二種類の境界で約0.254。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E36",
+          "role": "transferred_dimensionless_energy_against_measurements",
+          "path": "research/results/E36/summary.json",
+          "finding": "固定値0.33±0.05にオリフィスの原著の主要5点すべて、時間変化する装置の終盤は0/2点。三図から組んだオリフィスのエネルギー予測誤差中央値13.8%。"
+        }
+      ],
+      "next_action": "同時刻の同じ速度場から境界を統一してE・Γ・Iを求め、異なる駆動履歴に対して予測する。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "オリフィスの公表比は行程比3〜5で0.33±0.05に入る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "比較した装置すべての終盤の係数が0.33±0.05に入る。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H37",
+      "statement": "線形の散逸網では定常循環を駆動する仕事と散逸が共通の保存則に従う",
+      "status": "supported_within_scope",
+      "scope": "接点の流束保存、正の受動抵抗、線形応答。同じ式で圧力、電気、化学ポテンシャルの実単位を比較。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E37"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "一周の駆動の和を抵抗の和で割ると単一閉路の循環量。定常の入力仕事率と散逸を照合。受動網に貯めた初期エネルギーによる流束は平衡でゼロ。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E37",
+          "role": "common_driven_transport_power_balance",
+          "path": "research/results/E37/summary.json",
+          "finding": "線形抵抗網で、定常の仕事率の和が散逸に等しい。無駆動の閉路と切断した閉網の定常流束はゼロ。圧力・電気・化学輸送の変数で一致。"
+        }
+      ],
+      "next_action": "分野ごとの独立した測定で駆動の仕事率と散逸を記録。実空間の形や発生は別に比較する。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "外部の仕事を加えない受動の閉網で定常の循環が続く。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "一つの閉路から三次元トーラスを特定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H38",
+      "statement": "早期原基のオーキシン応答の介入効果の推定は、GATA23を測る記録法に依存する",
+      "status": "supported_within_scope",
+      "scope": "MaranasらDryad v8の2記録法、器官段階I・II、0対0.5 μM。2培養67株の対象範囲。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E38"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1093/genetics/iyag120",
+        "https://doi.org/10.5061/dryad.g4f4qrg51"
+      ],
+      "evidence_role": "同じ株の原基をまとめた再標本化で平均とSDの処置効果を比較。表間で原基数が食い違う2株を除いても主要方向は保たれた。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E38",
+          "role": "seedling_clustered_reporter_contrasts",
+          "path": "research/results/E38/summary.json",
+          "finding": "67株の早期原基。第I段階の記録法間の処置効果差は+0.875細胞、95%個体単位区間+0.255〜+1.490。"
+        }
+      ],
+      "next_action": "同一部位で二種類の指標と後の発生を追い、細胞の運命と観測の閾値を照合する。",
+      "literature_notes": [
+        "research/notes/E33_E38_return_and_energy_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "測定した細胞数の増加からその個体に後で出る側根数を直接予測できる。",
+          "status": "not_identifiable"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 18,
-  "archived_experimental_figure_array_reanalyses": 3
+  "published_measurement_reanalyses": 22,
+  "archived_experimental_figure_array_reanalyses": 4
 }
