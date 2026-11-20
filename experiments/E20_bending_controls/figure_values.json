@@ -1,0 +1,60 @@
+{
+  "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/c89d/4762386/61856cae1d19/exbotj_erv541_f0004.jpg",
+  "source_sha256": "828e8ad52730315b9d3751274f3d6ad1d2dbedd4de321ebc3bea0d6a1a7b20c8",
+  "axis_calibration_y_0_and_10": [
+    523.0,
+    289.0
+  ],
+  "rate_uncertainty_from_3px": 0.1282051282051282,
+  "one_hour_not_scored": "The paper defines the forced bending range as 2\u201324 h.",
+  "periods": [
+    {
+      "hours": 2,
+      "x_px": 124,
+      "y_px": 353.0,
+      "root_and_primordia_per_day": 7.264957264957265
+    },
+    {
+      "hours": 3,
+      "x_px": 138,
+      "y_px": 352.0,
+      "root_and_primordia_per_day": 7.3076923076923075
+    },
+    {
+      "hours": 4,
+      "x_px": 151,
+      "y_px": 368.0,
+      "root_and_primordia_per_day": 6.6239316239316235
+    },
+    {
+      "hours": 6,
+      "x_px": 178,
+      "y_px": 384.0,
+      "root_and_primordia_per_day": 5.94017094017094
+    },
+    {
+      "hours": 9,
+      "x_px": 217,
+      "y_px": 384.0,
+      "root_and_primordia_per_day": 5.94017094017094
+    },
+    {
+      "hours": 12,
+      "x_px": 257,
+      "y_px": 365.5,
+      "root_and_primordia_per_day": 6.730769230769231
+    },
+    {
+      "hours": 18,
+      "x_px": 337,
+      "y_px": 400.0,
+      "root_and_primordia_per_day": 5.256410256410256
+    },
+    {
+      "hours": 24,
+      "x_px": 417,
+      "y_px": 380.0,
+      "root_and_primordia_per_day": 6.111111111111111
+    }
+  ]
+}
