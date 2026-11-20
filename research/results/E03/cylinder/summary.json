@@ -1,0 +1,119 @@
+{
+  "runs": [
+    {
+      "n_r": 24,
+      "n_z": 48,
+      "dt": 0.0078125,
+      "poisson_rel_l2": 0.0005430117079894953,
+      "max_div": 3.552713678800501e-15,
+      "energy_budget_error_rel": 0.011364098811540357,
+      "displacement_m": 0.4192516121272556,
+      "samples": [
+        {
+          "energy": 4.799706883604882,
+          "enstrophy_dissipation": 3.005141935986675,
+          "max_div": 2.4424906541753444e-15,
+          "core_z": 2.9999999999999996
+        },
+        {
+          "energy": 4.475194113209804,
+          "enstrophy_dissipation": 2.5161545618657737,
+          "max_div": 1.7763568394002505e-15,
+          "core_z": 3.078311495184898
+        },
+        {
+          "energy": 4.195165553244968,
+          "enstrophy_dissipation": 2.1762464072503405,
+          "max_div": 1.5543122344752192e-15,
+          "core_z": 3.153106586359167
+        },
+        {
+          "energy": 3.9483950014284694,
+          "enstrophy_dissipation": 1.9208071752280933,
+          "max_div": 1.5543122344752192e-15,
+          "core_z": 3.224251767401585
+        },
+        {
+          "energy": 3.7277832580366947,
+          "enstrophy_dissipation": 1.7191040396453419,
+          "max_div": 1.7763568394002505e-15,
+          "core_z": 3.2923326085626257
+        },
+        {
+          "energy": 3.528482279716418,
+          "enstrophy_dissipation": 1.5542965234084125,
+          "max_div": 1.4432899320127035e-15,
+          "core_z": 3.357766289316683
+        },
+        {
+          "energy": 3.3469929907926046,
+          "enstrophy_dissipation": 1.4162455815139605,
+          "max_div": 2.3314683517128287e-15,
+          "core_z": 3.419251612127255
+        }
+      ]
+    },
+    {
+      "n_r": 48,
+      "n_z": 96,
+      "dt": 0.00390625,
+      "poisson_rel_l2": 0.0001357528110427553,
+      "max_div": 7.105427357601002e-15,
+      "energy_budget_error_rel": 0.0028811728730550627,
+      "displacement_m": 0.4243548922237639,
+      "samples": [
+        {
+          "energy": 4.839645946539903,
+          "enstrophy_dissipation": 3.005151180500862,
+          "max_div": 4.773959005888173e-15,
+          "core_z": 3.0000000000000004
+        },
+        {
+          "energy": 4.502096334882558,
+          "enstrophy_dissipation": 2.508912748150914,
+          "max_div": 3.552713678800501e-15,
+          "core_z": 3.0804172905314324
+        },
+        {
+          "energy": 4.213979216603897,
+          "enstrophy_dissipation": 2.168756225834869,
+          "max_div": 4.773959005888173e-15,
+          "core_z": 3.156230579695667
+        },
+        {
+          "energy": 3.961663360515403,
+          "enstrophy_dissipation": 1.9141079633480833,
+          "max_div": 4.773959005888173e-15,
+          "core_z": 3.228412953719562
+        },
+        {
+          "energy": 3.7370266224578055,
+          "enstrophy_dissipation": 1.7132208245122555,
+          "max_div": 2.9976021664879227e-15,
+          "core_z": 3.2969158185044374
+        },
+        {
+          "energy": 3.534698891680869,
+          "enstrophy_dissipation": 1.5490843282656819,
+          "max_div": 3.552713678800501e-15,
+          "core_z": 3.3621512053466827
+        },
+        {
+          "energy": 3.350880535610415,
+          "enstrophy_dissipation": 1.411561790728456,
+          "max_div": 3.552713678800501e-15,
+          "core_z": 3.4243548922237643
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "poisson": true,
+    "flux": true,
+    "viscous_budget": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E03_vortex/axisymmetric.py": "9c9bbb3eb0e440576954bc093aec5667c67739c9831773abee1bb046c23b0f5d"
+  }
+}

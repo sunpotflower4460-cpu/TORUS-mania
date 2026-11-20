@@ -1,0 +1,830 @@
+{
+  "group": "circle",
+  "trials": [
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 17,
+        "section_peak": 0.2947987527403003
+      },
+      "three_d": {
+        "cells": 456,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.29790889005428334,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 26,
+        "section_peak": 0.2947987527403003
+      },
+      "three_d": {
+        "cells": 704,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.29790889005428334,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 10,
+        "section_peak": 0.0031414441030717262
+      },
+      "three_d": {
+        "cells": 80,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0031414441030717262,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 17,
+        "section_peak": 0.0031414441030717262
+      },
+      "three_d": {
+        "cells": 212,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0031414441030717262,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 26,
+        "section_peak": 0.13135754517043563
+      },
+      "three_d": {
+        "cells": 696,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.13159192789278046,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 37,
+        "section_peak": 0.13135754517043563
+      },
+      "three_d": {
+        "cells": 1076,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.13159192789278046,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 13,
+        "section_peak": 0.0009319600220771533
+      },
+      "three_d": {
+        "cells": 116,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0009319600220771533,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 20,
+        "section_peak": 0.0009319600220771533
+      },
+      "three_d": {
+        "cells": 196,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0009319600220771533,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 27,
+        "section_peak": 0.3469525856168066
+      },
+      "three_d": {
+        "cells": 916,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.34714389092060843,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 43,
+        "section_peak": 0.3469525856168066
+      },
+      "three_d": {
+        "cells": 1520,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.34714389092060843,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 17,
+        "section_peak": 0.0033075554127363284
+      },
+      "three_d": {
+        "cells": 176,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0033075554127363284,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.25,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 26,
+        "section_peak": 0.0033075554127363284
+      },
+      "three_d": {
+        "cells": 412,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0033075554127363284,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 43,
+        "section_peak": 0.1342458417427833
+      },
+      "three_d": {
+        "cells": 1636,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.13424867103104476,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 64,
+        "section_peak": 0.1342458417427833
+      },
+      "three_d": {
+        "cells": 2496,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.13424867103104476,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 21,
+        "section_peak": 0.0009587199022025966
+      },
+      "three_d": {
+        "cells": 236,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0009587199022025966,
+      "match": true
+    },
+    {
+      "case": "weak",
+      "time_s": 1.75,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 34,
+        "section_peak": 0.0009587199022025966
+      },
+      "three_d": {
+        "cells": 448,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0009587199022025966,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 51,
+        "section_peak": 2.3309305698719114
+      },
+      "three_d": {
+        "cells": 1384,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 2.3383093460357736,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 71,
+        "section_peak": 2.3309305698719114
+      },
+      "three_d": {
+        "cells": 2056,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 2.3383093460357736,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 22,
+        "section_peak": 0.6414340723471815
+      },
+      "three_d": {
+        "cells": 200,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.6414340723471815,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 32,
+        "section_peak": 0.6414340723471815
+      },
+      "three_d": {
+        "cells": 360,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.6414340723471815,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 54,
+        "section_peak": 1.6350041693549644
+      },
+      "three_d": {
+        "cells": 1616,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 1.6350041693549646,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 48,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 80,
+        "section_peak": 1.6350041693549644
+      },
+      "three_d": {
+        "cells": 2456,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 1.6350041693549646,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 24,
+        "section_peak": 0.37206590473007195
+      },
+      "three_d": {
+        "cells": 224,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.37206590473007195,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 48,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 37,
+        "section_peak": 0.37206590473007195
+      },
+      "three_d": {
+        "cells": 432,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.37206590473007195,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 84,
+        "section_peak": 2.3453038929337997
+      },
+      "three_d": {
+        "cells": 3200,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 2.368466377575661,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 122,
+        "section_peak": 2.3453038929337997
+      },
+      "three_d": {
+        "cells": 4748,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 2.368466377575661,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 39,
+        "section_peak": 0.6488086293060644
+      },
+      "three_d": {
+        "cells": 460,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.6488086293060644,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.25,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 58,
+        "section_peak": 0.6488086293060644
+      },
+      "three_d": {
+        "cells": 852,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.6488086293060644,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 93,
+        "section_peak": 1.6370254425034503
+      },
+      "three_d": {
+        "cells": 3796,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 1.6441273467985746,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 64,
+      "variable": "vorticity_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 141,
+        "section_peak": 1.6370254425034503
+      },
+      "three_d": {
+        "cells": 5804,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 1.6441273467985746,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 42,
+        "section_peak": 0.3750286762166201
+      },
+      "three_d": {
+        "cells": 524,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.3750286762166201,
+      "match": true
+    },
+    {
+      "case": "long",
+      "time_s": 2.75,
+      "n": 64,
+      "variable": "kinetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 62,
+        "section_peak": 0.3750286762166201
+      },
+      "three_d": {
+        "cells": 956,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.3750286762166201,
+      "match": true
+    }
+  ],
+  "performance": [
+    {
+      "threshold": 0.5,
+      "observations": 16,
+      "matched": 16,
+      "positives": 8,
+      "negatives": 8,
+      "correct_fraction": 1.0
+    },
+    {
+      "threshold": 0.35,
+      "observations": 16,
+      "matched": 16,
+      "positives": 8,
+      "negatives": 8,
+      "correct_fraction": 1.0
+    }
+  ],
+  "passes_registered_accuracy_if_axisymmetric": true,
+  "balances": [
+    {
+      "case": "weak",
+      "n": 48,
+      "max_sample_divergence_s_inv": 8.326672684688674e-17,
+      "energy_relative_residual": 7.664607954445849e-05
+    },
+    {
+      "case": "weak",
+      "n": 64,
+      "max_sample_divergence_s_inv": 1.0177044392397268e-16,
+      "energy_relative_residual": 7.781196331318846e-05
+    },
+    {
+      "case": "long",
+      "n": 48,
+      "max_sample_divergence_s_inv": 9.992007221626409e-16,
+      "energy_relative_residual": 2.5562528655102056e-05
+    },
+    {
+      "case": "long",
+      "n": 64,
+      "max_sample_divergence_s_inv": 2.1649348980190553e-15,
+      "energy_relative_residual": 2.5786820724731473e-05
+    }
+  ],
+  "checks": {
+    "registered_counts": true,
+    "jet_balance": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E12_meridian_prediction/run.py": "11841e5f5077f0e8af12f5d3d15b3c60df4bf2278fc4b531df7b4df142f1daff",
+    "E11_energy_transport/run.py": "0b0e0dd0f4aa42675b1224989f640e40b8ff2dee964b4693ac2d30e737174d09",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E06_jet/run.py": "2e684961fc612fc892b02dcede77bab21a14b8c3338c7cc148db8f7901eb0449"
+  }
+}

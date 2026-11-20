@@ -1,0 +1,41 @@
+{
+  "coil": {
+    "doi": "10.1038/micronano.2017.82",
+    "accessed_utc": "2026-11-20",
+    "pdf_sha256": "8442780fcea4fdc866af400069371df63f92143c6b34cdc0a3592bf806ceb7f5",
+    "source": "Figure 7b and c, low-frequency side (near 1 MHz), digitized to approximately 0.5 nH",
+    "inner_mm": 0.75,
+    "outer_mm": 1.5,
+    "rows": [
+      {"height_um": 280, "turns": 20, "observed_nh": 36.4, "figure": "7b"},
+      {"height_um": 350, "turns": 20, "observed_nh": 45.5, "figure": "7b"},
+      {"height_um": 280, "turns": 25, "observed_nh": 42.1, "figure": "7c"}
+    ],
+    "excluded": [
+      {"figure": "7a", "reason": "The text and caption disagree on the number of turns. The matching 280 um / 20 turns curve is represented once in 7b."},
+      {"figure": "7d", "reason": "Air-core design is represented in 7b. Si-core design is outside the specified air-core comparison."},
+      {"figure": "paragraph after Fig. 7", "reason": "Separate 5 mm^2 small-pad coil: complete winding dimensions and low-frequency series are not identified."},
+      {"figure": "Hesping, PSI, Table 5.2", "reason": "The reported dimensions include the wire, the core is rectangular, and the reported dimensions and inductance do not establish a measured-turn count for the final coil."}
+    ]
+  },
+  "magnetic_design": {
+    "doi": "10.1134/S1063778821120024",
+    "basis": "Design paper abstract for the same single continuous MEPhIST-0 solenoid",
+    "turns": 12
+  },
+  "topology_intervention": {
+    "doi": "10.1103/PhysRevLett.99.260401",
+    "accessed_utc": "2026-11-20",
+    "source": "arXiv:0709.0012, Fig. 3. x ticks 0 and 12, y ticks 0 and 1. All eight marker centers retained. Axis readings approximately 0.04 in x and 0.01 in probability.",
+    "pdf_sha256": "01db1300bb50983a792f8698ab3218fbf61d4ee01484a28fdfe332daab4c9085",
+    "hold_s": 2,
+    "barrier_over_chemical_potential_and_survival": [
+      [0.0, 0.20], [0.9, 0.00], [1.7, 0.20], [3.1, 0.75],
+      [4.65, 0.80], [5.9, 1.00], [8.9, 1.00], [11.9, 0.875]
+    ],
+    "horizontal_uncertainties_reported_by_authors": {
+      "plug_power_fluctuation_fraction": 0.10,
+      "waist_measurement_systematic_fraction": 0.30
+    }
+  }
+}

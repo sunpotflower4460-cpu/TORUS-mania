@@ -1,0 +1,75 @@
+{
+  "runs": [
+    {
+      "amplitude_pa": 1000,
+      "reference": {
+        "half_time_s": 0.5214342067043459,
+        "opposite_1s_fraction": 4.406509492698742e-06
+      },
+      "scores": {
+        "M0": {
+          "normalized_rmse": 1.2702241269056937e-10,
+          "half_time_s": 0.5214342067163399,
+          "opposite_1s_fraction": 4.406509486974781e-06
+        },
+        "M1": {
+          "normalized_rmse": 0.00044065274406022444,
+          "half_time_s": 0.531514361710336,
+          "opposite_1s_fraction": 4.352849435568796e-06
+        },
+        "M2": {
+          "normalized_rmse": 0.01753424706434341,
+          "half_time_s": 0.3847210706961485,
+          "opposite_1s_fraction": 0.09693756115651192
+        }
+      },
+      "stored_volume_drift_fraction_of_gas_volume": 5.204170427930421e-18
+    },
+    {
+      "amplitude_pa": 50000,
+      "reference": {
+        "half_time_s": 0.2734673522270413,
+        "opposite_1s_fraction": 3.8368724230904945e-06
+      },
+      "scores": {
+        "M0": {
+          "normalized_rmse": 5.2867169223815856e-11,
+          "half_time_s": 0.27346735219690754,
+          "opposite_1s_fraction": 3.836872430656035e-06
+        },
+        "M1": {
+          "normalized_rmse": 0.01327341184242819,
+          "half_time_s": 0.531514361710336,
+          "opposite_1s_fraction": 4.352849435568796e-06
+        },
+        "M2": {
+          "normalized_rmse": 0.013726048770733162,
+          "half_time_s": 0.3847210706961485,
+          "opposite_1s_fraction": 0.09693756115651192
+        }
+      },
+      "stored_volume_drift_fraction_of_gas_volume": 2.220446049250313e-16
+    }
+  ],
+  "registered_predictions": {
+    "small_pointwise_rmse_within_scope": true,
+    "nonlinear_pulse_increases_error": true
+  },
+  "checks": {
+    "reference_integrator": true,
+    "storage_conserved": true
+  },
+  "target": "synthetic",
+  "predictions_sha256": "0252d789c30858387939a4f85a6b679a507123e08124583146c99a7a027f51d9",
+  "external_filter_chips": {
+    "doi": "10.1186/s13036-018-0126-3",
+    "assessed": 3,
+    "independent_cutoff_targets": 0,
+    "reason": "Methods Eq. 1 computes cutoff from the step time constant."
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E07_transfer/run.py": "6ce82833fd35f61539f090c48756ce2a43f8a0d07e139587875466bec0b5f21b",
+    "E07_transfer/predict.py": "a15086905cb26c8d27f361903b88a14d237d5e7cf657a4446ee9c36dc9de8727"
+  }
+}

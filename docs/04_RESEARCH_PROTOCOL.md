@@ -1,7 +1,7 @@
 # 共通原理としてのトーラスを検証する研究プロトコル
 
 更新日：2026-11-20（日本時間）  
-準備時に固定した研究設計。E01・E02の実行結果と適用限界は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)を参照。
+準備時に固定した研究設計。E01・E02は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)、E03〜E08の実施と限界は[第2回研究報告](11_SECOND_RESEARCH_REPORT.md)を参照。
 
 正式な主張IDと定義は [02_HYPOTHESES_AND_TERMS.md](02_HYPOTHESES_AND_TERMS.md) と [research/claims.json](../research/claims.json) を正とする。
 以下の H-P 等は、複数の正式主張をまとめて説明する分類略称であり、別の主張台帳ではない。

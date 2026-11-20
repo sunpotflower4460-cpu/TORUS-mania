@@ -1,0 +1,39 @@
+{
+  "training": [
+    {
+      "n": 16,
+      "end_amplitude": 0.9473088684119709,
+      "kappa": 0.9872143593669754
+    },
+    {
+      "n": 32,
+      "end_amplitude": 0.9468115752129269,
+      "kappa": 0.9967908787872802
+    }
+  ],
+  "amplitudes_pa": [
+    1000,
+    50000
+  ],
+  "kappa_shared": 0.9967908787872802,
+  "predictions_fraction": {
+    "M1": {
+      "half_time_s": 0.531514361710336,
+      "opposite_1s_fraction": 4.352849435568796e-06
+    },
+    "M2": {
+      "half_time_s": 0.3847210706961485,
+      "opposite_1s_fraction": 0.09693756115651192
+    }
+  },
+  "fit_parameter_counts": {
+    "M0": 0,
+    "M1": 1,
+    "M2": 1
+  },
+  "target_fit_counts": [
+    0,
+    0,
+    0
+  ]
+}
