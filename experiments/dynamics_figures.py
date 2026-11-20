@@ -75,8 +75,10 @@ def energy(root, out):
                 tracked = data["fine_tracers"]
                 left.plot(tracked[:, 0], tracked[:, 2], color=PURPLE, lw=1.7,
                           label="Initial energy that stayed inside")
-            right.plot(t, moving[:, 2] / start, color=ORANGE, lw=2.1, label="Outward")
-            right.plot(t, moving[:, 3] / start, color=GREEN, lw=2.1, label="Inward")
+            right.plot(t, moving[:, 2] / start, color=ORANGE, lw=2.1,
+                       label="Advected outward" if variant == "flow64" else "Outward")
+            right.plot(t, moving[:, 3] / start, color=GREEN, lw=2.1,
+                       label="Advected inward" if variant == "flow64" else "Inward")
             if variant == "flow64":
                 right.plot(t, -moving[:, 5] / start, color=BLUE, lw=1.8, ls="--", label="Net viscous inflow")
                 right.plot(t, moving[:, 6] / start, color=PURPLE, lw=1.8, ls=":", label="Dissipated inside")
@@ -94,8 +96,8 @@ def observations(root, out):
         t, metric, _, fixed, linear = data["spreading_full"].T
         left.axvspan(3.05, t[-1], color="#edf1f7", label="Held-out interval")
         left.plot(t, metric / 1000, color=BLUE, lw=2.1, label="Measured")
-        left.plot(t, fixed / 1000, color=GRAY, lw=1.8, ls=":", label="Fixed-width fit")
-        left.plot(t, linear / 1000, color=ORANGE, lw=1.8, ls="--", label="Linear-width fit")
+        left.plot(t, fixed / 1000, color=GRAY, lw=1.8, ls=":", label="Constant moment fit")
+        left.plot(t, linear / 1000, color=ORANGE, lw=1.8, ls="--", label="Linear moment fit")
         for key, label, color, style in (("blob", "Ring collisions", BLUE, "-"),
                                          ("dog", "Double grid", ORANGE, "--"),
                                          ("sog", "Single grid", GREEN, ":")):
