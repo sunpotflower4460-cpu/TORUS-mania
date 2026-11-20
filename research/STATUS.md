@@ -1,8 +1,35 @@
-# 再開メモ　動く循環とエネルギーのE13〜E15まで実行済み
+# 再開メモ　先にある流れと器官の形成のE16〜E18まで実行済み
 
-更新2026-11-20 UTC。現ブランチ `research/dynamic-circulation` はE09〜E12の `research/energy-principle`（`d6335dd`）を継承。渦度と受動磁場の共通の流束発展則（H15）、形を保つ輪の境界を通じたエネルギー交換（H16）を、登録条件で支持した。渦輪を衝突させた公開PIVの図配列を1研究分再集計した。H08の全体と、相互作用で持続する個体性・階層ができるH06の部分は未決。[第4回報告](../docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[全16主張の台帳](claims.json)
+更新2026-11-20 UTC。`research/flow-before-form` はE13〜E15の `research/dynamic-circulation`（`57f16ab`）を継承する。発生前の局所の力や組織の伸びやすさが後の器官の位置に影響する命題（H17）を公表実験で支持した。先行するトーラス状の流れが成長先を変える命題（H18）は登録した材料モデルの範囲で支持した。生体の三次元の閉循環を変えたときの器官の形成は未判定。[第5回報告](../docs/14_FLOW_BEFORE_FORM_REPORT.md)・[全18主張の台帳](claims.json)
+
+## 第5回の結果と追試
+
+| 実験 | 再開に使うもの | 判定 |
+|---|---|---|
+| E16 | [図の数値](results/E16/summary.json)・[胚の文献カード](notes/E16_developmental_forces.md) | 右側刺激で心臓が右寄りになる率は69.4〜71.4%、左側刺激で7.8%。公表図の各整数候補、中央の個体を含む割合、試行内相関を推定できない限界を保存。 |
+| E17 | [格子・時間刻みの比較](results/E17/summary.json)・[断面図](results/morphogenesis_figures/flow_and_growth.png) | 先行する運動エネルギー密度を保ち、流れを反転すると取り込みの重心が円筒半径の33.7%ずれた。成長した材料に輪候補は現れなかった。 |
+| E18 | [植物の再集計](results/E18/summary.json)・[文献カード](notes/E18_plant_organ_placement.md) | 曲げた側の側根や、伸びやすさを変えた位置の葉で、対照より発生しやすい。根の戻り輸送はタンパク質の位置から推定された。 |
+
+事前登録は `5db08ae` と `49d83c3`、計算の版は `aff8ebb`、最終集計・描画は `66c5f47`。Debian 13 x86_64、Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8、図の再抽出にPillow 13.0.0。乱数種なし。Gitから展開したコードで、E17の3条件を3プロセス・各数値ライブラリ1スレッドで再計算し、約331秒。全件で31の校正・収支チェックを通過し、成果物11点がバイト単位で一致した。既存単体テストは22件通過。[実行ログ](results/MORPHOGENESIS_RUN.json)・[SHA-256](results/MORPHOGENESIS_SHA256SUMS)
+
+追試はリポジトリのルートで実行する。E16の図読取り値とE18の表・本文の数値を固定入力にした。再集計とE17の計算はネット不要。[固定した図読取り](../experiments/E16_developmental_intervention/figure_readings.json)・[植物の入力](../experiments/E18_organ_placement/published_values.json)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt Pillow==13.0.0
+run_dir=$(mktemp -d)
+python3 -m experiments.run_morphogenesis --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/MORPHOGENESIS_SHA256SUMS | sha256sum -c -
+```
+
+E16の図を元画像から読むときは[取得記録](access/2026-11-20-morphogenesis.md)のJPEGを取得し、
+`python3 -m experiments.E16_developmental_intervention.read_figure data/raw/morphogenesis/djenoune_fig4.jpg --out /tmp/torus-form-reading.json`。
+E17の `fields.npz` に規格化した子午面の座標・流れ・供給源・種・形成前後の資源分布・成長後の材料・積算取り込みがある。行は半径、列は高さ。対照の並び順と各時刻の積算収支は同じフォルダのJSONにある。
+
+次に区別する問いは、閉じた循環があるときの固有の効果。同じ供給量と初期形のもとで戻り経路を変え、三次元の流れと後の器官の位置を同じ対象で追う。植物では既知の根端の戻り輸送が候補になる。[第5回報告](../docs/14_FLOW_BEFORE_FORM_REPORT.md)
 
 ## 第4回の結果と追試
+
+第4回は `research/dynamic-circulation` がE09〜E12の `research/energy-principle`（`d6335dd`）を継承した。渦度と受動磁場の共通輸送（H15）と、輪の動く境界のエネルギー交換（H16）を登録条件で支持した。[第4回報告](../docs/13_DYNAMIC_CIRCULATION_REPORT.md)
 
 | 実験 | 再開に使うもの | 主な結果 |
 |---|---|---|

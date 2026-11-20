@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E15は登録した条件で実行済み。共通の流束発展則、輪を追う領域のエネルギー収支、八つの渦輪を衝突させた公開PIVの再集計まで進んだ。これまでに閉経路のエネルギー原理、渦・分岐・波の比較も報告した。[第4回報告](docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[渦・分岐を扱った第2回](docs/11_SECOND_RESEARCH_REPORT.md)・[再実行と現在の判断](research/STATUS.md)
+E01〜E18は登録した条件で実行済み。今回、力の作用が先にある心臓・根・葉の発生実験を再集計し、トーラス状の流れを先に与えた計算で成長位置の変化を測った。エネルギーの収支、渦輪の相互作用、閉経路と輸送の先行結果も参照できる。[第5回報告](docs/14_FLOW_BEFORE_FORM_REPORT.md)・[第4回報告](docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[再実行と現在の判断](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

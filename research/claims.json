@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "dynamic_circulation_and_energy_exchange",
+  "stage": "flow_and_force_before_morphogenesis",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -19,7 +19,10 @@
     "E12",
     "E13",
     "E14",
-    "E15"
+    "E15",
+    "E16",
+    "E17",
+    "E18"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -29,7 +32,7 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図から独自に読取り・比較した研究単位。E10のVinitskiy、Le、Kumar、Ryu。論文内の複数図は1件。元時系列・生データの再解析とは別。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から独自に再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien。論文内の複数所見は1研究。各生データの再集計とは別。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaらは1件。画像からの読取りや、試行ごとのPIV速度生データの件数とは別。"
   },
   "claims": [
@@ -200,16 +203,21 @@
       "planned_experiments": [
         "E04",
         "E06",
-        "E07"
+        "E07",
+        "E17",
+        "E18"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
         "https://doi.org/10.1103/PhysRevLett.104.048704",
         "https://doi.org/10.6084/m9.figshare.13370348.v1",
-        "https://doi.org/10.7554/eLife.15341"
+        "https://doi.org/10.7554/eLife.15341",
+        "https://doi.org/10.1073/pnas.0807814105",
+        "https://doi.org/10.1104/pp.109.142448",
+        "https://doi.org/10.1073/pnas.191380498"
       ],
-      "evidence_role": "同じ輸送課題に複数の枝・閉路の構成が成立した。外部植物データで枝径と分岐を再集計。木の根・枝葉や流れの循環を一つの動的方程式から生成していない。",
+      "evidence_role": "同じ輸送課題に複数の枝・閉路の構成が成立し、外部植物データで分岐を再集計。既存の主根への力と、頂端の局所の伸びやすさが後の側根・葉を変えることを支持。根端の戻り輸送はタンパク質位置からの推定で、全植物と流れを共通に生成する式は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -223,14 +231,31 @@
           "role": "external_data_reanalysis",
           "path": "research/results/E04/plant/summary.json",
           "finding": "5群の5,205区間は原著の表1と一致、完全な2,024分岐点で径比を集計。成長や流れの時系列は対象外。"
+        },
+        {
+          "experiment_id": "E18",
+          "role": "plant_development_intervention",
+          "path": "research/results/E18/summary.json",
+          "finding": "曲げた位置の側根は報告率99%対18%。葉の誘導2系統は14/73と10/55で、擬似処置は0/26と0/28。"
         }
       ],
-      "next_action": "端子や候補辺に上・下を与えず極性を予測する成長則と、実植物の成長・切断応答の評価用時系列を固定する。",
+      "next_action": "同じ供給量のもとで根端での往路と戻り経路を計測し、戻り経路を変えたときの後の側根位置を検証する。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S012_branching_data.md",
-        "research/notes/X5_source_sink.md"
+        "research/notes/X5_source_sink.md",
+        "research/notes/E18_plant_organ_placement.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "既存の主根への一時的な曲げと、頂端での細胞壁伸展の局所変化が、後の根や葉の発生位置に影響する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "自然の根端の戻り輸送が閉じた三次元のトーラス面を作り、その経路だけの変更で分岐位置が変わる。",
+          "status": "open"
+        }
       ]
     },
     {
@@ -357,12 +382,15 @@
         "E12",
         "E13",
         "E14",
-        "E15"
+        "E15",
+        "E16",
+        "E17",
+        "E18"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路で共通のエネルギー原理（H13）、流体と光で輪になる幾何条件（H14）、渦度と弱磁場の流束の発展則（H15）を支持。移動領域を使った収支の範囲はH16。植物・渦・波を一つの生成則で予測する全体の命題は未決。",
+      "evidence_role": "閉経路のエネルギー原理（H13）、輪の幾何条件（H14）、渦度と弱磁場の流束則（H15）を支持。局所の力による器官配置（H17）と、先行するトーラス状流れによる成長位置の変化（H18）に支持が加わった。植物・渦・波を一つの生成則で予測する全体の命題は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -400,6 +428,12 @@
           "role": "moving_energy_transport",
           "path": "research/results/E14/light20/summary.json",
           "finding": "輪状の電磁エネルギー等値領域が続く間にも、重心と進む輪から初期領域内エネルギーの79.61%相当が流出し、29.80%相当が流入。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "conditional_growth_model",
+          "path": "research/results/E17/summary.json",
+          "finding": "点ごとのエネルギー分布が同じでも流れを反転すると取り込み重心が半径の33.7%ずれた。"
         }
       ],
       "next_action": "形に加え、実測のエネルギー移動と介入応答を予測する共通生成モデルを比較する。",
@@ -411,7 +445,9 @@
         "research/notes/E10_energy_observations.md",
         "research/notes/E11_toroidal_light.md",
         "research/notes/E13_flux_and_mhd.md",
-        "research/notes/E14_energy_transport.md"
+        "research/notes/E14_energy_transport.md",
+        "research/notes/E16_developmental_forces.md",
+        "research/notes/E18_plant_organ_placement.md"
       ],
       "tested_subclaims": [
         {
@@ -428,6 +464,10 @@
         },
         {
           "statement": "滑らかな非圧縮流の中で、渦度と磁力の反作用が無視できる磁場に共通の移流・伸長・拡散式が適用できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "外部駆動で先に与えたトーラス状流れは、資源に応じて増える材料の成長位置を変え得る。",
           "status": "supported_within_scope"
         }
       ]
@@ -446,7 +486,8 @@
         "E08",
         "E09",
         "E11",
-        "E13"
+        "E13",
+        "E17"
       ],
       "evidence_urls": [],
       "evidence_role": "木の対照で、端子間定常輸送に閉路が必須という限定命題は不支持。E11の運動エネルギーの高密度域は軸付近、E13の磁場は渦輪を含まないせん断流でエネルギーが増えた。異なる尺度や状態空間も含む必要性は未判定。",
@@ -475,6 +516,12 @@
           "role": "counterexample",
           "path": "research/results/E13/shear/summary.json",
           "finding": "輪の渦度を持たない解析せん断流で、0.8秒後の受動磁場エネルギーが初期値の119.16%。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "open_flow_control",
+          "path": "research/results/E17/summary.json",
+          "finding": "材料の成長位置は閉じた循環のほか、開いた境界からの同じ総運動エネルギーの貫流でも変わった。"
         }
       ],
       "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
@@ -490,6 +537,10 @@
         },
         {
           "statement": "指定の周期箱で、流れが受動磁場のエネルギーを増やすために渦度がトーラス状に集中する必要がある。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "E17の材料モデルで、資源輸送が成長位置を変えるためには閉じた循環が必須である。",
           "status": "not_supported_in_test"
         }
       ]
@@ -800,8 +851,101 @@
           "status": "supported_within_scope"
         }
       ]
+    },
+    {
+      "id": "H17",
+      "statement": "器官の配置が決まる前に既存の組織へ働く力や局所の伸びやすさが、その後の器官の位置・形に影響する。",
+      "status": "supported_within_scope",
+      "scope": "公開介入のゼブラフィッシュ胚の心臓の初期位置、マウスの左右、シロイヌナズナの側根、タバコの葉。先行する作用の時刻は対象器官の配置に対するもの。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E16",
+        "E18"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1126/science.abq7317",
+        "https://doi.org/10.1038/nature00849",
+        "https://doi.org/10.1073/pnas.0807814105",
+        "https://doi.org/10.1104/pp.109.142448",
+        "https://doi.org/10.1073/pnas.191380498"
+      ],
+      "evidence_role": "処置の左右、無刺激、曲げの有無、同系統の擬似処置の比較。機械作用を読み取る胚の応答と、成長を許す植物の組織の効果を支持。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E16",
+          "role": "published_intervention_figure",
+          "path": "research/results/E16/summary.json",
+          "finding": "右側刺激の右寄り心臓は69.4〜71.4%、左側刺激は7.8%。初期の位置で、中央を分母に含む。"
+        },
+        {
+          "experiment_id": "E18",
+          "role": "published_root_and_leaf_interventions",
+          "path": "research/results/E18/summary.json",
+          "finding": "同一位置の側根と葉の発生を対照と照合。葉は14/73と10/55、擬似処置は0/26と0/28。"
+        }
+      ],
+      "next_action": "器官の初期位置が変わる前の三次元流れと機械刺激を観測し、閉じた循環の効果を方向性だけの効果と比べる。",
+      "literature_notes": [
+        "research/notes/E16_developmental_forces.md",
+        "research/notes/E18_plant_organ_placement.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "局所の力の作用側を変えると、流れが損なわれたゼブラフィッシュ胚の後の心臓の初期位置が変わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "身体組織に先立つ自然のトーラス状エネルギー流が、身体全体の形を決める。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H18",
+      "statement": "先に存在するトーラス状の流れは、資源を運ぶことによって、後から材料が育つ位置を変え得る。",
+      "status": "supported_within_scope",
+      "scope": "穴のない軸対称円筒、外部駆動の流れ、偏った資源供給、球状の種、取り込みに従う成長モデル。運動エネルギーと資源の利用可能量を別に定義。",
+      "torus_kinds": [
+        "T-F",
+        "T-G"
+      ],
+      "planned_experiments": [
+        "E17"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "点ごとのエネルギーを保って速度を反転・純方位化する対照、貫流・静止・遅延・鏡像、収支・格子・時間刻みを比較した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E17",
+          "role": "matched_energy_and_direction_intervention",
+          "path": "research/results/E17/summary.json",
+          "finding": "初期の輪のエネルギー分布は同じ。規格化時刻4の取り込み重心は反転で−0.129から−0.466へ変化。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "no_toroidal_shape_in_material",
+          "path": "research/results/E17/grid96/summary.json",
+          "finding": "エネルギー密度の35%、50%、65%の等値領域に穴が一つ。成長した材料は全比較の同じ閾値で輪候補なし。"
+        }
+      ],
+      "next_action": "循環と貫流の境界条件の差を管理し、実測資源濃度・供給量から成長位置を事前予測する。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "先行するトーラス状流れを反転すると、同じエネルギー密度のもとで取り込み重心が半径の2%以上変わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "初期の運動エネルギー密度の輪だけで、後の材料形を一意に決められる。",
+          "status": "invalid_general_inference"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 4,
+  "published_measurement_reanalyses": 8,
   "archived_experimental_figure_array_reanalyses": 1
 }
