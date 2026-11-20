@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "root_tissue_interventions_and_proton_potential",
+  "stage": "root_reflux_growth_and_heldout_priming",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -30,7 +30,10 @@
     "E23",
     "E24",
     "E25",
-    "E26"
+    "E26",
+    "E27",
+    "E28",
+    "E29"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -40,7 +43,7 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
   },
   "claims": [
@@ -219,7 +222,10 @@
         "E22",
         "E23",
         "E24",
-        "E25"
+        "E25",
+        "E27",
+        "E28",
+        "E29"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -240,9 +246,11 @@
         "https://doi.org/10.15252/embr.202051813",
         "https://doi.org/10.1038/emboj.2012.303",
         "https://doi.org/10.1101/gad.276964.115",
-        "https://doi.org/10.1126/science.1245871"
+        "https://doi.org/10.1126/science.1245871",
+        "https://doi.org/10.1242/dev.181669",
+        "https://doi.org/10.1016/j.devcel.2021.07.005"
       ],
-      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。",
+      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -298,9 +306,21 @@
           "role": "endodermal_ablation_and_division_orientation",
           "path": "research/results/E25/summary.json",
           "finding": "輸送阻害を継続しても内皮除去後の分裂が生じた。NAAで通常株の垂直分裂は約0.50→2.25回、ktn1は0→0.23回/除去イベント。"
+        },
+        {
+          "experiment_id": "E27",
+          "role": "published_profile_and_permeability_contrasts",
+          "path": "research/results/E27/summary.json",
+          "finding": "原形質連絡追加でDII-VENUSの分布の平均差が野生型23.45→6.01、pin2 26.74→6.40、aux1 18.22→6.98。掲載図の尺度。"
+        },
+        {
+          "experiment_id": "E29",
+          "role": "sealed_higher_production_region_in_public_observations",
+          "path": "research/results/E29/summary.json",
+          "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
         }
       ],
-      "next_action": "周鞘に由来する標識が内皮を通って戻る量と、初回分裂までの時間を同じ形成部位で測る。内向きの輸送の変更、局所の供給での補充、内皮の変形を比べる。",
+      "next_action": "根の細胞生産率と初回輸送を揃え、標識が外層を経て戻る量が次の準備シグナルと側根の配置をどう変えるかを測る。独立した補充と局所の内皮の作用も比較する。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
@@ -310,7 +330,8 @@
         "research/notes/E20_lateral_root_controls.md",
         "research/notes/E21_polar_auxin_and_branching.md",
         "research/notes/E23_pin2_nitrate.md",
-        "research/notes/E24_E26_root_tissue_evidence.md"
+        "research/notes/E24_E26_root_tissue_evidence.md",
+        "research/notes/E27_E29_root_reflux_literature.md"
       ],
       "tested_subclaims": [
         {
@@ -478,12 +499,15 @@
         "E23",
         "E24",
         "E25",
-        "E26"
+        "E26",
+        "E27",
+        "E28",
+        "E29"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。",
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。",
       "independently_reproduced": false,
       "results": [
         {
@@ -545,9 +569,21 @@
           "role": "pH_pulse_and_matched_elongation",
           "path": "research/results/E26/summary.json",
           "finding": "培地pH 5.80から6.15で4.84→3.16 μm/分、5.10で4.99→6.01 μm/分。培地間の化学ポテンシャル差−2.00、+4.00 kJ/mol。"
+        },
+        {
+          "experiment_id": "E28",
+          "role": "matched_supply_counterexample_with_first_pass_tracer",
+          "path": "research/results/E28/summary.json",
+          "finding": "初回帰還を待つ条件で生産率0.5→1.5に対し頻度0.190→0.386、間隔2.63→3.89細胞分。同じ待ち時間を与えた独立供給が両者を再現。"
+        },
+        {
+          "experiment_id": "E29",
+          "role": "sealed_higher_production_region_in_public_observations",
+          "path": "research/results/E29/summary.json",
+          "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
         }
       ],
-      "next_action": "根内の局所の戻りを方向別の標識で測る。三次元の流路と膜の両側の電気化学ポテンシャル・流束・成長を同じ対象で測り、共通則の未使用データへの予測を比較する。",
+      "next_action": "閉路と開路が異なる標識再到達の予測を、実測の細胞生産率・局所供給・後の分岐へつなぐ。別分野へ同じ力学とエネルギーの式を適用する予測も独立データで評価する。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -562,7 +598,8 @@
         "research/notes/E20_lateral_root_controls.md",
         "research/notes/E21_polar_auxin_and_branching.md",
         "research/notes/E23_pin2_nitrate.md",
-        "research/notes/E24_E26_root_tissue_evidence.md"
+        "research/notes/E24_E26_root_tissue_evidence.md",
+        "research/notes/E27_E29_root_reflux_literature.md"
       ],
       "tested_subclaims": [
         {
@@ -1228,11 +1265,14 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E22"
+        "E22",
+        "E27",
+        "E28"
       ],
       "evidence_urls": [
         "https://doi.org/10.1105/tpc.113.119495",
-        "https://doi.org/10.1038/nature06215"
+        "https://doi.org/10.1038/nature06215",
+        "https://doi.org/10.1242/dev.181669"
       ],
       "evidence_role": "登録した閉路・開路・根先からの短い経路を比較。標識が中心に届くこと自体は短い経路でも再現した。生体モデルには外層から中心への大きな再流入が予測されない例がある。",
       "independently_reproduced": true,
@@ -1248,11 +1288,18 @@
           "role": "transport_and_loss_sensitivity",
           "path": "research/results/E22/summary.json",
           "finding": "規格化時刻2.5の切断効果は各率±25%の81条件で投入量の8.12〜24.80%。弱い戻りの候補は1.18%。"
+        },
+        {
+          "experiment_id": "E28",
+          "role": "matched_supply_counterexample_with_first_pass_tracer",
+          "path": "research/results/E28/summary.json",
+          "finding": "初回帰還を待つ条件で生産率0.5→1.5に対し頻度0.190→0.386、間隔2.63→3.89細胞分。同じ待ち時間を与えた独立供給が両者を再現。"
         }
       ],
-      "next_action": "根端に加え、側根の始原細胞に面した内皮で選択的な経路変更と初回輸送の対照を確認する。標識の内向き再流入を別の供給と識別し、内皮の形状も追う。",
+      "next_action": "Mellorの原形質連絡を候補の通路とし、成長率と外側への初回の流れを測ったうえで外層からの標識再到達と準備シグナルを追う。開いた独立供給との違いを検査する。",
       "literature_notes": [
-        "research/notes/E21_polar_auxin_and_branching.md"
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E27_E29_root_reflux_literature.md"
       ],
       "tested_subclaims": [
         {
@@ -1442,8 +1489,125 @@
           "status": "not_supported_in_test"
         }
       ]
+    },
+    {
+      "id": "H27",
+      "statement": "Mellorらの模型の原形質連絡を含む輸送が、根端のオーキシン指標の分布をよりよく説明する",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの野生型・pin2・aux1と、2種類の透過を変える介入の公表図。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E27"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1242/dev.181669"
+      ],
+      "evidence_role": "公表されたモデル出力と指標の観測を図から再集計。原形質連絡を含むモデルは外側から内側への戻りを予測した。戻り流束は図の実測量ではない。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E27",
+          "role": "published_profile_and_permeability_contrasts",
+          "path": "research/results/E27/summary.json",
+          "finding": "原形質連絡追加でDII-VENUSの分布の平均差が野生型23.45→6.01、pin2 26.74→6.40、aux1 18.22→6.98。掲載図の尺度。"
+        }
+      ],
+      "next_action": "原形質連絡の作用で、外層を経由した同じ標識が内側へ戻る量と時刻を測る。",
+      "literature_notes": [
+        "research/notes/E27_E29_root_reflux_literature.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "公表比較で原形質連絡を加えた場合に3系統の平均差が減る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "静的指標と通りやすさを変えた結果で同じ標識の一周の量が決まる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H28",
+      "statement": "輸送と成長の順次の待ち時間があると、細胞生産率の上昇に伴ってイベントの頻度と間隔がともに増える",
+      "status": "supported_within_scope",
+      "scope": "E22を基にした初回通過の数理模型と、登録した二段階の更新規則。時間は規格化。植物細胞の実際のサイズと分裂は解いていない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E28"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.devcel.2021.07.005"
+      ],
+      "evidence_role": "初回標識到達を解析式と積分器で照合し、定周期・定間隔・成長依存の独立供給を比較。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E28",
+          "role": "matched_supply_counterexample_with_first_pass_tracer",
+          "path": "research/results/E28/summary.json",
+          "finding": "初回帰還を待つ条件で生産率0.5→1.5に対し頻度0.190→0.386、間隔2.63→3.89細胞分。同じ待ち時間を与えた独立供給が両者を再現。"
+        }
+      ],
+      "next_action": "成長の影響を揃えた実験で、同じ標識の再到達が次の準備信号より先に変わるかを調べる。",
+      "literature_notes": [
+        "research/notes/E27_E29_root_reflux_literature.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "指定の模型で生産率を上げると頻度と間隔はともに上がる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "頻度と間隔が同じなら、経路が閉じていることを特定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H29",
+      "statement": "二つの待ち時間を持つ式が、高い細胞生産率での側根準備の頻度・間隔を固定周期・固定間隔の式よりよく予測する",
+      "status": "supported_within_scope",
+      "scope": "van den BergらのFig. 7A・B。2.0細胞/時の低い側で調整。高い側の頻度50図マーカーと間隔48図マーカー。各側から±0.03を除く。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E29"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.devcel.2021.07.005"
+      ],
+      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E29",
+          "role": "sealed_higher_production_region_in_public_observations",
+          "path": "research/results/E29/summary.json",
+          "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
+        }
+      ],
+      "next_action": "別の培養の個体データで、輸送の時間と細胞生産率の両方を生体で測り、処置を丸ごと保留して予測を比べる。",
+      "literature_notes": [
+        "research/notes/E27_E29_root_reflux_literature.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "保留した図の両指標で固定周期・固定間隔より誤差が小さい。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "予測結果だけで一周する経路と独立供給の経路を特定できる。",
+          "status": "not_identifiable"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 14,
+  "published_measurement_reanalyses": 16,
   "archived_experimental_figure_array_reanalyses": 3
 }

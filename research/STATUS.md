@@ -1,6 +1,37 @@
-# 再開メモ　内皮の輸送・分裂方向・根の伸長のE24〜E26まで実行済み
+# 再開メモ　根端の戻り輸送・成長・周期のE27〜E29まで実行済み
 
-更新2026-11-20 UTC。`research/local-auxin-reflux` はE01〜E23を合わせた `main`（`0606ae7`）から開始した。内皮のPIN3と初回分裂への進行（H24）、分裂開始と分裂方向の違い（H25）、培地の化学ポテンシャルと伸長（H26）を公表資料の再解析で条件内支持した。生体の標識の一周と、その循環のエネルギーが身体全体を先導するかは未判定。[第8回報告](../docs/17_LOCAL_REFLUX_REPORT.md)・[全26主張の台帳](claims.json)
+更新2026-11-20 UTC。E24〜E26の `54fbc6f` を継承。原形質連絡を含む根端モデル（H27）、戻りと成長の待ち時間を合わせたモデル（H28）、高い細胞生産率への数値予測（H29）を検討した。局所の内皮と周鞘の作用は前回の結果。根端の戻りと同一の空間経路とは扱わない。[第9回報告](../docs/18_REFLUX_GROWTH_REPORT.md)・[全29主張の台帳](claims.json)
+
+## 第9回の結果と追試
+
+| 実験 | 主な結果 |
+|---|---|
+| [E27](results/E27/summary.json) | MellorらのFig. 2Jで原形質連絡を加えると、規格化蛍光の誤差は3系統で約62〜76%減少。2介入の蛍光変化はモデルと同方向。 |
+| [E28](results/E28/summary.json) | 投入標識の20%が初めて戻るまで1.26規格化時間。成長率を0.5→1.5にすると頻度0.190→0.386、間隔2.63→3.89。成長依存の独立供給は同じ頻度と間隔を再現する。 |
+| [E29](results/E29/summary.json) | 低生産側で調整した予測を `59c2856` で固定。高生産側の頻度50点・間隔48点の対数RMSEは、二待ち時間式0.336・0.375、固定周期0.380・0.474、固定間隔0.391・0.410。 |
+
+登録は `95aaf1b`、図の低生産側から計算した事前予測は `59c2856`、採点・図の最終計算は `55c48d5`。Gitから展開したコードと空の出力先で約4.6秒で再計算し、数値と図6点、検証9項目、既存テスト22件を照合した。前回までのハッシュ149項目も確認した。E13とE23の訂正は `eb3dbaf`。E13の再計算は7条件、数値が以前と一致し、6つのNPZもバイト単位で一致。E21〜E23を再実行し、著者表記を変えたE23の図のみ更新した。[実行ログ](results/REFLUX_GROWTH_RUN.json)・[今回のSHA-256](results/REFLUX_GROWTH_SHA256SUMS)
+
+追試には、[原本の取得記録](access/2026-11-20-reflux-growth.md)の3 JPEGと大学版PDFが要る。公開済みの予測は出力先とは別の場所から読み、再生成した予測と一致した場合にのみ高生産側を採点する。
+
+```bash
+python3 -m pip install -r experiments/requirements.txt -r experiments/E29_growth_holdout/requirements.txt
+mkdir -p data/raw/reflux_growth
+torus_cdn='https://cdn.ncbi.nlm.nih.gov/pmc/blobs/64f6/7132777'
+curl --fail --location "$torus_cdn/82245338738c/develop-147-181669-g2.jpg" -o data/raw/reflux_growth/mellor_fig2.jpg
+curl --fail --location "$torus_cdn/087276e63c38/develop-147-181669-g4.jpg" -o data/raw/reflux_growth/mellor_fig4.jpg
+curl --fail --location "$torus_cdn/abf436973a0c/develop-147-181669-g5.jpg" -o data/raw/reflux_growth/mellor_fig5.jpg
+curl --fail --location \
+  'https://dspace.library.uu.nl/bitstream/handle/1874/413557/1_s2.0_S153458072100561X_main.pdf?sequence=1' \
+  -o data/raw/reflux_growth/berg_uu_alt.pdf
+run_dir=$(mktemp -d)
+python3 -m experiments.run_reflux_growth --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/REFLUX_GROWTH_SHA256SUMS | sha256sum -c -
+```
+
+E29の [seal](results/E29/sealed_predictions.json) に低生産側の点・各式の係数と予測列、[採点](results/E29/summary.json) に高い側の点と誤差がある。原著の個体データ・コードの公開先は未取得。次の判定には、同じ根で細胞生産率を照合してから選択的に戻りの経路を変え、標識の再到達と準備シグナルの時刻、出現した側根を測る。局所補充で同じ応答が得られる場合の説明も事前に残す。[第9回報告](../docs/18_REFLUX_GROWTH_REPORT.md)
+
+第8回では内皮のPIN3と初回分裂への進行（H24）、分裂開始と分裂方向の違い（H25）、培地の化学ポテンシャルと伸長（H26）を公表資料の再解析で条件内支持した。[第8回報告](../docs/17_LOCAL_REFLUX_REPORT.md)
 
 ## 第8回の結果と追試
 
