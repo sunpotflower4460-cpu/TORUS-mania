@@ -8,6 +8,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Rectangle
+from scipy.constants import epsilon_0
 
 ROOT = Path(__file__).resolve().parents[1]/"research/results"
 BLUE, ORANGE, GRAY = "#0c6885", "#ba581d", "#63747c"
@@ -87,8 +88,8 @@ def plot_fields(root, out):
         x,z=d["x"],d["z"]
         contour(axes[1,0],x,z,abs(d["electric"]),"C   Toroidal pulse electric field",
                 "Azimuthal magnitude (V/m)",fig,"viridis")
-        contour(axes[1,1],x,z,d["energy"],"D   Pulse electromagnetic energy",
-                "Density (ε₀ × V²/m²)",fig,"viridis")
+        contour(axes[1,1],x,z,d["energy"]*epsilon_0*1.e15,"D   Pulse electromagnetic energy",
+                "Density (10⁻¹⁵ J/m³)",fig,"viridis")
         # A section of the local Poynting vector, with both axes sampled on the same grid.
         sr,sz = d["flux_r"],d["flux_z"]
         x_direction = x/np.hypot(x,.0625)
@@ -100,7 +101,7 @@ def plot_fields(root, out):
         axes[1,1].quiver(x[sample], z[sample],dx[sample,sample].T,dz[sample,sample].T,
                          color="white",width=.004,scale=magnitude.max()*14.)
     for ax in axes[1]:
-        ax.set(xlim=(-4.,4.),ylim=(-3.,3.))
+        ax.set(xlim=(-5.5,5.5),ylim=(-3.,3.))
     fig.suptitle("Field geometry and energy density · white contours at 35% of each peak",
                  fontsize=12,weight="bold")
     fig.savefig(out/"fields_and_energy.png",dpi=172)
