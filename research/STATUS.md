@@ -1,6 +1,36 @@
-# 再開メモ　エネルギーと閉経路のE09〜E12まで実行済み
+# 再開メモ　動く循環とエネルギーのE13〜E15まで実行済み
 
-更新2026-11-20 UTC。現ブランチ `research/energy-principle` はE03〜E08の `research/e03-e08`（`152f030`）を継承。流体と静磁場の循環に共通のエネルギー原理（H13）、渦と光で輪状の等値領域が現れる幾何条件（H14）を、それぞれ登録範囲内で支持した。H08の全体は未決。[第3回報告](../docs/12_ENERGY_RESEARCH_REPORT.md)・[全14主張の台帳](claims.json)
+更新2026-11-20 UTC。現ブランチ `research/dynamic-circulation` はE09〜E12の `research/energy-principle`（`d6335dd`）を継承。渦度と受動磁場の共通の流束発展則（H15）、形を保つ輪の境界を通じたエネルギー交換（H16）を、登録条件で支持した。渦輪を衝突させた公開PIVの図配列を1研究分再集計した。H08の全体と、相互作用で持続する個体性・階層ができるH06の部分は未決。[第4回報告](../docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[全16主張の台帳](claims.json)
+
+## 第4回の結果と追試
+
+| 実験 | 再開に使うもの | 主な結果 |
+|---|---|---|
+| E13 | [7条件の数値](results/E13/)・[式と文献](notes/E13_flux_and_mhd.md) | 無拡散の渦度・磁場は移動断面に99.97%を保った。速い磁気拡散で38.12%。輪は初期条件に与え、磁場からの反作用を省いた。 |
+| E14 | [2パルス・2格子の収支](results/E14/)・[輸送定理と光の重心](notes/E14_energy_transport.md) | 形の続く真空パルスでエネルギーは移動境界を両向きに通る。円形噴流で渦度とエネルギー密度の形が異なり、粘性と圧力も収支に寄与した。 |
+| E15 | [再集計した数値と曲線](results/E15/)・[公開配列の出典](notes/E15_collision_piv.md) | 衝突後の乱流エネルギーが広がった。前半の二次モーメントの直線は後半の予測で一定値に劣った。交差項の比は元の量から符号つきで再計算した。 |
+
+第4回事前登録は `520fb53`、追加観測は `19136d4`、光重心の解析対照は `a5e0e18`。最終計算・描画は `4b39db8`。Debian 13 x86_64、Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8。E15のHDF5読取りだけh5py 3.15.1を追加した。すべて決定論的で乱数種を用いていない。GPUを使わず各数値ライブラリ1スレッド、3プロセスまでで追試した。Gitから新規に展開したコードで約174秒、53項目の校正・収支チェックを通過し、26個の数値と図の成果物が初回とバイト単位で一致した。[実行ログ](results/DYNAMICS_RUN.json)・[成果物のSHA-256](results/DYNAMICS_SHA256SUMS)・[図](results/dynamics_figures/)
+
+追試はリポジトリのルートで実行する。データを既に取得した場合は同じファイルを `--raw` で指定できる。取得が必要な場合はZenodoの版固定URLから3ファイルを保存する。[取得記録・原本のハッシュ](access/2026-11-20-dynamics.md)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt -r experiments/E15_collision_data/requirements.txt
+mkdir -p data/raw/dynamics
+for source_file in Fig1B_Energy_spreading.h5 Fig4B_energy_distribution.h5 Fig5A_kymograph.h5; do
+  curl --fail --location --retry 2 \
+    "https://zenodo.org/api/records/18380405/files/$source_file/content" \
+    -o "data/raw/dynamics/$source_file" || exit 1
+done
+run_dir=$(mktemp -d)
+python3 -m experiments.run_dynamics --raw data/raw/dynamics \
+  --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/DYNAMICS_SHA256SUMS | sha256sum -c -
+```
+
+E13の配列は `flux` が時刻×4断面×場、`flux_diffusion_rate` は面の縁の積分から求めた時刻変化。`energy`、`dissipation_power`、`stretching_power` は時刻×場。場の順序と単位は各JSONにある。E14の各 `fine_moving` などは蓄積と積算した流出入・散逸、収支残差を `budget_columns` 順に持つ。光の時間は q₁/c、エネルギーはJSON記載の倍率でSI単位に変換できる。E15の `observables.npz` は幅の時系列と前半で学習した予測、3装置の符号つき分解を、JSONの列順に持つ。元データと分解の範囲は[出典カード](notes/E15_collision_piv.md)に記録した。
+
+新しい実測課題は、同期した三次元速度・磁場、または電磁場の時空間計測から、移動境界での流束を直接照合すること。渦輪同士の衝突では、集合平均に入る前の個別試行で境界・流束・交換の回復を測り、再形成の持続時間を衝突条件と対照する。[研究報告](../docs/13_DYNAMIC_CIRCULATION_REPORT.md)
 
 ## 第3回の結果と残る証拠
 
@@ -11,7 +41,7 @@
 | E11 | 局所の機械エネルギー収支と真空Maxwellパルスの電磁エネルギー・ポインティング流束。[流体](results/E11/fluid/summary.json)・[光](results/E11/light/summary.json) | 渦度と運動エネルギーの形が異なった。光の解析解に電磁エネルギーの輪も成立。実測流束の入力は未取得。 |
 | E12 | 別設定で、断面から三次元の形を予測。パルス24/24、円形噴流16/16、スリット比較8/8。[全採点](results/E12/) | 実空間の形の予測に支持。異分野で同じ時間発展方程式が成り立つかは未判定。 |
 
-今回の残りは、コイル全体の磁気エネルギーを測るための外部場データ、超流動の実効半径と回転率の独立な校正、枝の成長と同時に物質・エネルギー収支を測るデータ。宇宙の動的な構造にはモデル固有な観測予測が必要。[文献・アクセス記録](access/2026-11-20-energy.md)
+第3回から残るのは、コイル全体の磁気エネルギーを測るための外部場データ、超流動の実効半径と回転率の独立な校正、枝の成長と同時に物質・エネルギー収支を測るデータ。宇宙の動的な構造にはモデル固有な観測予測が必要。[文献・アクセス記録](access/2026-11-20-energy.md)
 
 ## 第3回の追試
 

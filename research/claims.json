@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "scoped_energy_and_geometric_principles",
+  "stage": "dynamic_circulation_and_energy_exchange",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -16,7 +16,10 @@
     "E09",
     "E10",
     "E11",
-    "E12"
+    "E12",
+    "E13",
+    "E14",
+    "E15"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -26,7 +29,8 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図から独自に読取り・比較した研究単位。E10のVinitskiy、Le、Kumar、Ryu。論文内の複数図は1件。元時系列・生データの再解析とは別。"
+    "published_measurement_reanalyses": "公表図から独自に読取り・比較した研究単位。E10のVinitskiy、Le、Kumar、Ryu。論文内の複数図は1件。元時系列・生データの再解析とは別。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaらは1件。画像からの読取りや、試行ごとのPIV速度生データの件数とは別。"
   },
   "claims": [
     {
@@ -240,12 +244,15 @@
       ],
       "planned_experiments": [
         "E05",
-        "E06"
+        "E06",
+        "E15"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1088/0169-5983/46/3/031415"
+        "https://doi.org/10.1088/0169-5983/46/3/031415",
+        "https://doi.org/10.1073/pnas.2526858123",
+        "https://doi.org/10.5281/zenodo.18380405"
       ],
-      "evidence_role": "位相への対照介入と、二つの渦輪の同時発展・単独対照が相互作用を支持。交換後の境界・自己維持・持続する階層の生成は未判定。",
+      "evidence_role": "二つの渦輪の同時発展と単独対照に、八つの渦輪を衝突させた公開測定の空間分布・エネルギー分解を追加。持続する境界や階層の生成は未判定。",
       "independently_reproduced": false,
       "results": [
         {
@@ -265,17 +272,32 @@
           "role": "paired_vs_singles",
           "path": "research/results/E05/base/summary.json",
           "finding": "基準48³の各輪の移動は単独時より+0.130/+0.027 m、中央面の積算エネルギー流束の超過は+0.928 J。"
+        },
+        {
+          "experiment_id": "E15",
+          "role": "archived_measurement_array",
+          "path": "research/results/E15/summary.json",
+          "finding": "小さな乱流塊の半信号半径が0.6〜5.5秒に51.8→106.3 mm。前半の二次モーメントの直線を後半へ外挿した誤差は一定値より大きい。"
         }
       ],
-      "next_action": "外乱後も維持・再形成する境界と交換する量を定義し、同じ指標で個体性のない対照と比較する。",
+      "next_action": "衝突前後の個別の三次元速度場で流束を追い、強さ・衝突角を変えたときの境界の回復とエネルギー交換を対照比較する。",
       "literature_notes": [
         "research/notes/S007_vortices.md",
-        "research/notes/X1_X2_vortex_experiments.md"
+        "research/notes/X1_X2_vortex_experiments.md",
+        "research/notes/E15_collision_piv.md"
       ],
       "tested_subclaims": [
         {
           "statement": "指定した二組の位相・二つの渦輪の相互作用が相手の運動を変える。",
           "status": "supported_within_scope"
+        },
+        {
+          "statement": "指定の渦輪衝突装置で、駆動停止後に平面内の乱流エネルギー信号が外側へ広がる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "指定の観測区間の前半の一定増加率で、二次モーメントの後半を固定形の対照より正確に予測できる。",
+          "status": "not_supported_in_test"
         }
       ]
     },
@@ -332,12 +354,15 @@
         "E09",
         "E10",
         "E11",
-        "E12"
+        "E12",
+        "E13",
+        "E14",
+        "E15"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路で共通のエネルギー原理が成立（H13）。局在する周方向成分が輪になる幾何条件を流体と光に適用（H14）。植物・渦・波を一つの発展方程式で予測する全体の命題は未決。",
+      "evidence_role": "閉経路で共通のエネルギー原理（H13）、流体と光で輪になる幾何条件（H14）、渦度と弱磁場の流束の発展則（H15）を支持。移動領域を使った収支の範囲はH16。植物・渦・波を一つの生成則で予測する全体の命題は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -363,6 +388,18 @@
           "role": "shared_geometric_prediction",
           "path": "research/results/E12/light/summary.json",
           "finding": "別設定のパルス24/24、円形噴流16/16で断面からの形の予測が三次元判定と一致。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "conditional_common_dynamics",
+          "path": "research/results/E13/diffusive48/summary.json",
+          "finding": "同じ速度・拡散率・比例初期値で渦度と受動磁場が比例を維持。磁気拡散率0.18では0.8秒の流束が38.12%まで低下。"
+        },
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_transport",
+          "path": "research/results/E14/light20/summary.json",
+          "finding": "輪状の電磁エネルギー等値領域が続く間にも、重心と進む輪から初期領域内エネルギーの79.61%相当が流出し、29.80%相当が流入。"
         }
       ],
       "next_action": "形に加え、実測のエネルギー移動と介入応答を予測する共通生成モデルを比較する。",
@@ -372,7 +409,9 @@
         "research/notes/E07_hydraulic_filter.md",
         "research/notes/Cantarella_topology_energy.md",
         "research/notes/E10_energy_observations.md",
-        "research/notes/E11_toroidal_light.md"
+        "research/notes/E11_toroidal_light.md",
+        "research/notes/E13_flux_and_mhd.md",
+        "research/notes/E14_energy_transport.md"
       ],
       "tested_subclaims": [
         {
@@ -385,6 +424,10 @@
         },
         {
           "statement": "軸から分離した局在断面が回転対称な方位渦度と方位電場でトーラス状領域を作る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "滑らかな非圧縮流の中で、渦度と磁力の反作用が無視できる磁場に共通の移流・伸長・拡散式が適用できる。",
           "status": "supported_within_scope"
         }
       ]
@@ -402,10 +445,11 @@
       "planned_experiments": [
         "E08",
         "E09",
-        "E11"
+        "E11",
+        "E13"
       ],
       "evidence_urls": [],
-      "evidence_role": "端子間定常輸送に閉路が必須という限定命題は木の対照で不支持。実空間・状態空間・別尺度を一括した必要性は判定しない。 E11で渦度が輪を形成しても運動エネルギーの高密度域は軸付近に集中した。",
+      "evidence_role": "木の対照で、端子間定常輸送に閉路が必須という限定命題は不支持。E11の運動エネルギーの高密度域は軸付近、E13の磁場は渦輪を含まないせん断流でエネルギーが増えた。異なる尺度や状態空間も含む必要性は未判定。",
       "independently_reproduced": false,
       "results": [
         {
@@ -425,6 +469,12 @@
           "role": "counterexample",
           "path": "research/results/E11/fluid/summary.json",
           "finding": "両格子で渦度の輪候補9時刻、運動エネルギーの輪候補0時刻。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "counterexample",
+          "path": "research/results/E13/shear/summary.json",
+          "finding": "輪の渦度を持たない解析せん断流で、0.8秒後の受動磁場エネルギーが初期値の119.16%。"
         }
       ],
       "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
@@ -436,6 +486,10 @@
         },
         {
           "statement": "登録の円形噴流で、渦度と運動エネルギーの0.35等値領域が常に同時に輪候補になる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "指定の周期箱で、流れが受動磁場のエネルギーを増やすために渦度がトーラス状に集中する必要がある。",
           "status": "not_supported_in_test"
         }
       ]
@@ -646,7 +700,108 @@
       "literature_notes": [
         "research/notes/E11_toroidal_light.md"
       ]
+    },
+    {
+      "id": "H15",
+      "statement": "非圧縮流に運ばれる渦度と弱磁場は同じ流束発展則に従い、理想条件で閉管の物質断面を通る流束が保たれる。",
+      "status": "supported_within_scope",
+      "scope": "滑らかで一定密度の非圧縮流、磁力の反作用を省いた受動磁場、一定の動粘性と磁気拡散率。E13で輪は初期条件に与えた。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E13"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.83.056405",
+        "https://arxiv.org/abs/physics/0510265"
+      ],
+      "evidence_role": "物質面とStokesの定理から導出し、異なる拡散、初期位置、ゼロ場、せん断の独立な解析解で校正。導電流体実験は誘導機構の定性的照合。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E13",
+          "role": "analytic_and_numerical",
+          "path": "research/results/E13/ideal48/summary.json",
+          "finding": "0.8秒後の物質断面流束は両方99.967%。運動エネルギーは一定、受動磁場のエネルギーは伸長の仕事で1.29%増えた。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "diffusivity_and_initial_condition_intervention",
+          "path": "research/results/E13/diffusive48/summary.json",
+          "finding": "同拡散率では80.24%、速い磁気拡散では38.12%。輪候補のままでも流束保持率は異なる。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "counterexample",
+          "path": "research/results/E13/shear/summary.json",
+          "finding": "輪のないせん断流でも受動磁場のエネルギーは0.640から0.763 Jへ増えた。"
+        }
+      ],
+      "next_action": "速度・磁場の同時測定から物質面を追い、磁力の反作用の有無を変えた数値解と流束を比較する。",
+      "literature_notes": [
+        "research/notes/E13_flux_and_mhd.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "同じ速度と拡散率で比例する初期値を用いると、渦度と受動磁場の比例関係が保たれる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "輪の形を保つことから物質断面の流束の保存を一般に推論できる。",
+          "status": "invalid_general_inference"
+        }
+      ]
+    },
+    {
+      "id": "H16",
+      "statement": "輪が保たれる時間にも、輪を追う領域と周囲の間でエネルギーの交換が起こり得る。",
+      "status": "supported_within_scope",
+      "scope": "登録した真空TEパルスと単発の円形噴流。輪は電磁エネルギー密度または方位渦度の等値領域で判定。領域の蓄積は移動する境界で測定した。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E14"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.54.889",
+        "https://doi.org/10.1038/s41467-021-26037-w"
+      ],
+      "evidence_role": "移動領域の収支を、固定領域、理想平面波、別パルス、格子と求積精度の変更で比較。TE場の重心速度をブーストの解析式と照合。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_exchange",
+          "path": "research/results/E14/light20/summary.json",
+          "finding": "蓄積50.19%、流出79.61%、流入29.80%。初期の内部エネルギーのうち、全サンプル時点で内部にあった重みは37.09%。"
+        },
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_exchange",
+          "path": "research/results/E14/flow64/summary.json",
+          "finding": "初期の領域内運動エネルギーに対し外向き移流30.56%、内向き13.10%。等値領域では方位渦度の輪候補が9時点で続いた。"
+        }
+      ],
+      "next_action": "時空間分解した電磁場またはPIV速度場から、同様の移動境界の流束を再計算する。",
+      "literature_notes": [
+        "research/notes/E14_energy_transport.md",
+        "research/notes/E11_toroidal_light.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "輪状の等値領域が保たれることを、初期のエネルギーが同じ領域に閉じ込められ続ける根拠にできる。",
+          "status": "invalid_general_inference"
+        },
+        {
+          "statement": "検査した真空パルスを電磁エネルギー重心の速度で追うとき、移動断面の収支に境界速度の項が必要になる。",
+          "status": "supported_within_scope"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 4
+  "published_measurement_reanalyses": 4,
+  "archived_experimental_figure_array_reanalyses": 1
 }

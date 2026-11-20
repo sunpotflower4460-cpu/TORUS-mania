@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E12は登録した条件で実行済み。流体と静磁場に共通する閉経路のエネルギー原理、噴流と光に共通する輪の形、公開測定での成功と不一致を報告した。[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[渦・分岐を扱った第2回](docs/11_SECOND_RESEARCH_REPORT.md)・[再実行と現在の判断](research/STATUS.md)
+E01〜E15は登録した条件で実行済み。共通の流束発展則、輪を追う領域のエネルギー収支、八つの渦輪を衝突させた公開PIVの再集計まで進んだ。これまでに閉経路のエネルギー原理、渦・分岐・波の比較も報告した。[第4回報告](docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[渦・分岐を扱った第2回](docs/11_SECOND_RESEARCH_REPORT.md)・[再実行と現在の判断](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

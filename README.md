@@ -8,7 +8,7 @@
 
 ## 現在の研究結果
 
-E01〜E12を実行した。流体と静磁場で、閉じた経路の数が独立した循環の数を決め、それぞれの蓄積エネルギーを同じ幾何係数から計算できた。渦と光の輪の形を予測する共通条件も検証した。植物の成長や宇宙の構成までを一つの力学で説明する仮説は引き続き検討する。[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[第2回報告](docs/11_SECOND_RESEARCH_REPORT.md)・[主張台帳](research/claims.json)・[再開と追試](research/STATUS.md)
+E01〜E15を実行した。閉経路が流体と静磁場の最小エネルギーを決める条件と、渦と光が輪になる条件を検証した。新たに渦度と受動磁場の共通の移流・拡散則を照合し、輪が続く間のエネルギーの出入りを計算した。渦輪を衝突させた公開PIVから、駆動停止後のエネルギー分布の広がりも確認した。植物の成長や宇宙の構成への適用は未判定。[第4回報告](docs/13_DYNAMIC_CIRCULATION_REPORT.md)・[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[主張台帳](research/claims.json)・[再開と追試](research/STATUS.md)
 
 ## 最初の研究結果
 
