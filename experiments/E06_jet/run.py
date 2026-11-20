@@ -25,13 +25,15 @@ def profile(tank,shape,bulk):
     return raw * ((np.pi*bulk)/(raw.sum()*tank.h**2))
 
 
-def run(out,case):
+def run(out,case,refine=False):
     out.mkdir(exist_ok=True,parents=True)
     shape,bulk,duration=CASES[case]
     resolutions=[(32,1/64),(48,1/128)]
     if case=="circle":
         resolutions.insert(1,(32,1/128))
     if case=="larger":
+        resolutions=[(64,1/128)]
+    if refine:
         resolutions=[(64,1/128)]
     runs=[]
     for n,dt in resolutions:
@@ -61,7 +63,12 @@ def run(out,case):
 if __name__=="__main__":
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--out",type=Path,default=OUT)
-    p.add_argument("--case",choices=CASES)
+    modes=p.add_mutually_exclusive_group()
+    modes.add_argument("--case",choices=CASES)
+    modes.add_argument("--refine-circle",action="store_true")
     args=p.parse_args()
-    for name in ([args.case] if args.case else CASES):
-        run(args.out/name,name)
+    if args.refine_circle:
+        run(args.out/"circle_fine","circle",refine=True)
+    else:
+        for name in ([args.case] if args.case else CASES):
+            run(args.out/name,name)

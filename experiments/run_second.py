@@ -27,6 +27,7 @@ def commands(out, workbook):
         yield "E05/"+name, "E05_interaction.run", ["--case",name,"--out",out/"E05"]
     for name in CASES:
         yield "E06/"+name, "E06_jet.run", ["--case",name,"--out",out/"E06"]
+    yield "E06/circle_fine", "E06_jet.run", ["--refine-circle","--out",out/"E06"]
     yield "E07/predict", "E07_transfer.predict", ["--out",out/"E07"]
     yield "E07/score", "E07_transfer.run", ["--out",out/"E07"]
     yield "E08", "E08_survey.run", ["--out",out/"E08"]
