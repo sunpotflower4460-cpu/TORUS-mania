@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "directional_transport_and_first_division",
+  "stage": "measured_particle_paths_and_auxin_chemistry",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -58,7 +58,13 @@
     "E51",
     "E52",
     "E53",
-    "E54"
+    "E54",
+    "E55",
+    "E56",
+    "E57",
+    "E58",
+    "E59",
+    "E60"
   ],
   "independent_external_data_reanalyses": 4,
   "evidence_fields": {
@@ -66,10 +72,10 @@
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
-    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。 E58は同じNiwayamaらの原著の動画を初めて追跡した。別個体の独立再現として再加算しない。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。"
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。"
   },
   "claims": [
     {
@@ -260,7 +266,9 @@
         "E38",
         "E44",
         "E45",
-        "E50"
+        "E50",
+        "E55",
+        "E56"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -296,7 +304,10 @@
         "https://doi.org/10.1073/pnas.1005878107",
         "https://doi.org/10.1104/pp.111.191288",
         "https://doi.org/10.1105/tpc.107.051599",
-        "https://doi.org/10.1105/tpc.106.048777"
+        "https://doi.org/10.1105/tpc.106.048777",
+        "https://doi.org/10.1105/tpc.113.114421",
+        "https://doi.org/10.1105/tpc.104.029272",
+        "https://doi.org/10.1105/tpc.109.066480"
       ],
       "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。 別の研究で小胞輸送に関わる介入により予定部位の密度が変わり、始原細胞マーカーと初回分裂後の器官が異なる反応を示した。 表皮のオーキシン合成後に中心柱の応答が出て、阻害剤で方向別に変わる。別試料の成長介入の周期を二待ち時間式で予測した。野生型の地上部を接ぐと変異型の根の分岐が増えた。",
       "independently_reproduced": false,
@@ -432,6 +443,18 @@
           "role": "transport_direction_and_elongation",
           "path": "research/results/E50/summary.json",
           "finding": "mdr1の2系統の一次根では根端向き16〜18%、地上部向き101〜105%。側根への標識輸送は野生型基準の約38〜40%。外部IAAで側根の伸びは約2.89・3.46から6.07・6.31 mm/日へ部分回復。"
+        },
+        {
+          "experiment_id": "E55",
+          "role": "chemical_forms_after_rootward_transport",
+          "path": "research/results/E55/summary.json",
+          "finding": "切断面への¹⁴C標識IAAの供給後8時間、先端5 mmで遊離IAAの保持時間帯は表示信号比3.29%、oxIAAとその糖抱合体の時間帯は合計約50.5%。"
+        },
+        {
+          "experiment_id": "E56",
+          "role": "local_root_system_synthesis",
+          "path": "research/results/E56/summary.json",
+          "finding": "地上部を切った根で先端0〜0.5 mmの新しい同位体標識IAA／非標識IAAは0.51。無傷苗は1.01。"
         }
       ],
       "next_action": "同じ根で外層を経た天然IAAの出発領域への帰還と、伸長・成熟皮層細胞長・準備信号・初回分裂・出現側根を記録する。前向き輸送と局所補充をそろえる。",
@@ -450,7 +473,8 @@
         "research/notes/E33_E38_return_and_energy_evidence.md",
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
-        "research/notes/E49_E54_turning_paths_evidence.md"
+        "research/notes/E49_E54_turning_paths_evidence.md",
+        "research/notes/E55_E60_particle_return_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -495,6 +519,10 @@
         },
         {
           "statement": "シロイヌナズナの側根自体への軸方向の供給と、その出現後の伸長の一部がMDR1に依存する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "根端のIAA量には地上部からの輸送に加え、根の中での合成と代謝が寄与しうる。",
           "status": "supported_within_scope"
         }
       ]
@@ -648,7 +676,9 @@
         "E46",
         "E48",
         "E51",
-        "E52"
+        "E52",
+        "E58",
+        "E59"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3",
@@ -660,7 +690,10 @@
         "https://doi.org/10.1371/journal.pone.0159917",
         "https://doi.org/10.1371/journal.pone.0159917.s004",
         "https://doi.org/10.1371/journal.pone.0159917.g003",
-        "https://doi.org/10.1038/s41556-017-0032-9"
+        "https://doi.org/10.1038/s41556-017-0032-9",
+        "https://doi.org/10.1371/journal.pone.0159917.s006",
+        "https://doi.org/10.1371/journal.pone.0159917.s008",
+        "https://doi.org/10.1038/s41567-023-02223-z"
       ],
       "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。 予定部位の時系列は、弱いピークのある一定周期と、変動する遅い周期でも一致し得る。 正の抵抗を持つ線形網で圧力・電気・化学輸送に仕事率の共通式。輪の運動エネルギーの固定係数は別装置に一般化できなかった。植物の成長と渦輪を同じ生成則で予測した試験は残る。",
       "independently_reproduced": false,
@@ -796,6 +829,18 @@
           "role": "intervention_before_first_division",
           "path": "research/results/E52/summary.json",
           "finding": "一細胞胚で既存のPAR領域を流れで回した後、90度未満の9/9個は通常の大小関係、90度超の3/3個は反転。正常の最大86.2度から反転の最小105.6度の間は未観測。"
+        },
+        {
+          "experiment_id": "E58",
+          "role": "time_resolved_axial_contraflow_and_censoring",
+          "path": "research/results/E58/summary.json",
+          "finding": "線虫1胚の7つの1分区間で短時間の顆粒速度が中央・外側で逆向き。最長の連続追跡は110秒、60秒以上の27本に5 µm以上離れたものは0本。"
+        },
+        {
+          "experiment_id": "E59",
+          "role": "localized_force_intervention_before_division",
+          "path": "research/results/E59/summary.json",
+          "finding": "前核近くの平面切断で12秒後の変位は無切断より+1.47 µm、前側皮質近くの弧状切断では30秒後の前進が−1.74 µm。原著の局所流は周囲を引かれて動く前核による流れと整合した。"
         }
       ],
       "next_action": "根で天然IAAの外層通過と帰還を追う。発生では局所の形が現れる前の流束と仕事を測り、三次元循環を変えた時の形を予測する。渦輪では時刻・境界・駆動をそろえた量を比較する。",
@@ -819,7 +864,8 @@
         "research/notes/E33_E38_return_and_energy_evidence.md",
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
-        "research/notes/E49_E54_turning_paths_evidence.md"
+        "research/notes/E49_E54_turning_paths_evidence.md",
+        "research/notes/E55_E60_particle_return_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -848,6 +894,10 @@
         },
         {
           "statement": "初回分裂の向きに対する流れの効果と、トーラス状に閉じた全機械エネルギー流束の作用を同一視できる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "短区間の対向流や回り込む局所流だけで、形を作る方向の因果を特定できる。",
           "status": "not_identifiable"
         }
       ]
@@ -2481,7 +2531,11 @@
         "E44",
         "E45",
         "E49",
-        "E50"
+        "E50",
+        "E55",
+        "E56",
+        "E57",
+        "E60"
       ],
       "evidence_urls": [
         "https://doi.org/10.1111/nph.17183",
@@ -2492,7 +2546,11 @@
         "https://doi.org/10.1104/pp.111.191288",
         "https://doi.org/10.1104/pp.103.022582",
         "https://doi.org/10.1105/tpc.107.051599",
-        "https://doi.org/10.1105/tpc.106.048777"
+        "https://doi.org/10.1105/tpc.106.048777",
+        "https://doi.org/10.1105/tpc.113.114421",
+        "https://doi.org/10.1105/tpc.104.029272",
+        "https://doi.org/10.1105/tpc.109.066480",
+        "https://doi.org/10.1038/s41467-021-27020-1"
       ],
       "evidence_role": "輸送方向の観測、組織ごとの応答、濃度センサー、根全体の化学測定は判別に必要な要素。外層を経た天然IAAの帰還量は未取得。",
       "independently_reproduced": false,
@@ -2532,13 +2590,38 @@
           "role": "transport_direction_and_elongation",
           "path": "research/results/E50/summary.json",
           "finding": "mdr1の2系統の一次根では根端向き16〜18%、地上部向き101〜105%。側根への標識輸送は野生型基準の約38〜40%。外部IAAで側根の伸びは約2.89・3.46から6.07・6.31 mm/日へ部分回復。"
+        },
+        {
+          "experiment_id": "E55",
+          "role": "chemical_forms_after_rootward_transport",
+          "path": "research/results/E55/summary.json",
+          "finding": "切断面への¹⁴C標識IAAの供給後8時間、先端5 mmで遊離IAAの保持時間帯は表示信号比3.29%、oxIAAとその糖抱合体の時間帯は合計約50.5%。"
+        },
+        {
+          "experiment_id": "E56",
+          "role": "local_root_system_synthesis",
+          "path": "research/results/E56/summary.json",
+          "finding": "地上部を切った根で先端0〜0.5 mmの新しい同位体標識IAA／非標識IAAは0.51。無傷苗は1.01。"
+        },
+        {
+          "experiment_id": "E57",
+          "role": "real_time_binding_sensor",
+          "path": "research/results/E57/summary.json",
+          "finding": "根の洗出し10分後、センサーの基線からの上昇量は10分投与群で除去直後の約47%、1時間投与群では基線を下回った。傾斜の往復で左右差の符号も変わった。"
+        },
+        {
+          "experiment_id": "E60",
+          "role": "released_free_iaa_preserves_label",
+          "path": "research/results/E60/summary.json",
+          "finding": "標識IAA–Aspエステル投与後の遊離標識IAAは野生型20.62、加水分解に関わる4遺伝子の変異群で0.405 pmol/g新鮮重量。標識IAA–Aspの平均は57.63と56.95。"
         }
       ],
-      "next_action": "根の内側で出発集団を限定し、根端と外層を通過した標識を遊離IAAとして出発領域で捕捉する。方向別の弱化と外部供給の回復を対照にする。",
+      "next_action": "根端・外層の通過履歴と出発領域への初回帰還を、出発時に示した標識で対応させる。各途中区画と終点で遊離・抱合・酸化型を分離し、局所合成と抱合体からの再遊離を区別する。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
-        "research/notes/E49_E54_turning_paths_evidence.md"
+        "research/notes/E49_E54_turning_paths_evidence.md",
+        "research/notes/E55_E60_particle_return_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2559,6 +2642,18 @@
         },
         {
           "statement": "別試料のパルス前線・逆向き輸送・外部IAAによる回復をつないで、同じ分子の一周率を決められる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "シロイヌナズナの地上部を除いた根で根端向きに供給したIAA由来の標識は、終点の根端で酸化型・糖抱合体を含む化学形に分けて観測される。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "標識したIAAの抱合体の側鎖から、同じ標識を持つ遊離IAAが再生成できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "回収時に同じ標識の遊離IAAだと分かれば、外層を通り途中で一度も化学形を変えずに一周したと判断できる。",
           "status": "not_identifiable"
         }
       ]
@@ -2581,7 +2676,9 @@
         "E51",
         "E52",
         "E53",
-        "E54"
+        "E54",
+        "E58",
+        "E59"
       ],
       "evidence_urls": [
         "https://doi.org/10.1083/jcb.201709174",
@@ -2594,7 +2691,10 @@
         "https://doi.org/10.1371/journal.pone.0159917.g003",
         "https://doi.org/10.1038/s41556-017-0032-9",
         "https://doi.org/10.1091/mbc.E20-01-0058",
-        "https://doi.org/10.1016/j.cub.2023.08.076"
+        "https://doi.org/10.1016/j.cub.2023.08.076",
+        "https://doi.org/10.1371/journal.pone.0159917.s006",
+        "https://doi.org/10.1371/journal.pone.0159917.s008",
+        "https://doi.org/10.1038/s41567-023-02223-z"
       ],
       "evidence_role": "既存の介入は局所の配置と形の形成への流れや力の作用を支持する。先行するトーラス状エネルギー流束の固有効果は未測定。",
       "independently_reproduced": false,
@@ -2658,13 +2758,26 @@
           "role": "daughter_polarity_with_alternating_scan_control",
           "path": "research/results/E54/summary.json",
           "finding": "第1分裂後のP1で、正味の流れを打ち消す往復走査群と一方向走査群のPAR-2軸の平均は接触面を基準に−1.4度と+36.0度。各5個で処置終了から約8.5分後。"
+        },
+        {
+          "experiment_id": "E58",
+          "role": "time_resolved_axial_contraflow_and_censoring",
+          "path": "research/results/E58/summary.json",
+          "finding": "線虫1胚の7つの1分区間で短時間の顆粒速度が中央・外側で逆向き。最長の連続追跡は110秒、60秒以上の27本に5 µm以上離れたものは0本。"
+        },
+        {
+          "experiment_id": "E59",
+          "role": "localized_force_intervention_before_division",
+          "path": "research/results/E59/summary.json",
+          "finding": "前核近くの平面切断で12秒後の変位は無切断より+1.47 µm、前側皮質近くの弧状切断では30秒後の前進が−1.74 µm。原著の局所流は周囲を引かれて動く前核による流れと整合した。"
         }
       ],
-      "next_action": "初回分裂を終点として、同じ胚における形成前の全三次元経路・圧力と応力の仕事を測り、投入仕事を照合して異なる流路を与え、別の胚で娘細胞の大きさと位置を予測する。",
+      "next_action": "初回分裂の向きと大小を終点に、同じ胚で三次元の粒子座標を一周の見込み時間より長く追い、圧力・粘性による仕事と流路を変えた結果を照合する。前核など構造の運動が作る流れを代替として比較する。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
-        "research/notes/E49_E54_turning_paths_evidence.md"
+        "research/notes/E49_E54_turning_paths_evidence.md",
+        "research/notes/E55_E60_particle_return_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2702,6 +2815,18 @@
         {
           "statement": "同じ胚・全三次元の仕事と散逸を含む閉じた流束を操作したことから、初回分裂の向きが決まった。",
           "status": "open"
+        },
+        {
+          "statement": "一つの線虫胚で、外側と中心の顆粒の長軸方向の反対向きが、採点可能な7つの1分区間にわたり続く。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "この平面映像で、十分な距離を移動した同一顆粒の一周を連続追跡できる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "前核の移動に先行する局所の微小管切断は、その後の前核または中心体の変位を変える。",
+          "status": "supported_within_scope"
         }
       ]
     },
@@ -3103,8 +3228,220 @@
           "status": "not_identifiable"
         }
       ]
+    },
+    {
+      "id": "H57",
+      "statement": "根端に届いたIAA由来の標識は、回収時に遊離IAAと酸化型などの保持時間帯に分けられる。",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの地上部を切った根に標識IAAを供給、8時間後の先端約5 mmのHPLC。図6のLC–MS/MSは別の処置。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E55"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1105/tpc.113.114421"
+      ],
+      "evidence_role": "1分ごとの表示信号の分担と、窓の移動による変動を計算した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E55",
+          "role": "chemical_forms_after_rootward_transport",
+          "path": "research/results/E55/summary.json",
+          "finding": "切断面への¹⁴C標識IAAの供給後8時間、先端5 mmで遊離IAAの保持時間帯は表示信号比3.29%、oxIAAとその糖抱合体の時間帯は合計約50.5%。"
+        }
+      ],
+      "next_action": "採取位置と時間を増やし、同じ標識を質量分析で化合物別の絶対量に換算する。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "HPLCの遊離IAA窓の表示信号比を投与全量に対する遊離体回収率として使える。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H58",
+      "statement": "地上部がなくてもシロイヌナズナの根の系で新生IAAを観測できる。",
+      "status": "supported_within_scope",
+      "scope": "発芽7〜8日の24時間重水処置、根端から0〜2 mmの0.5 mm区間。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E56"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1105/tpc.104.029272",
+        "https://doi.org/10.1105/tpc.109.066480"
+      ],
+      "evidence_role": "標識体／非標識体の比と全IAAを無傷・根のみで比較した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E56",
+          "role": "local_root_system_synthesis",
+          "path": "research/results/E56/summary.json",
+          "finding": "地上部を切った根で先端0〜0.5 mmの新しい同位体標識IAA／非標識IAAは0.51。無傷苗は1.01。"
+        }
+      ],
+      "next_action": "輸送の各境界を擾乱した条件と化学形別の標識の移動を照合する。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "根のみ／無傷苗の同位体比は、切断前の局所由来IAAの分率をそのまま示す。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H59",
+      "statement": "根で外部IAAを除去した後の濃度を反映する信号の減り方は、投与時間で変わる。",
+      "status": "supported_within_scope",
+      "scope": "AuxSenの根のFRET比。外部投与10分（5株）と1時間（3株）の太い平均曲線。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E57"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41586-021-03425-2"
+      ],
+      "evidence_role": "群の基線と除去直後を使って時系列を規格化して比較。重力を戻したときの左右差の反転も記録。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E57",
+          "role": "real_time_binding_sensor",
+          "path": "research/results/E57/summary.json",
+          "finding": "根の洗出し10分後、センサーの基線からの上昇量は10分投与群で除去直後の約47%、1時間投与群では基線を下回った。傾斜の往復で左右差の符号も変わった。"
+        }
+      ],
+      "next_action": "同じ観察で濃度を示すセンサーに、通過位置を記録できる標識測定を重ねる。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "センサーの同じ位置にFRET信号が戻れば、同じ分子が戻ったと判定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H60",
+      "statement": "線虫1細胞胚の対向する顆粒の軸方向移動が同じ記録内で複数分続く。",
+      "status": "supported_within_scope",
+      "scope": "NiwayamaらS1の1胚の光学面。中央長軸の同じ範囲の12秒区間の中央値。1分ずつ7区間。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E58"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1371/journal.pone.0159917.s006",
+        "https://doi.org/10.1371/journal.pone.0159917.s008"
+      ],
+      "evidence_role": "実像を輝点でつなぎ直し、同一性が途切れた点で止め、一周や折り返しの長さの範囲と区別した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E58",
+          "role": "time_resolved_axial_contraflow_and_censoring",
+          "path": "research/results/E58/summary.json",
+          "finding": "線虫1胚の7つの1分区間で短時間の顆粒速度が中央・外側で逆向き。最長の連続追跡は110秒、60秒以上の27本に5 µm以上離れたものは0本。"
+        }
+      ],
+      "next_action": "複数の胚の体積画像で、十分な移動距離と観測期間のある粒子を追う。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "本動画で同じ顆粒の三次元の一周の有無を判定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H61",
+      "statement": "前核移動期に微小管を切断する位置によって、その後の中心体または前核複合体の変位が変わる。",
+      "status": "supported_within_scope",
+      "scope": "線虫接合子の前核移動。図5bの平面切断と図5hの弧状切断。変位の定義と分母は別。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E59"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41567-023-02223-z"
+      ],
+      "evidence_role": "公表された平均線の同時点と傾きを再計算し、動く前核の周囲に流れが生まれるという原著の機械モデルを照合した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E59",
+          "role": "localized_force_intervention_before_division",
+          "path": "research/results/E59/summary.json",
+          "finding": "前核近くの平面切断で12秒後の変位は無切断より+1.47 µm、前側皮質近くの弧状切断では30秒後の前進が−1.74 µm。原著の局所流は周囲を引かれて動く前核による流れと整合した。"
+        }
+      ],
+      "next_action": "力と軌道の両方を同じ試料で時間分解して測り、流れが結果となる条件と先行する条件を比較する。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "前核周囲の局所的な循環流は、全機械エネルギーの閉じた経路とその原因を特定する。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H62",
+      "statement": "標識付きIAA–Aspを含むエステルを投与すると、標識を保った遊離IAAが生じる。",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナ8日齢の苗で6時間後。野生型と加水分解に関わるilr1/ill四重変異、各4標本。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E60"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41467-021-27020-1"
+      ],
+      "evidence_role": "著者の数値ワークブックの遊離体と抱合体を別々に集計し、化学形の復元に関わる対照差を示した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E60",
+          "role": "released_free_iaa_preserves_label",
+          "path": "research/results/E60/summary.json",
+          "finding": "標識IAA–Aspエステル投与後の遊離標識IAAは野生型20.62、加水分解に関わる4遺伝子の変異群で0.405 pmol/g新鮮重量。標識IAA–Aspの平均は57.63と56.95。"
+        }
+      ],
+      "next_action": "帰還する標識の遊離・抱合・酸化型と外層の経路を同じ根で時系列に測る。",
+      "literature_notes": [
+        "research/notes/E55_E60_particle_return_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "本試験の終点二成分の比から、無傷の根でIAAが何回抱合を経て一周するかを推定できる。",
+          "status": "not_identifiable"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 34,
-  "archived_experimental_figure_array_reanalyses": 5
+  "published_measurement_reanalyses": 38,
+  "archived_experimental_figure_array_reanalyses": 6
 }
