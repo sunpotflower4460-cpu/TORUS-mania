@@ -66,8 +66,7 @@ def check_image(image):
 
 
 def verify_abstract(path, expected):
-    doc = json.loads(path.read_text())
-    (record,) = doc["resultList"]["result"]
+    record = json.loads(path.read_text())
     if record["doi"].lower() != expected.lower():
         raise ValueError("The article does not match the registered DOI")
     return record

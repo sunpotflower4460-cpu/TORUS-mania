@@ -1,6 +1,7 @@
 """Public inputs for the next hypothesis tests, pinned by SHA-256."""
 
 import argparse
+import json
 import shutil
 from hashlib import file_digest
 from pathlib import Path
@@ -18,7 +19,7 @@ SOURCES = {
     ),
     "wilkins-abstract.json": (
         "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:24477304&format=json&resultType=core",
-        "bdc2423a239146a3ad017f4ac270f6bb40cf5810a3b1cabae628b80827e8d7db",
+        "046316ac5c733880bde9dadad3f8dc34384423c0ecc3378eb48f40e3a8bc2cf2",
     ),
     "herrera-perez-figures.pdf": (
         "https://harvest.aps.org/v2/journals/articles/10.1103/PRXLife.1.013004/fulltext",
@@ -50,6 +51,14 @@ def source(raw, name):
     return checked(raw / name, SOURCES[name][1])
 
 
+def canonical_abstract(response):
+    (article,) = json.load(response)["resultList"]["result"]
+    stable = {key: article[key] for key in ("id", "doi", "pubYear", "abstractText")}
+    return (json.dumps(stable, sort_keys=True, ensure_ascii=False) + "\n").encode(
+        "utf-8"
+    )
+
+
 def fetch(raw):
     raw.mkdir(parents=True, exist_ok=True)
     for name, (url, digest) in SOURCES.items():
@@ -58,7 +67,10 @@ def fetch(raw):
                 path = Path(tmp.name)
                 try:
                     with urlopen(url, timeout=40) as response:
-                        shutil.copyfileobj(response, tmp)
+                        if name == "wilkins-abstract.json":
+                            tmp.write(canonical_abstract(response))
+                        else:
+                            shutil.copyfileobj(response, tmp)
                     tmp.close()
                     checked(path, digest).replace(raw / name)
                 finally:
