@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "flow_and_force_before_morphogenesis",
+  "stage": "auxin_transport_and_reentry_discrimination",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -22,7 +22,12 @@
     "E15",
     "E16",
     "E17",
-    "E18"
+    "E18",
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -30,10 +35,10 @@
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
-    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から独自に再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien。論文内の複数所見は1研究。各生データの再集計とは別。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaらは1件。画像からの読取りや、試行ごとのPIV速度生データの件数とは別。"
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaとE23のÖtvösの2件。画像からの読取り、図データになる前のPIV速度や顕微鏡画像とは別。"
   },
   "claims": [
     {
@@ -205,7 +210,11 @@
         "E06",
         "E07",
         "E17",
-        "E18"
+        "E18",
+        "E20",
+        "E21",
+        "E22",
+        "E23"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -215,9 +224,17 @@
         "https://doi.org/10.7554/eLife.15341",
         "https://doi.org/10.1073/pnas.0807814105",
         "https://doi.org/10.1104/pp.109.142448",
-        "https://doi.org/10.1073/pnas.191380498"
+        "https://doi.org/10.1073/pnas.191380498",
+        "https://doi.org/10.1093/jxb/erv541",
+        "https://doi.org/10.1126/science.1191937",
+        "https://doi.org/10.1093/jxb/erm171",
+        "https://doi.org/10.1104/pp.118.4.1369",
+        "https://doi.org/10.1104/pp.122.2.481",
+        "https://doi.org/10.1105/tpc.13.4.843",
+        "https://doi.org/10.1105/tpc.113.119495",
+        "https://doi.org/10.15252/embr.202051813"
       ],
-      "evidence_role": "同じ輸送課題に複数の枝・閉路の構成が成立し、外部植物データで分岐を再集計。既存の主根への力と、頂端の局所の伸びやすさが後の側根・葉を変えることを支持。根端の戻り輸送はタンパク質位置からの推定で、全植物と流れを共通に生成する式は未決。",
+      "evidence_role": "局所の力や伸びやすさは側根や葉の位置に関わる。曲げ頻度による本数の予測には反例がある。シロイヌナズナで方向性のあるオーキシン輸送と分岐の関与を支持。外層から中心への大きな戻りを予測しない生体モデルもある。三次元の戻り経路が閉じ、その戻りが分岐を予測するかは未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -237,15 +254,42 @@
           "role": "plant_development_intervention",
           "path": "research/results/E18/summary.json",
           "finding": "曲げた位置の側根は報告率99%対18%。葉の誘導2系統は14/73と10/55で、擬似処置は0/26と0/28。"
+        },
+        {
+          "experiment_id": "E20",
+          "role": "independent_falsification_controls",
+          "path": "research/results/E20/summary.json",
+          "finding": "曲げの間隔を2〜24時間に変えた8点。6時間で固定した一定式の残り7点のRMSEは0.86本/日、1曲がり1本なら3.74本/日。"
+        },
+        {
+          "experiment_id": "E21",
+          "role": "directional_transport_and_rescue",
+          "path": "research/results/E21/summary.json",
+          "finding": "局所の輸送阻害で側根密度0.33→0.23本/mm。別の実験では阻害中のオーキシン補充で約0.48本/mmの出現を確認。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        },
+        {
+          "experiment_id": "E23",
+          "role": "archived_figure_arrays_by_independent_repeat",
+          "path": "research/results/E23/summary.json",
+          "finding": "硝酸への側根密度応答の野生型−欠損型の差は3反復すべて正、平均+0.82本/cm。対応行から推定した野生型の本数差は+1.0、+0.9、−0.7本/個体。"
         }
       ],
-      "next_action": "同じ供給量のもとで根端での往路と戻り経路を計測し、戻り経路を変えたときの後の側根位置を検証する。",
+      "next_action": "同じ根で根先の標識が外層と中心を通る時系列を測り、再流入だけの変化から新しい側根の数と位置を事前に予測する。主根長、初期の原基、合成・分解を照合する。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S012_branching_data.md",
         "research/notes/X5_source_sink.md",
-        "research/notes/E18_plant_organ_placement.md"
+        "research/notes/E18_plant_organ_placement.md",
+        "research/notes/E20_lateral_root_controls.md",
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E23_pin2_nitrate.md"
       ],
       "tested_subclaims": [
         {
@@ -255,6 +299,18 @@
         {
           "statement": "自然の根端の戻り輸送が閉じた三次元のトーラス面を作り、その経路だけの変更で分岐位置が変わる。",
           "status": "open"
+        },
+        {
+          "statement": "対象の栽培実験で、すべての強制曲げが1つずつ側根または原基を追加する。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "当該のシロイヌナズナ実験で、オーキシン輸送の介入と供給が後の側根形成に影響する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "濃度の静的分布と両方向の標識輸送を別々に測れば、同じ標識が外層から中心へ再流入したかを特定できる。",
+          "status": "not_identifiable"
         }
       ]
     },
@@ -385,12 +441,17 @@
         "E15",
         "E16",
         "E17",
-        "E18"
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路のエネルギー原理（H13）、輪の幾何条件（H14）、渦度と弱磁場の流束則（H15）を支持。局所の力による器官配置（H17）と、先行するトーラス状流れによる成長位置の変化（H18）に支持が加わった。植物・渦・波を一つの生成則で予測する全体の命題は未決。",
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -434,9 +495,21 @@
           "role": "conditional_growth_model",
           "path": "research/results/E17/summary.json",
           "finding": "点ごとのエネルギー分布が同じでも流れを反転すると取り込み重心が半径の33.7%ずれた。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "return_mechanism_with_matched_speed",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "外部供給1単位で開59.34%、閉89.13%。損失が強いと利得0.16ポイント。流入履歴を合わせる追加供給では開でも同じ取り込み。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
         }
       ],
-      "next_action": "形に加え、実測のエネルギー移動と介入応答を予測する共通生成モデルを比較する。",
+      "next_action": "根の標識輸送、実空間の経路、後の形を対応づける。エネルギーの収支を測定し、共通則の未使用生体データと物理データでの予測を代替モデルと比べる。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -447,7 +520,10 @@
         "research/notes/E13_flux_and_mhd.md",
         "research/notes/E14_energy_transport.md",
         "research/notes/E16_developmental_forces.md",
-        "research/notes/E18_plant_organ_placement.md"
+        "research/notes/E18_plant_organ_placement.md",
+        "research/notes/E20_lateral_root_controls.md",
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E23_pin2_nitrate.md"
       ],
       "tested_subclaims": [
         {
@@ -487,7 +563,8 @@
         "E09",
         "E11",
         "E13",
-        "E17"
+        "E17",
+        "E19"
       ],
       "evidence_urls": [],
       "evidence_role": "木の対照で、端子間定常輸送に閉路が必須という限定命題は不支持。E11の運動エネルギーの高密度域は軸付近、E13の磁場は渦輪を含まないせん断流でエネルギーが増えた。異なる尺度や状態空間も含む必要性は未判定。",
@@ -522,6 +599,12 @@
           "role": "open_flow_control",
           "path": "research/results/E17/summary.json",
           "finding": "材料の成長位置は閉じた循環のほか、開いた境界からの同じ総運動エネルギーの貫流でも変わった。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "matched_input_counterexample",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "一次吸収条件で開路に毎周の戻り予測量を追加すると、閉路と同量・同時刻の取り込みが生じた。外部供給は1.502単位。"
         }
       ],
       "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
@@ -541,6 +624,10 @@
         },
         {
           "statement": "E17の材料モデルで、資源輸送が成長位置を変えるためには閉じた循環が必須である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "E19で循環が作る取り込み履歴を、供給量を変えても開いた流路で再現することは不可能である。",
           "status": "not_supported_in_test"
         }
       ]
@@ -913,7 +1000,8 @@
         "T-G"
       ],
       "planned_experiments": [
-        "E17"
+        "E17",
+        "E19"
       ],
       "evidence_urls": [],
       "evidence_role": "点ごとのエネルギーを保って速度を反転・純方位化する対照、貫流・静止・遅延・鏡像、収支・格子・時間刻みを比較した。",
@@ -930,9 +1018,15 @@
           "role": "no_toroidal_shape_in_material",
           "path": "research/results/E17/grid96/summary.json",
           "finding": "エネルギー密度の35%、50%、65%の等値領域に穴が一つ。成長した材料は全比較の同じ閾値で輪候補なし。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "allocation_with_capacity",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "固定率の2地点の材料配分比は開・閉で同じ。有限容量では下流側の配分が52.59%から69.02%。"
         }
       ],
-      "next_action": "循環と貫流の境界条件の差を管理し、実測資源濃度・供給量から成長位置を事前予測する。",
+      "next_action": "循環と貫流の境界条件の差を管理し、実測の再流入、資源濃度、供給量から成長位置を事前予測する。エネルギーの仕事率を独立に測る。",
       "literature_notes": [],
       "tested_subclaims": [
         {
@@ -944,8 +1038,245 @@
           "status": "invalid_general_inference"
         }
       ]
+    },
+    {
+      "id": "H19",
+      "statement": "閉じた戻り経路は、残存する資源を再利用し、同じ外部供給で取り込める量を増やし得る。",
+      "status": "supported_within_scope",
+      "scope": "速度を固定した4 mの一次元通路。端で戻す割合、吸収率、戻り区間の損失を規定した。外部供給量と運動エネルギー密度を分け、ポンプ仕事と生体形態は解いていない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E19"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "戻る割合0・0.5・1、初回前後、解析予測による開路での補充、損失、有限容量、拡散の対照を比較した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E19",
+          "role": "resource_budget_and_independent_return_prediction",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "外部供給1で合計取り込み59.34%→89.13%。開路は予測された補充を入れ、1.502単位で履歴まで一致した。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "negative_controls",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "戻り損失を増すと閉路の利得は0.16ポイント。固定率で合計が増えても下流への配分比は23.97%で一致。有限容量では16.43ポイント変化。"
+        }
+      ],
+      "next_action": "初回輸送を保ったまま戻りを操作し、局所の標識流束から二巡目の到達量と分岐配置を予測する。E22の開路と、中心へ直接戻る近道とを比較する。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "同じ初期量で戻りが十分な模型では、閉路の二巡目以降の供給が総取り込み量を増やす。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "閉経路を与えれば受け取り量の割合が必ず変わる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "戻る前にほとんど失われる資源でも、この条件で閉路の利得が初期資源の1%を超える。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H20",
+      "statement": "シロイヌナズナでは、側根の出る側は曲げの影響を受け、曲げの頻度を変えても本数が1曲がり1本に従わない条件がある。",
+      "status": "supported_within_scope",
+      "scope": "一時的な曲げと根端切除、周期的な曲げ、前分岐マーカーを使う公表研究の条件。生体の戻り経路だけを変えた試験は未実施。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E18",
+        "E20"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1093/jxb/erv541",
+        "https://doi.org/10.1126/science.1191937",
+        "https://doi.org/10.1093/jxb/erm171"
+      ],
+      "evidence_role": "側根数と出現位置を分け、曲げ頻度に比例する予測を公表図の未使用7点で比較した。一次研究の発生窓の違いも照合した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E20",
+          "role": "published_factorial_controls",
+          "path": "research/results/E20/summary.json",
+          "finding": "5 mmで曲げの点推定は根端あり・なし両方+0.3本。曲げずに根端を除いた対照は+1.8本。曲げの区間には0と+0.5本の双方が入る。"
+        },
+        {
+          "experiment_id": "E20",
+          "role": "published_frequency_holdouts",
+          "path": "research/results/E20/summary.json",
+          "finding": "1曲がり1本はRMSE3.74、6時間で比例率を調整して5.18、一定率は0.86本/日。推定した図の読取り幅でも順位は変わらない。"
+        }
+      ],
+      "next_action": "処置前の前分岐マーカーと曲げ位置を同じ根で追い、既存位置の選択と新しい部位の追加を独立に測る。",
+      "literature_notes": [
+        "research/notes/E20_lateral_root_controls.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "当該の2〜24時間の曲げ操作で、曲げ頻度だけから毎日の側根と原基の数を一定予測より正確に予測できる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "当該の一時曲げでは外側への偏りが見られ、区間の側根数の点推定差は0.3本/根である。",
+          "status": "supported_within_scope"
+        }
+      ]
+    },
+    {
+      "id": "H21",
+      "statement": "方向性のあるオーキシン輸送と供給が、シロイヌナズナの側根形成に影響する",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの指定の輸送阻害、標識、オーキシン補充条件。出現した側根、初期原基、主根長を別々に測定した。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E21"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1104/pp.118.4.1369",
+        "https://doi.org/10.1104/pp.122.2.481",
+        "https://doi.org/10.1104/pp.104.900172",
+        "https://doi.org/10.1105/tpc.13.4.843"
+      ],
+      "evidence_role": "独立した方向別の標識試験と、輸送阻害後の密度および補充での回復を照合。公表表・図からの再集計であり、新しい生体試験は未実施。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E21",
+          "role": "directional_transport_and_rescue",
+          "path": "research/results/E21/summary.json",
+          "finding": "局所の輸送阻害で側根密度0.33→0.23本/mm。別の実験では阻害中のオーキシン補充で約0.48本/mmの出現を確認。"
+        },
+        {
+          "experiment_id": "E21",
+          "role": "corrected_directional_radiotracer",
+          "path": "research/results/E21/summary.json",
+          "finding": "Rashotteの別の二試験で野生型→eir1の標識IAAは根先から地上部へ6.18→4.40 fmol、根先へ7.96→7.39 fmol。2005年訂正の単位を採用。"
+        }
+      ],
+      "next_action": "標識を同じ根で追い、外層を経たものが中心側へ再流入する量と、後の原基・出現した側根を測る。",
+      "literature_notes": [
+        "research/notes/E21_polar_auxin_and_branching.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "出現した側根密度が下がった別の実験で輸送阻害を継続し、オーキシンを追加して側根の出現を回復させられる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "二方向の標識回収量から同じ分子が一周した割合を決める。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H22",
+      "statement": "共通の定常濃度と送り出す二方向の輸送を持つ系で、標識と選択的介入から外層を経る戻りを識別できる",
+      "status": "supported_within_scope",
+      "scope": "中心、根先、外層の三つの線形区画と三つの輸送経路。標識を含まない外部供給の位置と量を経路ごとに与え、外層の搬出率を保ち再流入だけを操作する。実空間の形、時間の実単位、植物の係数は未推定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E22"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1105/tpc.113.119495",
+        "https://doi.org/10.1038/nature06215"
+      ],
+      "evidence_role": "登録した閉路・開路・根先からの短い経路を比較。標識が中心に届くこと自体は短い経路でも再現した。生体モデルには外層から中心への大きな再流入が予測されない例がある。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "transport_and_loss_sensitivity",
+          "path": "research/results/E22/summary.json",
+          "finding": "規格化時刻2.5の切断効果は各率±25%の81条件で投入量の8.12〜24.80%。弱い戻りの候補は1.18%。"
+        }
+      ],
+      "next_action": "根で選択的な経路変更と初回輸送の対照を確認し、外層から再流入した標識の検出限界を見積もる。",
+      "literature_notes": [
+        "research/notes/E21_polar_auxin_and_branching.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "同じ定常濃度と二流束から、外層から中心へ戻る結合の有無を推定する。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "指定したモデルで外層→中心の結合だけを変更すると、外層を経た標識による中心側の応答を識別できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "弱い再流入の対照でも、規格化時刻2.5の差が投入量の5%以上になる。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H23",
+      "statement": "硝酸処置への側根密度の応答はPIN2の状態によって異なる",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの水耕、5 mM KNO₃対KCl、3日後の側根と原基の密度。各図3独立培養の範囲。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E23"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.15252/embr.202051813",
+        "https://doi.org/10.1371/journal.pbio.0060307"
+      ],
+      "evidence_role": "著者の公開シートを反復単位で比較。密度、主根長、照合できた行から推定した本数を独立に報告した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E23",
+          "role": "archived_figure_arrays_by_independent_repeat",
+          "path": "research/results/E23/summary.json",
+          "finding": "硝酸への側根密度応答の野生型−欠損型の差は3反復すべて正、平均+0.82本/cm。対応行から推定した野生型の本数差は+1.0、+0.9、−0.7本/個体。"
+        },
+        {
+          "experiment_id": "E23",
+          "role": "complement_and_phosphosite_responses",
+          "path": "research/results/E23/summary.json",
+          "finding": "PIN2補完の密度変化+1.48本/cm、S439D +0.38本/cm、S439A +1.13本/cm。両置換株は長さと密度の行が全処置で整合せず、本数は未推定。"
+        }
+      ],
+      "next_action": "個体IDで主根長と原基・出現後の本数を対応させ、同じ個体で再流入が先に起きたかを追う。",
+      "literature_notes": [
+        "research/notes/E23_pin2_nitrate.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "3独立培養とも処置への密度応答は野生型でPIN2欠損型より大きい。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "Fig. 6の照合可能な野生型の3培養すべてで個体あたりの本数が増える。",
+          "status": "not_supported_in_test"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 8,
-  "archived_experimental_figure_array_reanalyses": 1
+  "published_measurement_reanalyses": 12,
+  "archived_experimental_figure_array_reanalyses": 2
 }

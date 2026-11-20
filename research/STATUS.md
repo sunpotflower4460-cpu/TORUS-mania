@@ -1,8 +1,65 @@
-# 再開メモ　先にある流れと器官の形成のE16〜E18まで実行済み
+# 再開メモ　根の輸送と分岐形成のE21〜E23まで実行済み
 
-更新2026-11-20 UTC。`research/flow-before-form` はE13〜E15の `research/dynamic-circulation`（`57f16ab`）を継承する。発生前の局所の力や組織の伸びやすさが後の器官の位置に影響する命題（H17）を公表実験で支持した。先行するトーラス状の流れが成長先を変える命題（H18）は登録した材料モデルの範囲で支持した。生体の三次元の閉循環を変えたときの器官の形成は未判定。[第5回報告](../docs/14_FLOW_BEFORE_FORM_REPORT.md)・[全18主張の台帳](claims.json)
+更新2026-11-20 UTC。`research/auxin-transport-evidence` はE19〜E20の `research/return-path-tests`（`7383af8`）を継承する。方向性のあるオーキシン輸送と側根形成の関与（H21）、外層から中心への再流入を介入で識別できる条件（H22）、硝酸後のPIN2による側根密度の応答差（H23）を指定した範囲で支持した。生体の三次元経路とエネルギーを含む身体形成は未判定。[第7回報告](../docs/16_AUXIN_TRANSPORT_REPORT.md)・[全23主張の台帳](claims.json)
+
+## 第7回の結果と追試
+
+| 実験 | 資料 | 主な結果 |
+|---|---|---|
+| E21 | [二方向の輸送と補充](results/E21/summary.json)・[文献・訂正](notes/E21_polar_auxin_and_branching.md) | 公式訂正のfmolを使用。別々に行った標識試験で両方向に移動。阻害し続けた条件でオーキシン補充により約0.48本/mmの側根が出現。 |
+| E22 | [標識の時系列と収支](results/E22/)・[図](results/auxin_figures/tracer_reentry.png) | 同じ定常量を与えた3経路のうち、外層→中心を切って差が出たのは外層を経る閉路。基本条件で投入量の14.88%、弱い戻りでは1.18%。 |
+| E23 | [公開シートの再集計](results/E23/summary.json)・[図](results/auxin_figures/nutrient_contrasts.png) | 硝酸への密度応答は野生型が欠損型より3回とも大きかった。野生型の主根も短くなり、照合できた個体の本数差は+1.0、+0.9、−0.7本/個体。 |
+
+事前登録はE21 `a578400`、E22 `fd7306f`、E23 `30a248d`。計算・図の版は `8fdd684`。Debian 13 x86_64、Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8、OpenPyXL 3.1.5、Pillow 13.0.0。乱数なし。Gitから展開したコードと空の出力先で再実行し、4.1秒で14項目の校正・原本照合を通過。出力7点と元画像から読み直した数値が一致した。既存単体テスト22件と従来の6つのハッシュ一覧も確認済み。[実行ログ](results/AUXIN_RUN.json)・[SHA-256](results/AUXIN_SHA256SUMS)
+
+追試はリポジトリのルートで実行する。E21は表・図の固定入力を使い、E22は登録した率でモデルを解く。E23にはPMCの公開ワークブック2つが必要。同じ版の原本がある場合は `--raw` で指定できる。[取得リンクと原本のハッシュ](access/2026-11-20-auxin.md)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt -r experiments/E23_nitrate_pin2/requirements.txt Pillow==13.0.0
+mkdir -p data/raw/auxin
+for file in EMBR-22-e51813-s007.xlsx EMBR-22-e51813-s002.xlsx; do
+  curl --fail --location --retry 2 "https://pmc-oa-opendata.s3.amazonaws.com/PMC8447600.1/$file" \
+    -o "data/raw/auxin/$file" || exit 1
+done
+run_dir=$(mktemp -d)
+python3 -m experiments.run_auxin_transport --raw data/raw/auxin \
+  --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/AUXIN_SHA256SUMS | sha256sum -c -
+```
+
+元図からE21の平均を抽出する場合は[取得記録](access/2026-11-20-auxin.md)のJPEGを `data/raw/auxin/casimiro_fig3.jpg` に保存する。`python3 -m experiments.E21_auxin_evidence.read_figure data/raw/auxin/casimiro_fig3.jpg --out "$run_dir/casimiro.json"` の出力を[固定入力](../experiments/E21_auxin_evidence/figure_values.json)と比較する。
+
+E22の `responses.npz` は各経路の時刻、中心・根先・外層の量、損失、二つの戻り方ごとの積算量を含む。E23は各図の群、反復、処置の要約と、長さと密度を同じ行から照合した結果を保存した。次は生体で外層を通った標識の再流入だけを測り、主根の伸びと分岐候補の初期状態を記録した上で、後の側根の位置と数を予測する。[判別条件](../docs/16_AUXIN_TRANSPORT_REPORT.md#次に何を測れば支持が進むか)
+
+## 第6回の結果と追試
+
+第6回では、同じ初期供給と流速で閉路が取り込みを増やす条件（H19）を計算で支持した。側根の位置は曲げの影響を受け、1曲がり1本の予測は図の未使用条件に合わなかった（H20）。[第6回報告](../docs/15_RETURN_PATH_REPORT.md)
+
+| 実験 | 資料 | 主な結果 |
+|---|---|---|
+| E19 | [512セルの比較](results/E19/grid512/summary.json)・[図](results/return_path_figures/uptake.png) | 外部供給1で閉路89.13%、開路59.34%。戻り途中で失われる条件で差0.16ポイント。開路に予測した戻り量を補充した対照で時系列が一致。 |
+| E20 | [図と表の再集計](results/E20/summary.json)・[取得範囲](notes/E20_lateral_root_controls.md) | 側根の出現位置が曲げで偏った。6時間で調整した一定式の未使用7条件のRMSE0.86本/日、1曲がり1本は3.74本/日。本数差の目安+0.5本は元の表では除外できない。 |
+
+主登録 `501f4d9`、図の追加登録 `8837d48`、最終計算と図 `816f382`。Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8、元図読取りPillow 13.0.0。乱数種なし。Gitから展開した別環境で全入口を再実行し、4.2秒で15項目の校正・収支チェックを通過。数値と図9点がバイト単位で一致し、前回までのハッシュと既存単体テスト22件も通過した。[実行ログ](results/RETURN_PATH_RUN.json)・[SHA-256](results/RETURN_PATH_SHA256SUMS)
+
+追試はリポジトリのルートで実行する。E20の計算は公開図から得た固定入力を使う。[図の読取り](../experiments/E20_bending_controls/figure_values.json)・[原表の数値](../experiments/E20_bending_controls/published_table.json)
+
+```bash
+python3 -m pip install -r experiments/requirements.txt Pillow==13.0.0
+run_dir=$(mktemp -d)
+python3 -m experiments.run_return_paths --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/RETURN_PATH_SHA256SUMS | sha256sum -c -
+```
+
+図を再抽出する場合は[アクセス記録](access/2026-11-20-return-paths.md)のJPEGを取得し、
+`python3 -m experiments.E20_bending_controls.read_figure data/raw/return_paths/kircher_fig4.jpg --out /tmp/torus-return-reading.json`。
+E19の `histories.npz` はケース名をキーに、時刻・各地点の累積取り込み・流路にある量・損失・排出・外部供給・累積で戻った量・収支残差を持つ。積算の戻り量は同じ資源の再利用を含み、外部供給に加算しない。
+
+次の判別は、流量を保って戻り資源だけを変えたとき、二巡目の到達と受け取り部の反応が予測と合うか。植物では分岐候補のマーカーを先に測り、曲げによる位置の選択と新しい発生部位の追加を数える。[第6回報告](../docs/15_RETURN_PATH_REPORT.md)
 
 ## 第5回の結果と追試
+
+第5回では、H17の先行する物理的な作用と器官位置を公表実験で、H18のトーラス状流れと資源を介した成長位置を材料モデルで支持した。[第5回報告](../docs/14_FLOW_BEFORE_FORM_REPORT.md)
 
 | 実験 | 再開に使うもの | 判定 |
 |---|---|---|
