@@ -1,0 +1,80 @@
+{
+  "code_commit": "8fdd6842dfe63212a7b9af26bde804f561e86d22",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "openpyxl": "3.1.5"
+    },
+    "numeric_threads": 1,
+    "random_seed": null
+  },
+  "preregistration_commits": {
+    "E21": "a578400",
+    "E22": "fd7306f",
+    "E23": "30a248d"
+  },
+  "initial_run": {
+    "wall_s": 3.864,
+    "runs": [
+      {
+        "case": "E21",
+        "returncode": 0,
+        "wall_s": 1.109
+      },
+      {
+        "case": "E22",
+        "returncode": 0,
+        "wall_s": 0.874
+      },
+      {
+        "case": "E23",
+        "returncode": 0,
+        "wall_s": 0.261
+      },
+      {
+        "case": "figures",
+        "returncode": 0,
+        "wall_s": 1.62
+      }
+    ]
+  },
+  "clean_git_archive_replay": {
+    "wall_s": 4.081,
+    "runs": [
+      {
+        "case": "E21",
+        "returncode": 0,
+        "wall_s": 1.232
+      },
+      {
+        "case": "E22",
+        "returncode": 0,
+        "wall_s": 0.924
+      },
+      {
+        "case": "E23",
+        "returncode": 0,
+        "wall_s": 0.286
+      },
+      {
+        "case": "figures",
+        "returncode": 0,
+        "wall_s": 1.639
+      }
+    ]
+  },
+  "checks_passed": {
+    "E21": 4,
+    "E22": 6,
+    "E23": 4
+  },
+  "byte_identical_generated_outputs": 7,
+  "casimiro_figure_readout_regenerated_byte_identically": true,
+  "prior_manifest_entries_verified": 136,
+  "existing_unit_tests_passed": 22
+}

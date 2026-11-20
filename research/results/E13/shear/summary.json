@@ -1,0 +1,24 @@
+{
+  "case": "shear",
+  "n": 32,
+  "max_error_induced_Bx_normalized": 1.2329132957641488e-15,
+  "magnetic_energy_initial_j": 0.6400000000000001,
+  "magnetic_energy_end_j": 0.762645260738158,
+  "vorticity_superlevel": {
+    "cells": 13312,
+    "tunnels": 0,
+    "cavities": 0,
+    "touches_boundary": true,
+    "candidate": false
+  },
+  "checks": {
+    "shear_exact_solution": true,
+    "shear_growth": true,
+    "shear_vorticity_not_ring": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E13_flux_transport/run.py": "643d05637f6d343ee5da8ac390a75ccfd05d5f9c0f8cb0bf0e1adea2d13d05db",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

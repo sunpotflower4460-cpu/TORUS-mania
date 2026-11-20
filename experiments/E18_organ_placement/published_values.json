@@ -1,0 +1,65 @@
+{
+  "root_observations": [
+    {
+      "study": "Ditengou et al. (2008)",
+      "doi": "10.1073/pnas.0807814105",
+      "location": "Results, Manual Mechanical Stimulation of LRI; Fig. 2",
+      "endpoint": "root emergence at the site or equivalent position, 72 h",
+      "treatment": "transient bend 1 mm behind the root tip",
+      "reported_percent": 70,
+      "n": 45,
+      "control_percent": 15,
+      "control_n": 33
+    },
+    {
+      "study": "Ditengou et al. (2008)",
+      "doi": "10.1073/pnas.0807814105",
+      "location": "Results, Manual Mechanical Stimulation of LRI; Fig. 2",
+      "endpoint": "root emergence at the site or equivalent position, 72 h",
+      "treatment": "transient bend 3 mm behind the root tip",
+      "reported_percent": 40,
+      "n": 40,
+      "control_percent": 5,
+      "control_n": null
+    },
+    {
+      "study": "Richter et al. (2009)",
+      "doi": "10.1104/pp.109.142448",
+      "location": "Results, Fig. 2E",
+      "endpoint": "emerged lateral root at the bend or the corresponding control position",
+      "treatment": "bending without reorienting the root tip",
+      "reported_percent": 99,
+      "n": null,
+      "control_percent": 18,
+      "control_n": null,
+      "reported_sample_design": "Means ± SE, n ≥ 20 in four separate experiments"
+    }
+  ],
+  "root_timing": {
+    "doi": "10.1073/pnas.0807814105",
+    "location": "Results and Fig. 3A, modified bending assay",
+    "endpoint": "DR5 reporter on the convex side at the site of subsequent formation",
+    "reported_percent": 80,
+    "n": 25,
+    "hours_after_bending": [5, 6]
+  },
+  "leaf": {
+    "doi": "10.1073/pnas.191380498",
+    "location": "Table 1",
+    "group_columns": ["n", "new_leaf_initiation", "reverse_phyllotaxy"],
+    "groups": {
+      "E1.7_induced": [73, 14, 14],
+      "E1.7_mock": [26, 0, 0],
+      "E1.8_induced": [55, 10, 10],
+      "E1.8_mock": [28, 0, 0],
+      "G25_induced": [49, 0, 1]
+    },
+    "text_table_discrepancy": "The body text lists E1.7 and E1.8 mock n as 28 and 26 respectively. Table 1 lists 26 and 28 and is the primary source. Sensitivity swaps only those two control denominators.",
+    "different_endpoint_fig_7": {
+      "observed": 11,
+      "n": 20,
+      "endpoint": "local outgrowth and altered leaf shape when treated on an existing young leaf primordium",
+      "control_n": null
+    }
+  }
+}

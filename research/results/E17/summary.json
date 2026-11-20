@@ -1,0 +1,175 @@
+{
+  "units": "Lengths relative to the cylinder radius",
+  "signed_differences_reversing": {
+    "grid48": 0.3295805913407557,
+    "grid96": 0.33686979213782187,
+    "time_refined96": 0.3368705460045805
+  },
+  "maximum_single_center_grid_shift": 0.006544911567104517,
+  "maximum_single_center_time_shift": 9.82119860992725e-07,
+  "preregistered_effect_threshold": 0.02,
+  "meets_preregistered_effect_threshold": true,
+  "timing": {
+    "1": {
+      "preflow_and_delayed_accumulated_uptake": [
+        0.09121727871247773,
+        0.13251797528931444
+      ],
+      "preflow_and_delayed_uptake_z": [
+        -0.07275028567273426,
+        -0.11347771394081956
+      ]
+    },
+    "4": {
+      "preflow_and_delayed_accumulated_uptake": [
+        0.5587950795433394,
+        0.63591737049716
+      ],
+      "preflow_and_delayed_uptake_z": [
+        -0.12891444590160403,
+        -0.13679024472907494
+      ]
+    }
+  },
+  "rings": {
+    "grid48": {
+      "kinetic": {
+        "0.35": true,
+        "0.5": true,
+        "0.65": true
+      },
+      "material": {
+        "circulation": [
+          false,
+          false,
+          false
+        ],
+        "reversed": [
+          false,
+          false,
+          false
+        ],
+        "azimuthal": [
+          false,
+          false,
+          false
+        ],
+        "through": [
+          false,
+          false,
+          false
+        ],
+        "still": [
+          false,
+          false,
+          false
+        ],
+        "late_start": [
+          false,
+          false,
+          false
+        ],
+        "mirrored": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "grid96": {
+      "kinetic": {
+        "0.35": true,
+        "0.5": true,
+        "0.65": true
+      },
+      "material": {
+        "circulation": [
+          false,
+          false,
+          false
+        ],
+        "reversed": [
+          false,
+          false,
+          false
+        ],
+        "azimuthal": [
+          false,
+          false,
+          false
+        ],
+        "through": [
+          false,
+          false,
+          false
+        ],
+        "still": [
+          false,
+          false,
+          false
+        ],
+        "late_start": [
+          false,
+          false,
+          false
+        ],
+        "mirrored": [
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "time_refined96": {
+      "kinetic": {
+        "0.35": true,
+        "0.5": true,
+        "0.65": true
+      },
+      "material": {
+        "circulation": [
+          false,
+          false,
+          false
+        ],
+        "reversed": [
+          false,
+          false,
+          false
+        ],
+        "azimuthal": [
+          false,
+          false,
+          false
+        ],
+        "through": [
+          false,
+          false,
+          false
+        ],
+        "still": [
+          false,
+          false,
+          false
+        ],
+        "late_start": [
+          false,
+          false,
+          false
+        ],
+        "mirrored": [
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  },
+  "checks": {
+    "all_numeric_calibrations_passed": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E17_flow_imprint/compare.py": "344f88f32ba0bb9b047331db74b3bd7484b463c7e91408a72528e2172605ce8d"
+  }
+}

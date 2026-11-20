@@ -1,0 +1,274 @@
+{
+  "grid": 128,
+  "dt_s": 0.03125,
+  "path_length_m": 4.0,
+  "local_speed_m_s": 1.0,
+  "carrier_kinetic_energy_density_j_per_m3": 0.5,
+  "closing_return_only": true,
+  "supply_unit": "initial resource mass, proportional to available resource energy",
+  "checks": {
+    "mass_budget_closed": true,
+    "sampled_field_nonnegative": true,
+    "linear_geometric_series": true,
+    "no_pre_return_difference_without_diffusion": true
+  },
+  "early_maximum_difference": 0.0,
+  "replenishment_maximum_history_difference": 5.551115123125783e-17,
+  "preregistered_outcomes": {
+    "uptake_increases_with_return_fraction": true,
+    "same_linear_uptake_share": true,
+    "fresh_replenishment_matches_within_point_one_percent": true,
+    "high_loss_benefit_below_one_percent": true,
+    "capacity_case_increases_B_share_by_five_points": true
+  },
+  "comparisons": {
+    "open_to_closed_uptake": 0.29782227355365687,
+    "high_loss_open_to_closed_uptake": 0.001630135336633809,
+    "capacity_open_to_closed_B_share": 0.16523345361615338,
+    "linear_open_to_closed_B_share": -5.551115123125783e-17
+  },
+  "history_columns": [
+    "time_s",
+    "uptake_A",
+    "uptake_B",
+    "resource_in_channel",
+    "internal_loss",
+    "export",
+    "external_input",
+    "cumulative_returns",
+    "budget_residual"
+  ],
+  "cases": {
+    "open": {
+      "return_fraction": 0.0,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.45118836390597356,
+        0.1422419763534274
+      ],
+      "uptake_total": 0.593430340259401,
+      "B_share_of_uptake": 0.23969447920584985,
+      "final_stored_resource": 0.0,
+      "internal_loss": 0.06951157324694486,
+      "export": 0.3370580864936544,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.0,
+      "largest_absolute_budget_error": 2.220446049250313e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.4511883639059736,
+        0.1422419763534273
+      ],
+      "analytic_max_error": 8.326672684688674e-17
+    },
+    "partial": {
+      "return_fraction": 0.5,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.5425649831200654,
+        0.17104943671651351
+      ],
+      "uptake_total": 0.7136144198365789,
+      "B_share_of_uptake": 0.2396944792058499,
+      "final_stored_resource": 0.0001359482984721492,
+      "internal_loss": 0.0835893577548854,
+      "export": 0.2026602741100634,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.2026602741100634,
+      "largest_absolute_budget_error": 5.551115123125783e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.5425649831200657,
+        0.17104943671651346
+      ],
+      "analytic_max_error": 3.3306690738754696e-16
+    },
+    "closed": {
+      "return_fraction": 1.0,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.6776242827042845,
+        0.21362833110877327
+      ],
+      "uptake_total": 0.8912526138130579,
+      "B_share_of_uptake": 0.2396944792058498,
+      "final_stored_resource": 0.004350345551108774,
+      "internal_loss": 0.10439704063583398,
+      "export": 0.0,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.506215945182352,
+      "largest_absolute_budget_error": 6.661338147750939e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.6776242827042844,
+        0.21362833110877313
+      ],
+      "analytic_max_error": 1.3877787807814457e-16
+    },
+    "open_replenished": {
+      "return_fraction": 0.0,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {
+        "4.0": 0.3370580864936543,
+        "8.0": 0.11360815367076375,
+        "12.0": 0.03829254688634466,
+        "16.0": 0.012906812580479873
+      },
+      "uptake_by_site": [
+        0.6776242827042845,
+        0.21362833110877322
+      ],
+      "uptake_total": 0.8912526138130578,
+      "B_share_of_uptake": 0.23969447920584977,
+      "final_stored_resource": 0.0,
+      "internal_loss": 0.10439704063583397,
+      "export": 0.506215945182352,
+      "external_supply": 1.5018655996312427,
+      "cumulative_returns": 0.0,
+      "largest_absolute_budget_error": 1.1102230246251565e-15,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.6776242827042844,
+        0.21362833110877313
+      ],
+      "analytic_max_error": 1.1102230246251565e-16
+    },
+    "open_high_loss": {
+      "return_fraction": 0.0,
+      "loss_rate_s_inverse": 4.0,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.45118836390597356,
+        0.1422419763534274
+      ],
+      "uptake_total": 0.593430340259401,
+      "B_share_of_uptake": 0.23969447920584985,
+      "final_stored_resource": 0.0,
+      "internal_loss": 0.40383021492183085,
+      "export": 0.0027394448187683705,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.0,
+      "largest_absolute_budget_error": 4.440892098500626e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.4511883639059736,
+        0.1422419763534273
+      ],
+      "analytic_max_error": 8.326672684688674e-17
+    },
+    "closed_high_loss": {
+      "return_fraction": 1.0,
+      "loss_rate_s_inverse": 4.0,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": false,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.45242776480205793,
+        0.14263271079397685
+      ],
+      "uptake_total": 0.5950604755960348,
+      "B_share_of_uptake": 0.2396944792058498,
+      "final_stored_resource": 1.54281120319189e-13,
+      "internal_loss": 0.40493952440381153,
+      "export": 0.0,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.0027469699914784195,
+      "largest_absolute_budget_error": 6.661338147750939e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ],
+      "analytic_final_uptake_by_site": [
+        0.45242776480205793,
+        0.1426327107939768
+      ],
+      "analytic_max_error": 5.551115123125783e-17
+    },
+    "open_capacity": {
+      "return_fraction": 0.0,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": true,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.17141570607538043,
+        0.18955161325057623
+      ],
+      "uptake_total": 0.36096731932595666,
+      "B_share_of_uptake": 0.5251212591891441,
+      "final_stored_resource": 0.0,
+      "internal_loss": 0.10925598092638383,
+      "export": 0.5297766997476596,
+      "external_supply": 1.0,
+      "cumulative_returns": 0.0,
+      "largest_absolute_budget_error": 2.220446049250313e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ]
+    },
+    "closed_capacity": {
+      "return_fraction": 1.0,
+      "loss_rate_s_inverse": 0.15,
+      "diffusivity_m2_s": 0.0,
+      "capacity_limited": true,
+      "matched_fresh_injections": {},
+      "uptake_by_site": [
+        0.1798942512790202,
+        0.4010745498573076
+      ],
+      "uptake_total": 0.5809688011363279,
+      "B_share_of_uptake": 0.6903547128052975,
+      "final_stored_resource": 0.12473614339281831,
+      "internal_loss": 0.29429505547085366,
+      "export": 0.0,
+      "external_supply": 1.0,
+      "cumulative_returns": 1.4270217695858238,
+      "largest_absolute_budget_error": 3.3306690738754696e-16,
+      "minimum_sampled_cell_resource": 0.0,
+      "first_time_exact_capacity_s": [
+        null,
+        null
+      ]
+    }
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E19_return_paths/run.py": "c210cd48db6b716f4fa4981b3cff03a862eac538a7a37a632b51fc48edad2eff"
+  }
+}

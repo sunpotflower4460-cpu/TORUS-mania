@@ -1,0 +1,1137 @@
+{
+  "radial_cells": 96,
+  "axial_cells": 192,
+  "dt": 0.0006734006734006734,
+  "time_refinement": 1,
+  "domain": "simply connected cylinder, nondimensional length and time",
+  "seed_geometry": {
+    "amount": 0.06167993660472487,
+    "z_centroid": -2.7628178366900814e-18,
+    "radial_rms": 0.1838953372762164,
+    "axial_rms": 0.13005103297633616
+  },
+  "case_names": [
+    "circulation",
+    "reversed",
+    "azimuthal",
+    "through",
+    "still",
+    "late_start",
+    "mirrored"
+  ],
+  "kinetic_energy_per_volume_matched_through": 0.2118820859579648,
+  "pointwise_energy_max_relative_difference": 1.6786137069273826e-16,
+  "uniform_calibration_max_relative_error": 2.731156679710269e-09,
+  "mirror_density_max_error": 4.440892098500626e-16,
+  "finite_volume_max_divergence": 2.8110045184744226e-14,
+  "uptake_centroid_delta_reversing": 0.33686979213782187,
+  "final_material_density_l1_reversing_per_seed_mass": 6.89806204603384,
+  "trials": {
+    "circulation": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.605864088294074,
+          "material": 0.1528972153172026,
+          "uptake": 0.09121727871247773,
+          "resource_loss": 0.5050578881112855,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.1528972153172026,
+            "z_centroid": -0.04340224948410512,
+            "radial_rms": 0.2153866920955735,
+            "axial_rms": 0.18233336983717024
+          },
+          "uptake_geometry": {
+            "amount": 0.09121727871247773,
+            "z_centroid": -0.07275028567273426,
+            "radial_rms": 0.21919752928522043,
+            "axial_rms": 0.196801656457718
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.7100480560162623,
+          "material": 0.28585032306916713,
+          "uptake": 0.22417038646444223,
+          "resource_loss": 1.0375543051459315,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.28585032306916713,
+            "z_centroid": -0.09150531787104739,
+            "radial_rms": 0.24716672346538054,
+            "axial_rms": 0.24232929719240592
+          },
+          "uptake_geometry": {
+            "amount": 0.22417038646444223,
+            "z_centroid": -0.11668278352254167,
+            "radial_rms": 0.24497613371763835,
+            "axial_rms": 0.250994973422201
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.7732240391770917,
+          "material": 0.44344399276262214,
+          "uptake": 0.38176405615789727,
+          "resource_loss": 1.586418144800447,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.44344399276262214,
+            "z_centroid": -0.11294550182675388,
+            "radial_rms": 0.27906080296048336,
+            "axial_rms": 0.28727258433446445
+          },
+          "uptake_geometry": {
+            "amount": 0.38176405615789727,
+            "z_centroid": -0.13119360910199762,
+            "radial_rms": 0.2724852418878107,
+            "axial_rms": 0.29216389656806935
+          }
+        },
+        {
+          "time": 4,
+          "resource": 2.8073269522369935,
+          "material": 0.6204750161480643,
+          "uptake": 0.5587950795433394,
+          "resource_loss": 2.1449177008639038,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.6204750161480643,
+            "z_centroid": -0.11609927017053859,
+            "radial_rms": 0.3095768622692713,
+            "axial_rms": 0.32337208982306165
+          },
+          "uptake_geometry": {
+            "amount": 0.5587950795433394,
+            "z_centroid": -0.12891444590160403,
+            "radial_rms": 0.2994140082863294,
+            "axial_rms": 0.32569267524008516
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 1.1540277656120444e-15,
+      "minimum_sampled_density": 1.9057716807037528e-23,
+      "maximum_sampled_material_density": 0.9999991830878654,
+      "prep": {
+        "maximum_relative_budget_error": 1.5002360952956578e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.4325057626090363,
+        "z_centroid": 0.07206664911157862,
+        "radial_rms": 0.5914021635211236,
+        "axial_rms": 0.5228287898580316
+      },
+      "net_material_gain": 0.5587950795433395,
+      "integrated_resource_to_material_error": 1.1102230246251565e-16,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 608188,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 518640,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 437440,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 491812,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 398944,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 315860,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "reversed": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.68175799466235,
+          "material": 0.06970081434851122,
+          "uptake": 0.008020877743786351,
+          "resource_loss": 0.5123603827117013,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.06970081434851122,
+            "z_centroid": -0.011319212999476294,
+            "radial_rms": 0.2007629040522032,
+            "axial_rms": 0.15096924172043238
+          },
+          "uptake_geometry": {
+            "amount": 0.008020877743786351,
+            "z_centroid": -0.09836309554265907,
+            "radial_rms": 0.20358532948274138,
+            "axial_rms": 0.18723813691032024
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.869272957788521,
+          "material": 0.09546578549195193,
+          "uptake": 0.03378584888722706,
+          "resource_loss": 1.0687139409508895,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.09546578549195193,
+            "z_centroid": -0.08818332868911734,
+            "radial_rms": 0.20879490362548558,
+            "axial_rms": 0.23150288267888058
+          },
+          "uptake_geometry": {
+            "amount": 0.03378584888722706,
+            "z_centroid": -0.24917209478952712,
+            "radial_rms": 0.189100342103907,
+            "axial_rms": 0.2600006569318076
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.9804598930681605,
+          "material": 0.1678341587059862,
+          "uptake": 0.10615422210126133,
+          "resource_loss": 1.6547921249660142,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.1678341587059862,
+            "z_centroid": -0.24917876248996967,
+            "radial_rms": 0.21750280129969196,
+            "axial_rms": 0.3158566092132005
+          },
+          "uptake_geometry": {
+            "amount": 0.10615422210126133,
+            "z_centroid": -0.39396185010061413,
+            "radial_rms": 0.19934187596336772,
+            "axial_rms": 0.2883794239505846
+          }
+        },
+        {
+          "time": 4,
+          "resource": 3.033993733371241,
+          "material": 0.28162953069690444,
+          "uptake": 0.21994959409217957,
+          "resource_loss": 2.257096405180816,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.28162953069690444,
+            "z_centroid": -0.3637515936510663,
+            "radial_rms": 0.24718643638341278,
+            "axial_rms": 0.34760277938042455
+          },
+          "uptake_geometry": {
+            "amount": 0.21994959409217957,
+            "z_centroid": -0.4657842380394259,
+            "radial_rms": 0.235112817665239,
+            "axial_rms": 0.30943415208004366
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 8.655208242090334e-16,
+      "minimum_sampled_density": 1.90673094903675e-23,
+      "maximum_sampled_material_density": 0.9999572958912699,
+      "prep": {
+        "maximum_relative_budget_error": 1.5002360952956578e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.4325057626090363,
+        "z_centroid": -0.4309290648002932,
+        "radial_rms": 0.6753493593430666,
+        "axial_rms": 0.48714248333142124
+      },
+      "net_material_gain": 0.2199495940921796,
+      "integrated_resource_to_material_error": 2.7755575615628914e-17,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 273164,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 197492,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 136500,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 141176,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 113652,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 89832,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "azimuthal": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.626396318867499,
+          "material": 0.12953718361146582,
+          "uptake": 0.06785724700674095,
+          "resource_loss": 0.507885689243598,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.12953718361146582,
+            "z_centroid": -0.11087934290857096,
+            "radial_rms": 0.20543552167518742,
+            "axial_rms": 0.19445567237548098
+          },
+          "uptake_geometry": {
+            "amount": 0.06785724700674095,
+            "z_centroid": -0.21166490588160358,
+            "radial_rms": 0.20485655692915314,
+            "axial_rms": 0.17761534212445523
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.697289616114314,
+          "material": 0.29448289650972864,
+          "uptake": 0.23280295990500377,
+          "resource_loss": 1.04168017160732,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.29448289650972864,
+            "z_centroid": -0.2639329622576435,
+            "radial_rms": 0.2487290978979019,
+            "axial_rms": 0.25190411925171063
+          },
+          "uptake_geometry": {
+            "amount": 0.23280295990500377,
+            "z_centroid": -0.3338606315261429,
+            "radial_rms": 0.24838749424786494,
+            "axial_rms": 0.22054518265677492
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.7132637316765003,
+          "material": 0.5064982911555717,
+          "uptake": 0.4448183545508468,
+          "resource_loss": 1.5833241539080893,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.5064982911555717,
+            "z_centroid": -0.3465412363957476,
+            "radial_rms": 0.30223833919781934,
+            "axial_rms": 0.27665991972957366
+          },
+          "uptake_geometry": {
+            "amount": 0.4448183545508468,
+            "z_centroid": -0.3945943594942663,
+            "radial_rms": 0.29996882184942736,
+            "axial_rms": 0.247338454656405
+          }
+        },
+        {
+          "time": 4,
+          "resource": 2.7031623086155507,
+          "material": 0.7443304769522967,
+          "uptake": 0.6826505403475719,
+          "resource_loss": 2.1252268836811123,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.7443304769522967,
+            "z_centroid": -0.3981437026725429,
+            "radial_rms": 0.34948773237477143,
+            "axial_rms": 0.2964342461207192
+          },
+          "uptake_geometry": {
+            "amount": 0.6826505403475719,
+            "z_centroid": -0.434211780173732,
+            "radial_rms": 0.34431015555739486,
+            "axial_rms": 0.27016368884808845
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 1.7310416484180668e-15,
+      "minimum_sampled_density": 1.5798353872007412e-23,
+      "maximum_sampled_material_density": 0.9999999993357876,
+      "prep": {
+        "maximum_relative_budget_error": 1.5002360952956578e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.4325057626090363,
+        "z_centroid": -0.5138813681773876,
+        "radial_rms": 0.5213354502767112,
+        "axial_rms": 0.29460466950588615
+      },
+      "net_material_gain": 0.6826505403475718,
+      "integrated_resource_to_material_error": 1.1102230246251565e-16,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 726336,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 630972,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 543016,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 616516,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 513632,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 431668,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "through": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 1.3945373384566184,
+          "material": 0.14833964669819666,
+          "uptake": 0.0866597100934718,
+          "resource_loss": 0.2867953859299216,
+          "resource_outflow": 0.4741311805383912,
+          "material_geometry": {
+            "amount": 0.14833964669819666,
+            "z_centroid": -0.028915581977513573,
+            "radial_rms": 0.21768374088721634,
+            "axial_rms": 0.17376642569333303
+          },
+          "uptake_geometry": {
+            "amount": 0.0866597100934718,
+            "z_centroid": -0.04949621006106048,
+            "radial_rms": 0.22342453897603828,
+            "axial_rms": 0.1872607713250359
+          }
+        },
+        {
+          "time": 2,
+          "resource": 1.327901707248134,
+          "material": 0.26586245557169086,
+          "uptake": 0.20418251896696596,
+          "resource_loss": 0.558543660025957,
+          "resource_outflow": 0.9211292212861473,
+          "material_geometry": {
+            "amount": 0.26586245557169086,
+            "z_centroid": -0.05828264763970761,
+            "radial_rms": 0.2520476196678735,
+            "axial_rms": 0.21892515410235366
+          },
+          "uptake_geometry": {
+            "amount": 0.20418251896696596,
+            "z_centroid": -0.07588880721574968,
+            "radial_rms": 0.25192354404905,
+            "axial_rms": 0.22680918652848572
+          }
+        },
+        {
+          "time": 3,
+          "resource": 1.287077034785312,
+          "material": 0.405037502004268,
+          "uptake": 0.3433575653995431,
+          "resource_loss": 0.8196899757672793,
+          "resource_outflow": 1.331266024083873,
+          "material_geometry": {
+            "amount": 0.405037502004268,
+            "z_centroid": -0.07453366323389013,
+            "radial_rms": 0.28330456485685857,
+            "axial_rms": 0.25598344620100555
+          },
+          "uptake_geometry": {
+            "amount": 0.3433575653995431,
+            "z_centroid": -0.0879227132690655,
+            "radial_rms": 0.27818963927075613,
+            "axial_rms": 0.2597609060414515
+          }
+        },
+        {
+          "time": 4,
+          "resource": 1.265455172114303,
+          "material": 0.5542921880549776,
+          "uptake": 0.4926122514502528,
+          "resource_loss": 1.0746572246158494,
+          "resource_outflow": 1.7182994443643984,
+          "material_geometry": {
+            "amount": 0.5542921880549776,
+            "z_centroid": -0.07829668501422916,
+            "radial_rms": 0.31096577155988986,
+            "axial_rms": 0.2861909578659533
+          },
+          "uptake_geometry": {
+            "amount": 0.4926122514502528,
+            "z_centroid": -0.08810020607159287,
+            "radial_rms": 0.3015302688020807,
+            "axial_rms": 0.2869719003399313
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 1.7310416484180668e-15,
+      "minimum_sampled_density": 1.5734673007768226e-23,
+      "maximum_sampled_material_density": 0.9999902481170296,
+      "prep": {
+        "maximum_relative_budget_error": 1.9233796093534075e-16,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 1.472490122509602,
+        "z_centroid": 0.13436164627117436,
+        "radial_rms": 0.4579444438604606,
+        "axial_rms": 0.46773172997836937
+      },
+      "net_material_gain": 0.49261225145025284,
+      "integrated_resource_to_material_error": 5.551115123125783e-17,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 545824,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 463368,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 388360,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 444368,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 358904,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 282584,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "still": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.626396318867499,
+          "material": 0.12953718361146582,
+          "uptake": 0.06785724700674095,
+          "resource_loss": 0.507885689243598,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.12953718361146582,
+            "z_centroid": -0.11087934290857096,
+            "radial_rms": 0.20543552167518742,
+            "axial_rms": 0.19445567237548098
+          },
+          "uptake_geometry": {
+            "amount": 0.06785724700674095,
+            "z_centroid": -0.21166490588160358,
+            "radial_rms": 0.20485655692915314,
+            "axial_rms": 0.17761534212445523
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.697289616114314,
+          "material": 0.29448289650972864,
+          "uptake": 0.23280295990500377,
+          "resource_loss": 1.04168017160732,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.29448289650972864,
+            "z_centroid": -0.2639329622576435,
+            "radial_rms": 0.2487290978979019,
+            "axial_rms": 0.25190411925171063
+          },
+          "uptake_geometry": {
+            "amount": 0.23280295990500377,
+            "z_centroid": -0.3338606315261429,
+            "radial_rms": 0.24838749424786494,
+            "axial_rms": 0.22054518265677492
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.7132637316765003,
+          "material": 0.5064982911555717,
+          "uptake": 0.4448183545508468,
+          "resource_loss": 1.5833241539080893,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.5064982911555717,
+            "z_centroid": -0.3465412363957476,
+            "radial_rms": 0.30223833919781934,
+            "axial_rms": 0.27665991972957366
+          },
+          "uptake_geometry": {
+            "amount": 0.4448183545508468,
+            "z_centroid": -0.3945943594942663,
+            "radial_rms": 0.29996882184942736,
+            "axial_rms": 0.247338454656405
+          }
+        },
+        {
+          "time": 4,
+          "resource": 2.7031623086155507,
+          "material": 0.7443304769522967,
+          "uptake": 0.6826505403475719,
+          "resource_loss": 2.1252268836811123,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.7443304769522967,
+            "z_centroid": -0.3981437026725429,
+            "radial_rms": 0.34948773237477143,
+            "axial_rms": 0.2964342461207192
+          },
+          "uptake_geometry": {
+            "amount": 0.6826505403475719,
+            "z_centroid": -0.434211780173732,
+            "radial_rms": 0.34431015555739486,
+            "axial_rms": 0.27016368884808845
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 1.7310416484180668e-15,
+      "minimum_sampled_density": 1.5798353872007412e-23,
+      "maximum_sampled_material_density": 0.9999999993357876,
+      "prep": {
+        "maximum_relative_budget_error": 1.5002360952956578e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.4325057626090363,
+        "z_centroid": -0.5138813681773876,
+        "radial_rms": 0.5213354502767112,
+        "axial_rms": 0.29460466950588615
+      },
+      "net_material_gain": 0.6826505403475718,
+      "integrated_resource_to_material_error": 1.1102230246251565e-16,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 726336,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 630972,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 543016,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 616516,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 513632,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": true,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 431668,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "late_start": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.5669550686541376,
+          "material": 0.19419791189403934,
+          "uptake": 0.13251797528931444,
+          "resource_loss": 0.5026662111743849,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.19419791189403934,
+            "z_centroid": -0.07743562608491031,
+            "radial_rms": 0.22956761074217458,
+            "axial_rms": 0.1926020445661597
+          },
+          "uptake_geometry": {
+            "amount": 0.13251797528931444,
+            "z_centroid": -0.11347771394081956,
+            "radial_rms": 0.23710402970033412,
+            "axial_rms": 0.1994070089389308
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.6520195289254027,
+          "material": 0.3567493217190878,
+          "uptake": 0.29506938511436287,
+          "resource_loss": 1.0246838335868718,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.3567493217190878,
+            "z_centroid": -0.11310159825361074,
+            "radial_rms": 0.26174237388242166,
+            "axial_rms": 0.25895081760483274
+          },
+          "uptake_geometry": {
+            "amount": 0.29506938511436287,
+            "z_centroid": -0.13674383212337382,
+            "radial_rms": 0.26033581096653036,
+            "axial_rms": 0.26516230851262224
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.7210712174222174,
+          "material": 0.5196292476047992,
+          "uptake": 0.4579493110000744,
+          "resource_loss": 1.5623857117131466,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.5196292476047992,
+            "z_centroid": -0.12586295751253104,
+            "radial_rms": 0.29089068539457097,
+            "axial_rms": 0.30376840092800017
+          },
+          "uptake_geometry": {
+            "amount": 0.4579493110000744,
+            "z_centroid": -0.14281510125195254,
+            "radial_rms": 0.28387203838971475,
+            "axial_rms": 0.3075165885248
+          }
+        },
+        {
+          "time": 4,
+          "resource": 2.7637881307207945,
+          "material": 0.697597307101885,
+          "uptake": 0.63591737049716,
+          "resource_loss": 2.1113342314262833,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.697597307101885,
+            "z_centroid": -0.12469418157992498,
+            "radial_rms": 0.3194700998236499,
+            "axial_rms": 0.3384175135835196
+          },
+          "uptake_geometry": {
+            "amount": 0.63591737049716,
+            "z_centroid": -0.13679024472907494,
+            "radial_rms": 0.3084164689434938,
+            "axial_rms": 0.3399451183296958
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 4.327604121045167e-16,
+      "minimum_sampled_density": 1.5801411757507138e-23,
+      "maximum_sampled_material_density": 0.999999829869795,
+      "prep": {
+        "maximum_relative_budget_error": 1.5002360952956578e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.4325057626090363,
+        "z_centroid": -0.5138813681773876,
+        "radial_rms": 0.5213354502767112,
+        "axial_rms": 0.29460466950588615
+      },
+      "net_material_gain": 0.63591737049716,
+      "integrated_resource_to_material_error": 0.0,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 682296,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 584468,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 495696,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 538112,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 438068,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 349248,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    },
+    "mirrored": {
+      "snapshots": [
+        {
+          "time": 1,
+          "resource": 2.605864088294074,
+          "material": 0.15289721531720263,
+          "uptake": 0.09121727871247774,
+          "resource_loss": 0.5050578881112855,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.15289721531720263,
+            "z_centroid": 0.043402249484105114,
+            "radial_rms": 0.21538669209557348,
+            "axial_rms": 0.18233336983717024
+          },
+          "uptake_geometry": {
+            "amount": 0.09121727871247774,
+            "z_centroid": 0.07275028567273424,
+            "radial_rms": 0.2191975292852204,
+            "axial_rms": 0.196801656457718
+          }
+        },
+        {
+          "time": 2,
+          "resource": 2.7100480560162628,
+          "material": 0.28585032306916713,
+          "uptake": 0.22417038646444226,
+          "resource_loss": 1.0375543051459315,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.28585032306916713,
+            "z_centroid": 0.09150531787104735,
+            "radial_rms": 0.24716672346538054,
+            "axial_rms": 0.2423292971924059
+          },
+          "uptake_geometry": {
+            "amount": 0.22417038646444226,
+            "z_centroid": 0.1166827835225416,
+            "radial_rms": 0.24497613371763832,
+            "axial_rms": 0.250994973422201
+          }
+        },
+        {
+          "time": 3,
+          "resource": 2.7732240391770917,
+          "material": 0.4434439927626221,
+          "uptake": 0.3817640561578972,
+          "resource_loss": 1.586418144800447,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.4434439927626221,
+            "z_centroid": 0.11294550182675384,
+            "radial_rms": 0.2790608029604834,
+            "axial_rms": 0.28727258433446445
+          },
+          "uptake_geometry": {
+            "amount": 0.3817640561578972,
+            "z_centroid": 0.1311936091019976,
+            "radial_rms": 0.2724852418878107,
+            "axial_rms": 0.29216389656806935
+          }
+        },
+        {
+          "time": 4,
+          "resource": 2.8073269522369935,
+          "material": 0.6204750161480643,
+          "uptake": 0.5587950795433394,
+          "resource_loss": 2.1449177008639038,
+          "resource_outflow": 0.0,
+          "material_geometry": {
+            "amount": 0.6204750161480643,
+            "z_centroid": 0.11609927017053849,
+            "radial_rms": 0.3095768622692713,
+            "axial_rms": 0.3233720898230616
+          },
+          "uptake_geometry": {
+            "amount": 0.5587950795433394,
+            "z_centroid": 0.12891444590160392,
+            "radial_rms": 0.29941400828632936,
+            "axial_rms": 0.3256926752400851
+          }
+        }
+      ],
+      "maximum_relative_budget_error": 1.1540277656120444e-15,
+      "minimum_sampled_density": 1.9057716807037528e-23,
+      "maximum_sampled_material_density": 0.9999991830878654,
+      "prep": {
+        "maximum_relative_budget_error": 1.3848333187344532e-15,
+        "minimum_sampled_density": 0.0,
+        "maximum_sampled_material_density": 0.0
+      },
+      "preseed_resource": {
+        "amount": 2.432505762609036,
+        "z_centroid": -0.07206664911157873,
+        "radial_rms": 0.5914021635211237,
+        "axial_rms": 0.5228287898580316
+      },
+      "net_material_gain": 0.5587950795433395,
+      "integrated_resource_to_material_error": 1.1102230246251565e-16,
+      "final_material_superlevels": {
+        "0.35": {
+          "cells": 608188,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 518640,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 437440,
+          "tunnels": 0,
+          "cavities": 0,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      },
+      "uptake_superlevels": {
+        "0.35": {
+          "cells": 491812,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.5": {
+          "cells": 398944,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        },
+        "0.65": {
+          "cells": 315860,
+          "tunnels": 0,
+          "cavities": 1,
+          "touches_boundary": false,
+          "candidate": false
+        }
+      }
+    }
+  },
+  "checks": {
+    "solenoidal_face_volume_flux": true,
+    "same_kinetic_energy_in_direction_controls": true,
+    "axisymmetric_advection_vanishes_for_azimuthal": true,
+    "reflection_of_source_and_velocity": true,
+    "analytic_uniform_source_and_sink": true,
+    "closed_and_open_budgets": true,
+    "nonnegative_sampled_fields": true,
+    "uptake_matches_material_gain": true
+  },
+  "flow_superlevels": {
+    "0.35": {
+      "cells": 1691744,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    },
+    "0.5": {
+      "cells": 1183880,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    },
+    "0.65": {
+      "cells": 766880,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    }
+  },
+  "initial_kinetic_superlevels": {
+    "0.35": {
+      "cells": 564160,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    },
+    "0.5": {
+      "cells": 380704,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    },
+    "0.65": {
+      "cells": 241408,
+      "tunnels": 1,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": true
+    }
+  },
+  "seed_superlevels": {
+    "0.35": {
+      "cells": 84944,
+      "tunnels": 0,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": false
+    },
+    "0.5": {
+      "cells": 72888,
+      "tunnels": 0,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": false
+    },
+    "0.65": {
+      "cells": 62176,
+      "tunnels": 0,
+      "cavities": 0,
+      "touches_boundary": false,
+      "candidate": false
+    }
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E17_flow_imprint/run.py": "db79938184cd2e7aa00b54d2a6ed9eb756bf3e1647d0b364a006d738f04f64a8",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

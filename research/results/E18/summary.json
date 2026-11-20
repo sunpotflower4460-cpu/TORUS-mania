@@ -1,0 +1,227 @@
+{
+  "inputs_sha256": "ca3fab9565c4057f1c76d7808d1d9ae28d38ddd216e80d6f9a3751f94b5ec73e",
+  "root_reported_rates": [
+    {
+      "study": "Ditengou et al. (2008)",
+      "doi": "10.1073/pnas.0807814105",
+      "location": "Results, Manual Mechanical Stimulation of LRI; Fig. 2",
+      "endpoint": "root emergence at the site or equivalent position, 72 h",
+      "treatment": "transient bend 1 mm behind the root tip",
+      "reported_percent": 70,
+      "n": 45,
+      "control_percent": 15,
+      "control_n": 33,
+      "difference_reported_percentage_points": 55,
+      "counts_at_nearest_whole_percent": [],
+      "control_counts_at_nearest_whole_percent": [
+        5
+      ]
+    },
+    {
+      "study": "Ditengou et al. (2008)",
+      "doi": "10.1073/pnas.0807814105",
+      "location": "Results, Manual Mechanical Stimulation of LRI; Fig. 2",
+      "endpoint": "root emergence at the site or equivalent position, 72 h",
+      "treatment": "transient bend 3 mm behind the root tip",
+      "reported_percent": 40,
+      "n": 40,
+      "control_percent": 5,
+      "control_n": null,
+      "difference_reported_percentage_points": 35,
+      "counts_at_nearest_whole_percent": [
+        16
+      ],
+      "control_counts_at_nearest_whole_percent": null
+    },
+    {
+      "study": "Richter et al. (2009)",
+      "doi": "10.1104/pp.109.142448",
+      "location": "Results, Fig. 2E",
+      "endpoint": "emerged lateral root at the bend or the corresponding control position",
+      "treatment": "bending without reorienting the root tip",
+      "reported_percent": 99,
+      "n": null,
+      "control_percent": 18,
+      "control_n": null,
+      "reported_sample_design": "Means ± SE, n ≥ 20 in four separate experiments",
+      "difference_reported_percentage_points": 81,
+      "counts_at_nearest_whole_percent": null,
+      "control_counts_at_nearest_whole_percent": null
+    }
+  ],
+  "root_reporter_timing": {
+    "doi": "10.1073/pnas.0807814105",
+    "location": "Results and Fig. 3A, modified bending assay",
+    "endpoint": "DR5 reporter on the convex side at the site of subsequent formation",
+    "reported_percent": 80,
+    "n": 25,
+    "hours_after_bending": [
+      5,
+      6
+    ],
+    "nearest_whole_percent": [
+      20
+    ]
+  },
+  "leaf_initiation": {
+    "doi": "10.1073/pnas.191380498",
+    "location": "Table 1",
+    "groups": {
+      "E1.7_induced": {
+        "leaf_initiation": {
+          "events": 14,
+          "n": 73,
+          "fraction": 0.1917808219178082,
+          "wilson95": [
+            0.11782360890987197,
+            0.2965550261313321
+          ]
+        },
+        "reverse_phyllotaxy": {
+          "events": 14,
+          "n": 73,
+          "fraction": 0.1917808219178082,
+          "wilson95": [
+            0.11782360890987197,
+            0.2965550261313321
+          ]
+        }
+      },
+      "E1.7_mock": {
+        "leaf_initiation": {
+          "events": 0,
+          "n": 26,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287289218592153
+          ]
+        },
+        "reverse_phyllotaxy": {
+          "events": 0,
+          "n": 26,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.1287289218592153
+          ]
+        }
+      },
+      "E1.8_induced": {
+        "leaf_initiation": {
+          "events": 10,
+          "n": 55,
+          "fraction": 0.18181818181818182,
+          "wilson95": [
+            0.10187670434449675,
+            0.30330459636637636
+          ]
+        },
+        "reverse_phyllotaxy": {
+          "events": 10,
+          "n": 55,
+          "fraction": 0.18181818181818182,
+          "wilson95": [
+            0.10187670434449675,
+            0.30330459636637636
+          ]
+        }
+      },
+      "E1.8_mock": {
+        "leaf_initiation": {
+          "events": 0,
+          "n": 28,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.12064330476584562
+          ]
+        },
+        "reverse_phyllotaxy": {
+          "events": 0,
+          "n": 28,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.12064330476584562
+          ]
+        }
+      },
+      "G25_induced": {
+        "leaf_initiation": {
+          "events": 0,
+          "n": 49,
+          "fraction": 0.0,
+          "wilson95": [
+            0.0,
+            0.07269781922049638
+          ]
+        },
+        "reverse_phyllotaxy": {
+          "events": 1,
+          "n": 49,
+          "fraction": 0.02040816326530612,
+          "wilson95": [
+            0.0036116725898252466,
+            0.10693521523391615
+          ]
+        }
+      }
+    },
+    "primary_contrasts": {
+      "E1.7": {
+        "versus_same_line_mock": {
+          "difference_fraction": 0.1917808219178082,
+          "fisher_p_two_sided": 0.018128539911382892
+        },
+        "versus_G25_induced": {
+          "difference_fraction": 0.1917808219178082,
+          "fisher_p_two_sided": 0.0007391221954383322
+        }
+      },
+      "E1.8": {
+        "versus_same_line_mock": {
+          "difference_fraction": 0.18181818181818182,
+          "fisher_p_two_sided": 0.014084090216017546
+        },
+        "versus_G25_induced": {
+          "difference_fraction": 0.18181818181818182,
+          "fisher_p_two_sided": 0.0014354427630254274
+        }
+      }
+    },
+    "sensitivity_with_mock_denominators_as_in_body_text": {
+      "E1.7": {
+        "difference_fraction": 0.1917808219178082,
+        "fisher_p_two_sided": 0.009536094152248993
+      },
+      "E1.8": {
+        "difference_fraction": 0.18181818181818182,
+        "fisher_p_two_sided": 0.026087825205764845
+      }
+    },
+    "source_note": "The body text lists E1.7 and E1.8 mock n as 28 and 26 respectively. Table 1 lists 26 and 28 and is the primary source. Sensitivity swaps only those two control denominators."
+  },
+  "leaf_shape_in_existing_primordium": {
+    "observed": 11,
+    "n": 20,
+    "endpoint": "local outgrowth and altered leaf shape when treated on an existing young leaf primordium",
+    "control_n": null,
+    "events": 11,
+    "fraction": 0.55,
+    "wilson95": [
+      0.34208534245034233,
+      0.7418021417443758
+    ]
+  },
+  "checks": {
+    "exact_percent_calibration": true,
+    "inconsistent_rounding_calibration": true,
+    "wilson_includes_boundary_fractions": true,
+    "integer_data_within_denominators": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E18_organ_placement/run.py": "347a5f970be1471165f82ae629e8eb7d37b81279b95bee280afadbc804715f30"
+  }
+}

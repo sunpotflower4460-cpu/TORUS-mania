@@ -1,0 +1,188 @@
+{
+  "date_utc": "2026-11-20",
+  "source_commit": "4b39db837094e4444183790194f0cdece41d6b3f",
+  "system": "Debian GNU/Linux 13 (trixie)",
+  "arch": "x86_64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "h5py": "3.15.1",
+  "parallel_processes": 3,
+  "numeric_threads_per_process": 1,
+  "random_seeds": [],
+  "checked_output_files": 26,
+  "byte_identical_clean_replay": true,
+  "calibrations_passed": {
+    "E13": 35,
+    "E14": 16,
+    "E15": 2
+  },
+  "existing_unit_tests_passed": 22,
+  "first_run": {
+    "elapsed_wall_s": 168.69,
+    "runs": [
+      {
+        "experiment": "E13",
+        "variant": "ideal32",
+        "returncode": 0,
+        "wall_s": 12.637
+      },
+      {
+        "experiment": "E13",
+        "variant": "ideal48",
+        "returncode": 0,
+        "wall_s": 36.691
+      },
+      {
+        "experiment": "E13",
+        "variant": "diffusive32",
+        "returncode": 0,
+        "wall_s": 22.963
+      },
+      {
+        "experiment": "E13",
+        "variant": "diffusive48",
+        "returncode": 0,
+        "wall_s": 70.921
+      },
+      {
+        "experiment": "E13",
+        "variant": "time_refined48",
+        "returncode": 0,
+        "wall_s": 140.015
+      },
+      {
+        "experiment": "E13",
+        "variant": "surface_coarse48",
+        "returncode": 0,
+        "wall_s": 74.592
+      },
+      {
+        "experiment": "E13",
+        "variant": "shear",
+        "returncode": 0,
+        "wall_s": 5.49
+      },
+      {
+        "experiment": "E14",
+        "variant": "light20",
+        "returncode": 0,
+        "wall_s": 3.432
+      },
+      {
+        "experiment": "E14",
+        "variant": "light5",
+        "returncode": 0,
+        "wall_s": 2.357
+      },
+      {
+        "experiment": "E14",
+        "variant": "flow48",
+        "returncode": 0,
+        "wall_s": 24.573
+      },
+      {
+        "experiment": "E14",
+        "variant": "flow64",
+        "returncode": 0,
+        "wall_s": 55.258
+      },
+      {
+        "experiment": "E15",
+        "variant": "published_arrays",
+        "returncode": 0,
+        "wall_s": 0.253
+      },
+      {
+        "experiment": "figures",
+        "variant": "all",
+        "returncode": 0,
+        "wall_s": 2.145
+      }
+    ]
+  },
+  "clean_git_archive_replay": {
+    "elapsed_wall_s": 174.193,
+    "runs": [
+      {
+        "experiment": "E13",
+        "variant": "ideal32",
+        "returncode": 0,
+        "wall_s": 8.192
+      },
+      {
+        "experiment": "E13",
+        "variant": "ideal48",
+        "returncode": 0,
+        "wall_s": 36.207
+      },
+      {
+        "experiment": "E13",
+        "variant": "diffusive32",
+        "returncode": 0,
+        "wall_s": 24.235
+      },
+      {
+        "experiment": "E13",
+        "variant": "diffusive48",
+        "returncode": 0,
+        "wall_s": 74.46
+      },
+      {
+        "experiment": "E13",
+        "variant": "time_refined48",
+        "returncode": 0,
+        "wall_s": 136.205
+      },
+      {
+        "experiment": "E13",
+        "variant": "surface_coarse48",
+        "returncode": 0,
+        "wall_s": 83.333
+      },
+      {
+        "experiment": "E13",
+        "variant": "shear",
+        "returncode": 0,
+        "wall_s": 4.402
+      },
+      {
+        "experiment": "E14",
+        "variant": "light20",
+        "returncode": 0,
+        "wall_s": 4.634
+      },
+      {
+        "experiment": "E14",
+        "variant": "light5",
+        "returncode": 0,
+        "wall_s": 3.385
+      },
+      {
+        "experiment": "E14",
+        "variant": "flow48",
+        "returncode": 0,
+        "wall_s": 25.024
+      },
+      {
+        "experiment": "E14",
+        "variant": "flow64",
+        "returncode": 0,
+        "wall_s": 52.653
+      },
+      {
+        "experiment": "E15",
+        "variant": "published_arrays",
+        "returncode": 0,
+        "wall_s": 0.426
+      },
+      {
+        "experiment": "figures",
+        "variant": "all",
+        "returncode": 0,
+        "wall_s": 1.996
+      }
+    ]
+  }
+}
