@@ -1,0 +1,646 @@
+{
+  "profiles": {
+    "uniform": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795,
+        0.1784052680160795
+      ],
+      "ratio": 1.0,
+      "neck": false
+    },
+    "potential": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.17354887879916506,
+        0.16328797530271508,
+        0.15611946600464519,
+        0.15118130752432754,
+        0.14788694690710608,
+        0.1459992210160814,
+        0.14539083597550242,
+        0.1459992210160814,
+        0.14788694690710608,
+        0.15118130752432754,
+        0.15611946600464519,
+        0.16328797530271508,
+        0.17354887879916506
+      ],
+      "ratio": 0.8377515140489741,
+      "neck": true
+    },
+    "ring_32_0": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.19529183035587194,
+        0.18002428207319385,
+        0.1670532667032591,
+        0.15713220937846614,
+        0.14975263610174208,
+        0.14517482522908118,
+        0.1441153879908189,
+        0.1451748252290812,
+        0.1497526361017421,
+        0.1571322093784662,
+        0.16705326670325915,
+        0.18002428207319393,
+        0.19529183035587208
+      ],
+      "ratio": 0.737948882593827,
+      "neck": true
+    },
+    "ring_32_96": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.20507403661536736,
+        0.1918364740511097,
+        0.18054349963901264,
+        0.17095902604983815,
+        0.16352996308037032,
+        0.15780183068463113,
+        0.15479377495650057,
+        0.15423440647847697,
+        0.15554973434246613,
+        0.16052815884493615,
+        0.16813503137853578,
+        0.17867119007735166,
+        0.19305991718019602
+      ],
+      "ratio": 0.8017913672469928,
+      "neck": true
+    },
+    "ring_48_0": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.19538456338114432,
+        0.1797771920670106,
+        0.1668419267135328,
+        0.15664845272085848,
+        0.14934017070299652,
+        0.14484193771811169,
+        0.14336679642075453,
+        0.14484193771811174,
+        0.14934017070299663,
+        0.15664845272085862,
+        0.16684192671353296,
+        0.17977719206701076,
+        0.19538456338114454
+      ],
+      "ratio": 0.7337672635943265,
+      "neck": true
+    },
+    "ring_48_96": {
+      "offset_m": [
+        -0.75,
+        -0.625,
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "radius_m": [
+        0.20330219555958542,
+        0.1903987648831833,
+        0.17944038132479423,
+        0.1703439483488039,
+        0.16311745109446268,
+        0.15788844898194984,
+        0.1546517462745104,
+        0.1536826834917611,
+        0.1551932254512618,
+        0.1595783416186208,
+        0.1670519097216629,
+        0.17814238969689603,
+        0.1929606120807487
+      ],
+      "ratio": 0.8014679504115219,
+      "neck": true
+    }
+  },
+  "topology_trials": [
+    {
+      "n": 32,
+      "initial_ring": {
+        "0.0": {
+          "0.25": {
+            "cells": 560,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 456,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 312,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.1": {
+          "0.25": {
+            "cells": 760,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 512,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 368,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      },
+      "random": [
+        {
+          "seed": 11,
+          "energy_match_relative": 0.0,
+          "max_div": 7.401486830834377e-16,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 13535,
+                "tunnels": 35,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 2369,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 218,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 14490,
+                "tunnels": 35,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 2615,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 232,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        },
+        {
+          "seed": 29,
+          "energy_match_relative": 2.220446049250313e-16,
+          "max_div": 8.141635513917814e-16,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 21243,
+                "tunnels": 25,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 14026,
+                "tunnels": 14,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 997,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 21846,
+                "tunnels": 19,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 14371,
+                "tunnels": 16,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 1010,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        },
+        {
+          "seed": 47,
+          "energy_match_relative": 0.0,
+          "max_div": 6.776986379482727e-16,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 20679,
+                "tunnels": 42,
+                "cavities": 1,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 13097,
+                "tunnels": 21,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 1646,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 21456,
+                "tunnels": 36,
+                "cavities": 1,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 13638,
+                "tunnels": 25,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 1694,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "n": 48,
+      "initial_ring": {
+        "0.0": {
+          "0.25": {
+            "cells": 1736,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1304,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 752,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.1": {
+          "0.25": {
+            "cells": 2224,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1584,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 984,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      },
+      "random": [
+        {
+          "seed": 11,
+          "energy_match_relative": 0.0,
+          "max_div": 1.2212453270876722e-15,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 44557,
+                "tunnels": 33,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 7034,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 718,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 48062,
+                "tunnels": 33,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 8438,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 759,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        },
+        {
+          "seed": 29,
+          "energy_match_relative": 0.0,
+          "max_div": 1.2212453270876722e-15,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 71692,
+                "tunnels": 28,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 47226,
+                "tunnels": 12,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 3319,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 73846,
+                "tunnels": 20,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 48449,
+                "tunnels": 13,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 3401,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        },
+        {
+          "seed": 47,
+          "energy_match_relative": 2.220446049250313e-16,
+          "max_div": 1.096345236817342e-15,
+          "topology": {
+            "0.0": {
+              "0.25": {
+                "cells": 68824,
+                "tunnels": 34,
+                "cavities": 1,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 43034,
+                "tunnels": 17,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 5281,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            },
+            "0.1": {
+              "0.25": {
+                "cells": 71543,
+                "tunnels": 32,
+                "cavities": 1,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.35": {
+                "cells": 44734,
+                "tunnels": 20,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "0.5": {
+                "cells": 5453,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "potential_neck": true,
+    "uniform_no_neck": true,
+    "balanced_random_fields": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E03_vortex/observers.py": "ca3b80a4b3785d85c9ebcc288495357b07cab54ee6079a2846056b8a51bb5418",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E03_vortex/observe.py": "bdd81d90e7769e6972d2ce5f1af1d9723f2fe4be4f86de00f201584e416ddbf2",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

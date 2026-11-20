@@ -1,0 +1,3302 @@
+{
+  "rows": [
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 3.5000000000000075,
+      "unmet": 0.0,
+      "kcl": 1.3322676295501878e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18333333333333335,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.942890293094024e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 3.5000000000000075,
+      "unmet": 0.0,
+      "kcl": 1.3322676295501878e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18333333333333335,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.942890293094024e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 3.074363425925923,
+      "unmet": 0.0,
+      "kcl": 9.71445146547012e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.13333333333333336,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 3.074363425925923,
+      "unmet": 0.0,
+      "kcl": 9.71445146547012e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.13333333333333336,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8353457491934052,
+      "unmet": 0.0,
+      "kcl": 5.551115123125783e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.12500000000000006,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.9984014443252818e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8353457491934052,
+      "unmet": 0.0,
+      "kcl": 5.551115123125783e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.12500000000000006,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.9984014443252818e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.0803553988939043,
+      "unmet": 0.0,
+      "kcl": 3.885780586188048e-16,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 42,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6497528004598904
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 6.59153952800228e-14
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 14,
+      "loss": 1.0991441025107473,
+      "unmet": 0.0,
+      "kcl": 8.326672684688674e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 78,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5490807063814416
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.726774527341604e-14
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.0807251146297636,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 42,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6421011851612247
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 8.608008467691879e-14
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 14,
+      "loss": 1.0958184605516739,
+      "unmet": 0.0,
+      "kcl": 2.7755575615628914e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 78,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5357950798854632
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 9.658530840267321e-14
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 4.833333333333342,
+      "unmet": 0.0,
+      "kcl": 1.6653345369377348e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18333333333333332,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 2.1094237467877974e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 4.833333333333342,
+      "unmet": 0.0,
+      "kcl": 1.6653345369377348e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18333333333333332,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 2.1094237467877974e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 4.521122685185181,
+      "unmet": 0.0,
+      "kcl": 1.092814727599034e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.13333333333333333,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 1.970645868709653e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 4.521122685185181,
+      "unmet": 0.0,
+      "kcl": 1.092814727599034e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.13333333333333333,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 1.970645868709653e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.7883775016806269,
+      "unmet": 0.0,
+      "kcl": 7.771561172376096e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.2886733055962474e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.7883775016806269,
+      "unmet": 0.0,
+      "kcl": 7.771561172376096e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.2886733055962474e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079127646690137,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569559215762973
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.1102230246251565e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079127646690137,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569559215762973
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.1102230246251565e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079151456154207,
+      "unmet": 0.0,
+      "kcl": 1.9984014443252818e-15,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569610696136411
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 2.1094237467877974e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079151456154207,
+      "unmet": 0.0,
+      "kcl": 1.9984014443252818e-15,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569610696136411
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 2.1094237467877974e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 2.44444444444445,
+      "unmet": 0.0,
+      "kcl": 1.1657341758564144e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15000000000000002,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.5543122344752192e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 2.44444444444445,
+      "unmet": 0.0,
+      "kcl": 1.1657341758564144e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15000000000000002,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.5543122344752192e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 2.33088991769547,
+      "unmet": 0.0,
+      "kcl": 8.604228440844963e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1166666666666667,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.609823385706477e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 2.33088991769547,
+      "unmet": 0.0,
+      "kcl": 8.604228440844963e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1166666666666667,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.609823385706477e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.33333333333333387,
+      "unmet": 0.0,
+      "kcl": 3.3306690738754696e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 3.3306690738754696e-16
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.33333333333333387,
+      "unmet": 0.0,
+      "kcl": 3.3306690738754696e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 3.3306690738754696e-16
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 5,
+      "loss": 0.5600068232443942,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6548710954419856
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 2.1094237467877974e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 7,
+      "loss": 0.562410285009323,
+      "unmet": 0.0,
+      "kcl": 2.7755575615628914e-16,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 30,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5703714621827612
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 5.88418203051333e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 4,
+      "loss": 0.5597583347025834,
+      "unmet": 0.0,
+      "kcl": 4.718447854656915e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 12,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7173534431485041
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.2979693505824694e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 6,
+      "loss": 0.5630078386610015,
+      "unmet": 0.0,
+      "kcl": 2.220446049250313e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 24,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5917218002119364
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 3.4416913763379853e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 4.666666666666677,
+      "unmet": 0.0,
+      "kcl": 2.4424906541753444e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 4.218847493575595e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 4.666666666666677,
+      "unmet": 0.0,
+      "kcl": 2.4424906541753444e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 4.218847493575595e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 4.099151234567892,
+      "unmet": 0.0,
+      "kcl": 2.55351295663786e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.11666666666666665,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 4.163336342344337e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 4.099151234567892,
+      "unmet": 0.0,
+      "kcl": 2.55351295663786e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.11666666666666665,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 4.163336342344337e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 0.825608396735369,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581207823247
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.3861802251067274e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 0.825608396735369,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581207823247
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.3861802251067274e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.3415593716945198,
+      "unmet": 0.0,
+      "kcl": 5.134781488891349e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 45,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7502618733052611
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 5.1833537462186996e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 9,
+      "loss": 1.3436313128680748,
+      "unmet": 0.0,
+      "kcl": 6.800116025829084e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 51,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7145170162644486
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.011479954295737e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.345329843358165,
+      "unmet": 0.0,
+      "kcl": 3.885780586188048e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 45,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7436183885614633
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 4.6074255521944e-15
+    },
+    {
+      "seed": 11,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 9,
+      "loss": 1.3470408855736034,
+      "unmet": 0.0,
+      "kcl": 8.049116928532385e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 51,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7073903517435725
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 5.68295410730002e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 7.777777777777761,
+      "unmet": 0.0,
+      "kcl": 2.6645352591003757e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.275,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 7.965850201685498e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 7.777777777777761,
+      "unmet": 0.0,
+      "kcl": 2.6645352591003757e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.275,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 7.965850201685498e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 6.811824845678934,
+      "unmet": 0.0,
+      "kcl": 6.5503158452884236e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 6.661338147750939e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 6.811824845678934,
+      "unmet": 0.0,
+      "kcl": 6.5503158452884236e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 6.661338147750939e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8353457491934059,
+      "unmet": 0.0,
+      "kcl": 1.6653345369377348e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.12500000000000003,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.9256110722811194e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8353457491934059,
+      "unmet": 0.0,
+      "kcl": 1.6653345369377348e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.12500000000000003,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.9256110722811194e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 11,
+      "loss": 0.9892427036858134,
+      "unmet": 0.0,
+      "kcl": 2.220446049250313e-16,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 63,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5926065559932214
+      },
+      "cut_mean_unmet": 0.012500000000000002,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.494804694057166e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 13,
+      "loss": 0.9938525664416362,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 75,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5771332988816218
+      },
+      "cut_mean_unmet": 0.008333333333333335,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.655787032627813e-14
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 11,
+      "loss": 0.9828968725941968,
+      "unmet": 0.0,
+      "kcl": 3.677613769070831e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 63,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5635923411266093
+      },
+      "cut_mean_unmet": 0.012500000000000002,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 4.433953204596719e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 13,
+      "loss": 0.9882999169469151,
+      "unmet": 0.0,
+      "kcl": 6.453171330633722e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 75,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5542869642472068
+      },
+      "cut_mean_unmet": 0.008333333333333335,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.256106743762757e-14
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 9.99999999999999,
+      "unmet": 0.0,
+      "kcl": 5.329070518200751e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.275,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 9.270362255620057e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 9.99999999999999,
+      "unmet": 0.0,
+      "kcl": 5.329070518200751e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.275,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 9.270362255620057e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 9.223090277777688,
+      "unmet": 0.0,
+      "kcl": 8.382183835919932e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 8.382183835919932e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 9.223090277777688,
+      "unmet": 0.0,
+      "kcl": 8.382183835919932e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 8.382183835919932e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.7883775016806253,
+      "unmet": 0.0,
+      "kcl": 1.2212453270876722e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735916
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.7883775016806253,
+      "unmet": 0.0,
+      "kcl": 1.2212453270876722e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735916
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079119414858346,
+      "unmet": 0.0,
+      "kcl": 7.216449660063518e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569538057723893
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.3893782158729853e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079119414858346,
+      "unmet": 0.0,
+      "kcl": 7.216449660063518e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569538057723893
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.3893782158729853e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079144225483126,
+      "unmet": 0.0,
+      "kcl": 1.4432899320127035e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569592284877918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.6653345369377348e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079144225483126,
+      "unmet": 0.0,
+      "kcl": 1.4432899320127035e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569592284877918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.6653345369377348e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 3.9999999999999947,
+      "unmet": 0.0,
+      "kcl": 2.6645352591003757e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 5.467848396278896e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 3.9999999999999947,
+      "unmet": 0.0,
+      "kcl": 2.6645352591003757e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 5.467848396278896e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 3.6168981481481115,
+      "unmet": 0.0,
+      "kcl": 4.218847493575595e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 4.218847493575595e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 3.6168981481481115,
+      "unmet": 0.0,
+      "kcl": 4.218847493575595e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 4.218847493575595e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.3333333333333339,
+      "unmet": 0.0,
+      "kcl": 3.3306690738754696e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 3.3306690738754696e-16
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.3333333333333339,
+      "unmet": 0.0,
+      "kcl": 3.3306690738754696e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 3.3306690738754696e-16
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 7,
+      "loss": 0.5023147729376407,
+      "unmet": 0.0,
+      "kcl": 4.0939474033052647e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 33,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6260420577444955
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 5.162537064506978e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 8,
+      "loss": 0.5039110702759186,
+      "unmet": 0.0,
+      "kcl": 7.28583859910259e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 36,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6078738500256302
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 4.683753385137379e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 7,
+      "loss": 0.5010712737086903,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 33,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6171085408572422
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.161737786669619e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 7,
+      "loss": 0.5010712737086903,
+      "unmet": 0.0,
+      "kcl": 6.661338147750939e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 33,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6171085408572422
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.161737786669619e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 6.444444444444433,
+      "unmet": 0.0,
+      "kcl": 3.552713678800501e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2166666666666667,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 9.936496070395151e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 6.444444444444433,
+      "unmet": 0.0,
+      "kcl": 3.552713678800501e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2166666666666667,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 9.936496070395151e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 5.787037037036982,
+      "unmet": 0.0,
+      "kcl": 7.882583474838611e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.16666666666666669,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 8.619778656281262e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 5.787037037036982,
+      "unmet": 0.0,
+      "kcl": 7.882583474838611e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 21,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.16666666666666669,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 8.619778656281262e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 0.825608396735369,
+      "unmet": 0.0,
+      "kcl": 8.881784197001252e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581266885729
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.1086244689504383e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 0.825608396735369,
+      "unmet": 0.0,
+      "kcl": 8.881784197001252e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581266885729
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.1086244689504383e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.0699040255293772,
+      "unmet": 0.0,
+      "kcl": 7.771561172376096e-16,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 48,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6838078282021032
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 9.658940314238862e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 10,
+      "loss": 1.0755670226033998,
+      "unmet": 0.0,
+      "kcl": 1.0304257447302234e-15,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 57,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6536269295278895
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 7.54908288658207e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 8,
+      "loss": 1.070964973119458,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 48,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6821566323011751
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 6.8833827526759706e-15
+    },
+    {
+      "seed": 29,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 9,
+      "loss": 1.074694851990167,
+      "unmet": 0.0,
+      "kcl": 1.0234868508263162e-15,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 54,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6643634702117835
+      },
+      "cut_mean_unmet": 0.025,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 1.1581013925621164e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 6.166666666666631,
+      "unmet": 0.0,
+      "kcl": 2.4980018054066022e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 2.55351295663786e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 6.166666666666631,
+      "unmet": 0.0,
+      "kcl": 2.4980018054066022e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.2,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 2.55351295663786e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 6.646050347222114,
+      "unmet": 0.0,
+      "kcl": 8.368306048112117e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1875,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 1.1268763699945339e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 6.646050347222114,
+      "unmet": 0.0,
+      "kcl": 8.368306048112117e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1875,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 1.1268763699945339e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.5350729517396142,
+      "unmet": 0.0,
+      "kcl": 1.304512053934559e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.9698465908722937e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.6854753899538855,
+      "unmet": 0.0,
+      "kcl": 3.885780586188048e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 3,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.8624669826170931
+      },
+      "cut_mean_unmet": 0.12500000000000003,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.944962658627989e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.6854753899538855,
+      "unmet": 0.0,
+      "kcl": 3.885780586188048e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 3,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.8624669826170931
+      },
+      "cut_mean_unmet": 0.12500000000000003,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.944962658627989e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 10,
+      "loss": 0.9980774157127459,
+      "unmet": 0.0,
+      "kcl": 4.996003610813204e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 54,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6290332908500346
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.3298697960381105e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 15,
+      "loss": 1.0110098012706996,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 84,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5479438215302428
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 7.494005416219807e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 10,
+      "loss": 1.0054786550195571,
+      "unmet": 0.0,
+      "kcl": 3.885780586188048e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 54,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6200340530726094
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.0826036168107862e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 15,
+      "loss": 1.0172316729957507,
+      "unmet": 0.0,
+      "kcl": 2.220446049250313e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 84,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5349474250576881
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.9968028886505635e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 7.499999999999967,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.19999999999999998,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 4.440892098500626e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 7.499999999999967,
+      "unmet": 0.0,
+      "kcl": 4.440892098500626e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.19999999999999998,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 4.440892098500626e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 8.092809606481365,
+      "unmet": 0.0,
+      "kcl": 9.103828801926284e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18749999999999997,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 1.176836406102666e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 8.092809606481365,
+      "unmet": 0.0,
+      "kcl": 9.103828801926284e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.18749999999999997,
+      "cut_max_unmet": 1.0,
+      "max_kcl_including_cuts": 1.176836406102666e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 3.8352974186307485,
+      "unmet": 0.0,
+      "kcl": 1.4988010832439613e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 3.039235529911366e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.788377501680625,
+      "unmet": 0.0,
+      "kcl": 1.942890293094024e-15,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 2.886579864025407e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.788377501680625,
+      "unmet": 0.0,
+      "kcl": 1.942890293094024e-15,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9687895180735918
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 2.886579864025407e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079157172318512,
+      "unmet": 0.0,
+      "kcl": 6.106226635438361e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569662529919659
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 9.627646877830455e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079157172318512,
+      "unmet": 0.0,
+      "kcl": 6.106226635438361e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569662529919659
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 9.627646877830455e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.8079173146653416,
+      "unmet": 0.0,
+      "kcl": 1.4432899320127035e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569691211474524
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.4988010832439613e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "water",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.8079173146653416,
+      "unmet": 0.0,
+      "kcl": 1.4432899320127035e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 6,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9569691211474524
+      },
+      "cut_mean_unmet": 0.14166666666666666,
+      "cut_max_unmet": 0.5,
+      "max_kcl_including_cuts": 1.4988010832439613e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 3.55555555555554,
+      "unmet": 0.0,
+      "kcl": 1.7763568394002505e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.16666666666666669,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 3.55555555555554,
+      "unmet": 0.0,
+      "kcl": 1.7763568394002505e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.16666666666666669,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 1.7763568394002505e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 3.837930812757151,
+      "unmet": 0.0,
+      "kcl": 5.655198531684391e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15833333333333335,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 7.605027718682322e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 3.837930812757151,
+      "unmet": 0.0,
+      "kcl": 5.655198531684391e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.15833333333333335,
+      "cut_max_unmet": 0.6666666666666667,
+      "max_kcl_including_cuts": 7.605027718682322e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 1.876543209876541,
+      "unmet": 0.0,
+      "kcl": 7.91033905045424e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 2.3175905639050143e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 0.3333333333333341,
+      "unmet": 0.0,
+      "kcl": 2.7755575615628914e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 2.7755575615628914e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 0.3333333333333341,
+      "unmet": 0.0,
+      "kcl": 2.7755575615628914e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 0,
+        "angles_deg": [],
+        "mean_radius_ratio": null
+      },
+      "cut_mean_unmet": 0.1,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 2.7755575615628914e-16
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 5,
+      "loss": 0.5145639829524637,
+      "unmet": 0.0,
+      "kcl": 3.3306690738754696e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.619589197672869
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 2.614315014470847e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 7,
+      "loss": 0.517285761840657,
+      "unmet": 0.0,
+      "kcl": 4.0939474033052647e-16,
+      "material": 23.999999999999993,
+      "junctions": {
+        "pairs": 30,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5730597668037143
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 9.597878047884478e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 5,
+      "loss": 0.5127083624546318,
+      "unmet": 0.0,
+      "kcl": 2.0816681711721685e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6087849089203469
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 6.333822355486518e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": false,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 7,
+      "loss": 0.5148680635203078,
+      "unmet": 0.0,
+      "kcl": 5.551115123125783e-16,
+      "material": 23.999999999999996,
+      "junctions": {
+        "pairs": 30,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.5598418654407199
+      },
+      "cut_mean_unmet": 0.01666666666666667,
+      "cut_max_unmet": 0.33333333333333337,
+      "max_kcl_including_cuts": 1.0752509993494641e-13
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.001,
+      "cycles": 0,
+      "loss": 5.555555555555532,
+      "unmet": 0.0,
+      "kcl": 2.886579864025407e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.17222222222222222,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 3.0531133177191805e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "tree",
+      "threshold": 0.0001,
+      "cycles": 0,
+      "loss": 5.555555555555532,
+      "unmet": 0.0,
+      "kcl": 2.886579864025407e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.17222222222222222,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 3.0531133177191805e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 5.967881944444366,
+      "unmet": 0.0,
+      "kcl": 9.769962616701378e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1638888888888889,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 1.5765166949677223e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "one_loop",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 5.967881944444366,
+      "unmet": 0.0,
+      "kcl": 9.769962616701378e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 18,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.1638888888888889,
+      "cut_max_unmet": 0.6666666666666666,
+      "max_kcl_including_cuts": 1.5765166949677223e-14
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "uniform",
+      "threshold": 0.0001,
+      "cycles": 16,
+      "loss": 2.809764309764306,
+      "unmet": 0.0,
+      "kcl": 2.0261570199409107e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 90,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 1.0
+      },
+      "cut_mean_unmet": 0.0,
+      "cut_max_unmet": 0.0,
+      "max_kcl_including_cuts": 4.135580766728708e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.001,
+      "cycles": 1,
+      "loss": 0.8256083967353692,
+      "unmet": 0.0,
+      "kcl": 4.996003610813204e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581207823251
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.774758283725532e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "material_optimum",
+      "threshold": 0.0001,
+      "cycles": 1,
+      "loss": 0.8256083967353692,
+      "unmet": 0.0,
+      "kcl": 4.996003610813204e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 9,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.9189581207823251
+      },
+      "cut_mean_unmet": 0.06666666666666667,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.774758283725532e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.001,
+      "cycles": 6,
+      "loss": 1.134755214121679,
+      "unmet": 0.0,
+      "kcl": 7.216449660063518e-16,
+      "material": 24.000000000000004,
+      "junctions": {
+        "pairs": 33,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.759334774370054
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 1.6783449630075609e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.1",
+      "threshold": 0.0001,
+      "cycles": 10,
+      "loss": 1.150249688149554,
+      "unmet": 0.0,
+      "kcl": 1.0113437864944785e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 57,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6530770179086014
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 2.645670141299128e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.001,
+      "cycles": 6,
+      "loss": 1.1260502586853944,
+      "unmet": 0.0,
+      "kcl": 7.814929259275516e-16,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 33,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.7555271137621211
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 5.633017009525581e-15
+    },
+    {
+      "seed": 47,
+      "commodity": "sugar",
+      "varying_sinks": true,
+      "design": "adaptive_0.2",
+      "threshold": 0.0001,
+      "cycles": 9,
+      "loss": 1.1384650216414824,
+      "unmet": 0.0,
+      "kcl": 1.1587952819525071e-15,
+      "material": 24.0,
+      "junctions": {
+        "pairs": 51,
+        "angles_deg": [
+          90.0,
+          180.0
+        ],
+        "mean_radius_ratio": 0.6716524952800793
+      },
+      "cut_mean_unmet": 0.016666666666666666,
+      "cut_max_unmet": 0.3333333333333333,
+      "max_kcl_including_cuts": 3.941291737419306e-15
+    }
+  ],
+  "checks": {
+    "material_matched": true,
+    "mass_after_all_cuts": true,
+    "control_cycle_ranks": true,
+    "damage_contrast": true
+  },
+  "cuts_column_order": [
+    "unmet",
+    "loss",
+    "cycles",
+    "kcl"
+  ],
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E04_transport/run.py": "ee75e3891f0788436f44bd12173d2d46d9ddae7662a16a3fe09b9e25f2804cc2"
+  }
+}

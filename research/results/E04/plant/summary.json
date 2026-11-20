@@ -1,0 +1,84 @@
+{
+  "source_doi": "10.6084/m9.figshare.13370348.v1",
+  "license": "CC BY 4.0",
+  "sha256": "2a5a054cd610e39f0b581bde9595b7696f24a385e7dbb0ece133ef1121fbb6ee",
+  "groups": {
+    "balsa": {
+      "segments": 649,
+      "complete_branch_points": 292,
+      "missing_or_ambiguous": 0,
+      "terminal_without_n": 357,
+      "other_nonbranch": 0,
+      "incident_pairs": 1069,
+      "mean_min_over_max": 0.6274219686168757,
+      "quartiles": [
+        0.4689922480620155,
+        0.6323529411764705,
+        0.7983870967741936
+      ]
+    },
+    "pinon": {
+      "segments": 2099,
+      "complete_branch_points": 813,
+      "missing_or_ambiguous": 0,
+      "terminal_without_n": 1286,
+      "other_nonbranch": 0,
+      "incident_pairs": 4474,
+      "mean_min_over_max": 0.6069822200987223,
+      "quartiles": [
+        0.4134992952074104,
+        0.6346153846153847,
+        0.8205128205128206
+      ]
+    },
+    "ponderosa": {
+      "segments": 312,
+      "complete_branch_points": 141,
+      "missing_or_ambiguous": 0,
+      "terminal_without_n": 171,
+      "other_nonbranch": 0,
+      "incident_pairs": 501,
+      "mean_min_over_max": 0.6262165188866914,
+      "quartiles": [
+        0.46153846153846156,
+        0.6438356164383562,
+        0.8275862068965517
+      ]
+    },
+    "roots": {
+      "segments": 1231,
+      "complete_branch_points": 374,
+      "missing_or_ambiguous": 1,
+      "terminal_without_n": 856,
+      "other_nonbranch": 0,
+      "incident_pairs": 1856,
+      "mean_min_over_max": 0.6251240514292546,
+      "quartiles": [
+        0.4517861939296266,
+        0.6481481481481481,
+        0.8235294117647058
+      ]
+    },
+    "tree_tips": {
+      "segments": 914,
+      "complete_branch_points": 404,
+      "missing_or_ambiguous": 0,
+      "terminal_without_n": 510,
+      "other_nonbranch": 0,
+      "incident_pairs": 1441,
+      "mean_min_over_max": 0.5913797553964041,
+      "quartiles": [
+        0.42647058823529405,
+        0.5955678670360111,
+        0.7766497461928934
+      ]
+    }
+  },
+  "checks": {
+    "published_segment_counts": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E04_transport/plant_data.py": "eea41a7c966bf31df76583b9e8b2df2c925b0762d4e6ac1f75704506ced513fa"
+  }
+}
