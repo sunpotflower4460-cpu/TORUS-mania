@@ -26,12 +26,16 @@ def track_screen(axis, data, comparison):
             if key not in ("insufficient_travel", "no_near_return")
         ),
         counts.get("curving_return", 0),
+        comparison["counts_by_match_rule_and_time_shift_frames"]["relaxed"]["0"].get(
+            "curving_return", 0
+        ),
     ]
     labels = (
         "At least 10 positions",
         "Adequate travel",
         "Near start again",
         "Curving returns",
+        "Second export, 5-unit match",
     )
     for row, (label, count) in enumerate(zip(labels, totals, strict=True)):
         axis.barh(
