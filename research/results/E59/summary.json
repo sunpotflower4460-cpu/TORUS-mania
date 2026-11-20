@@ -287,10 +287,10 @@
         332.0,
         326.0,
         323.5,
-        120.0,
-        122.0,
-        121.0,
-        122.0,
+        null,
+        313.5,
+        311.0,
+        307.0,
         306.0,
         303.5,
         300.0,
@@ -407,10 +407,10 @@
         -2.4,
         -2.25,
         -2.1875,
-        2.9,
-        2.85,
-        2.875,
-        2.85,
+        null,
+        -1.9375,
+        -1.875,
+        -1.775,
         -1.75,
         -1.6875,
         -1.6,
@@ -497,11 +497,12 @@
     "original_png_dimensions": true,
     "both_endpoints_and_slope_windows_readable": true,
     "saturated_means_visible_at_majority_of_times": true,
+    "pre_cut_arc_means_below_zero_until_minus_6_seconds": true,
     "units_consistent_with_printed_ticks": true
   },
   "code_sha256": {
     "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
-    "E59_spindle_mechanisms/run.py": "f1be1e5dca8bbf5141dbcfdac02083719d40010a93ad827d2a5ab216fb8aa424",
+    "E59_spindle_mechanisms/run.py": "a950242ff095adbc366a09774bf760f492691224fa9f4eb1050ec3d8a32d555c",
     "experiments/particle_return_sources.py": "f5b864a3b55db507a0a491077ef8ca014e33ef7e84e24143b33de11f8682b3bc"
   }
 }

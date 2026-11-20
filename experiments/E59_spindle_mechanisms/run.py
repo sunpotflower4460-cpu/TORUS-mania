@@ -20,7 +20,7 @@ def traces(image, axes, times, green):
         for t in times:
             x = round(xzero + (xr - xzero) * t / t_ref)
             # The mean trace is saturated. Avoid the legend and the frame.
-            top = 95 if green else 113
+            top = (220 if t < 0 else 95) if green else 113
             bottom = 440 if green else 340
             yy = np.where(mask[top:bottom, x - 1 : x + 2])[0]
             means.append(float(np.median(yy) + top) if yy.size >= 4 else None)
@@ -87,6 +87,12 @@ def run(raw, out):
                 sum(v is not None for v in row) > 0.6 * len(row)
                 for panel in (plane, arc)
                 for row in panel["uncut_and_cut_um"]
+            ),
+            "pre_cut_arc_means_below_zero_until_minus_6_seconds": all(
+                v < 0
+                for row in arc["uncut_and_cut_um"]
+                for t, v in zip(arc["times_s"], row, strict=True)
+                if t <= -6 and v is not None
             ),
             "units_consistent_with_printed_ticks": abs((236 - 156) * 0.025 - 2) < 0.01
             and abs((198 - 146) * 2 / 102.5 - 1) < 0.025,
