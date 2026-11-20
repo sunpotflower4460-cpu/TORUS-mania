@@ -1,7 +1,7 @@
 # 実験計画 E01–E08
 
 更新日：2026-11-20（日本時間）  
-準備時の実験計画。E01・E02を実行した条件と結果は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)、E03以降の再開地点は[研究メモ](../research/STATUS.md)を参照。
+準備時の実験計画。E01・E02を実行した条件と結果は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)、E03〜E08の実行結果は[第2回研究報告](11_SECOND_RESEARCH_REPORT.md)、追試手順は[再開メモ](../research/STATUS.md)を参照。
 
 正式な主張IDは [02_HYPOTHESES_AND_TERMS.md](02_HYPOTHESES_AND_TERMS.md) と [research/claims.json](../research/claims.json) に従う。H-P 等は分類略称として併記する。
 

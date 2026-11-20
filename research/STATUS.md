@@ -1,19 +1,76 @@
-# 再開メモ　E01・E02完了
+# 再開メモ　E01〜E08の登録試験を実行済み
 
-更新 2026-11-20 JST（実行日2026-11-19 UTC）。研究ブランチは `research/e01-e02-calibration`。出発点は `37e7f7a`、事前登録は `2647189`、計算コードは `08a061b`、成果の固定は `5e49cb4`。コード固定後の `d7c81b2` では実験用テストの配置だけを変更した。
+更新2026-11-20 UTC/JST。研究ブランチ `research/e03-e08` は、初回E01・E02の `research/e01-e02-calibration`（`81459c4`）を継承する。本文と全数値は[第2回報告](../docs/11_SECOND_RESEARCH_REPORT.md)、全12主張の判定と証拠の種類は[主張台帳](claims.json)にある。
 
-## 引き継ぐ判断
+## 何を引き継ぐか
 
-E01の同一観測（R1）、E02の二位相の表現（R2）に限ってH01・H02を `analytic_baseline` から `supported_within_scope` に更新した。H11・H12は一般推論の反例を記録し、従来の判定を維持した。H03–H10はopen。循環単位同士の関係に関して測れた量は、選んだ二振動子モデルの位相差・同期までである。[第1回研究報告](../docs/10_FIRST_RESEARCH_REPORT.md)・[主張台帳](claims.json)
+| ID | 保存したもの | 判定に残る範囲 |
+|---|---|---|
+| E01・E02 | 円運動・直線振動の投影、二位相・再帰・同期の校正。[第1回](../docs/10_FIRST_RESEARCH_REPORT.md) | 独立二位相の状態空間、見かけの波形から物体の形は決まらない |
+| E03 | [既知解・実空間の渦と粒子](results/E03/summary.json)、[軸対称円筒](results/E03/cylinder/summary.json)、[くびれと整合したランダム場](results/E03/observers/summary.json) | 同じ渦輪から輪状渦度とくびれを得た。無渦の解析流にもくびれが出た。H03は部分支持 |
+| E04 | [144構成と全切断](results/E04/)、[植物5群・5,205区間の再集計](results/E04/plant/summary.json) | 木で全量供給可能。植物の根・枝の成長法則は未同定 |
+| E05 | [位相への介入と6条件の二輪](results/E05/) | 同期・共有外力・直接作用を識別。H06は相互作用に限る部分支持 |
+| E06 | [静止からの噴流8条件と円形追加格子](results/E06/) | 細格子の輪候補には仮定した出口と検出閾値が効く。低閾値の両格子は不一致 |
+| E07 | [事前予測と参照解](results/E07/) | 小信号の合成水路で共通式の予測が通った。独立な実測ターゲット0件 |
+| E08 | [凍結した5検索](results/E08/ranking.json)、[現象名20件の採否・根拠と集計](results/E08/summary.json) | 採択16件、8件で対象の形を判定可能。理論論文のモデルと実測を区別。自然そのものの頻度は未測定 |
 
-- E01は6運動×2設定×2刻み。上面だけでトーラスと誤認した対照は4面中2面、正面を加えると0面。円と直線ばねのyは一致し、xでは区別できた。
-- E02は10条件×2刻み×2観測窓。無結合の3/2は2秒で再帰。99/70と√2指定はともに80秒で全256区画に入った。主閾値0.02 radでの標本上の再帰回数は前者1、後者0。連続モデルの標本間の近接は報告本文に示した。
-- 予備試行はE01で8項目・E02で25項目、本試行は32・78項目を照合し、失敗0。予備試行と本試行には重複した設定がある。これらの項目数は独立な自然現象の標本数としては用いない。
-- 文献カードは索引8件と追加の輸送網研究1件。回転、面の幾何、二周期、磁場、実在の渦、神経の集団活動、植物輸送、宇宙位相の出典・閲読箇所を記録した。外部データの再解析、動画の直接視聴、E03–E08の実行は未実施。[カード](notes/)・[今回のアクセス](access/2026-11-20.md)
+H01・H02は条件内支持、H03・H06は部分支持、H04・H05・H07・H08・H09・H10は全体として未決、H11・H12の一般推論には反例がある。H09のうち「無損傷の端子間輸送には閉路が必須」という限定命題は不支持。独立した外部データセットの再集計は植物1件。E07の評価用合成データとは別に数えた。[根拠台帳](../docs/03_EVIDENCE_LEDGER.md)
 
-## 再現コマンド
+## 再現に必要な入力と版
 
-リポジトリのルートで実行する。実測環境はPython 3.12.14、[必要な2パッケージと版](../experiments/requirements.txt)は既設。資料の再取得、外部サービス、GPUは不要。最初のテスト19件にはサードパーティのライブラリは不要で、次の3件は角の折返し・再帰の数え方・密度格子の端点を検査する。
+- 第2回事前登録 `12222c9`、E07未見評価の設計 `d4d2c4f`、参照計算前に封印した圧力予測 `7e279f5`。軸対称計算の登録 `5705077`、くびれ・ランダム場 `094418b`、円形噴流の格子追加 `f92373e`。追加観測が既存結果のどこを見た後かを各票に記した。[登録票](registrations/)
+- 最終計算コード `3fb98c2`、Debian 13 x86_64、Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8。外部ソルバー・GPUは使用していない。E08は保存済みの順位とDOI別判定で追試できる。植物ワークブックは別取得。[パッケージ版](../experiments/requirements.txt)・[入力の帰属](notes/S012_branching_data.md)・[アクセス記録](access/2026-11-20-second.md)
+- 最終版をGitから別ディレクトリへ展開し、空の結果ディレクトリに25プロセスで全計算・集計・描画を再実行した。各終了コード0、校正・収支等70項目すべて合格。CPU計340.8秒、壁時計の合計341.7秒、最大ピーク常駐181.6 MiB。生成した64ファイルは初回の同版成果物とバイト単位で一致した。ハッシュ一覧65件には凍結した検索順位入力1件も含む。比較用の時計・リソース情報自体は決定論的な成果に数えない。[実測ログ](results/SECOND_RUN.json)・[SHA-256一覧](results/SECOND_SHA256SUMS)
+
+## 第2回の追試
+
+以下はLinuxのリポジトリルートで実行する。初めてこの環境で追試する場合、上記バージョンのライブラリと、次の公開ワークブックが必要。すでに同じSHA-256の原本がある場合は取得を省ける。文献検索や動画視聴は再計算の入力に含まれない。
+
+```bash
+mkdir -p data/raw/second
+curl --fail --location https://ndownloader.figshare.com/files/25763342 -o data/raw/second/branching.xlsx
+sha256sum data/raw/second/branching.xlsx
+sha256sum -c research/results/SECOND_SHA256SUMS
+export MPLBACKEND=Agg OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+run_dir=$(mktemp -d)
+python3 -m experiments.run_second --workbook data/raw/second/branching.xlsx \
+    --out "$run_dir/results" --log "$run_dir/run.json" --code-id "$(git rev-parse HEAD)"
+python3 - "$run_dir/results" <<'PY'
+from hashlib import sha256
+from pathlib import Path
+import sys
+expected = Path("research/results")
+count = 0
+for line in (expected/"SECOND_SHA256SUMS").read_text().splitlines():
+    digest, filename = line.split(maxsplit=1)
+    relative = Path(filename).relative_to(expected)
+    if str(relative) == "E08/ranking.json":
+        continue  # frozen input in this checkout
+    data = (Path(sys.argv[1])/relative).read_bytes()
+    if sha256(data).hexdigest() != digest:
+        raise SystemExit(f"Different output: {relative}")
+    count += 1
+print(f"{count} generated files match")
+PY
+```
+
+全実行の入口は[run_second.py](../experiments/run_second.py)。円形噴流の基本群は `python3 -m experiments.E06_jet.run --case circle --out /tmp/jet`、6 m箱での格子追加は同じモジュールの `--refine-circle`。E07は `predict` の出力を同じ場所で `run` が参照する。事前予測の履歴は `git show 7e279f5:research/results/E07/predictions.json`。E08順位は再現用の入力で、現在のAPI順位を取得して比較する場合のみ `python3 -m experiments.E08_survey.fetch /tmp/new-ranking.json` を使う。版の異なる環境ではハッシュとともに軸上誤差・収支・閾値別の結果も比較する。
+
+### 出力の読み方
+
+- E03・E05・E06のJSONは `rows` に0.125秒ごとの位置・速度/圧力/渦度の極値、最大成分の穴・空洞・境界接触、運動エネルギーを持つ。速度 m/s、渦度 s⁻¹、箱の圧力は密度1 kg/m³で空間平均を0とした値（Pa）。渦核は軸方向位置・半径・RMS幅の順、距離はm。NPZ断面の行列はx,zの順で、キーの末尾は積分ステップ番号。E05の位相NPZは別形式で、時刻・結合条件・初期種・介入・系・位相成分の順。
+- E04の `networks.npz` に候補点・辺・伝導度と40切断×4指標、E07に規格化圧力161時刻×7×7、E08にDOI単位の判定・アクセス段階・理由を保存。[科学図3点](results/figures/)
+- 論文本文・動画・ワークブックはGit配布に含めていない。外部入力のありか・SHA-256・ライセンスは[文献カード](notes/)に記録した。
+
+## 次に判別力のある観測
+
+1. H03のくびれを、時間分解した実測速度から固定流量で求める。圧力・渦度・粒子のどれを同じ流れに割り当てられるかを確認する。
+2. H05・H08では、閉路の有無を独立に操作した水路の圧力応答、または損傷前後の植物成長を、測定前に予測できる候補式と対にする。今回のE07の参照場で再調整して成功例を増やさない。
+3. H07・H10の外部評価には分野別の自然標本の抽出枠、または動的宇宙モデルに固有の可観測量が必要。動画2本はフレームとの原図照合が残る。[動画の追跡](../docs/08_VIDEO_NOTES.md)
+
+## 初回E01・E02の再現コマンドと出力
+
+リポジトリのルートで実行する。実測環境はPython 3.12.14、[再現環境の依存パッケージと版](../experiments/requirements.txt)は既設。資料の再取得、外部サービス、GPUは不要。最初のテスト19件にはサードパーティのライブラリは不要で、次の3件は角の折返し・再帰の数え方・密度格子の端点を検査する。
 
 ```bash
 python3 scripts/research_access.py --help
@@ -45,11 +102,3 @@ NPZは `numpy.load` で開ける。次は元の計算結果を読み、カメラ
 ```bash
 python3 -m experiments.E01_projection.figures research/results/E01/observations.npz /tmp/torus-another-view.png --time 1 --azimuth 35
 ```
-
-## 次の識別試験
-
-1. **E03 A。** 渦輪の半径・核幅・循環と比較用の無流動、一方向流、せん断、局所回転を登録する。同じ場から速度・渦度・粒子通過を求め、中心や輪がどの量に現れるかを比べる。発散残差・境界収支・刻み依存を先に評価する。与えた輪を自発生成に数えない。
-2. **E04。** 同じ材料量・供給消費で固定需要・変動需要と損傷を比べ、独立閉路数と未供給量を測る。グラフの迂回路、物質の周回、T²面を別々に記録する。E07の共通方程式はまだ定まっていない。
-3. **E08。** 頻度測定の分野、採択期間、現象名での抽出、重複・欠測、形の基準を新規抽出より先に登録する。今回読んだ目的選択資料は頻度用の分母に入れない。
-
-初回本試行の壁時計時間はE01が3.23秒、E02が2.92秒。ピーク常駐はそれぞれ約95.6、87.6 MiB。実験はすべて終了した。S002の取得上限による停止とその解決、動画や論文ページへの未達はアクセス記録を参照。文献カード・数値を読むために、取得できなかったURLや準備時のBioCリクエストを再試行する必要はない。

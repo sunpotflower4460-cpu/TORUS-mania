@@ -2,17 +2,26 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "first_calibration",
+  "stage": "registered_experiments_and_scoped_validation",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
-    "E02"
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08"
   ],
-  "independent_external_data_reanalyses": 0,
+  "independent_external_data_reanalyses": 1,
   "evidence_fields": {
     "literature_notes": "今回の閲読段階を記録したカード。パスはリポジトリ基準。",
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
-    "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。"
+    "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
+    "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。",
+    "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。"
   },
   "claims": [
     {
@@ -39,7 +48,7 @@
           "finding": "半径1 m、1 Hz、2秒、2初期位相×2刻み。円のyと正弦式の最大絶対誤差は4.22e-15 m以下、側面のz幅は0 m。"
         }
       ],
-      "next_action": "E03で、同じ観測写像を物理的な速度場・粒子の測定へ移す。",
+      "next_action": "自然に観測した波を扱う場合は、同じ投影を持つ直線振動との識別に別の成分を測る。",
       "literature_notes": [
         "research/notes/S001_rotation.md"
       ]
@@ -78,7 +87,7 @@
     {
       "id": "H03",
       "statement": "砂時計・双曲面・渦・トーラスが単一の流れの異なる側面として成立する",
-      "status": "open",
+      "status": "partially_supported",
       "scope": "単一の流速場と観測写像を固定して確かめる。光円錐など異なる軸の図は別に扱う。",
       "torus_kinds": [
         "T-G",
@@ -92,7 +101,7 @@
       "evidence_urls": [
         "https://www.einstein-online.info/en/spacetime/"
       ],
-      "evidence_role": "幾何学対照で観測の識別力を校正。渦の速度場はまだ与えていない。",
+      "evidence_role": "一つの与えた粘性渦輪に輪状渦度と、同一流量を囲む断面のくびれが同時に現れた。くびれは無渦の解析流にも現れ、厳密な双曲面・台風・宇宙への同定は未成立。",
       "independently_reproduced": false,
       "results": [
         {
@@ -100,12 +109,43 @@
           "role": "calibration_only",
           "path": "research/results/E01/summary.json",
           "finding": "上面だけでは非トーラス4面中2面が陽性。正面を足すと0/4。この幾何学対照に共通の流速場は入れていない。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "within_model",
+          "path": "research/results/E03/summary.json",
+          "finding": "48³の与えた輪は0.75 sで0.4310 m移動。速度最大は軸近く、渦度最大・圧力最小は軸外。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "same_field_and_counterexample",
+          "path": "research/results/E03/observers/summary.json",
+          "finding": "0.75 sの渦で中央/小さい方の端半径0.801、無渦ポテンシャル流0.838、一定上昇流1.000。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "independent_discretization",
+          "path": "research/results/E03/cylinder/summary.json",
+          "finding": "独立な軸対称円筒の2格子で移動0.4193・0.4244 m。"
+        },
+        {
+          "experiment_id": "E06",
+          "role": "boundary_driven",
+          "path": "research/results/E06/circle_fine/summary.json",
+          "finding": "初期渦ゼロの噴流。円形6 m箱64³で主閾値の輪候補が0.75–1.75 sの9時刻。"
         }
       ],
-      "next_action": "E03の既知の渦輪とせん断・一方向流で、速度・渦度・粒子通過を同時に測る。",
+      "next_action": "三次元実測の速度場で、登録したくびれ・渦度・粒子の対応と非回転対照を比較する。",
       "literature_notes": [
         "research/notes/S002_surface.md",
-        "research/notes/S007_vortices.md"
+        "research/notes/S007_vortices.md",
+        "research/notes/X1_X2_vortex_experiments.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "登録した粘性渦輪で輪状の渦度と流量断面のくびれを同時に観測できる。",
+          "status": "supported_within_scope"
+        }
       ]
     },
     {
@@ -121,7 +161,7 @@
         "E05"
       ],
       "evidence_urls": [],
-      "evidence_role": "符号と色の対応は研究側が指定した表示規則。象徴の物理的説明を支持する実験結果には数えない。",
+      "evidence_role": "色分けは観測写像。E05で位相差・結合方向への介入は検証したが、象徴に固有な因果対応は登録されていない。",
       "independently_reproduced": false,
       "results": [
         {
@@ -129,9 +169,15 @@
           "role": "calibration_only",
           "path": "research/results/E01/summary.json",
           "finding": "全運動を固定軸のdy/dtの正負で着色した。色以外に独立した物理量・伝統的な意味との対応は測っていない。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "calibration_only",
+          "path": "research/results/E05/phases/summary.json",
+          "finding": "外部時計でも位相固定度はほぼ1。符号付きの位相関係は特定の象徴解釈を決めない。"
         }
       ],
-      "next_action": "E05等で物理量（例えば指定断面の符号付き流束）と独立した予測を先に定める。",
+      "next_action": "陰陽に対応させる量を一つ選び、一方の操作による他方の応答を別の物理量で検証する。",
       "literature_notes": []
     },
     {
@@ -150,21 +196,38 @@
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
-        "https://doi.org/10.1103/PhysRevLett.104.048704"
+        "https://doi.org/10.1103/PhysRevLett.104.048704",
+        "https://doi.org/10.6084/m9.figshare.13370348.v1",
+        "https://doi.org/10.7554/eLife.15341"
       ],
-      "evidence_role": "植物教材の輸送の説明と、損傷・負荷変動を明示した一次研究の代替モデル。根・幹・枝葉の共通生成則は未検証。",
+      "evidence_role": "同じ輸送課題に複数の枝・閉路の構成が成立した。外部植物データで枝径と分岐を再集計。木の根・枝葉や流れの循環を一つの動的方程式から生成していない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "E04で供給消費・材料量を固定し、固定需要・変動需要・損傷で未供給量と独立閉路数を比べる。",
+      "results": [
+        {
+          "experiment_id": "E04",
+          "role": "transport_and_damage",
+          "path": "research/results/E04/summary.json",
+          "finding": "水の局所適応網は主閾値・細かい刻みで固定負荷に8,11,10閉路、消費先交替で0,0,0閉路。"
+        },
+        {
+          "experiment_id": "E04",
+          "role": "external_data_reanalysis",
+          "path": "research/results/E04/plant/summary.json",
+          "finding": "5群の5,205区間は原著の表1と一致、完全な2,024分岐点で径比を集計。成長や流れの時系列は対象外。"
+        }
+      ],
+      "next_action": "端子や候補辺に上・下を与えず極性を予測する成長則と、実植物の成長・切断応答の評価用時系列を固定する。",
       "literature_notes": [
         "research/notes/S009_transport.md",
-        "research/notes/Katifori_transport_networks.md"
+        "research/notes/Katifori_transport_networks.md",
+        "research/notes/S012_branching_data.md",
+        "research/notes/X5_source_sink.md"
       ]
     },
     {
       "id": "H06",
       "statement": "循環するまとまり同士の相互作用が持続する個体性や階層をつくる",
-      "status": "open",
+      "status": "partially_supported",
       "scope": "持続時間、交換、摂動への応答、境界を操作的に定義。単なる相互作用の存在を生命の成立と解釈しない。",
       "torus_kinds": [
         "T-F",
@@ -177,7 +240,7 @@
       "evidence_urls": [
         "https://doi.org/10.1088/0169-5983/46/3/031415"
       ],
-      "evidence_role": "位相の引き込みと渦輪の物理的な相互作用は段階の異なる証拠。境界・交換・摂動からの回復は未測定。",
+      "evidence_role": "位相への対照介入と、二つの渦輪の同時発展・単独対照が相互作用を支持。交換後の境界・自己維持・持続する階層の生成は未判定。",
       "independently_reproduced": false,
       "results": [
         {
@@ -185,11 +248,30 @@
           "role": "calibration_only",
           "path": "research/results/E02/summary.json",
           "finding": "K=2 rad/sで位相差が同期。二位相の関係を測った段階で、物理的な個体や階層は定義していない。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "causal_intervention",
+          "path": "research/results/E05/phases/summary.json",
+          "finding": "共通時計のみでは同期しても反対側の摂動応答0。双方向では種11で1秒後に0.168–0.172 radの応答。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "paired_vs_singles",
+          "path": "research/results/E05/base/summary.json",
+          "finding": "基準48³の各輪の移動は単独時より+0.130/+0.027 m、中央面の積算エネルギー流束の超過は+0.928 J。"
         }
       ],
-      "next_action": "E03の単体を校正した後にE05で結合介入、無結合・共有外力対照、交換・回復を測る。",
+      "next_action": "外乱後も維持・再形成する境界と交換する量を定義し、同じ指標で個体性のない対照と比較する。",
       "literature_notes": [
-        "research/notes/S007_vortices.md"
+        "research/notes/S007_vortices.md",
+        "research/notes/X1_X2_vortex_experiments.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "指定した二組の位相・二つの渦輪の相互作用が相手の運動を変える。",
+          "status": "supported_within_scope"
+        }
       ]
     },
     {
@@ -206,14 +288,28 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "磁場・渦輪・神経集団の資料は目的選択した事例。自然標本の分母は未登録。",
+      "evidence_role": "抽出前に固定した4分野の論文順位は記述の分母を与える。E06は出口・解像度・閾値を変えた決定論的な数値例。自然界の頻度は未推定。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "E08の分野別母集団・現象名検索・重複除外・欠測の扱いを採択前に登録する。",
+      "results": [
+        {
+          "experiment_id": "E06",
+          "role": "threshold_sensitivity",
+          "path": "research/results/E06/circle/summary.json",
+          "finding": "円形の32³と48³で主閾値の検出時刻数は0対9、駆動なしはどちらも0。"
+        },
+        {
+          "experiment_id": "E08",
+          "role": "denominator_defined",
+          "path": "research/results/E08/summary.json",
+          "finding": "現象名の上位20件、採択16。噴流2/4、植物0/4、振動0/4（4件とも未判定）、宇宙モデル3/4に対象の記述。"
+        }
+      ],
+      "next_action": "自然標本の採択枠・解像度・観測機会を分野別に固定し、論文の記述頻度と独立に測る。",
       "literature_notes": [
         "research/notes/S005_magnetic_field.md",
         "research/notes/S007_vortices.md",
-        "research/notes/S008_grid_cells.md"
+        "research/notes/S008_grid_cells.md",
+        "research/notes/X1_X2_vortex_experiments.md"
       ]
     },
     {
@@ -229,8 +325,10 @@
         "E06",
         "E07"
       ],
-      "evidence_urls": [],
-      "evidence_role": "校正で利用した各モデルから、共通方程式で別分野を予測する試行へは進んでいない。トーラスを必須としない輸送モデルも候補に残す。",
+      "evidence_urls": [
+        "https://doi.org/10.1186/s13036-018-0126-3"
+      ],
+      "evidence_role": "共有する線形拡散則の小信号予測が合成水路で成立。渦や分岐の発達を共通に生成する非線形則は未定義。E07の独立実測対象は0件。",
       "independently_reproduced": false,
       "results": [
         {
@@ -238,12 +336,25 @@
           "role": "calibration_only",
           "path": "research/results/E02/summary.json",
           "finding": "位相の2π同一視とT²への表示写像が入力。別分野に対する共通生成則の予測試験は0件。"
+        },
+        {
+          "experiment_id": "E07",
+          "role": "sealed_synthetic_holdout",
+          "path": "research/results/E07/summary.json",
+          "finding": "1 kPaで実接続M1と周期接続必須M2の規格化RMSEは0.000441と0.017534。50 kPaではM1の半減時間0.532 s、参照0.273 s。"
         }
       ],
-      "next_action": "E03・E04を基に共通変数と境界条件を定め、E07でトーラス必須モデルと輸送・適応モデルの未見予測を比べる。",
+      "next_action": "対辺の早期応答を独立測定する水路に転移し、成長・移流も共有できる候補には新たな介入を事前予測させる。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
-        "research/notes/S005_magnetic_field.md"
+        "research/notes/S005_magnetic_field.md",
+        "research/notes/E07_hydraulic_filter.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "小信号の合成水路で、二方向周期接続を必須としたM2が実接続のM1より全場をよく予測する。",
+          "status": "not_supported_in_test"
+        }
       ]
     },
     {
@@ -260,11 +371,30 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "円や直線の波形は限定的な対照。全現象における必要性の検定は未実施。",
+      "evidence_role": "端子間定常輸送に閉路が必須という限定命題は木の対照で不支持。実空間・状態空間・別尺度を一括した必要性は判定しない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "E08で対象範囲とトーラス性を固定してから、トーラスを持たず機能する反例候補を調べる。",
-      "literature_notes": []
+      "results": [
+        {
+          "experiment_id": "E04",
+          "role": "counterexample",
+          "path": "research/results/E04/summary.json",
+          "finding": "木は独立閉路0でも無損傷なら全需要を供給。木が切断に弱いという別の機能差も記録。"
+        },
+        {
+          "experiment_id": "E08",
+          "role": "scope_audit",
+          "path": "research/results/E08/summary.json",
+          "finding": "採択資料から必要性を独立に示した件数は0。モデル内の仮定や未判定を必要性の証拠に数えていない。"
+        }
+      ],
+      "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "E04の無損傷の網で全需要を満たすためにはグラフ閉路が必要である。",
+          "status": "not_supported_in_test"
+        }
+      ]
     },
     {
       "id": "H10",
@@ -281,14 +411,23 @@
       ],
       "evidence_urls": [
         "https://arxiv.org/abs/1502.01593",
-        "https://arxiv.org/abs/2211.02603"
+        "https://arxiv.org/abs/2211.02603",
+        "https://arxiv.org/abs/2211.02603v4"
       ],
-      "evidence_role": "PlanckのCMBに基づくT³等への制約は文献報告。循環同士が宇宙を構成するH10への直接の検定はない。",
+      "evidence_role": "PlanckとCOMPACTの観測制約は空間位相に対応。固定文献群でT³を候補とする理論的記述を確認した。H10の動的な宇宙モデルに固有の観測予測は未定義。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "動的モデル固有の観測予測と既存宇宙論の予測を同じ量で比較できるように定式化する。",
+      "results": [
+        {
+          "experiment_id": "E08",
+          "role": "literature_scope",
+          "path": "research/results/E08/summary.json",
+          "finding": "宇宙群の採択4件中3件にトーラスを仮定したモデル、1件に球面的モデル。実在の宇宙を検出した件数には換算しない。"
+        }
+      ],
+      "next_action": "既存宇宙論と同じ可観測量について、循環の関係を仮定したときにのみ生じる予測・尤度を指定する。",
       "literature_notes": [
-        "research/notes/S015_cosmic_topology.md"
+        "research/notes/S015_cosmic_topology.md",
+        "research/notes/S016_cosmic_constraints.md"
       ]
     },
     {
@@ -342,9 +481,15 @@
           "role": "counterexample",
           "path": "research/results/E01/summary.json",
           "finding": "円運動と直線ばね振動のy(t)の差は全条件で4.45e-15 m未満。別の座標xでは区別できる。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "counterexample",
+          "path": "research/results/E03/observers/summary.json",
+          "finding": "渦輪と無渦のポテンシャル流が、同じ測り方で共にくびれを示した。"
         }
       ],
-      "next_action": "E03・E08でも視点を固定し、似た輪郭を持つ対照と物理量の異なる予測を比較する。",
+      "next_action": "独立の渦度または循環を測り、同じ流量断面でも原因が違う場合を識別する。",
       "literature_notes": [
         "research/notes/S001_rotation.md",
         "research/notes/S002_surface.md"
