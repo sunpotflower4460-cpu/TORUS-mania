@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "measured_root_routes_and_predivision_flow",
+  "stage": "directional_transport_and_first_division",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -52,7 +52,13 @@
     "E45",
     "E46",
     "E47",
-    "E48"
+    "E48",
+    "E49",
+    "E50",
+    "E51",
+    "E52",
+    "E53",
+    "E54"
   ],
   "independent_external_data_reanalyses": 4,
   "evidence_fields": {
@@ -60,9 +66,9 @@
     "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
-    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。"
   },
   "claims": [
@@ -253,7 +259,8 @@
         "E35",
         "E38",
         "E44",
-        "E45"
+        "E45",
+        "E50"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -287,7 +294,9 @@
         "https://doi.org/10.1093/oxfordjournals.pcp.a075396",
         "https://doi.org/10.1093/oxfordjournals.pcp.a075700",
         "https://doi.org/10.1073/pnas.1005878107",
-        "https://doi.org/10.1104/pp.111.191288"
+        "https://doi.org/10.1104/pp.111.191288",
+        "https://doi.org/10.1105/tpc.107.051599",
+        "https://doi.org/10.1105/tpc.106.048777"
       ],
       "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。 別の研究で小胞輸送に関わる介入により予定部位の密度が変わり、始原細胞マーカーと初回分裂後の器官が異なる反応を示した。 表皮のオーキシン合成後に中心柱の応答が出て、阻害剤で方向別に変わる。別試料の成長介入の周期を二待ち時間式で予測した。野生型の地上部を接ぐと変異型の根の分岐が増えた。",
       "independently_reproduced": false,
@@ -417,6 +426,12 @@
           "role": "chemical_identity_after_transport",
           "path": "research/results/E45/summary.json",
           "finding": "シロイヌナズナ根端への標識IBA投与後、二切片のIAA＋IBAに占めるIAAは36.0%と89.3%。別の胚軸試験では質量分析で遊離の標識IAAを同定し、NPAと逆向き対照で輸送が低下した。"
+        },
+        {
+          "experiment_id": "E50",
+          "role": "transport_direction_and_elongation",
+          "path": "research/results/E50/summary.json",
+          "finding": "mdr1の2系統の一次根では根端向き16〜18%、地上部向き101〜105%。側根への標識輸送は野生型基準の約38〜40%。外部IAAで側根の伸びは約2.89・3.46から6.07・6.31 mm/日へ部分回復。"
         }
       ],
       "next_action": "同じ根で外層を経た天然IAAの出発領域への帰還と、伸長・成熟皮層細胞長・準備信号・初回分裂・出現側根を記録する。前向き輸送と局所補充をそろえる。",
@@ -434,7 +449,8 @@
         "research/notes/E30_E32_root_clock_evidence.md",
         "research/notes/E33_E38_return_and_energy_evidence.md",
         "research/notes/E39_E43_path_and_formation_evidence.md",
-        "research/notes/E44_E48_measured_return_evidence.md"
+        "research/notes/E44_E48_measured_return_evidence.md",
+        "research/notes/E49_E54_turning_paths_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -475,6 +491,10 @@
         },
         {
           "statement": "ソラマメの根で根端向きと地上部向きの標識輸送は異なる組織に依存する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "シロイヌナズナの側根自体への軸方向の供給と、その出現後の伸長の一部がMDR1に依存する。",
           "status": "supported_within_scope"
         }
       ]
@@ -626,7 +646,9 @@
         "E36",
         "E37",
         "E46",
-        "E48"
+        "E48",
+        "E51",
+        "E52"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3",
@@ -637,7 +659,8 @@
         "https://doi.org/10.1017/flo.2022.9",
         "https://doi.org/10.1371/journal.pone.0159917",
         "https://doi.org/10.1371/journal.pone.0159917.s004",
-        "https://doi.org/10.1371/journal.pone.0159917.g003"
+        "https://doi.org/10.1371/journal.pone.0159917.g003",
+        "https://doi.org/10.1038/s41556-017-0032-9"
       ],
       "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。 予定部位の時系列は、弱いピークのある一定周期と、変動する遅い周期でも一致し得る。 正の抵抗を持つ線形網で圧力・電気・化学輸送に仕事率の共通式。輪の運動エネルギーの固定係数は別装置に一般化できなかった。植物の成長と渦輪を同じ生成則で予測した試験は残る。",
       "independently_reproduced": false,
@@ -761,6 +784,18 @@
           "role": "predivision_transverse_velocity_and_energy_component",
           "path": "research/results/E48/summary.json",
           "finding": "線虫1細胞胚の公表横断面は中心後端向き・外側前端向きが12/12区画。表示速度と仮定密度から得る軸運動エネルギーの軸方向移流は中心+4.87×10⁻¹⁹、外側−1.64×10⁻¹⁹ W/m²。"
+        },
+        {
+          "experiment_id": "E51",
+          "role": "paired_radial_turns_in_both_halves",
+          "path": "research/results/E51/summary.json",
+          "finding": "芯・外側の対向軸流と両端の径流の反転が両側にそろったのは線虫胚2/6、マウス卵母細胞3/7。二成分の運動エネルギーを重みにすると各1個。"
+        },
+        {
+          "experiment_id": "E52",
+          "role": "intervention_before_first_division",
+          "path": "research/results/E52/summary.json",
+          "finding": "一細胞胚で既存のPAR領域を流れで回した後、90度未満の9/9個は通常の大小関係、90度超の3/3個は反転。正常の最大86.2度から反転の最小105.6度の間は未観測。"
         }
       ],
       "next_action": "根で天然IAAの外層通過と帰還を追う。発生では局所の形が現れる前の流束と仕事を測り、三次元循環を変えた時の形を予測する。渦輪では時刻・境界・駆動をそろえた量を比較する。",
@@ -783,7 +818,8 @@
         "research/notes/E30_E32_root_clock_evidence.md",
         "research/notes/E33_E38_return_and_energy_evidence.md",
         "research/notes/E39_E43_path_and_formation_evidence.md",
-        "research/notes/E44_E48_measured_return_evidence.md"
+        "research/notes/E44_E48_measured_return_evidence.md",
+        "research/notes/E49_E54_turning_paths_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -809,6 +845,10 @@
         {
           "statement": "二種の細胞に共通する対向流を外側の測定から予測できる個体があり、線虫胚の三次元撮影は一断面の軸運動エネルギーの対向輸送と整合する。",
           "status": "supported_within_scope"
+        },
+        {
+          "statement": "初回分裂の向きに対する流れの効果と、トーラス状に閉じた全機械エネルギー流束の作用を同一視できる。",
+          "status": "not_identifiable"
         }
       ]
     },
@@ -2439,7 +2479,9 @@
         "E39",
         "E40",
         "E44",
-        "E45"
+        "E45",
+        "E49",
+        "E50"
       ],
       "evidence_urls": [
         "https://doi.org/10.1111/nph.17183",
@@ -2447,7 +2489,10 @@
         "https://doi.org/10.1093/oxfordjournals.pcp.a075396",
         "https://doi.org/10.1093/oxfordjournals.pcp.a075700",
         "https://doi.org/10.1073/pnas.1005878107",
-        "https://doi.org/10.1104/pp.111.191288"
+        "https://doi.org/10.1104/pp.111.191288",
+        "https://doi.org/10.1104/pp.103.022582",
+        "https://doi.org/10.1105/tpc.107.051599",
+        "https://doi.org/10.1105/tpc.106.048777"
       ],
       "evidence_role": "輸送方向の観測、組織ごとの応答、濃度センサー、根全体の化学測定は判別に必要な要素。外層を経た天然IAAの帰還量は未取得。",
       "independently_reproduced": false,
@@ -2475,12 +2520,25 @@
           "role": "chemical_identity_after_transport",
           "path": "research/results/E45/summary.json",
           "finding": "シロイヌナズナ根端への標識IBA投与後、二切片のIAA＋IBAに占めるIAAは36.0%と89.3%。別の胚軸試験では質量分析で遊離の標識IAAを同定し、NPAと逆向き対照で輸送が低下した。"
+        },
+        {
+          "experiment_id": "E49",
+          "role": "pulse_chase_spatial_reach",
+          "path": "research/results/E49/summary.json",
+          "finding": "標識10分・非標識50分後に、根端向きの供給点から8〜10 mmのIAA標識は約1.38 pmol相当、12〜20 mmは平均0.76。地上部向きの5時間の空間分布は別試料。"
+        },
+        {
+          "experiment_id": "E50",
+          "role": "transport_direction_and_elongation",
+          "path": "research/results/E50/summary.json",
+          "finding": "mdr1の2系統の一次根では根端向き16〜18%、地上部向き101〜105%。側根への標識輸送は野生型基準の約38〜40%。外部IAAで側根の伸びは約2.89・3.46から6.07・6.31 mm/日へ部分回復。"
         }
       ],
-      "next_action": "時刻つきの化学形の確認と外層経由の確認を組み合わせ、出発領域への初回帰還を前向き輸送・別経路・局所補充と比べる。",
+      "next_action": "根の内側で出発集団を限定し、根端と外層を通過した標識を遊離IAAとして出発領域で捕捉する。方向別の弱化と外部供給の回復を対照にする。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
-        "research/notes/E44_E48_measured_return_evidence.md"
+        "research/notes/E44_E48_measured_return_evidence.md",
+        "research/notes/E49_E54_turning_paths_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2493,6 +2551,14 @@
         },
         {
           "statement": "異なる根片の二方向の回収標識と胚軸の遊離IAAを組み合わせて、同一分子が外層を経て初回帰還した割合を決められる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "シロイヌナズナの一次根で2方向の標識輸送を遺伝的に別々に弱められる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "別試料のパルス前線・逆向き輸送・外部IAAによる回復をつないで、同じ分子の一周率を決められる。",
           "status": "not_identifiable"
         }
       ]
@@ -2511,7 +2577,11 @@
         "E43",
         "E46",
         "E47",
-        "E48"
+        "E48",
+        "E51",
+        "E52",
+        "E53",
+        "E54"
       ],
       "evidence_urls": [
         "https://doi.org/10.1083/jcb.201709174",
@@ -2521,7 +2591,10 @@
         "https://doi.org/10.1371/journal.pone.0159917.s004",
         "https://doi.org/10.1371/journal.pbio.3001376",
         "https://doi.org/10.1371/journal.pbio.3001376.s007",
-        "https://doi.org/10.1371/journal.pone.0159917.g003"
+        "https://doi.org/10.1371/journal.pone.0159917.g003",
+        "https://doi.org/10.1038/s41556-017-0032-9",
+        "https://doi.org/10.1091/mbc.E20-01-0058",
+        "https://doi.org/10.1016/j.cub.2023.08.076"
       ],
       "evidence_role": "既存の介入は局所の配置と形の形成への流れや力の作用を支持する。先行するトーラス状エネルギー流束の固有効果は未測定。",
       "independently_reproduced": false,
@@ -2561,12 +2634,37 @@
           "role": "predivision_transverse_velocity_and_energy_component",
           "path": "research/results/E48/summary.json",
           "finding": "線虫1細胞胚の公表横断面は中心後端向き・外側前端向きが12/12区画。表示速度と仮定密度から得る軸運動エネルギーの軸方向移流は中心+4.87×10⁻¹⁹、外側−1.64×10⁻¹⁹ W/m²。"
+        },
+        {
+          "experiment_id": "E51",
+          "role": "paired_radial_turns_in_both_halves",
+          "path": "research/results/E51/summary.json",
+          "finding": "芯・外側の対向軸流と両端の径流の反転が両側にそろったのは線虫胚2/6、マウス卵母細胞3/7。二成分の運動エネルギーを重みにすると各1個。"
+        },
+        {
+          "experiment_id": "E52",
+          "role": "intervention_before_first_division",
+          "path": "research/results/E52/summary.json",
+          "finding": "一細胞胚で既存のPAR領域を流れで回した後、90度未満の9/9個は通常の大小関係、90度超の3/3個は反転。正常の最大86.2度から反転の最小105.6度の間は未観測。"
+        },
+        {
+          "experiment_id": "E53",
+          "role": "natural_time_ordered_posterior_prediction",
+          "path": "research/results/E53/summary.json",
+          "finding": "後の後端が精子侵入の反対側になった群で、精子由来の複合体が位置する側での誤予測は受精時9/9、第1減数分裂後期7/10、その5分後2/11、第2減数分裂後期1/11。"
+        },
+        {
+          "experiment_id": "E54",
+          "role": "daughter_polarity_with_alternating_scan_control",
+          "path": "research/results/E54/summary.json",
+          "finding": "第1分裂後のP1で、正味の流れを打ち消す往復走査群と一方向走査群のPAR-2軸の平均は接触面を基準に−1.4度と+36.0度。各5個で処置終了から約8.5分後。"
         }
       ],
-      "next_action": "形が現れる前に三次元の物質経路と圧力・粘性を含む機械エネルギーの収支を測定し、総供給を照合した経路介入で後の形を事前予測する。",
+      "next_action": "初回分裂を終点として、同じ胚における形成前の全三次元経路・圧力と応力の仕事を測り、投入仕事を照合して異なる流路を与え、別の胚で娘細胞の大きさと位置を予測する。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
-        "research/notes/E44_E48_measured_return_evidence.md"
+        "research/notes/E44_E48_measured_return_evidence.md",
+        "research/notes/E49_E54_turning_paths_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2587,6 +2685,22 @@
         },
         {
           "statement": "機械エネルギー全体が生体で閉じた三次元経路を通り、まだ成立していない身体の形を決める。",
+          "status": "open"
+        },
+        {
+          "statement": "線虫1細胞胚で既存の極性を流れで分裂前に回すと、娘細胞の大小が現れる側を変えられる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "娘細胞P1の極性を流れでずらすと、接触面に対するずれが分裂後の後期にも残る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "測った全13個体で、両端とも両側の運動エネルギー移流が所定の向きに折り返す。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "同じ胚・全三次元の仕事と散逸を含む閉じた流束を操作したことから、初回分裂の向きが決まった。",
           "status": "open"
         }
       ]
@@ -2773,8 +2887,224 @@
           "status": "not_identifiable"
         }
       ]
+    },
+    {
+      "id": "H51",
+      "statement": "シロイヌナズナで局所の標識パルスが根端向きにmmスケールの距離を進む。",
+      "status": "supported_within_scope",
+      "scope": "10分間のIAAまたはIBAの標識と50分の洗出し。供給点から根端へ20 mm、2 mm刻みの空間測定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E49"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1104/pp.103.022582"
+      ],
+      "evidence_role": "図3Bで8〜10 mmの両標識は著者が背景域とした12〜20 mmの平均より高い。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E49",
+          "role": "pulse_chase_spatial_reach",
+          "path": "research/results/E49/summary.json",
+          "finding": "標識10分・非標識50分後に、根端向きの供給点から8〜10 mmのIAA標識は約1.38 pmol相当、12〜20 mmは平均0.76。地上部向きの5時間の空間分布は別試料。"
+        }
+      ],
+      "next_action": "複数時刻で同一組織を追い、同じ化合物の位置と初回帰還をそろえる。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "一時点の分布で各区間の初到達時刻や一周時間を推定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H52",
+      "statement": "一次根の2方向の標識輸送を別々に弱められ、MDR1が側根の先端への供給と出現後の伸長に寄与する。",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの各2対立遺伝子。同じ遺伝的背景の対照、側根への標識、遺伝的補完・外部IAA。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E50"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1105/tpc.107.051599",
+        "https://doi.org/10.1105/tpc.106.048777"
+      ],
+      "evidence_role": "一次根の方向別残存率、側根での供給量・伸長速度・原基段階の数を区別した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E50",
+          "role": "transport_direction_and_elongation",
+          "path": "research/results/E50/summary.json",
+          "finding": "mdr1の2系統の一次根では根端向き16〜18%、地上部向き101〜105%。側根への標識輸送は野生型基準の約38〜40%。外部IAAで側根の伸びは約2.89・3.46から6.07・6.31 mm/日へ部分回復。"
+        }
+      ],
+      "next_action": "外部供給で伸長を戻した条件で、同じ分子が再循環しているかを追跡する。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "MDR1欠損の伸長低下は、表1の開始数の同程度の低下を伴う。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H53",
+      "statement": "中心と外側の軸方向の対向流は、生体の両端における径方向の折返しも伴う。",
+      "status": "partially_supported",
+      "scope": "標準形状に写像された線虫胚6個とマウス卵母細胞7個。両半断面で両端の中間半径と中央部の内外を採点。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E51"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1371/journal.pone.0159917",
+        "https://doi.org/10.1371/journal.pone.0159917.s004"
+      ],
+      "evidence_role": "両速度成分に対応する符号の組がそろう個体を検出。全標本での成立、物質軌道の閉鎖、全機械エネルギーの経路は未確認。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E51",
+          "role": "paired_radial_turns_in_both_halves",
+          "path": "research/results/E51/summary.json",
+          "finding": "芯・外側の対向軸流と両端の径流の反転が両側にそろったのは線虫胚2/6、マウス卵母細胞3/7。二成分の運動エネルギーを重みにすると各1個。"
+        }
+      ],
+      "next_action": "時間分解した三次元場と、個別の粒子軌道を同じ胚で追う。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "指定4領域の平均速度が両側で折返しに整合する個体が両種にある。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "指定した窓ですべての個体の両側に折返しが検出される。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H54",
+      "statement": "線虫胚で既存の極性を流れで回転させると、最初の分裂で小さい娘細胞が現れる側を反転できる。",
+      "status": "supported_within_scope",
+      "scope": "極性維持期の1細胞胚の操作から二細胞期への同一個体の対応、処置した12胚。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E52"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41556-017-0032-9"
+      ],
+      "evidence_role": "図5cの個体別に既報の90度規則と初期配置の持続を比較した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E52",
+          "role": "intervention_before_first_division",
+          "path": "research/results/E52/summary.json",
+          "finding": "一細胞胚で既存のPAR領域を流れで回した後、90度未満の9/9個は通常の大小関係、90度超の3/3個は反転。正常の最大86.2度から反転の最小105.6度の間は未観測。"
+        }
+      ],
+      "next_action": "同じ角度範囲を均等に含む独立な胚で、流路と投入仕事もそろえて分裂を予測する。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "観測個体から反転に必要な角度を正確に90度と決められる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H55",
+      "statement": "極性成立前に流れで動く精子由来の複合体の場所は、侵入点だけよりも後の後端の側をよく捉える。",
+      "status": "supported_within_scope",
+      "scope": "線虫接合子、図4の両側・7時期。既報の位置基準の再採点。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E53"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1091/mbc.E20-01-0058"
+      ],
+      "evidence_role": "稀な反対側後端群を含めた均衡的中率が受精時50.0%、第2減数分裂後期94.2%。流れを弱めた処置の分母も照合した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E53",
+          "role": "natural_time_ordered_posterior_prediction",
+          "path": "research/results/E53/summary.json",
+          "finding": "後の後端が精子侵入の反対側になった群で、精子由来の複合体が位置する側での誤予測は受精時9/9、第1減数分裂後期7/10、その5分後2/11、第2減数分裂後期1/11。"
+        }
+      ],
+      "next_action": "後端側の表示を隠した独立な胚で稀な向きの予測を採点する。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "受精時の精子侵入側からすべての胚の後端を予測できる。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H56",
+      "statement": "第1分裂後の線虫胚の娘細胞P1で、周縁に沿う方向性ある流れへの介入は、その後の極性軸を姉妹細胞との接触面からずらす。",
+      "status": "supported_within_scope",
+      "scope": "nmy-2温度感受性条件。一方向走査と流れを打ち消す往復走査を各5個、処置後約8.5分の軸位置。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E54"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cub.2023.08.076"
+      ],
+      "evidence_role": "各個体と印刷平均線を別々に読取り、群間の角度差を求めた。終点はPAR-2の軸。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E54",
+          "role": "daughter_polarity_with_alternating_scan_control",
+          "path": "research/results/E54/summary.json",
+          "finding": "第1分裂後のP1で、正味の流れを打ち消す往復走査群と一方向走査群のPAR-2軸の平均は接触面を基準に−1.4度と+36.0度。各5個で処置終了から約8.5分後。"
+        }
+      ],
+      "next_action": "同一細胞で熱吸収量と機械的仕事を測り、次の分裂によってできる孫細胞の配置まで対応させる。",
+      "literature_notes": [
+        "research/notes/E49_E54_turning_paths_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "図5Gで走査2群の吸収熱量、三次元の機械的仕事、次の分裂の向きを同時に確かめた。",
+          "status": "not_identifiable"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 28,
+  "published_measurement_reanalyses": 34,
   "archived_experimental_figure_array_reanalyses": 5
 }
