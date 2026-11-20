@@ -1,0 +1,101 @@
+{
+  "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/08ff/9939240/8b4eeafb05d5/nihms-1870894-f0004.jpg",
+  "source_sha256": "5ab6850534d67aebb2cf7b1be8cf7b33f18036e3452685e22a0a46f56ee51865",
+  "source_size_px": [
+    746,
+    1050
+  ],
+  "tolerance_fraction": 0.015,
+  "panels": {
+    "F": {
+      "categories": [
+        "dand5_right",
+        "dand5_bilateral",
+        "dand5_left"
+      ],
+      "y_bounds": [
+        52,
+        256
+      ],
+      "groups": {
+        "uninjected": {
+          "n": 66,
+          "x": 481,
+          "cumulative_fractions": [
+            0.7769607843137255,
+            0.9264705882352942
+          ]
+        },
+        "flow_deficient": {
+          "n": 62,
+          "x": 537,
+          "cumulative_fractions": [
+            0.5024509803921569,
+            0.7769607843137255
+          ]
+        },
+        "left_stimulated": {
+          "n": 42,
+          "x": 593,
+          "cumulative_fractions": [
+            0.7647058823529411,
+            0.9534313725490197
+          ]
+        }
+      }
+    },
+    "G": {
+      "categories": [
+        "heart_left",
+        "heart_middle",
+        "heart_right"
+      ],
+      "y_bounds": [
+        430,
+        635
+      ],
+      "groups": {
+        "uninjected": {
+          "n": 85,
+          "x": 481,
+          "cumulative_fractions": [
+            0.9804878048780488,
+            1.0
+          ]
+        },
+        "injection_control": {
+          "n": 77,
+          "x": 537,
+          "cumulative_fractions": [
+            0.9414634146341463,
+            1.0
+          ]
+        },
+        "flow_deficient": {
+          "n": 53,
+          "x": 593,
+          "cumulative_fractions": [
+            0.37073170731707317,
+            0.6658536585365854
+          ]
+        },
+        "left_stimulated": {
+          "n": 51,
+          "x": 649,
+          "cumulative_fractions": [
+            0.8365853658536585,
+            0.9243902439024391
+          ]
+        },
+        "right_stimulated": {
+          "n": 49,
+          "x": 704,
+          "cumulative_fractions": [
+            0.2073170731707317,
+            0.2951219512195122
+          ]
+        }
+      }
+    }
+  }
+}
