@@ -1,0 +1,356 @@
+{
+  "coil": {
+    "doi": "10.1038/micronano.2017.82",
+    "rows": [
+      {
+        "height_um": 280,
+        "turns": 20,
+        "observed_nh": 36.4,
+        "figure": "7b",
+        "ideal_nh": 15.526496844542775,
+        "constant_field_nh": 14.933333333333335,
+        "ideal_error": 0.5734478888861875,
+        "constant_field_error": 0.5897435897435896,
+        "ideal_energy_nj_at_1_a": 7.763248422271388,
+        "inferred_energy_nj_at_1_a": 18.2
+      },
+      {
+        "height_um": 350,
+        "turns": 20,
+        "observed_nh": 45.5,
+        "figure": "7b",
+        "ideal_nh": 19.40812105567847,
+        "constant_field_nh": 18.666666666666664,
+        "ideal_error": 0.5734478888861875,
+        "constant_field_error": 0.5897435897435898,
+        "ideal_energy_nj_at_1_a": 9.704060527839236,
+        "inferred_energy_nj_at_1_a": 22.75
+      },
+      {
+        "height_um": 280,
+        "turns": 25,
+        "observed_nh": 42.1,
+        "figure": "7c",
+        "ideal_nh": 24.260151319598084,
+        "constant_field_nh": 23.33333333333333,
+        "ideal_error": 0.42374937483139946,
+        "constant_field_error": 0.44576405384006346,
+        "ideal_energy_nj_at_1_a": 12.130075659799042,
+        "inferred_energy_nj_at_1_a": 21.05
+      }
+    ],
+    "median_relative_error": 0.5734478888861875,
+    "threshold": 0.2,
+    "passes": false,
+    "excluded": [
+      {
+        "figure": "7a",
+        "reason": "The text and caption disagree on the number of turns. The matching 280 um / 20 turns curve is represented once in 7b."
+      },
+      {
+        "figure": "7d",
+        "reason": "Air-core design is represented in 7b. Si-core design is outside the specified air-core comparison."
+      },
+      {
+        "figure": "paragraph after Fig. 7",
+        "reason": "Separate 5 mm^2 small-pad coil: complete winding dimensions and low-frequency series are not identified."
+      },
+      {
+        "figure": "Hesping, PSI, Table 5.2",
+        "reason": "The reported dimensions include the wire, the core is rectangular, and the reported dimensions and inductance do not establish a measured-turn count for the final coil."
+      }
+    ]
+  },
+  "magnetic_profile": {
+    "doi": "10.1088/1361-6587/ad0d87",
+    "current_a": 400,
+    "design": {
+      "doi": "10.1134/S1063778821120024",
+      "basis": "Design paper abstract for the same single continuous MEPhIST-0 solenoid",
+      "turns": 12
+    },
+    "reading_uncertainty_gauss": 0.5,
+    "reading_uncertainty_mm": 0.6,
+    "normalization_index": 8,
+    "shape_holdout_points": 16,
+    "absolute_prediction_points": 17,
+    "radius_mm": [
+      117.9020979020979,
+      127.97202797202797,
+      138.04195804195803,
+      148.1118881118881,
+      158.1818181818182,
+      167.97202797202797,
+      178.04195804195803,
+      188.1118881118881,
+      198.1818181818182,
+      207.97202797202797,
+      218.04195804195803,
+      228.1118881118881,
+      238.1818181818182,
+      247.97202797202797,
+      258.0419580419581,
+      268.1118881118881,
+      278.1818181818182
+    ],
+    "measured_gauss": [
+      71.92708333333334,
+      69.96783088235294,
+      65.0,
+      60.9375,
+      56.96903935185185,
+      54.01041666666667,
+      50.98958333333333,
+      49.01041666666667,
+      45.989583333333336,
+      44.010416666666664,
+      43.011067708333336,
+      40.989583333333336,
+      39.010416666666664,
+      36.99914383561644,
+      35.989583333333336,
+      34.91759950248756,
+      32.96875
+    ],
+    "inverse_r_gauss": [
+      77.30396154606565,
+      71.22102686703097,
+      66.025572019588,
+      61.53658128737804,
+      57.61913314176246,
+      54.26081563974466,
+      51.19186141660122,
+      48.45147924411401,
+      45.98958333333334,
+      43.82463993499216,
+      41.80066682702588,
+      39.955389076231356,
+      38.26614185750637,
+      36.755352274863704,
+      35.32099706413731,
+      33.99438684576596,
+      32.76382080610022
+    ],
+    "constant_gauss": [
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336,
+      45.989583333333336
+    ],
+    "absolute_prediction_gauss": [
+      81.42348754448399,
+      75.01639344262296,
+      69.54407294832828,
+      64.8158640226629,
+      60.689655172413794,
+      57.152373022481264,
+      53.919874312647295,
+      51.03345724907063,
+      48.44036697247707,
+      46.16005379959651,
+      44.02822322001283,
+      42.08461066830166,
+      40.30534351145038,
+      38.71404399323181,
+      37.20325203252032,
+      35.80594679186229,
+      34.509803921568626
+    ],
+    "absolute_relative_error": 0.04884382597899771,
+    "energy_density_from_measured_field_j_m3": [
+      20.584723607183317,
+      19.47856508699346,
+      16.81074086408145,
+      14.775065212571583,
+      12.913320577081949,
+      11.606872015909047,
+      10.344823053110028,
+      9.557337657603258,
+      8.415483834118435,
+      7.706746978162339,
+      7.360724914865061,
+      6.68508829399171,
+      6.055099977586289,
+      5.446825844068277,
+      5.153636432729852,
+      4.851196866750597,
+      4.324790784542404
+    ],
+    "energy_density_from_predicted_field_j_m3": [
+      26.379073669572932,
+      22.39094905695402,
+      19.2433369612545,
+      16.715630781268995,
+      14.655123416214481,
+      12.996567753494572,
+      11.567989418398765,
+      10.362633089210112,
+      9.336304110540143,
+      8.47798712997891,
+      7.712984517965101,
+      7.0470405077769085,
+      6.463762550977646,
+      5.963445008526509,
+      5.5070871466009566,
+      5.101177838081187,
+      4.738546248764465
+    ],
+    "median_relative_error_inverse_r": 0.013594691787752048,
+    "median_relative_error_constant": 0.21785859631475923,
+    "passes": true
+  },
+  "bec": {
+    "doi": "10.1088/1367-2630/18/2/025001",
+    "radius": {
+      "radius_um": 13.453125,
+      "azimuth_percentiles_um": [
+        11.94375,
+        14.966875000000002
+      ],
+      "azimuth_samples": 120,
+      "scale_bar_length_um": 7.0,
+      "scale_bar_points": 8.0
+    },
+    "unit_winding_speed_m_s": 0.00020533797400560218,
+    "unit_winding_kinetic_energy_per_atom_j": 8.048079553221542e-34,
+    "counterpropagating_mode_1_frequency_split_hz": 4.858433050680299,
+    "observations": [
+      {
+        "winding": -1,
+        "prediction_deg_ms": -0.8745179491224538,
+        "phase_slope_deg_ms": -0.38,
+        "histogram_relative_slope_deg_ms": -1.6991455551390808,
+        "registered_unwrapped_slope_deg_ms": -2.478300009863893,
+        "axial_phase_coherence": 0.7617247233451453,
+        "sampled_heatmap_columns": 41,
+        "used_heatmap_columns": 26,
+        "relative_errors": [
+          1.3013630240064575,
+          0.48531899078482915
+        ],
+        "sign_matches_both": true
+      },
+      {
+        "winding": 0,
+        "prediction_deg_ms": 0.0,
+        "phase_slope_deg_ms": 0.2,
+        "histogram_relative_slope_deg_ms": 0.0,
+        "registered_unwrapped_slope_deg_ms": 0.20419157535414761,
+        "axial_phase_coherence": 0.9254828105716495,
+        "sampled_heatmap_columns": 41,
+        "used_heatmap_columns": 27,
+        "relative_errors": null,
+        "sign_matches_both": null
+      },
+      {
+        "winding": 1,
+        "prediction_deg_ms": 0.8745179491224538,
+        "phase_slope_deg_ms": 1.16,
+        "histogram_relative_slope_deg_ms": 1.5735034302306377,
+        "registered_unwrapped_slope_deg_ms": 1.216343559331173,
+        "axial_phase_coherence": 0.927793401999405,
+        "sampled_heatmap_columns": 41,
+        "used_heatmap_columns": 19,
+        "relative_errors": [
+          0.24610521627374662,
+          0.44422240694176907
+        ],
+        "sign_matches_both": true
+      }
+    ],
+    "median_relative_error": 0.46477069886329914,
+    "qualified_by_radius_figure": false,
+    "histogram_angles_deg": [
+      206.49000502124275,
+      266.1300140066245,
+      321.3599844077199
+    ],
+    "histogram_shots_by_authors": 614
+  },
+  "barrier": {
+    "doi": "10.1103/PhysRevLett.99.260401",
+    "accessed_utc": "2026-11-20",
+    "source": "arXiv:0709.0012, Fig. 3. x ticks 0 and 12, y ticks 0 and 1. All eight marker centers retained. Axis readings approximately 0.04 in x and 0.01 in probability.",
+    "pdf_sha256": "01db1300bb50983a792f8698ab3218fbf61d4ee01484a28fdfe332daab4c9085",
+    "hold_s": 2,
+    "barrier_over_chemical_potential_and_survival": [
+      [
+        0.0,
+        0.2
+      ],
+      [
+        0.9,
+        0.0
+      ],
+      [
+        1.7,
+        0.2
+      ],
+      [
+        3.1,
+        0.75
+      ],
+      [
+        4.65,
+        0.8
+      ],
+      [
+        5.9,
+        1.0
+      ],
+      [
+        8.9,
+        1.0
+      ],
+      [
+        11.9,
+        0.875
+      ]
+    ],
+    "horizontal_uncertainties_reported_by_authors": {
+      "plug_power_fluctuation_fraction": 0.1,
+      "waist_measurement_systematic_fraction": 0.3
+    },
+    "measured_settings": 8,
+    "below_or_equal_1": {
+      "n": 2,
+      "median_survival": 0.1
+    },
+    "above_1": {
+      "n": 6,
+      "median_survival": 0.8375
+    },
+    "sensitivity_outside_ambiguous_barriers": {
+      "below_n": 1,
+      "above_n": 6,
+      "below_median": 0.2,
+      "above_median": 0.8375
+    }
+  },
+  "checks": {
+    "registered_coil_cases": true,
+    "valid_magnetic_radius_data": true,
+    "valid_bec_winding_groups": true,
+    "all_barrier_settings": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E10_energy_observations/run.py": "a822df2207eddfa935f3ef5d0b7dc3cdf3a9ae7a26108af83dc909978f02d478",
+    "E09_harmonic_energy/run.py": "633039649cfc533a26836a722bc93b2c4991741741f61fd364c034a0c7d17435",
+    "E10_energy_observations/figure_values.json": "b7828fb5e2acebc80da89b5b0188740562e14c7e7a873fe495fb3a14a8499ca0",
+    "E10_energy_observations/table_values.json": "a02e56dff01089925f24e3c9230671f2755573948725457c5544b353b2a8001e"
+  }
+}

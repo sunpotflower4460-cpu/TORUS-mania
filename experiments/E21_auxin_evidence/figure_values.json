@@ -1,0 +1,32 @@
+{
+  "source_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3d6c/135543/7b1793bbd171/00-0486f3.jpg",
+  "source_sha256": "b28827ec60aff2913effd1b5bccdaa1f355cc003bbeb7b85aacae1107e5dd881",
+  "units": "emerged lateral roots per mm primary root",
+  "axis_calibration_y_0_and_0_9": [
+    312.0,
+    8.0
+  ],
+  "readout_uncertainty_per_mm_from_3px": 0.008881578947368421,
+  "bars": {
+    "A_no_treatment": {
+      "top_row": 176.0,
+      "detected_bar_above_axis": true,
+      "lateral_roots_per_mm": 0.40263157894736845
+    },
+    "B_NAA": {
+      "top_row": 78.0,
+      "detected_bar_above_axis": true,
+      "lateral_roots_per_mm": 0.6927631578947369
+    },
+    "C_NPA": {
+      "top_row": 312.0,
+      "detected_bar_above_axis": false,
+      "lateral_roots_per_mm": 0.0
+    },
+    "D_NPA_plus_NAA": {
+      "top_row": 150.0,
+      "detected_bar_above_axis": true,
+      "lateral_roots_per_mm": 0.47960526315789476
+    }
+  }
+}

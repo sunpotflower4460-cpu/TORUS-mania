@@ -1,0 +1,1623 @@
+{
+  "case": "diffusive32",
+  "n": 32,
+  "dt_s": 0.01,
+  "section_intervals": 16,
+  "names": [
+    "vorticity",
+    "magnetic_ideal",
+    "matched",
+    "faster_diffusion",
+    "shifted",
+    "zero"
+  ],
+  "coefficients_m2_s": [
+    0.03,
+    0.0,
+    0.03,
+    0.18,
+    0.03,
+    0.03
+  ],
+  "flux_units": [
+    "m2/s",
+    "m3/s",
+    "m3/s",
+    "m3/s",
+    "m3/s",
+    "m3/s"
+  ],
+  "energy_units": "J at reference density 1 kg/m3",
+  "max_divergence_spectral_relative": 2.60007805294657e-16,
+  "matching_field_max_relative_l2": 5.395241352662018e-16,
+  "largest_relative_flux_balance_error": {
+    "vorticity": 0.002807523411271067,
+    "magnetic_ideal": 0.00432311202627465,
+    "matched": 0.0028075234112711614,
+    "faster_diffusion": 0.0011063937037588169,
+    "shifted": 0.001745069359334018,
+    "zero": 0.0
+  },
+  "largest_relative_energy_balance_error": {
+    "vorticity": 2.672763938436198e-06,
+    "magnetic_ideal": 1.4414962088523486e-06,
+    "matched": 1.8820791942925235e-05,
+    "faster_diffusion": 0.0008724320421809238,
+    "shifted": 4.184025601016053e-06,
+    "zero": 0.0
+  },
+  "relative_final_flux": {
+    "vorticity": [
+      0.80079127810517,
+      0.8007912781051703,
+      0.8007912781051701,
+      0.8007912781051703
+    ],
+    "magnetic_ideal": [
+      0.9956768879737254,
+      0.9956768879737253,
+      0.9956768879737257,
+      0.9956768879737257
+    ],
+    "matched": [
+      0.80079127810517,
+      0.80079127810517,
+      0.8007912781051701,
+      0.8007912781051703
+    ],
+    "faster_diffusion": [
+      0.3808123378845758,
+      0.38081233788457575,
+      0.38081233788457586,
+      0.38081233788457586
+    ],
+    "shifted": [
+      1.0973722835394053,
+      1.0973722835394053,
+      1.097372283539406,
+      1.0973722835394053
+    ]
+  },
+  "initial_energy_j": {
+    "vorticity": 6.350151871390591,
+    "magnetic_ideal": 0.0636478399311394,
+    "matched": 0.0636478399311394,
+    "faster_diffusion": 0.0636478399311394,
+    "shifted": 0.06364783989022102,
+    "zero": 0.0
+  },
+  "relative_final_energy": {
+    "vorticity": 0.8430591618870247,
+    "magnetic_ideal": 1.0056351156194712,
+    "matched": 0.6738296170696216,
+    "faster_diffusion": 0.2323654825300845,
+    "shifted": 0.8998981669845155
+  },
+  "stretching_work_per_initial_energy": {
+    "vorticity": 0.0,
+    "magnetic_ideal": 0.0056336741232622745,
+    "matched": 0.008261774463865505,
+    "faster_diffusion": 0.006439679634723467,
+    "shifted": 0.3420983503185106,
+    "zero": 0.0
+  },
+  "dissipation_per_initial_energy": {
+    "vorticity": 0.15694351087691372,
+    "magnetic_ideal": 0.0,
+    "matched": 0.33445097818618674,
+    "faster_diffusion": 0.7749466291468201,
+    "shifted": 0.4422007799041118,
+    "zero": 0.0
+  },
+  "zero_field_max": 0.0,
+  "shifted_final_field_l2_from_reference": 1.05007822904039,
+  "shapes": [
+    {
+      "t_s": 0.0,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 372,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 260,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 372,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 260,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 372,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 260,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 372,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 260,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 548,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 416,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 264,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 735,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 591,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 397,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.1,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 576,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 452,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 276,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 544,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 428,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 272,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 576,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 452,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 276,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 724,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 552,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 352,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 596,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 424,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 292,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 728,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 583,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 389,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.2,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 608,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 456,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 332,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 540,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 432,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 284,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 608,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 456,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 332,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 944,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 692,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 468,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 604,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 408,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 308,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 748,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 534,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 373,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.3,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 632,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 500,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 392,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 548,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 436,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 312,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 632,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 500,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 392,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1072,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 856,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 532,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 644,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 484,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 304,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 760,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 550,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 390,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.4,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 640,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 504,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 368,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 528,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 428,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 272,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 640,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 504,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 368,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1180,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 936,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 608,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 680,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 520,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 312,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 744,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 559,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 333,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.5,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 684,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 508,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 336,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 528,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 416,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 256,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 684,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 508,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 336,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1380,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1040,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 700,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 700,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 536,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 316,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 724,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 567,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 337,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.6,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 704,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 332,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 548,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 412,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 272,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 704,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 332,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1512,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1224,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 776,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 724,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 336,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 737,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 575,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 345,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.7000000000000001,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 748,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 584,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 376,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 564,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 400,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 268,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 748,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 584,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 376,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1764,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1352,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 888,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 752,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 600,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 376,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 745,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 575,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 366,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    },
+    {
+      "t_s": 0.8,
+      "superlevel": {
+        "vorticity": {
+          "0.25": {
+            "cells": 756,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 612,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 412,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "magnetic_ideal": {
+          "0.25": {
+            "cells": 548,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 428,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 260,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "matched": {
+          "0.25": {
+            "cells": 756,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 612,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 412,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "faster_diffusion": {
+          "0.25": {
+            "cells": 1900,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 1384,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 972,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "shifted": {
+          "0.25": {
+            "cells": 768,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.35": {
+            "cells": 612,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "0.5": {
+            "cells": 408,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "zero": {
+          "0.25": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 0,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "kinetic_energy_density": {
+          "0.25": {
+            "cells": 741,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.35": {
+            "cells": 572,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          },
+          "0.5": {
+            "cells": 374,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        }
+      }
+    }
+  ],
+  "checks": {
+    "solenoidal": true,
+    "matched_initial_condition_l2": true,
+    "material_flux_balance": true,
+    "energy_balance": true,
+    "faster_diffusion_loses_more_flux": true,
+    "zero_field_remains_zero": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E13_flux_transport/run.py": "643d05637f6d343ee5da8ac390a75ccfd05d5f9c0f8cb0bf0e1adea2d13d05db",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

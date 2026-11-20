@@ -1,0 +1,64 @@
+{
+  "elapsed_wall_s": 114.579,
+  "runs": [
+    {
+      "module": "E09_harmonic_energy.run",
+      "variant": null,
+      "exit": 0,
+      "wall_s": 1.797
+    },
+    {
+      "module": "E10_energy_observations.run",
+      "variant": null,
+      "exit": 0,
+      "wall_s": 0.385
+    },
+    {
+      "module": "E11_energy_transport.run",
+      "variant": "fluid",
+      "exit": 0,
+      "wall_s": 52.451
+    },
+    {
+      "module": "E11_energy_transport.run",
+      "variant": "light",
+      "exit": 0,
+      "wall_s": 6.447
+    },
+    {
+      "module": "E12_meridian_prediction.run",
+      "variant": "light",
+      "exit": 0,
+      "wall_s": 4.844
+    },
+    {
+      "module": "E12_meridian_prediction.run",
+      "variant": "circle",
+      "exit": 0,
+      "wall_s": 105.325
+    },
+    {
+      "module": "E12_meridian_prediction.run",
+      "variant": "slit",
+      "exit": 0,
+      "wall_s": 51.784
+    },
+    {
+      "module": "energy_figures",
+      "variant": null,
+      "exit": 0,
+      "wall_s": 2.607
+    }
+  ],
+  "code_commit": "fe0e9c8bc45d020a7d8a7771c8ba7eb3e21615da",
+  "python": "3.12.14",
+  "environment": {
+    "os": "Linux",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "replay_mode": "git archive, initially empty output, fixed manuscript-derived inputs",
+  "byte_identical_files": 16,
+  "checks_passed": 24
+}

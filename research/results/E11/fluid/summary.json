@@ -1,0 +1,2061 @@
+{
+  "trials": [
+    {
+      "n": 48,
+      "dt_s": 0.0078125,
+      "density_kg_m3": 1.0,
+      "kinematic_viscosity_m2_s": 0.05,
+      "control_volume_m": [
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          0.75,
+          2.25
+        ]
+      ],
+      "control_faces": [
+        "x-",
+        "x+",
+        "y-",
+        "y+",
+        "z-",
+        "z+"
+      ],
+      "flux_terms": [
+        "advective",
+        "pressure",
+        "viscous"
+      ],
+      "flux_out_j_by_face_and_term": [
+        [
+          0.0007907795549631638,
+          -0.009686695751737246,
+          0.0011515674208899883
+        ],
+        [
+          0.0007907795549631638,
+          -0.009686695751737246,
+          0.0011515674208899883
+        ],
+        [
+          0.0007907795549631639,
+          -0.009686695751737247,
+          0.0011515674208899883
+        ],
+        [
+          0.0007907795549631639,
+          -0.009686695751737247,
+          0.0011515674208899883
+        ],
+        [
+          -0.4228696198136783,
+          0.21322503061251707,
+          -0.06006995301961433
+        ],
+        [
+          0.0028077866188884796,
+          0.0054095009442709854,
+          0.0015383593807778994
+        ]
+      ],
+      "energy_final_j": 0.08151993829220336,
+      "loss_j": 0.19826089542347827,
+      "maximum_local_flux_of_mass_m3_s": 6.661338147750939e-16,
+      "relative_local_residual": 0.0267244864654731,
+      "relative_whole_box_residual": 8.387670068089158e-05,
+      "rest_test": {
+        "net_flux_w": 0.0,
+        "dissipation_w": 0.0
+      },
+      "through_flow_test": {
+        "net_flux_w": 0.0,
+        "dissipation_w": 0.0,
+        "axial_faces_w": [
+          -4.5,
+          4.5
+        ]
+      },
+      "snapshots": [
+        {
+          "t_s": 0.125,
+          "peak_tag_r_z": [
+            0.5659615711335886,
+            0.0625
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.0625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 392,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 180,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.3364485981308411,
+              "total_energy_fraction_in_tag_mask": 0.2964286650842114
+            },
+            "0.35": {
+              "tag": {
+                "cells": 260,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 112,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.25675675675675674,
+              "total_energy_fraction_in_tag_mask": 0.2264065989601818
+            },
+            "0.5": {
+              "tag": {
+                "cells": 168,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 60,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2127659574468085,
+              "total_energy_fraction_in_tag_mask": 0.171087172418275
+            }
+          }
+        },
+        {
+          "t_s": 0.25,
+          "peak_tag_r_z": [
+            0.5376453291901642,
+            0.0625
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.0625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 368,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 168,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.32673267326732675,
+              "total_energy_fraction_in_tag_mask": 0.2902829603767157
+            },
+            "0.35": {
+              "tag": {
+                "cells": 288,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 108,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.25316455696202533,
+              "total_energy_fraction_in_tag_mask": 0.24713913805105284
+            },
+            "0.5": {
+              "tag": {
+                "cells": 160,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 56,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.14893617021276595,
+              "total_energy_fraction_in_tag_mask": 0.14770211662848515
+            }
+          }
+        },
+        {
+          "t_s": 0.375,
+          "peak_tag_r_z": [
+            0.5659615711335886,
+            0.0625
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.0625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 464,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 180,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.288,
+              "total_energy_fraction_in_tag_mask": 0.3186476049150507
+            },
+            "0.35": {
+              "tag": {
+                "cells": 348,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 120,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.23157894736842105,
+              "total_energy_fraction_in_tag_mask": 0.2552602772196887
+            },
+            "0.5": {
+              "tag": {
+                "cells": 248,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 60,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1323529411764706,
+              "total_energy_fraction_in_tag_mask": 0.2142995482734074
+            }
+          }
+        },
+        {
+          "t_s": 0.5,
+          "peak_tag_r_z": [
+            0.6187184335382291,
+            0.0625
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.0625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 700,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 212,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2459016393442623,
+              "total_energy_fraction_in_tag_mask": 0.4060682605671851
+            },
+            "0.35": {
+              "tag": {
+                "cells": 556,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 152,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2206896551724138,
+              "total_energy_fraction_in_tag_mask": 0.3774190385133448
+            },
+            "0.5": {
+              "tag": {
+                "cells": 388,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 84,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.102803738317757,
+              "total_energy_fraction_in_tag_mask": 0.26257589863958564
+            }
+          }
+        },
+        {
+          "t_s": 0.625,
+          "peak_tag_r_z": [
+            0.5376453291901642,
+            0.3125
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.1875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 984,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 292,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.26587301587301587,
+              "total_energy_fraction_in_tag_mask": 0.513303542937345
+            },
+            "0.35": {
+              "tag": {
+                "cells": 828,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 224,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2119815668202765,
+              "total_energy_fraction_in_tag_mask": 0.4594084900888694
+            },
+            "0.5": {
+              "tag": {
+                "cells": 608,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 132,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.08823529411764706,
+              "total_energy_fraction_in_tag_mask": 0.34554832054793044
+            }
+          }
+        },
+        {
+          "t_s": 0.75,
+          "peak_tag_r_z": [
+            0.5376453291901642,
+            0.4375
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.4375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1016,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 348,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.22661870503597123,
+              "total_energy_fraction_in_tag_mask": 0.5068926558989337
+            },
+            "0.35": {
+              "tag": {
+                "cells": 812,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 252,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.17699115044247787,
+              "total_energy_fraction_in_tag_mask": 0.436843173087062
+            },
+            "0.5": {
+              "tag": {
+                "cells": 572,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 148,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.09090909090909091,
+              "total_energy_fraction_in_tag_mask": 0.32804516186258065
+            }
+          }
+        },
+        {
+          "t_s": 0.875,
+          "peak_tag_r_z": [
+            0.5376453291901642,
+            0.5625
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.6875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1148,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 316,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.19607843137254902,
+              "total_energy_fraction_in_tag_mask": 0.5856742425241728
+            },
+            "0.35": {
+              "tag": {
+                "cells": 812,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 188,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.16822429906542055,
+              "total_energy_fraction_in_tag_mask": 0.4842069056529378
+            },
+            "0.5": {
+              "tag": {
+                "cells": 588,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 112,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.08695652173913043,
+              "total_energy_fraction_in_tag_mask": 0.3570524431863439
+            }
+          }
+        },
+        {
+          "t_s": 1.0,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.6875
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.6875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1136,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 304,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.17232375979112272,
+              "total_energy_fraction_in_tag_mask": 0.6043727575844113
+            },
+            "0.35": {
+              "tag": {
+                "cells": 900,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 164,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10231023102310231,
+              "total_energy_fraction_in_tag_mask": 0.5247219534890831
+            },
+            "0.5": {
+              "tag": {
+                "cells": 636,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 96,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.061611374407582936,
+              "total_energy_fraction_in_tag_mask": 0.4074913620727719
+            }
+          }
+        },
+        {
+          "t_s": 1.125,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.6875
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.8125
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1252,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 264,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.14698795180722893,
+              "total_energy_fraction_in_tag_mask": 0.6231752439035806
+            },
+            "0.35": {
+              "tag": {
+                "cells": 936,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 172,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10658307210031348,
+              "total_energy_fraction_in_tag_mask": 0.5146701977331573
+            },
+            "0.5": {
+              "tag": {
+                "cells": 652,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 100,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.07272727272727272,
+              "total_energy_fraction_in_tag_mask": 0.40996920732697056
+            }
+          }
+        },
+        {
+          "t_s": 1.25,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.8125
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.8125
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1292,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 284,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.14186046511627906,
+              "total_energy_fraction_in_tag_mask": 0.6043162196385834
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1012,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 176,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10416666666666667,
+              "total_energy_fraction_in_tag_mask": 0.5159332313605823
+            },
+            "0.5": {
+              "tag": {
+                "cells": 704,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 108,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.06808510638297872,
+              "total_energy_fraction_in_tag_mask": 0.3996104070221463
+            }
+          }
+        },
+        {
+          "t_s": 1.375,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.8125
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.9375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1384,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 296,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.14888888888888888,
+              "total_energy_fraction_in_tag_mask": 0.6060353508054112
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1064,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 180,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1037463976945245,
+              "total_energy_fraction_in_tag_mask": 0.5107704173975915
+            },
+            "0.5": {
+              "tag": {
+                "cells": 744,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 112,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.06557377049180328,
+              "total_energy_fraction_in_tag_mask": 0.41387703911288704
+            }
+          }
+        },
+        {
+          "t_s": 1.5,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.9375
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.9375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1524,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 320,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13572854291417166,
+              "total_energy_fraction_in_tag_mask": 0.6174901120103056
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1196,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 188,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1,
+              "total_energy_fraction_in_tag_mask": 0.5293699145888259
+            },
+            "0.5": {
+              "tag": {
+                "cells": 764,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 108,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.07377049180327869,
+              "total_energy_fraction_in_tag_mask": 0.4014188812716988
+            }
+          }
+        },
+        {
+          "t_s": 1.625,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.9375
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            0.9375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1640,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 324,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.14285714285714285,
+              "total_energy_fraction_in_tag_mask": 0.6371059366136376
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1256,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 196,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.09873417721518987,
+              "total_energy_fraction_in_tag_mask": 0.5282018465993605
+            },
+            "0.5": {
+              "tag": {
+                "cells": 840,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 108,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.07392996108949416,
+              "total_energy_fraction_in_tag_mask": 0.4315616702437582
+            }
+          }
+        },
+        {
+          "t_s": 1.75,
+          "peak_tag_r_z": [
+            0.4759858191164943,
+            0.9375
+          ],
+          "peak_energy_r_z": [
+            0.08838834764831845,
+            1.0625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1760,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 344,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13937282229965156,
+              "total_energy_fraction_in_tag_mask": 0.6410344602248522
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1344,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 212,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.09785202863961814,
+              "total_energy_fraction_in_tag_mask": 0.5333345471891544
+            },
+            "0.5": {
+              "tag": {
+                "cells": 900,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 116,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.06273062730627306,
+              "total_energy_fraction_in_tag_mask": 0.4136719032938985
+            }
+          }
+        }
+      ]
+    },
+    {
+      "n": 64,
+      "dt_s": 0.0078125,
+      "density_kg_m3": 1.0,
+      "kinematic_viscosity_m2_s": 0.05,
+      "control_volume_m": [
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          -1.5,
+          1.5
+        ],
+        [
+          0.75,
+          2.25
+        ]
+      ],
+      "control_faces": [
+        "x-",
+        "x+",
+        "y-",
+        "y+",
+        "z-",
+        "z+"
+      ],
+      "flux_terms": [
+        "advective",
+        "pressure",
+        "viscous"
+      ],
+      "flux_out_j_by_face_and_term": [
+        [
+          0.0007946424905453116,
+          -0.009572759739849382,
+          0.0011603732297137475
+        ],
+        [
+          0.0007946424905453116,
+          -0.009572759739849382,
+          0.0011603732297137475
+        ],
+        [
+          0.0007946424905453115,
+          -0.009572759739849383,
+          0.0011603732297137473
+        ],
+        [
+          0.0007946424905453115,
+          -0.009572759739849383,
+          0.0011603732297137473
+        ],
+        [
+          -0.4287472573385929,
+          0.21456604778494104,
+          -0.06108443050923419
+        ],
+        [
+          0.0028056419622579463,
+          0.005429306932878573,
+          0.001534051008435885
+        ]
+      ],
+      "energy_final_j": 0.08227679099671424,
+      "loss_j": 0.20692265664727508,
+      "maximum_local_flux_of_mass_m3_s": 4.440892098500626e-16,
+      "relative_local_residual": 0.016103992670380343,
+      "relative_whole_box_residual": 8.53997126002526e-05,
+      "rest_test": {
+        "net_flux_w": 0.0,
+        "dissipation_w": 0.0
+      },
+      "through_flow_test": {
+        "net_flux_w": 0.0,
+        "dissipation_w": 0.0,
+        "axial_faces_w": [
+          -4.5,
+          4.5
+        ]
+      },
+      "snapshots": [
+        {
+          "t_s": 0.125,
+          "peak_tag_r_z": [
+            0.5663927800122456,
+            0.046875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.046875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 740,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 400,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.3073394495412844,
+              "total_energy_fraction_in_tag_mask": 0.23748336870372364
+            },
+            "0.35": {
+              "tag": {
+                "cells": 536,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 232,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.24675324675324675,
+              "total_energy_fraction_in_tag_mask": 0.2021063067094165
+            },
+            "0.5": {
+              "tag": {
+                "cells": 304,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 128,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.17391304347826086,
+              "total_energy_fraction_in_tag_mask": 0.12117787028255889
+            }
+          }
+        },
+        {
+          "t_s": 0.25,
+          "peak_tag_r_z": [
+            0.534457230515221,
+            0.046875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.046875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 724,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 380,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.24324324324324326,
+              "total_energy_fraction_in_tag_mask": 0.21975230266767104
+            },
+            "0.35": {
+              "tag": {
+                "cells": 580,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 228,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2392638036809816,
+              "total_energy_fraction_in_tag_mask": 0.20848669429427263
+            },
+            "0.5": {
+              "tag": {
+                "cells": 392,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 124,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10256410256410256,
+              "total_energy_fraction_in_tag_mask": 0.14744861970311562
+            }
+          }
+        },
+        {
+          "t_s": 0.375,
+          "peak_tag_r_z": [
+            0.5966213466261495,
+            0.046875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.046875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1044,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 428,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.3003533568904594,
+              "total_energy_fraction_in_tag_mask": 0.3076513932261659
+            },
+            "0.35": {
+              "tag": {
+                "cells": 800,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 268,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.21363636363636362,
+              "total_energy_fraction_in_tag_mask": 0.24511027615780234
+            },
+            "0.5": {
+              "tag": {
+                "cells": 508,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 140,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1095890410958904,
+              "total_energy_fraction_in_tag_mask": 0.16226626501668442
+            }
+          }
+        },
+        {
+          "t_s": 0.5,
+          "peak_tag_r_z": [
+            0.6528932004930056,
+            0.046875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.046875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 1752,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 524,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2700892857142857,
+              "total_energy_fraction_in_tag_mask": 0.43953284792228703
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1376,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 360,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.19889502762430938,
+              "total_energy_fraction_in_tag_mask": 0.36068470478662407
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1040,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 208,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1103202846975089,
+              "total_energy_fraction_in_tag_mask": 0.2958717574516133
+            }
+          }
+        },
+        {
+          "t_s": 0.625,
+          "peak_tag_r_z": [
+            0.5663927800122456,
+            0.328125
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.140625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 2300,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 716,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.282312925170068,
+              "total_energy_fraction_in_tag_mask": 0.52587401717548
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1848,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 508,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.21443298969072164,
+              "total_energy_fraction_in_tag_mask": 0.4495020134587846
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1404,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 312,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.0916030534351145,
+              "total_energy_fraction_in_tag_mask": 0.3439957605172118
+            }
+          }
+        },
+        {
+          "t_s": 0.75,
+          "peak_tag_r_z": [
+            0.5663927800122456,
+            0.421875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.515625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 2440,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 836,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.2561349693251534,
+              "total_energy_fraction_in_tag_mask": 0.542477164538318
+            },
+            "0.35": {
+              "tag": {
+                "cells": 1952,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 600,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1814814814814815,
+              "total_energy_fraction_in_tag_mask": 0.45469982709445783
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1288,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 352,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.09333333333333334,
+              "total_energy_fraction_in_tag_mask": 0.3188255526932803
+            }
+          }
+        },
+        {
+          "t_s": 0.875,
+          "peak_tag_r_z": [
+            0.534457230515221,
+            0.515625
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.609375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 2512,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 696,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.1765432098765432,
+              "total_energy_fraction_in_tag_mask": 0.6085132024875072
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2016,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 436,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13043478260869565,
+              "total_energy_fraction_in_tag_mask": 0.5268794956652783
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1400,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 256,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.0776255707762557,
+              "total_energy_fraction_in_tag_mask": 0.3873209904075156
+            }
+          }
+        },
+        {
+          "t_s": 1.0,
+          "peak_tag_r_z": [
+            0.534457230515221,
+            0.609375
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.703125
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 3608,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": true,
+                "candidate": false
+              },
+              "energy": {
+                "cells": 652,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.15135135135135136,
+              "total_energy_fraction_in_tag_mask": 0.6204290518516228
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2064,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 384,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10740203193033382,
+              "total_energy_fraction_in_tag_mask": 0.4949113265670736
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1484,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 212,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.05917159763313609,
+              "total_energy_fraction_in_tag_mask": 0.3830042101454888
+            }
+          }
+        },
+        {
+          "t_s": 1.125,
+          "peak_tag_r_z": [
+            0.5177512976806529,
+            0.703125
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.796875
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 2840,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 608,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13274336283185842,
+              "total_energy_fraction_in_tag_mask": 0.6261540053653846
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2260,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 404,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.09743589743589744,
+              "total_energy_fraction_in_tag_mask": 0.5329113957644537
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1516,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 232,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.06470588235294118,
+              "total_energy_fraction_in_tag_mask": 0.3778128543729003
+            }
+          }
+        },
+        {
+          "t_s": 1.25,
+          "peak_tag_r_z": [
+            0.48260766285876566,
+            0.796875
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.890625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 3056,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 668,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.137546468401487,
+              "total_energy_fraction_in_tag_mask": 0.6279158425808591
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2292,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 416,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.11311053984575835,
+              "total_energy_fraction_in_tag_mask": 0.5225464451568729
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1644,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 244,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.061452513966480445,
+              "total_energy_fraction_in_tag_mask": 0.3853890308766481
+            }
+          }
+        },
+        {
+          "t_s": 1.375,
+          "peak_tag_r_z": [
+            0.4640388251536718,
+            0.890625
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.890625
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 3192,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 680,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13219424460431656,
+              "total_energy_fraction_in_tag_mask": 0.6116352340670054
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2544,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 424,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10177514792899409,
+              "total_energy_fraction_in_tag_mask": 0.5375678382415029
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1668,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 224,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.05660377358490566,
+              "total_energy_fraction_in_tag_mask": 0.37868162009603706
+            }
+          }
+        },
+        {
+          "t_s": 1.5,
+          "peak_tag_r_z": [
+            0.48260766285876566,
+            0.890625
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.984375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 3496,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 696,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.13242784380305603,
+              "total_energy_fraction_in_tag_mask": 0.6116587890930638
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2772,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 464,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10222222222222223,
+              "total_energy_fraction_in_tag_mask": 0.5388929990104396
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1848,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 248,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.0632688927943761,
+              "total_energy_fraction_in_tag_mask": 0.3982462590919777
+            }
+          }
+        },
+        {
+          "t_s": 1.625,
+          "peak_tag_r_z": [
+            0.5177512976806529,
+            0.890625
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.984375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 3836,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 728,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.12964426877470356,
+              "total_energy_fraction_in_tag_mask": 0.6229002025438581
+            },
+            "0.35": {
+              "tag": {
+                "cells": 2948,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 476,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10885805763073639,
+              "total_energy_fraction_in_tag_mask": 0.5422331973731533
+            },
+            "0.5": {
+              "tag": {
+                "cells": 1972,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 260,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.05862646566164154,
+              "total_energy_fraction_in_tag_mask": 0.3920734934252872
+            }
+          }
+        },
+        {
+          "t_s": 1.75,
+          "peak_tag_r_z": [
+            0.48260766285876566,
+            0.984375
+          ],
+          "peak_energy_r_z": [
+            0.06629126073623882,
+            0.984375
+          ],
+          "thresholds": {
+            "0.25": {
+              "tag": {
+                "cells": 4116,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 784,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.12881608339538347,
+              "total_energy_fraction_in_tag_mask": 0.622805266711605
+            },
+            "0.35": {
+              "tag": {
+                "cells": 3144,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 492,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.10488798370672098,
+              "total_energy_fraction_in_tag_mask": 0.5434252303251822
+            },
+            "0.5": {
+              "tag": {
+                "cells": 2100,
+                "tunnels": 1,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": true
+              },
+              "energy": {
+                "cells": 276,
+                "tunnels": 0,
+                "cavities": 0,
+                "touches_boundary": false,
+                "candidate": false
+              },
+              "jaccard_all_above_threshold": 0.06645056726094004,
+              "total_energy_fraction_in_tag_mask": 0.40083628813853595
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "control_volume_energy": true,
+    "whole_tank_energy": true,
+    "no_net_mass_accumulation": true,
+    "known_flux_controls": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E11_energy_transport/run.py": "0b0e0dd0f4aa42675b1224989f640e40b8ff2dee964b4693ac2d30e737174d09",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E06_jet/run.py": "2e684961fc612fc892b02dcede77bab21a14b8c3338c7cc148db8f7901eb0449"
+  }
+}
