@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "auxin_transport_and_reentry_discrimination",
+  "stage": "root_tissue_interventions_and_proton_potential",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -27,7 +27,10 @@
     "E20",
     "E21",
     "E22",
-    "E23"
+    "E23",
+    "E24",
+    "E25",
+    "E26"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -37,8 +40,8 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaとE23のÖtvösの2件。画像からの読取り、図データになる前のPIV速度や顕微鏡画像とは別。"
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のÖtvös、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
   },
   "claims": [
     {
@@ -214,7 +217,9 @@
         "E20",
         "E21",
         "E22",
-        "E23"
+        "E23",
+        "E24",
+        "E25"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -232,9 +237,12 @@
         "https://doi.org/10.1104/pp.122.2.481",
         "https://doi.org/10.1105/tpc.13.4.843",
         "https://doi.org/10.1105/tpc.113.119495",
-        "https://doi.org/10.15252/embr.202051813"
+        "https://doi.org/10.15252/embr.202051813",
+        "https://doi.org/10.1038/emboj.2012.303",
+        "https://doi.org/10.1101/gad.276964.115",
+        "https://doi.org/10.1126/science.1245871"
       ],
-      "evidence_role": "局所の力や伸びやすさは側根や葉の位置に関わる。曲げ頻度による本数の予測には反例がある。シロイヌナズナで方向性のあるオーキシン輸送と分岐の関与を支持。外層から中心への大きな戻りを予測しない生体モデルもある。三次元の戻り経路が閉じ、その戻りが分岐を予測するかは未決。",
+      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -278,9 +286,21 @@
           "role": "archived_figure_arrays_by_independent_repeat",
           "path": "research/results/E23/summary.json",
           "finding": "硝酸への側根密度応答の野生型−欠損型の差は3反復すべて正、平均+0.82本/cm。対応行から推定した野生型の本数差は+1.0、+0.9、−0.7本/個体。"
+        },
+        {
+          "experiment_id": "E24",
+          "role": "tissue_specific_complementation",
+          "path": "research/results/E24/summary.json",
+          "finding": "5日齢欠損株の内皮でPIN3を発現すると初回分裂に達した部位3.86→7.15部位/cm、始原細胞も含む総密度10.06→10.39部位/cm。"
+        },
+        {
+          "experiment_id": "E25",
+          "role": "endodermal_ablation_and_division_orientation",
+          "path": "research/results/E25/summary.json",
+          "finding": "輸送阻害を継続しても内皮除去後の分裂が生じた。NAAで通常株の垂直分裂は約0.50→2.25回、ktn1は0→0.23回/除去イベント。"
         }
       ],
-      "next_action": "同じ根で根先の標識が外層と中心を通る時系列を測り、再流入だけの変化から新しい側根の数と位置を事前に予測する。主根長、初期の原基、合成・分解を照合する。",
+      "next_action": "周鞘に由来する標識が内皮を通って戻る量と、初回分裂までの時間を同じ形成部位で測る。内向きの輸送の変更、局所の供給での補充、内皮の変形を比べる。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
@@ -289,7 +309,8 @@
         "research/notes/E18_plant_organ_placement.md",
         "research/notes/E20_lateral_root_controls.md",
         "research/notes/E21_polar_auxin_and_branching.md",
-        "research/notes/E23_pin2_nitrate.md"
+        "research/notes/E23_pin2_nitrate.md",
+        "research/notes/E24_E26_root_tissue_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -310,6 +331,14 @@
         },
         {
           "statement": "濃度の静的分布と両方向の標識輸送を別々に測れば、同じ標識が外層から中心へ再流入したかを特定できる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "指定のシロイヌナズナの実験では内皮のPIN3が、始原細胞から初回分裂への時間・密度に関わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "内皮でのPIN3局在と発現による発生の回復のみで、周鞘に由来する同じ物質の再流入を推定する。",
           "status": "not_identifiable"
         }
       ]
@@ -446,12 +475,15 @@
         "E20",
         "E21",
         "E22",
-        "E23"
+        "E23",
+        "E24",
+        "E25",
+        "E26"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。",
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。",
       "independently_reproduced": false,
       "results": [
         {
@@ -507,9 +539,15 @@
           "role": "matched_steady_profiles_and_selective_intervention",
           "path": "research/results/E22/summary.json",
           "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        },
+        {
+          "experiment_id": "E26",
+          "role": "pH_pulse_and_matched_elongation",
+          "path": "research/results/E26/summary.json",
+          "finding": "培地pH 5.80から6.15で4.84→3.16 μm/分、5.10で4.99→6.01 μm/分。培地間の化学ポテンシャル差−2.00、+4.00 kJ/mol。"
         }
       ],
-      "next_action": "根の標識輸送、実空間の経路、後の形を対応づける。エネルギーの収支を測定し、共通則の未使用生体データと物理データでの予測を代替モデルと比べる。",
+      "next_action": "根内の局所の戻りを方向別の標識で測る。三次元の流路と膜の両側の電気化学ポテンシャル・流束・成長を同じ対象で測り、共通則の未使用データへの予測を比較する。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -523,7 +561,8 @@
         "research/notes/E18_plant_organ_placement.md",
         "research/notes/E20_lateral_root_controls.md",
         "research/notes/E21_polar_auxin_and_branching.md",
-        "research/notes/E23_pin2_nitrate.md"
+        "research/notes/E23_pin2_nitrate.md",
+        "research/notes/E24_E26_root_tissue_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1211,7 +1250,7 @@
           "finding": "規格化時刻2.5の切断効果は各率±25%の81条件で投入量の8.12〜24.80%。弱い戻りの候補は1.18%。"
         }
       ],
-      "next_action": "根で選択的な経路変更と初回輸送の対照を確認し、外層から再流入した標識の検出限界を見積もる。",
+      "next_action": "根端に加え、側根の始原細胞に面した内皮で選択的な経路変更と初回輸送の対照を確認する。標識の内向き再流入を別の供給と識別し、内皮の形状も追う。",
       "literature_notes": [
         "research/notes/E21_polar_auxin_and_branching.md"
       ],
@@ -1275,8 +1314,136 @@
           "status": "not_supported_in_test"
         }
       ]
+    },
+    {
+      "id": "H24",
+      "statement": "始原細胞に面した内皮のPIN3の働きが側根の初回分裂への進行を助ける",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの曲げを用いた時間比較と、pin3背景の5日・7日齢の組織別発現。内皮から周鞘への分子の流束を直接測る試験ではない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E24"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/emboj.2012.303"
+      ],
+      "evidence_role": "本文の時間比較と公表図の内皮補完・中心柱発現を再集計した。位置、時期、量を完全にそろえた組織間介入は未実施。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E24",
+          "role": "tissue_specific_complementation",
+          "path": "research/results/E24/summary.json",
+          "finding": "5日齢欠損株の内皮でPIN3を発現すると初回分裂に達した部位3.86→7.15部位/cm、始原細胞も含む総密度10.06→10.39部位/cm。"
+        },
+        {
+          "experiment_id": "E24",
+          "role": "founder_to_division_time",
+          "path": "research/results/E24/summary.json",
+          "finding": "始原細胞マーカーから分裂まで野生型平均103分、pin3で206分。各群10観察。"
+        }
+      ],
+      "next_action": "始原細胞に由来する標識と内皮側の量を追い、内向きの結合だけを弱めたときの再流入と初回分裂を照合する。",
+      "literature_notes": [
+        "research/notes/E24_E26_root_tissue_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "指定された内皮にPIN3を発現させると、初回分裂に達した部位の密度が増える。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "内皮と周鞘の間を一周する同じ分子の割合。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H25",
+      "statement": "内皮除去は周鞘細胞の分裂を誘導し、オーキシンは分裂面の向きにも関わる",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの単一内皮細胞除去から15時間。発生段階・NAAの有無・細胞骨格の状態を比較。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E25"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1101/gad.276964.115",
+        "https://doi.org/10.1126/science.1245871"
+      ],
+      "evidence_role": "原著本文の分裂の有無と、図の分裂面別の棒を照合。本文と図の絶対値が異なり、増減の方向が一致した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E25",
+          "role": "endodermal_ablation_and_division_orientation",
+          "path": "research/results/E25/summary.json",
+          "finding": "輸送阻害を継続しても内皮除去後の分裂が生じた。NAAで通常株の垂直分裂は約0.50→2.25回、ktn1は0→0.23回/除去イベント。"
+        }
+      ],
+      "next_action": "正常な内皮で体積変化、オーキシン輸送、周鞘の分裂面を測り、物理的拘束と局所供給の寄与を比べる。",
+      "literature_notes": [
+        "research/notes/E24_E26_root_tissue_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "輸送阻害が維持された根で、内皮除去後には周鞘の分裂が一切起こらない。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "分裂面へのNAAの作用は通常型とカタニン欠損型で同じ大きさである。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H26",
+      "statement": "根の周囲の水素イオンの化学ポテンシャルを先に変えると既存の根の伸長速度が変わる",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの培地pH 5.80から6.15または5.10への短い切替。ポテンシャルは25 °Cでの培地間の化学成分。エネルギーの仕事率や身体全体の形は対象外。",
+      "torus_kinds": [],
+      "planned_experiments": [
+        "E26"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41586-021-04037-6"
+      ],
+      "evidence_role": "根を対応させた主評価、直接の電極測定、別の抽出物のATPase活性をそれぞれ再集計。Fig. 1bの速度は軸の照合でシートの相対変化に限った。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E26",
+          "role": "pH_pulse_and_matched_elongation",
+          "path": "research/results/E26/summary.json",
+          "finding": "培地pH 5.80から6.15で4.84→3.16 μm/分、5.10で4.99→6.01 μm/分。培地間の化学ポテンシャル差−2.00、+4.00 kJ/mol。"
+        },
+        {
+          "experiment_id": "E26",
+          "role": "net_proton_flux_and_ATP_hydrolysis",
+          "path": "research/results/E26/summary.json",
+          "finding": "電極試験でIAAの前後の8本を照合し28.08→38.62 nmol/(m²·s)。別の抽出物のATP加水分解は対照の1.17倍。"
+        }
+      ],
+      "next_action": "同じ場所・時間で、膜の両側のpHと電位、プロトンの符号付き流束、伸長を測り、化学輸送に伴う仕事率を見積もる。",
+      "literature_notes": [
+        "research/notes/E24_E26_root_tissue_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "処置終盤、アルカリ側の切替で主根の伸長速度が低下し、酸側で増加する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "酸処置を終えた後、観測終了までに伸長速度が対照の基線へ戻る。",
+          "status": "not_supported_in_test"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 12,
-  "archived_experimental_figure_array_reanalyses": 2
+  "published_measurement_reanalyses": 14,
+  "archived_experimental_figure_array_reanalyses": 3
 }

@@ -1,6 +1,39 @@
-# 再開メモ　根の輸送と分岐形成のE21〜E23まで実行済み
+# 再開メモ　内皮の輸送・分裂方向・根の伸長のE24〜E26まで実行済み
 
-更新2026-11-20 UTC。`research/auxin-transport-evidence` はE19〜E20の `research/return-path-tests`（`7383af8`）を継承する。方向性のあるオーキシン輸送と側根形成の関与（H21）、外層から中心への再流入を介入で識別できる条件（H22）、硝酸後のPIN2による側根密度の応答差（H23）を指定した範囲で支持した。生体の三次元経路とエネルギーを含む身体形成は未判定。[第7回報告](../docs/16_AUXIN_TRANSPORT_REPORT.md)・[全23主張の台帳](claims.json)
+更新2026-11-20 UTC。`research/local-auxin-reflux` はE01〜E23を合わせた `main`（`0606ae7`）から開始した。内皮のPIN3と初回分裂への進行（H24）、分裂開始と分裂方向の違い（H25）、培地の化学ポテンシャルと伸長（H26）を公表資料の再解析で条件内支持した。生体の標識の一周と、その循環のエネルギーが身体全体を先導するかは未判定。[第8回報告](../docs/17_LOCAL_REFLUX_REPORT.md)・[全26主張の台帳](claims.json)
+
+## 第8回の結果と追試
+
+| 実験 | 主な結果 |
+|---|---|
+| [E24](results/E24/summary.json) | 始原細胞から初回分裂まで103→206分（野生型→pin3）。内皮にPIN3を戻すと初回分裂に達した部位の密度3.86→7.15部位/cm。 |
+| [E25](results/E25/summary.json) | 内皮の1細胞を除くと輸送阻害下でも分裂が起きた。NAA追加で通常株の垂直分裂が0.50→2.25回/除去イベント。原著本文と図で大きさに差がある。 |
+| [E26](results/E26/summary.json) | 培地pH 6.15で伸長−34.6%、pH 5.10で+20.4%。酸性後の洗浄中は基線を下回った。別の電極測定で8本の対応した正味H⁺流入28.08→38.62 nmol/(m²·s)。 |
+
+事前登録の版は `ae00a60`、E26の追加照合は `950ebe6`、最終計算は `a5546a8`。Debian 13 x86_64、Python 3.12.14、NumPy 2.3.5、SciPy 1.17.0、Matplotlib 3.10.8、OpenPyXL 3.1.5、Pillow 13.0.0。Gitから展開したコードで空の出力先に約2.2秒で再計算。検証11項目、成果物6点のハッシュ、元図から再抽出した読み値、既存テスト22件、前回までのハッシュ143項目が通った。[実行ログ](results/LOCAL_REFLUX_RUN.json)・[SHA-256](results/LOCAL_REFLUX_SHA256SUMS)
+
+E24・E25は[固定した図の読み値](../experiments/local_reflux_readings.json)を使用する。E26の3ワークブックとFig. 1画像は、[原本のリンクとハッシュ](access/2026-11-20-local-reflux.md)の名前で取得する。次はリポジトリのルートからの追試。
+
+```bash
+python3 -m pip install -r experiments/requirements.txt -r experiments/E26_proton_growth/requirements.txt
+mkdir -p data/raw/local_reflux
+torus_source='https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects'
+curl --fail --location "$torus_source/41586_2021_4037_MOESM8_ESM.xlsx" -o data/raw/local_reflux/li_f1.xlsx
+curl --fail --location "$torus_source/41586_2021_4037_MOESM9_ESM.xlsx" -o data/raw/local_reflux/li_f2.xlsx
+curl --fail --location "$torus_source/41586_2021_4037_MOESM13_ESM.xlsx" -o data/raw/local_reflux/li_ext2.xlsx
+curl --fail --location \
+  'https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects/41586_2021_4037_Fig1_HTML.png' \
+  -o data/raw/local_reflux/li_fig1.png
+run_dir=$(mktemp -d)
+python3 -m experiments.run_local_reflux --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/LOCAL_REFLUX_SHA256SUMS | sha256sum -c -
+```
+
+E24・E25の読み値を元図から再現するには、取得記録の4つのJPEGを保存して `python3 -m experiments.local_reflux_reading --out "$run_dir/readouts.json"`。E26の `traces.json` は同一時刻の平均、標本標準偏差、根の数。Fig. 1bの伸長は図とシートで約2倍の差があり、相対変化を使用。原本にない点は欠測として保持した。[研究で使った図](results/local_reflux_figures/)・[単位の照合](notes/E24_E26_root_tissue_evidence.md)
+
+次は始原細胞の周鞘と隣の内皮で同じ標識を追い、内向きの輸送の変更が局所の再流入と初回分裂の所要時間をどれだけ変えるかを確かめる。内皮の変形と独立した局所補充を比較の対照にする。三次元のエネルギー循環に進むには同じ試料で膜の両側と、方向をもつ流束を測る必要がある。[判別条件](../docs/17_LOCAL_REFLUX_REPORT.md#戻り経路の仮説を前に進める観測)
+
+第7回では、方向性のあるオーキシン輸送と側根形成の関与（H21）、外層から中心への再流入を介入で識別できる条件（H22）、硝酸後のPIN2による側根密度の応答差（H23）を指定した範囲で支持した。[第7回報告](../docs/16_AUXIN_TRANSPORT_REPORT.md)
 
 ## 第7回の結果と追試
 

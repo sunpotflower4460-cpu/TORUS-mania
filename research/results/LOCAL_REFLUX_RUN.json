@@ -1,0 +1,77 @@
+{
+  "code_commit": "a5546a875b69d64b166780e7171e05af0fdea731",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "OpenPyXL": "3.1.5",
+      "Pillow": "13.0.0"
+    },
+    "numeric_threads": 1,
+    "random_seed": null
+  },
+  "preregistration_commit": "ae00a60",
+  "E26_followup_registration_commit": "950ebe6",
+  "initial_run": {
+    "wall_s": 2.206,
+    "runs": [
+      {
+        "module": "E24_endodermal_pin3.run",
+        "returncode": 0,
+        "wall_s": 0.171
+      },
+      {
+        "module": "E25_endodermal_constraint.run",
+        "returncode": 0,
+        "wall_s": 0.115
+      },
+      {
+        "module": "E26_proton_growth.run",
+        "returncode": 0,
+        "wall_s": 0.615
+      },
+      {
+        "module": "local_reflux_figures",
+        "returncode": 0,
+        "wall_s": 1.304
+      }
+    ]
+  },
+  "clean_git_archive_replay": {
+    "wall_s": 2.166,
+    "runs": [
+      {
+        "module": "E24_endodermal_pin3.run",
+        "returncode": 0,
+        "wall_s": 0.131
+      },
+      {
+        "module": "E25_endodermal_constraint.run",
+        "returncode": 0,
+        "wall_s": 0.13
+      },
+      {
+        "module": "E26_proton_growth.run",
+        "returncode": 0,
+        "wall_s": 0.619
+      },
+      {
+        "module": "local_reflux_figures",
+        "returncode": 0,
+        "wall_s": 1.286
+      }
+    ]
+  },
+  "checks_passed": {
+    "E24": 2,
+    "E25": 2,
+    "E26": 7
+  },
+  "byte_identical_generated_outputs": 6,
+  "four_original_figures_redigitized_with_identical_reading_file": true,
+  "existing_unit_tests_passed": 22,
+  "prior_manifest_entries_verified": 143
+}
