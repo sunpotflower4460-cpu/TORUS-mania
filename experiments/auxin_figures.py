@@ -119,7 +119,7 @@ def nutrient(root, path):
         axis.set_xlim(-.52, len(groups)-.48)
         style(axis, title, "", unit)
     axes[-1].legend(loc="upper right", fontsize=8.4)
-    fig.supxlabel("KNO₃ minus KCl at 3 days · Ötvös et al. (2021) supplement · Fig. 6 count inferred from aligned rows",
+    fig.supxlabel("KNO₃ minus KCl at 3 days · Vega et al. (2021) supplement · Fig. 6 count inferred from aligned rows",
                  fontsize=9.2)
     fig.savefig(path, dpi=150)
     plt.close(fig)

@@ -41,7 +41,7 @@
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
     "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のÖtvös、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
   },
   "claims": [
     {
