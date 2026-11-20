@@ -1,8 +1,55 @@
-# 再開メモ　E01〜E08の登録試験を実行済み
+# 再開メモ　エネルギーと閉経路のE09〜E12まで実行済み
 
-更新2026-11-20 UTC/JST。研究ブランチ `research/e03-e08` は、初回E01・E02の `research/e01-e02-calibration`（`81459c4`）を継承する。本文と全数値は[第2回報告](../docs/11_SECOND_RESEARCH_REPORT.md)、全12主張の判定と証拠の種類は[主張台帳](claims.json)にある。
+更新2026-11-20 UTC。現ブランチ `research/energy-principle` はE03〜E08の `research/e03-e08`（`152f030`）を継承。流体と静磁場の循環に共通のエネルギー原理（H13）、渦と光で輪状の等値領域が現れる幾何条件（H14）を、それぞれ登録範囲内で支持した。H08の全体は未決。[第3回報告](../docs/12_ENERGY_RESEARCH_REPORT.md)・[全14主張の台帳](claims.json)
 
-## 何を引き継ぐか
+## 第3回の結果と残る証拠
+
+| 実験 | 保存したもの | 判定 |
+|---|---|---|
+| E09 | 充実トーラス・厚い殻・薄い殻・切断、3格子、零断面流束の対照。[数値](results/E09/summary.json) | 閉経路が循環の自由度を決め、同じ幾何係数が流体の運動エネルギーと静磁場エネルギーに現れる。 |
+| E10 | 公開測定4研究の図読取り。他の装置仕様からの17点の磁場予測、3つのMEMSコイル、超流動の回転率と8設定の持続率。[採点](results/E10/summary.json)・[出典](notes/E10_energy_observations.md) | 磁場と循環の持続は支持。コイル全体・回転率の事前精度は未達。生データによる再解析1件（第2回の植物）とは件数を分けた。 |
+| E11 | 局所の機械エネルギー収支と真空Maxwellパルスの電磁エネルギー・ポインティング流束。[流体](results/E11/fluid/summary.json)・[光](results/E11/light/summary.json) | 渦度と運動エネルギーの形が異なった。光の解析解に電磁エネルギーの輪も成立。実測流束の入力は未取得。 |
+| E12 | 別設定で、断面から三次元の形を予測。パルス24/24、円形噴流16/16、スリット比較8/8。[全採点](results/E12/) | 実空間の形の予測に支持。異分野で同じ時間発展方程式が成り立つかは未判定。 |
+
+今回の残りは、コイル全体の磁気エネルギーを測るための外部場データ、超流動の実効半径と回転率の独立な校正、枝の成長と同時に物質・エネルギー収支を測るデータ。宇宙の動的な構造にはモデル固有な観測予測が必要。[文献・アクセス記録](access/2026-11-20-energy.md)
+
+## 第3回の追試
+
+事前登録は `eb5fbce`、公開図の追加照合は `a043401`、断面から輪を予測する追加登録は `1aa5387`。数値コードと図を `fe0e9c8` のGit履歴から別の場所に展開し、24校正項目と16個の成果物を照合した。[実行ログ](results/ENERGY_RUN.json)・[SHA-256](results/ENERGY_SHA256SUMS)
+
+リポジトリのルートで既存のPython依存を使う。公表図からの読取値は固定入力なので、計算だけならネット接続・PDFは不要。
+
+```bash
+out_dir=$(mktemp -d)
+python3 -m experiments.run_energy --out "$out_dir/results" --log "$out_dir/log.json"
+sha256sum -c research/results/ENERGY_SHA256SUMS
+python3 - "$out_dir/results" <<'PY'
+from hashlib import sha256
+from pathlib import Path
+import sys
+
+expected = Path("research/results")
+replay = Path(sys.argv[1])
+count = 0
+for line in (expected / "ENERGY_SHA256SUMS").read_text().splitlines():
+    digest, name = line.split(maxsplit=1)
+    path = Path(name).relative_to(expected)
+    if sha256((replay / path).read_bytes()).hexdigest() != digest:
+        raise SystemExit(f"Different output: {path}")
+    count += 1
+print(f"{count} generated files match")
+PY
+```
+
+図そのものから再抽出する場合は、文献カードと読取りコードに書いた版のKumar arXiv v3 PDFとVinitskiyのFig. 4 JPEGを取得する。ローカルで `python3 -m experiments.E10_energy_observations.read_figures --raw data/raw/energy --out /tmp/torus-energy-figures.json`。PyMuPDF 1.26.6、Pillow 13.0.0を使用。材料諸元と手で読んだ図の値はソース名を付けて同じディレクトリに記録した。[固定図入力](../experiments/E10_energy_observations/figure_values.json)・[固定表入力](../experiments/E10_energy_observations/table_values.json)
+
+### エネルギーの出力
+
+- E09のJSONの係数は、各方向の周回値を1とした場の二乗ノルム（m）。E10は磁場、磁気エネルギー密度、インダクタンス、回転率・持続率の元の単位を保持する。
+- E11の流体NPZの `budget` は時刻、内部の蓄積、外向き積算流束、積算散逸、残差、箱全体のエネルギーの順。光のNPZの各場は規格化し、出力JSONに時間・エネルギー・電力のSI換算を記した。
+- E12のJSONの各行に一断面の予測、三次元判定、閾値、時刻、格子がある。「合格」は対応する数値校正の範囲であり、実測が予測と一致しなかった試験も残した。[図](results/energy_figures/)
+
+## 第2回までの結果
 
 | ID | 保存したもの | 判定に残る範囲 |
 |---|---|---|
@@ -62,7 +109,7 @@ PY
 - E04の `networks.npz` に候補点・辺・伝導度と40切断×4指標、E07に規格化圧力161時刻×7×7、E08にDOI単位の判定・アクセス段階・理由を保存。[科学図3点](results/figures/)
 - 論文本文・動画・ワークブックはGit配布に含めていない。外部入力のありか・SHA-256・ライセンスは[文献カード](notes/)に記録した。
 
-## 次に判別力のある観測
+## 第2回実施時の次の観測
 
 1. H03のくびれを、時間分解した実測速度から固定流量で求める。圧力・渦度・粒子のどれを同じ流れに割り当てられるかを確認する。
 2. H05・H08では、閉路の有無を独立に操作した水路の圧力応答、または損傷前後の植物成長を、測定前に予測できる候補式と対にする。今回のE07の参照場で再調整して成功例を増やさない。

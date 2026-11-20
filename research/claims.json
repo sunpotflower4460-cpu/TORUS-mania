@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "registered_experiments_and_scoped_validation",
+  "stage": "scoped_energy_and_geometric_principles",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -12,7 +12,11 @@
     "E05",
     "E06",
     "E07",
-    "E08"
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -21,7 +25,8 @@
     "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。",
-    "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。"
+    "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
+    "published_measurement_reanalyses": "公表図から独自に読取り・比較した研究単位。E10のVinitskiy、Le、Kumar、Ryu。論文内の複数図は1件。元時系列・生データの再解析とは別。"
   },
   "claims": [
     {
@@ -323,12 +328,16 @@
       ],
       "planned_experiments": [
         "E06",
-        "E07"
+        "E07",
+        "E09",
+        "E10",
+        "E11",
+        "E12"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "共有する線形拡散則の小信号予測が合成水路で成立。渦や分岐の発達を共通に生成する非線形則は未定義。E07の独立実測対象は0件。",
+      "evidence_role": "閉経路で共通のエネルギー原理が成立（H13）。局在する周方向成分が輪になる幾何条件を流体と光に適用（H14）。植物・渦・波を一つの発展方程式で予測する全体の命題は未決。",
       "independently_reproduced": false,
       "results": [
         {
@@ -342,18 +351,41 @@
           "role": "sealed_synthetic_holdout",
           "path": "research/results/E07/summary.json",
           "finding": "1 kPaで実接続M1と周期接続必須M2の規格化RMSEは0.000441と0.017534。50 kPaではM1の半減時間0.532 s、参照0.273 s。"
+        },
+        {
+          "experiment_id": "E09",
+          "role": "conditional_common_energy",
+          "path": "research/results/E09/summary.json",
+          "finding": "殻の循環自由度を切断で2→1→0と変え、流体と磁場の最小エネルギーの共通幾何係数を導出。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "shared_geometric_prediction",
+          "path": "research/results/E12/light/summary.json",
+          "finding": "別設定のパルス24/24、円形噴流16/16で断面からの形の予測が三次元判定と一致。"
         }
       ],
-      "next_action": "対辺の早期応答を独立測定する水路に転移し、成長・移流も共有できる候補には新たな介入を事前予測させる。",
+      "next_action": "形に加え、実測のエネルギー移動と介入応答を予測する共通生成モデルを比較する。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
-        "research/notes/E07_hydraulic_filter.md"
+        "research/notes/E07_hydraulic_filter.md",
+        "research/notes/Cantarella_topology_energy.md",
+        "research/notes/E10_energy_observations.md",
+        "research/notes/E11_toroidal_light.md"
       ],
       "tested_subclaims": [
         {
           "statement": "小信号の合成水路で、二方向周期接続を必須としたM2が実接続のM1より全場をよく予測する。",
           "status": "not_supported_in_test"
+        },
+        {
+          "statement": "同じ閉領域で、調和的な流体速度と静磁場に同じ二次エネルギー原理が適用できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "軸から分離した局在断面が回転対称な方位渦度と方位電場でトーラス状領域を作る。",
+          "status": "supported_within_scope"
         }
       ]
     },
@@ -368,10 +400,12 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E08"
+        "E08",
+        "E09",
+        "E11"
       ],
       "evidence_urls": [],
-      "evidence_role": "端子間定常輸送に閉路が必須という限定命題は木の対照で不支持。実空間・状態空間・別尺度を一括した必要性は判定しない。",
+      "evidence_role": "端子間定常輸送に閉路が必須という限定命題は木の対照で不支持。実空間・状態空間・別尺度を一括した必要性は判定しない。 E11で渦度が輪を形成しても運動エネルギーの高密度域は軸付近に集中した。",
       "independently_reproduced": false,
       "results": [
         {
@@ -385,6 +419,12 @@
           "role": "scope_audit",
           "path": "research/results/E08/summary.json",
           "finding": "採択資料から必要性を独立に示した件数は0。モデル内の仮定や未判定を必要性の証拠に数えていない。"
+        },
+        {
+          "experiment_id": "E11",
+          "role": "counterexample",
+          "path": "research/results/E11/fluid/summary.json",
+          "finding": "両格子で渦度の輪候補9時刻、運動エネルギーの輪候補0時刻。"
         }
       ],
       "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
@@ -392,6 +432,10 @@
       "tested_subclaims": [
         {
           "statement": "E04の無損傷の網で全需要を満たすためにはグラフ閉路が必要である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "登録の円形噴流で、渦度と運動エネルギーの0.35等値領域が常に同時に輪候補になる。",
           "status": "not_supported_in_test"
         }
       ]
@@ -494,6 +538,115 @@
         "research/notes/S001_rotation.md",
         "research/notes/S002_surface.md"
       ]
+    },
+    {
+      "id": "H13",
+      "statement": "独立な閉経路が、流体と静磁場に蓄えられる循環の自由度と最小エネルギーを決める。",
+      "status": "supported_within_scope",
+      "scope": "境界に接する発散なし・無回転の調和場と、均一密度または均一透磁率。指定の貫通流束に対するエネルギー最小値。充実トーラスで1自由度、殻で2、対応する閉経路の切断で自由度が消える。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E09",
+        "E10",
+        "E11"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1080/00029890.2002.11919870",
+        "https://doi.org/10.1088/1361-6587/ad0d87",
+        "https://doi.org/10.1134/S1063778821120024",
+        "https://doi.org/10.1103/PhysRevLett.99.260401",
+        "https://doi.org/10.1038/micronano.2017.82",
+        "https://doi.org/10.1088/1367-2630/18/2/025001"
+      ],
+      "evidence_role": "調和場の変分原理と閉形式、3格子の切断介入を照合。独立の装置仕様で公表磁場を予測し、超流動で穴の保持と循環の持続の関係を再計算。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E09",
+          "role": "analytic_and_numerical",
+          "path": "research/results/E09/summary.json",
+          "finding": "殻の周方向・断面方向の二次係数0.010425 m、0.126543 m。両方向の切断で両係数0。"
+        },
+        {
+          "experiment_id": "E10",
+          "role": "published_measurement_reanalysis",
+          "path": "research/results/E10/summary.json",
+          "finding": "磁場17点の絶対相対誤差中央値4.88%。Ryuらの低障壁2設定の2秒後持続率中央値10%、高障壁6設定では84%。"
+        },
+        {
+          "experiment_id": "E10",
+          "role": "scope_limit",
+          "path": "research/results/E10/summary.json",
+          "finding": "芯のみのMEMSインダクタンス、写真半径を用いた超流動回転率の中央値誤差57.3%、46.5%。両方とも事前基準に未達。"
+        }
+      ],
+      "next_action": "同じ装置の閉経路を開閉し、圧力・流束・損失を独立測定できるデータでエネルギーの絶対値を比べる。",
+      "literature_notes": [
+        "research/notes/Cantarella_topology_energy.md",
+        "research/notes/E10_energy_observations.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "トロイダルソレノイドの内部磁場の絶対値を別資料の巻数と電流で中央値誤差10%以内に予測する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "芯の理想式で登録したMEMSコイル全体のインダクタンスを中央値相対誤差20%以内に予測する。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "公表写真からの半径と薄輪の式で超流動の回転率を事前精度以内に予測する。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H14",
+      "statement": "軸から離れて局在する周方向成分が、流体と電磁波に共通して輪状の等値領域を作る。",
+      "status": "supported_within_scope",
+      "scope": "滑らかな回転対称場の方位成分で、等値領域の断面が軸を避けた円板になる条件。軸対称に近い円形噴流と真空TEパルスを計算で照合。対象成分と全エネルギー密度を個別に測る。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E11",
+        "E12"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.54.889",
+        "https://doi.org/10.1038/s41566-022-01028-5"
+      ],
+      "evidence_role": "回転による形の数学的対応と、別の設定での三次元判定を照合。電磁波の実測エネルギー流束の生データは未取得。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E11",
+          "role": "local_energy",
+          "path": "research/results/E11/light/summary.json",
+          "finding": "真空TEのq2=20虚部は電磁エネルギー密度にも輪候補。実部はエネルギーの判定が異なる。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "independent_parameter_cases",
+          "path": "research/results/E12/light/summary.json",
+          "finding": "主閾値50%でパルス24/24、陽性16・陰性8。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "independent_parameter_cases",
+          "path": "research/results/E12/circle/summary.json",
+          "finding": "同閾値で弱い・長い円形噴流16/16、陽性・陰性各8。"
+        }
+      ],
+      "next_action": "非対称化の度合いを事前指定し、別方位の断面と実測三次元場を照合する。",
+      "literature_notes": [
+        "research/notes/E11_toroidal_light.md"
+      ]
     }
-  ]
+  ],
+  "published_measurement_reanalyses": 4
 }

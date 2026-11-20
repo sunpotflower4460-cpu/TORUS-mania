@@ -1,5 +1,7 @@
 # 実験計画 E01–E08
 
+続くE09〜E12（エネルギー・公開測定・場の形）は[事前登録](../research/registrations/E09-E11-energy.md)・[追加登録](../research/registrations/E12-meridian-prediction.md)・[第3回報告](12_ENERGY_RESEARCH_REPORT.md)に記録した。
+
 更新日：2026-11-20（日本時間）  
 準備時の実験計画。E01・E02を実行した条件と結果は[第1回研究報告](10_FIRST_RESEARCH_REPORT.md)、E03〜E08の実行結果は[第2回研究報告](11_SECOND_RESEARCH_REPORT.md)、追試手順は[再開メモ](../research/STATUS.md)を参照。
 

@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E08は登録した条件で実行済み。渦輪とくびれの同居、非トーラスの対照、植物データ、分野横断の予測を先に確認できる。[第2回報告](docs/11_SECOND_RESEARCH_REPORT.md)・[現在の判断と再実行コマンド](research/STATUS.md)・[初回の校正](docs/10_FIRST_RESEARCH_REPORT.md)
+E01〜E12は登録した条件で実行済み。流体と静磁場に共通する閉経路のエネルギー原理、噴流と光に共通する輪の形、公開測定での成功と不一致を報告した。[第3回報告](docs/12_ENERGY_RESEARCH_REPORT.md)・[渦・分岐を扱った第2回](docs/11_SECOND_RESEARCH_REPORT.md)・[再実行と現在の判断](research/STATUS.md)
 
 ## 準備時点での最初の作業
 
