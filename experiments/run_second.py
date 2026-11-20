@@ -20,6 +20,7 @@ from experiments.E06_jet.run import CASES
 def commands(out, workbook):
     yield "E03", "E03_vortex.run", ["--out", out/"E03"]
     yield "E03/cylinder", "E03_vortex.axisymmetric", ["--out", out/"E03/cylinder"]
+    yield "E03/observers", "E03_vortex.observers", ["--out", out/"E03/observers"]
     yield "E04", "E04_transport.run", ["--out", out/"E04"]
     yield "E04/plant", "E04_transport.plant_data", [workbook,"--out",out/"E04/plant"]
     for name in ("phases", *PAIRS):

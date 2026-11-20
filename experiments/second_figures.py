@@ -47,6 +47,26 @@ def flow(root, out):
     plt.close(fig)
 
 
+def necks(root, out):
+    profiles = read(root,"E03/observers")["profiles"]
+    fig, axes = plt.subplots(1, 3, figsize=(8.1, 4.1), layout="constrained", sharex=True, sharey=True)
+    for ax, (key, label, color) in zip(axes, [("ring_48_96","Viscous ring · 0.75 s",BLUE),
+                                               ("potential","Irrotational flow",GOLD),
+                                               ("uniform","Uniform flow","#646c72")]):
+        r = np.array(profiles[key]["radius_m"])
+        z = profiles[key]["offset_m"]
+        ax.fill_betweenx(z, -r, r, color=color, alpha=.16)
+        ax.plot(r, z, color=color)
+        ax.plot(-r, z, color=color)
+        ax.axvline(0, lw=.6, ls=":", color=GREY)
+        ax.set(title=label, xlabel="Transverse position (m)", xlim=(-.24,.24), ylim=(-.75,.75),
+               xticks=[-.2,0,.2], yticks=[-.75,-.5,-.25,0,.25,.5,.75])
+    axes[0].set_ylabel("Axial offset from centre (m)")
+    fig.suptitle("Radius enclosing the same upward flux (0.10 m³/s)", weight="bold")
+    fig.savefig(out/"flux_sections.png", dpi=170)
+    plt.close(fig)
+
+
 def comparisons(root, out):
     fig, axes = plt.subplots(2, 2, figsize=(10, 7.2), layout="constrained")
     ax = axes[0,0]
@@ -105,6 +125,7 @@ def run(root, out):
                          "font.size": 9, "axes.titlesize": 10, "axes.titleweight": "bold"})
     flow(root, out)
     comparisons(root, out)
+    necks(root, out)
 
 
 if __name__ == "__main__":
