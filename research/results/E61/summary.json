@@ -1,0 +1,98 @@
+{
+  "experiment": "E61",
+  "doi": "10.7554/eLife.89948.3",
+  "evidence": "primary figures and reported group summaries from chick gastrulation interventions",
+  "comparisons": [
+    {
+      "figure": "1 and supplement 1",
+      "groups": [
+        "GFP control",
+        "dominant-negative ΔDEP-GFP"
+      ],
+      "live_flow_n_each": 5,
+      "stained_primitive_streak_n_at_least_each": 4,
+      "comparison": "Bilateral rotational flows persisted in embryos with a shorter, wider streak."
+    },
+    {
+      "figure": "2",
+      "groups": [
+        "sham",
+        "mitotic arrest"
+      ],
+      "live_flow_n_each": 4,
+      "stained_primitive_streak_n_at_least_each": 4,
+      "comparison": "Bilateral flows began in both groups. Streak extension was diminished and the flow pattern ended earlier under arrest."
+    },
+    {
+      "figure": "3",
+      "groups": [
+        "control-GFP/COS implant",
+        "ectopic Vg1/COS implant"
+      ],
+      "live_flow_n_each": 4,
+      "comparison": "Initial flows appeared at both axes in Vg1/COS embryos. Ectopic reverse rotations became dominant before original streak extension, which still proceeded along the authentic midline.",
+      "pairing": "Original streak extension and disrupted authentic flow were observed together in the reported four treated embryos."
+    },
+    {
+      "figure": "4",
+      "groups": [
+        "control-GFP/COS under mitotic arrest",
+        "Vg1/COS under mitotic arrest"
+      ],
+      "live_flow_n_each": 3,
+      "stained_primitive_streak_n_each": 3,
+      "comparison": "Predominant rotations at the ectopic site persisted despite diminished original and ectopic streaks. Controls initially rotated along the authentic axis and the pattern weakened."
+    }
+  ],
+  "spacing_micrometers_figure_1_supplement_1i": {
+    "n_per_group": 4,
+    "control_mean_and_printed_spread": [
+      860.2,
+      86.2
+    ],
+    "intervention_mean_and_printed_spread": [
+      1008.4,
+      183.8
+    ],
+    "intervention_minus_control": 148.19999999999993,
+    "reported_p": 0.026,
+    "student_p_if_spreads_are_sample_sd": 0.19457630005839424,
+    "welch_p_if_spreads_are_sample_sd": 0.2138657661095775,
+    "student_p_range_from_rounding_if_sd": [
+      0.19418999048194277,
+      0.19496307276953304
+    ],
+    "paired_p_lower_bound_if_sd_without_rounding": 0.05600503802847891
+  },
+  "flow_duration_hours_figure_2": {
+    "n_per_group": 4,
+    "control_mean_and_printed_spread": [
+      6.5,
+      1.2
+    ],
+    "intervention_mean_and_printed_spread": [
+      2.2,
+      1.2
+    ],
+    "intervention_minus_control": -4.3,
+    "reported_p": 0.0038,
+    "student_p_if_spreads_are_sample_sd": 0.002293412410289238,
+    "welch_p_if_spreads_are_sample_sd": 0.002293412410289238,
+    "student_p_range_from_rounding_if_sd": [
+      0.0016468520133566553,
+      0.003153009904745285
+    ],
+    "paired_p_lower_bound_if_sd_without_rounding": null
+  },
+  "scope": "Distance panel displays bars and error bars only. Both t tests assume the printed spreads are SD. Separate assay cohorts are not joined. These are epiblast surface flows; neither a closed 3D trajectory nor a mechanical energy flux is identified.",
+  "checks": {
+    "spacing_printed_n_and_means": true,
+    "supplement_contains_reported_distance_criterion": true,
+    "reported_flows_last_less_time_after_mitotic_arrest": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E61_vortices_and_axis/run.py": "f97ef6b5e4845ff02bbac47e35060cc0ccb235cf39a1c39629ff533b49f20b8e",
+    "experiments/embryo_history_sources.py": "649b52f51df30117a22f78ae17aa49e5ca60ccb3d48bb39c6177df3d5a1ddc0b"
+  }
+}

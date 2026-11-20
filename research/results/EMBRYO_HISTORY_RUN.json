@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "experiment": "E61",
+      "completed": true,
+      "wall_s": 0.02
+    },
+    {
+      "experiment": "E62",
+      "completed": true,
+      "wall_s": 68.006
+    },
+    {
+      "experiment": "E63",
+      "completed": true,
+      "wall_s": 0.169
+    },
+    {
+      "experiment": "E64",
+      "completed": true,
+      "wall_s": 0.058
+    },
+    {
+      "experiment": "E65",
+      "completed": true,
+      "wall_s": 11.085
+    },
+    {
+      "experiment": "E66",
+      "completed": true,
+      "wall_s": 1.34
+    },
+    {
+      "experiment": "figures",
+      "completed": true,
+      "wall_s": 0.899
+    }
+  ]
+}
