@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "root_reflux_growth_and_heldout_priming",
+  "stage": "root_priming_visibility_and_stage_progression",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -33,7 +33,10 @@
     "E26",
     "E27",
     "E28",
-    "E29"
+    "E29",
+    "E30",
+    "E31",
+    "E32"
   ],
   "independent_external_data_reanalyses": 1,
   "evidence_fields": {
@@ -43,7 +46,7 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。"
   },
   "claims": [
@@ -225,7 +228,10 @@
         "E25",
         "E27",
         "E28",
-        "E29"
+        "E29",
+        "E30",
+        "E31",
+        "E32"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
@@ -248,9 +254,11 @@
         "https://doi.org/10.1101/gad.276964.115",
         "https://doi.org/10.1126/science.1245871",
         "https://doi.org/10.1242/dev.181669",
-        "https://doi.org/10.1016/j.devcel.2021.07.005"
+        "https://doi.org/10.1016/j.devcel.2021.07.005",
+        "https://doi.org/10.1126/science.abb7250",
+        "https://doi.org/10.1126/sciadv.abd4722"
       ],
-      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。",
+      "evidence_role": "方向のあるオーキシン輸送と、周鞘に面する内皮のPIN3が、側根形成と初回分裂の段階に関わる。内皮の除去で通常とは異なる周鞘の分裂が生じる。内皮への独立供給や形状変化でも一部の観測を説明できる。自然の根で同じ分子が局所または根端の戻り道を一周するかは未決。 原形質連絡を通る拡散を追加したモデルは根端の蛍光分布に適合し、戻りに整合する。成長と待ち時間から、側根準備の頻度・間隔を元の図の未使用範囲で予測した。木全体の生成への外挿は未決。 別の研究で小胞輸送に関わる介入により予定部位の密度が変わり、始原細胞マーカーと初回分裂後の器官が異なる反応を示した。",
       "independently_reproduced": false,
       "results": [
         {
@@ -318,9 +326,27 @@
           "role": "sealed_higher_production_region_in_public_observations",
           "path": "research/results/E29/summary.json",
           "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
+        },
+        {
+          "experiment_id": "E30",
+          "role": "vesicle_trafficking_perturbation_and_suppression",
+          "path": "research/results/E30/summary.json",
+          "finding": "Fig. 3Cで予定部位の中央値は野生型5.92、gnom184は約0、抑制変異を加えた株は3.08部位/cm。BFAを加えた野生型は約0、AGD3変異2系統は2.45・3.79。"
+        },
+        {
+          "experiment_id": "E31",
+          "role": "founder_marker_and_post_initiation_observations",
+          "path": "research/results/E31/summary.json",
+          "finding": "Fig. 1Eで変異型IAA18の誘導により始原細胞マーカー陽性細胞の平均は19→32、高濃度で約765。別の試験のS2Cでは吸水12日後の原基と側根が野生型28.9、変異株ほぼ0個/株。"
+        },
+        {
+          "experiment_id": "E32",
+          "role": "counterexample",
+          "path": "research/results/E32/summary.json",
+          "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
         }
       ],
-      "next_action": "根の細胞生産率と初回輸送を揃え、標識が外層を経て戻る量が次の準備シグナルと側根の配置をどう変えるかを測る。独立した補充と局所の内皮の作用も比較する。",
+      "next_action": "同じ根で成長率を照合し、弱いピークも含む準備シグナル、予定部位の保持、初回分裂、側根出現を測る。外層を経た同じ標識の再到達と各段階に対する効果を局所の独立した補充と比較する。",
       "literature_notes": [
         "research/notes/S009_transport.md",
         "research/notes/Katifori_transport_networks.md",
@@ -331,7 +357,8 @@
         "research/notes/E21_polar_auxin_and_branching.md",
         "research/notes/E23_pin2_nitrate.md",
         "research/notes/E24_E26_root_tissue_evidence.md",
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E30_E32_root_clock_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -360,6 +387,14 @@
         },
         {
           "statement": "内皮でのPIN3局在と発現による発生の回復のみで、周鞘に由来する同じ物質の再流入を推定する。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "小胞輸送に関わるGNOMとAGD3の状態が、側根予定部位の密度に影響する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "側根予定部位の時刻と位置だけから、準備信号の周期が変化したかを識別できる。",
           "status": "not_identifiable"
         }
       ]
@@ -502,12 +537,15 @@
         "E26",
         "E27",
         "E28",
-        "E29"
+        "E29",
+        "E30",
+        "E31",
+        "E32"
       ],
       "evidence_urls": [
         "https://doi.org/10.1186/s13036-018-0126-3"
       ],
-      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。",
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。 培地の水素イオンの化学ポテンシャルの先行する操作と根の伸長変化を公表介入で支持。エネルギーの閉経路の計測や、他分野と同じ生成則の検証は未実施。 根の準備シグナルでは細胞生産率の未使用範囲への予測を比較した。成長依存の独立供給でも同じ頻度・間隔を作れるため、実空間の閉じ方の実測と分野を越える新しい予測が必要。 予定部位の時系列は、弱いピークのある一定周期と、変動する遅い周期でも一致し得る。",
       "independently_reproduced": false,
       "results": [
         {
@@ -581,9 +619,15 @@
           "role": "sealed_higher_production_region_in_public_observations",
           "path": "research/results/E29/summary.json",
           "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
+        },
+        {
+          "experiment_id": "E32",
+          "role": "counterexample",
+          "path": "research/results/E32/summary.json",
+          "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
         }
       ],
-      "next_action": "閉路と開路が異なる標識再到達の予測を、実測の細胞生産率・局所供給・後の分岐へつなぐ。別分野へ同じ力学とエネルギーの式を適用する予測も独立データで評価する。",
+      "next_action": "閉路と開路が異なる標識再到達の予測を、同じ根での細胞生産率・弱いピークを含む準備信号・後の分岐へつなぐ。別分野へ同じ力学とエネルギーの式を適用する予測も独立データで評価する。",
       "literature_notes": [
         "research/notes/Katifori_transport_networks.md",
         "research/notes/S005_magnetic_field.md",
@@ -599,7 +643,8 @@
         "research/notes/E21_polar_auxin_and_branching.md",
         "research/notes/E23_pin2_nitrate.md",
         "research/notes/E24_E26_root_tissue_evidence.md",
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E30_E32_root_clock_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1577,12 +1622,15 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E29"
+        "E29",
+        "E30",
+        "E31",
+        "E32"
       ],
       "evidence_urls": [
         "https://doi.org/10.1016/j.devcel.2021.07.005"
       ],
-      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。",
+      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。 E30・E31で確認した別の介入には同じ根での細胞生産率と周期がそろわず、数値予測の外部検証は保留。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1590,11 +1638,18 @@
           "role": "sealed_higher_production_region_in_public_observations",
           "path": "research/results/E29/summary.json",
           "finding": "低生産側で調整した二待ち時間式の対数RMSEは高生産側の頻度0.336、間隔0.375。固定周期は0.380・0.474、固定間隔は0.391・0.410。"
+        },
+        {
+          "experiment_id": "E32",
+          "role": "counterexample",
+          "path": "research/results/E32/summary.json",
+          "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
         }
       ],
-      "next_action": "別の培養の個体データで、輸送の時間と細胞生産率の両方を生体で測り、処置を丸ごと保留して予測を比べる。",
+      "next_action": "別の培養で同じ根の輸送時間、細胞生産率、弱いピークを含む信号時系列を測る。予定部位の保持と発生を記録し、処置を丸ごと保留して準備信号の予測を比べる。",
       "literature_notes": [
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E30_E32_root_clock_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -1604,10 +1659,132 @@
         {
           "statement": "予測結果だけで一周する経路と独立供給の経路を特定できる。",
           "status": "not_identifiable"
+        },
+        {
+          "statement": "別の試料で、輸送と成長の二待ち時間式が周期を再調整なしで予測できる。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H30",
+      "statement": "小胞輸送に関わるGNOMとAGD3の状態を変えると、側根予定部位の密度が変わる",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナのWachsmanらFig. 3C。CLE44発光の予定部位を主根長で割った密度。8群の掲載図の中央値・四分位。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E30"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1126/science.abb7250"
+      ],
+      "evidence_role": "野生型、変異株、抑制変異を重ねた株と薬剤処置を公開図で比較。細胞壁のペクチンも変わり得る。特定の帰路の流束と本来の周期は図から決まらない。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E30",
+          "role": "vesicle_trafficking_perturbation_and_suppression",
+          "path": "research/results/E30/summary.json",
+          "finding": "Fig. 3Cで予定部位の中央値は野生型5.92、gnom184は約0、抑制変異を加えた株は3.08部位/cm。BFAを加えた野生型は約0、AGD3変異2系統は2.45・3.79。"
+        }
+      ],
+      "next_action": "同じ条件の根で成長率・発光の振幅と周期・部位の保持を測り、外層から中心への輸送を選択的に変える条件と比べる。",
+      "literature_notes": [
+        "research/notes/E30_E32_root_clock_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "抑制変異を重ねるとGNOM変異株の予定部位密度が部分的に回復する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "図の処置の効果が外側から中心へのオーキシンの戻りの変化で媒介される。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H31",
+      "statement": "始原細胞マーカーが増えても、側根の形成まで進む器官は増えない条件がある",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナのPerianez-RodriguezらFig. 1EとS2。変異型IAA18の誘導の始原細胞数と、別の試験の初回分裂以降の器官数。同じ変異型を調べた複数の試験。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E31"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1126/sciadv.abd4722"
+      ],
+      "evidence_role": "Fig. 1Eは誘導72時間後のpSKP2Bマーカー陽性細胞。S2Cは形態とpSCR・pWOX5を使った原基と側根の合計。初回分裂前の停止の像も公開されている。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E31",
+          "role": "founder_marker_and_post_initiation_observations",
+          "path": "research/results/E31/summary.json",
+          "finding": "Fig. 1Eで変異型IAA18の誘導により始原細胞マーカー陽性細胞の平均は19→32、高濃度で約765。別の試験のS2Cでは吸水12日後の原基と側根が野生型28.9、変異株ほぼ0個/株。"
+        }
+      ],
+      "next_action": "同じ根・同じ部位の準備シグナル、始原細胞、初回分裂と側根の出現を時系列でそろえる。",
+      "literature_notes": [
+        "research/notes/E30_E32_root_clock_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "異なる試験の陽性細胞数と器官数だけで、同じ細胞が分岐まで進む割合を計算できる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "細胞ごとに自己持続する振動が根全体の側根配置を決める。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H32",
+      "statement": "同じ周期で弱い信号が混じる場合と、周期が変動して間隔が延びる場合に、同じ側根予定部位の時系列が生じ得る",
+      "status": "supported_within_scope",
+      "scope": "成長率を一定とした模型。準備信号の予定部位への残り方を各周期で独立とし、対照の信号間隔の分布を同じ幾何分布で与える。E29は基準周期のみ。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E32"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.cub.2015.03.046",
+        "https://doi.org/10.1093/plcell/koag213"
+      ],
+      "evidence_role": "部位の間隔の確率分布と一つの実現の全時刻が一致する。弱いピークを測れる条件を、候補時刻が既知で正規ノイズを加える仮定で数値化した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E32",
+          "role": "counterexample",
+          "path": "research/results/E32/summary.json",
+          "finding": "1.83時間の周期を保ち、半数が予定部位として残る模型では部位間隔の平均3.66時間。周期が変動して長くなる対照と、全時刻・位置を一致させられる。"
+        }
+      ],
+      "next_action": "生体で弱いピークを含む発光の信号と背景を較正し、時系列と同じ根での側根予定部位の保持を測定する。",
+      "literature_notes": [
+        "research/notes/E30_E32_root_clock_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "一定の遅い周期だけを対照にすると、残った部位の間隔の分散で候補を区別できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "候補時刻が既知で弱い信号0.35の場合、感度80%以上と誤検出5%以下を両立できる正規ノイズの標準偏差は約0.141以下。",
+          "status": "supported_within_scope"
         }
       ]
     }
   ],
-  "published_measurement_reanalyses": 16,
+  "published_measurement_reanalyses": 18,
   "archived_experimental_figure_array_reanalyses": 3
 }

@@ -1,6 +1,35 @@
-# 再開メモ　根端の戻り輸送・成長・周期のE27〜E29まで実行済み
+# 再開メモ　側根の準備シグナルと発生段階のE30〜E32まで実行済み
 
-更新2026-11-20 UTC。E24〜E26の `54fbc6f` を継承。原形質連絡を含む根端モデル（H27）、戻りと成長の待ち時間を合わせたモデル（H28）、高い細胞生産率への数値予測（H29）を検討した。局所の内皮と周鞘の作用は前回の結果。根端の戻りと同一の空間経路とは扱わない。[第9回報告](../docs/18_REFLUX_GROWTH_REPORT.md)・[全29主張の台帳](claims.json)
+更新2026-11-20 UTC。E27〜E29の `b66b4bf` を継承した。別の公開生体試験で、小胞輸送の介入と側根予定部位（H30）、オーキシン応答と初回分裂以降の進行（H31）を確認した。模型では、同じ周期の一部が弱まる場合と、周期が変動して長くなる場合で、同じ部位の配列が生じた（H32）。[第10回報告](../docs/19_ROOT_CLOCK_REPORT.md)・[全32主張の台帳](claims.json)
+
+## 第10回の結果と追試
+
+| 実験 | 主な結果 |
+|---|---|
+| [E30](results/E30/summary.json) | WachsmanらFig. 3Cの予定部位は主根1 cmあたり中央値5.92→約0→3.08（野生型、gnom184、抑制変異を加えた株）。図の中央値の差の読取り幅は最大±0.47。 |
+| [E31](results/E31/summary.json) | 変異型IAA18の誘導により始原細胞マーカー陽性数が対照約19、低用量約32、高用量約765。別の試験の吸水12日後の原基・側根は野生型約29、変異株ほぼ0。 |
+| [E32](results/E32/summary.json) | 同じ約1.83時間の周期で半数だけが予定部位として残ると、部位の間隔は平均3.66時間。変動する遅い対照と全時刻が一致する。候補時刻が既知で弱い振幅0.35の場合、感度80%以上かつ誤検出5%以下にはノイズの標準偏差が約0.141以下。 |
+
+最初の登録 `6f571d7` と、図を開いた後の読取り単位・試験の補足を区別して記録した。実装と結果の版は `b16bef8`。Gitから展開したコードで約4.9秒で計算し、数値と図5点がバイト単位で一致。今回の検証9項目、既存テスト22件、過去のハッシュ155項目を確認した。[実行ログ](results/ROOT_CLOCK_RUN.json)・[SHA-256](results/ROOT_CLOCK_SHA256SUMS)
+
+[取得記録](access/2026-11-20-root-clock.md)の3ファイルと、既刊図の高生産側を読む前に固定した[予測ファイル](results/E29/sealed_predictions.json)を使う。再取得ではコードが3原本のSHA-256を照合する。環境を変えた場合は数値の条件と誤差も確認する。
+
+```bash
+python3 -m pip install -r experiments/requirements.txt -r experiments/E29_growth_holdout/requirements.txt
+mkdir -p data/raw/root_clock
+curl --fail --location https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84bd/7758939/40e6006dffcc/nihms-1649559-f0003.jpg \
+  -o data/raw/root_clock/wachsman_f3.jpg
+torus_pmc='https://pmc-oa-opendata.s3.amazonaws.com/PMC7775764.1'
+curl --fail --location "$torus_pmc/PMC7775764.1.pdf" -o data/raw/root_clock/perianez_article.pdf
+curl --fail --location "$torus_pmc/abd4722_SM.pdf" -o data/raw/root_clock/perianez_sm.pdf
+run_dir=$(mktemp -d)
+python3 -m experiments.run_root_clock --out "$run_dir/results" --log "$run_dir/run.json"
+sed "s|research/results/|$run_dir/results/|" research/results/ROOT_CLOCK_SHA256SUMS | sha256sum -c -
+```
+
+次は同じ根の伸長と成熟皮層細胞長を測って生産率を照合し、弱いピークも含む信号の時系列と、予定部位・初回分裂・側根の対応を追う。戻り輸送の候補を調べるには、前向きの輸送と成長をそろえながら、外層を通った標識が中心へ戻る時刻を測る。独立した局所供給と、信号の振幅やその後の発生だけが変わる場合を対照にする。E30・E31からは同じ根の生産率と周期を組にして得られず、E29の係数の外部検証は未実施。[判別条件](../docs/19_ROOT_CLOCK_REPORT.md#戻り輸送と分岐を結ぶための観測)
+
+第9回では原形質連絡を含む根端モデル（H27）、戻りと成長の待ち時間を合わせたモデル（H28）、高い細胞生産率への数値予測（H29）を検討した。局所の内皮と周鞘の作用と、根端の戻りは異なる空間の候補として記録する。[第9回報告](../docs/18_REFLUX_GROWTH_REPORT.md)
 
 ## 第9回の結果と追試
 
