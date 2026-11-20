@@ -1,0 +1,221 @@
+{
+  "dataset_doi": "10.5281/zenodo.18380405",
+  "article_doi": "10.1073/pnas.2526858123",
+  "input_sha256": {
+    "Fig1B_Energy_spreading.h5": "b4fc9c06346060edd1c076984311be04caffe23130acb36e458270f0dfcf65c9",
+    "Fig4B_energy_distribution.h5": "0960a761ca108f85bb48516baefecb103eeb80693888d6325dcac2f00e122791",
+    "Fig5A_kymograph.h5": "3748b25a1e33e05024354b84b62443289c0717d993f0ceae48414ab3a8291e13"
+  },
+  "h5py": "3.15.1",
+  "plane_snapshots": {
+    "shape_y_x": [
+      288,
+      512
+    ],
+    "valid_common_cells": 128665,
+    "centroid_xy_mm": [
+      168.6251970023173,
+      88.53373329724087
+    ],
+    "spacing_xy_mm": [
+      0.6624000000000001,
+      0.6624000000000001
+    ],
+    "timing": "Archive key order only. HDF5 has no time or experimental-group attribute.",
+    "snapshots": [
+      {
+        "array": "e_t_560_20",
+        "second_moment_mm2": 5235.544556432929,
+        "median_energy_radius_mm": 56.28294648787258,
+        "relative_integrated_plane_signal": 1.0
+      },
+      {
+        "array": "e_t_600_20",
+        "second_moment_mm2": 6187.81397499158,
+        "median_energy_radius_mm": 64.2588709022685,
+        "relative_integrated_plane_signal": 0.6756431933823639
+      },
+      {
+        "array": "e_t_700_20",
+        "second_moment_mm2": 7706.780353395946,
+        "median_energy_radius_mm": 76.52848900460056,
+        "relative_integrated_plane_signal": 0.3345351756867952
+      }
+    ]
+  },
+  "radial_spreading": {
+    "ensemble_size": 10,
+    "columns": [
+      "time_s",
+      "second_moment_mm2",
+      "median_energy_radius_mm",
+      "fixed_fit_mm2",
+      "linear_fit_mm2"
+    ],
+    "domains": {
+      "full": {
+        "outer_edge_mm": 173.8191272916165,
+        "time_range_s": [
+          0.6000000000000001,
+          5.5
+        ],
+        "second_moment_mm2": [
+          5589.254757681875,
+          12204.798012873855
+        ],
+        "median_energy_radius_mm": [
+          51.758432169657546,
+          106.31730563902987
+        ],
+        "train_points": 491,
+        "holdout_points": 490,
+        "split_s": 3.05,
+        "linear_slope_mm2_s": 2272.9513958089715,
+        "rmse_holdout_mm2": {
+          "fixed": 2624.6155079215346,
+          "linear": 3240.3109862903166
+        },
+        "uniform_disk_calibration_error_mm": 0.0,
+        "uniform_disk_calibration_error_mm2": 1.8189894035458565e-12
+      },
+      "cut150": {
+        "outer_edge_mm": 150.0,
+        "time_range_s": [
+          0.6000000000000001,
+          5.5
+        ],
+        "second_moment_mm2": [
+          4370.330196061956,
+          10076.38756437737
+        ],
+        "median_energy_radius_mm": [
+          49.50720309592487,
+          97.01604218578422
+        ],
+        "train_points": 491,
+        "holdout_points": 490,
+        "split_s": 3.05,
+        "linear_slope_mm2_s": 1918.4991020860648,
+        "rmse_holdout_mm2": {
+          "fixed": 2385.3568289245272,
+          "linear": 2565.536747299941
+        },
+        "uniform_disk_calibration_error_mm": 1.4210854715202004e-14,
+        "uniform_disk_calibration_error_mm2": 0.0
+      }
+    }
+  },
+  "energy_partition": {
+    "columns": [
+      "time_s",
+      "mean_fraction",
+      "fluctuating_fraction",
+      "signed_cross_fraction"
+    ],
+    "averaging_bounds_s": [
+      0.05,
+      7.0710678118654755,
+      1000.0
+    ],
+    "groups": {
+      "blob": {
+        "ensemble_size": 21,
+        "time_rows": 2280,
+        "duplicate_time_rows": 0,
+        "time_span_s": [
+          0.005027072255339919,
+          1009.0421381900084
+        ],
+        "largest_relative_energy_partition_residual": 2.220446049250313e-16,
+        "largest_fraction_difference_vs_figure_columns": [
+          0.0,
+          0.0,
+          0.9021079343439129
+        ],
+        "archive_cross_fraction_duplicates_turbulent_fraction": true,
+        "signed_cross_fraction_limits": [
+          -0.1368357155074427,
+          0.2457470409863707
+        ],
+        "coherent_fluctuating_cross_logtime_first_half": [
+          0.22501947010691017,
+          0.7061583447147455,
+          0.06882218517834529
+        ],
+        "coherent_fluctuating_cross_logtime_second_half": [
+          0.5023345828961908,
+          0.5468389111107689,
+          -0.049173494006960444
+        ]
+      },
+      "dog": {
+        "ensemble_size": 10,
+        "time_rows": 2280,
+        "duplicate_time_rows": 0,
+        "time_span_s": [
+          0.0024138197221096553,
+          1051.4433110486711
+        ],
+        "largest_relative_energy_partition_residual": 2.220446049250313e-16,
+        "largest_fraction_difference_vs_figure_columns": [
+          0.0,
+          0.0,
+          0.8441185201371432
+        ],
+        "archive_cross_fraction_duplicates_turbulent_fraction": true,
+        "signed_cross_fraction_limits": [
+          -0.27194054087059366,
+          0.18005015155802773
+        ],
+        "coherent_fluctuating_cross_logtime_first_half": [
+          0.5334118784692616,
+          0.4650053290359263,
+          0.0015827924948113234
+        ],
+        "coherent_fluctuating_cross_logtime_second_half": [
+          0.45679436066859447,
+          0.5438239426036718,
+          -0.0006183032722665076
+        ]
+      },
+      "sog": {
+        "ensemble_size": 10,
+        "time_rows": 2280,
+        "duplicate_time_rows": 0,
+        "time_span_s": [
+          0.01,
+          1050.4434338007118
+        ],
+        "largest_relative_energy_partition_residual": 2.220446049250313e-16,
+        "largest_fraction_difference_vs_figure_columns": [
+          0.0,
+          0.0,
+          0.7981337827996655
+        ],
+        "archive_cross_fraction_duplicates_turbulent_fraction": true,
+        "signed_cross_fraction_limits": [
+          -1.2080357877190244e-05,
+          6.809146455626262e-06
+        ],
+        "coherent_fluctuating_cross_logtime_first_half": [
+          0.8222263594858262,
+          0.17777562589735865,
+          -1.985383185886073e-06
+        ],
+        "coherent_fluctuating_cross_logtime_second_half": [
+          0.41113791711365216,
+          0.5888622745668781,
+          -1.9168052993629235e-07
+        ]
+      }
+    }
+  },
+  "checks": {
+    "energy_partition_closes_with_signed_terms": true,
+    "uniform_disk_radial_quadrature": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E15_collision_data/run.py": "55ac732395b33c0f57bd4a0ffea0650cba0327c6bcbb7f99df08292edb72d462"
+  }
+}

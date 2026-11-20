@@ -1,0 +1,234 @@
+{
+  "experiment": "E01",
+  "pilot": true,
+  "duration_s": 2.0,
+  "r_m": 1.0,
+  "base_frequency_hz": 1.0,
+  "seed": null,
+  "runs": [
+    {
+      "setting": "base",
+      "rate_hz": 64,
+      "phi0_rad": 0.2,
+      "theta0_rad": 0.35,
+      "R_m": 2.0,
+      "motions": {
+        "circle": {
+          "y_vs_uniform_sine_max_m": 9.992007221626409e-16,
+          "y_vs_uniform_sine_rmse_m": 5.351030131206745e-16,
+          "y_amplitude_1hz_m": 1.0000000000000007,
+          "y_amplitude_2hz_m": 4.498713138951111e-17,
+          "z_span_m": 0.0,
+          "positive_vy_samples": 65,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              8.08254562088053e-16,
+              9.550499576785472e-16
+            ],
+            "front_xz": [
+              7.771561172376096e-16,
+              5.551115123125783e-16
+            ],
+            "side_yz": [
+              2.220446049250313e-16,
+              7.771561172376096e-16
+            ],
+            "top_xy": [
+              8.08254562088053e-16,
+              9.550499576785472e-16
+            ]
+          }
+        },
+        "helix": {
+          "y_vs_uniform_sine_max_m": 9.992007221626409e-16,
+          "y_vs_uniform_sine_rmse_m": 5.351030131206745e-16,
+          "y_amplitude_1hz_m": 1.0000000000000007,
+          "y_amplitude_2hz_m": 4.498713138951111e-17,
+          "z_span_m": 2.0,
+          "positive_vy_samples": 65,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              1.0,
+              2.0
+            ],
+            "front_xz": [
+              1.0,
+              2.0
+            ],
+            "side_yz": [
+              1.0,
+              2.0
+            ],
+            "top_xy": [
+              8.08254562088053e-16,
+              9.550499576785472e-16
+            ]
+          }
+        },
+        "linear_spring": {
+          "y_vs_uniform_sine_max_m": 7.494005416219807e-16,
+          "y_vs_uniform_sine_rmse_m": 3.411708918745333e-16,
+          "y_amplitude_1hz_m": 1.0,
+          "y_amplitude_2hz_m": 5.039213906045689e-17,
+          "z_span_m": 0.0,
+          "positive_vy_samples": 65,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              2.498001805406602e-16,
+              4.718447854656915e-16
+            ],
+            "front_xz": [
+              0.0,
+              0.0
+            ],
+            "side_yz": [
+              2.498001805406602e-16,
+              4.718447854656915e-16
+            ],
+            "top_xy": [
+              2.498001805406602e-16,
+              4.718447854656915e-16
+            ]
+          }
+        },
+        "variable_circle": {
+          "y_vs_uniform_sine_max_m": 0.38600518115222043,
+          "y_vs_uniform_sine_rmse_m": 0.2119485558470184,
+          "y_amplitude_1hz_m": 0.8919504542611696,
+          "y_amplitude_2hz_m": 0.267867705110716,
+          "z_span_m": 0.0,
+          "positive_vy_samples": 45,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              1.5700924586837752e-16,
+              1.1433814963738287e-15
+            ],
+            "front_xz": [
+              1.1102230246251565e-16,
+              1.1102230246251565e-16
+            ],
+            "side_yz": [
+              1.1102230246251565e-16,
+              1.1379786002407855e-15
+            ],
+            "top_xy": [
+              1.5700924586837752e-16,
+              1.1433814963738287e-15
+            ]
+          }
+        },
+        "one_winding": {
+          "y_vs_uniform_sine_max_m": 1.9393597909648461,
+          "y_vs_uniform_sine_rmse_m": 1.366439124404644,
+          "y_amplitude_1hz_m": 2.9393727128473794,
+          "y_amplitude_2hz_m": 3.3503041167650713e-16,
+          "z_span_m": 0.0,
+          "positive_vy_samples": 65,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              2.220446049250313e-16,
+              3.554447978966673e-15
+            ],
+            "front_xz": [
+              0.0,
+              8.881784197001252e-16
+            ],
+            "side_yz": [
+              2.220446049250313e-16,
+              3.4416913763379853e-15
+            ],
+            "top_xy": [
+              2.220446049250313e-16,
+              3.554447978966673e-15
+            ]
+          },
+          "surface_residual_max_m2": 8.881784197001252e-16
+        },
+        "two_windings": {
+          "y_vs_uniform_sine_max_m": 1.8723428752231006,
+          "y_vs_uniform_sine_rmse_m": 0.8633289247734546,
+          "y_amplitude_1hz_m": 2.0000000000000004,
+          "y_amplitude_2hz_m": 1.95606262704207e-16,
+          "z_span_m": 1.9999591897170086,
+          "positive_vy_samples": 57,
+          "return_distance_m_at_1s_2s": {
+            "xyz": [
+              2.0,
+              3.6418022968069345e-15
+            ],
+            "front_xz": [
+              1.9648626191146261,
+              8.005932084973442e-16
+            ],
+            "side_yz": [
+              0.7807883922273909,
+              3.614624287906422e-15
+            ],
+            "top_xy": [
+              1.878745425694758,
+              3.580361673049448e-15
+            ]
+          },
+          "surface_residual_max_m2": 1.1102230246251565e-15
+        }
+      },
+      "surfaces": {
+        "ring_torus": {
+          "samples": 4160,
+          "top_min_over_max_radius": 0.33333333333333326,
+          "top_candidate": true,
+          "upper_halfwidth_m": 2.0,
+          "middle_halfwidth_m": 3.0,
+          "two_view_candidate": true
+        },
+        "sphere": {
+          "samples": 4160,
+          "top_min_over_max_radius": 6.123233995736765e-17,
+          "top_candidate": false,
+          "upper_halfwidth_m": 6.123233995736766e-17,
+          "middle_halfwidth_m": 1.0,
+          "two_view_candidate": false
+        },
+        "cylinder": {
+          "samples": 4160,
+          "top_min_over_max_radius": 1.0,
+          "top_candidate": true,
+          "upper_halfwidth_m": 1.0,
+          "middle_halfwidth_m": 1.0,
+          "two_view_candidate": false
+        },
+        "hyperboloid": {
+          "samples": 4160,
+          "top_min_over_max_radius": 0.7071067811865474,
+          "top_candidate": true,
+          "upper_halfwidth_m": 1.4142135623730951,
+          "middle_halfwidth_m": 1.0,
+          "two_view_candidate": false
+        },
+        "double_cone": {
+          "samples": 4160,
+          "top_min_over_max_radius": 0.0,
+          "top_candidate": false,
+          "upper_halfwidth_m": 1.0,
+          "middle_halfwidth_m": 0.0,
+          "two_view_candidate": false
+        }
+      }
+    }
+  ],
+  "checks": {
+    "base_64/sine_and_edge_view": true,
+    "base_64/same_y_on_line": true,
+    "base_64/helix_advances": true,
+    "base_64/variable_speed_harmonic": true,
+    "base_64/on_assigned_surface": true,
+    "base_64/windings_close": true,
+    "base_64/single_view_confusions": true,
+    "base_64/two_view_controls": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E01_projection/run.py": "1a1c4d3f22a515ce7f68d499e3c952db4cf096e418e864f3efede727cbf63539",
+    "E01_projection/figures.py": "3b34edff9910bc8f9983cd2f4525bf90790b07cb6f58f5de85ddfcb08c2baed3"
+  }
+}

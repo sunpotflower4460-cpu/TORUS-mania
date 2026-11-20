@@ -1,0 +1,221 @@
+{
+  "code_version": "3fb98c2b8a0bfa52a9faa799ca69bdc184b9cc54",
+  "python": "3.12.14",
+  "system": "Linux",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "thread_limit": 1,
+  "processes": [
+    {
+      "series": "E03",
+      "start_utc": "2026-11-20T00:25:45.824312+00:00",
+      "exit": 0,
+      "wall_s": 15.230516959999932,
+      "cpu_s": 15.188475,
+      "peak_rss_mib": 131.0546875
+    },
+    {
+      "series": "E03/cylinder",
+      "start_utc": "2026-11-20T00:26:01.055535+00:00",
+      "exit": 0,
+      "wall_s": 1.3874243950003802,
+      "cpu_s": 1.379084,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E03/observers",
+      "start_utc": "2026-11-20T00:26:02.444152+00:00",
+      "exit": 0,
+      "wall_s": 7.2251416270000846,
+      "cpu_s": 7.2142550000000005,
+      "peak_rss_mib": 111.14453125
+    },
+    {
+      "series": "E04",
+      "start_utc": "2026-11-20T00:26:09.670142+00:00",
+      "exit": 0,
+      "wall_s": 2.994082518000141,
+      "cpu_s": 2.9816380000000002,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E04/plant",
+      "start_utc": "2026-11-20T00:26:12.664818+00:00",
+      "exit": 0,
+      "wall_s": 0.5318417819999013,
+      "cpu_s": 0.525164,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E05/phases",
+      "start_utc": "2026-11-20T00:26:13.197653+00:00",
+      "exit": 0,
+      "wall_s": 1.8715449579999586,
+      "cpu_s": 1.8671650000000002,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E05/base",
+      "start_utc": "2026-11-20T00:26:15.069649+00:00",
+      "exit": 0,
+      "wall_s": 24.554829443000017,
+      "cpu_s": 24.444471999999998,
+      "peak_rss_mib": 127.2265625
+    },
+    {
+      "series": "E05/opposite",
+      "start_utc": "2026-11-20T00:26:39.625645+00:00",
+      "exit": 0,
+      "wall_s": 25.363075678000314,
+      "cpu_s": 25.211322,
+      "peak_rss_mib": 127.4453125
+    },
+    {
+      "series": "E05/far",
+      "start_utc": "2026-11-20T00:27:04.989615+00:00",
+      "exit": 0,
+      "wall_s": 21.643191298000147,
+      "cpu_s": 21.634255,
+      "peak_rss_mib": 127.44140625
+    },
+    {
+      "series": "E05/weaker_B",
+      "start_utc": "2026-11-20T00:27:26.633956+00:00",
+      "exit": 0,
+      "wall_s": 19.85203778999994,
+      "cpu_s": 19.841757,
+      "peak_rss_mib": 127.29296875
+    },
+    {
+      "series": "E05/thicker_B",
+      "start_utc": "2026-11-20T00:27:46.490865+00:00",
+      "exit": 0,
+      "wall_s": 25.48462564500005,
+      "cpu_s": 25.415778,
+      "peak_rss_mib": 127.13671875
+    },
+    {
+      "series": "E05/more_viscous",
+      "start_utc": "2026-11-20T00:28:11.976238+00:00",
+      "exit": 0,
+      "wall_s": 20.230006876999596,
+      "cpu_s": 20.189989999999998,
+      "peak_rss_mib": 127.37890625
+    },
+    {
+      "series": "E06/off",
+      "start_utc": "2026-11-20T00:28:32.207587+00:00",
+      "exit": 0,
+      "wall_s": 17.267071004000172,
+      "cpu_s": 17.238297000000003,
+      "peak_rss_mib": 127.54296875
+    },
+    {
+      "series": "E06/weak",
+      "start_utc": "2026-11-20T00:28:49.481383+00:00",
+      "exit": 0,
+      "wall_s": 14.453544864999913,
+      "cpu_s": 14.424112,
+      "peak_rss_mib": 127.8828125
+    },
+    {
+      "series": "E06/circle",
+      "start_utc": "2026-11-20T00:29:03.935713+00:00",
+      "exit": 0,
+      "wall_s": 18.002009644999816,
+      "cpu_s": 17.974362999999997,
+      "peak_rss_mib": 127.6015625
+    },
+    {
+      "series": "E06/ellipse",
+      "start_utc": "2026-11-20T00:29:21.938282+00:00",
+      "exit": 0,
+      "wall_s": 14.982951053999841,
+      "cpu_s": 14.942557,
+      "peak_rss_mib": 127.7421875
+    },
+    {
+      "series": "E06/slit",
+      "start_utc": "2026-11-20T00:29:36.922461+00:00",
+      "exit": 0,
+      "wall_s": 14.277389852999931,
+      "cpu_s": 14.270371,
+      "peak_rss_mib": 127.8359375
+    },
+    {
+      "series": "E06/long",
+      "start_utc": "2026-11-20T00:29:51.200906+00:00",
+      "exit": 0,
+      "wall_s": 20.767547748000197,
+      "cpu_s": 20.747267,
+      "peak_rss_mib": 128.33984375
+    },
+    {
+      "series": "E06/periodic_sides",
+      "start_utc": "2026-11-20T00:30:11.969596+00:00",
+      "exit": 0,
+      "wall_s": 14.699327730999812,
+      "cpu_s": 14.669600999999998,
+      "peak_rss_mib": 128.59375
+    },
+    {
+      "series": "E06/larger",
+      "start_utc": "2026-11-20T00:30:26.669691+00:00",
+      "exit": 0,
+      "wall_s": 27.592086729999664,
+      "cpu_s": 27.540537,
+      "peak_rss_mib": 181.44921875
+    },
+    {
+      "series": "E06/circle_fine",
+      "start_utc": "2026-11-20T00:30:54.262799+00:00",
+      "exit": 0,
+      "wall_s": 29.12483563800015,
+      "cpu_s": 28.885285000000003,
+      "peak_rss_mib": 181.5625
+    },
+    {
+      "series": "E07/predict",
+      "start_utc": "2026-11-20T00:31:23.388522+00:00",
+      "exit": 0,
+      "wall_s": 0.9651209300000119,
+      "cpu_s": 0.96408,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E07/score",
+      "start_utc": "2026-11-20T00:31:24.354471+00:00",
+      "exit": 0,
+      "wall_s": 0.7076313500001561,
+      "cpu_s": 0.7068309999999999,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "E08",
+      "start_utc": "2026-11-20T00:31:25.062755+00:00",
+      "exit": 0,
+      "wall_s": 0.4253342740003063,
+      "cpu_s": 0.41890299999999997,
+      "peak_rss_mib": 90.27734375
+    },
+    {
+      "series": "figures",
+      "start_utc": "2026-11-20T00:31:25.488883+00:00",
+      "exit": 0,
+      "wall_s": 2.1019681839998157,
+      "cpu_s": 2.097162,
+      "peak_rss_mib": 90.27734375
+    }
+  ],
+  "verification": {
+    "reference": "Working-tree execution from identical version and committed pre-score E07 fields",
+    "isolated_code": "git archive of code_version, separate initially empty output directory",
+    "external_input_sha256": "2a5a054cd610e39f0b581bde9595b7696f24a385e7dbb0ece133ef1121fbb6ee",
+    "frozen_search_input": "research/results/E08/ranking.json",
+    "generated_files_compared": 64,
+    "byte_differences": []
+  }
+}

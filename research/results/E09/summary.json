@@ -1,0 +1,570 @@
+{
+  "geometry_m": {
+    "major": 0.15,
+    "inner": 0.025,
+    "outer": 0.06
+  },
+  "physical_example": {
+    "solid_coefficient_m": 0.0125227291513248,
+    "fluid": {
+      "density_kg_m3": 1000.0,
+      "circulation_m2_s": 0.08,
+      "volume_flux_m3_s": 0.001001818332105984,
+      "hydraulic_inertance_kg_m4": 79854.79745796534,
+      "kinetic_energy_j": 0.04007273328423936
+    },
+    "magnet": {
+      "permeability_h_m": 1.2566370614359173e-06,
+      "turns": 120,
+      "current_a": 1.4,
+      "magnetic_flux_wb": 2.6437362943956206e-06,
+      "inductance_h": 0.00022660596809105318,
+      "stored_energy_j": 0.0002220738487292321
+    }
+  },
+  "solid_quadrature": [
+    {
+      "grid": [
+        16,
+        64
+      ],
+      "azimuthal_m": 0.012521561941580585
+    },
+    {
+      "grid": [
+        32,
+        128
+      ],
+      "azimuthal_m": 0.012522437268106514
+    },
+    {
+      "grid": [
+        64,
+        256
+      ],
+      "azimuthal_m": 0.0125226561754672
+    }
+  ],
+  "shells": [
+    {
+      "shell": "thick",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.01042438382210105,
+        0.12650453620696847
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.12650453620697164,
+      "theta_max_node_flux_m": 3.681950577760773e-15,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.01042438382210105,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.12650453620696847
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.12650453620697164,
+      "theta_max_node_flux_m": 3.681950577760773e-15,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0005533857680480314,
+        0.007230031590846205
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.007230031591126709,
+      "theta_max_node_flux_m": 3.3463856685678195e-13,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0005533857680480314,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.007230031590846205
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.007230031591126709,
+      "theta_max_node_flux_m": 3.3463856685678195e-13,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        16,
+        64
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.010424638743825253,
+        0.12653520478836044
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.12653520478838967,
+      "theta_max_node_flux_m": 3.3301486568326766e-14,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.010424638743825253,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.12653520478836044
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.12653520478838967,
+      "theta_max_node_flux_m": 3.3301486568326766e-14,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0005533858098078992,
+        0.00723003634630506
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.007230036346235051,
+      "theta_max_node_flux_m": 8.911109155261554e-14,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0005533858098078992,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.00723003634630506
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.007230036346235051,
+      "theta_max_node_flux_m": 8.911109155261554e-14,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        32,
+        128
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0104247024820481,
+        0.12654288335172267
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.12654288335171693,
+      "theta_max_node_flux_m": 1.8651313132833636e-14,
+      "theta_max_period_error": 1.1102230246251565e-16,
+      "zero_flux_perturbations": [
+        {
+          "seed": 11,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": -8.470329472543003e-22,
+          "norm_ratio": 1.25
+        },
+        {
+          "seed": 29,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": -2.414043899674756e-20,
+          "norm_ratio": 1.2500000000000002
+        },
+        {
+          "seed": 47,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": 3.091670257478196e-20,
+          "norm_ratio": 1.25
+        }
+      ]
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0104247024820481,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0104247237288152,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.12654288335172267
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.12654288335171693,
+      "theta_max_node_flux_m": 1.8651313132833636e-14,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thick",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": true,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0005533858202478699,
+        0.0072300375351736
+      ],
+      "rank": 2,
+      "expected_rank": 2,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.007230037536443205,
+      "theta_max_node_flux_m": 1.8579367916122386e-12,
+      "theta_max_period_error": 1.1102230246251565e-16,
+      "zero_flux_perturbations": [
+        {
+          "seed": 11,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": -1.1570964299909743e-21,
+          "norm_ratio": 1.25
+        },
+        {
+          "seed": 29,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": 5.998739651628699e-22,
+          "norm_ratio": 1.25
+        },
+        {
+          "seed": 47,
+          "flux_through_cut_m": 0.0,
+          "max_node_flux_m": 0.0,
+          "cross_term_m": -1.113239701654325e-21,
+          "norm_ratio": 1.25
+        }
+      ]
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": true,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0005533858202478699,
+        0.0
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0005533858237278602,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": false,
+      "closed_theta": true,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0072300375351736
+      ],
+      "rank": 1,
+      "expected_rank": 1,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.007230037536443205,
+      "theta_max_node_flux_m": 1.8579367916122386e-12,
+      "theta_max_period_error": 1.1102230246251565e-16
+    },
+    {
+      "shell": "thin",
+      "grid": [
+        64,
+        256
+      ],
+      "closed_phi": false,
+      "closed_theta": false,
+      "norm_matrix_diagonal_m": [
+        0.0,
+        0.0
+      ],
+      "rank": 0,
+      "expected_rank": 0,
+      "analytic_phi_m": 0.0,
+      "theta_cut_flux_m": 0.0,
+      "theta_max_node_flux_m": 0.0,
+      "theta_max_period_error": 0.0
+    }
+  ],
+  "thin_analytic_m": [
+    0.0005533715710928604,
+    0.007228416147400485
+  ],
+  "checks": {
+    "cut_ranks": true,
+    "theta_continuity_and_period": true,
+    "theta_cut_flux_equals_norm": true,
+    "pinched_circle_cannot_store_harmonic_energy": true,
+    "azimuthal_quadrature": true,
+    "theta_converged_on_finest_two_grids": true,
+    "thin_limit": true,
+    "fluxless_fields_increase_energy": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E09_harmonic_energy/run.py": "633039649cfc533a26836a722bc93b2c4991741741f61fd364c034a0c7d17435"
+  }
+}

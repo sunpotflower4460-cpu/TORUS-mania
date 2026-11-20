@@ -1,0 +1,43 @@
+{
+  "date_utc": "2026-11-20",
+  "flow_solver_archive_commit": "aff8ebbbf5d27e843f733b645b615769ff48bf87",
+  "final_analysis_and_figures_commit": "66c5f478b638bf4e9614eb161e15befb85a4c66c",
+  "system": "Debian GNU/Linux 13 (trixie)",
+  "architecture": "x86_64",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "pillow": "13.0.0",
+  "random_seeds": [],
+  "parallel_solver_processes": 3,
+  "numeric_threads_per_process": 1,
+  "byte_identical_clean_replay_files": 11,
+  "reextracted_figure_reading_matches_frozen": true,
+  "checks_by_experiment": {
+    "E16": 2,
+    "E17": 25,
+    "E18": 4
+  },
+  "prior_unit_tests_passed": 22,
+  "clean_flow_replay": {
+    "wall_s": 330.843,
+    "runs": [
+      {
+        "case": "grid48",
+        "exit": 0,
+        "wall_s": 27.003
+      },
+      {
+        "case": "grid96",
+        "exit": 0,
+        "wall_s": 184.275
+      },
+      {
+        "case": "time_refined96",
+        "exit": 0,
+        "wall_s": 330.838
+      }
+    ]
+  }
+}

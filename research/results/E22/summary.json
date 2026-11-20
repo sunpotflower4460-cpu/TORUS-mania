@@ -1,0 +1,227 @@
+{
+  "units": "nondimensional compartment concentrations and rates, not fit to plant data",
+  "flow_rates": [
+    0.8,
+    1.0,
+    0.6
+  ],
+  "tissue_loss_rates": [
+    0.2,
+    0.25,
+    0.35
+  ],
+  "steady_state": {
+    "cycle": {
+      "states_I_T_O": [
+        1.678445229681979,
+        1.0742049469964665,
+        1.1307420494699651
+      ],
+      "external_input_I_T_O": [
+        1.0,
+        1.4279900387404833e-17,
+        1.1631841936443777e-16
+      ],
+      "shared_direction_fluxes_I_to_T_and_T_to_O": [
+        1.3427561837455833,
+        1.0742049469964665
+      ]
+    },
+    "open": {
+      "states_I_T_O": [
+        1.678445229681979,
+        1.0742049469964665,
+        1.1307420494699651
+      ],
+      "external_input_I_T_O": [
+        1.678445229681979,
+        1.4279900387404833e-17,
+        1.1631841936443777e-16
+      ],
+      "shared_direction_fluxes_I_to_T_and_T_to_O": [
+        1.3427561837455833,
+        1.0742049469964665
+      ]
+    },
+    "shortcut": {
+      "states_I_T_O": [
+        1.6784452296819787,
+        1.0742049469964665,
+        1.1307420494699647
+      ],
+      "external_input_I_T_O": [
+        1.0,
+        0.6784452296819787,
+        1.1631841936443777e-16
+      ],
+      "shared_direction_fluxes_I_to_T_and_T_to_O": [
+        1.342756183745583,
+        1.0742049469964665
+      ]
+    }
+  },
+  "maximum_steady_difference": 4.440892098500626e-16,
+  "simulation": {
+    "cycle": {
+      "initial_inner_rate": 0.0,
+      "initial_inner_second_derivative": 0.6,
+      "inner_at_selected_times": {
+        "1.0": 0.10429429706416447,
+        "2.5": 0.1487719663014958,
+        "4.0": 0.10802079424434408
+      },
+      "peak_inner": 0.15278567837720636,
+      "time_of_peak_inner": 2.1,
+      "final_total_outer_to_inner": 0.7924685621347367,
+      "final_total_shortcut": 0.0
+    },
+    "cycle_cut": {
+      "initial_inner_rate": 0.0,
+      "initial_inner_second_derivative": 0.0,
+      "inner_at_selected_times": {
+        "1.0": 0.0,
+        "2.5": 0.0,
+        "4.0": 0.0
+      },
+      "peak_inner": 0.0,
+      "time_of_peak_inner": null,
+      "final_total_outer_to_inner": 0.0,
+      "final_total_shortcut": 0.0
+    },
+    "open": {
+      "initial_inner_rate": 0.0,
+      "initial_inner_second_derivative": 0.0,
+      "inner_at_selected_times": {
+        "1.0": 0.0,
+        "2.5": 0.0,
+        "4.0": 0.0
+      },
+      "peak_inner": 0.0,
+      "time_of_peak_inner": null,
+      "final_total_outer_to_inner": 0.0,
+      "final_total_shortcut": 0.0
+    },
+    "open_cut": {
+      "initial_inner_rate": 0.0,
+      "initial_inner_second_derivative": 0.0,
+      "inner_at_selected_times": {
+        "1.0": 0.0,
+        "2.5": 0.0,
+        "4.0": 0.0
+      },
+      "peak_inner": 0.0,
+      "time_of_peak_inner": null,
+      "final_total_outer_to_inner": 0.0,
+      "final_total_shortcut": 0.0
+    },
+    "shortcut": {
+      "initial_inner_rate": 0.631578947368421,
+      "initial_inner_second_derivative": -1.81994459833795,
+      "inner_at_selected_times": {
+        "1.0": 0.167573579259457,
+        "2.5": 0.08205250753843699,
+        "4.0": 0.03361299621207688
+      },
+      "peak_inner": 0.17174046429063558,
+      "time_of_peak_inner": 0.8,
+      "final_total_outer_to_inner": 0.0,
+      "final_total_shortcut": 0.45830476354205196
+    },
+    "shortcut_cut": {
+      "initial_inner_rate": 0.631578947368421,
+      "initial_inner_second_derivative": -1.81994459833795,
+      "inner_at_selected_times": {
+        "1.0": 0.167573579259457,
+        "2.5": 0.08205250753843699,
+        "4.0": 0.03361299621207688
+      },
+      "peak_inner": 0.17174046429063558,
+      "time_of_peak_inner": 0.8,
+      "final_total_outer_to_inner": 0.0,
+      "final_total_shortcut": 0.45830476354205196
+    }
+  },
+  "cut_effect_by_candidate": {
+    "cycle": {
+      "1.0": 0.10429429706416447,
+      "2.5": 0.1487719663014958,
+      "4.0": 0.10802079424434408
+    },
+    "open": {
+      "1.0": 0.0,
+      "2.5": 0.0,
+      "4.0": 0.0
+    },
+    "shortcut": {
+      "1.0": 0.0,
+      "2.5": 0.0,
+      "4.0": 0.0
+    }
+  },
+  "sensitivity": {
+    "cases": 81,
+    "scaled_transport_and_loss": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "cut_effect_by_time": {
+      "1.0": {
+        "minimum": 0.058562563852097765,
+        "median": 0.10088275119594055,
+        "maximum": 0.16445308641890385,
+        "fraction_above_5_percent": 1.0
+      },
+      "2.5": {
+        "minimum": 0.08115012800944388,
+        "median": 0.1466676190106209,
+        "maximum": 0.2479939370010866,
+        "fraction_above_5_percent": 1.0
+      },
+      "4.0": {
+        "minimum": 0.05445206336506974,
+        "median": 0.10693108940138574,
+        "maximum": 0.19889638648990063,
+        "fraction_above_5_percent": 1.0
+      }
+    },
+    "weak_return_rate": 0.03,
+    "weak_return_effect": {
+      "1.0": 0.006352513150702696,
+      "2.5": 0.011752060928051996,
+      "4.0": 0.009765750376193752
+    }
+  },
+  "history_columns": [
+    "time",
+    "inner",
+    "tip",
+    "outer",
+    "lost",
+    "accumulated_outer_to_inner",
+    "accumulated_tip_to_inner"
+  ],
+  "sensitivity_columns": [
+    "scale_inner_to_tip",
+    "scale_tip_to_outer",
+    "scale_outer_exit",
+    "scale_tissue_loss",
+    "cut_effect_t1.0",
+    "cut_effect_t2.5",
+    "cut_effect_t4.0"
+  ],
+  "largest_mass_budget_error": 3.219646771412954e-15,
+  "max_independent_integrator_error": 9.765577235754108e-12,
+  "checks": {
+    "matched_steady_concentrations_and_forward_fluxes": true,
+    "nonnegative_external_sources": true,
+    "independent_integrator": true,
+    "mass_budget": true,
+    "derivatives_check": true,
+    "analytic_two_hop_derivative": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E22_reentry_test/run.py": "53850e3885dc8a73b1d7efb312e8e31cd7f72f9a6e03c64c2f842d1014fa8ac0"
+  }
+}

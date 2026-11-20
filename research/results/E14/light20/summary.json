@@ -1,0 +1,664 @@
+{
+  "variant": "light20",
+  "budget_columns": [
+    "time",
+    "energy",
+    "integral_carried_out",
+    "integral_carried_in",
+    "integral_pressure_out",
+    "integral_viscous_out",
+    "integral_dissipation",
+    "integral_unit_pressure_offset_out",
+    "energy_balance_residual"
+  ],
+  "checks": {
+    "translating_wave_exact": true,
+    "fixed_plane_wave_crosses_surface": true,
+    "moving_and_fixed_energy_budget": true,
+    "global_energy_constant": true,
+    "global_velocity_calibration": true,
+    "analytic_center_frame": true,
+    "tracer_sub_luminal": true
+  },
+  "q2": 20,
+  "component": "imag",
+  "energy_units_j": 8.854187818800002e-21,
+  "tube_radii_normalized": [
+    2.05,
+    0.65
+  ],
+  "translation_speed_over_c": 0.9047619047619049,
+  "whole_space_reference": [
+    {
+      "t": 0.0,
+      "energy": 0.006476927888214898,
+      "axial_momentum": 0.005860077613146813,
+      "center": 1.2361059187148618e-17
+    },
+    {
+      "t": 1.5,
+      "energy": 0.006476927888214897,
+      "axial_momentum": 0.005860077613146811,
+      "center": 1.3571428571428574
+    },
+    {
+      "t": 4.0,
+      "energy": 0.0064769278882148935,
+      "axial_momentum": 0.0058600776131468085,
+      "center": 3.619047619047617
+    }
+  ],
+  "low_order_at_zero": {
+    "t": 0.0,
+    "energy": 0.006476927887719392,
+    "axial_momentum": 0.005860077612648512,
+    "center": -1.4584158178038398e-16
+  },
+  "superlevel_topology": [
+    {
+      "n": 64,
+      "time": 0.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 19776,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 6464,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 12624,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 5024,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 6408,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 3304,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 64,
+      "time": 1.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 18872,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 6784,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 12140,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 4640,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 6852,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 2800,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 64,
+      "time": 2.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 19328,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 7184,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 12140,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 4436,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 7176,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 2880,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 64,
+      "time": 4.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 22252,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 9280,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 14552,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 5532,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 7944,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 3568,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 96,
+      "time": 0.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 62096,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 21016,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 40464,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 16112,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 22536,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 8864,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 96,
+      "time": 1.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 63044,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 22252,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 40484,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 16092,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 22316,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 9312,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 96,
+      "time": 2.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 66796,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 23200,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 41808,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 16488,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 23164,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 9864,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    },
+    {
+      "n": 96,
+      "time": 4.0,
+      "thresholds": {
+        "0.25": {
+          "electric_strength": {
+            "cells": 75144,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": true,
+            "candidate": false
+          },
+          "electromagnetic_energy": {
+            "cells": 30324,
+            "tunnels": 0,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": false
+          }
+        },
+        "0.35": {
+          "electric_strength": {
+            "cells": 48556,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 18272,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        },
+        "0.5": {
+          "electric_strength": {
+            "cells": 25816,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          },
+          "electromagnetic_energy": {
+            "cells": 11176,
+            "tunnels": 1,
+            "cavities": 0,
+            "touches_boundary": false,
+            "candidate": true
+          }
+        }
+      }
+    }
+  ],
+  "analytic_center_frame": {
+    "analytic_velocity_over_c": 0.9047619047619048,
+    "velocity_absolute_error": 1.1102230246251565e-16,
+    "boosted_field_max_relative_error": 7.176125869619734e-16
+  },
+  "trials": {
+    "coarse_fixed": {
+      "initial_energy": 0.0012343831907239112,
+      "final_energy": 7.615224618954361e-07,
+      "final_over_initial": 0.000616925495760224,
+      "normalized_balance_error": 0.0002034498790687736,
+      "cumulative": {
+        "carried_out": 0.0014656862875431717,
+        "carried_in": 0.00023220904101727195,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 1.187383543908769,
+        "carried_in": 0.18811746851566538,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 1.3755010124244345
+    },
+    "coarse_moving": {
+      "initial_energy": 0.0012343831907239112,
+      "final_energy": 0.0006195210472542316,
+      "final_over_initial": 0.5018871383779213,
+      "normalized_balance_error": 5.046369273887341e-06,
+      "cumulative": {
+        "carried_out": 0.0009826659592796637,
+        "carried_in": 0.00036781004496339,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.7960785327150911,
+        "carried_in": 0.29797071746228626,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 1.0940492501773773
+    },
+    "coarse_tracers": {
+      "dt": 0.01,
+      "points": 768,
+      "max_flux_speed_over_c": 0.9999999999909205,
+      "inside_final_fraction": 0.4168092233212846,
+      "always_sampled_inside_fraction": 0.3742264104282793
+    },
+    "fine_fixed": {
+      "initial_energy": 0.001234383190723911,
+      "final_energy": 7.615224618954363e-07,
+      "final_over_initial": 0.0006169254957602244,
+      "normalized_balance_error": 5.0896104984430595e-05,
+      "cumulative": {
+        "carried_out": 0.0014657392251495895,
+        "carried_in": 0.00023215366292870547,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 1.1874264297863604,
+        "carried_in": 0.1880726055517312,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 1.3754990353380916
+    },
+    "fine_moving": {
+      "initial_energy": 0.001234383190723911,
+      "final_energy": 0.0006195210472542316,
+      "final_over_initial": 0.5018871383779213,
+      "normalized_balance_error": 1.261589465397654e-06,
+      "cumulative": {
+        "carried_out": 0.0009826633862814419,
+        "carried_in": 0.0003678028000965922,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.796076448274667,
+        "carried_in": 0.2979648482420537,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 1.0940412965167208
+    },
+    "fine_tracers": {
+      "dt": 0.005,
+      "points": 3072,
+      "max_flux_speed_over_c": 0.9999999999998843,
+      "inside_final_fraction": 0.41644492233616254,
+      "always_sampled_inside_fraction": 0.3708609737358004
+    }
+  },
+  "translating_wave_control": {
+    "fixed": {
+      "initial_energy": 9.289383951478454,
+      "final_energy": 4.78678965008753e-06,
+      "final_over_initial": 5.152967812602564e-07,
+      "normalized_balance_error": 1.2553382464497825e-05,
+      "cumulative": {
+        "carried_out": 15.772328555027869,
+        "carried_in": 6.483086035608766,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 1.697887463518786,
+        "carried_in": 0.6979026886467481,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 2.395790152165534
+    },
+    "moving": {
+      "initial_energy": 9.289383951478454,
+      "final_energy": 9.289383951478454,
+      "final_over_initial": 1.0,
+      "normalized_balance_error": 0.0,
+      "cumulative": {
+        "carried_out": 0.0,
+        "carried_in": 0.0,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.0,
+        "carried_in": 0.0,
+        "pressure_out": 0.0,
+        "viscous_out": 0.0,
+        "dissipation": 0.0,
+        "unit_pressure_offset_out": 0.0
+      },
+      "optical_or_advective_exchange_per_initial": 0.0
+    }
+  },
+  "whole_space_center_motion_max_error": 2.6645352591003757e-15,
+  "tracer_columns": [
+    "time",
+    "fraction_inside_now",
+    "fraction_never_observed_outside"
+  ],
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E14_moving_energy/run.py": "0dce5e1aa9a6eacbbd92e2406eb832bd978112d3d31e497301112a91d15a40ed",
+    "E11_energy_transport/run.py": "0b0e0dd0f4aa42675b1224989f640e40b8ff2dee964b4693ac2d30e737174d09",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

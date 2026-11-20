@@ -1,0 +1,73 @@
+{
+  "reed": {
+    "doi": "10.1104/pp.118.4.1369",
+    "table_I_columns": ["NPA_uM", "lateral_root_count_mean_SE", "primary_length_mm_mean_SE", "lateral_density_per_mm_mean_SE"],
+    "table_I_n_plants_per_group": 10,
+    "table_I": [
+      [0.0, [15.9, 1.0], [48.6, 1.4], [0.33, 0.02]],
+      [5.0, [12.3, 0.8], [47.2, 0.7], [0.26, 0.02]],
+      [10.0, [10.4, 1.1], [45.9, 1.1], [0.23, 0.02]],
+      [20.0, [8.6, 0.7], [39.0, 1.7], [0.22, 0.20]],
+      [50.0, [6.4, 0.6], [45.0, 0.9], [0.14, 0.02]],
+      [100.0, [1.0, 0.3], [38.7, 1.7], [0.03, 0.00]]
+    ],
+    "table_II": {
+      "concentration_free_IAA_ng_per_g_fresh_weight": [[25.8, 4.7], [17.6, 2.2]],
+      "lateral_root_number": [[15.5, 0.8], [5.9, 0.5]],
+      "same_individuals_for_both": false,
+      "text_percent_lower_free_IAA": 28
+    },
+    "table_III": {
+      "rootward_IAA_fmol": [[61.4, 7.1], [46.0, 2.1]],
+      "rootward_activity_cpm": [[1501, 175], [1124, 52]],
+      "n_independent_pools_per_group": 4,
+      "plants_in_each_pool": 5,
+      "duration_h": 24,
+      "published_P_transport": 0.04
+    },
+    "table_V_n_plants_per_group": 10,
+    "table_V": {
+      "upper_control__lower_control": [[6.7, 0.85], [0.19, 0.02]],
+      "upper_IAA__lower_control": [[10.0, 0.56], [0.43, 0.03]],
+      "upper_control__lower_NPA": [[0.33, 0.14], [0.02, 0.01]],
+      "upper_NPA__lower_IAA": [[4.25, 0.73], [0.24, 0.04]],
+      "upper_IAA__lower_NPA": [[1.72, 0.46], [0.08, 0.02]]
+    }
+  },
+  "rashotte": {
+    "doi": "10.1104/pp.122.2.481",
+    "correction_doi": "10.1104/pp.104.900172",
+    "correction_scope": "The numeric entries in Tables II and IV represent fmol, although text, table labels, and Figure 3 originally used pmol.",
+    "unit": "fmol",
+    "table_II_columns": ["untreated_mean_SE", "NPA_mean_SE", "plants", "independent_experiments", "published_P"],
+    "table_II": {
+      "shootward_IAA": [[7.03, 0.91], [4.73, 0.47], 18, 4, 0.011],
+      "shootward_BA_diffusion": [[0.65, 0.05], [0.53, 0.08], 11, 3, 0.224]
+    },
+    "table_IV_columns": ["Columbia_mean_SD", "Columbia_NPA_mean_SD", "eir1_mean_SD", "eir1_NPA_mean_SD", "published_P_Columbia_vs_eir1_without_NPA"],
+    "table_IV": {
+      "shootward_IAA": [[6.18, 0.46], [4.02, 0.57], [4.40, 0.55], [3.57, 0.53], 0.012],
+      "rootward_IAA": [[7.96, 0.74], [4.68, 0.41], [7.39, 0.58], [4.64, 0.50], 0.28],
+      "shootward_BA_diffusion": [[0.43, 0.04], [0.57, 0.06], [0.61, 0.08], [0.55, 0.09], 0.049],
+      "rootward_BA_diffusion": [[0.81, 0.06], [0.81, 0.06], [0.98, 0.1], [0.79, 0.09], 0.29]
+    }
+  },
+  "casimiro": {
+    "doi": "10.1105/tpc.13.4.843",
+    "table_1_columns": ["NPA_uM", "lateral_density_per_mm_mean_SD", "primary_length_mm_mean_SD"],
+    "table_1_n_plants_per_group": 20,
+    "table_1": [
+      [0, [0.43, 0.08], [41.8, 8.2]],
+      [1, [0.09, 0.06], [43.5, 8.2]],
+      [5, [0, null], [30.8, 5.1]],
+      [10, [0, null], [27.9, 3.9]]
+    ],
+    "table_2_plant_count_per_group": 5,
+    "table_2_total_counts_by_stage_I_to_VII": {
+      "0": [12, 11, 6, 6, 9, 2, 7],
+      "1": [22, 7, 7, 2, 3, 4, 0],
+      "5": [6, 1, 0, 0, 0, 0, 0],
+      "10": [0, 0, 0, 0, 0, 0, 0]
+    }
+  }
+}

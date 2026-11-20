@@ -1,0 +1,75 @@
+{
+  "code_commit": "08a061bc80e613c4f039ef9538b25ba36c4d6a1c",
+  "registration_commit": "2647189ebdaa8ace8ab3e5387ceb27212a0f8e31",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "environment": {
+    "MPLBACKEND": "Agg",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "cpu_time_method": "Linux getrusage(RUSAGE_CHILDREN), one fresh process per command. Wall time includes imports, plots and file output.",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "experiments.E01_projection.run",
+        "--pilot"
+      ],
+      "started_at_utc": "2026-11-19T23:34:22.377679+00:00",
+      "exit_code": 0,
+      "wall_s": 0.6784,
+      "user_cpu_s": 0.536961,
+      "system_cpu_s": 0.18686899999999998,
+      "peak_rss_kib_linux": 52024
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "experiments.E01_projection.run"
+      ],
+      "started_at_utc": "2026-11-19T23:34:29.963732+00:00",
+      "exit_code": 0,
+      "wall_s": 3.2326,
+      "user_cpu_s": 3.08358,
+      "system_cpu_s": 0.147126,
+      "peak_rss_kib_linux": 97844
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "experiments.E02_phase_space.run",
+        "--pilot"
+      ],
+      "started_at_utc": "2026-11-19T23:34:37.808449+00:00",
+      "exit_code": 0,
+      "wall_s": 0.7073,
+      "user_cpu_s": 0.584926,
+      "system_cpu_s": 0.12141199999999999,
+      "peak_rss_kib_linux": 53712
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "experiments.E02_phase_space.run"
+      ],
+      "started_at_utc": "2026-11-19T23:34:38.562537+00:00",
+      "exit_code": 0,
+      "wall_s": 2.9224,
+      "user_cpu_s": 3.284518,
+      "system_cpu_s": 0.41372,
+      "peak_rss_kib_linux": 89704
+    }
+  ],
+  "replay": {
+    "checkout": "git archive d7c81b2 (only test location changed after code_commit)",
+    "inputs": "source and installed dependencies only; no raw documents or stored results",
+    "verified": "All nine JSON, NPZ and PNG outputs byte-identical in a fresh output tree on this machine."
+  }
+}

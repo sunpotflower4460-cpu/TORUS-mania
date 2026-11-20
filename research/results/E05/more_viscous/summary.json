@@ -1,0 +1,3075 @@
+{
+  "case": "more_viscous",
+  "runs": [
+    {
+      "n": 32,
+      "dt": 0.015625,
+      "gap": 1.6,
+      "strength_B": 4.0,
+      "core_B": 0.4,
+      "viscosity": 0.08,
+      "groups": {
+        "A": {
+          "n": 32,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.015625,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 1.3692750637043598e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.2363378342814247,
+          "max_energy_residual_rel": 7.402926319579561e-05,
+          "initial_energy": 4.926804371557953,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 6.190758688446882,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  2.15625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5635808504562132,
+                "xyz": [
+                  -0.28125,
+                  -0.28125,
+                  2.15625
+                ]
+              },
+              "p_min": {
+                "value": -0.8279305202518707,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  2.15625
+                ]
+              },
+              "core_z_r_rms": [
+                2.1982343666630544,
+                1.00403319163798,
+                0.2789690195488679
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 620,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 440,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 268,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.45575988514573174,
+              "midplane_energy_flux": 0.8061619039298576,
+              "upward_flux_near_inlet": 0.6237753161129036,
+              "time": 0.0,
+              "energy": 4.926804371557953,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 4.701372289207658,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.34375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5035628941684032,
+                "xyz": [
+                  -0.28125,
+                  -0.09375,
+                  2.34375
+                ]
+              },
+              "p_min": {
+                "value": -0.6160139301599635,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.34375
+                ]
+              },
+              "core_z_r_rms": [
+                2.2742717161768504,
+                1.009422374991767,
+                0.32260285952230583
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 816,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 572,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 384,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.5265752891899651,
+              "midplane_energy_flux": 0.892021917999221,
+              "upward_flux_near_inlet": 0.5869673827532063,
+              "time": 0.125,
+              "energy": 4.415061654076919,
+              "cumulative_work": [
+                -4.945613620781046e-18,
+                -0.5115853637490171,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0001573537320165297
+            },
+            {
+              "omega_peak": {
+                "value": 3.929011978153292,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.34375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4622764033985332,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.34375
+                ]
+              },
+              "p_min": {
+                "value": -0.49739624460021686,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.34375
+                ]
+              },
+              "core_z_r_rms": [
+                2.3470680701136892,
+                1.014206016076017,
+                0.35791387613156633
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1004,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 704,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 468,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.599677814754592,
+              "midplane_energy_flux": 0.9314707832222743,
+              "upward_flux_near_inlet": 0.5553962603260217,
+              "time": 0.25,
+              "energy": 4.006771220773029,
+              "cumulative_work": [
+                1.0589830899699877e-18,
+                -0.9197927854936465,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0002403652912776888
+            },
+            {
+              "omega_peak": {
+                "value": 3.2225756612952905,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4068977265683118,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.53125
+                ]
+              },
+              "p_min": {
+                "value": -0.3933945434543949,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.34375
+                ]
+              },
+              "core_z_r_rms": [
+                2.4148729244872613,
+                1.0224530707448294,
+                0.393526295978641
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1156,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 880,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 520,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.6694092971238755,
+              "midplane_energy_flux": 0.918875859516874,
+              "upward_flux_near_inlet": 0.5283041289313054,
+              "time": 0.375,
+              "energy": 3.6669286385618927,
+              "cumulative_work": [
+                -1.1934330267343568e-18,
+                -1.2595847442407706,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0002909887552897672
+            },
+            {
+              "omega_peak": {
+                "value": 2.8816028615932727,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.35686706594098,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.53125
+                ]
+              },
+              "p_min": {
+                "value": -0.33222324964516653,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "core_z_r_rms": [
+                2.477857895505415,
+                1.029497928409445,
+                0.41919969956649195
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1320,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1008,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 628,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.7302904955617247,
+              "midplane_energy_flux": 0.8632426949632342,
+              "upward_flux_near_inlet": 0.5045489440749852,
+              "time": 0.5,
+              "energy": 3.3766697447705285,
+              "cumulative_work": [
+                -3.736993558000216e-18,
+                -1.5498101370869963,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003244897004281988
+            },
+            {
+              "omega_peak": {
+                "value": 2.518329507719827,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.2892096710553402,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.71875
+                ]
+              },
+              "p_min": {
+                "value": -0.28096879700853294,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "core_z_r_rms": [
+                2.537140961407016,
+                1.038781092642091,
+                0.44624456450767386
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1540,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1120,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 724,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.7788347293220981,
+              "midplane_energy_flux": 0.7829289965746127,
+              "upward_flux_near_inlet": 0.483397026069413,
+              "time": 0.625,
+              "energy": 3.124415668634734,
+              "cumulative_work": [
+                -3.8148941193680096e-18,
+                -1.8020408572320419,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003478456911769623
+            },
+            {
+              "omega_peak": {
+                "value": 2.2581860291563802,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.71875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.2412697843939282,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.71875
+                ]
+              },
+              "p_min": {
+                "value": -0.23459836588987026,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  2.53125
+                ]
+              },
+              "core_z_r_rms": [
+                2.593232082889331,
+                1.0482813004697422,
+                0.47066059313705005
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1672,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1256,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 816,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.8140656639842612,
+              "midplane_energy_flux": 0.694927315389662,
+              "upward_flux_near_inlet": 0.46460520835960073,
+              "time": 0.75,
+              "energy": 2.9024239978738873,
+              "cumulative_work": [
+                -4.1490089123904285e-18,
+                -2.0240156459865295,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003647276975362601
+            }
+          ]
+        },
+        "B": {
+          "n": 32,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.015625,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 1.3692750637043598e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.23637423940730215,
+          "max_energy_residual_rel": 7.400608387423317e-05,
+          "initial_energy": 4.926804371557953,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 6.190758688446882,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  3.84375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5635808504562132,
+                "xyz": [
+                  -0.28125,
+                  -0.28125,
+                  3.84375
+                ]
+              },
+              "p_min": {
+                "value": -0.8279305202518693,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  3.84375
+                ]
+              },
+              "core_z_r_rms": [
+                3.801765633336946,
+                1.00403319163798,
+                0.2789690195488679
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 620,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 440,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 268,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 4.403516817938608,
+              "midplane_energy_flux": 0.3710697565664638,
+              "upward_flux_near_inlet": 0.11194000879492227,
+              "time": 0.0,
+              "energy": 4.926804371557953,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 4.800263356596227,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  3.84375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5036859375406866,
+                "xyz": [
+                  -0.09375,
+                  -0.28125,
+                  3.84375
+                ]
+              },
+              "p_min": {
+                "value": -0.6321047215298589,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  3.84375
+                ]
+              },
+              "core_z_r_rms": [
+                3.8767436910359754,
+                1.0092256887915043,
+                0.3213578877134105
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 796,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 572,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 364,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.9756221085911596,
+              "midplane_energy_flux": 0.2657784381343793,
+              "upward_flux_near_inlet": 0.10582157214346907,
+              "time": 0.125,
+              "energy": 4.414668354937351,
+              "cumulative_work": [
+                -9.869786720084718e-19,
+                -0.5119787111930086,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00015730542759306854
+            },
+            {
+              "omega_peak": {
+                "value": 3.83982668311139,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.03125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4542615795573373,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  4.03125
+                ]
+              },
+              "p_min": {
+                "value": -0.4790126503124634,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                3.9470452306686723,
+                1.0164694773630785,
+                0.36012501982979356
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 996,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 748,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 460,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.62850453644637,
+              "midplane_energy_flux": 0.19668941844922205,
+              "upward_flux_near_inlet": 0.10058563722126927,
+              "time": 0.25,
+              "energy": 4.005394721403776,
+              "cumulative_work": [
+                1.1213392732666852e-18,
+                -0.921169328559934,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0002403215942432535
+            },
+            {
+              "omega_peak": {
+                "value": 3.3305599985796164,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.03125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4046611325301162,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  4.03125
+                ]
+              },
+              "p_min": {
+                "value": -0.4020446507751288,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                4.01332134644742,
+                1.0240981622995597,
+                0.39007537253106295
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1148,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 828,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 564,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.3352509304109526,
+              "midplane_energy_flux": 0.14928580454160956,
+              "upward_flux_near_inlet": 0.09604627211662395,
+              "time": 0.375,
+              "energy": 3.664151140744291,
+              "cumulative_work": [
+                -4.353140543956265e-18,
+                -1.2623622842869964,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0002909465266658362
+            },
+            {
+              "omega_peak": {
+                "value": 2.8273666619299314,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.03125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.3397053458417008,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  4.21875
+                ]
+              },
+              "p_min": {
+                "value": -0.32980487201746417,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                4.076196427568296,
+                1.0333549384526146,
+                0.4213328068312073
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1368,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 988,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 660,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.0814263388315615,
+              "midplane_energy_flux": 0.11546933586543136,
+              "upward_flux_near_inlet": 0.09207227917587932,
+              "time": 0.5,
+              "energy": 3.3721576433464926,
+              "cumulative_work": [
+                -4.13873532918252e-18,
+                -1.5543222942595007,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003244339519596906
+            },
+            {
+              "omega_peak": {
+                "value": 2.547896565491313,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.21875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.288263295840761,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  4.21875
+                ]
+              },
+              "p_min": {
+                "value": -0.27590216348626734,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.21875
+                ]
+              },
+              "core_z_r_rms": [
+                4.1350670969789345,
+                1.0423253238652586,
+                0.445360298425103
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1512,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1088,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 724,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 2.858173989875292,
+              "midplane_energy_flux": 0.09062767943535391,
+              "upward_flux_near_inlet": 0.0885658270627262,
+              "time": 0.625,
+              "energy": 3.1178801204322597,
+              "cumulative_work": [
+                -3.062421151018321e-18,
+                -1.80857648667122,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.000347764454473376
+            },
+            {
+              "omega_peak": {
+                "value": 2.2728449494681082,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.21875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.222301772913938,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  4.21875
+                ]
+              },
+              "p_min": {
+                "value": -0.23897111323436143,
+                "xyz": [
+                  -0.65625,
+                  -0.65625,
+                  4.21875
+                ]
+              },
+              "core_z_r_rms": [
+                4.189279788979825,
+                1.0535864961315702,
+                0.46951876257313374
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1700,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1188,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 776,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 2.6595476805935836,
+              "midplane_energy_flux": 0.07195519723670393,
+              "upward_flux_near_inlet": 0.08545134360812555,
+              "time": 0.75,
+              "energy": 2.893601044673928,
+              "cumulative_work": [
+                -1.6845103040723881e-18,
+                -2.0328387133864716,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003646134975534565
+            }
+          ]
+        },
+        "AB": {
+          "n": 32,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.015625,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 1.4802973661668755e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.2667723849363473,
+          "max_energy_residual_rel": 7.124264653256412e-05,
+          "initial_energy": 11.877119589613837,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 6.203500619344629,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  2.15625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.8003446756909474,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.34375
+                ]
+              },
+              "p_min": {
+                "value": -0.7666789837644679,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  2.15625
+                ]
+              },
+              "core_z_r_rms": [
+                3.0000000000000004,
+                1.0043335556718476,
+                0.8463154403575264
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 620,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 440,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 268,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.884393688746631,
+              "midplane_energy_flux": 2.550822684757378,
+              "upward_flux_near_inlet": 0.7297420332824871,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.2018446378578345,
+                  1.0043335556718476,
+                  0.2814211123410286
+                ],
+                [
+                  3.7981553621421664,
+                  1.0043335556718476,
+                  0.2814211123410286
+                ]
+              ],
+              "time": 0.0,
+              "energy": 11.877119589613837,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 4.843515830681098,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  3.84375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.774380524278213,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.34375
+                ]
+              },
+              "p_min": {
+                "value": -0.5987674963776488,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  3.84375
+                ]
+              },
+              "core_z_r_rms": [
+                3.1063635219888024,
+                1.0093297313552945,
+                0.8571105707383516
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 816,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 588,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 396,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.676568380194911,
+              "midplane_energy_flux": 2.4604699035789093,
+              "upward_flux_near_inlet": 0.6718297302100069,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.2960803387778355,
+                  0.9960241673199256,
+                  0.3276464747778721
+                ],
+                [
+                  3.881135737243691,
+                  1.0220521739981832,
+                  0.32564668800917407
+                ]
+              ],
+              "time": 0.125,
+              "energy": 10.835492922737608,
+              "cumulative_work": [
+                8.189385849295493e-19,
+                -1.041262643794044,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0003640230821857493
+            },
+            {
+              "omega_peak": {
+                "value": 3.9706123436738086,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.03125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.7524089510544598,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.53125
+                ]
+              },
+              "p_min": {
+                "value": -0.4540466032975803,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                3.2087331906762495,
+                1.0159562379298905,
+                0.8637203407713607
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1000,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 760,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 476,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.5324978080695475,
+              "midplane_energy_flux": 2.3664670836763886,
+              "upward_flux_near_inlet": 0.6226389615351003,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.392305052350827,
+                  0.988920609175882,
+                  0.37211098847429397
+                ],
+                [
+                  3.9538807821602933,
+                  1.0406314453420538,
+                  0.36828680342363873
+                ]
+              ],
+              "time": 0.25,
+              "energy": 9.998049410235787,
+              "cumulative_work": [
+                1.5999989152490704e-19,
+                -1.8785108872463023,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0005592921317483235
+            },
+            {
+              "omega_peak": {
+                "value": 3.4222924895880635,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.03125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.7096773085352566,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.71875
+                ]
+              },
+              "p_min": {
+                "value": -0.3901091065924195,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                3.3052697639158226,
+                1.023981639332161,
+                0.8685039880396145
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 2412,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 912,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 596,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.4220845818252394,
+              "midplane_energy_flux": 2.221516021601047,
+              "upward_flux_near_inlet": 0.5806006857422792,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.500268483036081,
+                  0.9868212430534133,
+                  0.42272506239915775
+                ],
+                [
+                  4.033358733227919,
+                  1.0575916164445631,
+                  0.39535088673487456
+                ]
+              ],
+              "time": 0.375,
+              "energy": 9.294835314499679,
+              "cumulative_work": [
+                -7.447097128647558e-18,
+                -2.5816058098017876,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0006784653123710349
+            },
+            {
+              "omega_peak": {
+                "value": 2.9782088357967105,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.21875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.6553399763600976,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.90625
+                ]
+              },
+              "p_min": {
+                "value": -0.32764978699641795,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.03125
+                ]
+              },
+              "core_z_r_rms": [
+                3.39675361704498,
+                1.0342349467274239,
+                0.8739613731192453
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 2852,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2048,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 692,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.324181509337388,
+              "midplane_energy_flux": 2.023195445501236,
+              "upward_flux_near_inlet": 0.5443623604024314,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.5790024477798115,
+                  0.9888919700145583,
+                  0.4490372465615493
+                ],
+                [
+                  4.0923840288460775,
+                  1.072806525403859,
+                  0.4313212133794222
+                ]
+              ],
+              "time": 0.5,
+              "energy": 8.687968770946439,
+              "cumulative_work": [
+                -1.3959298185375432e-17,
+                -3.1883945611049356,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.000756257562462892
+            },
+            {
+              "omega_peak": {
+                "value": 2.6826273295636587,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.21875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.608144088365381,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  2.90625
+                ]
+              },
+              "p_min": {
+                "value": -0.27853415295758904,
+                "xyz": [
+                  -0.46875,
+                  -0.84375,
+                  4.21875
+                ]
+              },
+              "core_z_r_rms": [
+                3.4851615017697624,
+                1.0448185256110591,
+                0.8793271846167626
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3128,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2360,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 772,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.225415041288517,
+              "midplane_energy_flux": 1.795161464068856,
+              "upward_flux_near_inlet": 0.5127276065899736,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.6419504607275948,
+                  0.9941432662760908,
+                  0.46457553810611707
+                ],
+                [
+                  4.142100487434396,
+                  1.0842992153143876,
+                  0.4673379052594714
+                ]
+              ],
+              "time": 0.625,
+              "energy": 8.15408600242454,
+              "cumulative_work": [
+                -1.6949536247419926e-17,
+                -3.722224445240174,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0008091419491234042
+            },
+            {
+              "omega_peak": {
+                "value": 2.3910919537380715,
+                "xyz": [
+                  -0.84375,
+                  -0.46875,
+                  4.40625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.555659636264592,
+                "xyz": [
+                  -0.09375,
+                  -0.09375,
+                  3.09375
+                ]
+              },
+              "p_min": {
+                "value": -0.25012777653855317,
+                "xyz": [
+                  -1.03125,
+                  -0.09375,
+                  4.21875
+                ]
+              },
+              "core_z_r_rms": [
+                3.5665517930925295,
+                1.0581981787126928,
+                0.885401664421835
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3464,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2660,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 960,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.1190246262167935,
+              "midplane_energy_flux": 1.561974138376058,
+              "upward_flux_near_inlet": 0.4849624487231937,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.7611076454169954,
+                  1.0095216383084844,
+                  0.5170460969889287
+                ],
+                [
+                  4.236107584440704,
+                  1.0986623867207697,
+                  0.4713566519790733
+                ]
+              ],
+              "time": 0.75,
+              "energy": 7.677564176924266,
+              "cumulative_work": [
+                -1.4005037964527164e-17,
+                -4.198709255256824,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0008461574327478516
+            }
+          ]
+        }
+      },
+      "relative_shift_from_singles": [
+        0.16426529133288437,
+        0.05043806665565942
+      ],
+      "integrated_midplane_flux_excess": 0.8430950393411998
+    },
+    {
+      "n": 48,
+      "dt": 0.0078125,
+      "gap": 1.6,
+      "strength_B": 4.0,
+      "core_B": 0.4,
+      "viscosity": 0.08,
+      "groups": {
+        "A": {
+          "n": 48,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.0078125,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 2.220446049250313e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.1778802358805407,
+          "max_energy_residual_rel": 2.0441693170340503e-05,
+          "initial_energy": 4.927111119834812,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 7.051723136870945,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.1875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5811893888445125,
+                "xyz": [
+                  -0.3125,
+                  -0.3125,
+                  2.1875
+                ]
+              },
+              "p_min": {
+                "value": -0.8876492391259097,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.1875
+                ]
+              },
+              "core_z_r_rms": [
+                2.200211082621937,
+                1.0023380517668126,
+                0.25971305961579594
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1776,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1176,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 764,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.45774376767628744,
+              "midplane_energy_flux": 0.8143500491463902,
+              "upward_flux_near_inlet": 0.5486958856484059,
+              "time": 0.0,
+              "energy": 4.927111119834812,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 5.102833136687237,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.3125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5177891526646332,
+                "xyz": [
+                  -0.1875,
+                  -0.1875,
+                  2.3125
+                ]
+              },
+              "p_min": {
+                "value": -0.6438776447631087,
+                "xyz": [
+                  -0.9375,
+                  -0.1875,
+                  2.3125
+                ]
+              },
+              "core_z_r_rms": [
+                2.2790954616419787,
+                1.0074898713779123,
+                0.3110890713462556
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 2500,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1820,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1084,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.5293566623914575,
+              "midplane_energy_flux": 0.9072377722455909,
+              "upward_flux_near_inlet": 0.516325477870607,
+              "time": 0.125,
+              "energy": 4.410097617099211,
+              "cumulative_work": [
+                2.098444717483724e-18,
+                -0.5169678851655009,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -4.561757010024259e-05
+            },
+            {
+              "omega_peak": {
+                "value": 4.025163958571942,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.3125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4675802363854549,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.4375
+                ]
+              },
+              "p_min": {
+                "value": -0.4979423508955751,
+                "xyz": [
+                  -0.9375,
+                  -0.0625,
+                  2.3125
+                ]
+              },
+              "core_z_r_rms": [
+                2.3517881833235075,
+                1.0140748308288219,
+                0.3523115370545109
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3248,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2360,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1484,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.6041391556517823,
+              "midplane_energy_flux": 0.9574585482982578,
+              "upward_flux_near_inlet": 0.48864883365154005,
+              "time": 0.25,
+              "energy": 4.000105498173712,
+              "cumulative_work": [
+                1.4666507830606219e-18,
+                -0.9269374389699865,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -6.818269111419362e-05
+            },
+            {
+              "omega_peak": {
+                "value": 3.414601529505034,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.4375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4163458633017998,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.4375
+                ]
+              },
+              "p_min": {
+                "value": -0.40609745542467246,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  2.4375
+                ]
+              },
+              "core_z_r_rms": [
+                2.420113819106086,
+                1.0206937223673147,
+                0.3853588149733292
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3816,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2848,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1832,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.6760776544822477,
+              "midplane_energy_flux": 0.9473993940734291,
+              "upward_flux_near_inlet": 0.4645942797756393,
+              "time": 0.375,
+              "energy": 3.6596109872835076,
+              "cumulative_work": [
+                3.078296401334439e-18,
+                -1.2674185385161698,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -8.159403513485763e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.943528734676742,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  2.5625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.3637749763979286,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.5625
+                ]
+              },
+              "p_min": {
+                "value": -0.3318933293829886,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  2.5625
+                ]
+              },
+              "core_z_r_rms": [
+                2.483868700030026,
+                1.0289035266837991,
+                0.4157421695631461
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 4428,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 3296,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2140,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.7387906272378879,
+              "midplane_energy_flux": 0.8850913294012571,
+              "upward_flux_near_inlet": 0.4436665019103941,
+              "time": 0.5,
+              "energy": 3.3691254087370206,
+              "cumulative_work": [
+                3.0127307572610357e-18,
+                -1.5578953683180827,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -9.034277970898508e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.5687861972341466,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.5625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.3036076087783663,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.6875
+                ]
+              },
+              "p_min": {
+                "value": -0.2820486815762059,
+                "xyz": [
+                  -0.4375,
+                  -0.8125,
+                  2.5625
+                ]
+              },
+              "core_z_r_rms": [
+                2.5434098824510936,
+                1.038083259905682,
+                0.4439536480654445
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 5024,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 3764,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2452,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.7882328350201566,
+              "midplane_energy_flux": 0.7949985979173615,
+              "upward_flux_near_inlet": 0.4251275660793518,
+              "time": 0.625,
+              "energy": 3.1168559687232635,
+              "cumulative_work": [
+                4.080405861107731e-18,
+                -1.8101587675855972,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -9.638352595153776e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.309864794004303,
+                "xyz": [
+                  -0.4375,
+                  -0.8125,
+                  2.6875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.2458642612121518,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.6875
+                ]
+              },
+              "p_min": {
+                "value": -0.23857221755982974,
+                "xyz": [
+                  -0.4375,
+                  -0.8125,
+                  2.6875
+                ]
+              },
+              "core_z_r_rms": [
+                2.599623548407725,
+                1.0471018571694073,
+                0.4682940500574317
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 5504,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 4132,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2640,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 0.8234791054737973,
+              "midplane_energy_flux": 0.6991518711460846,
+              "upward_flux_near_inlet": 0.40859241467929064,
+              "time": 0.75,
+              "energy": 2.8949688361747548,
+              "cumulative_work": [
+                3.714050876530445e-18,
+                -2.0320415651663297,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00010071849372783603
+            }
+          ]
+        },
+        "B": {
+          "n": 48,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.0078125,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 2.220446049250313e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.17797703468285483,
+          "max_energy_residual_rel": 2.0428956979495097e-05,
+          "initial_energy": 4.927111119834812,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 7.051723136870945,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.8125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5811893888445125,
+                "xyz": [
+                  -0.3125,
+                  -0.3125,
+                  3.8125
+                ]
+              },
+              "p_min": {
+                "value": -0.8876492391259163,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.8125
+                ]
+              },
+              "core_z_r_rms": [
+                3.7997889173780623,
+                1.0023380517668126,
+                0.25971305961579594
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1776,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1176,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 764,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 4.4390969708670065,
+              "midplane_energy_flux": 0.3789834921277321,
+              "upward_flux_near_inlet": 0.09826205318412787,
+              "time": 0.0,
+              "energy": 4.927111119834812,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 5.039098535905115,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.9375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5116520680157937,
+                "xyz": [
+                  -0.1875,
+                  -0.1875,
+                  3.9375
+                ]
+              },
+              "p_min": {
+                "value": -0.6342097186990824,
+                "xyz": [
+                  -0.9375,
+                  -0.1875,
+                  3.9375
+                ]
+              },
+              "core_z_r_rms": [
+                3.878565525849957,
+                1.0085888651483257,
+                0.31223087220655404
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 2532,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1804,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1184,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.9984964814634543,
+              "midplane_energy_flux": 0.27030972726636904,
+              "upward_flux_near_inlet": 0.09286430278160063,
+              "time": 0.125,
+              "energy": 4.409691933103728,
+              "cumulative_work": [
+                -4.173490149799548e-19,
+                -0.5173736004262863,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -4.5586304797895494e-05
+            },
+            {
+              "omega_peak": {
+                "value": 4.074499942413787,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.9375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4611769034515842,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  3.9375
+                ]
+              },
+              "p_min": {
+                "value": -0.5019307239690661,
+                "xyz": [
+                  -0.0625,
+                  -0.9375,
+                  3.9375
+                ]
+              },
+              "core_z_r_rms": [
+                3.9516314418745364,
+                1.0152645595366256,
+                0.3515022250253749
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3172,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2296,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1452,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.6449040274356346,
+              "midplane_energy_flux": 0.19962534614718375,
+              "upward_flux_near_inlet": 0.0882566906246793,
+              "time": 0.25,
+              "energy": 3.9987021635247095,
+              "cumulative_work": [
+                -1.7781934715276938e-18,
+                -0.9283408064616007,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -6.814984850211925e-05
+            },
+            {
+              "omega_peak": {
+                "value": 3.4241997669138184,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  4.0625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.4119669137036888,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  4.0625
+                ]
+              },
+              "p_min": {
+                "value": -0.4035548618379091,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  4.0625
+                ]
+              },
+              "core_z_r_rms": [
+                4.019531403090944,
+                1.0230500361369474,
+                0.38519217299070235
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3792,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2816,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1804,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.34761979804122,
+              "midplane_energy_flux": 0.15126775621164076,
+              "upward_flux_near_inlet": 0.08426994020015662,
+              "time": 0.375,
+              "energy": 3.656795699989151,
+              "cumulative_work": [
+                -2.737537693631994e-18,
+                -1.2702338613793447,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -8.155846631674457e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.934774544710597,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  4.1875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.353058277602017,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  4.1875
+                ]
+              },
+              "p_min": {
+                "value": -0.332732494992354,
+                "xyz": [
+                  -0.0625,
+                  -0.9375,
+                  4.0625
+                ]
+              },
+              "core_z_r_rms": [
+                4.0826895030362405,
+                1.0324073181763584,
+                0.4159333562975274
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 4432,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 3308,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2164,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 3.0910248816087416,
+              "midplane_energy_flux": 0.11684502963174104,
+              "upward_flux_near_inlet": 0.08078348870447409,
+              "time": 0.5,
+              "energy": 3.3645681928213467,
+              "cumulative_work": [
+                -1.8849791798858395e-18,
+                -1.5624526264573895,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -9.030055607617271e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.593072489314963,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  4.1875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.2907178553102,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  4.1875
+                ]
+              },
+              "p_min": {
+                "value": -0.2804101290862105,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  4.1875
+                ]
+              },
+              "core_z_r_rms": [
+                4.141821328799938,
+                1.0419608037532988,
+                0.44261908056250415
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 5024,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 3692,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2408,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 2.865766257438209,
+              "midplane_energy_flux": 0.09160502350277024,
+              "upward_flux_near_inlet": 0.0777089600861848,
+              "time": 0.625,
+              "energy": 3.11027109213123,
+              "cumulative_work": [
+                -1.771754697639581e-18,
+                -1.8167436958827916,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -9.633182079049618e-05
+            },
+            {
+              "omega_peak": {
+                "value": 2.318607517701043,
+                "xyz": [
+                  -0.8125,
+                  -0.4375,
+                  4.3125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.233426288180235,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  4.3125
+                ]
+              },
+              "p_min": {
+                "value": -0.2378724538106913,
+                "xyz": [
+                  -0.0625,
+                  -0.9375,
+                  4.1875
+                ]
+              },
+              "core_z_r_rms": [
+                4.196838538983992,
+                1.0524227519244342,
+                0.4671181747633634
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 5560,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 4128,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2652,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 2.665645538030251,
+              "midplane_energy_flux": 0.07266445362256549,
+              "upward_flux_near_inlet": 0.07498065497589322,
+              "time": 0.75,
+              "energy": 2.8860949638004256,
+              "cumulative_work": [
+                -1.4843458307243563e-18,
+                -2.0409155002932864,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00010065574110029729
+            }
+          ]
+        },
+        "AB": {
+          "n": 48,
+          "length": 6.0,
+          "nu": 0.08,
+          "dt": 0.0078125,
+          "duration": 0.75,
+          "periodic_axes": [],
+          "max_div": 2.4424906541753444e-15,
+          "max_abs_net_flux": 0.0,
+          "max_cfl": 0.20138345566448151,
+          "max_energy_residual_rel": 1.9960166343569878e-05,
+          "initial_energy": 11.877909778805073,
+          "rows": [
+            {
+              "omega_peak": {
+                "value": 7.066244472179495,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  2.1875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.8098037649199246,
+                "xyz": [
+                  -0.1875,
+                  -0.1875,
+                  2.3125
+                ]
+              },
+              "p_min": {
+                "value": -0.830949383066234,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.8125
+                ]
+              },
+              "core_z_r_rms": [
+                3.0,
+                1.002517843282766,
+                0.83900077096046
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 1784,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1176,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 772,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.914647670087165,
+              "midplane_energy_flux": 2.5563416629096514,
+              "upward_flux_near_inlet": 0.6423361315389942,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.2027933908544672,
+                  1.002517843282766,
+                  0.26150318546229656
+                ],
+                [
+                  3.7972066091455328,
+                  1.002517843282766,
+                  0.26150318546229656
+                ]
+              ],
+              "time": 0.0,
+              "energy": 11.877909778805073,
+              "cumulative_work": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "energy_residual": 0.0
+            },
+            {
+              "omega_peak": {
+                "value": 5.154674429147561,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.9375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.793833800537315,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.4375
+                ]
+              },
+              "p_min": {
+                "value": -0.5987910953047814,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.8125
+                ]
+              },
+              "core_z_r_rms": [
+                3.111028678359068,
+                1.0081893022201245,
+                0.8532892372471869
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 2592,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 1820,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1164,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.693998676296872,
+              "midplane_energy_flux": 2.4704322338452904,
+              "upward_flux_near_inlet": 0.5909615157692512,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.299124012632864,
+                  0.9941246295235495,
+                  0.31540694094741206
+                ],
+                [
+                  3.8855914492378036,
+                  1.0216070990566746,
+                  0.3140445858579248
+                ]
+              ],
+              "time": 0.125,
+              "energy": 10.825429973509944,
+              "cumulative_work": [
+                1.6373155142231751e-18,
+                -1.052372982289791,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00010682300533737532
+            },
+            {
+              "omega_peak": {
+                "value": 4.140449581739263,
+                "xyz": [
+                  -0.5625,
+                  -0.8125,
+                  3.9375
+                ]
+              },
+              "speed_peak": {
+                "value": 1.7668891868543835,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.5625
+                ]
+              },
+              "p_min": {
+                "value": -0.47880364210171705,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  3.9375
+                ]
+              },
+              "core_z_r_rms": [
+                3.2146000477593084,
+                1.0149862294227956,
+                0.8614962977793423
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 3296,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2424,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1524,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.544930217968577,
+              "midplane_energy_flux": 2.3938828928229015,
+              "upward_flux_near_inlet": 0.5476563361757976,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.398583983905507,
+                  0.986882016762408,
+                  0.3653240166355524
+                ],
+                [
+                  3.963110347309095,
+                  1.040765492318295,
+                  0.35788325420916206
+                ]
+              ],
+              "time": 0.25,
+              "energy": 9.98448165732067,
+              "cumulative_work": [
+                2.2536510973588862e-18,
+                -1.8932673159069597,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.000160805577443357
+            },
+            {
+              "omega_peak": {
+                "value": 3.546428913204744,
+                "xyz": [
+                  -0.8125,
+                  -0.5625,
+                  4.0625
+                ]
+              },
+              "speed_peak": {
+                "value": 1.7285398482180916,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.6875
+                ]
+              },
+              "p_min": {
+                "value": -0.3890701007458958,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  4.0625
+                ]
+              },
+              "core_z_r_rms": [
+                3.3123624038458854,
+                1.022731796449605,
+                0.8664690760074364
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 7936,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 2976,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 1856,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.433735155205729,
+              "midplane_energy_flux": 2.255187607745329,
+              "upward_flux_near_inlet": 0.5105823733409882,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.505583733112959,
+                  0.9838357019841913,
+                  0.4157924600804327
+                ],
+                [
+                  4.040744231530967,
+                  1.0578482532974194,
+                  0.38950894827708993
+                ]
+              ],
+              "time": 0.375,
+              "energy": 9.280103956120644,
+              "cumulative_work": [
+                2.1435103444362255e-18,
+                -2.5976128648279846,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00019295785644368735
+            },
+            {
+              "omega_peak": {
+                "value": 3.093137627708514,
+                "xyz": [
+                  -0.8125,
+                  -0.5625,
+                  4.1875
+                ]
+              },
+              "speed_peak": {
+                "value": 1.6816950729964864,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.8125
+                ]
+              },
+              "p_min": {
+                "value": -0.3269149285734836,
+                "xyz": [
+                  -0.5625,
+                  -0.8125,
+                  4.0625
+                ]
+              },
+              "core_z_r_rms": [
+                3.404764747483594,
+                1.032435826318791,
+                0.8714859397909259
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 9304,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 3508,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2256,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.336707805680001,
+              "midplane_energy_flux": 2.0504731997348182,
+              "upward_flux_near_inlet": 0.4786693106954409,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.5873102829574512,
+                  0.9843596740556229,
+                  0.4440249889350401
+                ],
+                [
+                  4.100286715717955,
+                  1.0733408815827514,
+                  0.4266045149179803
+                ]
+              ],
+              "time": 0.5,
+              "energy": 8.67308792399954,
+              "cumulative_work": [
+                3.0532899042363483e-18,
+                -3.2046082301321213,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00021362467341079494
+            },
+            {
+              "omega_peak": {
+                "value": 2.7291279946853075,
+                "xyz": [
+                  -0.6875,
+                  -0.6875,
+                  4.3125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.629634784031551,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  2.9375
+                ]
+              },
+              "p_min": {
+                "value": -0.2812246227189598,
+                "xyz": [
+                  -0.5625,
+                  -0.8125,
+                  4.1875
+                ]
+              },
+              "core_z_r_rms": [
+                3.4918775745624497,
+                1.043762589347302,
+                0.877157573970182
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 10528,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 7928,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 2644,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.2389303398536,
+              "midplane_energy_flux": 1.8126847927121963,
+              "upward_flux_near_inlet": 0.45089577065576186,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.6899220674861275,
+                  0.9928038692822703,
+                  0.48744134102144565
+                ],
+                [
+                  4.178018684127082,
+                  1.0873621063016592,
+                  0.4463675524746272
+                ]
+              ],
+              "time": 0.625,
+              "energy": 8.13954330913172,
+              "cumulative_work": [
+                1.7581368232151205e-18,
+                -3.738138975822727,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.0002274938506250379
+            },
+            {
+              "omega_peak": {
+                "value": 2.462325100134548,
+                "xyz": [
+                  -0.8125,
+                  -0.5625,
+                  4.3125
+                ]
+              },
+              "speed_peak": {
+                "value": 1.5763550745325012,
+                "xyz": [
+                  -0.0625,
+                  -0.0625,
+                  3.1875
+                ]
+              },
+              "p_min": {
+                "value": -0.2477852458112754,
+                "xyz": [
+                  -0.4375,
+                  -0.9375,
+                  4.1875
+                ]
+              },
+              "core_z_r_rms": [
+                3.574821849906142,
+                1.0559849447381353,
+                0.8826353022444332
+              ],
+              "topology": {
+                "0.25": {
+                  "cells": 11520,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.35": {
+                  "cells": 8832,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                },
+                "0.5": {
+                  "cells": 3048,
+                  "tunnels": 1,
+                  "cavities": 0,
+                  "touches_boundary": false,
+                  "candidate": true
+                }
+              },
+              "upper_half_energy": 5.133094386758538,
+              "midplane_energy_flux": 1.5714419949291722,
+              "upward_flux_near_inlet": 0.4266128325538494,
+              "resolved_pair_z_r_rms": [
+                [
+                  2.746512777019725,
+                  1.0015313134496941,
+                  0.5001421616248379
+                ],
+                [
+                  4.224117826764479,
+                  1.0986701269705412,
+                  0.4796798445477941
+                ]
+              ],
+              "time": 0.75,
+              "energy": 7.663585511729058,
+              "cumulative_work": [
+                2.2475101084912926e-18,
+                -4.214087182021016,
+                0.0,
+                0.0
+              ],
+              "energy_residual": -0.00023708505499886456
+            }
+          ]
+        }
+      },
+      "relative_shift_from_singles": [
+        0.14430692037947024,
+        0.02986159601301619
+      ],
+      "integrated_midplane_flux_excess": 0.84276738725787
+    }
+  ],
+  "checks": {
+    "balance": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E05_interaction/run.py": "fa0561f0d00c22f0ffa604e88204cef3926f5082a7c2856da1cbf200a81103e6",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E03_vortex/observe.py": "bdd81d90e7769e6972d2ce5f1af1d9723f2fe4be4f86de00f201584e416ddbf2",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

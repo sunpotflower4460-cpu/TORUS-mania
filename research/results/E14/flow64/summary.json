@@ -1,0 +1,289 @@
+{
+  "variant": "flow64",
+  "budget_columns": [
+    "time",
+    "energy",
+    "integral_carried_out",
+    "integral_carried_in",
+    "integral_pressure_out",
+    "integral_viscous_out",
+    "integral_dissipation",
+    "integral_unit_pressure_offset_out",
+    "energy_balance_residual"
+  ],
+  "checks": {
+    "moving_and_fixed_energy_budget": true
+  },
+  "grid": 64,
+  "dt_s": 0.0078125,
+  "energy_units": "J at density 1 kg/m3",
+  "time_s": [
+    1.25,
+    2.25
+  ],
+  "tube_radii_m": [
+    0.75,
+    0.4
+  ],
+  "tracking_height_m": [
+    0.745521759046827,
+    1.0324498692157127
+  ],
+  "topology_at_samples": [
+    {
+      "t_s": 1.25,
+      "azimuthal_vorticity": {
+        "cells": 2292,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 416,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 1.375,
+      "azimuthal_vorticity": {
+        "cells": 2544,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 424,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 1.5,
+      "azimuthal_vorticity": {
+        "cells": 2772,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 464,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 1.625,
+      "azimuthal_vorticity": {
+        "cells": 2948,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 476,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 1.75,
+      "azimuthal_vorticity": {
+        "cells": 3144,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 492,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 1.875,
+      "azimuthal_vorticity": {
+        "cells": 3336,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 540,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 2.0,
+      "azimuthal_vorticity": {
+        "cells": 3632,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 556,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 2.125,
+      "azimuthal_vorticity": {
+        "cells": 3800,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 596,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    },
+    {
+      "t_s": 2.25,
+      "azimuthal_vorticity": {
+        "cells": 4076,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "kinetic_energy": {
+        "cells": 652,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      }
+    }
+  ],
+  "trials": {
+    "coarse_fixed": {
+      "initial_energy": 0.06112918964592357,
+      "final_energy": 0.01788153842613838,
+      "final_over_initial": 0.2925204559346031,
+      "normalized_balance_error": 0.008481350371045405,
+      "cumulative": {
+        "carried_out": 0.01525292866954864,
+        "carried_in": 0.004090090635379216,
+        "pressure_out": -0.00887596833957548,
+        "viscous_out": -0.021214147460049,
+        "dissipation": 0.061652036462909836,
+        "unit_pressure_offset_out": -0.0004125287894584833
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.24951956271459894,
+        "carried_in": 0.06690896213527615,
+        "pressure_out": -0.1452001636368392,
+        "viscous_out": -0.34703793037216674,
+        "dissipation": 1.0085531449053182,
+        "unit_pressure_offset_out": -0.006748474695116345
+      },
+      "optical_or_advective_exchange_per_initial": 0.31642852484987516
+    },
+    "coarse_moving": {
+      "initial_energy": 0.06112918964592357,
+      "final_energy": 0.016526192842382787,
+      "final_over_initial": 0.27034863275804677,
+      "normalized_balance_error": 0.008710203286260106,
+      "cumulative": {
+        "carried_out": 0.0187060468026357,
+        "carried_in": 0.00800738798571953,
+        "pressure_out": -0.0013190333640036673,
+        "viscous_out": -0.029178984314080177,
+        "dissipation": 0.06384624191853427,
+        "unit_pressure_offset_out": 0.00038832905368096015
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.3060084210339785,
+        "carried_in": 0.13099123400948776,
+        "pressure_out": -0.021577798947505396,
+        "viscous_out": -0.47733307905916256,
+        "dissipation": 1.044447706379695,
+        "unit_pressure_offset_out": 0.006352596131737795
+      },
+      "optical_or_advective_exchange_per_initial": 0.4369996550434663
+    },
+    "fine_fixed": {
+      "initial_energy": 0.0611579579216288,
+      "final_energy": 0.017885314635319106,
+      "final_over_initial": 0.2924446015388274,
+      "normalized_balance_error": 0.00818430969534261,
+      "cumulative": {
+        "carried_out": 0.015234748656509504,
+        "carried_in": 0.004092800346886366,
+        "pressure_out": -0.008861558988473814,
+        "viscous_out": -0.021169902841646007,
+        "dissipation": 0.06165753246605356,
+        "unit_pressure_offset_out": -0.0005213134416708047
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.24910492721212432,
+        "carried_in": 0.06692179539629343,
+        "pressure_out": -0.1448962537275935,
+        "viscous_out": -0.3461512378940823,
+        "dissipation": 1.0081685942664231,
+        "unit_pressure_offset_out": -0.008524049189785648
+      },
+      "optical_or_advective_exchange_per_initial": 0.31602672260841774
+    },
+    "fine_moving": {
+      "initial_energy": 0.0611579579216288,
+      "final_energy": 0.016531718869236985,
+      "final_over_initial": 0.2703118192798662,
+      "normalized_balance_error": 0.008119244301123906,
+      "cumulative": {
+        "carried_out": 0.018692251975820695,
+        "carried_in": 0.008009818614890155,
+        "pressure_out": -0.0013138488323631633,
+        "viscous_out": -0.029119042148452207,
+        "dissipation": 0.06385821621419956,
+        "unit_pressure_offset_out": 0.0003143953497853805
+      },
+      "cumulative_per_initial_energy": {
+        "carried_out": 0.30563891619425854,
+        "carried_in": 0.13096936011425334,
+        "pressure_out": -0.021482876096791885,
+        "viscous_out": -0.47612842446059045,
+        "dissipation": 1.0441521984110558,
+        "unit_pressure_offset_out": 0.00514071039108703
+      },
+      "optical_or_advective_exchange_per_initial": 0.4366082763085119
+    }
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E14_moving_energy/run.py": "0dce5e1aa9a6eacbbd92e2406eb832bd978112d3d31e497301112a91d15a40ed",
+    "E11_energy_transport/run.py": "0b0e0dd0f4aa42675b1224989f640e40b8ff2dee964b4693ac2d30e737174d09",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E06_jet/run.py": "2e684961fc612fc892b02dcede77bab21a14b8c3338c7cc148db8f7901eb0449",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
+  }
+}

@@ -1,0 +1,299 @@
+[
+  {
+    "domain": "fluid",
+    "query_url": "https://api.crossref.org/works?query.title=starting+jet&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=5&sort=score&order=desc",
+    "items": [
+      {
+        "rank": 1,
+        "doi": "10.1016/j.compfluid.2016.10.022",
+        "title": "High-resolution LES of a starting jet",
+        "published": [
+          2016,
+          11
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 2,
+        "doi": "10.1017/jfm.2017.128",
+        "title": "Compressible starting jet: pinch-off and vortex ring–trailing jet interaction",
+        "published": [
+          2017,
+          3,
+          27
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 3,
+        "doi": "10.3847/1538-4357/ad0ecc",
+        "title": "Jump-starting Relativistic Flows and the M87 Jet",
+        "published": [
+          2024,
+          2,
+          1
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 4,
+        "doi": "10.1007/s00348-014-1685-9",
+        "title": "Scalar dissipation rate measurements in a starting jet",
+        "published": [
+          2014,
+          3
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 5,
+        "doi": "10.1017/jfm.2021.609",
+        "title": "Starting jet formation through eversion of elastic sheets",
+        "published": [
+          2021,
+          8,
+          4
+        ],
+        "has_abstract": true
+      }
+    ],
+    "sha256": "f314a925128759cb57fa40d69d437abe712481c425b42215409777ef082bfefa"
+  },
+  {
+    "domain": "plant",
+    "query_url": "https://api.crossref.org/works?query.title=leaf+venation&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=5&sort=score&order=desc",
+    "items": [
+      {
+        "rank": 1,
+        "doi": "10.1016/j.tibtech.2024.03.011",
+        "title": "Microphysiological systems inspired by leaf venation",
+        "published": [
+          2024,
+          11
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 2,
+        "doi": "10.4156/aiss.vol4.issue6.6",
+        "title": "Venation-Skeleton Based Curly Leaf Modeling",
+        "published": [
+          2012,
+          4,
+          30
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 3,
+        "doi": "10.1098/rspa.2019.0015",
+        "title": "Auxin transport model for leaf venation",
+        "published": [
+          2019,
+          11
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 4,
+        "doi": "10.1299/jsmefed.2016.gs12",
+        "title": "Flow in Leaf Venation as Network",
+        "published": [
+          2016
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 5,
+        "doi": "10.1111/nph.12780",
+        "title": "Inferring climate from angiosperm leaf venation networks",
+        "published": [
+          2014,
+          4,
+          14
+        ],
+        "has_abstract": true
+      }
+    ],
+    "sha256": "ca742d9e3e86b92daeb7aa6ce115d4b6af515e7dee8732bc57237cb9f1d2d7d6"
+  },
+  {
+    "domain": "phase",
+    "query_url": "https://api.crossref.org/works?query.title=coupled+oscillators&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=5&sort=score&order=desc",
+    "items": [
+      {
+        "rank": 1,
+        "doi": "10.1017/s0022112011001078",
+        "title": "Hydrodynamically coupled oscillators",
+        "published": [
+          2011,
+          4,
+          19
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 2,
+        "doi": "10.1017/jfm.2011.107",
+        "title": "Hydrodynamically coupled oscillators",
+        "published": [
+          2011,
+          4,
+          19
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 3,
+        "doi": "10.1038/nature09721",
+        "title": "Coupled quantized mechanical oscillators",
+        "published": [
+          2011,
+          2,
+          23
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 4,
+        "doi": "10.1119/1.4792696",
+        "title": "Coupled second-quantized oscillators",
+        "published": [
+          2013,
+          3,
+          18
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 5,
+        "doi": "10.1088/1361-6404/aa9ec6",
+        "title": "Damping of coupled harmonic oscillators",
+        "published": [
+          2018,
+          2,
+          15
+        ],
+        "has_abstract": true
+      }
+    ],
+    "sha256": "6b30b90b5c763b58361b549aec52a821a1c800267f42cba3537504dccde3a299"
+  },
+  {
+    "domain": "space",
+    "query_url": "https://api.crossref.org/works?query.title=cosmic+topology&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=5&sort=score&order=desc",
+    "items": [
+      {
+        "rank": 1,
+        "doi": "10.4249/scholarpedia.31544",
+        "title": "Cosmic Topology",
+        "published": [
+          2015
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 2,
+        "doi": "10.1134/s0202289314010058",
+        "title": "Cosmic topology: Twenty years after",
+        "published": [
+          2014,
+          1
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 3,
+        "doi": "10.1088/1742-6596/380/1/012024",
+        "title": "Spherical Orbifolds for Cosmic Topology",
+        "published": [
+          2012,
+          8,
+          24
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 4,
+        "doi": "10.1007/s00220-011-1211-3",
+        "title": "The Spectral Action and Cosmic Topology",
+        "published": [
+          2011,
+          2,
+          22
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 5,
+        "doi": "10.1007/s13194-024-00576-7",
+        "title": "Cosmic topology, underdetermination, and spatial infinity",
+        "published": [
+          2024,
+          3,
+          27
+        ],
+        "has_abstract": true
+      }
+    ],
+    "sha256": "8aede4e860d3f6e131d478c97865341a992e22bb29e70decee1127813a924a4f"
+  },
+  {
+    "domain": "discovery_only",
+    "query_url": "https://api.crossref.org/works?query.title=toroidal+vortex&filter=from-pub-date%3A2010-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=5&sort=score&order=desc",
+    "items": [
+      {
+        "rank": 1,
+        "doi": "10.1007/s12206-012-1222-9",
+        "title": "Shear-dependant toroidal vortex flow",
+        "published": [
+          2013,
+          1
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 2,
+        "doi": "10.1088/2058-7058/37/11/03",
+        "title": "Vortex cannon generates toroidal electromagnetic pulses",
+        "published": [
+          2024,
+          11,
+          1
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 3,
+        "doi": "10.1134/s1063776116040026",
+        "title": "Helicity of a toroidal vortex with swirl",
+        "published": [
+          2016,
+          4
+        ],
+        "has_abstract": false
+      },
+      {
+        "rank": 4,
+        "doi": "10.1098/rspa.2016.0271",
+        "title": "Point vortex interactions on a toroidal surface",
+        "published": [
+          2016,
+          7
+        ],
+        "has_abstract": true
+      },
+      {
+        "rank": 5,
+        "doi": "10.1088/1742-6596/996/1/012004",
+        "title": "Mathematical modeling of the toroidal vortex structures interaction",
+        "published": [
+          2018,
+          3
+        ],
+        "has_abstract": false
+      }
+    ],
+    "sha256": "c82300a8dcdd797c0785d7627e77be2dabcd279949eb2a0b396ac197f7f6184d"
+  }
+]

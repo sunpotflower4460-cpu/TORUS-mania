@@ -2,14 +2,50 @@
   "schema_version": 1,
   "updated_at": "2026-11-20",
   "timezone": "Asia/Tokyo",
-  "stage": "research_preparation",
-  "experiments_run": false,
+  "stage": "auxin_transport_and_reentry_discrimination",
+  "experiments_run": true,
+  "completed_experiments": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17",
+    "E18",
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23"
+  ],
+  "independent_external_data_reanalyses": 1,
+  "evidence_fields": {
+    "literature_notes": "今回の閲読段階を記録したカード。パスはリポジトリ基準。",
+    "independently_reproduced": "当該主張のscope内で自作計算により解析基準を再現したか。論文の実データ追試の件数とは別。",
+    "results": "自作実験と主張との関係。counterexampleは一般推論への反例、calibration_onlyは上位主張の判定に使わない。",
+    "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
+    "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。",
+    "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawaとE23のÖtvösの2件。画像からの読取り、図データになる前のPIV速度や顕微鏡画像とは別。"
+  },
   "claims": [
     {
       "id": "H01",
       "statement": "一定の円運動の一成分を時間表示すると正弦波になる",
-      "status": "analytic_baseline",
-      "scope": "回転の角速度が一定で、観測座標と時間軸を固定した場合。一般の波から背後の実体を一意に特定する主張ではない。",
+      "status": "supported_within_scope",
+      "scope": "等速円の世界座標yを時刻に対して測る。実空間の軌道は円 S¹ で足りる。T-Gは比較対象で、波形から身体や場の形を逆算する主張ではない。",
       "torus_kinds": [
         "T-G"
       ],
@@ -19,16 +55,26 @@
       "evidence_urls": [
         "https://ocw.mit.edu/ans7870/textbooks/Strang/Edited/Calculus/12.1-12.2.pdf"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
-      "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "evidence_role": "S001の解析基準を自作の回転合成と直接式で照合。外部観測データの再解析は未実施。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "analytic_calibration",
+          "path": "research/results/E01/summary.json",
+          "finding": "半径1 m、1 Hz、2秒、2初期位相×2刻み。円のyと正弦式の最大絶対誤差は4.22e-15 m以下、側面のz幅は0 m。"
+        }
+      ],
+      "next_action": "自然に観測した波を扱う場合は、同じ投影を持つ直線振動との識別に別の成分を測る。",
+      "literature_notes": [
+        "research/notes/S001_rotation.md"
+      ]
     },
     {
       "id": "H02",
       "statement": "二つの周期的自由度の組が状態空間のトーラスを構成する",
-      "status": "analytic_baseline",
-      "scope": "状態空間と実際の軌道を区別。位相間に拘束や同期があれば軌道は低次元となり得る。",
+      "status": "supported_within_scope",
+      "scope": "各初期位相を独立に選べ、各角を2πで同一視するモデルの全状態 S¹×S¹。周波数比・過渡・結合に応じた軌道と有限精度の測定を区別する。",
       "torus_kinds": [
         "T-P"
       ],
@@ -38,15 +84,27 @@
       "evidence_urls": [
         "https://ocw.mit.edu/courses/12-006j-nonlinear-dynamics-chaos-fall-2022/mit12_006jf22_lec19.pdf"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
-      "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "evidence_role": "S003の二周期モデルの解析的帰結を自作の位相計算で照合。積空間の構造は仮定。S008は別の実データでの文献報告で、その追試は未実施。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "analytic_calibration",
+          "path": "research/results/E02/summary.json",
+          "finding": "無結合の周波数比1、3/2、99/70の初再帰は1、2、70秒（64・128標本/秒、許容0.02 rad）。√2指定と99/70は80秒でともに256/256区画を訪問。"
+        }
+      ],
+      "next_action": "未知の観測波形から状態空間を推定する試験には、長周期・一周期・観測雑音の対照を持ち込む。",
+      "literature_notes": [
+        "research/notes/S002_surface.md",
+        "research/notes/S003_phase.md",
+        "research/notes/S008_grid_cells.md"
+      ]
     },
     {
       "id": "H03",
       "statement": "砂時計・双曲面・渦・トーラスが単一の流れの異なる側面として成立する",
-      "status": "open",
+      "status": "partially_supported",
       "scope": "単一の流速場と観測写像を固定して確かめる。光円錐など異なる軸の図は別に扱う。",
       "torus_kinds": [
         "T-G",
@@ -60,10 +118,52 @@
       "evidence_urls": [
         "https://www.einstein-online.info/en/spacetime/"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "一つの与えた粘性渦輪に輪状渦度と、同一流量を囲む断面のくびれが同時に現れた。くびれは無渦の解析流にも現れ、厳密な双曲面・台風・宇宙への同定は未成立。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "calibration_only",
+          "path": "research/results/E01/summary.json",
+          "finding": "上面だけでは非トーラス4面中2面が陽性。正面を足すと0/4。この幾何学対照に共通の流速場は入れていない。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "within_model",
+          "path": "research/results/E03/summary.json",
+          "finding": "48³の与えた輪は0.75 sで0.4310 m移動。速度最大は軸近く、渦度最大・圧力最小は軸外。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "same_field_and_counterexample",
+          "path": "research/results/E03/observers/summary.json",
+          "finding": "0.75 sの渦で中央/小さい方の端半径0.801、無渦ポテンシャル流0.838、一定上昇流1.000。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "independent_discretization",
+          "path": "research/results/E03/cylinder/summary.json",
+          "finding": "独立な軸対称円筒の2格子で移動0.4193・0.4244 m。"
+        },
+        {
+          "experiment_id": "E06",
+          "role": "boundary_driven",
+          "path": "research/results/E06/circle_fine/summary.json",
+          "finding": "初期渦ゼロの噴流。円形6 m箱64³で主閾値の輪候補が0.75–1.75 sの9時刻。"
+        }
+      ],
+      "next_action": "三次元実測の速度場で、登録したくびれ・渦度・粒子の対応と非回転対照を比較する。",
+      "literature_notes": [
+        "research/notes/S002_surface.md",
+        "research/notes/S007_vortices.md",
+        "research/notes/X1_X2_vortex_experiments.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "登録した粘性渦輪で輪状の渦度と流量断面のくびれを同時に観測できる。",
+          "status": "supported_within_scope"
+        }
+      ]
     },
     {
       "id": "H04",
@@ -78,10 +178,24 @@
         "E05"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "色分けは観測写像。E05で位相差・結合方向への介入は検証したが、象徴に固有な因果対応は登録されていない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "calibration_only",
+          "path": "research/results/E01/summary.json",
+          "finding": "全運動を固定軸のdy/dtの正負で着色した。色以外に独立した物理量・伝統的な意味との対応は測っていない。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "calibration_only",
+          "path": "research/results/E05/phases/summary.json",
+          "finding": "外部時計でも位相固定度はほぼ1。符号付きの位相関係は特定の象徴解釈を決めない。"
+        }
+      ],
+      "next_action": "陰陽に対応させる量を一つ選び、一方の操作による他方の応答を別の物理量で検証する。",
+      "literature_notes": []
     },
     {
       "id": "H05",
@@ -94,21 +208,116 @@
       "planned_experiments": [
         "E04",
         "E06",
-        "E07"
+        "E07",
+        "E17",
+        "E18",
+        "E20",
+        "E21",
+        "E22",
+        "E23"
       ],
       "evidence_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116426/",
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/"
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7879751/",
+        "https://doi.org/10.1103/PhysRevLett.104.048704",
+        "https://doi.org/10.6084/m9.figshare.13370348.v1",
+        "https://doi.org/10.7554/eLife.15341",
+        "https://doi.org/10.1073/pnas.0807814105",
+        "https://doi.org/10.1104/pp.109.142448",
+        "https://doi.org/10.1073/pnas.191380498",
+        "https://doi.org/10.1093/jxb/erv541",
+        "https://doi.org/10.1126/science.1191937",
+        "https://doi.org/10.1093/jxb/erm171",
+        "https://doi.org/10.1104/pp.118.4.1369",
+        "https://doi.org/10.1104/pp.122.2.481",
+        "https://doi.org/10.1105/tpc.13.4.843",
+        "https://doi.org/10.1105/tpc.113.119495",
+        "https://doi.org/10.15252/embr.202051813"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "局所の力や伸びやすさは側根や葉の位置に関わる。曲げ頻度による本数の予測には反例がある。シロイヌナズナで方向性のあるオーキシン輸送と分岐の関与を支持。外層から中心への大きな戻りを予測しない生体モデルもある。三次元の戻り経路が閉じ、その戻りが分岐を予測するかは未決。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E04",
+          "role": "transport_and_damage",
+          "path": "research/results/E04/summary.json",
+          "finding": "水の局所適応網は主閾値・細かい刻みで固定負荷に8,11,10閉路、消費先交替で0,0,0閉路。"
+        },
+        {
+          "experiment_id": "E04",
+          "role": "external_data_reanalysis",
+          "path": "research/results/E04/plant/summary.json",
+          "finding": "5群の5,205区間は原著の表1と一致、完全な2,024分岐点で径比を集計。成長や流れの時系列は対象外。"
+        },
+        {
+          "experiment_id": "E18",
+          "role": "plant_development_intervention",
+          "path": "research/results/E18/summary.json",
+          "finding": "曲げた位置の側根は報告率99%対18%。葉の誘導2系統は14/73と10/55で、擬似処置は0/26と0/28。"
+        },
+        {
+          "experiment_id": "E20",
+          "role": "independent_falsification_controls",
+          "path": "research/results/E20/summary.json",
+          "finding": "曲げの間隔を2〜24時間に変えた8点。6時間で固定した一定式の残り7点のRMSEは0.86本/日、1曲がり1本なら3.74本/日。"
+        },
+        {
+          "experiment_id": "E21",
+          "role": "directional_transport_and_rescue",
+          "path": "research/results/E21/summary.json",
+          "finding": "局所の輸送阻害で側根密度0.33→0.23本/mm。別の実験では阻害中のオーキシン補充で約0.48本/mmの出現を確認。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        },
+        {
+          "experiment_id": "E23",
+          "role": "archived_figure_arrays_by_independent_repeat",
+          "path": "research/results/E23/summary.json",
+          "finding": "硝酸への側根密度応答の野生型−欠損型の差は3反復すべて正、平均+0.82本/cm。対応行から推定した野生型の本数差は+1.0、+0.9、−0.7本/個体。"
+        }
+      ],
+      "next_action": "同じ根で根先の標識が外層と中心を通る時系列を測り、再流入だけの変化から新しい側根の数と位置を事前に予測する。主根長、初期の原基、合成・分解を照合する。",
+      "literature_notes": [
+        "research/notes/S009_transport.md",
+        "research/notes/Katifori_transport_networks.md",
+        "research/notes/S012_branching_data.md",
+        "research/notes/X5_source_sink.md",
+        "research/notes/E18_plant_organ_placement.md",
+        "research/notes/E20_lateral_root_controls.md",
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E23_pin2_nitrate.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "既存の主根への一時的な曲げと、頂端での細胞壁伸展の局所変化が、後の根や葉の発生位置に影響する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "自然の根端の戻り輸送が閉じた三次元のトーラス面を作り、その経路だけの変更で分岐位置が変わる。",
+          "status": "open"
+        },
+        {
+          "statement": "対象の栽培実験で、すべての強制曲げが1つずつ側根または原基を追加する。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "当該のシロイヌナズナ実験で、オーキシン輸送の介入と供給が後の側根形成に影響する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "濃度の静的分布と両方向の標識輸送を別々に測れば、同じ標識が外層から中心へ再流入したかを特定できる。",
+          "status": "not_identifiable"
+        }
+      ]
     },
     {
       "id": "H06",
       "statement": "循環するまとまり同士の相互作用が持続する個体性や階層をつくる",
-      "status": "open",
+      "status": "partially_supported",
       "scope": "持続時間、交換、摂動への応答、境界を操作的に定義。単なる相互作用の存在を生命の成立と解釈しない。",
       "torus_kinds": [
         "T-F",
@@ -116,15 +325,62 @@
       ],
       "planned_experiments": [
         "E05",
-        "E06"
+        "E06",
+        "E15"
       ],
       "evidence_urls": [
-        "https://doi.org/10.1088/0169-5983/46/3/031415"
+        "https://doi.org/10.1088/0169-5983/46/3/031415",
+        "https://doi.org/10.1073/pnas.2526858123",
+        "https://doi.org/10.5281/zenodo.18380405"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "二つの渦輪の同時発展と単独対照に、八つの渦輪を衝突させた公開測定の空間分布・エネルギー分解を追加。持続する境界や階層の生成は未判定。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "calibration_only",
+          "path": "research/results/E02/summary.json",
+          "finding": "K=2 rad/sで位相差が同期。二位相の関係を測った段階で、物理的な個体や階層は定義していない。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "causal_intervention",
+          "path": "research/results/E05/phases/summary.json",
+          "finding": "共通時計のみでは同期しても反対側の摂動応答0。双方向では種11で1秒後に0.168–0.172 radの応答。"
+        },
+        {
+          "experiment_id": "E05",
+          "role": "paired_vs_singles",
+          "path": "research/results/E05/base/summary.json",
+          "finding": "基準48³の各輪の移動は単独時より+0.130/+0.027 m、中央面の積算エネルギー流束の超過は+0.928 J。"
+        },
+        {
+          "experiment_id": "E15",
+          "role": "archived_measurement_array",
+          "path": "research/results/E15/summary.json",
+          "finding": "小さな乱流塊の半信号半径が0.6〜5.5秒に51.8→106.3 mm。前半の二次モーメントの直線を後半へ外挿した誤差は一定値より大きい。"
+        }
+      ],
+      "next_action": "衝突前後の個別の三次元速度場で流束を追い、強さ・衝突角を変えたときの境界の回復とエネルギー交換を対照比較する。",
+      "literature_notes": [
+        "research/notes/S007_vortices.md",
+        "research/notes/X1_X2_vortex_experiments.md",
+        "research/notes/E15_collision_piv.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "指定した二組の位相・二つの渦輪の相互作用が相手の運動を変える。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "指定の渦輪衝突装置で、駆動停止後に平面内の乱流エネルギー信号が外側へ広がる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "指定の観測区間の前半の一定増加率で、二次モーメントの後半を固定形の対照より正確に予測できる。",
+          "status": "not_supported_in_test"
+        }
+      ]
     },
     {
       "id": "H07",
@@ -140,10 +396,29 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "抽出前に固定した4分野の論文順位は記述の分母を与える。E06は出口・解像度・閾値を変えた決定論的な数値例。自然界の頻度は未推定。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E06",
+          "role": "threshold_sensitivity",
+          "path": "research/results/E06/circle/summary.json",
+          "finding": "円形の32³と48³で主閾値の検出時刻数は0対9、駆動なしはどちらも0。"
+        },
+        {
+          "experiment_id": "E08",
+          "role": "denominator_defined",
+          "path": "research/results/E08/summary.json",
+          "finding": "現象名の上位20件、採択16。噴流2/4、植物0/4、振動0/4（4件とも未判定）、宇宙モデル3/4に対象の記述。"
+        }
+      ],
+      "next_action": "自然標本の採択枠・解像度・観測機会を分野別に固定し、論文の記述頻度と独立に測る。",
+      "literature_notes": [
+        "research/notes/S005_magnetic_field.md",
+        "research/notes/S007_vortices.md",
+        "research/notes/S008_grid_cells.md",
+        "research/notes/X1_X2_vortex_experiments.md"
+      ]
     },
     {
       "id": "H08",
@@ -156,13 +431,122 @@
       ],
       "planned_experiments": [
         "E06",
-        "E07"
+        "E07",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16",
+        "E17",
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23"
       ],
-      "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_urls": [
+        "https://doi.org/10.1186/s13036-018-0126-3"
+      ],
+      "evidence_role": "閉経路の静的エネルギー（H13）、輪の幾何条件（H14）、渦度・弱磁場の流束則（H15）、先行する力や輸送による成長位置（H17・H18）を支持。戻りの資源再利用（H19）と別経路との識別（H22）を模型で支持。根のオーキシン輸送と分岐の関与（H21・H23）を公表介入で支持。植物・渦・波を一つの動力学で予測する命題は未決。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "calibration_only",
+          "path": "research/results/E02/summary.json",
+          "finding": "位相の2π同一視とT²への表示写像が入力。別分野に対する共通生成則の予測試験は0件。"
+        },
+        {
+          "experiment_id": "E07",
+          "role": "sealed_synthetic_holdout",
+          "path": "research/results/E07/summary.json",
+          "finding": "1 kPaで実接続M1と周期接続必須M2の規格化RMSEは0.000441と0.017534。50 kPaではM1の半減時間0.532 s、参照0.273 s。"
+        },
+        {
+          "experiment_id": "E09",
+          "role": "conditional_common_energy",
+          "path": "research/results/E09/summary.json",
+          "finding": "殻の循環自由度を切断で2→1→0と変え、流体と磁場の最小エネルギーの共通幾何係数を導出。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "shared_geometric_prediction",
+          "path": "research/results/E12/light/summary.json",
+          "finding": "別設定のパルス24/24、円形噴流16/16で断面からの形の予測が三次元判定と一致。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "conditional_common_dynamics",
+          "path": "research/results/E13/diffusive48/summary.json",
+          "finding": "同じ速度・拡散率・比例初期値で渦度と受動磁場が比例を維持。磁気拡散率0.18では0.8秒の流束が38.12%まで低下。"
+        },
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_transport",
+          "path": "research/results/E14/light20/summary.json",
+          "finding": "輪状の電磁エネルギー等値領域が続く間にも、重心と進む輪から初期領域内エネルギーの79.61%相当が流出し、29.80%相当が流入。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "conditional_growth_model",
+          "path": "research/results/E17/summary.json",
+          "finding": "点ごとのエネルギー分布が同じでも流れを反転すると取り込み重心が半径の33.7%ずれた。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "return_mechanism_with_matched_speed",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "外部供給1単位で開59.34%、閉89.13%。損失が強いと利得0.16ポイント。流入履歴を合わせる追加供給では開でも同じ取り込み。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        }
+      ],
+      "next_action": "根の標識輸送、実空間の経路、後の形を対応づける。エネルギーの収支を測定し、共通則の未使用生体データと物理データでの予測を代替モデルと比べる。",
+      "literature_notes": [
+        "research/notes/Katifori_transport_networks.md",
+        "research/notes/S005_magnetic_field.md",
+        "research/notes/E07_hydraulic_filter.md",
+        "research/notes/Cantarella_topology_energy.md",
+        "research/notes/E10_energy_observations.md",
+        "research/notes/E11_toroidal_light.md",
+        "research/notes/E13_flux_and_mhd.md",
+        "research/notes/E14_energy_transport.md",
+        "research/notes/E16_developmental_forces.md",
+        "research/notes/E18_plant_organ_placement.md",
+        "research/notes/E20_lateral_root_controls.md",
+        "research/notes/E21_polar_auxin_and_branching.md",
+        "research/notes/E23_pin2_nitrate.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "小信号の合成水路で、二方向周期接続を必須としたM2が実接続のM1より全場をよく予測する。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "同じ閉領域で、調和的な流体速度と静磁場に同じ二次エネルギー原理が適用できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "軸から分離した局在断面が回転対称な方位渦度と方位電場でトーラス状領域を作る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "滑らかな非圧縮流の中で、渦度と磁力の反作用が無視できる磁場に共通の移流・伸長・拡散式が適用できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "外部駆動で先に与えたトーラス状流れは、資源に応じて増える材料の成長位置を変え得る。",
+          "status": "supported_within_scope"
+        }
+      ]
     },
     {
       "id": "H09",
@@ -175,13 +559,78 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E08"
+        "E08",
+        "E09",
+        "E11",
+        "E13",
+        "E17",
+        "E19"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "木の対照で、端子間定常輸送に閉路が必須という限定命題は不支持。E11の運動エネルギーの高密度域は軸付近、E13の磁場は渦輪を含まないせん断流でエネルギーが増えた。異なる尺度や状態空間も含む必要性は未判定。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E04",
+          "role": "counterexample",
+          "path": "research/results/E04/summary.json",
+          "finding": "木は独立閉路0でも無損傷なら全需要を供給。木が切断に弱いという別の機能差も記録。"
+        },
+        {
+          "experiment_id": "E08",
+          "role": "scope_audit",
+          "path": "research/results/E08/summary.json",
+          "finding": "採択資料から必要性を独立に示した件数は0。モデル内の仮定や未判定を必要性の証拠に数えていない。"
+        },
+        {
+          "experiment_id": "E11",
+          "role": "counterexample",
+          "path": "research/results/E11/fluid/summary.json",
+          "finding": "両格子で渦度の輪候補9時刻、運動エネルギーの輪候補0時刻。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "counterexample",
+          "path": "research/results/E13/shear/summary.json",
+          "finding": "輪の渦度を持たない解析せん断流で、0.8秒後の受動磁場エネルギーが初期値の119.16%。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "open_flow_control",
+          "path": "research/results/E17/summary.json",
+          "finding": "材料の成長位置は閉じた循環のほか、開いた境界からの同じ総運動エネルギーの貫流でも変わった。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "matched_input_counterexample",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "一次吸収条件で開路に毎周の戻り予測量を追加すると、閉路と同量・同時刻の取り込みが生じた。外部供給は1.502単位。"
+        }
+      ],
+      "next_action": "対象・量・尺度を固定した他の機能でも、閉路を外し、同じ機能が保たれるかを調べる。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "E04の無損傷の網で全需要を満たすためにはグラフ閉路が必要である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "登録の円形噴流で、渦度と運動エネルギーの0.35等値領域が常に同時に輪候補になる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "指定の周期箱で、流れが受動磁場のエネルギーを増やすために渦度がトーラス状に集中する必要がある。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "E17の材料モデルで、資源輸送が成長位置を変えるためには閉じた循環が必須である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "E19で循環が作る取り込み履歴を、供給量を変えても開いた流路で再現することは不可能である。",
+          "status": "not_supported_in_test"
+        }
+      ]
     },
     {
       "id": "H10",
@@ -198,12 +647,24 @@
       ],
       "evidence_urls": [
         "https://arxiv.org/abs/1502.01593",
-        "https://arxiv.org/abs/2211.02603"
+        "https://arxiv.org/abs/2211.02603",
+        "https://arxiv.org/abs/2211.02603v4"
       ],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "PlanckとCOMPACTの観測制約は空間位相に対応。固定文献群でT³を候補とする理論的記述を確認した。H10の動的な宇宙モデルに固有の観測予測は未定義。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E08",
+          "role": "literature_scope",
+          "path": "research/results/E08/summary.json",
+          "finding": "宇宙群の採択4件中3件にトーラスを仮定したモデル、1件に球面的モデル。実在の宇宙を検出した件数には換算しない。"
+        }
+      ],
+      "next_action": "既存宇宙論と同じ可観測量について、循環の関係を仮定したときにのみ生じる予測・尤度を指定する。",
+      "literature_notes": [
+        "research/notes/S015_cosmic_topology.md",
+        "research/notes/S016_cosmic_constraints.md"
+      ]
     },
     {
       "id": "H11",
@@ -218,10 +679,21 @@
         "E02"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "二つの直線振動の位相でも同じ T² を表せるという反例。台帳の肯定命題は再現済みにしない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E02",
+          "role": "counterexample",
+          "path": "research/results/E02/summary.json",
+          "finding": "二つの位相のsinを直線上の変位として観測できる。同じ標本をトーラス面に埋め込むこともできる。身体の立体形状はこの観測では識別できない。"
+        }
+      ],
+      "next_action": "T-PとT-Gを主張するデータは別々に測り、実空間の測定・単位・対応付けを確認する。",
+      "literature_notes": [
+        "research/notes/S003_phase.md",
+        "research/notes/S008_grid_cells.md"
+      ]
     },
     {
       "id": "H12",
@@ -237,10 +709,574 @@
         "E08"
       ],
       "evidence_urls": [],
-      "evidence_role": "研究開始用の基準・背景。URLがあるだけで当該主張全体を支持したと解釈しない。",
+      "evidence_role": "異なる実空間運動に同じ一座標の時間記録を与えられる反例。台帳の肯定命題は再現済みにしない。",
       "independently_reproduced": false,
-      "results": [],
-      "next_action": "docs/05_EXPERIMENT_PLAN.md の対応する実験と、一次資料を確認する。"
+      "results": [
+        {
+          "experiment_id": "E01",
+          "role": "counterexample",
+          "path": "research/results/E01/summary.json",
+          "finding": "円運動と直線ばね振動のy(t)の差は全条件で4.45e-15 m未満。別の座標xでは区別できる。"
+        },
+        {
+          "experiment_id": "E03",
+          "role": "counterexample",
+          "path": "research/results/E03/observers/summary.json",
+          "finding": "渦輪と無渦のポテンシャル流が、同じ測り方で共にくびれを示した。"
+        }
+      ],
+      "next_action": "独立の渦度または循環を測り、同じ流量断面でも原因が違う場合を識別する。",
+      "literature_notes": [
+        "research/notes/S001_rotation.md",
+        "research/notes/S002_surface.md"
+      ]
+    },
+    {
+      "id": "H13",
+      "statement": "独立な閉経路が、流体と静磁場に蓄えられる循環の自由度と最小エネルギーを決める。",
+      "status": "supported_within_scope",
+      "scope": "境界に接する発散なし・無回転の調和場と、均一密度または均一透磁率。指定の貫通流束に対するエネルギー最小値。充実トーラスで1自由度、殻で2、対応する閉経路の切断で自由度が消える。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E09",
+        "E10",
+        "E11"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1080/00029890.2002.11919870",
+        "https://doi.org/10.1088/1361-6587/ad0d87",
+        "https://doi.org/10.1134/S1063778821120024",
+        "https://doi.org/10.1103/PhysRevLett.99.260401",
+        "https://doi.org/10.1038/micronano.2017.82",
+        "https://doi.org/10.1088/1367-2630/18/2/025001"
+      ],
+      "evidence_role": "調和場の変分原理と閉形式、3格子の切断介入を照合。独立の装置仕様で公表磁場を予測し、超流動で穴の保持と循環の持続の関係を再計算。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E09",
+          "role": "analytic_and_numerical",
+          "path": "research/results/E09/summary.json",
+          "finding": "殻の周方向・断面方向の二次係数0.010425 m、0.126543 m。両方向の切断で両係数0。"
+        },
+        {
+          "experiment_id": "E10",
+          "role": "published_measurement_reanalysis",
+          "path": "research/results/E10/summary.json",
+          "finding": "磁場17点の絶対相対誤差中央値4.88%。Ryuらの低障壁2設定の2秒後持続率中央値10%、高障壁6設定では84%。"
+        },
+        {
+          "experiment_id": "E10",
+          "role": "scope_limit",
+          "path": "research/results/E10/summary.json",
+          "finding": "芯のみのMEMSインダクタンス、写真半径を用いた超流動回転率の中央値誤差57.3%、46.5%。両方とも事前基準に未達。"
+        }
+      ],
+      "next_action": "同じ装置の閉経路を開閉し、圧力・流束・損失を独立測定できるデータでエネルギーの絶対値を比べる。",
+      "literature_notes": [
+        "research/notes/Cantarella_topology_energy.md",
+        "research/notes/E10_energy_observations.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "トロイダルソレノイドの内部磁場の絶対値を別資料の巻数と電流で中央値誤差10%以内に予測する。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "芯の理想式で登録したMEMSコイル全体のインダクタンスを中央値相対誤差20%以内に予測する。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "公表写真からの半径と薄輪の式で超流動の回転率を事前精度以内に予測する。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H14",
+      "statement": "軸から離れて局在する周方向成分が、流体と電磁波に共通して輪状の等値領域を作る。",
+      "status": "supported_within_scope",
+      "scope": "滑らかな回転対称場の方位成分で、等値領域の断面が軸を避けた円板になる条件。軸対称に近い円形噴流と真空TEパルスを計算で照合。対象成分と全エネルギー密度を個別に測る。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E11",
+        "E12"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.54.889",
+        "https://doi.org/10.1038/s41566-022-01028-5"
+      ],
+      "evidence_role": "回転による形の数学的対応と、別の設定での三次元判定を照合。電磁波の実測エネルギー流束の生データは未取得。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E11",
+          "role": "local_energy",
+          "path": "research/results/E11/light/summary.json",
+          "finding": "真空TEのq2=20虚部は電磁エネルギー密度にも輪候補。実部はエネルギーの判定が異なる。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "independent_parameter_cases",
+          "path": "research/results/E12/light/summary.json",
+          "finding": "主閾値50%でパルス24/24、陽性16・陰性8。"
+        },
+        {
+          "experiment_id": "E12",
+          "role": "independent_parameter_cases",
+          "path": "research/results/E12/circle/summary.json",
+          "finding": "同閾値で弱い・長い円形噴流16/16、陽性・陰性各8。"
+        }
+      ],
+      "next_action": "非対称化の度合いを事前指定し、別方位の断面と実測三次元場を照合する。",
+      "literature_notes": [
+        "research/notes/E11_toroidal_light.md"
+      ]
+    },
+    {
+      "id": "H15",
+      "statement": "非圧縮流に運ばれる渦度と弱磁場は同じ流束発展則に従い、理想条件で閉管の物質断面を通る流束が保たれる。",
+      "status": "supported_within_scope",
+      "scope": "滑らかで一定密度の非圧縮流、磁力の反作用を省いた受動磁場、一定の動粘性と磁気拡散率。E13で輪は初期条件に与えた。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E13"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.83.056405",
+        "https://arxiv.org/abs/physics/0510265"
+      ],
+      "evidence_role": "物質面とStokesの定理から導出し、異なる拡散、初期位置、ゼロ場、せん断の独立な解析解で校正。導電流体実験は誘導機構の定性的照合。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E13",
+          "role": "analytic_and_numerical",
+          "path": "research/results/E13/ideal48/summary.json",
+          "finding": "0.8秒後の物質断面流束は両方99.967%。運動エネルギーは一定、受動磁場のエネルギーは伸長の仕事で1.29%増えた。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "diffusivity_and_initial_condition_intervention",
+          "path": "research/results/E13/diffusive48/summary.json",
+          "finding": "同拡散率では80.24%、速い磁気拡散では38.12%。輪候補のままでも流束保持率は異なる。"
+        },
+        {
+          "experiment_id": "E13",
+          "role": "counterexample",
+          "path": "research/results/E13/shear/summary.json",
+          "finding": "輪のないせん断流でも受動磁場のエネルギーは0.640から0.763 Jへ増えた。"
+        }
+      ],
+      "next_action": "速度・磁場の同時測定から物質面を追い、磁力の反作用の有無を変えた数値解と流束を比較する。",
+      "literature_notes": [
+        "research/notes/E13_flux_and_mhd.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "同じ速度と拡散率で比例する初期値を用いると、渦度と受動磁場の比例関係が保たれる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "輪の形を保つことから物質断面の流束の保存を一般に推論できる。",
+          "status": "invalid_general_inference"
+        }
+      ]
+    },
+    {
+      "id": "H16",
+      "statement": "輪が保たれる時間にも、輪を追う領域と周囲の間でエネルギーの交換が起こり得る。",
+      "status": "supported_within_scope",
+      "scope": "登録した真空TEパルスと単発の円形噴流。輪は電磁エネルギー密度または方位渦度の等値領域で判定。領域の蓄積は移動する境界で測定した。",
+      "torus_kinds": [
+        "T-G",
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E14"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1103/PhysRevE.54.889",
+        "https://doi.org/10.1038/s41467-021-26037-w"
+      ],
+      "evidence_role": "移動領域の収支を、固定領域、理想平面波、別パルス、格子と求積精度の変更で比較。TE場の重心速度をブーストの解析式と照合。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_exchange",
+          "path": "research/results/E14/light20/summary.json",
+          "finding": "蓄積50.19%、流出79.61%、流入29.80%。初期の内部エネルギーのうち、全サンプル時点で内部にあった重みは37.09%。"
+        },
+        {
+          "experiment_id": "E14",
+          "role": "moving_energy_exchange",
+          "path": "research/results/E14/flow64/summary.json",
+          "finding": "初期の領域内運動エネルギーに対し外向き移流30.56%、内向き13.10%。等値領域では方位渦度の輪候補が9時点で続いた。"
+        }
+      ],
+      "next_action": "時空間分解した電磁場またはPIV速度場から、同様の移動境界の流束を再計算する。",
+      "literature_notes": [
+        "research/notes/E14_energy_transport.md",
+        "research/notes/E11_toroidal_light.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "輪状の等値領域が保たれることを、初期のエネルギーが同じ領域に閉じ込められ続ける根拠にできる。",
+          "status": "invalid_general_inference"
+        },
+        {
+          "statement": "検査した真空パルスを電磁エネルギー重心の速度で追うとき、移動断面の収支に境界速度の項が必要になる。",
+          "status": "supported_within_scope"
+        }
+      ]
+    },
+    {
+      "id": "H17",
+      "statement": "器官の配置が決まる前に既存の組織へ働く力や局所の伸びやすさが、その後の器官の位置・形に影響する。",
+      "status": "supported_within_scope",
+      "scope": "公開介入のゼブラフィッシュ胚の心臓の初期位置、マウスの左右、シロイヌナズナの側根、タバコの葉。先行する作用の時刻は対象器官の配置に対するもの。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E16",
+        "E18"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1126/science.abq7317",
+        "https://doi.org/10.1038/nature00849",
+        "https://doi.org/10.1073/pnas.0807814105",
+        "https://doi.org/10.1104/pp.109.142448",
+        "https://doi.org/10.1073/pnas.191380498"
+      ],
+      "evidence_role": "処置の左右、無刺激、曲げの有無、同系統の擬似処置の比較。機械作用を読み取る胚の応答と、成長を許す植物の組織の効果を支持。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E16",
+          "role": "published_intervention_figure",
+          "path": "research/results/E16/summary.json",
+          "finding": "右側刺激の右寄り心臓は69.4〜71.4%、左側刺激は7.8%。初期の位置で、中央を分母に含む。"
+        },
+        {
+          "experiment_id": "E18",
+          "role": "published_root_and_leaf_interventions",
+          "path": "research/results/E18/summary.json",
+          "finding": "同一位置の側根と葉の発生を対照と照合。葉は14/73と10/55、擬似処置は0/26と0/28。"
+        }
+      ],
+      "next_action": "器官の初期位置が変わる前の三次元流れと機械刺激を観測し、閉じた循環の効果を方向性だけの効果と比べる。",
+      "literature_notes": [
+        "research/notes/E16_developmental_forces.md",
+        "research/notes/E18_plant_organ_placement.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "局所の力の作用側を変えると、流れが損なわれたゼブラフィッシュ胚の後の心臓の初期位置が変わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "身体組織に先立つ自然のトーラス状エネルギー流が、身体全体の形を決める。",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "id": "H18",
+      "statement": "先に存在するトーラス状の流れは、資源を運ぶことによって、後から材料が育つ位置を変え得る。",
+      "status": "supported_within_scope",
+      "scope": "穴のない軸対称円筒、外部駆動の流れ、偏った資源供給、球状の種、取り込みに従う成長モデル。運動エネルギーと資源の利用可能量を別に定義。",
+      "torus_kinds": [
+        "T-F",
+        "T-G"
+      ],
+      "planned_experiments": [
+        "E17",
+        "E19"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "点ごとのエネルギーを保って速度を反転・純方位化する対照、貫流・静止・遅延・鏡像、収支・格子・時間刻みを比較した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E17",
+          "role": "matched_energy_and_direction_intervention",
+          "path": "research/results/E17/summary.json",
+          "finding": "初期の輪のエネルギー分布は同じ。規格化時刻4の取り込み重心は反転で−0.129から−0.466へ変化。"
+        },
+        {
+          "experiment_id": "E17",
+          "role": "no_toroidal_shape_in_material",
+          "path": "research/results/E17/grid96/summary.json",
+          "finding": "エネルギー密度の35%、50%、65%の等値領域に穴が一つ。成長した材料は全比較の同じ閾値で輪候補なし。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "allocation_with_capacity",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "固定率の2地点の材料配分比は開・閉で同じ。有限容量では下流側の配分が52.59%から69.02%。"
+        }
+      ],
+      "next_action": "循環と貫流の境界条件の差を管理し、実測の再流入、資源濃度、供給量から成長位置を事前予測する。エネルギーの仕事率を独立に測る。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "先行するトーラス状流れを反転すると、同じエネルギー密度のもとで取り込み重心が半径の2%以上変わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "初期の運動エネルギー密度の輪だけで、後の材料形を一意に決められる。",
+          "status": "invalid_general_inference"
+        }
+      ]
+    },
+    {
+      "id": "H19",
+      "statement": "閉じた戻り経路は、残存する資源を再利用し、同じ外部供給で取り込める量を増やし得る。",
+      "status": "supported_within_scope",
+      "scope": "速度を固定した4 mの一次元通路。端で戻す割合、吸収率、戻り区間の損失を規定した。外部供給量と運動エネルギー密度を分け、ポンプ仕事と生体形態は解いていない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E19"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "戻る割合0・0.5・1、初回前後、解析予測による開路での補充、損失、有限容量、拡散の対照を比較した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E19",
+          "role": "resource_budget_and_independent_return_prediction",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "外部供給1で合計取り込み59.34%→89.13%。開路は予測された補充を入れ、1.502単位で履歴まで一致した。"
+        },
+        {
+          "experiment_id": "E19",
+          "role": "negative_controls",
+          "path": "research/results/E19/grid512/summary.json",
+          "finding": "戻り損失を増すと閉路の利得は0.16ポイント。固定率で合計が増えても下流への配分比は23.97%で一致。有限容量では16.43ポイント変化。"
+        }
+      ],
+      "next_action": "初回輸送を保ったまま戻りを操作し、局所の標識流束から二巡目の到達量と分岐配置を予測する。E22の開路と、中心へ直接戻る近道とを比較する。",
+      "literature_notes": [],
+      "tested_subclaims": [
+        {
+          "statement": "同じ初期量で戻りが十分な模型では、閉路の二巡目以降の供給が総取り込み量を増やす。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "閉経路を与えれば受け取り量の割合が必ず変わる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "戻る前にほとんど失われる資源でも、この条件で閉路の利得が初期資源の1%を超える。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H20",
+      "statement": "シロイヌナズナでは、側根の出る側は曲げの影響を受け、曲げの頻度を変えても本数が1曲がり1本に従わない条件がある。",
+      "status": "supported_within_scope",
+      "scope": "一時的な曲げと根端切除、周期的な曲げ、前分岐マーカーを使う公表研究の条件。生体の戻り経路だけを変えた試験は未実施。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E18",
+        "E20"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1093/jxb/erv541",
+        "https://doi.org/10.1126/science.1191937",
+        "https://doi.org/10.1093/jxb/erm171"
+      ],
+      "evidence_role": "側根数と出現位置を分け、曲げ頻度に比例する予測を公表図の未使用7点で比較した。一次研究の発生窓の違いも照合した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E20",
+          "role": "published_factorial_controls",
+          "path": "research/results/E20/summary.json",
+          "finding": "5 mmで曲げの点推定は根端あり・なし両方+0.3本。曲げずに根端を除いた対照は+1.8本。曲げの区間には0と+0.5本の双方が入る。"
+        },
+        {
+          "experiment_id": "E20",
+          "role": "published_frequency_holdouts",
+          "path": "research/results/E20/summary.json",
+          "finding": "1曲がり1本はRMSE3.74、6時間で比例率を調整して5.18、一定率は0.86本/日。推定した図の読取り幅でも順位は変わらない。"
+        }
+      ],
+      "next_action": "処置前の前分岐マーカーと曲げ位置を同じ根で追い、既存位置の選択と新しい部位の追加を独立に測る。",
+      "literature_notes": [
+        "research/notes/E20_lateral_root_controls.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "当該の2〜24時間の曲げ操作で、曲げ頻度だけから毎日の側根と原基の数を一定予測より正確に予測できる。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "当該の一時曲げでは外側への偏りが見られ、区間の側根数の点推定差は0.3本/根である。",
+          "status": "supported_within_scope"
+        }
+      ]
+    },
+    {
+      "id": "H21",
+      "statement": "方向性のあるオーキシン輸送と供給が、シロイヌナズナの側根形成に影響する",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの指定の輸送阻害、標識、オーキシン補充条件。出現した側根、初期原基、主根長を別々に測定した。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E21"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1104/pp.118.4.1369",
+        "https://doi.org/10.1104/pp.122.2.481",
+        "https://doi.org/10.1104/pp.104.900172",
+        "https://doi.org/10.1105/tpc.13.4.843"
+      ],
+      "evidence_role": "独立した方向別の標識試験と、輸送阻害後の密度および補充での回復を照合。公表表・図からの再集計であり、新しい生体試験は未実施。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E21",
+          "role": "directional_transport_and_rescue",
+          "path": "research/results/E21/summary.json",
+          "finding": "局所の輸送阻害で側根密度0.33→0.23本/mm。別の実験では阻害中のオーキシン補充で約0.48本/mmの出現を確認。"
+        },
+        {
+          "experiment_id": "E21",
+          "role": "corrected_directional_radiotracer",
+          "path": "research/results/E21/summary.json",
+          "finding": "Rashotteの別の二試験で野生型→eir1の標識IAAは根先から地上部へ6.18→4.40 fmol、根先へ7.96→7.39 fmol。2005年訂正の単位を採用。"
+        }
+      ],
+      "next_action": "標識を同じ根で追い、外層を経たものが中心側へ再流入する量と、後の原基・出現した側根を測る。",
+      "literature_notes": [
+        "research/notes/E21_polar_auxin_and_branching.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "出現した側根密度が下がった別の実験で輸送阻害を継続し、オーキシンを追加して側根の出現を回復させられる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "二方向の標識回収量から同じ分子が一周した割合を決める。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H22",
+      "statement": "共通の定常濃度と送り出す二方向の輸送を持つ系で、標識と選択的介入から外層を経る戻りを識別できる",
+      "status": "supported_within_scope",
+      "scope": "中心、根先、外層の三つの線形区画と三つの輸送経路。標識を含まない外部供給の位置と量を経路ごとに与え、外層の搬出率を保ち再流入だけを操作する。実空間の形、時間の実単位、植物の係数は未推定。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E22"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1105/tpc.113.119495",
+        "https://doi.org/10.1038/nature06215"
+      ],
+      "evidence_role": "登録した閉路・開路・根先からの短い経路を比較。標識が中心に届くこと自体は短い経路でも再現した。生体モデルには外層から中心への大きな再流入が予測されない例がある。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E22",
+          "role": "matched_steady_profiles_and_selective_intervention",
+          "path": "research/results/E22/summary.json",
+          "finding": "平常時の三つの量と共通する二流束をそろえた。外層を経由する閉路だけで、接続を切ると規格化時刻2.5の中心の標識量が投入量の14.88%分減った。"
+        },
+        {
+          "experiment_id": "E22",
+          "role": "transport_and_loss_sensitivity",
+          "path": "research/results/E22/summary.json",
+          "finding": "規格化時刻2.5の切断効果は各率±25%の81条件で投入量の8.12〜24.80%。弱い戻りの候補は1.18%。"
+        }
+      ],
+      "next_action": "根で選択的な経路変更と初回輸送の対照を確認し、外層から再流入した標識の検出限界を見積もる。",
+      "literature_notes": [
+        "research/notes/E21_polar_auxin_and_branching.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "同じ定常濃度と二流束から、外層から中心へ戻る結合の有無を推定する。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "指定したモデルで外層→中心の結合だけを変更すると、外層を経た標識による中心側の応答を識別できる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "弱い再流入の対照でも、規格化時刻2.5の差が投入量の5%以上になる。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H23",
+      "statement": "硝酸処置への側根密度の応答はPIN2の状態によって異なる",
+      "status": "supported_within_scope",
+      "scope": "シロイヌナズナの水耕、5 mM KNO₃対KCl、3日後の側根と原基の密度。各図3独立培養の範囲。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E23"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.15252/embr.202051813",
+        "https://doi.org/10.1371/journal.pbio.0060307"
+      ],
+      "evidence_role": "著者の公開シートを反復単位で比較。密度、主根長、照合できた行から推定した本数を独立に報告した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E23",
+          "role": "archived_figure_arrays_by_independent_repeat",
+          "path": "research/results/E23/summary.json",
+          "finding": "硝酸への側根密度応答の野生型−欠損型の差は3反復すべて正、平均+0.82本/cm。対応行から推定した野生型の本数差は+1.0、+0.9、−0.7本/個体。"
+        },
+        {
+          "experiment_id": "E23",
+          "role": "complement_and_phosphosite_responses",
+          "path": "research/results/E23/summary.json",
+          "finding": "PIN2補完の密度変化+1.48本/cm、S439D +0.38本/cm、S439A +1.13本/cm。両置換株は長さと密度の行が全処置で整合せず、本数は未推定。"
+        }
+      ],
+      "next_action": "個体IDで主根長と原基・出現後の本数を対応させ、同じ個体で再流入が先に起きたかを追う。",
+      "literature_notes": [
+        "research/notes/E23_pin2_nitrate.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "3独立培養とも処置への密度応答は野生型でPIN2欠損型より大きい。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "Fig. 6の照合可能な野生型の3培養すべてで個体あたりの本数が増える。",
+          "status": "not_supported_in_test"
+        }
+      ]
     }
-  ]
+  ],
+  "published_measurement_reanalyses": 12,
+  "archived_experimental_figure_array_reanalyses": 2
 }

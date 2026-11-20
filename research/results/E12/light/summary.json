@@ -1,0 +1,1236 @@
+{
+  "group": "light",
+  "trials": [
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 75,
+        "section_peak": 0.18454206029202838
+      },
+      "three_d": {
+        "cells": 3340,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.1850116272357992,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 122,
+        "section_peak": 0.18454206029202838
+      },
+      "three_d": {
+        "cells": 5864,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.1850116272357992,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 30,
+        "section_peak": 0.08443614066908137
+      },
+      "three_d": {
+        "cells": 432,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.08443614066908137,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 53,
+        "section_peak": 0.08443614066908137
+      },
+      "three_d": {
+        "cells": 1080,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.08443614066908137,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 89,
+        "section_peak": 0.22623552302506927
+      },
+      "three_d": {
+        "cells": 4444,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.2262569093716892,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 145,
+        "section_peak": 0.22623552302506927
+      },
+      "three_d": {
+        "cells": 7932,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.2262569093716892,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 65,
+        "section_peak": 0.039344647404551854
+      },
+      "three_d": {
+        "cells": 2132,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.039344647404551854,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 99,
+        "section_peak": 0.039344647404551854
+      },
+      "three_d": {
+        "cells": 3500,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.039344647404551854,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 87,
+        "section_peak": 0.25155158073835676
+      },
+      "three_d": {
+        "cells": 4304,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.2517081066620843,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 137,
+        "section_peak": 0.25155158073835676
+      },
+      "three_d": {
+        "cells": 7656,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.2517081066620843,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 65,
+        "section_peak": 0.04083715740039261
+      },
+      "three_d": {
+        "cells": 2016,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.040950132797934316,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 99,
+        "section_peak": 0.04083715740039261
+      },
+      "three_d": {
+        "cells": 3304,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.040950132797934316,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 97,
+        "section_peak": 0.17791183120462173
+      },
+      "three_d": {
+        "cells": 5584,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.17796614648150907,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 157,
+        "section_peak": 0.17791183120462173
+      },
+      "three_d": {
+        "cells": 10168,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.17796614648150907,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 33,
+        "section_peak": 0.05760370423537695
+      },
+      "three_d": {
+        "cells": 432,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.05760370423537695,
+      "match": true
+    },
+    {
+      "q2": 3,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 69,
+        "section_peak": 0.05760370423537695
+      },
+      "three_d": {
+        "cells": 1580,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.05760370423537695,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 126,
+        "section_peak": 0.03637784025106731
+      },
+      "three_d": {
+        "cells": 9816,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.03638624535715856,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 199,
+        "section_peak": 0.03637784025106731
+      },
+      "three_d": {
+        "cells": 17544,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.03638624535715856,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 95,
+        "section_peak": 0.0019036803870340505
+      },
+      "three_d": {
+        "cells": 3804,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0019036803870340505,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 154,
+        "section_peak": 0.0019036803870340505
+      },
+      "three_d": {
+        "cells": 7744,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0019036803870340505,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 121,
+        "section_peak": 0.040738627065615686
+      },
+      "three_d": {
+        "cells": 9680,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.04078548217830657,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 197,
+        "section_peak": 0.040738627065615686
+      },
+      "three_d": {
+        "cells": 17388,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.04078548217830657,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 106,
+        "section_peak": 0.0016673934782132577
+      },
+      "three_d": {
+        "cells": 4856,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0016673934782132577,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 169,
+        "section_peak": 0.0016673934782132577
+      },
+      "three_d": {
+        "cells": 9040,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0016673934782132577,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 118,
+        "section_peak": 0.0508945403999562
+      },
+      "three_d": {
+        "cells": 9480,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0509502744910413,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 191,
+        "section_peak": 0.0508945403999562
+      },
+      "three_d": {
+        "cells": 17348,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0509502744910413,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 55,
+        "section_peak": 0.0020796454563340836
+      },
+      "three_d": {
+        "cells": 3928,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0020842232704863773,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 87,
+        "section_peak": 0.0020796454563340836
+      },
+      "three_d": {
+        "cells": 6540,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0020842232704863773,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 116,
+        "section_peak": 0.049082514035772185
+      },
+      "three_d": {
+        "cells": 9564,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.049082514035772185,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 190,
+        "section_peak": 0.049082514035772185
+      },
+      "three_d": {
+        "cells": 17488,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.049082514035772185,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 58,
+        "section_peak": 0.0019726779712954147
+      },
+      "three_d": {
+        "cells": 4136,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.001973983673960488,
+      "match": true
+    },
+    {
+      "q2": 8,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 118,
+        "section_peak": 0.0019726779712954147
+      },
+      "three_d": {
+        "cells": 7100,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.001973983673960488,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 152,
+        "section_peak": 0.01915134022662477
+      },
+      "three_d": {
+        "cells": 14800,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.019168730674644974,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 244,
+        "section_peak": 0.01915134022662477
+      },
+      "three_d": {
+        "cells": 26628,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.019168730674644974,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 176,
+        "section_peak": 0.0003858354210218658
+      },
+      "three_d": {
+        "cells": 11252,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0003869336071170248,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 253,
+        "section_peak": 0.0003858354210218658
+      },
+      "three_d": {
+        "cells": 18296,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.0003869336071170248,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 145,
+        "section_peak": 0.020768468380130068
+      },
+      "three_d": {
+        "cells": 14092,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.02077699094213218,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 237,
+        "section_peak": 0.020768468380130068
+      },
+      "three_d": {
+        "cells": 25836,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.02077699094213218,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 145,
+        "section_peak": 0.000424982899806909
+      },
+      "three_d": {
+        "cells": 9132,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.00042528081634814267,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "real",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": false,
+        "touches_axis": true,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 230,
+        "section_peak": 0.000424982899806909
+      },
+      "three_d": {
+        "cells": 16104,
+        "tunnels": 0,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": false
+      },
+      "three_d_peak": 0.00042528081634814267,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 137,
+        "section_peak": 0.026713826581653197
+      },
+      "three_d": {
+        "cells": 13592,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.026714242157460745,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 225,
+        "section_peak": 0.026713826581653197
+      },
+      "three_d": {
+        "cells": 25048,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.026714242157460745,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 66,
+        "section_peak": 0.0006119496174778105
+      },
+      "three_d": {
+        "cells": 5720,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.000611969201501688,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.25,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 106,
+        "section_peak": 0.0006119496174778105
+      },
+      "three_d": {
+        "cells": 9668,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.000611969201501688,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 138,
+        "section_peak": 0.026451663077625427
+      },
+      "three_d": {
+        "cells": 13812,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.026451663077625427,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electric_azimuthal",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 222,
+        "section_peak": 0.026451663077625427
+      },
+      "three_d": {
+        "cells": 25076,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.026451663077625427,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.5,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 68,
+        "section_peak": 0.0006035655991987325
+      },
+      "three_d": {
+        "cells": 5948,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0006035655991987325,
+      "match": true
+    },
+    {
+      "q2": 12,
+      "phase": "imag",
+      "time": 0.75,
+      "n": 96,
+      "variable": "electromagnetic_energy",
+      "threshold": 0.35,
+      "predicted": {
+        "candidate": true,
+        "touches_axis": false,
+        "touches_outer_boundary": false,
+        "has_hole": false,
+        "section_cells": 101,
+        "section_peak": 0.0006035655991987325
+      },
+      "three_d": {
+        "cells": 9416,
+        "tunnels": 1,
+        "cavities": 0,
+        "touches_boundary": false,
+        "candidate": true
+      },
+      "three_d_peak": 0.0006035655991987325,
+      "match": true
+    }
+  ],
+  "performance": [
+    {
+      "threshold": 0.5,
+      "observations": 24,
+      "matched": 24,
+      "positives": 16,
+      "negatives": 8,
+      "correct_fraction": 1.0
+    },
+    {
+      "threshold": 0.35,
+      "observations": 24,
+      "matched": 24,
+      "positives": 15,
+      "negatives": 9,
+      "correct_fraction": 1.0
+    }
+  ],
+  "passes_registered_accuracy_if_axisymmetric": true,
+  "balances": [],
+  "checks": {
+    "registered_counts": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E12_meridian_prediction/run.py": "11841e5f5077f0e8af12f5d3d15b3c60df4bf2278fc4b531df7b4df142f1daff",
+    "E11_energy_transport/run.py": "0b0e0dd0f4aa42675b1224989f640e40b8ff2dee964b4693ac2d30e737174d09",
+    "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706",
+    "E03_vortex/fluid.py": "159b1170e066d836b3a99eb475d834696086195fd5cfb9701b1167d0d26e2a56",
+    "E06_jet/run.py": "2e684961fc612fc892b02dcede77bab21a14b8c3338c7cc148db8f7901eb0449"
+  }
+}
