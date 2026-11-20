@@ -1,0 +1,110 @@
+{
+  "experiment": "E25",
+  "study_doi": "10.1101/gad.276964.115",
+  "figure_readings_sha256": "aaf066aebb76c955cb0368bb8c8ac03ec644003920e15c8f8a0d5979e2081329",
+  "figure_6E_divisions_15h_after_ablation": {
+    "units": "divisions per ablation event",
+    "n_ablation_events_reported_per_group": 20,
+    "readout_halfwidth_per_bar": 0.05399999999999999,
+    "group_means_from_bars": {
+      "control": {
+        "total": 2.8979999999999997,
+        "anticlinal": 0.504,
+        "periclinal": 2.3939999999999997,
+        "fraction_anticlinal_from_mean_counts": 0.1739130434782609,
+        "total_minus_sum_of_types": 0.0
+      },
+      "control_plus_NAA": {
+        "total": 3.5999999999999996,
+        "anticlinal": 2.25,
+        "periclinal": 1.3499999999999999,
+        "fraction_anticlinal_from_mean_counts": 0.6250000000000001,
+        "total_minus_sum_of_types": -2.220446049250313e-16
+      },
+      "ktn1": {
+        "total": 1.404,
+        "anticlinal": 0.0,
+        "periclinal": 1.404,
+        "fraction_anticlinal_from_mean_counts": 0.0,
+        "total_minus_sum_of_types": 0.0
+      },
+      "ktn1_plus_NAA": {
+        "total": 2.2319999999999998,
+        "anticlinal": 0.23399999999999999,
+        "periclinal": 1.9799999999999998,
+        "fraction_anticlinal_from_mean_counts": 0.10483870967741936,
+        "total_minus_sum_of_types": 0.018000000000000016
+      }
+    },
+    "NAA_minus_no_NAA": {
+      "control": {
+        "total": 0.702,
+        "anticlinal": 1.746,
+        "periclinal": -1.0439999999999998
+      },
+      "ktn1": {
+        "total": 0.8279999999999998,
+        "anticlinal": 0.23399999999999999,
+        "periclinal": 0.5759999999999998
+      }
+    },
+    "anticlinal_interaction_control_minus_ktn1": 1.512,
+    "note": "A ratio of mean counts is not a probability of a root forming a lateral root."
+  },
+  "text_fig6_and_supplement_anticlinal_means_compared_with_Fig6E": {
+    "without_NAA": {
+      "text": 0.9,
+      "printed_SE": 0.14,
+      "Figure_6E_readout": 0.504
+    },
+    "with_NAA": {
+      "text": 2.4,
+      "printed_SE": 0.15,
+      "Figure_6E_readout": 2.25
+    },
+    "note": "The paper refers to two figures in the same sentence. The bars and narrative are recorded separately."
+  },
+  "text_fig2_ablation_15h": {
+    "founder_cells": {
+      "total_mean_SE": [
+        3.4,
+        0.22
+      ],
+      "periclinal_mean_SE": [
+        2.5,
+        0.17
+      ]
+    },
+    "no_detectable_DR5_before_ablation": {
+      "total_mean_SE": [
+        2.9,
+        0.19
+      ],
+      "periclinal_mean_SE": [
+        2.6,
+        0.18
+      ]
+    },
+    "reported_n_events_per_group": 20
+  },
+  "text_fig4_ablation_15h": {
+    "slr_divisions_mean_SE": [
+      2.45,
+      0.15
+    ],
+    "tir1_afb2_afb3_divisions_mean_SE": [
+      1.8,
+      0.2
+    ],
+    "n_events_per_group": 20,
+    "divisions_also_observed_with_NPA": true
+  },
+  "checks": {
+    "orientation_counts_add_to_total_within_figure_resolution": true,
+    "blank_anticlinal_bar_read_as_zero": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E25_endodermal_constraint/run.py": "8022850ad877a257bbf404e87e5c59045e90d0fc9458b30a08ead9781f2c5640"
+  }
+}

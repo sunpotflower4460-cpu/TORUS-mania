@@ -1,0 +1,359 @@
+{
+  "sources": {
+    "m13_f2.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4191/3545298/39a8a79bd4a3/emboj2012303f2.jpg",
+      "sha256": "6c8ea7438a09f076d47df6cace06bea80f4156b02f2b3cd5c1910a44b00cd839",
+      "width_height_px": [
+        733,
+        551
+      ]
+    },
+    "m13_f3.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4191/3545298/67c87ff286a1/emboj2012303f3.jpg",
+      "sha256": "08d8b60940c494254537814f341baa643054fbdaa21f56fbad07d39d508f2b25",
+      "width_height_px": [
+        735,
+        681
+      ]
+    },
+    "m13_f4.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4191/3545298/779a927a2390/emboj2012303f4.jpg",
+      "sha256": "ac2c5204d18318ef6f513d5367475961ea4dcb83793c874355a47e03e26355aa",
+      "width_height_px": [
+        794,
+        512
+      ]
+    },
+    "m16_f6.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/1fff/4762431/567c1e2c187a/471f06.jpg",
+      "sha256": "fb648543b2da52024ace0a3e541da071b5822f08b0c2c4c08e177896372b9a98",
+      "width_height_px": [
+        675,
+        1209
+      ]
+    }
+  },
+  "panels": {
+    "fig2d_founder_postbend": {
+      "file": "m13_f2.jpg",
+      "zero_row": 267,
+      "tick_row": 169,
+      "tick_value": 350,
+      "interior_columns": [
+        [
+          185,
+          194
+        ],
+        [
+          249,
+          258
+        ]
+      ],
+      "bar_top_rows": [
+        238,
+        235
+      ],
+      "values": [
+        103.57142857142858,
+        114.28571428571429
+      ],
+      "digitization_halfwidth": 10.714285714285715
+    },
+    "fig3b_founder_density": {
+      "file": "m13_f3.jpg",
+      "zero_row": 351,
+      "tick_row": 208,
+      "tick_value": 8,
+      "interior_columns": [
+        [
+          72,
+          86
+        ],
+        [
+          105,
+          120
+        ],
+        [
+          188,
+          200
+        ],
+        [
+          220,
+          234
+        ]
+      ],
+      "bar_top_rows": [
+        299,
+        246,
+        230,
+        283
+      ],
+      "values": [
+        2.909090909090909,
+        5.874125874125874,
+        6.769230769230769,
+        3.804195804195804
+      ],
+      "digitization_halfwidth": 0.16783216783216784
+    },
+    "fig3c_lri_density": {
+      "file": "m13_f3.jpg",
+      "zero_row": 351,
+      "tick_row": 210,
+      "tick_value": 8,
+      "interior_columns": [
+        [
+          335,
+          349
+        ],
+        [
+          362,
+          376
+        ],
+        [
+          427,
+          442
+        ],
+        [
+          454,
+          469
+        ]
+      ],
+      "bar_top_rows": [
+        259,
+        288,
+        283,
+        225
+      ],
+      "values": [
+        5.219858156028368,
+        3.574468085106383,
+        3.858156028368794,
+        7.148936170212766
+      ],
+      "digitization_halfwidth": 0.1702127659574468
+    },
+    "fig3d_combined_density": {
+      "file": "m13_f3.jpg",
+      "zero_row": 351,
+      "tick_row": 209,
+      "tick_value": 12,
+      "interior_columns": [
+        [
+          565,
+          577
+        ],
+        [
+          591,
+          604
+        ],
+        [
+          657,
+          670
+        ],
+        [
+          681,
+          694
+        ]
+      ],
+      "bar_top_rows": [
+        255,
+        240,
+        232,
+        228
+      ],
+      "values": [
+        8.112676056338028,
+        9.380281690140844,
+        10.056338028169014,
+        10.394366197183098
+      ],
+      "digitization_halfwidth": 0.2535211267605634
+    },
+    "fig3e_stage_I": {
+      "file": "m13_f3.jpg",
+      "zero_row": 638,
+      "tick_row": 416,
+      "tick_value": 8,
+      "interior_columns": [
+        [
+          104,
+          109
+        ],
+        [
+          112,
+          116
+        ],
+        [
+          119,
+          123
+        ],
+        [
+          126,
+          130
+        ]
+      ],
+      "bar_top_rows": [
+        452,
+        500,
+        530,
+        464
+      ],
+      "values": [
+        6.702702702702703,
+        4.972972972972973,
+        3.8918918918918917,
+        6.27027027027027
+      ],
+      "digitization_halfwidth": 0.10810810810810811
+    },
+    "fig4b_stage_I": {
+      "file": "m13_f4.jpg",
+      "zero_row": 482,
+      "tick_row": 213,
+      "tick_value": 7,
+      "interior_columns": [
+        [
+          63,
+          68
+        ],
+        [
+          74,
+          79
+        ],
+        [
+          84,
+          89
+        ],
+        [
+          94,
+          99
+        ]
+      ],
+      "bar_top_rows": [
+        262,
+        297,
+        308,
+        302
+      ],
+      "values": [
+        5.724907063197026,
+        4.814126394052045,
+        4.5278810408921935,
+        4.684014869888476
+      ],
+      "digitization_halfwidth": 0.07806691449814127
+    },
+    "fig6e_total": {
+      "file": "m16_f6.jpg",
+      "zero_row": 1184,
+      "tick_row": 934,
+      "tick_value": 4.5,
+      "interior_columns": [
+        [
+          81,
+          88
+        ],
+        [
+          97,
+          104
+        ],
+        [
+          126,
+          133
+        ],
+        [
+          141,
+          148
+        ]
+      ],
+      "bar_top_rows": [
+        1023,
+        984,
+        1106,
+        1060
+      ],
+      "values": [
+        2.8979999999999997,
+        3.5999999999999996,
+        1.404,
+        2.2319999999999998
+      ],
+      "digitization_halfwidth": 0.05399999999999999
+    },
+    "fig6e_anticlinal": {
+      "file": "m16_f6.jpg",
+      "zero_row": 1184,
+      "tick_row": 934,
+      "tick_value": 4.5,
+      "interior_columns": [
+        [
+          177,
+          184
+        ],
+        [
+          193,
+          200
+        ],
+        [
+          222,
+          229
+        ],
+        [
+          237,
+          244
+        ]
+      ],
+      "bar_top_rows": [
+        1156,
+        1059,
+        1184,
+        1171
+      ],
+      "values": [
+        0.504,
+        2.25,
+        0.0,
+        0.23399999999999999
+      ],
+      "digitization_halfwidth": 0.05399999999999999
+    },
+    "fig6e_periclinal": {
+      "file": "m16_f6.jpg",
+      "zero_row": 1184,
+      "tick_row": 934,
+      "tick_value": 4.5,
+      "interior_columns": [
+        [
+          274,
+          282
+        ],
+        [
+          289,
+          296
+        ],
+        [
+          319,
+          326
+        ],
+        [
+          334,
+          341
+        ]
+      ],
+      "bar_top_rows": [
+        1051,
+        1109,
+        1106,
+        1074
+      ],
+      "values": [
+        2.3939999999999997,
+        1.3499999999999999,
+        1.404,
+        1.9799999999999998
+      ],
+      "digitization_halfwidth": 0.05399999999999999
+    }
+  }
+}

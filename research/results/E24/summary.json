@@ -1,0 +1,121 @@
+{
+  "experiment": "E24",
+  "study_doi": "10.1038/emboj.2012.303",
+  "figure_readings_sha256": "aaf066aebb76c955cb0368bb8c8ac03ec644003920e15c8f8a0d5979e2081329",
+  "text_FC_detection_to_first_division": {
+    "units": "min",
+    "WT_mean": 103,
+    "WT_printed_plus_minus": 10,
+    "pin3_mean": 206,
+    "pin3_printed_plus_minus": 16,
+    "reported_n_per_group": 10,
+    "pin3_minus_WT": 103,
+    "pin3_over_WT": 2.0
+  },
+  "figure_2D_bending_to_founder_reporter": {
+    "units": "min",
+    "WT": 103.57142857142858,
+    "pin3": 114.28571428571429,
+    "readout_halfwidth_per_bar": 10.714285714285715
+  },
+  "figure_3_endodermal_PIN3_rescue": {
+    "B_founder_density": {
+      "units": "founder sites per cm primary root",
+      "group_means_from_bars": {
+        "WT": 2.909090909090909,
+        "pin3": 5.874125874125874,
+        "transgene_negative": 6.769230769230769,
+        "transgene_positive": 3.804195804195804
+      },
+      "readout_halfwidth_per_bar": 0.16783216783216784,
+      "positive_minus_negative": -2.965034965034965,
+      "positive_minus_WT": 0.895104895104895,
+      "positive_minus_negative_readout_interval": [
+        -3.300699300699301,
+        -2.629370629370629
+      ]
+    },
+    "C_initiation_density": {
+      "units": "lateral-root initiation sites per cm primary root",
+      "group_means_from_bars": {
+        "WT": 5.219858156028368,
+        "pin3": 3.574468085106383,
+        "transgene_negative": 3.858156028368794,
+        "transgene_positive": 7.148936170212766
+      },
+      "readout_halfwidth_per_bar": 0.1702127659574468,
+      "positive_minus_negative": 3.2907801418439715,
+      "positive_minus_WT": 1.9290780141843973,
+      "positive_minus_negative_readout_interval": [
+        2.950354609929078,
+        3.631205673758865
+      ]
+    },
+    "D_combined_density": {
+      "units": "founder plus initiation sites per cm primary root",
+      "group_means_from_bars": {
+        "WT": 8.112676056338028,
+        "pin3": 9.380281690140844,
+        "transgene_negative": 10.056338028169014,
+        "transgene_positive": 10.394366197183098
+      },
+      "readout_halfwidth_per_bar": 0.2535211267605634,
+      "positive_minus_negative": 0.33802816901408406,
+      "positive_minus_WT": 2.28169014084507,
+      "positive_minus_negative_readout_interval": [
+        -0.1690140845070427,
+        0.8450704225352108
+      ]
+    },
+    "reported_D_minus_B_plus_C_approximate": {
+      "WT": -0.016273008781249487,
+      "pin3": -0.06831226909141286,
+      "transgene_negative": -0.5710487694305488,
+      "transgene_positive": -0.5587657772254726
+    },
+    "readout_halfwidth_of_subtraction": 0.591566060550178,
+    "note": "The observed sums are taken directly from 3D. Differences across panel summaries cannot be assigned to individuals."
+  },
+  "stage_I_by_expression_site": {
+    "figure_3E_endodermal": {
+      "units": "stage I abundance on the published axis",
+      "group_means_from_bars": {
+        "WT": 6.702702702702703,
+        "pin3": 4.972972972972973,
+        "transgene_negative": 3.8918918918918917,
+        "transgene_positive": 6.27027027027027
+      },
+      "readout_halfwidth_per_bar": 0.10810810810810811,
+      "positive_minus_negative": 2.3783783783783785,
+      "positive_minus_WT": -0.43243243243243246,
+      "positive_minus_negative_readout_interval": [
+        2.1621621621621623,
+        2.5945945945945947
+      ]
+    },
+    "figure_4B_stele": {
+      "units": "stage I abundance on the published axis",
+      "group_means_from_bars": {
+        "WT": 5.724907063197026,
+        "pin3": 4.814126394052045,
+        "transgene_negative": 4.5278810408921935,
+        "transgene_positive": 4.684014869888476
+      },
+      "readout_halfwidth_per_bar": 0.07806691449814127,
+      "positive_minus_negative": 0.1561338289962828,
+      "positive_minus_WT": -1.04089219330855,
+      "positive_minus_negative_readout_interval": [
+        2.7755575615628914e-16,
+        0.31226765799256534
+      ]
+    }
+  },
+  "checks": {
+    "founder_timing_from_two_calibrated_bars": true,
+    "density_panels_within_their_axes": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E24_endodermal_pin3/run.py": "0d306e0b6b807875439d909143f717de76ee64d097828c9c34d3c411c280fb35"
+  }
+}
