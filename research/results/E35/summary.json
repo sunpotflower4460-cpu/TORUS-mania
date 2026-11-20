@@ -1,0 +1,262 @@
+{
+  "experiment": "E35",
+  "study_doi": "10.1093/plphys/kiaa032",
+  "sources": {
+    "duan_f3.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0601/8133581/326c8e14f147/kiaa032f3.jpg",
+      "sha256": "d21b6979c8ee9b8ab04cd1b95e8fc34953e24391b7738eafa9a9a5d8bbd20bd5"
+    },
+    "duan_f6.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0601/8133581/4faa493f59d5/kiaa032f6.jpg",
+      "sha256": "92025d81d6873904bc538d5a7029ac44902b87f835797b4e0b65cb304b49e3ce"
+    }
+  },
+  "box_median_axis_and_rows": {
+    "3B": [
+      [
+        184,
+        20
+      ],
+      [
+        76,
+        60
+      ],
+      [
+        77.5,
+        200.0,
+        109.0,
+        191.0
+      ]
+    ],
+    "6B": [
+      [
+        245.5,
+        0
+      ],
+      [
+        44.5,
+        5
+      ],
+      [
+        143.5,
+        77.0,
+        237.5,
+        147.5
+      ]
+    ],
+    "6C": [
+      [
+        596.5,
+        0
+      ],
+      [
+        428.5,
+        3
+      ],
+      [
+        420.0,
+        421.0,
+        427.0,
+        544.5,
+        510.5,
+        500.5
+      ]
+    ],
+    "6D": [
+      [
+        596.0,
+        0
+      ],
+      [
+        429.0,
+        3
+      ],
+      [
+        480.0,
+        471.5,
+        462.0,
+        549.0,
+        531.0,
+        515.5
+      ]
+    ],
+    "6E": [
+      [
+        917.5,
+        0
+      ],
+      [
+        722.5,
+        5
+      ],
+      [
+        774.0,
+        779.0,
+        786.0,
+        917.5,
+        917.5,
+        917.5
+      ]
+    ],
+    "6F": [
+      [
+        920.5,
+        0
+      ],
+      [
+        721.5,
+        5
+      ],
+      [
+        911.5,
+        920.5,
+        920.5,
+        920.5,
+        920.5,
+        920.5
+      ]
+    ]
+  },
+  "grafted_median_branch_number": {
+    "shoot_WT_root_WT": 59.44444444444444,
+    "shoot_mutant_root_mutant": 14.074074074074074,
+    "shoot_WT_root_mutant": 47.77777777777777,
+    "shoot_mutant_root_WT": 17.40740740740741,
+    "WT_shoot_increment_on_WT_root": 42.03703703703704,
+    "WT_shoot_increment_on_mutant_root": 33.703703703703695,
+    "WT_root_increment_with_WT_shoot": 11.666666666666671,
+    "WT_root_increment_with_mutant_shoot": 3.333333333333334,
+    "readout_half_width_per_median": 0.7407407407407407
+  },
+  "fig6B_primary_root_cm": {
+    "sucrose_percent": [
+      0,
+      1
+    ],
+    "WT": [
+      2.537313432835821,
+      4.191542288557214
+    ],
+    "cyp38_5": [
+      0.19900497512437812,
+      2.437810945273632
+    ],
+    "WT_minus_cyp38_5": [
+      2.338308457711443,
+      1.7537313432835817
+    ],
+    "single_median_reading_half_width": 0.04975124378109453
+  },
+  "fig6C_to_6F": {
+    "regular_light_primary_root_cm": {
+      "sucrose_percent": [
+        1,
+        2,
+        3
+      ],
+      "WT": [
+        3.151785714285714,
+        3.133928571428571,
+        3.026785714285714
+      ],
+      "cyp38_5": [
+        0.9285714285714285,
+        1.5357142857142856,
+        1.7142857142857142
+      ],
+      "WT_minus_cyp38_5": [
+        2.2232142857142856,
+        1.5982142857142856,
+        1.3124999999999998
+      ],
+      "single_median_reading_half_width": 0.03571428571428571,
+      "WT_minus_mutant_gap_at_3_percent_minus_gap_at_1_percent": -0.9107142857142858,
+      "mutant_change_at_3_percent_minus_1_percent": 0.7857142857142857
+    },
+    "low_light_primary_root_cm": {
+      "sucrose_percent": [
+        1,
+        2,
+        3
+      ],
+      "WT": [
+        2.0838323353293413,
+        2.236526946107784,
+        2.407185628742515
+      ],
+      "cyp38_5": [
+        0.844311377245509,
+        1.1676646706586826,
+        1.4461077844311376
+      ],
+      "WT_minus_cyp38_5": [
+        1.2395209580838324,
+        1.0688622754491015,
+        0.9610778443113774
+      ],
+      "single_median_reading_half_width": 0.03592814371257485,
+      "WT_minus_mutant_gap_at_3_percent_minus_gap_at_1_percent": -0.278443113772455,
+      "mutant_change_at_3_percent_minus_1_percent": 0.6017964071856287
+    },
+    "regular_light_lateral_root_density_per_cm": {
+      "sucrose_percent": [
+        1,
+        2,
+        3
+      ],
+      "WT": [
+        3.6794871794871793,
+        3.551282051282051,
+        3.371794871794872
+      ],
+      "cyp38_5": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "WT_minus_cyp38_5": [
+        3.6794871794871793,
+        3.551282051282051,
+        3.371794871794872
+      ],
+      "single_median_reading_half_width": 0.05128205128205128,
+      "WT_minus_mutant_gap_at_3_percent_minus_gap_at_1_percent": -0.3076923076923075,
+      "mutant_change_at_3_percent_minus_1_percent": 0.0
+    },
+    "low_light_lateral_root_density_per_cm": {
+      "sucrose_percent": [
+        1,
+        2,
+        3
+      ],
+      "WT": [
+        0.22613065326633167,
+        0.0,
+        0.0
+      ],
+      "cyp38_5": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "WT_minus_cyp38_5": [
+        0.22613065326633167,
+        0.0,
+        0.0
+      ],
+      "single_median_reading_half_width": 0.05025125628140704,
+      "WT_minus_mutant_gap_at_3_percent_minus_gap_at_1_percent": -0.22613065326633167,
+      "mutant_change_at_3_percent_minus_1_percent": 0.0
+    }
+  },
+  "checks": {
+    "versioned_figure_sizes": true,
+    "separate_supplementation_panels": true,
+    "graft_and_sucrose_axes_positive": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E35_shoot_root_resources/run.py": "448ba1f24cf8c6d8fc1b41cf49fc85902ee3218dd07c818044c7e9cbb91d17fe",
+    "experiments/return_energy_data.py": "819f9f9ad2c784416db27be8c77de0c193d1d12f528e2fa81a85ce64155a160d"
+  }
+}
