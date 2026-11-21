@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E54を実行済み。第14回は根の標識パルス、方向別の輸送と側根伸長、細胞質が折り返す向き、初回分裂の前に流れで胚の配置を変えた試験、娘細胞での往復走査対照を公開原著から検証した。第1分裂の向きへの局所的な因果は支持できる。同じ根での遊離IAAの通過履歴と初回帰還、同じ胚での三次元の仕事の経路と分裂との対応が、次の判定に必要である。[第14回報告](docs/23_TURNING_PATHS_AND_AXIS_REPORT.md)・[一次資料](research/notes/E49_E54_turning_paths_evidence.md)・[追試と再開](research/STATUS.md)
+E01〜E76を実行済み。第18回は無傷根の反対側で回収されたIAA由来標識の化学確認と、根冠を切除した根片の軸方向の偏りを調べた。胚では神経管の閉鎖中の力を仕事に換算し、被包中の仕事率の表示を再集計した。同じ収支でも内部の流束の閉路が異なる数理対照を加えた。[第18回報告](docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E72_E76_calibrated_formation_evidence.md)・[実験の再開点](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

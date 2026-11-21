@@ -1,0 +1,96 @@
+{
+  "experiment": "E60",
+  "doi": "10.1038/s41467-021-27020-1",
+  "source_figure": "3b",
+  "hours_after_input": 6,
+  "conjugated_D2_IAA_Asp": {
+    "source_sheet_label": "D2-IAA-Asp",
+    "fresh_weight_unit_pmol_per_g": true,
+    "printed_first_row_one_based": 5,
+    "wt_then_mutant_samples": [
+      [
+        46.7,
+        66.9,
+        56.5,
+        60.4
+      ],
+      [
+        65.5,
+        51.4,
+        59.3,
+        51.6
+      ]
+    ],
+    "wt_then_mutant_means": [
+      57.62500000000001,
+      56.949999999999996
+    ],
+    "wt_then_mutant_sd": [
+      8.452760890186513,
+      6.783558554819635
+    ],
+    "wt_then_mutant_reported_means": [
+      57.62500000000001,
+      56.949999999999996
+    ],
+    "mutant_over_wt": 0.988286334056399,
+    "student_p_two_sided": 0.9049403894953616,
+    "printed_student_p_two_sided": 0.934,
+    "permutation_assignments": 70,
+    "p_two_sided_exchangeable_labels": 0.9142857142857143,
+    "nonoverlapping_measurements": false
+  },
+  "released_free_D2_IAA": {
+    "source_sheet_label": "D2-IAA",
+    "fresh_weight_unit_pmol_per_g": true,
+    "printed_first_row_one_based": 15,
+    "wt_then_mutant_samples": [
+      [
+        16.44,
+        19.1,
+        22.79,
+        24.14
+      ],
+      [
+        0.46,
+        0.12,
+        1.0,
+        0.04
+      ]
+    ],
+    "wt_then_mutant_means": [
+      20.6175,
+      0.405
+    ],
+    "wt_then_mutant_sd": [
+      3.5062836451148667,
+      0.4364630568559039
+    ],
+    "wt_then_mutant_reported_means": [
+      20.6175,
+      0.405
+    ],
+    "mutant_over_wt": 0.0196435067297199,
+    "student_p_two_sided": 2.6754517666341513e-05,
+    "printed_student_p_two_sided": 2.68e-05,
+    "permutation_assignments": 70,
+    "p_two_sided_exchangeable_labels": 0.02857142857142857,
+    "nonoverlapping_measurements": true
+  },
+  "free_share_of_two_group_means": [
+    0.2635076844425983,
+    0.007061284979513556
+  ],
+  "scope": "The supplied labeled IAA–Asp dimethyl ester is distinct from free IAA. The share uses two measured pools and their group means; rows have no sample identifiers that establish cross-metabolite pairing.",
+  "checks": {
+    "published_sheet_groups_and_sample_counts": true,
+    "published_header_matches_both_chemical_species": true,
+    "printed_and_recomputed_means_agree": true,
+    "all_four_by_four_allocations": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E60_iaa_reactivation/run.py": "7ed56c460c6e49e78c0a2977e1571c472860fdf520a56dece2c1e792c0c88d4b",
+    "experiments/particle_return_sources.py": "f5b864a3b55db507a0a491077ef8ca014e33ef7e84e24143b33de11f8682b3bc"
+  }
+}
