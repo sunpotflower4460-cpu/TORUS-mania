@@ -1,0 +1,106 @@
+{
+  "code_commit": "037eb02d4d830e4f3b39d22023d9e7b6d18e4750",
+  "preregistration_commits": {
+    "E44_E45_E46_E47": "177321335aaf0fca6897151cfcbd701f61dbf5ad",
+    "E46_flux_check_and_E47_coverage_amendment": "3ef456f02fa0f9dc65af6cf540433afc4be1a9ec",
+    "E48_transverse_section": "3810a719123127970df37c53e98d87cf5c2c5ca8"
+  },
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "OpenPyXL": "3.1.5"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": {
+      "E47": 470013
+    }
+  },
+  "initial": {
+    "runs": [
+      {
+        "module": "E44_vicia_routes.run",
+        "returncode": 0,
+        "wall_s": 0.516
+      },
+      {
+        "module": "E45_auxin_recovered_identity.run",
+        "returncode": 0,
+        "wall_s": 0.525
+      },
+      {
+        "module": "E46_cytoplasmic_return.run",
+        "returncode": 0,
+        "wall_s": 0.824
+      },
+      {
+        "module": "E47_spindle_forecast.run",
+        "returncode": 0,
+        "wall_s": 1.858
+      },
+      {
+        "module": "E48_transverse_streaming.run",
+        "returncode": 0,
+        "wall_s": 1.171
+      },
+      {
+        "module": "measured_return_figures",
+        "returncode": 0,
+        "wall_s": 1.543
+      }
+    ],
+    "wall_s": 6.439
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E44_vicia_routes.run",
+        "returncode": 0,
+        "wall_s": 0.509
+      },
+      {
+        "module": "E45_auxin_recovered_identity.run",
+        "returncode": 0,
+        "wall_s": 0.37
+      },
+      {
+        "module": "E46_cytoplasmic_return.run",
+        "returncode": 0,
+        "wall_s": 0.921
+      },
+      {
+        "module": "E47_spindle_forecast.run",
+        "returncode": 0,
+        "wall_s": 1.694
+      },
+      {
+        "module": "E48_transverse_streaming.run",
+        "returncode": 0,
+        "wall_s": 1.151
+      },
+      {
+        "module": "measured_return_figures",
+        "returncode": 0,
+        "wall_s": 2.934
+      }
+    ],
+    "wall_s": 7.58
+  },
+  "fresh_external_downloads_verified": 7,
+  "source_record": "research/access/2026-11-20-measured-return.md",
+  "checks_passed": {
+    "E44": 4,
+    "E45": 4,
+    "E46": 5,
+    "E47": 7,
+    "E48": 5
+  },
+  "byte_identical_generated_outputs": 7,
+  "prior_manifest_items_verified": 176,
+  "existing_unit_tests_passed": 22
+}

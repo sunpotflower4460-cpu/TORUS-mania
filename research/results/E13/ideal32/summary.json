@@ -11,6 +11,7 @@
     0.0,
     0.0
   ],
+  "initial_magnetic_scale_m": 0.05,
   "flux_units": [
     "m2/s",
     "m3/s"
@@ -734,7 +735,7 @@
   },
   "code_sha256": {
     "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
-    "E13_flux_transport/run.py": "643d05637f6d343ee5da8ac390a75ccfd05d5f9c0f8cb0bf0e1adea2d13d05db",
+    "E13_flux_transport/run.py": "7e64ba6ea62849b62b9fa4072e1a594ac06c402e004835f760e1b639db052100",
     "E03_vortex/topology.py": "5265534d14aa665fa829a08c99dacbd2ef4eda9aeb04f5f9c9f65c0b6ce67706"
   }
 }

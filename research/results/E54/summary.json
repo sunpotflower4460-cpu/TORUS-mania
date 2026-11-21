@@ -1,0 +1,103 @@
+{
+  "experiment": "E54",
+  "doi": "10.1016/j.cub.2023.08.076",
+  "source": "Fig. 5G, lower panel, P1, nmy-2(ts); approximately 8.5 min after flow",
+  "pixel_zero_60deg": [
+    344.0,
+    51.0
+  ],
+  "dot_centers_px": {
+    "alternating_scan": [
+      [
+        228,
+        309
+      ],
+      [
+        215,
+        326
+      ],
+      [
+        228,
+        326
+      ],
+      [
+        228,
+        344
+      ],
+      [
+        228,
+        449
+      ]
+    ],
+    "directional_scan": [
+      [
+        402,
+        28
+      ],
+      [
+        402,
+        63
+      ],
+      [
+        402,
+        186
+      ],
+      [
+        402,
+        221
+      ],
+      [
+        402,
+        344
+      ]
+    ]
+  },
+  "angle_offset_degrees": {
+    "alternating_scan": [
+      7.167235494880546,
+      3.6860068259385668,
+      3.6860068259385668,
+      0.0,
+      -21.501706484641637
+    ],
+    "directional_scan": [
+      64.7098976109215,
+      57.54266211604096,
+      32.35494880546075,
+      25.187713310580204,
+      0.0
+    ]
+  },
+  "reading_halfwidth_degrees": 0.40955631399317405,
+  "means_control_flow_deg": [
+    -1.3924914675767917,
+    35.95904436860068
+  ],
+  "printed_bars_control_flow_deg": [
+    -1.4334470989761092,
+    35.93856655290102
+  ],
+  "flow_minus_control_degrees": 37.35153583617747,
+  "median_control_flow_deg": [
+    3.6860068259385668,
+    32.35494880546075
+  ],
+  "delete_one_difference_range_deg": [
+    30.163822525597272,
+    46.34129692832764
+  ],
+  "all_label_allocations": 252,
+  "two_sided_exchangeable_label_p": 0.03968253968253968,
+  "scope": "Laser direction alternated between scans in controls to cancel induced flow. Tissue temperature, delivered mechanical work and the next division orientation were not paired outcomes in Fig. 5G.",
+  "checks": {
+    "figure_size": true,
+    "tenth_degree_ticks": true,
+    "printed_bars_agree_with_scored_points": true,
+    "complete_small_sample_permutation": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E54_daughter_polarity/run.py": "13c8c77cedf24f3523712d34fa027af2754d10c6971b3743ed74fe21342cc78c",
+    "experiments/turning_path_sources.py": "23013de4b259f03c9bdf1e53bd7b30ec765a435fe2fd5bb6d098f84634e04b69"
+  }
+}

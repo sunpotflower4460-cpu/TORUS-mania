@@ -1,0 +1,131 @@
+{
+  "experiment": "E56",
+  "primary_doi": "10.1105/tpc.104.029272",
+  "secondary_doi": "10.1105/tpc.109.066480",
+  "labelled_interval_hours": 24,
+  "measurement_day_after_germination": 8,
+  "distance_edges_mm": [
+    0,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "relative_new_label_measure_fig4a": {
+    "x_px": [
+      68,
+      134,
+      199,
+      264
+    ],
+    "marker_rows": [
+      [
+        88,
+        91,
+        91,
+        98
+      ],
+      [
+        129,
+        145,
+        147,
+        145
+      ]
+    ],
+    "zero_tick_unit": [
+      170,
+      73,
+      1.2
+    ],
+    "values_intact_then_excised": [
+      [
+        1.0144329896907216,
+        0.977319587628866,
+        0.977319587628866,
+        0.890721649484536
+      ],
+      [
+        0.5072164948453608,
+        0.30927835051546393,
+        0.2845360824742268,
+        0.30927835051546393
+      ]
+    ],
+    "reading_halfwidth": 0.024742268041237112,
+    "excised_as_fraction_of_intact": [
+      0.5,
+      0.31645569620253167,
+      0.2911392405063291,
+      0.34722222222222227
+    ],
+    "tip_relative_to_remaining_three_average": [
+      1.0695652173913044,
+      1.6849315068493151
+    ]
+  },
+  "total_IAA_pg_per_mm_fig4b": {
+    "x_px": [
+      403,
+      469,
+      537,
+      603
+    ],
+    "marker_rows": [
+      [
+        96,
+        127,
+        126,
+        133
+      ],
+      [
+        134,
+        150,
+        146,
+        148
+      ]
+    ],
+    "zero_tick_unit": [
+      171,
+      72,
+      2.0
+    ],
+    "values_intact_then_excised": [
+      [
+        1.5151515151515154,
+        0.888888888888889,
+        0.9090909090909092,
+        0.7676767676767677
+      ],
+      [
+        0.7474747474747475,
+        0.42424242424242425,
+        0.5050505050505051,
+        0.4646464646464647
+      ]
+    ],
+    "reading_halfwidth": 0.04040404040404041,
+    "excised_as_fraction_of_intact": [
+      0.4933333333333333,
+      0.47727272727272724,
+      0.5555555555555556,
+      0.6052631578947368
+    ],
+    "tip_relative_to_remaining_three_average": [
+      1.7716535433070868,
+      1.6086956521739129
+    ]
+  },
+  "scope": "New labeling ratio after germination day 7–8 with heavy water, not synthesis in mass per time. The excised root retains transport within the root and can change metabolism after excision.",
+  "corroboration": "Petersson Fig. 5 reports cell-type staining and GC–SRM–MS in shoot-excised, NPA treated roots (16 h); contextual only.",
+  "checks": {
+    "original_dimensions": true,
+    "four_halfmillimetre_intervals": true,
+    "group_labels_match_fig_4": true,
+    "unit_axes_are_positive": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E56_root_local_supply/run.py": "37cd4427d92df764cb966511fcf2f9450f9e68c247420b89d24beb9af580306f",
+    "experiments/particle_return_sources.py": "f5b864a3b55db507a0a491077ef8ca014e33ef7e84e24143b33de11f8682b3bc"
+  }
+}

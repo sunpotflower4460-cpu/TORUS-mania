@@ -1,0 +1,338 @@
+{
+  "experiment": "E42",
+  "study_doi": "10.1073/pnas.2418111122",
+  "archive_doi": "10.5061/dryad.w9ghx3g2h",
+  "source_url": "https://datadryad.org/api/v2/versions/373722/download",
+  "workbook_sha256": {
+    "lumen-shape-data-experiments.xlsx": "d9dffce544e4a09dbfffd97a005eb6d263d71fe46b7207e42adc65e5d50fba14",
+    "lumen-speed-data-experiments.xlsx": "c0b748dc13a916238a10bd4ad1febdf738b2be3235afcb9a89df19e245ad7e5e",
+    "lumen-shape-data-simulation.xlsx": "4feaf0568bf8d358fb10cbfbe5beab0d7cedb9e086189152c6b7a3ad411e94e1",
+    "lumen-speed-data-simulation.xlsx": "b790bbbbe1e73c5158218bda82fe8782af0274ce853610f54d6bb1a72b20fec6",
+    "KV_cell_apical_width_data_Fig_4C-D.xlsx": "460d01badd552c757f02024de3ff9f76bef5a90163ba0c67312d2207c77cc162"
+  },
+  "stage_window": [
+    5,
+    7
+  ],
+  "replicates": 8000,
+  "rng_seed": 424239,
+  "resample_unit": "embryo within each treatment",
+  "shape_AP_to_LR_ratio": {
+    "groups": {
+      "control": {
+        "n_embryos": 9,
+        "n_stage_observations": 55,
+        "embryo_means": {
+          "1": 0.8270347072249301,
+          "2": 0.9358369035152722,
+          "3": 0.7738526985659002,
+          "4": 0.9739825458480773,
+          "5": 0.9020557965522663,
+          "6": 0.90068628611707,
+          "7": 0.7655494871828309,
+          "8": 0.912750178702889,
+          "9": 0.6712595000687646
+        },
+        "mean_of_embryos": 0.8514453448642223,
+        "complete_case_count": 4,
+        "complete_case_mean": 0.8180423373411413
+      },
+      "Control ablation": {
+        "n_embryos": 6,
+        "n_stage_observations": 41,
+        "embryo_means": {
+          "1": 0.859655916362638,
+          "2": 0.7444517449569586,
+          "3": 0.8436029267618809,
+          "4": 0.8828105843160717,
+          "5": 0.798225853484718,
+          "6": 0.9278566017671793
+        },
+        "mean_of_embryos": 0.8427672712749078,
+        "complete_case_count": 5,
+        "complete_case_mean": 0.8524894751452701
+      },
+      "NC ablation": {
+        "n_embryos": 7,
+        "n_stage_observations": 32,
+        "embryo_means": {
+          "1": 0.8211110009870212,
+          "2": 0.891009725906565,
+          "3": 1.14069160735692,
+          "4": 0.660433124108385,
+          "5": 0.9663282774547722,
+          "6": 0.9879445223940431,
+          "7": 0.8530238080221981
+        },
+        "mean_of_embryos": 0.9029345808899863,
+        "complete_case_count": 3,
+        "complete_case_mean": 0.9026655522572361
+      },
+      "PC ablation": {
+        "n_embryos": 7,
+        "n_stage_observations": 28,
+        "embryo_means": {
+          "1": 0.7484076508246721,
+          "2": 0.915398082414827,
+          "3": 0.8773049769132962,
+          "4": 0.6686777137284671,
+          "5": 0.7621251017306171,
+          "6": 0.738653542146069,
+          "7": 0.5870603028661107
+        },
+        "mean_of_embryos": 0.7568039100891514,
+        "complete_case_count": 1,
+        "complete_case_mean": 0.759804730042586
+      }
+    },
+    "contrasts": {
+      "Control ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": -0.008678073589314494,
+          "percentile_ci_95": [
+            -0.08448395291324584,
+            0.07119970804785085
+          ]
+        }
+      },
+      "NC ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": 0.05148923602576405,
+          "percentile_ci_95": [
+            -0.06584575811129342,
+            0.1749672946328037
+          ]
+        },
+        "versus_sham": {
+          "treatment_minus_baseline": 0.060167309615078546,
+          "percentile_ci_95": [
+            -0.05336109674939189,
+            0.17131136144312656
+          ]
+        }
+      },
+      "PC ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": -0.09464143477507092,
+          "percentile_ci_95": [
+            -0.19024708624742362,
+            0.003722843389592707
+          ]
+        },
+        "versus_sham": {
+          "treatment_minus_baseline": -0.08596336118575643,
+          "percentile_ci_95": [
+            -0.1742354415289562,
+            0.004562001812286155
+          ]
+        }
+      }
+    },
+    "model_direction": {
+      "model_ensembles": 18,
+      "comparison": {
+        "NC ablation": {
+          "relative_model_change": 0.17144903088338936,
+          "experiment_and_model_same_sign": true
+        },
+        "PC ablation": {
+          "relative_model_change": -0.14399833561194508,
+          "experiment_and_model_same_sign": true
+        }
+      }
+    }
+  },
+  "lumen_center_speed_um_per_min": {
+    "groups": {
+      "control": {
+        "n_embryos": 7,
+        "n_stage_observations": 11,
+        "embryo_means": {
+          "1": 0.852509266123054,
+          "2": 1.079560221829262,
+          "3": 1.36435295164042,
+          "6": 0.8563994888057931,
+          "7": 1.06068427695211,
+          "8": 1.09940356179586,
+          "9": 1.239610075914415
+        },
+        "mean_of_embryos": 1.0789314061515591,
+        "complete_case_count": 4,
+        "complete_case_mean": 1.1349806845474726
+      },
+      "Control ablation": {
+        "n_embryos": 4,
+        "n_stage_observations": 5,
+        "embryo_means": {
+          "1": 0.982453472517353,
+          "2": 1.62849259124717,
+          "3": 1.04301760556603,
+          "4": 1.21022054160324
+        },
+        "mean_of_embryos": 1.2160460527334482,
+        "complete_case_count": 1,
+        "complete_case_mean": 1.21022054160324
+      },
+      "NC ablation": {
+        "n_embryos": 6,
+        "n_stage_observations": 8,
+        "embryo_means": {
+          "1": 0.665617252837515,
+          "2": 0.73413926557533,
+          "3": 0.860580420821125,
+          "5": 0.436963802825058,
+          "6": 0.6833131343203891,
+          "7": 0.453765580210661
+        },
+        "mean_of_embryos": 0.639063242765013,
+        "complete_case_count": 2,
+        "complete_case_mean": 0.5601384685727235
+      },
+      "PC ablation": {
+        "n_embryos": 5,
+        "n_stage_observations": 7,
+        "embryo_means": {
+          "1": 0.956718595083028,
+          "2": 0.842196596878832,
+          "3": 0.9728047103672925,
+          "5": 1.33763611415909,
+          "6": 1.33352325225425
+        },
+        "mean_of_embryos": 1.0885758537484986,
+        "complete_case_count": 2,
+        "complete_case_mean": 1.1552204122631913
+      }
+    },
+    "contrasts": {
+      "Control ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": 0.1371146465818891,
+          "percentile_ci_95": [
+            -0.11595223320449045,
+            0.4303311248926533
+          ]
+        }
+      },
+      "NC ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": -0.4398681633865461,
+          "percentile_ci_95": [
+            -0.6204935501010007,
+            -0.269667411883708
+          ]
+        },
+        "versus_sham": {
+          "treatment_minus_baseline": -0.5769828099684352,
+          "percentile_ci_95": [
+            -0.8709049751368364,
+            -0.3296639141440316
+          ]
+        }
+      },
+      "PC ablation": {
+        "versus_unablated": {
+          "treatment_minus_baseline": 0.009644447596939498,
+          "percentile_ci_95": [
+            -0.21096281283280077,
+            0.22723540867676437
+          ]
+        },
+        "versus_sham": {
+          "treatment_minus_baseline": -0.1274701989849496,
+          "percentile_ci_95": [
+            -0.45197100770215354,
+            0.16634380209931451
+          ]
+        }
+      }
+    },
+    "model_direction": {
+      "model_ensembles": 18,
+      "comparison": {
+        "NC ablation": {
+          "relative_model_change": -0.5614426800444099,
+          "experiment_and_model_same_sign": true
+        },
+        "PC ablation": {
+          "relative_model_change": -0.023330930058271138,
+          "experiment_and_model_same_sign": false
+        }
+      }
+    }
+  },
+  "apical_widths": {
+    "groups": {
+      "control": {
+        "n_embryos": 15,
+        "anterior_um": 7.0686354673333325,
+        "posterior_um": 20.292300073333333,
+        "within_embryo_posterior_minus_anterior_um": [
+          15.13020515,
+          19.5998235,
+          19.15263306,
+          13.28136904,
+          7.91191474,
+          10.98612472,
+          21.91463188,
+          5.70306592,
+          15.11328253,
+          16.106684870000002,
+          4.799400240000001,
+          8.200666770000002,
+          20.49175,
+          4.1072500000000005,
+          15.856166669999999
+        ],
+        "mean_P_minus_A_um": 13.223664606,
+        "author_mean_row_max_abs_difference": 0.0
+      },
+      "NC ablation": {
+        "n_embryos": 21,
+        "anterior_um": 8.466858174761905,
+        "posterior_um": 17.643766219047624,
+        "within_embryo_posterior_minus_anterior_um": [
+          6.053415749999999,
+          5.665045950000001,
+          7.5737024,
+          17.74149861,
+          7.593400559999999,
+          5.3103392,
+          17.60340975,
+          9.233536960000002,
+          5.719722190000001,
+          12.695283,
+          11.425257720000001,
+          7.3234344,
+          15.5786861,
+          9.37499807,
+          1.0206630600000004,
+          7.744349280000002,
+          4.85608249,
+          14.813243439999999,
+          9.624500000000001,
+          4.0143333000000005,
+          11.750166700000001
+        ],
+        "mean_P_minus_A_um": 9.176908044285716,
+        "author_mean_row_max_abs_difference": 0.0
+      }
+    },
+    "change_in_anterior_posterior_difference": {
+      "treatment_minus_baseline": -4.046756561714284,
+      "percentile_ci_95": [
+        -7.529551824369041,
+        -0.5476758130809493
+      ]
+    }
+  },
+  "checks": {
+    "all_four_perturbation_groups": true,
+    "no_more_complete_embryos_than_included": true,
+    "apical_width_pairs_and_summary_rows": true,
+    "published_models_include_both_perturbations": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E42_embryo_mechanics/run.py": "1598b2c69514deef2b6a30f429ddc312e979964d6f7814e2ff1392a554d1325a"
+  }
+}

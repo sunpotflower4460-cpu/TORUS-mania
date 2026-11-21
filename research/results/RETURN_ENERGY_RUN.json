@@ -1,0 +1,117 @@
+{
+  "code_commit": "44c9176adf9823fbce0de0d67228b93d5c994428",
+  "preregistration_commits": {
+    "E33_to_E37": "692e185649f2007ccd26b869b141b75755e31f28",
+    "E38": "999c6d9bb1b59912b609a555305cf364c0735351"
+  },
+  "stage_count_audit_amendment_in_code_commit": "E38",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "OpenPyXL": "3.1.5"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": {
+      "E38": 382026
+    }
+  },
+  "initial": {
+    "runs": [
+      {
+        "module": "E33_directional_response.run",
+        "returncode": 0,
+        "wall_s": 0.567
+      },
+      {
+        "module": "E34_root_period_transfer.run",
+        "returncode": 0,
+        "wall_s": 0.646
+      },
+      {
+        "module": "E35_shoot_root_resources.run",
+        "returncode": 0,
+        "wall_s": 0.468
+      },
+      {
+        "module": "E36_vortex_energy_transfer.run",
+        "returncode": 0,
+        "wall_s": 0.778
+      },
+      {
+        "module": "E37_driven_circulation.run",
+        "returncode": 0,
+        "wall_s": 0.137
+      },
+      {
+        "module": "E38_founder_reporters.run",
+        "returncode": 0,
+        "wall_s": 0.354
+      },
+      {
+        "module": "return_energy_figures",
+        "returncode": 0,
+        "wall_s": 2.095
+      }
+    ],
+    "wall_s": 5.046
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E33_directional_response.run",
+        "returncode": 0,
+        "wall_s": 0.384
+      },
+      {
+        "module": "E34_root_period_transfer.run",
+        "returncode": 0,
+        "wall_s": 0.486
+      },
+      {
+        "module": "E35_shoot_root_resources.run",
+        "returncode": 0,
+        "wall_s": 0.53
+      },
+      {
+        "module": "E36_vortex_energy_transfer.run",
+        "returncode": 0,
+        "wall_s": 0.929
+      },
+      {
+        "module": "E37_driven_circulation.run",
+        "returncode": 0,
+        "wall_s": 0.19
+      },
+      {
+        "module": "E38_founder_reporters.run",
+        "returncode": 0,
+        "wall_s": 0.332
+      },
+      {
+        "module": "return_energy_figures",
+        "returncode": 0,
+        "wall_s": 1.836
+      }
+    ],
+    "wall_s": 4.687
+  },
+  "fresh_external_downloads_verified": 11,
+  "source_record": "research/access/2026-11-20-return-and-energy.md",
+  "checks_passed": {
+    "E33": 3,
+    "E34": 3,
+    "E35": 3,
+    "E36": 3,
+    "E37": 8,
+    "E38": 3
+  },
+  "byte_identical_generated_outputs": 9,
+  "prior_manifest_items_verified": 160,
+  "existing_unit_tests_passed": 22
+}

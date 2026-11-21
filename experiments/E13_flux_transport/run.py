@@ -14,7 +14,7 @@ OUT = Path(__file__).resolve().parents[2] / "research/results/E13"
 LENGTH = 8.
 RADIUS = 1.4
 WIDTH = .48
-MAGNETIC_SCALE_S = .05
+MAGNETIC_SCALE_M = .05  # b (m/s) per unit vorticity (1/s)
 DURATION = .8
 THRESHOLDS = (.25, .35, .5)
 
@@ -152,13 +152,13 @@ def run_ring(grid, dt, viscosity, section_size):
     if viscosity==0.:
         names = ["vorticity", "matched_ideal"]
         diffusivities = np.array([0.,0.])
-        state = np.stack((velocity,MAGNETIC_SCALE_S*initial_omega))
+        state = np.stack((velocity,MAGNETIC_SCALE_M*initial_omega))
     else:
         names = ["vorticity", "magnetic_ideal", "matched", "faster_diffusion", "shifted", "zero"]
         diffusivities = np.array([viscosity,0.,viscosity,.18,viscosity,viscosity])
-        matched = MAGNETIC_SCALE_S*initial_omega
+        matched = MAGNETIC_SCALE_M*initial_omega
         state = np.stack((velocity,matched,matched,matched,
-                          MAGNETIC_SCALE_S*grid.ring(.7),np.zeros_like(matched)))
+                          MAGNETIC_SCALE_M*grid.ring(.7),np.zeros_like(matched)))
     points = sections(section_size)
     records, shapes, difference = [],[],[]
     sample_stride = round(.02/dt)
@@ -170,7 +170,7 @@ def run_ring(grid, dt, viscosity, section_size):
             records.append(record[:5])
             if record[-1] is not None:
                 shapes.append({"t_s":step*dt,"superlevel":record[-1]})
-            ref = MAGNETIC_SCALE_S*grid.curl(state[0])
+            ref = MAGNETIC_SCALE_M*grid.curl(state[0])
             index = names.index("matched") if viscosity else 1
             difference.append(relative_difference(grid,ref,state[index]))
         if step<num_steps:
@@ -187,6 +187,7 @@ def run_ring(grid, dt, viscosity, section_size):
     data = {
         "n": grid.n, "dt_s": dt, "section_intervals": section_size, "names": names,
         "coefficients_m2_s": diffusivities.tolist(),
+        "initial_magnetic_scale_m": MAGNETIC_SCALE_M,
         "flux_units": ["m2/s",*["m3/s"]*(len(names)-1)],
         "energy_units": "J at reference density 1 kg/m3",
         "max_divergence_spectral_relative": float(div),
@@ -201,7 +202,7 @@ def run_ring(grid, dt, viscosity, section_size):
         "dissipation_per_initial_energy": dict(zip(names, (np.trapezoid(dissipation, x=times, axis=0) / e0).tolist(), strict=True)),
         "zero_field_max": float(abs(state[-1]).max()) if viscosity else None,
         "shifted_final_field_l2_from_reference":
-            relative_difference(grid, MAGNETIC_SCALE_S*grid.curl(state[0]), state[names.index("shifted")])
+            relative_difference(grid, MAGNETIC_SCALE_M*grid.curl(state[0]), state[names.index("shifted")])
             if viscosity else None,
         "shapes":shapes,
     }
