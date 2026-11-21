@@ -1,0 +1,122 @@
+{
+  "code_commit": "65d8909712fd8a68812e652796d53ffc8889bb26",
+  "base_commit": "415df707c70349b370a7399547a33a0cdd506d33",
+  "preregistration_commits": {
+    "E55_to_E59": "981dc50a8c9eb179d05561058290a9f20e77c711",
+    "E58_fold_and_tracking": "0739ab3bb4d571861317eeafb759c6adade6a111",
+    "E58_track_duration_diagnostic": "62d83b0a4745ab8ef7e6e926041b3f4abafa55ca",
+    "E59_time_endpoints_and_E60": "a81faeb9aff4e8f4f01d514a7ed4dcc4edbd181a"
+  },
+  "initial_code_commit": "166cfb10a52b526e0e8239f9e499bcaed663a2ce",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "openpyxl": "3.1.5",
+      "opencv-python-headless": "4.13.0.92"
+    },
+    "ffmpeg_version_line": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "numeric_threads_per_process": 1,
+    "random_seed": {
+      "E58": 582026
+    }
+  },
+  "working_tree_run_after_figure_correction": {
+    "runs": [
+      {
+        "module": "E55_root_iaa_fate.run",
+        "returncode": 0,
+        "wall_s": 0.483
+      },
+      {
+        "module": "E56_root_local_supply.run",
+        "returncode": 0,
+        "wall_s": 0.489
+      },
+      {
+        "module": "E57_auxsen_clearance.run",
+        "returncode": 0,
+        "wall_s": 0.481
+      },
+      {
+        "module": "E58_granule_paths.run",
+        "returncode": 0,
+        "wall_s": 12.201
+      },
+      {
+        "module": "E59_spindle_mechanisms.run",
+        "returncode": 0,
+        "wall_s": 0.611
+      },
+      {
+        "module": "E60_iaa_reactivation.run",
+        "returncode": 0,
+        "wall_s": 1.612
+      },
+      {
+        "module": "particle_return_figures",
+        "returncode": 0,
+        "wall_s": 2.31
+      }
+    ],
+    "wall_s": 18.189
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E55_root_iaa_fate.run",
+        "returncode": 0,
+        "wall_s": 0.561
+      },
+      {
+        "module": "E56_root_local_supply.run",
+        "returncode": 0,
+        "wall_s": 0.536
+      },
+      {
+        "module": "E57_auxsen_clearance.run",
+        "returncode": 0,
+        "wall_s": 0.495
+      },
+      {
+        "module": "E58_granule_paths.run",
+        "returncode": 0,
+        "wall_s": 12.089
+      },
+      {
+        "module": "E59_spindle_mechanisms.run",
+        "returncode": 0,
+        "wall_s": 0.45
+      },
+      {
+        "module": "E60_iaa_reactivation.run",
+        "returncode": 0,
+        "wall_s": 1.744
+      },
+      {
+        "module": "particle_return_figures",
+        "returncode": 0,
+        "wall_s": 1.986
+      }
+    ],
+    "wall_s": 17.862
+  },
+  "fresh_external_downloads_verified": 9,
+  "source_record": "research/access/2026-11-20-particle-return.md",
+  "checks_passed": {
+    "E55": 5,
+    "E56": 4,
+    "E57": 4,
+    "E58": 5,
+    "E59": 5,
+    "E60": 4
+  },
+  "byte_identical_generated_outputs": 8,
+  "prior_manifest_items_verified": 191,
+  "existing_unit_tests_passed": 22
+}

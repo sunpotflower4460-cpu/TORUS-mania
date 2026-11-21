@@ -1,0 +1,778 @@
+{
+  "experiment": "E48",
+  "figure_doi": "10.1371/journal.pone.0159917.g003",
+  "data_type": "One displayed transverse slice from 3D MuVi-SPIM/PIV at the C. elegans one-cell stage",
+  "density_assumed_kg_per_m3": 1000.0,
+  "ROI_xy_bounds_px": [
+    650,
+    530,
+    984,
+    892
+  ],
+  "calibration_bar_rows_cols_half_open": [
+    [
+      913,
+      923
+    ],
+    [
+      673,
+      968
+    ]
+  ],
+  "calibration_nm_per_s": [
+    -100,
+    100
+  ],
+  "max_legend_error_on_unused_row_nm_per_s": 0.6802721088435391,
+  "ellipse_center_xy_radii_xy_px": [
+    809.5289621226962,
+    717.788055691518,
+    145.25637874063497,
+    136.08397769086125
+  ],
+  "ellipse_rms_radial_residual": 0.01925972173199633,
+  "cases": {
+    "primary": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0.0,
+        0.0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 1.0,
+      "core": {
+        "n_display_pixels": 7604,
+        "mean_nm_per_s": 98.89182921985206,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9350341925302472,
+        "mean_axial_kinetic_density_J_per_m3": 4.901351847498421e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.867202124569881e-19
+      },
+      "shell": {
+        "n_display_pixels": 14785,
+        "mean_nm_per_s": -59.05994998608169,
+        "median_nm_per_s": -61.224489795918366,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.05600270544470747,
+        "mean_axial_kinetic_density_J_per_m3": 2.1105230002159857e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.636340084244871e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -86.39455782312925
+        ],
+        [
+          100.0,
+          -10.544217687074827
+        ],
+        [
+          100.0,
+          -20.40816326530613
+        ],
+        [
+          100.0,
+          -46.93877551020408
+        ],
+        [
+          100.0,
+          -87.07482993197279
+        ],
+        [
+          100.0,
+          -79.59183673469389
+        ],
+        [
+          100.0,
+          -55.78231292517007
+        ],
+        [
+          100.0,
+          -45.57823129251701
+        ],
+        [
+          100.0,
+          -57.823129251700685
+        ],
+        [
+          100.0,
+          -60.544217687074834
+        ],
+        [
+          100.0,
+          -80.95238095238095
+        ],
+        [
+          100.0,
+          -83.6734693877551
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "rgb_15": {
+      "rgb_tolerance": 15,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0.0,
+        0.0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 1.0,
+      "core": {
+        "n_display_pixels": 7604,
+        "mean_nm_per_s": 98.89182921985206,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9350341925302472,
+        "mean_axial_kinetic_density_J_per_m3": 4.901351847498421e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.867202124569881e-19
+      },
+      "shell": {
+        "n_display_pixels": 14785,
+        "mean_nm_per_s": -59.05994998608169,
+        "median_nm_per_s": -61.224489795918366,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.05600270544470747,
+        "mean_axial_kinetic_density_J_per_m3": 2.1105230002159857e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.636340084244871e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -86.39455782312925
+        ],
+        [
+          100.0,
+          -10.544217687074827
+        ],
+        [
+          100.0,
+          -20.40816326530613
+        ],
+        [
+          100.0,
+          -46.93877551020408
+        ],
+        [
+          100.0,
+          -87.07482993197279
+        ],
+        [
+          100.0,
+          -79.59183673469389
+        ],
+        [
+          100.0,
+          -55.78231292517007
+        ],
+        [
+          100.0,
+          -45.57823129251701
+        ],
+        [
+          100.0,
+          -57.823129251700685
+        ],
+        [
+          100.0,
+          -60.544217687074834
+        ],
+        [
+          100.0,
+          -80.95238095238095
+        ],
+        [
+          100.0,
+          -83.6734693877551
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "rgb_40": {
+      "rgb_tolerance": 40,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0.0,
+        0.0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 1.0,
+      "core": {
+        "n_display_pixels": 7604,
+        "mean_nm_per_s": 98.89182921985206,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9350341925302472,
+        "mean_axial_kinetic_density_J_per_m3": 4.901351847498421e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.867202124569881e-19
+      },
+      "shell": {
+        "n_display_pixels": 14785,
+        "mean_nm_per_s": -59.05994998608169,
+        "median_nm_per_s": -61.224489795918366,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.05600270544470747,
+        "mean_axial_kinetic_density_J_per_m3": 2.1105230002159857e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.636340084244871e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -86.39455782312925
+        ],
+        [
+          100.0,
+          -10.544217687074827
+        ],
+        [
+          100.0,
+          -20.40816326530613
+        ],
+        [
+          100.0,
+          -46.93877551020408
+        ],
+        [
+          100.0,
+          -87.07482993197279
+        ],
+        [
+          100.0,
+          -79.59183673469389
+        ],
+        [
+          100.0,
+          -55.78231292517007
+        ],
+        [
+          100.0,
+          -45.57823129251701
+        ],
+        [
+          100.0,
+          -57.823129251700685
+        ],
+        [
+          100.0,
+          -60.544217687074834
+        ],
+        [
+          100.0,
+          -80.95238095238095
+        ],
+        [
+          100.0,
+          -83.6734693877551
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "inner_shell": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.72,
+        0.88
+      ],
+      "center_shift_in_radii": [
+        0.0,
+        0.0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 1.0,
+      "core": {
+        "n_display_pixels": 7604,
+        "mean_nm_per_s": 98.89182921985206,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9350341925302472,
+        "mean_axial_kinetic_density_J_per_m3": 4.901351847498421e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.867202124569881e-19
+      },
+      "shell": {
+        "n_display_pixels": 15904,
+        "mean_nm_per_s": -57.328109815354715,
+        "median_nm_per_s": -57.142857142857146,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.02420774647887324,
+        "mean_axial_kinetic_density_J_per_m3": 1.877341769972885e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.340037490605649e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -78.91156462585035
+        ],
+        [
+          100.0,
+          -30.612244897959187
+        ],
+        [
+          100.0,
+          -31.292517006802726
+        ],
+        [
+          100.0,
+          -51.70068027210885
+        ],
+        [
+          100.0,
+          -85.03401360544218
+        ],
+        [
+          100.0,
+          -68.02721088435374
+        ],
+        [
+          100.0,
+          -44.21768707482993
+        ],
+        [
+          100.0,
+          -44.21768707482993
+        ],
+        [
+          100.0,
+          -57.142857142857146
+        ],
+        [
+          100.0,
+          -57.142857142857146
+        ],
+        [
+          100.0,
+          -72.10884353741497
+        ],
+        [
+          100.0,
+          -70.74829931972789
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "outer_shell": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.82,
+        0.95
+      ],
+      "center_shift_in_radii": [
+        0.0,
+        0.0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 1.0,
+      "core": {
+        "n_display_pixels": 7604,
+        "mean_nm_per_s": 98.89182921985206,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9350341925302472,
+        "mean_axial_kinetic_density_J_per_m3": 4.901351847498421e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.867202124569881e-19
+      },
+      "shell": {
+        "n_display_pixels": 14291,
+        "mean_nm_per_s": -56.15417533607804,
+        "median_nm_per_s": -59.183673469387756,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.07340284094884893,
+        "mean_axial_kinetic_density_J_per_m3": 2.062086331588249e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.6486183845166068e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -85.03401360544218
+        ],
+        [
+          100.0,
+          -0.6802721088435391
+        ],
+        [
+          100.0,
+          -10.884353741496597
+        ],
+        [
+          100.0,
+          -39.45578231292517
+        ],
+        [
+          100.0,
+          -87.07482993197279
+        ],
+        [
+          100.0,
+          -82.99319727891157
+        ],
+        [
+          100.0,
+          -50.34013605442177
+        ],
+        [
+          100.0,
+          -42.85714285714286
+        ],
+        [
+          100.0,
+          -53.74149659863946
+        ],
+        [
+          100.0,
+          -55.78231292517007
+        ],
+        [
+          100.0,
+          -83.6734693877551
+        ],
+        [
+          100.0,
+          -91.156462585034
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "left": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        -0.05,
+        0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 0.9939102780973003,
+      "core": {
+        "n_display_pixels": 7609,
+        "mean_nm_per_s": 99.05956337062358,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9409909317912998,
+        "mean_axial_kinetic_density_J_per_m3": 4.915220163305617e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.884655192581029e-19
+      },
+      "shell": {
+        "n_display_pixels": 14689,
+        "mean_nm_per_s": -58.179636481183806,
+        "median_nm_per_s": -59.183673469387756,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.028320511947715978,
+        "mean_axial_kinetic_density_J_per_m3": 1.9864382199607765e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.480783246966643e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -78.2312925170068
+        ],
+        [
+          100.0,
+          -23.12925170068027
+        ],
+        [
+          100.0,
+          -25.850340136054427
+        ],
+        [
+          100.0,
+          -50.34013605442177
+        ],
+        [
+          100.0,
+          -87.75510204081633
+        ],
+        [
+          100.0,
+          -82.31292517006803
+        ],
+        [
+          100.0,
+          -50.34013605442177
+        ],
+        [
+          100.0,
+          -39.45578231292517
+        ],
+        [
+          100.0,
+          -57.823129251700685
+        ],
+        [
+          100.0,
+          -57.142857142857146
+        ],
+        [
+          100.0,
+          -75.51020408163265
+        ],
+        [
+          100.0,
+          -70.74829931972789
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "right": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0.05,
+        0
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 0.9934348561759729,
+      "core": {
+        "n_display_pixels": 7609,
+        "mean_nm_per_s": 98.35068210488296,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9045866736759101,
+        "mean_axial_kinetic_density_J_per_m3": 4.854123830855391e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.804568096172294e-19
+      },
+      "shell": {
+        "n_display_pixels": 14678,
+        "mean_nm_per_s": -56.386484284407324,
+        "median_nm_per_s": -58.50340136054422,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.06669846028069219,
+        "mean_axial_kinetic_density_J_per_m3": 2.0256228494217402e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.5772080665802928e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -82.99319727891157
+        ],
+        [
+          100.0,
+          -0.6802721088435391
+        ],
+        [
+          100.0,
+          -13.605442176870753
+        ],
+        [
+          100.0,
+          -43.53741496598639
+        ],
+        [
+          100.0,
+          -85.71428571428572
+        ],
+        [
+          100.0,
+          -68.70748299319729
+        ],
+        [
+          100.0,
+          -44.21768707482993
+        ],
+        [
+          100.0,
+          -48.29931972789116
+        ],
+        [
+          100.0,
+          -57.142857142857146
+        ],
+        [
+          100.0,
+          -63.26530612244898
+        ],
+        [
+          100.0,
+          -85.71428571428572
+        ],
+        [
+          100.0,
+          -91.83673469387755
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "up": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0,
+        -0.05
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 0.9918204556209018,
+      "core": {
+        "n_display_pixels": 7618,
+        "mean_nm_per_s": 99.89659292438427,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.9885796797059596,
+        "mean_axial_kinetic_density_J_per_m3": 4.990182809514346e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.985994784482983e-19
+      },
+      "shell": {
+        "n_display_pixels": 14672,
+        "mean_nm_per_s": -59.68261077604433,
+        "median_nm_per_s": -60.8843537414966,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.05602508178844057,
+        "mean_axial_kinetic_density_J_per_m3": 2.096248395759613e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.6151702607571282e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -89.79591836734694
+        ],
+        [
+          100.0,
+          -28.57142857142857
+        ],
+        [
+          100.0,
+          -30.612244897959187
+        ],
+        [
+          100.0,
+          -55.78231292517007
+        ],
+        [
+          100.0,
+          -86.39455782312925
+        ],
+        [
+          100.0,
+          -72.10884353741497
+        ],
+        [
+          100.0,
+          -45.57823129251701
+        ],
+        [
+          100.0,
+          -43.53741496598639
+        ],
+        [
+          100.0,
+          -47.61904761904762
+        ],
+        [
+          100.0,
+          -51.70068027210885
+        ],
+        [
+          100.0,
+          -83.6734693877551
+        ],
+        [
+          100.0,
+          -82.99319727891157
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 12
+    },
+    "down": {
+      "rgb_tolerance": 25,
+      "shell_radius_fraction": [
+        0.78,
+        0.92
+      ],
+      "center_shift_in_radii": [
+        0,
+        0.05
+      ],
+      "core_valid_fraction": 1.0,
+      "shell_valid_fraction": 0.9917495097044702,
+      "core": {
+        "n_display_pixels": 7611,
+        "mean_nm_per_s": 96.76363516106746,
+        "median_nm_per_s": 100.0,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.8602023387202733,
+        "mean_axial_kinetic_density_J_per_m3": 4.724066812091165e-12,
+        "mean_axial_component_advective_flux_W_per_m2": 4.641670979935901e-19
+      },
+      "shell": {
+        "n_display_pixels": 14665,
+        "mean_nm_per_s": -55.812186449758904,
+        "median_nm_per_s": -58.50340136054422,
+        "fraction_at_colorbar_ends_within_2_nm_per_s": 0.05346062052505966,
+        "mean_axial_kinetic_density_J_per_m3": 1.9972774347393516e-12,
+        "mean_axial_component_advective_flux_W_per_m2": -1.5402806117365392e-19
+      },
+      "sector_medians_core_shell_nm_per_s": [
+        [
+          100.0,
+          -76.19047619047619
+        ],
+        [
+          100.0,
+          0.6802721088435391
+        ],
+        [
+          89.79591836734693,
+          -9.523809523809533
+        ],
+        [
+          93.19727891156461,
+          -37.41496598639456
+        ],
+        [
+          100.0,
+          -86.39455782312925
+        ],
+        [
+          100.0,
+          -85.71428571428572
+        ],
+        [
+          100.0,
+          -61.224489795918366
+        ],
+        [
+          100.0,
+          -44.21768707482993
+        ],
+        [
+          100.0,
+          -57.823129251700685
+        ],
+        [
+          100.0,
+          -58.50340136054422
+        ],
+        [
+          100.0,
+          -74.14965986394557
+        ],
+        [
+          100.0,
+          -85.71428571428572
+        ]
+      ],
+      "n_sectors_available": 12,
+      "n_sectors_core_posterior_shell_anterior": 11
+    }
+  },
+  "energy_scope": "Displayed clipped velocities, assumed density. The axial part of the advected kinetic energy excludes transverse motion and pressure and viscous work.",
+  "checks": {
+    "original_image_size": true,
+    "dotted_outline_fit_within_five_percent_of_radius": true,
+    "unused_legend_row_reproduces_signed_speed_scale": true,
+    "primary_core_and_shell_colors_readable": true,
+    "all_sectors_observed_in_primary_image": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E48_transverse_streaming/run.py": "6fac69512bedb6fd9cc0d76d4c01a5f3f4631736c1a4b39798dbc599f5727d51",
+    "experiments/measured_return_sources.py": "cb828eac4c1bb4259572c808ad4a5ade999578cda11f99a930a3641bca3c8be3"
+  }
+}

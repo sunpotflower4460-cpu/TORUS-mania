@@ -1,0 +1,406 @@
+{
+  "experiment": "E62",
+  "evidence": "volumetric microscopy-derived automated tracking of cells",
+  "dataset": "Virtual Embryo Zoo Danio r. tracks_zebrafish_bundle.zarr.zip",
+  "public_shah_viewer_provenance_audit": {
+    "doi": "10.1038/s41467-019-13625-0",
+    "states": [
+      "original",
+      "bundled"
+    ],
+    "dimensions": 3,
+    "display_entity_count": 11120,
+    "included_as_continuous_observations": false,
+    "reason": "The paper links the viewer to long-term trajectories and describes their statistical-velocity assembly. The viewer's original state identifies the pre-bundling positions, without trace-level provenance that establishes original short detections."
+  },
+  "observations": 11851323,
+  "frames_in_archive": 522,
+  "branch_ids": 398662,
+  "unit": "archive coordinate unit",
+  "extent_xyz_from_archive": 1021.3032118017541,
+  "minimum_departure": 20.42606423603508,
+  "minimum_path_length": 51.06516059008771,
+  "primary_return_radius": 5.10651605900877,
+  "track_analysis": {
+    "continuous_intervals": 398662,
+    "intervals_with_10_or_20_or_40_observations": [
+      283972,
+      192283,
+      97683
+    ],
+    "nonmonotone_branches_excluded": 0,
+    "longest_continuous_interval_observations": 518,
+    "screen_counts": {
+      "primary": {
+        "curving_return": 115,
+        "insufficient_travel": 49589,
+        "jump": 1537,
+        "no_near_return": 232523,
+        "nonrotational_return": 208
+      },
+      "half_radius": {
+        "curving_return": 20,
+        "insufficient_travel": 49589,
+        "jump": 306,
+        "no_near_return": 234006,
+        "nonrotational_return": 51
+      },
+      "double_radius": {
+        "curving_return": 530,
+        "insufficient_travel": 49589,
+        "jump": 6217,
+        "no_near_return": 226596,
+        "nonrotational_return": 1040
+      },
+      "at_least_20_observations": {
+        "curving_return": 71,
+        "insufficient_travel": 9989,
+        "jump": 797,
+        "no_near_return": 181244,
+        "nonrotational_return": 182
+      },
+      "start_every_10_observations_after_first": {
+        "curving_return": 383,
+        "insufficient_travel": 106694,
+        "jump": 3674,
+        "no_near_return": 610385,
+        "nonrotational_return": 706
+      }
+    },
+    "example_paths": {
+      "return": {
+        "track_id": 386434,
+        "start_frame": 166,
+        "return_frame": 179,
+        "observations_available": 29,
+        "end_offset": 13,
+        "return_gap": 1.0,
+        "furthest_distance": 25.079872407968907,
+        "path_length": 75.58739966162126,
+        "largest_step": 10.677078252031311,
+        "aspect": 0.39021425634425744,
+        "winding": 1.0062476104092837,
+        "direction_consistency": 0.8689079035412441,
+        "xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.0,
+            -5.0,
+            -4.0
+          ],
+          [
+            15.0,
+            -4.0,
+            4.0
+          ],
+          [
+            21.0,
+            -3.0,
+            0.0
+          ],
+          [
+            19.0,
+            -1.0,
+            0.0
+          ],
+          [
+            22.0,
+            -1.0,
+            0.0
+          ],
+          [
+            25.0,
+            2.0,
+            0.0
+          ],
+          [
+            25.0,
+            2.0,
+            0.0
+          ],
+          [
+            22.0,
+            2.0,
+            0.0
+          ],
+          [
+            22.0,
+            1.0,
+            8.0
+          ],
+          [
+            17.0,
+            2.0,
+            8.0
+          ],
+          [
+            12.0,
+            1.0,
+            4.0
+          ],
+          [
+            10.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ]
+      },
+      "closest_nonreturn": {
+        "track_id": 215451,
+        "start_frame": 382,
+        "return_frame": 423,
+        "observations_available": 79,
+        "end_offset": 41,
+        "return_gap": 1.0,
+        "furthest_distance": 51.70106381884226,
+        "path_length": 314.70775372799085,
+        "largest_step": 23.345235059857504,
+        "aspect": 0.3939450955910618,
+        "winding": 0.002310746508293673,
+        "direction_consistency": 0.0013097233023991483,
+        "xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            4.0,
+            4.0
+          ],
+          [
+            2.0,
+            2.0,
+            4.0
+          ],
+          [
+            -6.0,
+            12.0,
+            12.0
+          ],
+          [
+            -3.0,
+            12.0,
+            12.0
+          ],
+          [
+            -13.0,
+            0.0,
+            16.0
+          ],
+          [
+            -13.0,
+            1.0,
+            12.0
+          ],
+          [
+            -12.0,
+            3.0,
+            12.0
+          ],
+          [
+            -18.0,
+            2.0,
+            4.0
+          ],
+          [
+            -22.0,
+            2.0,
+            8.0
+          ],
+          [
+            -24.0,
+            3.0,
+            8.0
+          ],
+          [
+            -29.0,
+            -6.0,
+            -4.0
+          ],
+          [
+            -23.0,
+            -7.0,
+            4.0
+          ],
+          [
+            -26.0,
+            -6.0,
+            4.0
+          ],
+          [
+            -27.0,
+            -9.0,
+            0.0
+          ],
+          [
+            -32.0,
+            0.0,
+            -20.0
+          ],
+          [
+            -38.0,
+            11.0,
+            -32.0
+          ],
+          [
+            -37.0,
+            8.0,
+            -32.0
+          ],
+          [
+            -36.0,
+            9.0,
+            -36.0
+          ],
+          [
+            -36.0,
+            9.0,
+            -36.0
+          ],
+          [
+            -34.0,
+            10.0,
+            -36.0
+          ],
+          [
+            -35.0,
+            10.0,
+            -36.0
+          ],
+          [
+            -31.0,
+            11.0,
+            -36.0
+          ],
+          [
+            -32.0,
+            14.0,
+            -28.0
+          ],
+          [
+            -32.0,
+            13.0,
+            -28.0
+          ],
+          [
+            -30.0,
+            14.0,
+            -36.0
+          ],
+          [
+            -31.0,
+            13.0,
+            -32.0
+          ],
+          [
+            -31.0,
+            12.0,
+            -36.0
+          ],
+          [
+            -28.0,
+            12.0,
+            -32.0
+          ],
+          [
+            -26.0,
+            12.0,
+            -28.0
+          ],
+          [
+            -31.0,
+            12.0,
+            -32.0
+          ],
+          [
+            -29.0,
+            12.0,
+            -20.0
+          ],
+          [
+            -30.0,
+            9.0,
+            -16.0
+          ],
+          [
+            -25.0,
+            5.0,
+            -8.0
+          ],
+          [
+            -28.0,
+            6.0,
+            -16.0
+          ],
+          [
+            -13.0,
+            -2.0,
+            0.0
+          ],
+          [
+            -13.0,
+            -3.0,
+            0.0
+          ],
+          [
+            -17.0,
+            -13.0,
+            -12.0
+          ],
+          [
+            -17.0,
+            -16.0,
+            -4.0
+          ],
+          [
+            2.0,
+            -6.0,
+            4.0
+          ],
+          [
+            0.0,
+            -6.0,
+            4.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    }
+  },
+  "calibration_controls": {
+    "tilted_circle": "curving_return",
+    "circle_truncated_at_270_degrees": "no_near_return",
+    "straight_out_and_back": "nonrotational_return",
+    "directed_half_arc": "no_near_return",
+    "helix_with_same_endpoint_in_xy_only": "no_near_return"
+  },
+  "scope": "Consecutive available frames and original branch IDs only; no imposed periodic boundaries or registration beyond the archived coordinates. No unobserved frames or lineage links filled. Cell tracks and nutrient, mechanical or total energy flux are distinct measurements.",
+  "checks": {
+    "forward_and_reverse_csr_point_assignments_and_sample_positions_agree": true,
+    "3d_circle_recovered": true,
+    "four_open_or_retracing_controls_rejected": true,
+    "segment_count_matches_primary_screen": true,
+    "export_contains_all_primary_returns": true,
+    "visualization_states_distinct": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E62_cell_returns/run.py": "ebabf16007533e63e0f1d94f9a246a75a6870eeb06d46b6713cb2ce5ce42d78d",
+    "experiments/embryo_history_sources.py": "649b52f51df30117a22f78ae17aa49e5ca60ccb3d48bb39c6177df3d5a1ddc0b"
+  }
+}
