@@ -1,0 +1,270 @@
+{
+  "experiment": "E44",
+  "dois": [
+    "10.1093/oxfordjournals.pcp.a075396",
+    "10.1093/oxfordjournals.pcp.a075700"
+  ],
+  "intact_root": {
+    "donor_mm_from_tip": [
+      4,
+      5
+    ],
+    "time_min": [
+      10,
+      30,
+      60
+    ],
+    "tipward_front_mm": [
+      1,
+      2,
+      4
+    ],
+    "shootward_front_mm": [
+      2,
+      4,
+      8
+    ],
+    "distance_ratio": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "fig7_localization": "20 min: basal outer tissue and weaker apical inner tissue; basal inner signal also seen at 30 min.",
+    "chemical_scope": "Spatial signal is 14C. Intact-root study did not identify the metabolite in those sections."
+  },
+  "wire_fig8": {
+    "times_h": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "tissue": "3-mm excised section, 3–6 mm from the tip",
+    "crop_pdf_points": [
+      105,
+      93,
+      490,
+      290
+    ],
+    "render_scale": 3,
+    "zero_and_200_dpm_rows": [
+      470.5,
+      221
+    ],
+    "read_markers_px": {
+      "control": {
+        "x": [
+          281,
+          355,
+          429,
+          501,
+          650
+        ],
+        "tipward": [
+          470,
+          455,
+          375,
+          303,
+          231
+        ],
+        "shootward": [
+          470,
+          430,
+          390,
+          391,
+          347
+        ]
+      },
+      "central_wire": {
+        "x": [
+          724,
+          797,
+          872,
+          945,
+          1092
+        ],
+        "tipward": [
+          470,
+          458,
+          434,
+          426,
+          389
+        ],
+        "shootward": [
+          470,
+          426,
+          383,
+          347,
+          326
+        ]
+      }
+    },
+    "point_reading_halfwidth_dpm": 2.404809619238477,
+    "receiver_dpm": {
+      "control": {
+        "tipward": [
+          0.0,
+          12.424849699398798,
+          76.55310621242485,
+          134.2685370741483,
+          191.98396793587176
+        ],
+        "shootward": [
+          0.0,
+          32.46492985971944,
+          64.52905811623246,
+          63.72745490981964,
+          98.99799599198397
+        ]
+      },
+      "central_wire": {
+        "tipward": [
+          0.0,
+          10.02004008016032,
+          29.258517034068138,
+          35.671342685370746,
+          65.3306613226453
+        ],
+        "shootward": [
+          0.0,
+          35.671342685370746,
+          70.14028056112225,
+          98.99799599198397,
+          115.83166332665331
+        ]
+      }
+    },
+    "nonzero_time_ratios": {
+      "tipward": {
+        "wire_over_control": [
+          0.8064516129032258,
+          0.38219895287958117,
+          0.2656716417910448,
+          0.34029227557411273
+        ],
+        "last_ratio_reading_bounds": [
+          0.3237113402061856,
+          0.3572938689217759
+        ]
+      },
+      "shootward": {
+        "wire_over_control": [
+          1.0987654320987654,
+          1.0869565217391306,
+          1.5534591194968552,
+          1.1700404858299596
+        ],
+        "last_ratio_reading_bounds": [
+          1.1185770750988142,
+          1.2240663900414939
+        ]
+      }
+    }
+  },
+  "receiver_TLC_fig3": {
+    "source": "Fig. 3, pooled receivers, 4 h after a surface application, 10 equal Rf bins",
+    "scale": 1.7,
+    "zero_and_20_dpm_rows": [
+      410,
+      353
+    ],
+    "reading_halfwidth_per_bin_dpm": 0.7017543859649122,
+    "directions": {
+      "tipward": {
+        "centers_px": [
+          359,
+          373,
+          387,
+          401,
+          415,
+          429,
+          443,
+          457,
+          471,
+          485
+        ],
+        "top_rows": [
+          407,
+          409,
+          406,
+          408,
+          403,
+          350,
+          397,
+          407,
+          405,
+          402
+        ],
+        "counts_dpm": [
+          1.0526315789473684,
+          0.3508771929824561,
+          1.4035087719298245,
+          0.7017543859649122,
+          2.4561403508771926,
+          21.052631578947366,
+          4.56140350877193,
+          1.0526315789473684,
+          1.7543859649122806,
+          2.807017543859649
+        ],
+        "sum_dpm": 37.19298245614035,
+        "fraction_at_Rf_0p5_to_0p7": 0.6886792452830188
+      },
+      "shootward": {
+        "centers_px": [
+          541,
+          555,
+          569,
+          583,
+          597,
+          612,
+          626,
+          640,
+          654,
+          668
+        ],
+        "top_rows": [
+          406,
+          409,
+          408,
+          405,
+          396,
+          254,
+          354,
+          405,
+          404,
+          393
+        ],
+        "counts_dpm": [
+          1.4035087719298245,
+          0.3508771929824561,
+          0.7017543859649122,
+          1.7543859649122806,
+          4.912280701754385,
+          54.73684210526316,
+          19.64912280701754,
+          1.7543859649122806,
+          2.1052631578947367,
+          5.964912280701754
+        ],
+        "sum_dpm": 93.33333333333334,
+        "fraction_at_Rf_0p5_to_0p7": 0.7969924812030074
+      }
+    },
+    "shootward_over_tipward_recovered": 2.5094339622641515,
+    "paper_recovery_fraction": 0.72,
+    "paper_approximate_IAA_comigration_fraction": 0.8
+  },
+  "checks": {
+    "intact_fig4_three_times_and_two_fronts": true,
+    "all_fig8_timepoints_and_groups": true,
+    "ten_TLC_bins_each_way": true,
+    "digitized_chromatogram_ratio_near_reported_2p7": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E44_vicia_routes/run.py": "bed1fa9590007e81a0da33e195f01f557af6ca51a5e16b1d08803df4abce68b7",
+    "experiments/measured_return_sources.py": "cb828eac4c1bb4259572c808ad4a5ade999578cda11f99a930a3641bca3c8be3"
+  }
+}

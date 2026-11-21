@@ -1,0 +1,184 @@
+{
+  "experiment": "E52",
+  "doi": "10.1038/s41556-017-0032-9",
+  "printed_figure": "5c, hollow markers",
+  "axis_ticks_pdf_points": {
+    "x_0_150": [
+      75.834,
+      284.554
+    ],
+    "y_0_1": [
+      325.616,
+      299.553
+    ]
+  },
+  "embryos": [
+    {
+      "angle_deg": 28.60111924504448,
+      "size_asymmetry_index": 1.016908262813603,
+      "center_xy_points": [
+        115.63150405883789,
+        299.11231994628906
+      ],
+      "marker_half_width_deg": 1.030206771680979,
+      "inverted": false
+    },
+    {
+      "angle_deg": 34.029205727275645,
+      "size_asymmetry_index": 0.9076729436995212,
+      "center_xy_points": [
+        123.18450546264648,
+        301.9593200683594
+      ],
+      "marker_half_width_deg": 1.0287702289199685,
+      "inverted": false
+    },
+    {
+      "angle_deg": 38.41306817993071,
+      "size_asymmetry_index": 0.8877984046094438,
+      "center_xy_points": [
+        129.28450393676758,
+        302.47731018066406
+      ],
+      "marker_half_width_deg": 1.030206771680979,
+      "inverted": false
+    },
+    {
+      "angle_deg": 48.64292220806153,
+      "size_asymmetry_index": 0.9870961614495404,
+      "center_xy_points": [
+        143.51900482177734,
+        299.8893127441406
+      ],
+      "marker_half_width_deg": 1.0305659073712317,
+      "inverted": false
+    },
+    {
+      "angle_deg": 48.85205432252896,
+      "size_asymmetry_index": 0.7189763520723821,
+      "center_xy_points": [
+        143.81000518798828,
+        306.8773193359375
+      ],
+      "marker_half_width_deg": 1.029129364610221,
+      "inverted": false
+    },
+    {
+      "angle_deg": 63.88367589655943,
+      "size_asymmetry_index": 0.6892023054713576,
+      "center_xy_points": [
+        164.72600555419922,
+        307.6533203125
+      ],
+      "marker_half_width_deg": 1.0305659073712317,
+      "inverted": false
+    },
+    {
+      "angle_deg": 76.61736090277384,
+      "size_asymmetry_index": 0.8877984046094438,
+      "center_xy_points": [
+        182.4445037841797,
+        302.47731018066406
+      ],
+      "marker_half_width_deg": 1.0302095131747977,
+      "inverted": false
+    },
+    {
+      "angle_deg": 79.75074577989501,
+      "size_asymmetry_index": 0.9672403570120356,
+      "center_xy_points": [
+        186.80450439453125,
+        300.4068145751953
+      ],
+      "marker_half_width_deg": 1.0302095131747977,
+      "inverted": false
+    },
+    {
+      "angle_deg": 86.22125238876957,
+      "size_asymmetry_index": 0.4806499094067137,
+      "center_xy_points": [
+        195.80799865722656,
+        313.0888214111328
+      ],
+      "marker_half_width_deg": 1.0305713903588691,
+      "inverted": false
+    },
+    {
+      "angle_deg": 105.63638002125867,
+      "size_asymmetry_index": -1.2971000078610613,
+      "center_xy_points": [
+        222.82350158691406,
+        359.4223175048828
+      ],
+      "marker_half_width_deg": 1.0302095131747977,
+      "inverted": true
+    },
+    {
+      "angle_deg": 110.02168449966238,
+      "size_asymmetry_index": -0.790596380944731,
+      "center_xy_points": [
+        228.92550659179688,
+        346.2213134765625
+      ],
+      "marker_half_width_deg": 1.0302095131747977,
+      "inverted": true
+    },
+    {
+      "angle_deg": 125.67926039134647,
+      "size_asymmetry_index": -1.1481337597615044,
+      "center_xy_points": [
+        250.7125015258789,
+        355.53981018066406
+      ],
+      "marker_half_width_deg": 1.0287674874261497,
+      "inverted": true
+    }
+  ],
+  "below90_normal_total": [
+    9,
+    9
+  ],
+  "atleast90_inverted_total": [
+    3,
+    3
+  ],
+  "class_specific_exact_95": {
+    "below_normal": [
+      0.6637328831200571,
+      1.0
+    ],
+    "above_inverted": [
+      0.2924017738212867,
+      1.0
+    ]
+  },
+  "always_initial_correct": 9,
+  "always_majority_correct": 9,
+  "angle_threshold_correct": {
+    "80": 11,
+    "85": 11,
+    "87.5": 12,
+    "90": 12,
+    "95": 12,
+    "100": 12,
+    "110": 11
+  },
+  "gap_max_normal_min_inverted_deg": [
+    86.22125238876957,
+    105.63638002125867
+  ],
+  "within_marker_half_width_of_90": 0,
+  "fisher_two_sided_descriptive": 0.004545454545454546,
+  "scope": "Known threshold from this study. Existing PAR domains were moved during maintenance before cytokinesis.",
+  "checks": {
+    "published_number_of_independent_perturbed_embryos": true,
+    "published_angle_group_sizes": true,
+    "no_unperturbed_filled_marker_in_sample": true,
+    "signed_index_in_axis_range": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E52_division_rotation/run.py": "e1537fea8ef9111f4b4339156a99dd30ab7f9ea384430ba44771fb8f5d6d3954",
+    "experiments/turning_path_sources.py": "23013de4b259f03c9bdf1e53bd7b30ec765a435fe2fd5bb6d098f84634e04b69"
+  }
+}

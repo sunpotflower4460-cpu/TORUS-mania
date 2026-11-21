@@ -1,0 +1,174 @@
+{
+  "experiment": "E45",
+  "root_study_doi": "10.1073/pnas.1005878107",
+  "hypocotyl_study_doi": "10.1104/pp.111.191288",
+  "root_sections_mm": [
+    [
+      0.4,
+      2.4
+    ],
+    [
+      2.4,
+      4.4
+    ]
+  ],
+  "IBA_input_fig5C": {
+    "minutes": 120,
+    "input_fmol": 100,
+    "IAA_percent_of_HPLC_IAA_plus_IBA": {
+      "columns": [
+        [
+          334,
+          346
+        ],
+        [
+          391,
+          403
+        ]
+      ],
+      "zero_tick_value": [
+        482,
+        332,
+        100
+      ],
+      "top_rows": [
+        428,
+        348
+      ],
+      "values": [
+        36.0,
+        89.33333333333333
+      ],
+      "reading_halfwidth": 1.3333333333333333
+    },
+    "distal_minus_near_percentage_points": 53.33333333333333,
+    "difference_reading_halfwidth_percentage_points": 2.6666666666666665
+  },
+  "IAA_input_fig5A": {
+    "signal": "total 3H in each receiving section; chemical identity not separated in this panel",
+    "groups": [
+      "Col-0",
+      "pdr9-2",
+      "35S-ABCG37"
+    ],
+    "pixel_zero_tick_value": [
+      222,
+      16,
+      80
+    ],
+    "marker_rows_near_far": [
+      [
+        63,
+        142
+      ],
+      [
+        74,
+        143
+      ],
+      [
+        27,
+        131
+      ]
+    ],
+    "reading_halfwidth_dpm": 0.7766990291262136,
+    "dpm_per_root_segment_near_far": [
+      [
+        61.74757281553398,
+        31.067961165048544
+      ],
+      [
+        57.4757281553398,
+        30.679611650485437
+      ],
+      [
+        75.72815533980582,
+        35.33980582524272
+      ]
+    ]
+  },
+  "direct_stable_IAA_hypocotyl_fig3": {
+    "organ": "6-mm excised hypocotyl, 5 h",
+    "input": "13C6-IAA; free intact labelled IAA by GC–MS/MS",
+    "conditions": [
+      "WT_basipetal",
+      "WT_NPA",
+      "WT_reversed_orientation"
+    ],
+    "lower_plus_receiver_pg_per_plant": {
+      "columns": [
+        [
+          50,
+          61
+        ],
+        [
+          78,
+          89
+        ],
+        [
+          105,
+          116
+        ]
+      ],
+      "zero_tick_value": [
+        217,
+        140,
+        20
+      ],
+      "top_rows": [
+        151,
+        212,
+        213
+      ],
+      "values": [
+        17.142857142857142,
+        1.2987012987012987,
+        1.0389610389610389
+      ],
+      "reading_halfwidth": 0.5194805194805194
+    },
+    "percent_of_recovered_free_13C6_IAA": {
+      "columns": [
+        [
+          50,
+          61
+        ],
+        [
+          78,
+          89
+        ],
+        [
+          105,
+          116
+        ]
+      ],
+      "zero_tick_value": [
+        330,
+        277,
+        30
+      ],
+      "top_rows": [
+        278,
+        325,
+        328
+      ],
+      "values": [
+        29.433962264150942,
+        2.830188679245283,
+        1.1320754716981132
+      ],
+      "reading_halfwidth": 1.1320754716981132
+    },
+    "NPA_over_WT_by_amount": 0.07575757575757576
+  },
+  "checks": {
+    "source_image_dimensions": true,
+    "two_HPLC_fractions_in_range": true,
+    "all_direct_IAA_groups_read": true,
+    "hypocotyl_reading_agrees_with_reported_29_percent": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E45_auxin_recovered_identity/run.py": "24631677d1f3745b01926346cbbafdbc18a092d18b6cc1d4d3ee54bb3f986c8b",
+    "experiments/measured_return_sources.py": "cb828eac4c1bb4259572c808ad4a5ade999578cda11f99a930a3641bca3c8be3"
+  }
+}
