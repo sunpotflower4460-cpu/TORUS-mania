@@ -1,0 +1,736 @@
+{
+  "experiment": "E26",
+  "study_doi": "10.1038/s41586-021-04037-6",
+  "sources": {
+    "figure_1": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects/41586_2021_4037_MOESM8_ESM.xlsx",
+      "sha256": "9f3dd97802ffca9b4e58a9255a1cd9da8fc89c99e1318fa676f4c299c298cee6"
+    },
+    "figure_2": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects/41586_2021_4037_MOESM9_ESM.xlsx",
+      "sha256": "8fda1a14473035b931ce1f826182001a412c0136bea1ce2066f709854a600de7"
+    },
+    "extended_data_figure_2": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects/41586_2021_4037_MOESM13_ESM.xlsx",
+      "sha256": "0ba797314b6bfe8e4766db5e9e3440e5961c06651178c5b182a11eb291e921a0"
+    }
+  },
+  "pH_pulse_growth_units": "micrometres per minute",
+  "fig1e_alkaline_pulse": {
+    "medium": {
+      "reference_pH": 5.8,
+      "pulse_pH": 6.15,
+      "delta_pH": 0.35000000000000053,
+      "reference_temperature_K": 298.15,
+      "activity_ratio_pulse_over_reference": 0.4466835921509626,
+      "extracellular_chemical_potential_change_J_per_mol": -1997.8033258873436
+    },
+    "onset_min": 26.0,
+    "washout_start_min": 44.0,
+    "windows": {
+      "baseline": {
+        "sample_times_min": [
+          22.0,
+          24.0
+        ],
+        "n_roots": 8,
+        "mean_of_root_means": 4.8427214375,
+        "per_root_window_means": {
+          "1": 4.679625,
+          "2": 5.011023,
+          "3": 3.79534,
+          "4": 5.303575,
+          "5": 4.3898215,
+          "6": 4.1036665,
+          "7": 6.1551455,
+          "8": 5.303575
+        }
+      },
+      "early_pulse_descriptive": {
+        "sample_times_min": [
+          28.0,
+          30.0
+        ],
+        "n_roots": 8,
+        "mean_of_root_means": 3.358025,
+        "per_root_window_means": {
+          "1": 3.7745915,
+          "2": 3.4884364999999997,
+          "3": 3.65314,
+          "4": 3.14557,
+          "5": 2.8461809999999996,
+          "6": 3.067011,
+          "7": 3.14557,
+          "8": 3.7437
+        }
+      },
+      "late_pulse": {
+        "sample_times_min": [
+          40.0,
+          42.0
+        ],
+        "n_roots": 8,
+        "mean_of_root_means": 3.1648735,
+        "per_root_window_means": {
+          "1": 5.6452095,
+          "2": 3.772829,
+          "3": 3.499148,
+          "4": 3.4884364999999997,
+          "5": 1.87185,
+          "6": 1.973103,
+          "7": 2.534206,
+          "8": 2.534206
+        }
+      },
+      "late_washout": {
+        "sample_times_min": [
+          66.0,
+          68.0,
+          70.0
+        ],
+        "n_roots": 7,
+        "mean_of_root_means": 4.895755142857142,
+        "per_root_window_means": {
+          "1": 4.798397666666666,
+          "2": 4.542425,
+          "4": 4.9916,
+          "5": 3.590737666666666,
+          "6": 5.309401666666667,
+          "7": 5.605689333333333,
+          "8": 5.432034666666667
+        }
+      }
+    },
+    "paired_change_from_baseline": {
+      "early_pulse_descriptive": {
+        "n_matched_roots": 8,
+        "baseline_mean_matched": 4.8427214375,
+        "comparison_mean_matched": 3.358025,
+        "mean_change": -1.4846964375,
+        "matched_mean_change_percent": -30.658307661537883,
+        "observed_individual_changes_min_max": [
+          -3.0095754999999995,
+          -0.14219999999999988
+        ],
+        "positive_changes": 0,
+        "negative_changes": 8
+      },
+      "late_pulse": {
+        "n_matched_roots": 8,
+        "baseline_mean_matched": 4.8427214375,
+        "comparison_mean_matched": 3.1648735,
+        "mean_change": -1.6778479375,
+        "matched_mean_change_percent": -34.646798482098326,
+        "observed_individual_changes_min_max": [
+          -3.6209394999999995,
+          0.9655845000000003
+        ],
+        "positive_changes": 1,
+        "negative_changes": 7
+      },
+      "late_washout": {
+        "n_matched_roots": 7,
+        "baseline_mean_matched": 4.992347357142857,
+        "comparison_mean_matched": 4.895755142857142,
+        "mean_change": -0.09659221428571442,
+        "matched_mean_change_percent": -1.934805560905413,
+        "observed_individual_changes_min_max": [
+          -0.7990838333333339,
+          1.205735166666667
+        ],
+        "positive_changes": 3,
+        "negative_changes": 4
+      }
+    }
+  },
+  "fig1g_acidic_pulse": {
+    "medium": {
+      "reference_pH": 5.8,
+      "pulse_pH": 5.1,
+      "delta_pH": -0.7000000000000002,
+      "reference_temperature_K": 298.15,
+      "activity_ratio_pulse_over_reference": 5.011872336272725,
+      "extracellular_chemical_potential_change_J_per_mol": 3995.6066517746817
+    },
+    "onset_min": 20.0,
+    "washout_start_min": 42.0,
+    "windows": {
+      "baseline": {
+        "sample_times_min": [
+          16.0,
+          18.0
+        ],
+        "n_roots": 7,
+        "mean_of_root_means": 4.989132714285715,
+        "per_root_window_means": {
+          "1": 3.79534,
+          "2": 5.2381275,
+          "3": 5.650108,
+          "4": 3.7437,
+          "5": 5.650108,
+          "6": 5.145224,
+          "7": 5.701321500000001
+        }
+      },
+      "early_pulse_descriptive": {
+        "sample_times_min": [
+          22.0,
+          24.0
+        ],
+        "n_roots": 7,
+        "mean_of_root_means": 8.3921315,
+        "per_root_window_means": {
+          "1": 6.8754314999999995,
+          "2": 7.593526,
+          "3": 8.436301499999999,
+          "4": 6.8754314999999995,
+          "5": 9.409223,
+          "6": 9.407423999999999,
+          "7": 10.147583000000001
+        }
+      },
+      "late_pulse": {
+        "sample_times_min": [
+          38.0,
+          40.0
+        ],
+        "n_roots": 7,
+        "mean_of_root_means": 6.007282285714285,
+        "per_root_window_means": {
+          "1": 6.0578005,
+          "2": 5.030446,
+          "3": 6.2395,
+          "4": 5.011023,
+          "5": 6.581186499999999,
+          "6": 6.4386475,
+          "7": 6.692372499999999
+        }
+      },
+      "late_washout": {
+        "sample_times_min": [
+          66.0,
+          68.0,
+          70.0
+        ],
+        "n_roots": 7,
+        "mean_of_root_means": 3.1620458095238093,
+        "per_root_window_means": {
+          "1": 3.368922,
+          "2": 3.241046666666667,
+          "3": 3.140344333333333,
+          "4": 2.729387333333333,
+          "5": 3.535716666666667,
+          "6": 3.1609386666666666,
+          "7": 2.9579649999999997
+        }
+      }
+    },
+    "paired_change_from_baseline": {
+      "early_pulse_descriptive": {
+        "n_matched_roots": 7,
+        "baseline_mean_matched": 4.989132714285715,
+        "comparison_mean_matched": 8.3921315,
+        "mean_change": 3.4029987857142854,
+        "matched_mean_change_percent": 68.208223364559,
+        "observed_individual_changes_min_max": [
+          2.3553984999999997,
+          4.4462615
+        ],
+        "positive_changes": 7,
+        "negative_changes": 0
+      },
+      "late_pulse": {
+        "n_matched_roots": 7,
+        "baseline_mean_matched": 4.989132714285715,
+        "comparison_mean_matched": 6.007282285714285,
+        "mean_change": 1.018149571428571,
+        "matched_mean_change_percent": 20.407345920328716,
+        "observed_individual_changes_min_max": [
+          -0.20768149999999963,
+          2.2624605
+        ],
+        "positive_changes": 6,
+        "negative_changes": 1
+      },
+      "late_washout": {
+        "n_matched_roots": 7,
+        "baseline_mean_matched": 4.989132714285715,
+        "comparison_mean_matched": 3.1620458095238093,
+        "mean_change": -1.827086904761905,
+        "matched_mean_change_percent": -36.62133299301271,
+        "observed_individual_changes_min_max": [
+          -2.743356500000001,
+          -0.42641799999999996
+        ],
+        "positive_changes": 0,
+        "negative_changes": 7
+      }
+    }
+  },
+  "Fig1b_5nM_IAA_pulse": {
+    "growth_on_workbook_scale": {
+      "onset_min": 0.0,
+      "washout_start_min": 32.0,
+      "windows": {
+        "baseline": {
+          "sample_times_min": [
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 1.44363785,
+          "per_root_window_means": {
+            "1": 1.4381409,
+            "2": 1.4791549,
+            "3": 1.2148666000000001,
+            "4": 1.642389
+          }
+        },
+        "early_pulse_descriptive": {
+          "sample_times_min": [
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 0.8755529166666667,
+          "per_root_window_means": {
+            "1": 0.9953622222222224,
+            "2": 0.8318666666666666,
+            "3": 0.6239,
+            "4": 1.0510827777777778
+          }
+        },
+        "late_pulse": {
+          "sample_times_min": [
+            27.0,
+            27.5,
+            28.0,
+            28.5,
+            29.0,
+            29.5,
+            30.0,
+            30.5,
+            31.0,
+            31.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 0.45722060000000003,
+          "per_root_window_means": {
+            "1": 0.5766484000000001,
+            "2": 0.43673,
+            "3": 0.18717,
+            "4": 0.6283340000000001
+          }
+        },
+        "late_washout": {
+          "sample_times_min": [
+            45.0,
+            45.5,
+            46.0,
+            46.5,
+            47.0,
+            47.5,
+            48.0,
+            48.5,
+            49.0,
+            49.5,
+            50.0
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 0.90041,
+          "per_root_window_means": {
+            "1": 0.831310181818182,
+            "2": 0.864534909090909,
+            "3": 0.8078167272727274,
+            "4": 1.0979781818181817
+          }
+        }
+      },
+      "paired_change_from_baseline": {
+        "early_pulse_descriptive": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.44363785,
+          "comparison_mean_matched": 0.8755529166666667,
+          "mean_change": -0.5680849333333333,
+          "matched_mean_change_percent": -39.350930936961326,
+          "observed_individual_changes_min_max": [
+            -0.6472882333333333,
+            -0.4427786777777777
+          ],
+          "positive_changes": 0,
+          "negative_changes": 4
+        },
+        "late_pulse": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.44363785,
+          "comparison_mean_matched": 0.45722060000000003,
+          "mean_change": -0.9864172499999999,
+          "matched_mean_change_percent": -68.32858046773988,
+          "observed_individual_changes_min_max": [
+            -1.0424248999999999,
+            -0.8614925
+          ],
+          "positive_changes": 0,
+          "negative_changes": 4
+        },
+        "late_washout": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.44363785,
+          "comparison_mean_matched": 0.90041,
+          "mean_change": -0.5432278500000001,
+          "matched_mean_change_percent": -37.629094443596095,
+          "observed_individual_changes_min_max": [
+            -0.6146199909090909,
+            -0.4070498727272728
+          ],
+          "positive_changes": 0,
+          "negative_changes": 4
+        }
+      }
+    },
+    "apoplastic_HPTS_ratio": {
+      "onset_min": 0.0,
+      "washout_start_min": 32.0,
+      "windows": {
+        "baseline": {
+          "sample_times_min": [
+            -5.0,
+            -4.5,
+            -4.0,
+            -3.5,
+            -3.0,
+            -2.5,
+            -2.0,
+            -1.5,
+            -1.0,
+            -0.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 1.4967000000000001,
+          "per_root_window_means": {
+            "1": 1.3872000000000002,
+            "2": 1.5094999999999998,
+            "3": 1.5139,
+            "4": 1.5762
+          }
+        },
+        "early_pulse_descriptive": {
+          "sample_times_min": [
+            0.5,
+            1.0,
+            1.5,
+            2.0,
+            2.5,
+            3.0,
+            3.5,
+            4.0,
+            4.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 2.2796388888888885,
+          "per_root_window_means": {
+            "1": 2.0996666666666663,
+            "2": 2.216444444444444,
+            "3": 2.915111111111111,
+            "4": 1.8873333333333333
+          }
+        },
+        "late_pulse": {
+          "sample_times_min": [
+            27.0,
+            27.5,
+            28.0,
+            28.5,
+            29.0,
+            29.5,
+            30.0,
+            30.5,
+            31.0,
+            31.5
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 2.209275,
+          "per_root_window_means": {
+            "1": 2.3777,
+            "2": 2.1823,
+            "3": 2.4044,
+            "4": 1.8727
+          }
+        },
+        "late_washout": {
+          "sample_times_min": [
+            45.0,
+            45.5,
+            46.0,
+            46.5,
+            47.0,
+            47.5,
+            48.0,
+            48.5,
+            49.0,
+            49.5,
+            50.0
+          ],
+          "n_roots": 4,
+          "mean_of_root_means": 1.3188636363636363,
+          "per_root_window_means": {
+            "1": 1.3110000000000002,
+            "2": 1.3452727272727272,
+            "3": 1.3025454545454545,
+            "4": 1.3166363636363636
+          }
+        }
+      },
+      "paired_change_from_baseline": {
+        "early_pulse_descriptive": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.4967000000000001,
+          "comparison_mean_matched": 2.2796388888888885,
+          "mean_change": 0.7829388888888886,
+          "matched_mean_change_percent": 52.31101014825205,
+          "observed_individual_changes_min_max": [
+            0.31113333333333326,
+            1.401211111111111
+          ],
+          "positive_changes": 4,
+          "negative_changes": 0
+        },
+        "late_pulse": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.4967000000000001,
+          "comparison_mean_matched": 2.209275,
+          "mean_change": 0.712575,
+          "matched_mean_change_percent": 47.60974143114852,
+          "observed_individual_changes_min_max": [
+            0.2965,
+            0.9904999999999997
+          ],
+          "positive_changes": 4,
+          "negative_changes": 0
+        },
+        "late_washout": {
+          "n_matched_roots": 4,
+          "baseline_mean_matched": 1.4967000000000001,
+          "comparison_mean_matched": 1.3188636363636363,
+          "mean_change": -0.17783636363636368,
+          "matched_mean_change_percent": -11.881897750809358,
+          "observed_individual_changes_min_max": [
+            -0.25956363636363644,
+            -0.07620000000000005
+          ],
+          "positive_changes": 0,
+          "negative_changes": 4
+        }
+      }
+    }
+  },
+  "Fig1b_growth_sheet_vs_figure_axis_audit": {
+    "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-021-04037-6/MediaObjects/41586_2021_4037_Fig1_HTML.png",
+    "sha256": "ff38151d9492579203313253905017b1ca5f7a35289aea82633d25d11f982512",
+    "readout_points": [
+      {
+        "time_min": -4.0,
+        "mean_in_workbook": 1.28462075,
+        "figure_readout_median": 2.5505226480836236,
+        "figure_to_workbook_ratio": 1.98542849948798
+      },
+      {
+        "time_min": -2.0,
+        "mean_in_workbook": 1.28462075,
+        "figure_readout_median": 2.529616724738676,
+        "figure_to_workbook_ratio": 1.9691544953938165
+      },
+      {
+        "time_min": 0.0,
+        "mean_in_workbook": 1.42908625,
+        "figure_readout_median": 2.8641114982578397,
+        "figure_to_workbook_ratio": 2.0041558011336544
+      },
+      {
+        "time_min": 5.0,
+        "mean_in_workbook": 0.688507,
+        "figure_readout_median": 1.3797909407665505,
+        "figure_to_workbook_ratio": 2.004033278915901
+      },
+      {
+        "time_min": 10.0,
+        "mean_in_workbook": 0.37655700000000003,
+        "figure_readout_median": 0.710801393728223,
+        "figure_to_workbook_ratio": 1.8876329313443196
+      },
+      {
+        "time_min": 20.0,
+        "mean_in_workbook": 0.532532,
+        "figure_readout_median": 1.0034843205574913,
+        "figure_to_workbook_ratio": 1.8843643584939331
+      },
+      {
+        "time_min": 28.0,
+        "mean_in_workbook": 0.37655700000000003,
+        "figure_readout_median": 0.7526132404181185,
+        "figure_to_workbook_ratio": 1.998670162599868
+      },
+      {
+        "time_min": 30.0,
+        "mean_in_workbook": 0.441164,
+        "figure_readout_median": 0.8571428571428571,
+        "figure_to_workbook_ratio": 1.9429120625047762
+      },
+      {
+        "time_min": 40.0,
+        "mean_in_workbook": 1.12864575,
+        "figure_readout_median": 2.21602787456446,
+        "figure_to_workbook_ratio": 1.9634397015755032
+      }
+    ],
+    "median_ratio": 1.9691544953938165,
+    "note": "Secondary comparison after noticing the discrepancy. Do not infer absolute growth units from this ratio."
+  },
+  "Fig2b_ATP_hydrolysis_secondary": {
+    "n_reported_biological_replicates": 3,
+    "IAA_nM": 100,
+    "exposure_minutes": 60,
+    "relative_activity_means_from_normalized_extracts": 1.170221,
+    "sample_sd_relative_activity": 0.07358713448015222,
+    "notes": "The relative hydrolytic activity of extracts does not provide in vivo ATP use or power."
+  },
+  "ExtData2c_10nM_IAA_net_H_influx": {
+    "units": "nmol per square metre per second; positive is inward",
+    "baseline": {
+      "sample_times_min": [
+        -3.0,
+        -2.9,
+        -2.8,
+        -2.7,
+        -2.6,
+        -2.5,
+        -2.4,
+        -2.3,
+        -2.2,
+        -2.1,
+        -2.0,
+        -1.9,
+        -1.8,
+        -1.7,
+        -1.6,
+        -1.5,
+        -1.4,
+        -1.3,
+        -1.2,
+        -1.1,
+        -1.0,
+        -0.9,
+        -0.8,
+        -0.7,
+        -0.6,
+        -0.5,
+        -0.4,
+        -0.3,
+        -0.2,
+        -0.1
+      ],
+      "n_roots": 9,
+      "mean_of_root_means": 27.025448148148147,
+      "per_root_window_means": {
+        "1": 16.823716666666666,
+        "2": 19.87592,
+        "3": 31.050563333333336,
+        "4": 18.590039999999995,
+        "5": 47.41748333333333,
+        "6": 18.751963333333332,
+        "7": 16.325393333333334,
+        "8": 38.038563333333336,
+        "9": 36.35539000000001
+      }
+    },
+    "initial_IAA_exposure": {
+      "sample_times_min": [
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0,
+        2.1,
+        2.2,
+        2.3,
+        2.4,
+        2.5,
+        2.6,
+        2.7,
+        2.8,
+        2.9,
+        3.0,
+        3.1,
+        3.2,
+        3.3,
+        3.4,
+        3.5,
+        3.6,
+        3.7,
+        3.8,
+        3.9
+      ],
+      "n_roots": 8,
+      "mean_of_root_means": 38.623203333333336,
+      "per_root_window_means": {
+        "1": 58.421986666666655,
+        "2": 24.87906333333333,
+        "3": 26.810026666666673,
+        "5": 51.29027,
+        "6": 33.25902,
+        "7": 41.92056666666667,
+        "8": 34.27431666666667,
+        "9": 38.13037666666667
+      }
+    },
+    "paired_change": {
+      "n_matched_roots": 8,
+      "baseline_mean_matched": 28.079874166666666,
+      "comparison_mean_matched": 38.623203333333336,
+      "mean_change": 10.543329166666666,
+      "matched_mean_change_percent": 37.54763680238477,
+      "observed_individual_changes_min_max": [
+        -4.240536666666664,
+        41.598269999999985
+      ],
+      "positive_changes": 6,
+      "negative_changes": 2
+    },
+    "note": "Separate root samples from the pH pulses, IAA imaging, and ATP hydrolysis assays."
+  },
+  "window_policy": "Last five minutes of each phase. Switch times mark the start of the next phase. Include the last recorded sample in late washout. Early pulse is descriptive. Use only roots with complete data in both compared windows.",
+  "checks": {
+    "alkaline_primary_contrast_has_eight_paired_roots": true,
+    "late_alkaline_washout_has_seven_paired_roots": true,
+    "acid_primary_contrast_has_seven_paired_roots": true,
+    "chemical_shift_from_activity_ratio": true,
+    "three_atpase_biological_replicates": true,
+    "electrode_comparison_has_eight_matched_roots": true,
+    "IAA_growth_preserves_the_source_gaps_at_32_5_and_33_min": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E26_proton_growth/run.py": "eaf62e6307cad240a7ece8223466ee6605c071884a00efa336f4fa00fce416ef"
+  }
+}

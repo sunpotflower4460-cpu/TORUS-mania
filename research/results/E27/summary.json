@@ -1,0 +1,133 @@
+{
+  "experiment": "E27",
+  "study_doi": "10.1242/dev.181669",
+  "sources": {
+    "mellor_fig2.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/64f6/7132777/82245338738c/develop-147-181669-g2.jpg",
+      "sha256": "671ebc7a23b167bbb36981bf5995f52008a1ff77ac834605ce95e1172a004f8b"
+    },
+    "mellor_fig4.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/64f6/7132777/087276e63c38/develop-147-181669-g4.jpg",
+      "sha256": "f0b858b420915308ab5c5f74fa17ab0313c637a3d16c9ea4e37da7e0ffbc8305"
+    },
+    "mellor_fig5.jpg": {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/64f6/7132777/abf436973a0c/develop-147-181669-g5.jpg",
+      "sha256": "8509cb6f9975d36eba51b6496a456e4b4fc88efb1afb0046ea54171aa0d5c29a"
+    }
+  },
+  "fig2J_mean_absolute_difference_in_normalized_DII_VENUS": {
+    "WT": {
+      "reference": 23.449612403100776,
+      "changed": 6.007751937984496,
+      "difference": -17.441860465116278,
+      "change_percent": -74.3801652892562,
+      "bar_readout_halfwidth": 0.5813953488372093,
+      "difference_readout_range": [
+        -18.604651162790695,
+        -16.27906976744186
+      ]
+    },
+    "pin2": {
+      "reference": 26.74418604651163,
+      "changed": 6.395348837209303,
+      "difference": -20.348837209302324,
+      "change_percent": -76.08695652173914,
+      "bar_readout_halfwidth": 0.5813953488372093,
+      "difference_readout_range": [
+        -21.51162790697674,
+        -19.186046511627907
+      ]
+    },
+    "aux1": {
+      "reference": 18.217054263565892,
+      "changed": 6.976744186046512,
+      "difference": -11.24031007751938,
+      "change_percent": -61.702127659574465,
+      "bar_readout_halfwidth": 0.5813953488372093,
+      "difference_readout_range": [
+        -12.4031007751938,
+        -10.077519379844961
+      ]
+    }
+  },
+  "fig4_5_unnormalized_fluorescence_within_panel_only": {
+    "fig4G_H2O2_observed": {
+      "reference": 74.62809917355371,
+      "changed": 45.123966942148755,
+      "difference": -29.504132231404952,
+      "change_percent": -39.534883720930225,
+      "bar_readout_halfwidth": 1.7355371900826446,
+      "difference_readout_range": [
+        -32.97520661157024,
+        -26.03305785123966
+      ]
+    },
+    "fig4H_H2O2_model": {
+      "reference": 0.6686567164179104,
+      "changed": 0.5067164179104477,
+      "difference": -0.1619402985074626,
+      "change_percent": -24.21874999999999,
+      "bar_readout_halfwidth": 0.015671641791044775,
+      "difference_readout_range": [
+        -0.19328358208955215,
+        -0.13059701492537307
+      ]
+    },
+    "fig5K_GSL8_observed": {
+      "reference": 21.13821138211382,
+      "changed": 15.447154471544716,
+      "difference": -5.691056910569104,
+      "change_percent": -26.923076923076916,
+      "bar_readout_halfwidth": 0.4878048780487805,
+      "difference_readout_range": [
+        -6.666666666666665,
+        -4.715447154471543
+      ]
+    },
+    "fig5L_GSL8_model": {
+      "reference": 0.6,
+      "changed": 0.5348837209302325,
+      "difference": -0.06511627906976747,
+      "change_percent": -10.852713178294582,
+      "bar_readout_halfwidth": 0.013953488372093023,
+      "difference_readout_range": [
+        -0.09302325581395351,
+        -0.03720930232558142
+      ]
+    }
+  },
+  "digitized_top_rows": {
+    "fig2J_top_rows": [
+      417,
+      507,
+      400,
+      505,
+      444,
+      502
+    ],
+    "fig4G_H2O2_observed": [
+      466,
+      517
+    ],
+    "fig4H_H2O2_model": [
+      467,
+      498
+    ],
+    "fig5K_GSL8_observed": [
+      467,
+      502
+    ],
+    "fig5L_GSL8_model": [
+      661,
+      675
+    ]
+  },
+  "checks": {
+    "all_six_Fig2J_bars_detected_above_the_axis": true,
+    "both_bars_detected_in_each_perturbation": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E27_plasmodesmata/run.py": "9642fd62a18a94bd3f6e756da35a402fcd87e53928d207b2e8b26b592297b232"
+  }
+}

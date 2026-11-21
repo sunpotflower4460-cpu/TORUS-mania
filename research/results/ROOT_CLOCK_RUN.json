@@ -1,0 +1,88 @@
+{
+  "code_commit": "b16bef8d10a7e3c0e89470ebc0b97a3f698b7fab",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": {
+      "E30": null,
+      "E31": null,
+      "E32": 29032
+    }
+  },
+  "preregistration_commit": "6f571d746c0b558440e078ae11e032f740d48194",
+  "figure_reading_amendments_in_code_commit": [
+    "E30",
+    "E31"
+  ],
+  "initial_replay": {
+    "runs": [
+      {
+        "module": "E30_vesicle_transport.run",
+        "returncode": 0,
+        "wall_s": 0.427
+      },
+      {
+        "module": "E31_stage_progression.run",
+        "returncode": 0,
+        "wall_s": 1.892
+      },
+      {
+        "module": "E32_pulse_visibility.run",
+        "returncode": 0,
+        "wall_s": 1.471
+      },
+      {
+        "module": "root_clock_figures",
+        "returncode": 0,
+        "wall_s": 3.519
+      }
+    ],
+    "wall_s": 7.312
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E30_vesicle_transport.run",
+        "returncode": 0,
+        "wall_s": 0.312
+      },
+      {
+        "module": "E31_stage_progression.run",
+        "returncode": 0,
+        "wall_s": 1.302
+      },
+      {
+        "module": "E32_pulse_visibility.run",
+        "returncode": 0,
+        "wall_s": 1.056
+      },
+      {
+        "module": "root_clock_figures",
+        "returncode": 0,
+        "wall_s": 2.263
+      }
+    ],
+    "wall_s": 4.934
+  },
+  "checks_passed": {
+    "E30": 2,
+    "E31": 3,
+    "E32": 4
+  },
+  "byte_identical_generated_outputs": 5,
+  "prior_manifest_items_verified": 155,
+  "existing_unit_tests_passed": 22,
+  "sources": {
+    "E30": "research/access/2026-11-20-root-clock.md",
+    "E31": "research/access/2026-11-20-root-clock.md",
+    "E32": "research/results/E29/sealed_predictions.json"
+  }
+}

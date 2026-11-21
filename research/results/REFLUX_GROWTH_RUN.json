@@ -1,0 +1,105 @@
+{
+  "code_commit": "55c48d5665f6e641bf7b853135077c5f730450c8",
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "OpenPyXL": "3.1.5"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": null
+  },
+  "preregistration_commit": "95aaf1b",
+  "predictions_fixed_before_evaluation_commit": "59c2856",
+  "initial_replay": {
+    "runs": [
+      {
+        "module": "E27_plasmodesmata.run",
+        "operation": "--raw",
+        "returncode": 0,
+        "wall_s": 0.738
+      },
+      {
+        "module": "E28_return_growth.run",
+        "operation": "--out",
+        "returncode": 0,
+        "wall_s": 0.955
+      },
+      {
+        "module": "E29_growth_holdout.run",
+        "operation": "seal",
+        "returncode": 0,
+        "wall_s": 1.38
+      },
+      {
+        "module": "E29_growth_holdout.run",
+        "operation": "evaluate",
+        "returncode": 0,
+        "wall_s": 1.264
+      },
+      {
+        "module": "reflux_growth_figures",
+        "operation": "--root",
+        "returncode": 0,
+        "wall_s": 1.758
+      }
+    ],
+    "wall_s": 6.099
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E27_plasmodesmata.run",
+        "operation": "--raw",
+        "returncode": 0,
+        "wall_s": 0.285
+      },
+      {
+        "module": "E28_return_growth.run",
+        "operation": "--out",
+        "returncode": 0,
+        "wall_s": 0.892
+      },
+      {
+        "module": "E29_growth_holdout.run",
+        "operation": "seal",
+        "returncode": 0,
+        "wall_s": 1.181
+      },
+      {
+        "module": "E29_growth_holdout.run",
+        "operation": "evaluate",
+        "returncode": 0,
+        "wall_s": 0.88
+      },
+      {
+        "module": "reflux_growth_figures",
+        "operation": "--root",
+        "returncode": 0,
+        "wall_s": 1.339
+      }
+    ],
+    "wall_s": 4.578
+  },
+  "checks_passed": {
+    "E27": 2,
+    "E28": 4,
+    "E29": 3
+  },
+  "byte_identical_generated_outputs": 6,
+  "review_corrections": {
+    "commit": "eb3dbaf",
+    "E13_cases_replayed": 7,
+    "E13_calibrations_passed": 35,
+    "E13_npz_byte_identical": 6,
+    "E13_summary_numeric_results_identical": 7,
+    "E23_corrections": "first author credit only; E21\u2013E23 numerical outputs identical"
+  },
+  "existing_unit_tests_passed": 22,
+  "prior_manifest_entries_verified": 149
+}

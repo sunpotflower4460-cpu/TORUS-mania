@@ -1,0 +1,4538 @@
+{
+  "experiment": "E51",
+  "dataset": "10.1371/journal.pone.0159917.s004",
+  "region_order": [
+    "axial_core",
+    "axial_shell",
+    "outward_near_source",
+    "outward_near_drain"
+  ],
+  "coordinate_scope": "D is distance from the source. Both axial velocity conventions are reported.",
+  "energy_normalization": "(vz^2+vr^2) * component / rms_speed^3, common positive density factor cancelled",
+  "calibration": {
+    "steady_recirculation": {
+      "eligible": true,
+      "n_points": [
+        247,
+        152,
+        247,
+        247
+      ],
+      "velocities": [
+        -0.4452708333333333,
+        0.19786458333333345,
+        0.211528125,
+        -0.211528125
+      ],
+      "velocity_signs": {
+        "axial_opposition": true,
+        "radial_opposition": true,
+        "both_oppositions": true,
+        "outward_at_source_inward_at_drain": true,
+        "consistent_if_vz_toward_increasing_distance": true,
+        "consistent_if_vz_toward_decreasing_distance": false
+      },
+      "energy_advection_normalized": [
+        -3.460342188209703,
+        0.5078962182754276,
+        0.5592421997399214,
+        -0.5592421997399214
+      ],
+      "energy_signs": {
+        "axial_opposition": true,
+        "radial_opposition": true,
+        "both_oppositions": true,
+        "outward_at_source_inward_at_drain": true,
+        "consistent_if_vz_toward_increasing_distance": true,
+        "consistent_if_vz_toward_decreasing_distance": false
+      }
+    },
+    "axial_only": {
+      "eligible": true,
+      "n_points": [
+        247,
+        152,
+        247,
+        247
+      ],
+      "velocities": [
+        -0.4452708333333333,
+        0.19786458333333345,
+        0.0,
+        0.0
+      ],
+      "velocity_signs": {
+        "axial_opposition": true,
+        "radial_opposition": false,
+        "both_oppositions": false,
+        "outward_at_source_inward_at_drain": false,
+        "consistent_if_vz_toward_increasing_distance": false,
+        "consistent_if_vz_toward_decreasing_distance": false
+      },
+      "energy_advection_normalized": [
+        -5.808273431226259,
+        0.8368172778550576,
+        0.0,
+        0.0
+      ],
+      "energy_signs": {
+        "axial_opposition": true,
+        "radial_opposition": false,
+        "both_oppositions": false,
+        "outward_at_source_inward_at_drain": false,
+        "consistent_if_vz_toward_increasing_distance": false,
+        "consistent_if_vz_toward_decreasing_distance": false
+      }
+    }
+  },
+  "scores": {
+    "primary": {
+      "end_window_and_statistic": [
+        0.1,
+        0.3,
+        "mean"
+      ],
+      "groups": {
+        "Ce": {
+          "n_cells_both_halves_eligible": 6,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 7,
+              "cells_both_halves": 2
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "both_oppositions": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 5,
+              "cells_both_halves": 1
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 1,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 5,
+              "cells_both_halves": 1
+            }
+          }
+        },
+        "Mm": {
+          "n_cells_both_halves_eligible": 7,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 10,
+              "cells_both_halves": 3
+            },
+            "both_oppositions": {
+              "halves": 10,
+              "cells_both_halves": 3
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 10,
+              "cells_both_halves": 3
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 10,
+              "cells_both_halves": 3
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 8,
+              "cells_both_halves": 1
+            },
+            "both_oppositions": {
+              "halves": 8,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 8,
+              "cells_both_halves": 1
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 8,
+              "cells_both_halves": 1
+            }
+          }
+        }
+      },
+      "cells": {
+        "Ce1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              48,
+              46
+            ],
+            "velocities": [
+              0.7125962786885246,
+              -0.7959723999999999,
+              0.17754004166666668,
+              -0.19363967391304351
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.076606738327886,
+              -0.9196313526406732,
+              0.12674521207110745,
+              -0.12166722162749868
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              48,
+              46
+            ],
+            "velocities": [
+              1.1799575737704915,
+              -0.44855037499999995,
+              0.17305716666666668,
+              -0.24493934782608692
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              2.578547678238152,
+              -0.19051097058004476,
+              0.23176713912704536,
+              -0.17647951041600102
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              48,
+              39
+            ],
+            "velocities": [
+              1.0714646785714286,
+              -0.6841776666666666,
+              -0.517289375,
+              -0.23685923076923082
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3506675762455447,
+              -0.3481719074355312,
+              -0.3534308559281903,
+              -0.0383072974559944
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              48,
+              39
+            ],
+            "velocities": [
+              1.3350420357142856,
+              -0.7959336111111112,
+              0.7759035208333334,
+              -0.12329448717948718
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.085579702296908,
+              -0.8069095625551848,
+              1.1092661987666743,
+              -0.02061322046842984
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              37,
+              30
+            ],
+            "velocities": [
+              0.2819278055555555,
+              -0.20325145833333336,
+              0.0019112702702702741,
+              -0.09001393333333335
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.43716809523085026,
+              -0.12352891304352331,
+              -0.02458572587152199,
+              -0.032408036172279185
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              37,
+              30
+            ],
+            "velocities": [
+              0.4006548611111111,
+              -0.13236191666666666,
+              0.3089207837837838,
+              -0.0107377
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9231036085564244,
+              -0.1672596155091034,
+              1.829946043339934,
+              0.0031794359162031533
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              26,
+              26
+            ],
+            "velocities": [
+              0.7392469696969696,
+              -0.10029159090909091,
+              0.3290170769230769,
+              -0.4936450769230769
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.2386275171494703,
+              -0.03524965965283263,
+              0.9221587310635555,
+              -0.2678881732607436
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              26,
+              26
+            ],
+            "velocities": [
+              0.6255353030303029,
+              -0.19670477272727271,
+              0.0960225,
+              0.3333831923076923
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.791823257656065,
+              -0.0772314090216082,
+              0.11556135071259566,
+              0.10933725519821608
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              31,
+              26
+            ],
+            "velocities": [
+              1.0518413333333332,
+              -0.28677899999999995,
+              -0.12303851612903227,
+              -0.018157961538461536
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.9576740334725946,
+              -0.06203919854310933,
+              -0.3307598243240643,
+              -0.007691928715547884
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              31,
+              26
+            ],
+            "velocities": [
+              0.982012,
+              -0.2815305833333333,
+              0.06270216129032256,
+              0.006244923076923078
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.319324555409749,
+              -0.1482930454948403,
+              -0.0140960717898814,
+              0.003831618576279896
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              32,
+              31
+            ],
+            "velocities": [
+              0.7159062777777776,
+              -0.3782284166666667,
+              0.14109103125,
+              -0.24322606451612902
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.0030578518969664,
+              -0.28276000647607047,
+              0.21738506611896613,
+              -0.08131932211505136
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              32,
+              31
+            ],
+            "velocities": [
+              0.7408739166666667,
+              -0.33114008333333333,
+              0.07625359375,
+              0.13318819354838707
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.150174412358627,
+              -0.2013265954687469,
+              0.042224585995322,
+              0.023047357180964585
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              62,
+              65
+            ],
+            "velocities": [
+              0.08641018749999999,
+              -0.06396711538461539,
+              0.10405585483870966,
+              -0.0020086923076923073
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.3885524112748185,
+              -0.25782694015751917,
+              3.13078417535958,
+              -0.010614763354633665
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              62,
+              65
+            ],
+            "velocities": [
+              -0.01955525,
+              -0.18214230769230774,
+              0.1456128548387097,
+              0.008979215384615383
+            ],
+            "velocity_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              -0.008430585248068927,
+              -0.5541355153965615,
+              2.5997852896645828,
+              0.006618920182389769
+            ],
+            "energy_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              64,
+              73
+            ],
+            "velocities": [
+              0.33451767032967034,
+              -0.13867198214285711,
+              0.23764910937499997,
+              -0.0010632328767123287
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.5796508208171969,
+              -0.19099075647503766,
+              2.1709489192237212,
+              0.0008241286003555312
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              64,
+              73
+            ],
+            "velocities": [
+              0.4069340879120879,
+              -0.31154401785714286,
+              0.29459151562499997,
+              -0.08005276712328765
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.0200458769938234,
+              -0.8811029015669192,
+              1.6868047122237457,
+              -0.019333713925145865
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              59,
+              64
+            ],
+            "velocities": [
+              0.1599636111111111,
+              -0.14605110909090907,
+              0.2173395762711864,
+              -0.077851640625
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.983109100237085,
+              -0.3628945915247743,
+              2.526032249089573,
+              -0.11933929653804776
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              59,
+              64
+            ],
+            "velocities": [
+              0.1948918444444444,
+              -0.08795030909090908,
+              0.23453064406779667,
+              0.033487765625000006
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.7869639779233526,
+              -0.22825321141909466,
+              3.3480940142353712,
+              0.03291237968637215
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              58,
+              72
+            ],
+            "velocities": [
+              0.2104629326923077,
+              -0.078700765625,
+              0.14315872413793104,
+              -0.06886916666666668
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9940118489099962,
+              -0.08706390502277994,
+              1.3268240373431612,
+              -0.05786964662652024
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              58,
+              72
+            ],
+            "velocities": [
+              0.2744366057692308,
+              -0.028317203125,
+              0.37289055172413793,
+              0.029603819444444443
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.8161464528690936,
+              -0.012371473482468424,
+              9.101537323449628,
+              0.018218294356453866
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              57,
+              73
+            ],
+            "velocities": [
+              0.1011571609195402,
+              -0.16972179629629627,
+              0.047441263157894736,
+              -0.0396728904109589
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.7431722624636832,
+              -1.4065314675636207,
+              -0.09170263716512181,
+              -0.06353639684285849
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              57,
+              73
+            ],
+            "velocities": [
+              0.11527350574712644,
+              -0.09321303703703704,
+              0.11511954385964912,
+              -0.026318383561643833
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.6694030403074526,
+              -0.3183324517187191,
+              3.5599389918611886,
+              -0.011437223607938455
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              64,
+              64
+            ],
+            "velocities": [
+              0.2206631222222222,
+              -0.48823012499999996,
+              0.63071509375,
+              -0.131756015625
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.43617244545067935,
+              -1.859547206116264,
+              7.137505727335114,
+              -0.07735954167135106
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              64,
+              64
+            ],
+            "velocities": [
+              0.2742830111111111,
+              -0.20571773214285713,
+              0.13496965625000001,
+              -0.041654265625000006
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.41210646617753693,
+              -0.17757115736891307,
+              0.6184041750750575,
+              -0.007055766192131576
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm7": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              55,
+              69
+            ],
+            "velocities": [
+              0.20017622093023255,
+              -0.07418526923076924,
+              0.1915776545454545,
+              0.08095360869565218
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3033214046717796,
+              -0.4957079583618729,
+              3.5366570553623333,
+              0.08760390484172802
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              55,
+              69
+            ],
+            "velocities": [
+              0.10260186046511628,
+              -0.09489226923076921,
+              0.08712523636363635,
+              -0.059417492753623194
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.34228175736087485,
+              -0.10391900479606847,
+              3.6633905809630836,
+              -0.040054112538465046
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        }
+      }
+    },
+    "near_poles": {
+      "end_window_and_statistic": [
+        0.05,
+        0.25,
+        "mean"
+      ],
+      "groups": {
+        "Ce": {
+          "n_cells_both_halves_eligible": 6,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 8,
+              "cells_both_halves": 2
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "both_oppositions": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 6,
+              "cells_both_halves": 1
+            }
+          }
+        },
+        "Mm": {
+          "n_cells_both_halves_eligible": 7,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 10,
+              "cells_both_halves": 3
+            },
+            "both_oppositions": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 10,
+              "cells_both_halves": 3
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 9,
+              "cells_both_halves": 2
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 8,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 8,
+              "cells_both_halves": 1
+            }
+          }
+        }
+      },
+      "cells": {
+        "Ce1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              44,
+              42
+            ],
+            "velocities": [
+              0.7125962786885246,
+              -0.7959723999999999,
+              0.5244935681818181,
+              -0.19520961904761902
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.076606738327886,
+              -0.9196313526406732,
+              0.6222882186969035,
+              -0.12302004439413408
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              44,
+              42
+            ],
+            "velocities": [
+              1.1799575737704915,
+              -0.44855037499999995,
+              0.15154577272727274,
+              -0.04778235714285714
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              2.578547678238152,
+              -0.19051097058004476,
+              0.0493028345908142,
+              -0.051035906647353545
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              45,
+              38
+            ],
+            "velocities": [
+              1.0714646785714286,
+              -0.6841776666666666,
+              -0.22737980000000002,
+              -0.1918121315789474
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3506675762455447,
+              -0.3481719074355312,
+              -0.012461436239039565,
+              -0.0218478850295709
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              45,
+              38
+            ],
+            "velocities": [
+              1.3350420357142856,
+              -0.7959336111111112,
+              0.802826822222222,
+              -0.14577352631578946
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.085579702296908,
+              -0.8069095625551848,
+              1.1494400863305454,
+              -0.0468144106600096
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              34,
+              29
+            ],
+            "velocities": [
+              0.2819278055555555,
+              -0.20325145833333336,
+              0.12308729411764707,
+              -0.07625275862068967
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.43716809523085026,
+              -0.12352891304352331,
+              0.1423740296913253,
+              -0.013270597404166659
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              34,
+              29
+            ],
+            "velocities": [
+              0.4006548611111111,
+              -0.13236191666666666,
+              0.516284794117647,
+              -0.004005586206896552
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9231036085564244,
+              -0.1672596155091034,
+              2.5918763628924646,
+              0.0013033042468653096
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              25,
+              20
+            ],
+            "velocities": [
+              0.7392469696969696,
+              -0.10029159090909091,
+              0.37302928,
+              -0.50963685
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.2386275171494703,
+              -0.03524965965283263,
+              1.0463186986179127,
+              -0.28858220415713104
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              25,
+              20
+            ],
+            "velocities": [
+              0.6255353030303029,
+              -0.19670477272727271,
+              0.37727024,
+              0.2779056000000001
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.791823257656065,
+              -0.0772314090216082,
+              0.3660516087332482,
+              0.07242354941310919
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              27,
+              23
+            ],
+            "velocities": [
+              1.0518413333333332,
+              -0.28677899999999995,
+              0.03420248148148148,
+              -0.11992026086956523
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.9576740334725946,
+              -0.06203919854310933,
+              -0.12375493807142923,
+              -0.01873815949222681
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              27,
+              23
+            ],
+            "velocities": [
+              0.982012,
+              -0.2815305833333333,
+              0.27201611111111107,
+              0.05693665217391304
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.319324555409749,
+              -0.1482930454948403,
+              0.2204568647283017,
+              0.008981045883396049
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              27,
+              24
+            ],
+            "velocities": [
+              0.7159062777777776,
+              -0.3782284166666667,
+              0.3839047037037037,
+              -0.22993533333333335
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.0030578518969664,
+              -0.28276000647607047,
+              0.6009230102982192,
+              -0.08992437639569667
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              27,
+              24
+            ],
+            "velocities": [
+              0.7408739166666667,
+              -0.33114008333333333,
+              0.09847325925925926,
+              0.119735
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.150174412358627,
+              -0.2013265954687469,
+              0.09605943280978184,
+              0.0197246451185663
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              49,
+              53
+            ],
+            "velocities": [
+              0.08641018749999999,
+              -0.06396711538461539,
+              0.31402314285714283,
+              -0.0008019056603773585
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.3885524112748185,
+              -0.25782694015751917,
+              8.253266176115101,
+              -0.0002469420608040889
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              49,
+              53
+            ],
+            "velocities": [
+              -0.01955525,
+              -0.18214230769230774,
+              0.2895681428571429,
+              -0.02158501886792453
+            ],
+            "velocity_signs": {
+              "axial_opposition": false,
+              "radial_opposition": true,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              -0.008430585248068927,
+              -0.5541355153965615,
+              4.522422547737961,
+              -0.021454725118617905
+            ],
+            "energy_signs": {
+              "axial_opposition": false,
+              "radial_opposition": true,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              51,
+              58
+            ],
+            "velocities": [
+              0.33451767032967034,
+              -0.13867198214285711,
+              0.37137750980392153,
+              0.027093275862068965
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.5796508208171969,
+              -0.19099075647503766,
+              3.6859404768239217,
+              0.00328577366667184
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              51,
+              58
+            ],
+            "velocities": [
+              0.4069340879120879,
+              -0.31154401785714286,
+              0.27565205882352944,
+              -0.06818167241379311
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.0200458769938234,
+              -0.8811029015669192,
+              1.6160688587170078,
+              -0.011780708749099275
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              52,
+              58
+            ],
+            "velocities": [
+              0.1599636111111111,
+              -0.14605110909090907,
+              0.2403535576923077,
+              -0.10508487931034484
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.983109100237085,
+              -0.3628945915247743,
+              2.720788054656023,
+              -0.15589179500483716
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              52,
+              58
+            ],
+            "velocities": [
+              0.1948918444444444,
+              -0.08795030909090908,
+              0.31495140384615383,
+              0.058563379310344825
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.7869639779233526,
+              -0.22825321141909466,
+              4.696054952103093,
+              0.05942258997433498
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              53,
+              65
+            ],
+            "velocities": [
+              0.2104629326923077,
+              -0.078700765625,
+              0.16581464150943395,
+              -0.06101184615384615
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9940118489099962,
+              -0.08706390502277994,
+              1.4986293236770896,
+              -0.05027826882910347
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              53,
+              65
+            ],
+            "velocities": [
+              0.2744366057692308,
+              -0.028317203125,
+              0.41289332075471696,
+              0.041022169230769234
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.8161464528690936,
+              -0.012371473482468424,
+              10.784827528419749,
+              0.022009433991576524
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              42,
+              59
+            ],
+            "velocities": [
+              0.1011571609195402,
+              -0.16972179629629627,
+              0.0005800714285714313,
+              -0.0424485593220339
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.7431722624636832,
+              -1.4065314675636207,
+              -0.8326618803164562,
+              -0.047752107796480786
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              42,
+              59
+            ],
+            "velocities": [
+              0.11527350574712644,
+              -0.09321303703703704,
+              0.16638990476190477,
+              -0.01770562711864407
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.6694030403074526,
+              -0.3183324517187191,
+              5.471670176194325,
+              -0.006006152572903966
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              58,
+              59
+            ],
+            "velocities": [
+              0.2206631222222222,
+              -0.48823012499999996,
+              0.7707427413793104,
+              -0.1432843728813559
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.43617244545067935,
+              -1.859547206116264,
+              8.925662206888706,
+              -0.0873205168366536
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              58,
+              59
+            ],
+            "velocities": [
+              0.2742830111111111,
+              -0.20571773214285713,
+              0.24132025862068965,
+              -0.038624084745762705
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.41210646617753693,
+              -0.17757115736891307,
+              0.7772560258139539,
+              -0.006032271295751005
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm7": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              49,
+              64
+            ],
+            "velocities": [
+              0.20017622093023255,
+              -0.07418526923076924,
+              0.1381151836734694,
+              0.08942053125000002
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3033214046717796,
+              -0.4957079583618729,
+              3.0637010060889835,
+              0.09540734365408966
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              49,
+              64
+            ],
+            "velocities": [
+              0.10260186046511628,
+              -0.09489226923076921,
+              0.24369555102040816,
+              -0.034931953125
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.34228175736087485,
+              -0.10391900479606847,
+              6.356727298759416,
+              -0.016592619586496354
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        }
+      }
+    },
+    "near_middle": {
+      "end_window_and_statistic": [
+        0.15,
+        0.35,
+        "mean"
+      ],
+      "groups": {
+        "Ce": {
+          "n_cells_both_halves_eligible": 6,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "both_oppositions": {
+              "halves": 6,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 3,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 3,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 3,
+              "cells_both_halves": 0
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 7,
+              "cells_both_halves": 1
+            },
+            "both_oppositions": {
+              "halves": 7,
+              "cells_both_halves": 1
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 4,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 3,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 4,
+              "cells_both_halves": 0
+            }
+          }
+        },
+        "Mm": {
+          "n_cells_both_halves_eligible": 7,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 7,
+              "cells_both_halves": 2
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 7,
+              "cells_both_halves": 2
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 9,
+              "cells_both_halves": 2
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 9,
+              "cells_both_halves": 2
+            }
+          }
+        }
+      },
+      "cells": {
+        "Ce1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              49,
+              47
+            ],
+            "velocities": [
+              0.7125962786885246,
+              -0.7959723999999999,
+              -0.09284277551020408,
+              -0.19544287234042557
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.076606738327886,
+              -0.9196313526406732,
+              -0.2435899341597478,
+              -0.08492315803287395
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              49,
+              47
+            ],
+            "velocities": [
+              1.1799575737704915,
+              -0.44855037499999995,
+              0.13140183673469388,
+              -0.3141375744680851
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              2.578547678238152,
+              -0.19051097058004476,
+              0.21296549049973004,
+              -0.20309457190511745
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              50,
+              44
+            ],
+            "velocities": [
+              1.0714646785714286,
+              -0.6841776666666666,
+              -0.7618393199999999,
+              -0.23701781818181822
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3506675762455447,
+              -0.3481719074355312,
+              -0.6035459083547025,
+              -0.045239685160215024
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              50,
+              44
+            ],
+            "velocities": [
+              1.3350420357142856,
+              -0.7959336111111112,
+              0.62723604,
+              -0.23334311363636367
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.085579702296908,
+              -0.8069095625551848,
+              0.7895383606669397,
+              -0.04754294732753117
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              44,
+              37
+            ],
+            "velocities": [
+              0.2819278055555555,
+              -0.20325145833333336,
+              -0.07843122727272728,
+              -0.08100010810810812
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.43716809523085026,
+              -0.12352891304352331,
+              -0.1215081998097669,
+              -0.028149114183640377
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              44,
+              37
+            ],
+            "velocities": [
+              0.4006548611111111,
+              -0.13236191666666666,
+              -0.050414886363636356,
+              -0.045701702702702705
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.9231036085564244,
+              -0.1672596155091034,
+              0.0896958071173369,
+              -0.041574403827336744
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              32,
+              29
+            ],
+            "velocities": [
+              0.7392469696969696,
+              -0.10029159090909091,
+              0.055999312499999995,
+              -0.4641969310344827
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.2386275171494703,
+              -0.03524965965283263,
+              0.14789780869843816,
+              -0.20726315877733695
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              32,
+              29
+            ],
+            "velocities": [
+              0.6255353030303029,
+              -0.19670477272727271,
+              -0.23157350000000002,
+              0.30404548275862064
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.791823257656065,
+              -0.0772314090216082,
+              -0.2950321283056564,
+              0.10317270838285217
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              30,
+              26
+            ],
+            "velocities": [
+              1.0518413333333332,
+              -0.28677899999999995,
+              -0.20504893333333332,
+              0.002540807692307698
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.9576740334725946,
+              -0.06203919854310933,
+              -0.43500834850616604,
+              -0.004327074155938095
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              30,
+              26
+            ],
+            "velocities": [
+              0.982012,
+              -0.2815305833333333,
+              -0.09291776666666668,
+              -0.023009076923076924
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.319324555409749,
+              -0.1482930454948403,
+              -0.15640139332074302,
+              0.0005070290953592291
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              36,
+              36
+            ],
+            "velocities": [
+              0.7159062777777776,
+              -0.3782284166666667,
+              -0.05029038888888888,
+              -0.2367951388888889
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.0030578518969664,
+              -0.28276000647607047,
+              -0.07678105781347727,
+              -0.07224377610356608
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              36,
+              36
+            ],
+            "velocities": [
+              0.7408739166666667,
+              -0.33114008333333333,
+              -0.04454427777777777,
+              0.12836522222222221
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.150174412358627,
+              -0.2013265954687469,
+              -0.1545760592890735,
+              0.020917730889117615
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              67,
+              69
+            ],
+            "velocities": [
+              0.08641018749999999,
+              -0.06396711538461539,
+              -0.032993925373134315,
+              -0.0436163768115942
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.3885524112748185,
+              -0.25782694015751917,
+              0.7645512670072112,
+              -0.10171018188131925
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              67,
+              69
+            ],
+            "velocities": [
+              -0.01955525,
+              -0.18214230769230774,
+              0.044718283582089555,
+              0.020362391304347825
+            ],
+            "velocity_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              -0.008430585248068927,
+              -0.5541355153965615,
+              1.2428596187710934,
+              0.019535642306930487
+            ],
+            "energy_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              67,
+              77
+            ],
+            "velocities": [
+              0.33451767032967034,
+              -0.13867198214285711,
+              0.08368861194029853,
+              -0.019466272727272728
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.5796508208171969,
+              -0.19099075647503766,
+              0.4741038682241899,
+              -0.0009885850927995202
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              67,
+              77
+            ],
+            "velocities": [
+              0.4069340879120879,
+              -0.31154401785714286,
+              0.2842765223880597,
+              -0.0839979090909091
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              3.0200458769938234,
+              -0.8811029015669192,
+              1.6305197290859184,
+              -0.024472887625169297
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              76,
+              80
+            ],
+            "velocities": [
+              0.1599636111111111,
+              -0.14605110909090907,
+              0.044616236842105264,
+              -0.043180662499999994
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.983109100237085,
+              -0.3628945915247743,
+              0.7995545530528348,
+              -0.05739301810344803
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              76,
+              80
+            ],
+            "velocities": [
+              0.1948918444444444,
+              -0.08795030909090908,
+              0.09438897368421052,
+              0.005029925000000002
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.7869639779233526,
+              -0.22825321141909466,
+              1.422411169605211,
+              0.0061122219067842425
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              64,
+              78
+            ],
+            "velocities": [
+              0.2104629326923077,
+              -0.078700765625,
+              0.05165059375,
+              -0.07520373076923076
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9940118489099962,
+              -0.08706390502277994,
+              0.5465715312052422,
+              -0.058923137666554944
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              64,
+              78
+            ],
+            "velocities": [
+              0.2744366057692308,
+              -0.028317203125,
+              0.292197703125,
+              0.009415884615384616
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              2.8161464528690936,
+              -0.012371473482468424,
+              7.381562694659317,
+              0.009562015858831919
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              62,
+              77
+            ],
+            "velocities": [
+              0.1011571609195402,
+              -0.16972179629629627,
+              0.060944161290322575,
+              -0.03738836363636364
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.7431722624636832,
+              -1.4065314675636207,
+              1.137570201886179,
+              -0.07373939963661894
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              62,
+              77
+            ],
+            "velocities": [
+              0.11527350574712644,
+              -0.09321303703703704,
+              0.06630793548387097,
+              -0.0303281948051948
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.6694030403074526,
+              -0.3183324517187191,
+              1.0893902154242692,
+              -0.01451974497775909
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              79,
+              80
+            ],
+            "velocities": [
+              0.2206631222222222,
+              -0.48823012499999996,
+              0.34373081012658224,
+              -0.1224366625
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.43617244545067935,
+              -1.859547206116264,
+              3.7553006184767357,
+              -0.07259595790419256
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              79,
+              80
+            ],
+            "velocities": [
+              0.2742830111111111,
+              -0.20571773214285713,
+              -0.0864586329113924,
+              -0.0376335875
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.41210646617753693,
+              -0.17757115736891307,
+              -0.046130861207681874,
+              -0.005920394694273374
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm7": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              59,
+              73
+            ],
+            "velocities": [
+              0.20017622093023255,
+              -0.07418526923076924,
+              0.21373510169491527,
+              0.05457519178082192
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.3033214046717796,
+              -0.4957079583618729,
+              3.472828472402967,
+              0.05008230335750598
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              59,
+              73
+            ],
+            "velocities": [
+              0.10260186046511628,
+              -0.09489226923076921,
+              -0.05023428813559322,
+              -0.07026760273972603
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.34228175736087485,
+              -0.10391900479606847,
+              0.8805117906820535,
+              -0.05096559071173279
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        }
+      }
+    },
+    "median": {
+      "end_window_and_statistic": [
+        0.1,
+        0.3,
+        "median"
+      ],
+      "groups": {
+        "Ce": {
+          "n_cells_both_halves_eligible": 6,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 7,
+              "cells_both_halves": 1
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 1,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 7,
+              "cells_both_halves": 1
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 12,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "both_oppositions": {
+              "halves": 8,
+              "cells_both_halves": 2
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 7,
+              "cells_both_halves": 1
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 1,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 7,
+              "cells_both_halves": 1
+            }
+          }
+        },
+        "Mm": {
+          "n_cells_both_halves_eligible": 7,
+          "velocity_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "both_oppositions": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 9,
+              "cells_both_halves": 3
+            }
+          },
+          "energy_signs": {
+            "axial_opposition": {
+              "halves": 13,
+              "cells_both_halves": 6
+            },
+            "radial_opposition": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "both_oppositions": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "outward_at_source_inward_at_drain": {
+              "halves": 9,
+              "cells_both_halves": 3
+            },
+            "consistent_if_vz_toward_increasing_distance": {
+              "halves": 0,
+              "cells_both_halves": 0
+            },
+            "consistent_if_vz_toward_decreasing_distance": {
+              "halves": 9,
+              "cells_both_halves": 3
+            }
+          }
+        }
+      },
+      "cells": {
+        "Ce1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              48,
+              46
+            ],
+            "velocities": [
+              0.692999,
+              -0.8313809999999999,
+              0.3159665,
+              -0.207183
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.421551070961926,
+              -0.87056318735206,
+              0.1668045538968954,
+              -0.042751462119309615
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              61,
+              40,
+              48,
+              46
+            ],
+            "velocities": [
+              1.148461,
+              -0.4336355,
+              0.235367,
+              -0.235205
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.807575730789461,
+              -0.11402166867575232,
+              0.09058240180147106,
+              -0.06405487305842515
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              48,
+              39
+            ],
+            "velocities": [
+              1.0783399999999999,
+              -0.712558,
+              -0.552072,
+              -0.204138
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              1.0557924539829828,
+              -0.3246400293387225,
+              -0.1877074786000163,
+              -0.009398664327144481
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              56,
+              36,
+              48,
+              39
+            ],
+            "velocities": [
+              1.3091765,
+              -0.9556370000000001,
+              0.721768,
+              -0.100429
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.7700821106965354,
+              -0.7028402788830415,
+              0.898397278546252,
+              -0.003131127551454442
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              37,
+              30
+            ],
+            "velocities": [
+              0.2424015,
+              -0.2104205,
+              -0.010029,
+              -0.08229
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.16125097312645026,
+              -0.07206054784912475,
+              -0.0008937324389572394,
+              -0.007672981484235012
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              37,
+              30
+            ],
+            "velocities": [
+              0.34654549999999995,
+              -0.150943,
+              0.266818,
+              -0.0191075
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.24301990541236704,
+              -0.032025752017420576,
+              0.3467797118189184,
+              -0.0006777992852139065
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              26,
+              26
+            ],
+            "velocities": [
+              0.554328,
+              -0.124061,
+              0.3048075,
+              -0.468987
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.2718536655312019,
+              -0.021358846020910073,
+              0.5284671622696794,
+              -0.21642948415233892
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              33,
+              22,
+              26,
+              26
+            ],
+            "velocities": [
+              0.569285,
+              -0.2411735,
+              0.118964,
+              0.3727995
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.29523704127815237,
+              -0.06401556251514014,
+              0.07983590260847068,
+              0.09965497210251661
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Ce5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              31,
+              26
+            ],
+            "velocities": [
+              0.973087,
+              -0.3109675,
+              -0.118719,
+              0.057902
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.9579271417734663,
+              -0.039938905385547244,
+              -0.0757859360205364,
+              0.0016576449510892093
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": true,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              31,
+              26
+            ],
+            "velocities": [
+              0.872325,
+              -0.2456785,
+              0.19036,
+              -0.018592
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.8460992923541171,
+              -0.040204148853579896,
+              0.030488796644849502,
+              -0.0007463459448801412
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Ce6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              32,
+              31
+            ],
+            "velocities": [
+              0.762331,
+              -0.335177,
+              0.180503,
+              -0.275188
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.8802124359363872,
+              -0.09464974479924124,
+              0.1460526676371663,
+              -0.05251131065708196
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              36,
+              24,
+              32,
+              31
+            ],
+            "velocities": [
+              0.717495,
+              -0.342793,
+              0.040406,
+              0.146238
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.8851095490600385,
+              -0.13558718171647116,
+              0.023556130993970616,
+              0.01801610188321695
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm1": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              62,
+              65
+            ],
+            "velocities": [
+              0.0909855,
+              -0.0279715,
+              0.0130155,
+              0.004231
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.10513607778172242,
+              -0.002539007627757961,
+              0.11552838473621323,
+              0.0001955556065556279
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              80,
+              52,
+              62,
+              65
+            ],
+            "velocities": [
+              -0.026231,
+              -0.18597249999999999,
+              0.1385845,
+              0.000186
+            ],
+            "velocity_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              -0.00804754628736902,
+              -0.3827958547307464,
+              0.978653691758555,
+              5.014019941675913e-05
+            ],
+            "energy_signs": {
+              "axial_opposition": false,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm2": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              64,
+              73
+            ],
+            "velocities": [
+              0.317815,
+              -0.13198,
+              0.168616,
+              -0.008735
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              1.096992790235499,
+              -0.07181762287311264,
+              0.36798089115636173,
+              -8.882782704992362e-05
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              91,
+              56,
+              64,
+              73
+            ],
+            "velocities": [
+              0.36671,
+              -0.329187,
+              0.283439,
+              -0.075767
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.9864920020475481,
+              -0.7312231783413717,
+              1.4359823653345511,
+              -0.01276292593083474
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm3": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              59,
+              64
+            ],
+            "velocities": [
+              0.12383,
+              -0.135902,
+              0.212045,
+              -0.08040549999999999
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.136096499088318,
+              -0.1700680883746699,
+              1.149891767439268,
+              -0.061105517800976505
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              55,
+              59,
+              64
+            ],
+            "velocities": [
+              0.190359,
+              -0.048304,
+              0.155616,
+              0.046325500000000006
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.47820891099178264,
+              -0.0179625139794118,
+              0.6992593549445589,
+              0.022423122477792004
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm4": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              58,
+              72
+            ],
+            "velocities": [
+              0.213778,
+              -0.08130100000000001,
+              0.14595049999999998,
+              -0.06652
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.6126390517134985,
+              -0.051450871855536845,
+              0.6008507453954742,
+              -0.021753070206505035
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              104,
+              64,
+              58,
+              72
+            ],
+            "velocities": [
+              0.22716150000000002,
+              -0.032071,
+              0.406761,
+              0.0358705
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.7406588770667127,
+              -0.004628326276060949,
+              7.0167291902644315,
+              0.006536154251494609
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          }
+        },
+        "Mm5": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              57,
+              73
+            ],
+            "velocities": [
+              0.095028,
+              -0.15997250000000002,
+              0.065791,
+              -0.047332
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.37593980021103734,
+              -1.1103612155967975,
+              0.2757848395533497,
+              -0.0413654538480275
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              87,
+              54,
+              57,
+              73
+            ],
+            "velocities": [
+              0.111596,
+              -0.093044,
+              0.097026,
+              -0.024941
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.3536484376159007,
+              -0.26438310133359544,
+              0.6504103272993437,
+              -0.007326657881009381
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm6": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              64,
+              64
+            ],
+            "velocities": [
+              0.1860505,
+              -0.4807445,
+              0.6440705,
+              -0.13404149999999998
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.13370424580545737,
+              -1.2770011288213727,
+              4.109195696200102,
+              -0.07544638642923615
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              90,
+              56,
+              64,
+              64
+            ],
+            "velocities": [
+              0.26900250000000003,
+              -0.208063,
+              0.10649349999999999,
+              -0.04224
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.2312558156180328,
+              -0.10248892163398227,
+              0.0813924665186678,
+              -0.003474026152158309
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        },
+        "Mm7": {
+          "upper": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              55,
+              69
+            ],
+            "velocities": [
+              0.183655,
+              -0.048975,
+              0.191299,
+              0.079207
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            },
+            "energy_advection_normalized": [
+              0.4254736616277343,
+              -0.007515489810749823,
+              2.821256975304566,
+              0.04112695829663323
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": false,
+              "both_oppositions": false,
+              "outward_at_source_inward_at_drain": false,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": false
+            }
+          },
+          "lower": {
+            "eligible": true,
+            "n_points": [
+              86,
+              52,
+              55,
+              69
+            ],
+            "velocities": [
+              0.10860449999999999,
+              -0.095719,
+              0.025927,
+              -0.04722
+            ],
+            "velocity_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            },
+            "energy_advection_normalized": [
+              0.17919873373733558,
+              -0.061477074387437075,
+              0.008718298491572239,
+              -0.015019332681150238
+            ],
+            "energy_signs": {
+              "axial_opposition": true,
+              "radial_opposition": true,
+              "both_oppositions": true,
+              "outward_at_source_inward_at_drain": true,
+              "consistent_if_vz_toward_increasing_distance": false,
+              "consistent_if_vz_toward_decreasing_distance": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "checks": {
+    "cell_counts": true,
+    "both_halves_have_all_regions": true,
+    "known_recirculation_turns": true,
+    "open_axial_control_has_no_return_turns": true,
+    "energy_control_has_no_radial_flux": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E51_turning_flow/run.py": "ed383815083756680cd2938e44255041a05b5ad18c80478c2785dbddbda19902",
+    "experiments/turning_path_sources.py": "23013de4b259f03c9bdf1e53bd7b30ec765a435fe2fd5bb6d098f84634e04b69"
+  }
+}

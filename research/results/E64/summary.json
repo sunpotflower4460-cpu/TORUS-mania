@@ -1,0 +1,538 @@
+{
+  "experiment": "E64",
+  "evidence": "mathematical model and simulated readouts",
+  "denominator": "Verified first returns recovered as intact-label free IAA in the inner origin region",
+  "class_order": [
+    "other/free",
+    "other/conjugated",
+    "outer/free",
+    "outer/conjugated"
+  ],
+  "outer_route_definition": "Verified passage through root tip and outer tissue, in order",
+  "bounded_histories": [
+    {
+      "outer_route": 0.5,
+      "past_conjugation": 0.5,
+      "bounds": [
+        0.0,
+        0.5
+      ],
+      "linear_program_bounds": [
+        0.0,
+        0.5
+      ],
+      "endpoint_populations": [
+        [
+          0.5,
+          0.0,
+          -0.0,
+          0.5
+        ],
+        [
+          -0.0,
+          0.5,
+          0.5,
+          0.0
+        ]
+      ]
+    },
+    {
+      "outer_route": 0.65,
+      "past_conjugation": 0.3,
+      "bounds": [
+        0.35000000000000003,
+        0.65
+      ],
+      "linear_program_bounds": [
+        0.35000000000000003,
+        0.65
+      ],
+      "endpoint_populations": [
+        [
+          0.3499999999999999,
+          0.0,
+          0.35000000000000003,
+          0.3
+        ],
+        [
+          0.04999999999999999,
+          0.3,
+          0.65,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "distinct_populations_for_the_same_marginals": [
+    [
+      0.3,
+      0.04999999999999999,
+      0.4,
+      0.25
+    ],
+    [
+      0.14999999999999997,
+      0.2,
+      0.55,
+      0.09999999999999998
+    ]
+  ],
+  "joint_readouts": [
+    {
+      "route_and_chemistry_leakage_each": 0.0,
+      "rank": 4,
+      "condition_number": 1.0,
+      "singular_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "signal_attenuation": 1.0,
+      "total_variation_between_observed_populations": 0.30000000000000004,
+      "observed_populations": [
+        [
+          0.3,
+          0.04999999999999999,
+          0.4,
+          0.25
+        ],
+        [
+          0.14999999999999997,
+          0.2,
+          0.55,
+          0.09999999999999998
+        ]
+      ],
+      "simulation": {
+        "100": [
+          {
+            "central_95_percent": [
+              0.3,
+              0.49
+            ],
+            "mean": 0.40013,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.46,
+              0.65
+            ],
+            "mean": 0.548255,
+            "invalid_population_fraction": 0.0
+          }
+        ],
+        "500": [
+          {
+            "central_95_percent": [
+              0.358,
+              0.444
+            ],
+            "mean": 0.399623,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.506,
+              0.594
+            ],
+            "mean": 0.549706,
+            "invalid_population_fraction": 0.0
+          }
+        ],
+        "2000": [
+          {
+            "central_95_percent": [
+              0.3775,
+              0.421
+            ],
+            "mean": 0.40010275,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.528,
+              0.571
+            ],
+            "mean": 0.5499014999999999,
+            "invalid_population_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "route_and_chemistry_leakage_each": 0.02,
+      "rank": 4,
+      "condition_number": 1.0850694444444444,
+      "singular_values": [
+        1.0,
+        0.9600000000000001,
+        0.9599999999999997,
+        0.9216
+      ],
+      "signal_attenuation": 0.9216,
+      "total_variation_between_observed_populations": 0.2764800000000001,
+      "observed_populations": [
+        [
+          0.29704,
+          0.058959999999999985,
+          0.39496,
+          0.24903999999999998
+        ],
+        [
+          0.15879999999999997,
+          0.1972,
+          0.5332000000000001,
+          0.11079999999999997
+        ]
+      ],
+      "simulation": {
+        "100": [
+          {
+            "central_95_percent": [
+              0.29882269965277786,
+              0.5008680555555557
+            ],
+            "mean": 0.3981968315972223,
+            "invalid_population_fraction": 0.019
+          },
+          {
+            "central_95_percent": [
+              0.4511718750000001,
+              0.652560763888889
+            ],
+            "mean": 0.549376193576389,
+            "invalid_population_fraction": 0.0
+          }
+        ],
+        "500": [
+          {
+            "central_95_percent": [
+              0.354074435763889,
+              0.4454014756944445
+            ],
+            "mean": 0.39999266493055563,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.5025173611111112,
+              0.5970496961805556
+            ],
+            "mean": 0.5504125000000001,
+            "invalid_population_fraction": 0.0
+          }
+        ],
+        "2000": [
+          {
+            "central_95_percent": [
+              0.3768948025173612,
+              0.4233075629340279
+            ],
+            "mean": 0.39991496853298625,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.5285237630208335,
+              0.5729172092013891
+            ],
+            "mean": 0.5502612033420139,
+            "invalid_population_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "route_and_chemistry_leakage_each": 0.1,
+      "rank": 4,
+      "condition_number": 1.5625000000000002,
+      "singular_values": [
+        1.0000000000000002,
+        0.8,
+        0.7999999999999998,
+        0.64
+      ],
+      "signal_attenuation": 0.6400000000000001,
+      "total_variation_between_observed_populations": 0.19200000000000003,
+      "observed_populations": [
+        [
+          0.28600000000000003,
+          0.094,
+          0.3740000000000001,
+          0.24600000000000002
+        ],
+        [
+          0.19,
+          0.19000000000000003,
+          0.4700000000000001,
+          0.15
+        ]
+      ],
+      "simulation": {
+        "100": [
+          {
+            "central_95_percent": [
+              0.26562500000000006,
+              0.5328124999999999
+            ],
+            "mean": 0.4010875,
+            "invalid_population_fraction": 0.0975
+          },
+          {
+            "central_95_percent": [
+              0.409375,
+              0.6765625000000001
+            ],
+            "mean": 0.54721640625,
+            "invalid_population_fraction": 0.012
+          }
+        ],
+        "500": [
+          {
+            "central_95_percent": [
+              0.338109375,
+              0.4559375
+            ],
+            "mean": 0.39777203125,
+            "invalid_population_fraction": 0.001
+          },
+          {
+            "central_95_percent": [
+              0.49092968750000004,
+              0.6090703124999999
+            ],
+            "mean": 0.54978203125,
+            "invalid_population_fraction": 0.0
+          }
+        ],
+        "2000": [
+          {
+            "central_95_percent": [
+              0.37288867187499997,
+              0.43078320312500007
+            ],
+            "mean": 0.4003730859375,
+            "invalid_population_fraction": 0.0
+          },
+          {
+            "central_95_percent": [
+              0.520625,
+              0.579296875
+            ],
+            "mean": 0.550133515625,
+            "invalid_population_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "route_and_chemistry_leakage_each": 0.25,
+      "rank": 4,
+      "condition_number": 3.9999999999999973,
+      "singular_values": [
+        1.0,
+        0.5000000000000001,
+        0.5,
+        0.25000000000000017
+      ],
+      "signal_attenuation": 0.25,
+      "total_variation_between_observed_populations": 0.07500000000000002,
+      "observed_populations": [
+        [
+          0.26875,
+          0.15625,
+          0.33125,
+          0.24375000000000002
+        ],
+        [
+          0.23125,
+          0.19375,
+          0.36875,
+          0.20625
+        ]
+      ],
+      "simulation": {
+        "100": [
+          {
+            "central_95_percent": [
+              0.14000000000000007,
+              0.67
+            ],
+            "mean": 0.40376500000000004,
+            "invalid_population_fraction": 0.3085
+          },
+          {
+            "central_95_percent": [
+              0.28000000000000014,
+              0.81
+            ],
+            "mean": 0.5525450000000001,
+            "invalid_population_fraction": 0.283
+          }
+        ],
+        "500": [
+          {
+            "central_95_percent": [
+              0.28200000000000003,
+              0.516
+            ],
+            "mean": 0.399764,
+            "invalid_population_fraction": 0.133
+          },
+          {
+            "central_95_percent": [
+              0.4320000000000001,
+              0.6600000000000001
+            ],
+            "mean": 0.548384,
+            "invalid_population_fraction": 0.0225
+          }
+        ],
+        "2000": [
+          {
+            "central_95_percent": [
+              0.33848750000000005,
+              0.4579999999999999
+            ],
+            "mean": 0.39953900000000003,
+            "invalid_population_fraction": 0.022
+          },
+          {
+            "central_95_percent": [
+              0.4895,
+              0.6045
+            ],
+            "mean": 0.5487932499999999,
+            "invalid_population_fraction": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "route_and_chemistry_leakage_each": 0.45,
+      "rank": 4,
+      "condition_number": 99.99999999999957,
+      "singular_values": [
+        0.9999999999999999,
+        0.10000000000000005,
+        0.10000000000000003,
+        0.010000000000000042
+      ],
+      "signal_attenuation": 0.009999999999999995,
+      "total_variation_between_observed_populations": 0.002999999999999989,
+      "observed_populations": [
+        [
+          0.25275000000000003,
+          0.23225000000000004,
+          0.26725000000000004,
+          0.24775000000000003
+        ],
+        [
+          0.25125000000000003,
+          0.23375,
+          0.26875000000000004,
+          0.24625000000000002
+        ]
+      ],
+      "simulation": {
+        "100": [
+          {
+            "central_95_percent": [
+              -4.651250000000002,
+              5.550000000000003
+            ],
+            "mean": 0.35319999999999996,
+            "invalid_population_fraction": 0.9825
+          },
+          {
+            "central_95_percent": [
+              -4.500000000000002,
+              5.5000000000000036
+            ],
+            "mean": 0.5282,
+            "invalid_population_fraction": 0.9795
+          }
+        ],
+        "500": [
+          {
+            "central_95_percent": [
+              -1.820250000000002,
+              2.530000000000002
+            ],
+            "mean": 0.3917349999999999,
+            "invalid_population_fraction": 0.931
+          },
+          {
+            "central_95_percent": [
+              -1.7105000000000032,
+              2.780000000000001
+            ],
+            "mean": 0.52618,
+            "invalid_population_fraction": 0.93
+          }
+        ],
+        "2000": [
+          {
+            "central_95_percent": [
+              -0.6976875000000009,
+              1.4325000000000008
+            ],
+            "mean": 0.37845375000000026,
+            "invalid_population_fraction": 0.8165
+          },
+          {
+            "central_95_percent": [
+              -0.5500000000000004,
+              1.6575625000000005
+            ],
+            "mean": 0.5588400000000003,
+            "invalid_population_fraction": 0.811
+          }
+        ]
+      }
+    },
+    {
+      "route_and_chemistry_leakage_each": 0.5,
+      "rank": 1,
+      "condition_number": null,
+      "singular_values": [
+        1.0,
+        2.081668171172168e-17,
+        8.745547277396648e-49,
+        9.816563465226209e-81
+      ],
+      "signal_attenuation": 0.0,
+      "total_variation_between_observed_populations": 0.0,
+      "observed_populations": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ],
+      "simulation": {}
+    }
+  ],
+  "simulation_trials_per_setting": 2000,
+  "seed": 641120,
+  "checks": {
+    "linear_program_and_analytic_bounds_agree": true,
+    "opposed_histories_have_equal_marginals": true,
+    "no_leakage_preserves_worlds": true,
+    "rank_lost_at_chance_readout": true,
+    "joint_difference_matches_both_tags_attenuation": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E64_joint_iaa_history/run.py": "9ea7bb6e80337c6cfe9a88611699d312d32142cd48baabd17fe7888c7a1bac0e"
+  }
+}

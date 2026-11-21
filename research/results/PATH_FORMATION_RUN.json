@@ -1,0 +1,107 @@
+{
+  "code_commit": "81350a3b13b6e5fa1ec51bf9b7f0a4aaa74e3142",
+  "preregistration_commits": {
+    "E40_and_E43": "a55ca444a9d7207b6dbfdd10f272ccb8009a369e",
+    "E39_E41_and_E42": "8105345aaea19eb7357fca1c82c1859550472ec7",
+    "E41_and_E42_endpoint_amendment": "319fd68650aad5156e42cf7e6d18bb7a14a15c03"
+  },
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "OpenPyXL": "3.1.5"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": {
+      "E42": 424239
+    }
+  },
+  "initial": {
+    "runs": [
+      {
+        "module": "E39_auxin_probe_identity.run",
+        "returncode": 0,
+        "wall_s": 0.689
+      },
+      {
+        "module": "E40_tracer_history.run",
+        "returncode": 0,
+        "wall_s": 1.277
+      },
+      {
+        "module": "E41_oocyte_polarity.run",
+        "returncode": 0,
+        "wall_s": 0.866
+      },
+      {
+        "module": "E42_embryo_mechanics.run",
+        "returncode": 0,
+        "wall_s": 0.309
+      },
+      {
+        "module": "E43_matched_torus_flow.run",
+        "returncode": 0,
+        "wall_s": 4.717
+      },
+      {
+        "module": "path_formation_figures",
+        "returncode": 0,
+        "wall_s": 1.394
+      }
+    ],
+    "wall_s": 9.254
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E39_auxin_probe_identity.run",
+        "returncode": 0,
+        "wall_s": 0.298
+      },
+      {
+        "module": "E40_tracer_history.run",
+        "returncode": 0,
+        "wall_s": 1.282
+      },
+      {
+        "module": "E41_oocyte_polarity.run",
+        "returncode": 0,
+        "wall_s": 0.978
+      },
+      {
+        "module": "E42_embryo_mechanics.run",
+        "returncode": 0,
+        "wall_s": 0.268
+      },
+      {
+        "module": "E43_matched_torus_flow.run",
+        "returncode": 0,
+        "wall_s": 4.035
+      },
+      {
+        "module": "path_formation_figures",
+        "returncode": 0,
+        "wall_s": 1.724
+      }
+    ],
+    "wall_s": 8.585
+  },
+  "fresh_external_downloads_verified": 4,
+  "source_record": "research/access/2026-11-20-path-and-formation.md",
+  "dryad_workbook_hashes_verified": 5,
+  "checks_passed": {
+    "E39": 3,
+    "E40": 5,
+    "E41": 4,
+    "E42": 4,
+    "E43": 5
+  },
+  "byte_identical_generated_outputs": 7,
+  "prior_manifest_items_verified": 169,
+  "existing_unit_tests_passed": 22
+}

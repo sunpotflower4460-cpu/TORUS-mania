@@ -1,0 +1,369 @@
+{
+  "experiment": "E36",
+  "studies": [
+    "10.1017/jfm.2022.275",
+    "10.1017/jfm.2021.36",
+    "10.1017/flo.2022.9"
+  ],
+  "sources": {
+    "limbourg_f16.jpg": {
+      "url": "https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary-alt:20211102033654-41747-optimisedImage-S0022112021000367_fig16.jpg",
+      "sha256": "52d52c82b86514fceed86bb4d09365e7d5d4d3b60b7db9008714f49c3f485f1d"
+    },
+    "limbourg_f17.jpg": {
+      "url": "https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary-alt:20211102033654-65203-optimisedImage-S0022112021000367_fig17.jpg",
+      "sha256": "f9cc74e3df3e554c4a9bf67ef527cd390aafdb2ccd07156b3dcb2c3c53859f6f"
+    },
+    "limbourg_f18.jpg": {
+      "url": "https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary-alt:20211102033654-81147-optimisedImage-S0022112021000367_fig18.jpg",
+      "sha256": "41df849f7d6c4f5d2f4664d9ac83f07425347451647618972c20ba24ec532738"
+    },
+    "limbourg_f19.jpg": {
+      "url": "https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary-alt:20211102033654-12139-optimisedImage-S0022112021000367_fig19.jpg",
+      "sha256": "76623770ff18c0c432de944217f8844afef1596ce4d9da58f4ac7152e75598e4"
+    },
+    "baskaran_f7.png": {
+      "url": "https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20220630140740282-0747:S2633425922000095:S2633425922000095_fig7.png",
+      "sha256": "89bcfcf5a4ac0f63a1f53794aefa6cb2e6fc253a6ad4ec3d61dab19f4d891b83"
+    }
+  },
+  "canonical_alpha": 0.33,
+  "absolute_error_margin": 0.05,
+  "orifice_water_density_assumption_kg_per_m3": 1000.0,
+  "orifice_piston": {
+    "all_stroke_ratios": [
+      {
+        "stroke_ratio": 0.5,
+        "circulation_cm2_per_s": 35.4577056778679,
+        "impulse_kg_cm_per_s": 0.4758594051757432,
+        "global_kinetic_energy_J": 0.00018518518518518518,
+        "forecast_energy_J": 0.0001519914697843872,
+        "relative_forecast_error": -0.17924606316430913,
+        "alpha_from_three_separate_figures": 0.40206934769301467,
+        "alpha_read_fov2": 0.45993031358885017,
+        "alpha_read_fov1": 0.4715447154471545,
+        "cross_panel_alpha_difference": -0.0578609658958355,
+        "assembled_alpha_pixel_reading_range": [
+          0.2855909416040383,
+          0.5518941392129254
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": true
+      },
+      {
+        "stroke_ratio": 1.0,
+        "circulation_cm2_per_s": 57.705677867902665,
+        "impulse_kg_cm_per_s": 1.216685979142526,
+        "global_kinetic_energy_J": 0.000630787037037037,
+        "forecast_energy_J": 0.0005045811382513847,
+        "relative_forecast_error": -0.2000768744051442,
+        "alpha_from_three_separate_figures": 0.41253964217448824,
+        "alpha_read_fov2": 0.37398373983739835,
+        "alpha_read_fov1": 0.3879210220673635,
+        "cross_panel_alpha_difference": 0.03855590233708989,
+        "assembled_alpha_pixel_reading_range": [
+          0.36243422883518617,
+          0.4694437609439936
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": true
+      },
+      {
+        "stroke_ratio": 1.5,
+        "circulation_cm2_per_s": 75.08690614136732,
+        "impulse_kg_cm_per_s": 1.9466975666280415,
+        "global_kinetic_energy_J": 0.0011168981481481481,
+        "forecast_energy_J": 0.0009473479029856733,
+        "relative_forecast_error": -0.15180457183458884,
+        "alpha_from_three_separate_figures": 0.3890612812117692,
+        "alpha_read_fov2": 0.3507549361207898,
+        "alpha_read_fov1": 0.3252032520325203,
+        "cross_panel_alpha_difference": 0.03830634509097941,
+        "assembled_alpha_pixel_reading_range": [
+          0.35734815363670863,
+          0.4238021511665539
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": true
+      },
+      {
+        "stroke_ratio": 2.0,
+        "circulation_cm2_per_s": 86.90614136732329,
+        "impulse_kg_cm_per_s": 2.628041714947856,
+        "global_kinetic_energy_J": 0.0016493055555555558,
+        "forecast_energy_J": 0.0013705843503843652,
+        "relative_forecast_error": -0.16899306755642707,
+        "alpha_from_three_separate_figures": 0.39710860056201475,
+        "alpha_read_fov2": 0.3252032520325203,
+        "alpha_read_fov1": 0.3089430894308943,
+        "cross_panel_alpha_difference": 0.07190534852949443,
+        "assembled_alpha_pixel_reading_range": [
+          0.3717356705343899,
+          0.4244647606793503
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      },
+      {
+        "stroke_ratio": 2.5,
+        "circulation_cm2_per_s": 100.11587485515643,
+        "impulse_kg_cm_per_s": 3.3174971031286207,
+        "global_kinetic_energy_J": 0.00208912037037037,
+        "forecast_energy_J": 0.0019040293393324194,
+        "relative_forecast_error": -0.08859759048021576,
+        "alpha_from_three_separate_figures": 0.3620793587476647,
+        "alpha_read_fov2": 0.3344947735191638,
+        "alpha_read_fov1": 0.26248548199767713,
+        "cross_panel_alpha_difference": 0.027584585228500935,
+        "assembled_alpha_pixel_reading_range": [
+          0.3427127487537801,
+          0.3827249983956578
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      },
+      {
+        "stroke_ratio": 3.0,
+        "circulation_cm2_per_s": 104.28736964078794,
+        "impulse_kg_cm_per_s": 4.088064889918887,
+        "global_kinetic_energy_J": 0.002447916666666667,
+        "forecast_energy_J": 0.0022470896574373297,
+        "relative_forecast_error": -0.0820399697277292,
+        "alpha_from_three_separate_figures": 0.3594927765015222,
+        "alpha_read_fov2": 0.3507549361207898,
+        "alpha_read_fov1": 0.29732868757259,
+        "cross_panel_alpha_difference": 0.008737840380732442,
+        "assembled_alpha_pixel_reading_range": [
+          0.34199186723431674,
+          0.37806683046334594
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": true
+      },
+      {
+        "stroke_ratio": 3.5,
+        "circulation_cm2_per_s": 107.41599073001159,
+        "impulse_kg_cm_per_s": 4.5179606025492465,
+        "global_kinetic_energy_J": 0.002864583333333333,
+        "forecast_energy_J": 0.0024693836439761826,
+        "relative_forecast_error": -0.13796061883013266,
+        "alpha_from_three_separate_figures": 0.38281313732112726,
+        "alpha_read_fov2": 0.3507549361207898,
+        "alpha_read_fov1": 0.29965156794425085,
+        "cross_panel_alpha_difference": 0.03205820120033748,
+        "assembled_alpha_pixel_reading_range": [
+          0.36545657706004514,
+          0.40118522925490696
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      },
+      {
+        "stroke_ratio": 4.0,
+        "circulation_cm2_per_s": 114.71610660486674,
+        "impulse_kg_cm_per_s": 5.1425260718424095,
+        "global_kinetic_energy_J": 0.003072916666666667,
+        "forecast_energy_J": 0.002907627644485687,
+        "relative_forecast_error": -0.05378896993008153,
+        "alpha_from_three_separate_figures": 0.34875940938419975,
+        "alpha_read_fov2": 0.31126596980255516,
+        "alpha_read_fov1": 0.29732868757259,
+        "cross_panel_alpha_difference": 0.03749343958164458,
+        "assembled_alpha_pixel_reading_range": [
+          0.33404682749232995,
+          0.3642704143306402
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      },
+      {
+        "stroke_ratio": 4.5,
+        "circulation_cm2_per_s": 113.32560834298957,
+        "impulse_kg_cm_per_s": 5.093858632676709,
+        "global_kinetic_energy_J": 0.0033854166666666663,
+        "forecast_energy_J": 0.0028413810029367615,
+        "relative_forecast_error": -0.16069976528637187,
+        "alpha_from_three_separate_figures": 0.39318468689883906,
+        "alpha_read_fov2": 0.32984901277584205,
+        "alpha_read_fov1": 0.29500580720092917,
+        "cross_panel_alpha_difference": 0.06333567412299701,
+        "assembled_alpha_pixel_reading_range": [
+          0.3768545476430941,
+          0.41040653946480565
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      },
+      {
+        "stroke_ratio": 5.0,
+        "circulation_cm2_per_s": 116.10660486674391,
+        "impulse_kg_cm_per_s": 5.1019698725376585,
+        "global_kinetic_energy_J": 0.003628472222222222,
+        "forecast_energy_J": 0.00294895586949038,
+        "relative_forecast_error": -0.18727340630312972,
+        "alpha_from_three_separate_figures": 0.40604060770168793,
+        "alpha_read_fov2": 0.3089430894308943,
+        "alpha_read_fov1": 0.29732868757259,
+        "cross_panel_alpha_difference": 0.0970975182707936,
+        "assembled_alpha_pixel_reading_range": [
+          0.38970260884733615,
+          0.4232489333745988
+        ],
+        "alpha_overlap_between_panels_at_pixel_reading_range": false
+      }
+    ],
+    "filled_marker_rows": {
+      "gamma": [
+        406.0,
+        374.0,
+        349.0,
+        332.0,
+        313.0,
+        307.0,
+        302.5,
+        292.0,
+        294.0,
+        290.0
+      ],
+      "impulse": [
+        427.6666666666667,
+        382.0,
+        337.0,
+        295.0,
+        252.5,
+        205.0,
+        178.5,
+        140.0,
+        143.0,
+        142.5
+      ],
+      "energy": [
+        441.5,
+        403.0,
+        361.0,
+        315.0,
+        277.0,
+        246.0,
+        210.0,
+        192.0,
+        165.0,
+        144.0
+      ],
+      "alpha": [
+        298.0,
+        335.0,
+        345.0,
+        356.0,
+        352.0,
+        345.0,
+        345.0,
+        362.0,
+        354.0,
+        363.0
+      ]
+    },
+    "digitization_half_width": {
+      "gamma": 2.085747392815759,
+      "impulse": 0.04866743916570104,
+      "energy": 0.3472222222222222,
+      "alpha": 0.006968641114982578
+    },
+    "physical_units_conversion_max_rel_error": 2.220446049250313e-16,
+    "reported_fov2_short_stroke": {
+      "points": 5,
+      "within_registered_band": 4,
+      "median_alpha": 0.3507549361207898,
+      "median_absolute_alpha_error": 0.02075493612078977
+    },
+    "reported_fov2_long_stroke": {
+      "points": 5,
+      "within_registered_band": 5,
+      "median_alpha": 0.32984901277584205,
+      "median_absolute_alpha_error": 0.02075493612078977
+    },
+    "reported_fov1_long_stroke": {
+      "points": 5,
+      "within_registered_band": 5,
+      "median_alpha": 0.29732868757259,
+      "median_absolute_alpha_error": 0.032671312427410004
+    },
+    "assembled_long_stroke": {
+      "points": 5,
+      "within_registered_band": 2,
+      "median_alpha": 0.38281313732112726,
+      "median_absolute_alpha_error": 0.052813137321127246
+    },
+    "assembled_energy_median_absolute_relative_error_long_stroke": 0.13796061883013266,
+    "max_cross_panel_alpha_difference": 0.0970975182707936,
+    "strokes_with_cross_panel_overlap_at_pixel_reading_range": 4
+  },
+  "unsteady_biomimetic_generator": {
+    "advected_boundary": {
+      "stroke_ratios": [
+        3.4,
+        3.9,
+        4.4,
+        4.9,
+        5.4,
+        5.9
+      ],
+      "estimated_alpha": [
+        0.24895397489539747,
+        0.26244769874476986,
+        0.27656903765690377,
+        0.26715481171548117,
+        0.2542887029288703,
+        0.25334728033472803
+      ],
+      "image_rows": [
+        264.0,
+        242.5,
+        220.0,
+        235.0,
+        255.5,
+        257.0
+      ],
+      "late_compression": {
+        "points": 2,
+        "within_registered_band": 0,
+        "median_alpha": 0.2538179916317992,
+        "median_absolute_alpha_error": 0.07618200836820085
+      }
+    },
+    "core_rectangle": {
+      "stroke_ratios": [
+        3.4,
+        3.9,
+        4.4,
+        4.9,
+        5.4,
+        5.9
+      ],
+      "estimated_alpha": [
+        0.2414225941422594,
+        0.20376569037656903,
+        0.18933054393305437,
+        0.2106694560669456,
+        0.2395397489539749,
+        0.26841004184100414
+      ],
+      "image_rows": [
+        276.0,
+        336.0,
+        359.0,
+        325.0,
+        279.0,
+        233.0
+      ],
+      "late_compression": {
+        "points": 2,
+        "within_registered_band": 0,
+        "median_alpha": 0.2539748953974895,
+        "median_absolute_alpha_error": 0.0760251046025105
+      }
+    }
+  },
+  "baskaran_curve_alpha_readout_half_width": 0.0018828451882845186,
+  "cross_panel_note": "Assembly uses separate group summaries, not paired raw frames.",
+  "checks": {
+    "all_ten_orifice_strokes": true,
+    "dimensionally_consistent_energy": true,
+    "two_curves_at_each_scheduled_stroke": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E36_vortex_energy_transfer/run.py": "2965d3b704395ac722a395bedbb3fb8e185be88c8369d296196c6db5430c455e",
+    "experiments/return_energy_data.py": "819f9f9ad2c784416db27be8c77de0c193d1d12f528e2fa81a85ce64155a160d"
+  }
+}
