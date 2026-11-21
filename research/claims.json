@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "timezone": "Asia/Tokyo",
-  "stage": "root_iaa_resorption_and_embryonic_mechanical_work",
+  "stage": "root_cap_transport_and_calibrated_formation_work",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -75,7 +75,12 @@
     "E68",
     "E69",
     "E70",
-    "E71"
+    "E71",
+    "E72",
+    "E73",
+    "E74",
+    "E75",
+    "E76"
   ],
   "independent_external_data_reanalyses": 5,
   "evidence_fields": {
@@ -85,8 +90,8 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。 E58は同じNiwayamaらの原著の動画を初めて追跡した。別個体の独立再現として再加算しない。 E62・E65・E66で同じゼブラフィッシュ撮影の追跡版と体積像を1データセットとして追加。 E67の体積像はE62・E65・E66と同じ1胚。別のデータセットとして加算しない。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。 E61のAsaiらの図・本文の数値を1研究として追加。 E68のKerk、E69のHerrera-Perez、E71のMartin・Piletを3研究として追加。Wilkinsの抄録は図表の集計件数に含めない。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。 E63のKunzらのSource Dataを1研究として追加。"
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。 E61のAsaiらの図・本文の数値を1研究として追加。 E68のKerk、E69のHerrera-Perez、E71のMartin・Piletを3研究として追加。Wilkinsの抄録は図表の集計件数に含めない。 E73のHernández-Vega、E74のLee・Evans、E75のHasenstein・Evansを3研究として追加。",
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。 E63のKunzらのSource Dataを1研究として追加。 E72のManiouらの主図・拡張図のSource Dataを1研究として追加。"
   },
   "claims": [
     {
@@ -2532,7 +2537,7 @@
       "id": "H44",
       "statement": "同じ天然IAA分子が根端から外層を経て、内側の出発領域に帰還する。",
       "status": "open",
-      "scope": "シロイヌナズナの根端付近。投与した同じ標識の天然IAAの化学形と一周の経路を同じ根で記録する。 標識の帰還と遊離型を保ったままの帰還を分け、後者は途中の抱合などの履歴を扱う。",
+      "scope": "シロイヌナズナの根端付近。投与した同じ標識の天然IAAの化学形と一周の経路を同じ根で記録する。 標識の帰還と遊離型を保ったままの帰還を分け、後者は途中の抱合などの履歴を扱う。 トウモロコシの横断・軸方向試験は同じ測定での一周に先立つ別種の証拠。",
       "torus_kinds": [
         "T-F"
       ],
@@ -2549,7 +2554,9 @@
         "E60",
         "E64",
         "E68",
-        "E71"
+        "E71",
+        "E74",
+        "E75"
       ],
       "evidence_urls": [
         "https://doi.org/10.1111/nph.17183",
@@ -2567,9 +2574,11 @@
         "https://doi.org/10.1038/s41467-021-27020-1",
         "https://doi.org/10.1007/BF00384767",
         "https://doi.org/10.1104/pp.122.3.925",
-        "https://doi.org/10.1104/pp.81.3.889"
+        "https://doi.org/10.1104/pp.81.3.889",
+        "https://doi.org/10.1104/pp.77.4.824",
+        "https://doi.org/10.1104/pp.86.3.890"
       ],
-      "evidence_role": "輸送方向の観測、組織ごとの応答、濃度センサー、根全体の化学測定は判別に必要な要素。外層を経た天然IAAの帰還量は未取得。",
+      "evidence_role": "根を横切った標識の化学確認と、根冠に依存する偏りを別々に支持する資料が加わった。同じ根で外層を経た初回帰還は未取得。",
       "independently_reproduced": false,
       "results": [
         {
@@ -2649,16 +2658,29 @@
           "role": "natural_iaa_uptake_and_coelution",
           "path": "research/results/E71/summary.json",
           "finding": "4分後、根片の抽出物の標識の92%がIAA標準と共溶出した主ピーク。生重量あたりの取り込みは中心柱が皮層の1.84倍、1切片あたりでは0.45倍。"
+        },
+        {
+          "experiment_id": "E74",
+          "role": "opposite_side_recovery_with_iaa_chemical_check",
+          "path": "research/results/E74/summary.json",
+          "finding": "無傷トウモロコシの90分後の下向き／上向き比は無添加3.62、受け側CaCl₂添加3.11。別の3時間試験の受け側で回収した標識の帯がIAA標準と共移動した。"
+        },
+        {
+          "experiment_id": "E75",
+          "role": "axial_tracer_polarity_and_root_cap",
+          "path": "research/results/E75/summary.json",
+          "finding": "トウモロコシの5 mm根端片、3時間、無添加pH 6。基部向き／根端向きの回収比は根冠あり6.33、切除0.634。主に根端向きの回収の8.66倍増が寄与。"
         }
       ],
-      "next_action": "無傷根の内側を出た標識を求め、根端・外層と順に対応する経路を検出し、外部からの混入と残留から初回帰還を区別する。構造の異なる位置にある標識の交換や消失を比較し、抱合・酸化から再生成した遊離型を途中の履歴と照合する。",
+      "next_action": "一つの無傷根で、内側の投与領域、根端、外層、初回に戻った内側を対応させる。途中の抱合体・酸化型、残留・外部経由の再流入と分けて遊離IAAを読む。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
         "research/notes/E49_E54_turning_paths_evidence.md",
         "research/notes/E55_E60_particle_return_evidence.md",
         "research/notes/E61_E66_embryo_history_evidence.md",
-        "research/notes/E67_E71_iaa_embryo_work_evidence.md"
+        "research/notes/E67_E71_iaa_embryo_work_evidence.md",
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2708,6 +2730,18 @@
         {
           "statement": "放射能の再取り込みだけで、遊離の天然IAAが根端と外層を通り元の位置へ帰ったと判定できる。",
           "status": "not_identifiable"
+        },
+        {
+          "statement": "無傷のトウモロコシ根を横切り回収された標識は、長時間の別試験でIAA標準と同じ位置に出る。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "根冠付きと切除の5 mm根端片で、軸に沿う標識の回収の偏りの向きが逆になる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "無傷根の反対側のIAAの化学確認と別の根片の軸方向の値を組み合わせれば、外層を経た同じ天然IAAの最初の帰還を測れる。",
+          "status": "not_identifiable"
         }
       ]
     },
@@ -2739,7 +2773,10 @@
         "E66",
         "E67",
         "E69",
-        "E70"
+        "E70",
+        "E72",
+        "E73",
+        "E76"
       ],
       "evidence_urls": [
         "https://doi.org/10.1083/jcb.201709174",
@@ -2760,9 +2797,11 @@
         "https://virtual-embryo-zoo.sf.czbiohub.org/dataset/danior",
         "https://doi.org/10.1038/s41592-025-02778-0",
         "https://doi.org/10.1038/s41467-023-38988-3",
-        "https://doi.org/10.1103/PRXLife.1.013004"
+        "https://doi.org/10.1103/PRXLife.1.013004",
+        "https://doi.org/10.1038/s41563-024-01942-9",
+        "https://doi.org/10.15252/embj.201694264"
       ],
-      "evidence_role": "既存の介入は局所の配置と形の形成への流れや力の作用を支持する。先行するトーラス状エネルギー流束の固有効果は未測定。",
+      "evidence_role": "局所の力と仕事に単位のある根拠があり、胚の形への作用が支持される。閉路の時間的先行と固有効果を識別する三次元流束は未測定。",
       "independently_reproduced": false,
       "results": [
         {
@@ -2884,16 +2923,35 @@
           "role": "counterexample",
           "path": "research/results/E70/summary.json",
           "finding": "同じ定常流の物質トーラスを使っても、粘性0.001 Pa sでは中央の面から正味5.24×10⁻¹⁷ Wが入り、内部の散逸と一致。無粘性のときは法線方向の移流と仕事はゼロ。"
+        },
+        {
+          "experiment_id": "E72",
+          "role": "calibrated_local_force_and_work",
+          "path": "research/results/E72/summary.json",
+          "finding": "ニワトリの神経管閉鎖中、60分の平均力は対照+84.1 nN、ROCK阻害−54.8 nN（各10胚、閉鎖向きが正）。対応する対照の累積仕事の最大値は平均1.026 pJ。"
+        },
+        {
+          "experiment_id": "E73",
+          "role": "inferred_power_display_localization",
+          "path": "research/results/E73/summary.json",
+          "finding": "同一胚の被包60%では下3分の1の暖色は0、80%では251画素中99。80%の下3分の1の割合は9条件で29〜42%。40%の暖色重心は求められず、単調な移動は判定できない。"
+        },
+        {
+          "experiment_id": "E76",
+          "role": "counterexample",
+          "path": "research/results/E76/summary.json",
+          "finding": "境界の法線流束と発散が一致する二場を構成し、三つの同じ種点で一方は一周、他方は領域外へ出た。128刻みの最大帰還誤差1.46×10⁻⁷。"
         }
       ],
-      "next_action": "疎な別の標識または原解像度像で同じ核や粒子の帰還を独立に確認する。同じ胚・同じ段階の速度、圧力・応力、内部駆動、散逸をそろえてエネルギーの経路を測り、途中の閉路だけを変えて入力仕事を照合した後の形を比べる。",
+      "next_action": "形成する形と開始時刻を一つ指定する。同じ胚の三次元速度、圧力・応力、駆動、散逸から機械エネルギー流束の向きを復元する。体積収支と境界だけでは内部が決まらないので、閉路を変え、投入仕事を照合した対照で後の形を比較する。",
       "literature_notes": [
         "research/notes/E39_E43_path_and_formation_evidence.md",
         "research/notes/E44_E48_measured_return_evidence.md",
         "research/notes/E49_E54_turning_paths_evidence.md",
         "research/notes/E55_E60_particle_return_evidence.md",
         "research/notes/E61_E66_embryo_history_evidence.md",
-        "research/notes/E67_E71_iaa_embryo_work_evidence.md"
+        "research/notes/E67_E71_iaa_embryo_work_evidence.md",
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
       ],
       "tested_subclaims": [
         {
@@ -2971,6 +3029,18 @@
         {
           "statement": "同じ定常の閉じた物質面なら、粘性があっても全ての機械エネルギーが面を横切らない。",
           "status": "not_supported_in_test"
+        },
+        {
+          "statement": "ニワトリ胚でROCKを阻害すると、神経管が閉じる途中のセンサーに加わる局所の力の向きが変わる。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "目盛のない2Dの仕事率表示だけで、胚の三次元の機械エネルギー流束を同定できる。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "各点の発散と境界の流束が同じなら、内部に閉路があるかを一般に決定できる。",
+          "status": "invalid_general_inference"
         }
       ]
     },
@@ -3970,8 +4040,193 @@
           "status": "not_identifiable"
         }
       ]
+    },
+    {
+      "id": "H74",
+      "statement": "ニワトリの神経管が閉じる途中で、ROCK阻害により局所の力の向きが逆転し、両条件でセンサーに機械仕事が蓄えられる。",
+      "status": "supported_within_scope",
+      "scope": "神経のひだの間に設置した円筒。対照とROCK阻害各10胚。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E72"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1038/s41563-024-01942-9"
+      ],
+      "evidence_role": "公開ブックの荷重時系列を比較し、対照個体の力と変位を対応させて機械仕事を積分した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E72",
+          "role": "calibrated_local_force_and_work",
+          "path": "research/results/E72/summary.json",
+          "finding": "ニワトリの神経管閉鎖中、60分の平均力は対照+84.1 nN、ROCK阻害−54.8 nN（各10胚、閉鎖向きが正）。対応する対照の累積仕事の最大値は平均1.026 pJ。"
+        }
+      ],
+      "next_action": "同じ胚のセンサー以外の複数位置でも後の閉鎖を予測できる力と変位が得られるか比べる。",
+      "literature_notes": [
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "閉鎖向きか拡幅向きか、蓄積エネルギーの大きさだけから決定できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H75",
+      "statement": "刊行図のゼブラフィッシュ胚の仕事率表示で、60%では下3分の1に選定した暖色がなく、80%では現れる。",
+      "status": "supported_within_scope",
+      "scope": "1胚の図4D。二次元の測定を球面のモデルで逆算した表示。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E73"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.15252/embj.201694264"
+      ],
+      "evidence_role": "同じ輪郭法と色の閾値で全3段階を採点した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E73",
+          "role": "inferred_power_display_localization",
+          "path": "research/results/E73/summary.json",
+          "finding": "同一胚の被包60%では下3分の1の暖色は0、80%では251画素中99。80%の下3分の1の割合は9条件で29〜42%。40%の暖色重心は求められず、単調な移動は判定できない。"
+        }
+      ],
+      "next_action": "元の推定配列と複数の胚で、色の表示を介さず駆動域の位置を比較する。",
+      "literature_notes": [
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "選定した暖色の重心が40・60・80%の順に植物極へ移る。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "選定した暖色の重心は60%から80%に全9条件で植物極へ移る。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H76",
+      "statement": "無傷トウモロコシ根では片側に与えたIAA由来の標識が反対側へ達し、回収標識にIAAと同じ薄層クロマトグラフィーの位置を示す成分がある。",
+      "status": "supported_within_scope",
+      "scope": "水平な無傷一次根。長時間の化学確認は受け側をカルシウムで補った条件。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E74"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1104/pp.77.4.824"
+      ],
+      "evidence_role": "公表表を集計し、本文で対向側の化学確認と根冠の対照の範囲を確認した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E74",
+          "role": "opposite_side_recovery_with_iaa_chemical_check",
+          "path": "research/results/E74/summary.json",
+          "finding": "無傷トウモロコシの90分後の下向き／上向き比は無添加3.62、受け側CaCl₂添加3.11。別の3時間試験の受け側で回収した標識の帯がIAA標準と共移動した。"
+        }
+      ],
+      "next_action": "反対側へ出る前の組織局在と回収物の構造を同じ根の時間窓で結びつける。",
+      "literature_notes": [
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "20分の根組織内で検出された下向きの偏りと、30分の根外の受け側での検出は同一の測定終点である。",
+          "status": "not_supported_in_test"
+        },
+        {
+          "statement": "受け側の薄層クロマトグラフィーだけで途中の化学変換を除外できる。",
+          "status": "not_identifiable"
+        }
+      ]
+    },
+    {
+      "id": "H77",
+      "statement": "トウモロコシの指定の短い根端片で、根冠の切除によって軸方向のIAA由来標識の回収の偏りが逆転する。",
+      "status": "supported_within_scope",
+      "scope": "同じ品種で長さ5 mm、3時間。pHを指定した根冠付きと切除の根片。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E75"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.1104/pp.86.3.890"
+      ],
+      "evidence_role": "原著の表I〜IIIから方向別の回収量、pH、イオン、ABAの対照を再集計した。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E75",
+          "role": "axial_tracer_polarity_and_root_cap",
+          "path": "research/results/E75/summary.json",
+          "finding": "トウモロコシの5 mm根端片、3時間、無添加pH 6。基部向き／根端向きの回収比は根冠あり6.33、切除0.634。主に根端向きの回収の8.66倍増が寄与。"
+        }
+      ],
+      "next_action": "根冠の組織への介入と寒天の接触面の変更を別々に対照化する。",
+      "literature_notes": [
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "根冠切除の効果は主に根端向きの標識回収量の増加に現れた。",
+          "status": "supported_within_scope"
+        },
+        {
+          "statement": "同じ対照pHでIAA由来の標識とABA由来の標識に同じ大きさの基部向きの偏りがある。",
+          "status": "not_supported_in_test"
+        }
+      ]
+    },
+    {
+      "id": "H78",
+      "statement": "各点の収支と境界法線の流束が一致しても、内部だけのトーラス状の閉路の有無が異なる二つの場を作れる。",
+      "status": "analytic_baseline",
+      "scope": "立方体の定常で無次元の運動学。環状の追加場を構成する。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E76"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "発散の解析式、六面の流束、軌道の刻み幅依存を比較した。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E76",
+          "role": "counterexample",
+          "path": "research/results/E76/summary.json",
+          "finding": "境界の法線流束と発散が一致する二場を構成し、三つの同じ種点で一方は一周、他方は領域外へ出た。128刻みの最大帰還誤差1.46×10⁻⁷。"
+        }
+      ],
+      "next_action": "実測では内部の流束の向きを観測し、応力と速度を結ぶ物理的な制約を加える。",
+      "literature_notes": [
+        "research/notes/E72_E76_calibrated_formation_evidence.md"
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "境界の仕事率と内部のスカラー収支だけで内部の閉路を一意に復元できる。",
+          "status": "invalid_general_inference"
+        }
+      ]
     }
   ],
-  "published_measurement_reanalyses": 42,
-  "archived_experimental_figure_array_reanalyses": 7
+  "published_measurement_reanalyses": 45,
+  "archived_experimental_figure_array_reanalyses": 8
 }

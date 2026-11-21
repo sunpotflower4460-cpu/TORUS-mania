@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E71を実行済み。第17回は、根への標識の再取り込み、根端での化学変換、短時間に取り込まれたIAAの化学形を確認した。胚では前回より細かい体積像を使い、核候補の一周の判定を見直した。胚帯の伸長の公表介入と、同じ物質トーラスに機械仕事が入る数値対照を加えた。[第17回報告](docs/26_IAA_REENTRY_AND_EMBRYO_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E67_E71_iaa_embryo_work_evidence.md)・[実験の再開点](research/STATUS.md)
+E01〜E76を実行済み。第18回は無傷根の反対側で回収されたIAA由来標識の化学確認と、根冠を切除した根片の軸方向の偏りを調べた。胚では神経管の閉鎖中の力を仕事に換算し、被包中の仕事率の表示を再集計した。同じ収支でも内部の流束の閉路が異なる数理対照を加えた。[第18回報告](docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E72_E76_calibrated_formation_evidence.md)・[実験の再開点](research/STATUS.md)
 
 ## 準備時点での最初の作業
 
