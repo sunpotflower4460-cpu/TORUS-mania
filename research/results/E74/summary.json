@@ -1,0 +1,149 @@
+{
+  "experiment": "E74",
+  "doi": "10.1104/pp.77.4.824",
+  "inputs_sha256": {
+    "lee-p824.png": "93463ce88ceb664dfcdceda17edefc65d0efca729bf6d9ce048115521d8f17c3",
+    "lee-p825.png": "d4993897bad2008618f10dccb0d03d754dbbda114d2107cfefcab20de642008e",
+    "lee-p826.png": "ac3812fa91464bbe3cced8fde55f49363353d15902f5b58e4e442c291cf19685"
+  },
+  "root": "Zea mays B73 x Missouri 17, intact primary root about 1.5 cm",
+  "donor_receiver_geometry_mm_behind_tip": [
+    3,
+    4.5
+  ],
+  "applied_tracer": "[5-3H]IAA dosed externally on one side of the root",
+  "table_i_at_90_min": {
+    "no_added_calcium": {
+      "receiver_above_mean_cpm": 73,
+      "receiver_above_sd_cpm": 15,
+      "receiver_below_mean_cpm": 264,
+      "receiver_below_sd_cpm": 41,
+      "below_minus_above_cpm": 191,
+      "below_to_above_ratio_of_reported_means": 3.6164383561643834,
+      "reported_polarity": 3.6
+    },
+    "receiver_10_mM_calcium_chloride": {
+      "receiver_above_mean_cpm": 152,
+      "receiver_above_sd_cpm": 24,
+      "receiver_below_mean_cpm": 473,
+      "receiver_below_sd_cpm": 28,
+      "below_minus_above_cpm": 321,
+      "below_to_above_ratio_of_reported_means": 3.111842105263158,
+      "reported_polarity": 3.1
+    }
+  },
+  "table_i_calcium_to_unsupplemented_fold_change": {
+    "receiver_above_mean_cpm": 2.0821917808219177,
+    "receiver_below_mean_cpm": 1.7916666666666667,
+    "below_to_above_ratio_of_reported_means": 0.8604714912280702
+  },
+  "table_ii_short_term_endpoints": {
+    "no_added_calcium": {
+      "minutes": 30,
+      "tissue_half_adjacent_to_donor": {
+        "receiver_above_mean_cpm": 4793,
+        "receiver_above_sd_cpm": 582,
+        "receiver_below_mean_cpm": 5189,
+        "receiver_below_sd_cpm": 250,
+        "below_minus_above_cpm": 396,
+        "below_to_above_ratio_of_reported_means": 1.0826204882119759,
+        "reported_polarity": null
+      },
+      "tissue_half_adjacent_to_receiver": {
+        "receiver_above_mean_cpm": 371,
+        "receiver_above_sd_cpm": 17,
+        "receiver_below_mean_cpm": 544,
+        "receiver_below_sd_cpm": 58,
+        "below_minus_above_cpm": 173,
+        "below_to_above_ratio_of_reported_means": 1.4663072776280324,
+        "reported_polarity": 1.53
+      },
+      "receiver_block": {
+        "receiver_above_mean_cpm": 28,
+        "receiver_above_sd_cpm": 2,
+        "receiver_below_mean_cpm": 36,
+        "receiver_below_sd_cpm": 5,
+        "below_minus_above_cpm": 8,
+        "below_to_above_ratio_of_reported_means": 1.2857142857142858,
+        "reported_polarity": null
+      }
+    },
+    "receiver_10_mM_calcium_chloride": {
+      "minutes": 20,
+      "tissue_half_adjacent_to_donor": {
+        "receiver_above_mean_cpm": 3782,
+        "receiver_above_sd_cpm": 640,
+        "receiver_below_mean_cpm": 4200,
+        "receiver_below_sd_cpm": 722,
+        "below_minus_above_cpm": 418,
+        "below_to_above_ratio_of_reported_means": 1.110523532522475,
+        "reported_polarity": null
+      },
+      "tissue_half_adjacent_to_receiver": {
+        "receiver_above_mean_cpm": 87,
+        "receiver_above_sd_cpm": 21,
+        "receiver_below_mean_cpm": 267,
+        "receiver_below_sd_cpm": 65,
+        "below_minus_above_cpm": 180,
+        "below_to_above_ratio_of_reported_means": 3.0689655172413794,
+        "reported_polarity": 3
+      },
+      "receiver_block": {
+        "receiver_above_mean_cpm": 10,
+        "receiver_above_sd_cpm": 2,
+        "receiver_below_mean_cpm": 17,
+        "receiver_below_sd_cpm": 4,
+        "below_minus_above_cpm": 7,
+        "below_to_above_ratio_of_reported_means": 1.7,
+        "reported_polarity": null
+      }
+    }
+  },
+  "reported_detection_within_min": {
+    "no_added_calcium": {
+      "tissue_half": 30,
+      "receiver_block": 45
+    },
+    "receiver_10_mM_calcium_chloride": {
+      "tissue_half": 20,
+      "receiver_block": 30
+    }
+  },
+  "table_i_and_ii_reported_experiments_per_mean": 5,
+  "decapped_horizontal": {
+    "times_min": [
+      45,
+      90
+    ],
+    "reported_no_downward_preference_or_calcium_effect": true,
+    "numerical_data_published": false
+  },
+  "vertical_intact": {
+    "time_min": 90,
+    "approximately_cpm_above_background_either_calcium_condition": 95,
+    "row_level_data_published": false
+  },
+  "same_compound_assessment": {
+    "duration_min": 180,
+    "receiver_orientation": "below a horizontal root",
+    "receiver_calcium_chloride_mM": 10,
+    "approximate_extract_applied_to_chromatogram_dpm": 3000,
+    "method": "TLC: the recovered zone co-migrated with donor and authentic IAA",
+    "chromatogram_or_recovered_fraction_published": false
+  },
+  "interpretation_limits": [
+    "Opposite-side recovery had a chemical check in a separate, longer exposure.",
+    "Individual cortical or central transits, intact chemical histories and return to the donor location were not measured.",
+    "Shorter tissue observations differ in duration between calcium conditions.",
+    "Scintillation cpm in the receiver is not the dpm of the supplied donor."
+  ],
+  "checks": {
+    "table_i_recomputed_ratios_match_rounding": true,
+    "earlier_tissue_readings_are_not_used_as_opposite_receiver_detections": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E74_transverse_root_iaa/run.py": "bbcddcad2c2722efeb3d11385d33c4aa53132463c7c0d31f96b9f674167a6ab8",
+    "experiments/calibrated_formation_sources.py": "d4266c6fe7f6351fa29748b9b05cdec9e87f1d09818e0d0b4316ca5bf6a3c47a"
+  }
+}

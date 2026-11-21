@@ -1,0 +1,2158 @@
+{
+  "experiment": "E46",
+  "study_doi": "10.1371/journal.pone.0159917",
+  "dataset_doi": "10.1371/journal.pone.0159917.s004",
+  "scores": {
+    "primary": {
+      "settings_z_min_max_radius_q": [
+        0.3,
+        0.7,
+        0.98
+      ],
+      "cells": {
+        "Ce1": {
+          "n_grid_points": 1042,
+          "n_bands": 5,
+          "n_inner_scored": 162,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.42057473898417147,
+            "uniform_from_outer": 1.8297821908218115,
+            "zero_velocity": 1.1316233317349957
+          },
+          "rmse_over_zero": 0.37165612195300857,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20642282746449667,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 24,
+              "n_inner": 28,
+              "outer_mean": -0.9371046249999999,
+              "inner_mean": 1.6964517857142858,
+              "fitted_wall_speed": -1.3719471015579234,
+              "predicted_inner_mean": 1.2812393567652127,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.16794577843239594
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 24,
+              "n_inner": 34,
+              "outer_mean": -0.7272799583333334,
+              "inner_mean": 1.2158890882352942,
+              "fitted_wall_speed": -0.9600093943267844,
+              "predicted_inner_mean": 0.8770820925065415,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.023249529956121888
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 24,
+              "n_inner": 36,
+              "outer_mean": -0.862033125,
+              "inner_mean": 0.9621534444444446,
+              "fitted_wall_speed": -1.1486437229885333,
+              "predicted_inner_mean": 1.0422884771995957,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.20642282746449667
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 24,
+              "n_inner": 34,
+              "outer_mean": -0.6338823333333333,
+              "inner_mean": 0.6310773235294117,
+              "fitted_wall_speed": -0.8334496127170463,
+              "predicted_inner_mean": 0.7614547676726192,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.3108673247339841
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 24,
+              "n_inner": 30,
+              "outer_mean": -0.3634607916666666,
+              "inner_mean": 0.546328,
+              "fitted_wall_speed": -0.5310942298391172,
+              "predicted_inner_mean": 0.4877321690331143,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.22478722908795035
+            }
+          ]
+        },
+        "Ce2": {
+          "n_grid_points": 995,
+          "n_bands": 5,
+          "n_inner_scored": 167,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.44013172489510444,
+            "uniform_from_outer": 2.243252176896978,
+            "zero_velocity": 1.328129235108073
+          },
+          "rmse_over_zero": 0.3313922420051916,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.18056306252116247,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 24,
+              "n_inner": 35,
+              "outer_mean": -1.2374599583333332,
+              "inner_mean": 1.7063904285714284,
+              "fitted_wall_speed": -1.6832138432431119,
+              "predicted_inner_mean": 1.5371308582420808,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.01751511555131637
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 24,
+              "n_inner": 35,
+              "outer_mean": -0.8749257083333334,
+              "inner_mean": 1.5986369714285715,
+              "fitted_wall_speed": -1.1948019525690603,
+              "predicted_inner_mean": 1.0911073231451156,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.18056306252116247
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 24,
+              "n_inner": 34,
+              "outer_mean": -0.825666125,
+              "inner_mean": 1.1819620588235296,
+              "fitted_wall_speed": -1.1167381423830636,
+              "predicted_inner_mean": 1.0202723353452898,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.07794608870348523
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 24,
+              "n_inner": 33,
+              "outer_mean": -0.9336845,
+              "inner_mean": 0.8383816363636364,
+              "fitted_wall_speed": -1.2822415545191441,
+              "predicted_inner_mean": 1.1758227564562376,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.4195682637308578
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 24,
+              "n_inner": 30,
+              "outer_mean": -0.7648899166666667,
+              "inner_mean": 0.7009007,
+              "fitted_wall_speed": -1.0230911895938777,
+              "predicted_inner_mean": 0.9482026750557678,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.3883605769210845
+            }
+          ]
+        },
+        "Ce3": {
+          "n_grid_points": 762,
+          "n_bands": 5,
+          "n_inner_scored": 115,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.29969658318785897,
+            "uniform_from_outer": 0.824408066669711,
+            "zero_velocity": 0.5670224208783374
+          },
+          "rmse_over_zero": 0.528544502214954,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20008842652685044,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 18,
+              "n_inner": 25,
+              "outer_mean": -0.4283835555555555,
+              "inner_mean": 0.97349704,
+              "fitted_wall_speed": -0.5392241607818283,
+              "predicted_inner_mean": 0.502051175447175,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.28051662540983346
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 16,
+              "n_inner": 20,
+              "outer_mean": -0.2827376875,
+              "inner_mean": 0.5001923999999999,
+              "fitted_wall_speed": -0.38615052694096563,
+              "predicted_inner_mean": 0.3570383318006195,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.15015751224793894
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 16,
+              "n_inner": 26,
+              "outer_mean": -0.2093224375,
+              "inner_mean": 0.2669956153846154,
+              "fitted_wall_speed": -0.25452246913504367,
+              "predicted_inner_mean": 0.23339386268115334,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.002353795791576554
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 14,
+              "n_inner": 19,
+              "outer_mean": -0.14028792857142855,
+              "inner_mean": 0.17404942105263158,
+              "fitted_wall_speed": -0.17900479017377272,
+              "predicted_inner_mean": 0.16642139603112668,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.20008842652685044
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 16,
+              "n_inner": 25,
+              "outer_mean": -0.1851185625,
+              "inner_mean": 0.24702835999999997,
+              "fitted_wall_speed": -0.21219953573541606,
+              "predicted_inner_mean": 0.19563606269133932,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.46157307077030546
+            }
+          ]
+        },
+        "Ce4": {
+          "n_grid_points": 637,
+          "n_bands": 5,
+          "n_inner_scored": 102,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.538208771979289,
+            "uniform_from_outer": 1.4047139185098876,
+            "zero_velocity": 0.9957174707037516
+          },
+          "rmse_over_zero": 0.5405235800461496,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.4260843196463812,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 16,
+              "n_inner": 26,
+              "outer_mean": -0.6472386875,
+              "inner_mean": 1.5894235769230771,
+              "fitted_wall_speed": -0.8278369682359693,
+              "predicted_inner_mean": 0.752964127285051,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.603981581964326
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 14,
+              "n_inner": 20,
+              "outer_mean": -0.38670799999999994,
+              "inner_mean": 1.0140455499999999,
+              "fitted_wall_speed": -0.5253099045477369,
+              "predicted_inner_mean": 0.48225640925519286,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.49578468422052874
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.37054108333333335,
+              "inner_mean": 0.6020469444444444,
+              "fitted_wall_speed": -0.469525068203363,
+              "predicted_inner_mean": 0.43917685402599627,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.4260843196463812
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 12,
+              "n_inner": 20,
+              "outer_mean": -0.2939395833333333,
+              "inner_mean": 0.34248615,
+              "fitted_wall_speed": -0.3632006526867448,
+              "predicted_inner_mean": 0.3310480383034897,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.2741736862271642
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.08418850000000001,
+              "inner_mean": 0.2286276111111111,
+              "fitted_wall_speed": -0.08674795223704357,
+              "predicted_inner_mean": 0.07974418841226766,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.10105539069594972
+            }
+          ]
+        },
+        "Ce5": {
+          "n_grid_points": 623,
+          "n_bands": 5,
+          "n_inner_scored": 90,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.6856309665588706,
+            "uniform_from_outer": 1.6807093491018972,
+            "zero_velocity": 1.2128500440988297
+          },
+          "rmse_over_zero": 0.5653056368302375,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.40952029826691283,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.7934714166666668,
+              "inner_mean": 2.0465845555555555,
+              "fitted_wall_speed": -0.9579022398348739,
+              "predicted_inner_mean": 0.895987287249431,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.41120939469327633
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.5382902500000001,
+              "inner_mean": 1.2922989999999999,
+              "fitted_wall_speed": -0.6532465778046926,
+              "predicted_inner_mean": 0.6110233433143415,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.4649341840375895
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 12,
+              "n_inner": 14,
+              "outer_mean": -0.2997005833333333,
+              "inner_mean": 0.990296785714286,
+              "fitted_wall_speed": -0.43319212811047303,
+              "predicted_inner_mean": 0.39853675786163517,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.40952029826691283
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 16,
+              "n_inner": 20,
+              "outer_mean": -0.341613875,
+              "inner_mean": 0.5511241499999999,
+              "fitted_wall_speed": -0.44641382345667474,
+              "predicted_inner_mean": 0.412758330494456,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.0434052034485606
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 14,
+              "n_inner": 20,
+              "outer_mean": -0.1354679285714286,
+              "inner_mean": 0.36701839999999997,
+              "fitted_wall_speed": -0.18498044620876414,
+              "predicted_inner_mean": 0.1698197673387963,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.19476527061779436
+            }
+          ]
+        },
+        "Ce6": {
+          "n_grid_points": 664,
+          "n_bands": 5,
+          "n_inner_scored": 97,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.26647182823400556,
+            "uniform_from_outer": 1.3904802591247547,
+            "zero_velocity": 0.8490925832023242
+          },
+          "rmse_over_zero": 0.3138312988543793,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2025072185584308,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.7544866666666667,
+              "inner_mean": 1.3412429444444445,
+              "fitted_wall_speed": -0.9540714572547395,
+              "predicted_inner_mean": 0.8924041110658065,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.4664812356649654
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.6022881666666667,
+              "inner_mean": 0.9089792777777779,
+              "fitted_wall_speed": -0.7445585691499751,
+              "predicted_inner_mean": 0.6964332943683309,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.2025072185584308
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 18,
+              "n_inner": 25,
+              "outer_mean": -0.5324933888888889,
+              "inner_mean": 0.68658508,
+              "fitted_wall_speed": -0.6684968345742092,
+              "predicted_inner_mean": 0.6224120616073248,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.10589425378980241
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.4898695833333333,
+              "inner_mean": 0.5759784444444445,
+              "fitted_wall_speed": -0.5856789501948135,
+              "predicted_inner_mean": 0.5478230157125487,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.3056707050557784
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 12,
+              "n_inner": 18,
+              "outer_mean": -0.27458350000000004,
+              "inner_mean": 0.3532845,
+              "fitted_wall_speed": -0.33970514565841464,
+              "predicted_inner_mean": 0.31774796974649966,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.12005871098953945
+            }
+          ]
+        },
+        "Mm1": {
+          "n_grid_points": 1373,
+          "n_bands": 5,
+          "n_inner_scored": 219,
+          "n_opposite_bands": 3,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18913490021883372,
+            "uniform_from_outer": 0.2761877645580854,
+            "zero_velocity": 0.1626838133156394
+          },
+          "rmse_over_zero": 1.1625920020197331,
+          "improves_on_both_controls": false,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.8627254968733935,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 22,
+              "n_inner": 38,
+              "outer_mean": -0.2555853181818182,
+              "inner_mean": 0.23845286842105262,
+              "fitted_wall_speed": -0.3200410973132168,
+              "predicted_inner_mean": 0.29323944506525307,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.5628174794927774
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 28,
+              "n_inner": 52,
+              "outer_mean": -0.18460782142857143,
+              "inner_mean": 0.08513115384615386,
+              "fitted_wall_speed": -0.24813432798891416,
+              "predicted_inner_mean": 0.22852128104930725,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.8627254968733935
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 22,
+              "n_inner": 39,
+              "outer_mean": -0.07311681818181817,
+              "inner_mean": 0.040820641025641036,
+              "fitted_wall_speed": -0.10318698990152862,
+              "predicted_inner_mean": 0.09518616119741846,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.7720285940064219
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 53,
+              "outer_mean": -0.08292235714285714,
+              "inner_mean": -0.026746509433962264,
+              "fitted_wall_speed": -0.13607372160993222,
+              "predicted_inner_mean": 0.1249939577573752,
+              "opposite_signs": false,
+              "relative_absolute_net_flux": 0.93159466590753
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 22,
+              "n_inner": 37,
+              "outer_mean": -0.1199571818181818,
+              "inner_mean": -0.08050313513513513,
+              "fitted_wall_speed": -0.18519921976378662,
+              "predicted_inner_mean": 0.17127277778275313,
+              "opposite_signs": false,
+              "relative_absolute_net_flux": 1.0
+            }
+          ]
+        },
+        "Mm2": {
+          "n_grid_points": 1442,
+          "n_bands": 5,
+          "n_inner_scored": 237,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.1430008453651447,
+            "uniform_from_outer": 0.6668318504405911,
+            "zero_velocity": 0.4166711054239029
+          },
+          "rmse_over_zero": 0.34319837277812176,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2483652991166424,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 22,
+              "n_inner": 37,
+              "outer_mean": -0.4350776363636364,
+              "inner_mean": 0.5806772162162163,
+              "fitted_wall_speed": -0.5856734139206273,
+              "predicted_inner_mean": 0.5416438779901342,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.23504996341009837
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 30,
+              "n_inner": 56,
+              "outer_mean": -0.3200655333333334,
+              "inner_mean": 0.5384130178571429,
+              "fitted_wall_speed": -0.45553551296442574,
+              "predicted_inner_mean": 0.41777309525956535,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.21475579936694203
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 42,
+              "outer_mean": -0.21378357142857143,
+              "inner_mean": 0.3779048095238095,
+              "fitted_wall_speed": -0.28176054848635285,
+              "predicted_inner_mean": 0.25995616306566083,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.2483652991166424
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 34,
+              "n_inner": 59,
+              "outer_mean": -0.1278653235294118,
+              "inner_mean": 0.20431549152542372,
+              "fitted_wall_speed": -0.17694901643092253,
+              "predicted_inner_mean": 0.16195296831284256,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.38147212294981453
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 24,
+              "n_inner": 43,
+              "outer_mean": -0.06701820833333333,
+              "inner_mean": 0.09644472093023257,
+              "fitted_wall_speed": -0.08499405731811782,
+              "predicted_inner_mean": 0.07770073429690688,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.495245591545628
+            }
+          ]
+        },
+        "Mm3": {
+          "n_grid_points": 1492,
+          "n_bands": 5,
+          "n_inner_scored": 269,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.12406108560983624,
+            "uniform_from_outer": 0.3719319021736054,
+            "zero_velocity": 0.24334301637150113
+          },
+          "rmse_over_zero": 0.509819790432932,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.10234131788154835,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 32,
+              "n_inner": 58,
+              "outer_mean": -0.2051036875,
+              "inner_mean": 0.37528705172413795,
+              "fitted_wall_speed": -0.2638601365517815,
+              "predicted_inner_mean": 0.24252443921288572,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.0651012699447043
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 28,
+              "n_inner": 47,
+              "outer_mean": -0.17680210714285716,
+              "inner_mean": 0.27543695744680846,
+              "fitted_wall_speed": -0.23568328435490887,
+              "predicted_inner_mean": 0.21518045486297327,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.12849232854386455
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 36,
+              "n_inner": 61,
+              "outer_mean": -0.08077600000000001,
+              "inner_mean": 0.121238,
+              "fitted_wall_speed": -0.10826675810454311,
+              "predicted_inner_mean": 0.09949648768211301,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.10234131788154835
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 45,
+              "outer_mean": -0.08378657142857145,
+              "inner_mean": 0.13581206666666668,
+              "fitted_wall_speed": -0.122871951933166,
+              "predicted_inner_mean": 0.1130416831058772,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.03700498091922701
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 32,
+              "n_inner": 58,
+              "outer_mean": -0.086880125,
+              "inner_mean": 0.04926363793103448,
+              "fitted_wall_speed": -0.13828428974882187,
+              "predicted_inner_mean": 0.1271058640028419,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.22088652981291848
+            }
+          ]
+        },
+        "Mm4": {
+          "n_grid_points": 1512,
+          "n_bands": 5,
+          "n_inner_scored": 266,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.2594455786242786,
+            "uniform_from_outer": 0.34286403280472993,
+            "zero_velocity": 0.30141928063488427
+          },
+          "rmse_over_zero": 0.860746459475997,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.15136073271418918,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 32,
+              "n_inner": 54,
+              "outer_mean": -0.0529286875,
+              "inner_mean": 0.46191585185185186,
+              "fitted_wall_speed": -0.054386145673490864,
+              "predicted_inner_mean": 0.05007781335216907,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.0714082126585607
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 26,
+              "n_inner": 44,
+              "outer_mean": -0.046039653846153855,
+              "inner_mean": 0.3532833409090909,
+              "fitted_wall_speed": -0.05691931311940028,
+              "predicted_inner_mean": 0.05223598651712296,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.13558337707057852
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 36,
+              "n_inner": 64,
+              "outer_mean": -0.04345791666666667,
+              "inner_mean": 0.20990934375000003,
+              "fitted_wall_speed": -0.056550513820412,
+              "predicted_inner_mean": 0.051352365553006825,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.2908388735711739
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 45,
+              "outer_mean": -0.025036178571428574,
+              "inner_mean": 0.1253852888888889,
+              "fitted_wall_speed": -0.029626591231511012,
+              "predicted_inner_mean": 0.0271793895225649,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.40587045800509564
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 32,
+              "n_inner": 59,
+              "outer_mean": -0.06229209375,
+              "inner_mean": 0.13036940677966102,
+              "fitted_wall_speed": -0.09089807485744869,
+              "predicted_inner_mean": 0.0832123839837838,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.15136073271418918
+            }
+          ]
+        },
+        "Mm5": {
+          "n_grid_points": 1391,
+          "n_bands": 5,
+          "n_inner_scored": 226,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.09553923303778604,
+            "uniform_from_outer": 0.25962771011109265,
+            "zero_velocity": 0.1295055042881545
+          },
+          "rmse_over_zero": 0.7377233389648655,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.6078034277490346,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 22,
+              "n_inner": 37,
+              "outer_mean": -0.16816999999999996,
+              "inner_mean": 0.17149643243243246,
+              "fitted_wall_speed": -0.2420058432706792,
+              "predicted_inner_mean": 0.22165031939256546,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.6078034277490346
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 28,
+              "n_inner": 53,
+              "outer_mean": -0.14585614285714285,
+              "inner_mean": 0.167197,
+              "fitted_wall_speed": -0.2121990483079734,
+              "predicted_inner_mean": 0.19497313692724963,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.5382888988571335
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 39,
+              "outer_mean": -0.12485635714285716,
+              "inner_mean": 0.12461725641025644,
+              "fitted_wall_speed": -0.18068976430110004,
+              "predicted_inner_mean": 0.16803294727314363,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.5841897990029143
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 34,
+              "n_inner": 55,
+              "outer_mean": -0.13137429411764706,
+              "inner_mean": 0.05836327272727272,
+              "fitted_wall_speed": -0.19574143466283553,
+              "predicted_inner_mean": 0.18102416948250938,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.7858889317326341
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 26,
+              "n_inner": 42,
+              "outer_mean": -0.11987026923076925,
+              "inner_mean": 0.03303166666666667,
+              "fitted_wall_speed": -0.17833208705077047,
+              "predicted_inner_mean": 0.1635013791806243,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.8338699611024046
+            }
+          ]
+        },
+        "Mm6": {
+          "n_grid_points": 1541,
+          "n_bands": 5,
+          "n_inner_scored": 269,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.2247987171323372,
+            "uniform_from_outer": 0.668907448719255,
+            "zero_velocity": 0.312239337949969
+          },
+          "rmse_over_zero": 0.7199564238390659,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7766649625191697,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 32,
+              "n_inner": 59,
+              "outer_mean": -0.532828375,
+              "inner_mean": 0.46296035593220336,
+              "fitted_wall_speed": -0.6989618732433819,
+              "predicted_inner_mean": 0.6398949619911888,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.7259196014009117
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 28,
+              "n_inner": 46,
+              "outer_mean": -0.38493907142857137,
+              "inner_mean": 0.36946823913043486,
+              "fitted_wall_speed": -0.4880839074713047,
+              "predicted_inner_mean": 0.4465510349884839,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.7259053557229261
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 36,
+              "n_inner": 62,
+              "outer_mean": -0.3362443888888889,
+              "inner_mean": 0.2349965,
+              "fitted_wall_speed": -0.47238212787772554,
+              "predicted_inner_mean": 0.43234243986788373,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.7766649625191697
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 28,
+              "n_inner": 44,
+              "outer_mean": -0.25471260714285715,
+              "inner_mean": 0.13482456818181818,
+              "fitted_wall_speed": -0.3724980550522025,
+              "predicted_inner_mean": 0.3427358955597231,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.8286468178657651
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 32,
+              "n_inner": 58,
+              "outer_mean": -0.26389578124999996,
+              "inner_mean": 0.053967172413793105,
+              "fitted_wall_speed": -0.39146658854138905,
+              "predicted_inner_mean": 0.35981581241018906,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.9371056686668893
+            }
+          ]
+        },
+        "Mm7": {
+          "n_grid_points": 1366,
+          "n_bands": 5,
+          "n_inner_scored": 226,
+          "n_opposite_bands": 4,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.13054893259152056,
+            "uniform_from_outer": 0.2834297894692319,
+            "zero_velocity": 0.19514377097124086
+          },
+          "rmse_over_zero": 0.6689884690747321,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.5415522403554199,
+          "bands": [
+            {
+              "z_fraction": [
+                0.3,
+                0.38
+              ],
+              "n_outer": 20,
+              "n_inner": 34,
+              "outer_mean": -0.22799390000000003,
+              "inner_mean": 0.21631970588235291,
+              "fitted_wall_speed": -0.27933973587823646,
+              "predicted_inner_mean": 0.2574495404032343,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.5542775571805668
+            },
+            {
+              "z_fraction": [
+                0.38,
+                0.45999999999999996
+              ],
+              "n_outer": 28,
+              "n_inner": 53,
+              "outer_mean": -0.10046100000000001,
+              "inner_mean": 0.25142128301886796,
+              "fitted_wall_speed": -0.1300161285269015,
+              "predicted_inner_mean": 0.11916414024517218,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.3486498791591244
+            },
+            {
+              "z_fraction": [
+                0.45999999999999996,
+                0.5399999999999999
+              ],
+              "n_outer": 22,
+              "n_inner": 41,
+              "outer_mean": -0.05182322727272728,
+              "inner_mean": 0.10492239024390243,
+              "fitted_wall_speed": -0.07645682174396154,
+              "predicted_inner_mean": 0.07011820177656009,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.5415522403554199
+            },
+            {
+              "z_fraction": [
+                0.5399999999999999,
+                0.6199999999999999
+              ],
+              "n_outer": 32,
+              "n_inner": 56,
+              "outer_mean": -0.043325343749999995,
+              "inner_mean": 0.11876776785714285,
+              "fitted_wall_speed": -0.05793125713784619,
+              "predicted_inner_mean": 0.05318842161639169,
+              "opposite_signs": true,
+              "relative_absolute_net_flux": 0.027787012747163286
+            },
+            {
+              "z_fraction": [
+                0.6199999999999999,
+                0.7
+              ],
+              "n_outer": 24,
+              "n_inner": 42,
+              "outer_mean": 0.020443000000000017,
+              "inner_mean": 0.02300126190476191,
+              "fitted_wall_speed": 0.048433386507787494,
+              "predicted_inner_mean": -0.044299713498664066,
+              "opposite_signs": false,
+              "relative_absolute_net_flux": 0.5763159914459166
+            }
+          ]
+        }
+      },
+      "groups": {
+        "Ce": {
+          "n_cells": 6,
+          "cells_with_opposing_regional_means": 6,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 30,
+          "scored_bands": 30,
+          "median_rmse_over_zero": 0.45010031208398127,
+          "median_of_cell_median_relative_net_flux": 0.20446502301146374
+        },
+        "Mm": {
+          "n_cells": 7,
+          "cells_with_opposing_regional_means": 7,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 32,
+          "scored_bands": 35,
+          "median_rmse_over_zero": 0.7199564238390659,
+          "median_of_cell_median_relative_net_flux": 0.5415522403554199
+        }
+      }
+    },
+    "radius_q95": {
+      "settings_z_min_max_radius_q": [
+        0.3,
+        0.7,
+        0.95
+      ],
+      "cells": {
+        "Ce1": {
+          "n_grid_points": 1042,
+          "n_bands": 5,
+          "n_inner_scored": 162,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.42057473898417147,
+            "uniform_from_outer": 1.8297821908218115,
+            "zero_velocity": 1.1316233317349957
+          },
+          "rmse_over_zero": 0.37165612195300857,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20642282746449667
+        },
+        "Ce2": {
+          "n_grid_points": 995,
+          "n_bands": 5,
+          "n_inner_scored": 167,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.44013172489510444,
+            "uniform_from_outer": 2.243252176896978,
+            "zero_velocity": 1.328129235108073
+          },
+          "rmse_over_zero": 0.3313922420051916,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.18056306252116247
+        },
+        "Ce3": {
+          "n_grid_points": 762,
+          "n_bands": 5,
+          "n_inner_scored": 115,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.29969658318785897,
+            "uniform_from_outer": 0.824408066669711,
+            "zero_velocity": 0.5670224208783374
+          },
+          "rmse_over_zero": 0.528544502214954,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20008842652685044
+        },
+        "Ce4": {
+          "n_grid_points": 637,
+          "n_bands": 5,
+          "n_inner_scored": 102,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.538208771979289,
+            "uniform_from_outer": 1.4047139185098876,
+            "zero_velocity": 0.9957174707037516
+          },
+          "rmse_over_zero": 0.5405235800461496,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.4260843196463812
+        },
+        "Ce5": {
+          "n_grid_points": 623,
+          "n_bands": 5,
+          "n_inner_scored": 90,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.6856309665588706,
+            "uniform_from_outer": 1.6807093491018972,
+            "zero_velocity": 1.2128500440988297
+          },
+          "rmse_over_zero": 0.5653056368302375,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.40952029826691283
+        },
+        "Ce6": {
+          "n_grid_points": 664,
+          "n_bands": 5,
+          "n_inner_scored": 97,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.26647182823400556,
+            "uniform_from_outer": 1.3904802591247547,
+            "zero_velocity": 0.8490925832023242
+          },
+          "rmse_over_zero": 0.3138312988543793,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2025072185584308
+        },
+        "Mm1": {
+          "n_grid_points": 1373,
+          "n_bands": 5,
+          "n_inner_scored": 217,
+          "n_opposite_bands": 3,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18183644038020555,
+            "uniform_from_outer": 0.2879525980624298,
+            "zero_velocity": 0.1631565743973934
+          },
+          "rmse_over_zero": 1.1144904276876666,
+          "improves_on_both_controls": false,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.8536813819733806
+        },
+        "Mm2": {
+          "n_grid_points": 1442,
+          "n_bands": 5,
+          "n_inner_scored": 229,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.15001984333084906,
+            "uniform_from_outer": 0.6813145298832703,
+            "zero_velocity": 0.42327089796261
+          },
+          "rmse_over_zero": 0.35442985580383835,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.1987517417205687
+        },
+        "Mm3": {
+          "n_grid_points": 1492,
+          "n_bands": 5,
+          "n_inner_scored": 259,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.11643122835118531,
+            "uniform_from_outer": 0.37801393998009347,
+            "zero_velocity": 0.24287552271647936
+          },
+          "rmse_over_zero": 0.4793864241605823,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.07473114827717374
+        },
+        "Mm4": {
+          "n_grid_points": 1512,
+          "n_bands": 5,
+          "n_inner_scored": 248,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.2553343977215908,
+            "uniform_from_outer": 0.35663957501659405,
+            "zero_velocity": 0.30695116797609207
+          },
+          "rmse_over_zero": 0.8318404500792724,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.22290797285257788
+        },
+        "Mm5": {
+          "n_grid_points": 1391,
+          "n_bands": 5,
+          "n_inner_scored": 222,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.08733474548365916,
+            "uniform_from_outer": 0.25627170340630007,
+            "zero_velocity": 0.13043130581701096
+          },
+          "rmse_over_zero": 0.6695842300788258,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.5813576711011542
+        },
+        "Mm6": {
+          "n_grid_points": 1541,
+          "n_bands": 5,
+          "n_inner_scored": 257,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.22458250418498052,
+            "uniform_from_outer": 0.6940502862639576,
+            "zero_velocity": 0.3158814148126275
+          },
+          "rmse_over_zero": 0.7109709329312613,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7580168423412663
+        },
+        "Mm7": {
+          "n_grid_points": 1366,
+          "n_bands": 5,
+          "n_inner_scored": 218,
+          "n_opposite_bands": 4,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.13218480485577758,
+            "uniform_from_outer": 0.30062296180895187,
+            "zero_velocity": 0.19648971037649643
+          },
+          "rmse_over_zero": 0.6727314351601241,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.4713303868949718
+        }
+      },
+      "groups": {
+        "Ce": {
+          "n_cells": 6,
+          "cells_with_opposing_regional_means": 6,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 30,
+          "scored_bands": 30,
+          "median_rmse_over_zero": 0.45010031208398127,
+          "median_of_cell_median_relative_net_flux": 0.20446502301146374
+        },
+        "Mm": {
+          "n_cells": 7,
+          "cells_with_opposing_regional_means": 7,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 32,
+          "scored_bands": 35,
+          "median_rmse_over_zero": 0.6727314351601241,
+          "median_of_cell_median_relative_net_flux": 0.4713303868949718
+        }
+      }
+    },
+    "radius_max": {
+      "settings_z_min_max_radius_q": [
+        0.3,
+        0.7,
+        1.0
+      ],
+      "cells": {
+        "Ce1": {
+          "n_grid_points": 1042,
+          "n_bands": 5,
+          "n_inner_scored": 162,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.42057473898417147,
+            "uniform_from_outer": 1.8297821908218115,
+            "zero_velocity": 1.1316233317349957
+          },
+          "rmse_over_zero": 0.37165612195300857,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20642282746449667
+        },
+        "Ce2": {
+          "n_grid_points": 995,
+          "n_bands": 5,
+          "n_inner_scored": 167,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.44013172489510444,
+            "uniform_from_outer": 2.243252176896978,
+            "zero_velocity": 1.328129235108073
+          },
+          "rmse_over_zero": 0.3313922420051916,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.18056306252116247
+        },
+        "Ce3": {
+          "n_grid_points": 762,
+          "n_bands": 5,
+          "n_inner_scored": 115,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.29969658318785897,
+            "uniform_from_outer": 0.824408066669711,
+            "zero_velocity": 0.5670224208783374
+          },
+          "rmse_over_zero": 0.528544502214954,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.20008842652685044
+        },
+        "Ce4": {
+          "n_grid_points": 637,
+          "n_bands": 5,
+          "n_inner_scored": 102,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.538208771979289,
+            "uniform_from_outer": 1.4047139185098876,
+            "zero_velocity": 0.9957174707037516
+          },
+          "rmse_over_zero": 0.5405235800461496,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.4260843196463812
+        },
+        "Ce5": {
+          "n_grid_points": 623,
+          "n_bands": 5,
+          "n_inner_scored": 90,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.6856309665588706,
+            "uniform_from_outer": 1.6807093491018972,
+            "zero_velocity": 1.2128500440988297
+          },
+          "rmse_over_zero": 0.5653056368302375,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.40952029826691283
+        },
+        "Ce6": {
+          "n_grid_points": 664,
+          "n_bands": 5,
+          "n_inner_scored": 97,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.26647182823400556,
+            "uniform_from_outer": 1.3904802591247547,
+            "zero_velocity": 0.8490925832023242
+          },
+          "rmse_over_zero": 0.3138312988543793,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2025072185584308
+        },
+        "Mm1": {
+          "n_grid_points": 1373,
+          "n_bands": 5,
+          "n_inner_scored": 221,
+          "n_opposite_bands": 3,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18598530467851204,
+            "uniform_from_outer": 0.27071495219446157,
+            "zero_velocity": 0.1620737530942869
+          },
+          "rmse_over_zero": 1.147535002600418,
+          "improves_on_both_controls": false,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.8617665352963431
+        },
+        "Mm2": {
+          "n_grid_points": 1442,
+          "n_bands": 5,
+          "n_inner_scored": 241,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.1571887646007157,
+            "uniform_from_outer": 0.6608812537871401,
+            "zero_velocity": 0.4160743459125097
+          },
+          "rmse_over_zero": 0.3777900900282102,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.252907946662773
+        },
+        "Mm3": {
+          "n_grid_points": 1492,
+          "n_bands": 5,
+          "n_inner_scored": 275,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.13388632500604328,
+            "uniform_from_outer": 0.36399012438921585,
+            "zero_velocity": 0.24337136424831757
+          },
+          "rmse_over_zero": 0.5501317931120109,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.11230674497970679
+        },
+        "Mm4": {
+          "n_grid_points": 1512,
+          "n_bands": 5,
+          "n_inner_scored": 272,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.26823916899782957,
+            "uniform_from_outer": 0.33771103384963286,
+            "zero_velocity": 0.3017269456647336
+          },
+          "rmse_over_zero": 0.889012972994085,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.16167996598188902
+        },
+        "Mm5": {
+          "n_grid_points": 1391,
+          "n_bands": 5,
+          "n_inner_scored": 234,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.08782199296290417,
+            "uniform_from_outer": 0.25962256612603035,
+            "zero_velocity": 0.12775248616877644
+          },
+          "rmse_over_zero": 0.6874386213265606,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.6305293285968891
+        },
+        "Mm6": {
+          "n_grid_points": 1541,
+          "n_bands": 5,
+          "n_inner_scored": 275,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.20315320551127397,
+            "uniform_from_outer": 0.6457350951877704,
+            "zero_velocity": 0.30983983679346333
+          },
+          "rmse_over_zero": 0.6556716773856753,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7769141315470609
+        },
+        "Mm7": {
+          "n_grid_points": 1366,
+          "n_bands": 5,
+          "n_inner_scored": 230,
+          "n_opposite_bands": 4,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.13522943612996813,
+            "uniform_from_outer": 0.27766100143405736,
+            "zero_velocity": 0.19389767239880398
+          },
+          "rmse_over_zero": 0.6974268151699704,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.53986465414274
+        }
+      },
+      "groups": {
+        "Ce": {
+          "n_cells": 6,
+          "cells_with_opposing_regional_means": 6,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 30,
+          "scored_bands": 30,
+          "median_rmse_over_zero": 0.45010031208398127,
+          "median_of_cell_median_relative_net_flux": 0.20446502301146374
+        },
+        "Mm": {
+          "n_cells": 7,
+          "cells_with_opposing_regional_means": 7,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 32,
+          "scored_bands": 35,
+          "median_rmse_over_zero": 0.6874386213265606,
+          "median_of_cell_median_relative_net_flux": 0.53986465414274
+        }
+      }
+    },
+    "axial_25_75": {
+      "settings_z_min_max_radius_q": [
+        0.25,
+        0.75,
+        0.98
+      ],
+      "cells": {
+        "Ce1": {
+          "n_grid_points": 1042,
+          "n_bands": 5,
+          "n_inner_scored": 206,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.43239264815199485,
+            "uniform_from_outer": 1.9078507607380737,
+            "zero_velocity": 1.1936471596623315
+          },
+          "rmse_over_zero": 0.3622449437020514,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.14106169213364408
+        },
+        "Ce2": {
+          "n_grid_points": 995,
+          "n_bands": 5,
+          "n_inner_scored": 200,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.4194807053837807,
+            "uniform_from_outer": 2.227863558420218,
+            "zero_velocity": 1.3238885924443813
+          },
+          "rmse_over_zero": 0.3168549889906267,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.12509985816462105
+        },
+        "Ce3": {
+          "n_grid_points": 762,
+          "n_bands": 5,
+          "n_inner_scored": 142,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.2837468308142518,
+            "uniform_from_outer": 0.9458692683529054,
+            "zero_velocity": 0.6364848797501117
+          },
+          "rmse_over_zero": 0.44580294024526196,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.1802986126258169
+        },
+        "Ce4": {
+          "n_grid_points": 637,
+          "n_bands": 5,
+          "n_inner_scored": 134,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.4926893482431319,
+            "uniform_from_outer": 1.5291733116724562,
+            "zero_velocity": 1.0318788507305423
+          },
+          "rmse_over_zero": 0.4774682104341233,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.371176343802887
+        },
+        "Ce5": {
+          "n_grid_points": 623,
+          "n_bands": 5,
+          "n_inner_scored": 116,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.759473560961906,
+            "uniform_from_outer": 1.9068068460092145,
+            "zero_velocity": 1.367979916953052
+          },
+          "rmse_over_zero": 0.5551788820507739,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.3490571251956376
+        },
+        "Ce6": {
+          "n_grid_points": 664,
+          "n_bands": 5,
+          "n_inner_scored": 121,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.2842547786679738,
+            "uniform_from_outer": 1.5425697778181138,
+            "zero_velocity": 0.9423721078943189
+          },
+          "rmse_over_zero": 0.3016375127051735,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.23581240488636274
+        },
+        "Mm1": {
+          "n_grid_points": 1373,
+          "n_bands": 5,
+          "n_inner_scored": 295,
+          "n_opposite_bands": 3,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18400054441793723,
+            "uniform_from_outer": 0.33967854963330213,
+            "zero_velocity": 0.19204348462688672
+          },
+          "rmse_over_zero": 0.9581191716835602,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.8247453044333618
+        },
+        "Mm2": {
+          "n_grid_points": 1442,
+          "n_bands": 5,
+          "n_inner_scored": 314,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18659117291151198,
+            "uniform_from_outer": 0.6917345322177612,
+            "zero_velocity": 0.40581269735173997
+          },
+          "rmse_over_zero": 0.4597962905773331,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.3452618821730551
+        },
+        "Mm3": {
+          "n_grid_points": 1492,
+          "n_bands": 5,
+          "n_inner_scored": 323,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.11280772985071887,
+            "uniform_from_outer": 0.4090749619240811,
+            "zero_velocity": 0.25778357154567705
+          },
+          "rmse_over_zero": 0.4376063578230403,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.08236021185932216
+        },
+        "Mm4": {
+          "n_grid_points": 1512,
+          "n_bands": 5,
+          "n_inner_scored": 319,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.261584529201392,
+            "uniform_from_outer": 0.3571871970444178,
+            "zero_velocity": 0.3098783789544215
+          },
+          "rmse_over_zero": 0.8441522447742869,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.22911377845349648
+        },
+        "Mm5": {
+          "n_grid_points": 1391,
+          "n_bands": 5,
+          "n_inner_scored": 300,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.108881848947971,
+            "uniform_from_outer": 0.2595284687311648,
+            "zero_velocity": 0.12236845331210437
+          },
+          "rmse_over_zero": 0.8897869181223089,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7105294268446195
+        },
+        "Mm6": {
+          "n_grid_points": 1541,
+          "n_bands": 5,
+          "n_inner_scored": 320,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.24118504478842914,
+            "uniform_from_outer": 0.7128825900777755,
+            "zero_velocity": 0.3292944092178855
+          },
+          "rmse_over_zero": 0.7324298197508823,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7766649625191697
+        },
+        "Mm7": {
+          "n_grid_points": 1366,
+          "n_bands": 5,
+          "n_inner_scored": 299,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.1303651019334904,
+            "uniform_from_outer": 0.3083314590814436,
+            "zero_velocity": 0.1908956245778652
+          },
+          "rmse_over_zero": 0.6829129909172709,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.40507825546653536
+        }
+      },
+      "groups": {
+        "Ce": {
+          "n_cells": 6,
+          "cells_with_opposing_regional_means": 6,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 30,
+          "scored_bands": 30,
+          "median_rmse_over_zero": 0.40402394197365665,
+          "median_of_cell_median_relative_net_flux": 0.2080555087560898
+        },
+        "Mm": {
+          "n_cells": 7,
+          "cells_with_opposing_regional_means": 7,
+          "cells_better_than_both_controls": 7,
+          "opposing_bands": 33,
+          "scored_bands": 35,
+          "median_rmse_over_zero": 0.7324298197508823,
+          "median_of_cell_median_relative_net_flux": 0.40507825546653536
+        }
+      }
+    },
+    "axial_35_65": {
+      "settings_z_min_max_radius_q": [
+        0.35,
+        0.65,
+        0.98
+      ],
+      "cells": {
+        "Ce1": {
+          "n_grid_points": 1042,
+          "n_bands": 5,
+          "n_inner_scored": 133,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.4151321615495993,
+            "uniform_from_outer": 1.772643463190663,
+            "zero_velocity": 1.0805705818182807
+          },
+          "rmse_over_zero": 0.38417866313837146,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.14853447722808497
+        },
+        "Ce2": {
+          "n_grid_points": 995,
+          "n_bands": 5,
+          "n_inner_scored": 118,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.48324043529814,
+            "uniform_from_outer": 2.174988365919403,
+            "zero_velocity": 1.3081058178441596
+          },
+          "rmse_over_zero": 0.3694199878222012,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.19043408860369995
+        },
+        "Ce3": {
+          "n_grid_points": 762,
+          "n_bands": 5,
+          "n_inner_scored": 77,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.19869266203484204,
+            "uniform_from_outer": 0.6306615508350408,
+            "zero_velocity": 0.4109147595502111
+          },
+          "rmse_over_zero": 0.4835374184473972,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.19320180371951454
+        },
+        "Ce4": {
+          "n_grid_points": 637,
+          "n_bands": 5,
+          "n_inner_scored": 70,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.44224080318283826,
+            "uniform_from_outer": 1.10347193044346,
+            "zero_velocity": 0.7888661161945217
+          },
+          "rmse_over_zero": 0.5606031164276661,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.3958692234094682
+        },
+        "Ce5": {
+          "n_grid_points": 623,
+          "n_bands": 5,
+          "n_inner_scored": 77,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.6523379657579732,
+            "uniform_from_outer": 1.5974036544960177,
+            "zero_velocity": 1.1509075485740548
+          },
+          "rmse_over_zero": 0.5668030994897926,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.40952029826691283
+        },
+        "Ce6": {
+          "n_grid_points": 664,
+          "n_bands": 5,
+          "n_inner_scored": 73,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.21572802792410803,
+            "uniform_from_outer": 1.302044019839293,
+            "zero_velocity": 0.7691965978226181
+          },
+          "rmse_over_zero": 0.2804588950793258,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.0737931705001837
+        },
+        "Mm1": {
+          "n_grid_points": 1373,
+          "n_bands": 5,
+          "n_inner_scored": 169,
+          "n_opposite_bands": 3,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.1723432903131063,
+            "uniform_from_outer": 0.2279164164019192,
+            "zero_velocity": 0.13143976634889484
+          },
+          "rmse_over_zero": 1.311195957665025,
+          "improves_on_both_controls": false,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7720285940064219
+        },
+        "Mm2": {
+          "n_grid_points": 1442,
+          "n_bands": 5,
+          "n_inner_scored": 186,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.1409121321631939,
+            "uniform_from_outer": 0.6521537984460555,
+            "zero_velocity": 0.41719445514431436
+          },
+          "rmse_over_zero": 0.337761277566477,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2483652991166424
+        },
+        "Mm3": {
+          "n_grid_points": 1492,
+          "n_bands": 5,
+          "n_inner_scored": 180,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.10560302445146459,
+            "uniform_from_outer": 0.32650833596882095,
+            "zero_velocity": 0.21336482512454524
+          },
+          "rmse_over_zero": 0.49494111501191457,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.10598582825284268
+        },
+        "Mm4": {
+          "n_grid_points": 1512,
+          "n_bands": 5,
+          "n_inner_scored": 211,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.24443168420682604,
+            "uniform_from_outer": 0.3228530428533216,
+            "zero_velocity": 0.2842070633792364
+          },
+          "rmse_over_zero": 0.8600478865673531,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.23144401571070838
+        },
+        "Mm5": {
+          "n_grid_points": 1391,
+          "n_bands": 5,
+          "n_inner_scored": 174,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.08959559419056536,
+            "uniform_from_outer": 0.25809182380111023,
+            "zero_velocity": 0.12896742736380795
+          },
+          "rmse_over_zero": 0.6947149060965802,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.5841897990029143
+        },
+        "Mm6": {
+          "n_grid_points": 1541,
+          "n_bands": 5,
+          "n_inner_scored": 182,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.18893311785446243,
+            "uniform_from_outer": 0.61554972048479,
+            "zero_velocity": 0.29059818721412795
+          },
+          "rmse_over_zero": 0.6501524309759256,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.7723194818429145
+        },
+        "Mm7": {
+          "n_grid_points": 1366,
+          "n_bands": 5,
+          "n_inner_scored": 173,
+          "n_opposite_bands": 5,
+          "mean_inner_and_outer_opposite": true,
+          "rmse_in_archived_velocity_units": {
+            "zero_flux_profile": 0.13738781924912705,
+            "uniform_from_outer": 0.2755243825953338,
+            "zero_velocity": 0.202952412600359
+          },
+          "rmse_over_zero": 0.6769459770831224,
+          "improves_on_both_controls": true,
+          "n_complete_flux_bands": 5,
+          "median_relative_absolute_net_flux": 0.2721204024222237
+        }
+      },
+      "groups": {
+        "Ce": {
+          "n_cells": 6,
+          "cells_with_opposing_regional_means": 6,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 30,
+          "scored_bands": 30,
+          "median_rmse_over_zero": 0.43385804079288437,
+          "median_of_cell_median_relative_net_flux": 0.19181794616160724
+        },
+        "Mm": {
+          "n_cells": 7,
+          "cells_with_opposing_regional_means": 7,
+          "cells_better_than_both_controls": 6,
+          "opposing_bands": 33,
+          "scored_bands": 35,
+          "median_rmse_over_zero": 0.6769459770831224,
+          "median_of_cell_median_relative_net_flux": 0.2721204024222237
+        }
+      }
+    }
+  },
+  "unit_cylinder": {
+    "numerical_volume_flux": 2.4424906541753444e-15,
+    "integrated_dissipation": 25.132741228718363,
+    "wall_work": 25.132741228718345
+  },
+  "conditional_power_examples": {
+    "Ce": {
+      "viscosity_Pa_s": 1.0,
+      "assumed_wall_speed_m_per_s": 1e-07,
+      "watt_per_axial_micrometre": 2.513274122871834e-19
+    },
+    "Mm": {
+      "viscosity_Pa_s": 0.1,
+      "assumed_wall_speed_m_per_s": 1e-09,
+      "watt_per_axial_micrometre": 2.5132741228718345e-24
+    }
+  },
+  "interpretation": "Single meridional PIV sections in the workbook. Coordinates were remapped by the authors. Velocity units are not specified by the column labels. Power examples use the paper's typical physical scales as hypothetical wall speeds, not measured work or a calibration of these arrays.",
+  "checks": {
+    "six_worms_and_seven_oocytes": true,
+    "finite_archived_vectors": true,
+    "both_radial_regions_in_every_primary_cell": true,
+    "zero_flux_in_ideal_reference": true,
+    "boundary_work_equals_integrated_dissipation_in_reference": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E46_cytoplasmic_return/run.py": "5f04384ac6180426a9f7b0d0b3cba13e582c93e5f9189eb53ae0f572d4403e69",
+    "experiments/measured_return_sources.py": "cb828eac4c1bb4259572c808ad4a5ade999578cda11f99a930a3641bca3c8be3"
+  }
+}

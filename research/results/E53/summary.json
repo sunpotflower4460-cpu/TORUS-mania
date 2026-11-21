@@ -1,0 +1,870 @@
+{
+  "experiment": "E53",
+  "doi": "10.1091/mbc.E20-01-0058",
+  "source_pdf_page_one_based": 6,
+  "stages": {
+    "fertilization": {
+      "axis": [
+        126.5,
+        603,
+        831.5,
+        572,
+        50
+      ],
+      "printed_PP_DP": [
+        112,
+        9
+      ],
+      "recovered_histogram_totals": [
+        112,
+        9
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          28,
+          3
+        ],
+        [
+          44,
+          3
+        ],
+        [
+          26,
+          1
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        0,
+        9
+      ],
+      "relative_to_printed_denominator": [
+        0.0,
+        1.0
+      ],
+      "always_entry_side_errors": 9,
+      "cue_side_errors": 9,
+      "accuracy": 0.9256198347107438,
+      "always_entry_side_accuracy": 0.9256198347107438,
+      "balanced_accuracy": 0.5
+    },
+    "anaphase_I": {
+      "axis": [
+        695.5,
+        1171,
+        831.5,
+        572,
+        50
+      ],
+      "printed_PP_DP": [
+        139,
+        10
+      ],
+      "recovered_histogram_totals": [
+        139,
+        10
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        1,
+        7
+      ],
+      "relative_to_printed_denominator": [
+        0.007194244604316547,
+        0.7
+      ],
+      "always_entry_side_errors": 10,
+      "cue_side_errors": 8,
+      "accuracy": 0.9463087248322147,
+      "always_entry_side_accuracy": 0.9328859060402684,
+      "balanced_accuracy": 0.6464028776978418
+    },
+    "five_min_after_AI": {
+      "axis": [
+        1272.5,
+        1750,
+        831.5,
+        572,
+        30
+      ],
+      "printed_PP_DP": [
+        134,
+        11
+      ],
+      "recovered_histogram_totals": [
+        134,
+        11
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        3,
+        2
+      ],
+      "relative_to_printed_denominator": [
+        0.022388059701492536,
+        0.18181818181818182
+      ],
+      "always_entry_side_errors": 11,
+      "cue_side_errors": 5,
+      "accuracy": 0.9655172413793104,
+      "always_entry_side_accuracy": 0.9241379310344827,
+      "balanced_accuracy": 0.8978968792401628
+    },
+    "anaphase_II": {
+      "axis": [
+        1836,
+        2312,
+        831.5,
+        572,
+        40
+      ],
+      "printed_PP_DP": [
+        161,
+        11
+      ],
+      "recovered_histogram_totals": [
+        161,
+        11
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          21,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        4,
+        1
+      ],
+      "relative_to_printed_denominator": [
+        0.024844720496894408,
+        0.09090909090909091
+      ],
+      "always_entry_side_errors": 11,
+      "cue_side_errors": 5,
+      "accuracy": 0.9709302325581395,
+      "always_entry_side_accuracy": 0.936046511627907,
+      "balanced_accuracy": 0.9421230942970074
+    },
+    "one_min_before_SB": {
+      "axis": [
+        126.5,
+        603,
+        1316.5,
+        1058,
+        40
+      ],
+      "printed_PP_DP": [
+        170,
+        10
+      ],
+      "recovered_histogram_totals": [
+        170,
+        10
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        4,
+        0
+      ],
+      "relative_to_printed_denominator": [
+        0.023529411764705882,
+        0.0
+      ],
+      "always_entry_side_errors": 10,
+      "cue_side_errors": 4,
+      "accuracy": 0.9777777777777777,
+      "always_entry_side_accuracy": 0.9444444444444444,
+      "balanced_accuracy": 0.9882352941176471
+    },
+    "symmetry_breaking": {
+      "axis": [
+        695.5,
+        1171,
+        1316.5,
+        1058,
+        40
+      ],
+      "printed_PP_DP": [
+        185,
+        12
+      ],
+      "recovered_histogram_totals": [
+        185,
+        12
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          27,
+          0
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        1,
+        0
+      ],
+      "relative_to_printed_denominator": [
+        0.005405405405405406,
+        0.0
+      ],
+      "always_entry_side_errors": 12,
+      "cue_side_errors": 1,
+      "accuracy": 0.9949238578680203,
+      "always_entry_side_accuracy": 0.9390862944162437,
+      "balanced_accuracy": 0.9972972972972973
+    },
+    "before_pronuclear_migration": {
+      "axis": [
+        1272.5,
+        1750,
+        1316.5,
+        1058,
+        140
+      ],
+      "printed_PP_DP": [
+        194,
+        16
+      ],
+      "recovered_histogram_totals": [
+        196,
+        19
+      ],
+      "bins_100_to_0_PP_DP": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          132,
+          0
+        ],
+        [
+          25,
+          0
+        ]
+      ],
+      "wrong_half_PP_DP": [
+        0,
+        0
+      ],
+      "relative_to_printed_denominator": [
+        0.0,
+        0.0
+      ],
+      "always_entry_side_errors": 16,
+      "cue_side_errors": 0,
+      "accuracy": 1.0,
+      "always_entry_side_accuracy": 0.9238095238095239,
+      "balanced_accuracy": 1.0
+    }
+  },
+  "independent_panel_A_reread_error_fraction": {
+    "PP": [
+      0.003341988773391908,
+      0.010669407705004255,
+      0.027232773756327062,
+      0.02773425412138651,
+      0.02579873205437852,
+      0.01358089662322126,
+      0.003341988773391908
+    ],
+    "DP": [
+      0.9965870307167235,
+      0.6996587030716723,
+      0.18088737201365188,
+      0.08873720136518772,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "max_abs_discrepancy_between_panels": 0.008175491217815854,
+  "stages_matching_all_printed_totals": 6,
+  "last_histogram_limitation": "At 140 counts per axis, bars can be under two pixels per embryo. Report printed denominators; verify wrong halves against panel A.",
+  "separate_source_cohorts": {
+    "wildtype_self": {
+      "opposite": 3,
+      "total": 84,
+      "fraction": 0.03571428571428571,
+      "exact_95": [
+        0.007426583122282252,
+        0.10084231157417997
+      ]
+    },
+    "wildtype_mated": {
+      "opposite": 7,
+      "total": 69,
+      "fraction": 0.10144927536231885,
+      "exact_95": [
+        0.04177087817693836,
+        0.19791848235182444
+      ]
+    },
+    "unc_116": {
+      "opposite": 0,
+      "total": 20,
+      "fraction": 0.0,
+      "exact_95": [
+        0.0,
+        0.16843347098308548
+      ]
+    },
+    "yop_1_ret_1": {
+      "opposite": 0,
+      "total": 23,
+      "fraction": 0.0,
+      "exact_95": [
+        0.0,
+        0.14818512891522512
+      ]
+    }
+  },
+  "motion_correlation": {
+    "direction": 0.48,
+    "speed": 0.48,
+    "frames": 69,
+    "zygotes": 5
+  },
+  "checks": {
+    "embedded_image_dimensions": true,
+    "seven_stages_and_two_types": true,
+    "first_six_histograms_recover_both_printed_denominators": true,
+    "independent_panel_agrees_to_two_percentage_points": true,
+    "final_no_wrong_half_bars": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E53_polarity_prediction/run.py": "f384adbdc5bbcce0f045ab41c432aa628d12597aed8c2352645c90d2d671fa74",
+    "experiments/turning_path_sources.py": "23013de4b259f03c9bdf1e53bd7b30ec765a435fe2fd5bb6d098f84634e04b69"
+  }
+}

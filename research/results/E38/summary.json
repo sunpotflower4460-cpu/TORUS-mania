@@ -1,0 +1,416 @@
+{
+  "experiment": "E38",
+  "study_doi": "10.1093/genetics/iyag120",
+  "data_doi": "10.5061/dryad.g4f4qrg51",
+  "accession_download": "https://datadryad.org/api/v2/versions/443502/download",
+  "accession_file_hashes": {
+    "SourceData1a_LRdvp_LRlevel_dryad.csv": "d1ad3c16382cd944896587933d638e152b4b5a0c8369ae342a70330b06a8b3b9",
+    "SourceData1b_LRdvp_seedlinglevel_dryad.csv": "5671a838ccad67aa236a68f189955b08255c2e2292057cfcef044961d59fc0ad"
+  },
+  "all_csv_organ_rows": 2455,
+  "all_csv_seedling_rows": 100,
+  "included_seedlings": 67,
+  "shared_auxinole_dose_uM": 0.5,
+  "random_seed": 382026,
+  "bootstrap_iterations": 4000,
+  "stage_count_audit_differences": [
+    {
+      "seedling_key": [
+        "444 GATA23",
+        0.0,
+        1,
+        7
+      ],
+      "root_table_stage_1_and_2": [
+        4,
+        1
+      ],
+      "seedling_table_stage_1_and_2": [
+        4,
+        2
+      ]
+    },
+    {
+      "seedling_key": [
+        "444 GATA23",
+        0.5,
+        2,
+        7
+      ],
+      "root_table_stage_1_and_2": [
+        9,
+        7
+      ],
+      "seedling_table_stage_1_and_2": [
+        7,
+        9
+      ]
+    }
+  ],
+  "stages": {
+    "1": {
+      "all_labelled_organs": {
+        "stage": "1",
+        "reporters": {
+          "transcriptional": {
+            "control": {
+              "organs": 110,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 4.3090909090909095,
+              "sd": 1.3730395835815274,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.335387488328665
+            },
+            "auxinole": {
+              "organs": 88,
+              "seedlings_with_stage": 15,
+              "seedlings_in_group": 15,
+              "mean": 5.488636363636363,
+              "sd": 2.067784189042848,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.379206349206348
+            },
+            "differences": {
+              "mean": 1.1795454545454538,
+              "sd": 0.6947446054613207
+            },
+            "bootstrap": {
+              "mean": {
+                "treated_minus_control": 1.1795454545454538,
+                "cluster_percentile_interval_95": [
+                  0.6398781371479235,
+                  1.6684515977443606
+                ]
+              },
+              "sd": {
+                "treated_minus_control": 0.6947446054613207,
+                "cluster_percentile_interval_95": [
+                  0.447726647869532,
+                  0.9361048520613886
+                ]
+              }
+            }
+          },
+          "integrase": {
+            "control": {
+              "organs": 115,
+              "seedlings_with_stage": 18,
+              "seedlings_in_group": 18,
+              "mean": 4.243478260869566,
+              "sd": 1.6521719057356627,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.346170033670034
+            },
+            "auxinole": {
+              "organs": 115,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 4.547826086956522,
+              "sd": 1.874311467782468,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.493018419489008
+            },
+            "differences": {
+              "mean": 0.3043478260869561,
+              "sd": 0.22213956204680518
+            },
+            "bootstrap": {
+              "mean": {
+                "treated_minus_control": 0.3043478260869561,
+                "cluster_percentile_interval_95": [
+                  -0.06610961428835513,
+                  0.6272611205622693
+                ]
+              },
+              "sd": {
+                "treated_minus_control": 0.22213956204680518,
+                "cluster_percentile_interval_95": [
+                  -0.01597963017082896,
+                  0.45537121575121664
+                ]
+              }
+            }
+          }
+        },
+        "transcriptional_minus_integrase_treatment_effect": {
+          "mean": {
+            "treated_minus_control": 0.8751976284584977,
+            "cluster_percentile_interval_95": [
+              0.25462707179859173,
+              1.4896547637601478
+            ]
+          },
+          "sd": {
+            "treated_minus_control": 0.4726050434145155,
+            "cluster_percentile_interval_95": [
+              0.13215685863039092,
+              0.8138960792779228
+            ]
+          }
+        }
+      },
+      "excluding_seedlings_with_inconsistent_stage_counts": {
+        "stage": "1",
+        "reporters": {
+          "transcriptional": {
+            "control": {
+              "organs": 110,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 4.3090909090909095,
+              "sd": 1.3730395835815274,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.335387488328665
+            },
+            "auxinole": {
+              "organs": 88,
+              "seedlings_with_stage": 15,
+              "seedlings_in_group": 15,
+              "mean": 5.488636363636363,
+              "sd": 2.067784189042848,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.379206349206348
+            },
+            "differences": {
+              "mean": 1.1795454545454538,
+              "sd": 0.6947446054613207
+            }
+          },
+          "integrase": {
+            "control": {
+              "organs": 111,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 4.2342342342342345,
+              "sd": 1.6676328076045939,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.337121212121212
+            },
+            "auxinole": {
+              "organs": 106,
+              "seedlings_with_stage": 16,
+              "seedlings_in_group": 16,
+              "mean": 4.471698113207547,
+              "sd": 1.8372212307867415,
+              "median": 4.0,
+              "equal_seedling_weight_mean": 4.433554292929293
+            },
+            "differences": {
+              "mean": 0.23746387897331278,
+              "sd": 0.16958842318214762
+            }
+          }
+        },
+        "transcriptional_minus_integrase_treatment_effect": {
+          "mean": 0.942081575572141,
+          "sd": 0.525156182279173
+        }
+      }
+    },
+    "2": {
+      "all_labelled_organs": {
+        "stage": "2",
+        "reporters": {
+          "transcriptional": {
+            "control": {
+              "organs": 98,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 5.3061224489795915,
+              "sd": 1.1613018225233276,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.336274509803921
+            },
+            "auxinole": {
+              "organs": 74,
+              "seedlings_with_stage": 15,
+              "seedlings_in_group": 15,
+              "mean": 6.472972972972973,
+              "sd": 1.8960880634783326,
+              "median": 6.0,
+              "equal_seedling_weight_mean": 6.515634920634921
+            },
+            "differences": {
+              "mean": 1.1668505239933813,
+              "sd": 0.734786240955005
+            },
+            "bootstrap": {
+              "mean": {
+                "treated_minus_control": 1.1668505239933813,
+                "cluster_percentile_interval_95": [
+                  0.694071944016217,
+                  1.6360291760635564
+                ]
+              },
+              "sd": {
+                "treated_minus_control": 0.734786240955005,
+                "cluster_percentile_interval_95": [
+                  0.31424942346195733,
+                  1.0832330704082458
+                ]
+              }
+            }
+          },
+          "integrase": {
+            "control": {
+              "organs": 78,
+              "seedlings_with_stage": 18,
+              "seedlings_in_group": 18,
+              "mean": 5.141025641025641,
+              "sd": 1.213820404079604,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.15
+            },
+            "auxinole": {
+              "organs": 50,
+              "seedlings_with_stage": 14,
+              "seedlings_in_group": 17,
+              "mean": 5.12,
+              "sd": 1.3036839481771239,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.1732993197278905
+            },
+            "differences": {
+              "mean": -0.021025641025641306,
+              "sd": 0.08986354409751995
+            },
+            "bootstrap": {
+              "mean": {
+                "treated_minus_control": -0.021025641025641306,
+                "cluster_percentile_interval_95": [
+                  -0.3828678038379528,
+                  0.3398651807477535
+                ]
+              },
+              "sd": {
+                "treated_minus_control": 0.08986354409751995,
+                "cluster_percentile_interval_95": [
+                  -0.2344693794468137,
+                  0.3636710707015704
+                ]
+              }
+            }
+          }
+        },
+        "transcriptional_minus_integrase_treatment_effect": {
+          "mean": {
+            "treated_minus_control": 1.1878761650190226,
+            "cluster_percentile_interval_95": [
+              0.598549628455417,
+              1.7745024958568152
+            ]
+          },
+          "sd": {
+            "treated_minus_control": 0.644922696857485,
+            "cluster_percentile_interval_95": [
+              0.13557107814481342,
+              1.100356977114772
+            ]
+          }
+        }
+      },
+      "excluding_seedlings_with_inconsistent_stage_counts": {
+        "stage": "2",
+        "reporters": {
+          "transcriptional": {
+            "control": {
+              "organs": 98,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 5.3061224489795915,
+              "sd": 1.1613018225233276,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.336274509803921
+            },
+            "auxinole": {
+              "organs": 74,
+              "seedlings_with_stage": 15,
+              "seedlings_in_group": 15,
+              "mean": 6.472972972972973,
+              "sd": 1.8960880634783326,
+              "median": 6.0,
+              "equal_seedling_weight_mean": 6.515634920634921
+            },
+            "differences": {
+              "mean": 1.1668505239933813,
+              "sd": 0.734786240955005
+            }
+          },
+          "integrase": {
+            "control": {
+              "organs": 77,
+              "seedlings_with_stage": 17,
+              "seedlings_in_group": 17,
+              "mean": 5.12987012987013,
+              "sd": 1.2177486707104583,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.1000000000000005
+            },
+            "auxinole": {
+              "organs": 43,
+              "seedlings_with_stage": 13,
+              "seedlings_in_group": 16,
+              "mean": 5.116279069767442,
+              "sd": 1.3488849420660192,
+              "median": 5.0,
+              "equal_seedling_weight_mean": 5.175641025641026
+            },
+            "differences": {
+              "mean": -0.013591060102688068,
+              "sd": 0.13113627135556083
+            }
+          }
+        },
+        "transcriptional_minus_integrase_treatment_effect": {
+          "mean": 1.1804415840960694,
+          "sd": 0.6036499695994442
+        }
+      }
+    }
+  },
+  "seedling_outcomes": {
+    "transcriptional": {
+      "0.0": {
+        "seedlings": 17,
+        "main root length (cm)": 3.1448235294117644,
+        "total LRs": 30.88235294117647,
+        "emerged LRs": 8.0,
+        "emerged LR density": 2.534117647058824
+      },
+      "0.5": {
+        "seedlings": 15,
+        "main root length (cm)": 2.9032,
+        "total LRs": 27.266666666666666,
+        "emerged LRs": 6.2,
+        "emerged LR density": 2.1146666666666665
+      }
+    },
+    "integrase": {
+      "0.0": {
+        "seedlings": 18,
+        "main root length (cm)": 2.4994444444444444,
+        "total LRs": 25.5,
+        "emerged LRs": 5.111111111111111,
+        "emerged LR density": 2.0383333333333336
+      },
+      "0.5": {
+        "seedlings": 17,
+        "main root length (cm)": 2.237058823529412,
+        "total LRs": 20.764705882352942,
+        "emerged LRs": 3.1176470588235294,
+        "emerged LR density": 1.4070588235294117
+      }
+    }
+  },
+  "checks": {
+    "all_early_stage_records_have_matching_seedling": true,
+    "every_group_uses_two_cell_counting_batches": true,
+    "same_reporters_at_each_stage": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E38_founder_reporters/run.py": "e45d9f1da0bfd8d72c027afefa766b450d8b2071244425bfa723d1e2cd45c91e",
+    "experiments/return_energy_data.py": "819f9f9ad2c784416db27be8c77de0c193d1d12f528e2fa81a85ce64155a160d"
+  }
+}
