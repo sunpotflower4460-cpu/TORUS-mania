@@ -1,0 +1,205 @@
+{
+  "experiment": "E66",
+  "experiment_role": "image-only tracking of one preselected E65 candidate",
+  "doi": "10.1038/s41592-025-02778-0",
+  "E62_track_id": 251354,
+  "E65_track_id": 415514,
+  "start_through_stop_frames_inclusive": [
+    308,
+    338
+  ],
+  "pyramid_level": 2,
+  "channel": 0,
+  "xy_and_z_archive_units_per_image_voxel": [
+    4.0,
+    4.0,
+    16.0
+  ],
+  "starting_seed_xyz_in_archive_units": [
+    1085.0,
+    685.0,
+    312.0
+  ],
+  "image_peak_count_by_frame": [
+    17,
+    20,
+    19,
+    15,
+    16,
+    18,
+    19,
+    17,
+    15,
+    17,
+    16,
+    18,
+    17,
+    16,
+    16,
+    17,
+    15,
+    17,
+    15,
+    17,
+    16,
+    16,
+    14,
+    14,
+    15,
+    14,
+    15,
+    18,
+    20,
+    20,
+    18
+  ],
+  "path_screen_by_prediction_radius": {
+    "18": {
+      "number_of_frames_tracked": 3,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        7.866511063831061,
+        8.540376854757843,
+        8.900383376007717
+      ],
+      "median_distance": 8.540376854757843,
+      "max_distance": 8.900383376007717,
+      "fraction_of_target_frames_within_16": 0.0967741935483871,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.909261018037796,
+          -1.2729967832565308,
+          -0.6243098601698875
+        ],
+        [
+          -3.3363683819770813,
+          -2.8282730132341385,
+          -1.1320010423660278
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.6121746897697,
+        682.5856347084045,
+        304.5232073664665
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      }
+    },
+    "22": {
+      "number_of_frames_tracked": 3,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        7.866511063831061,
+        8.540376854757843,
+        8.900383376007717
+      ],
+      "median_distance": 8.540376854757843,
+      "max_distance": 8.900383376007717,
+      "fraction_of_target_frames_within_16": 0.0967741935483871,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.909261018037796,
+          -1.2729967832565308,
+          -0.6243098601698875
+        ],
+        [
+          -3.3363683819770813,
+          -2.8282730132341385,
+          -1.1320010423660278
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.6121746897697,
+        682.5856347084045,
+        304.5232073664665
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      }
+    },
+    "26": {
+      "number_of_frames_tracked": 3,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        7.866511063831061,
+        8.540376854757843,
+        8.900383376007717
+      ],
+      "median_distance": 8.540376854757843,
+      "max_distance": 8.900383376007717,
+      "fraction_of_target_frames_within_16": 0.0967741935483871,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.909261018037796,
+          -1.2729967832565308,
+          -0.6243098601698875
+        ],
+        [
+          -3.3363683819770813,
+          -2.8282730132341385,
+          -1.1320010423660278
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.6121746897697,
+        682.5856347084045,
+        304.5232073664665
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      }
+    }
+  },
+  "scope": "A deterministic brightness-peak tracker uses one coordinate seed and then image peaks. The pyramid's coarse axial resolution and neighboring nuclei could limit correspondence. This is the same acquisition as the compared tracks and a single selected branch.",
+  "checks": {
+    "source_input_includes_all_31_registered_frames": true,
+    "multiple_candidate_peaks_per_frame_in_seed_region": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E66_image_only_track/run.py": "82ee2a95e2669d4b5b7962b76e4352b6f773015ef7ca32f89c1a38e6c7d1fd23",
+    "E66_image_only_track/archive.py": "9d63ebe8da658ecebb2ae4ff1322af29c3c229de28e5fe02f5c94ba78ffd06d1",
+    "E62_cell_returns/run.py": "ebabf16007533e63e0f1d94f9a246a75a6870eeb06d46b6713cb2ce5ce42d78d",
+    "experiments/embryo_history_sources.py": "649b52f51df30117a22f78ae17aa49e5ca60ccb3d48bb39c6177df3d5a1ddc0b"
+  }
+}

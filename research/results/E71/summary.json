@@ -1,0 +1,68 @@
+{
+  "experiment": "E71",
+  "doi": "10.1104/pp.81.3.889",
+  "source_pages_read": [
+    892,
+    893,
+    894
+  ],
+  "figure_4_and_page_892_hplc": {
+    "elapsed_minutes": 4,
+    "solvent_input_minor_peak_fraction": 0.03,
+    "root_extract_minor_peak_fraction": 0.08,
+    "root_extract_major_peak_fraction_by_difference": 0.92,
+    "minor_peak_percentage_point_difference": 5.0,
+    "radioactivity_extracted_from_tissue_for_fig4b": 0.995,
+    "root_major_peak_retention_time_minutes": 18.5,
+    "minor_peak_retention_times_minutes": [
+      14,
+      15,
+      16
+    ],
+    "evidence": "The dominant peak of 5-tritium-labeled material co-elutes with an IAA standard. The extraction yield is the share of tissue radioactivity recovered, whereas the minor fraction is a share within the chromatogram."
+  },
+  "table_i_and_page_894": {
+    "input_IAA_total_molar": 1e-08,
+    "uptake_over_4_minutes": {
+      "stele": {
+        "tissue_fresh_mass_mg_per_20_pieces": 22.0,
+        "pmol_per_g_fresh_mass_per_4min": 22.8,
+        "pmol_per_piece_per_4min": 0.02508,
+        "reported_saturable_fraction": 0.61,
+        "saturable_pmol_per_g_fresh_mass_per_4min": 13.908,
+        "nonsaturable_pmol_per_g_fresh_mass_per_4min": 8.892000000000001
+      },
+      "cortex": {
+        "tissue_fresh_mass_mg_per_20_pieces": 89.2,
+        "pmol_per_g_fresh_mass_per_4min": 12.4,
+        "pmol_per_piece_per_4min": 0.055304,
+        "reported_saturable_fraction": 0.64,
+        "saturable_pmol_per_g_fresh_mass_per_4min": 7.936000000000001,
+        "nonsaturable_pmol_per_g_fresh_mass_per_4min": 4.4639999999999995
+      },
+      "whole_2_to_7_mm_region": {
+        "tissue_fresh_mass_mg_per_20_pieces": 112.0,
+        "pmol_per_g_fresh_mass_per_4min": 10.6,
+        "pmol_per_piece_per_4min": 0.05935999999999999,
+        "reported_saturable_fraction": 0.68,
+        "saturable_pmol_per_g_fresh_mass_per_4min": 7.208,
+        "nonsaturable_pmol_per_g_fresh_mass_per_4min": 3.3919999999999995
+      }
+    },
+    "relative_stele_to_cortex": {
+      "fresh_mass_per_piece": 0.24663677130044842,
+      "uptake_per_piece": 0.45349341819759875,
+      "uptake_per_unit_fresh_mass": 1.8387096774193548
+    },
+    "scope": "Both isolated tissues from 5–10 mm. Whole segment comes from 2–7 mm. Relative per-mass uptake is not radial inward flux in an intact root."
+  },
+  "checks": {
+    "fresh_mass_required_for_reported_direction_of_tissue_difference": true,
+    "calculated_major_peak_is_between_90_and_95_percent": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E71_iaa_uptake/run.py": "ae4e6c523a12a9a1d88ad3d4d106e2cb90201f73fe289ba4a5620abe6fa56e20",
+    "experiments/iaa_embryo_sources.py": "c9c6b775926e7a6043ec82a0b498e0281e998abf68e6956143f7b82a3accef8f"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "experiment": "E49",
+  "doi": "10.1104/pp.103.022582",
+  "shootward_fig3a": {
+    "exposure_h": 5,
+    "source": "root tip",
+    "segment_edges_mm": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      14,
+      19
+    ],
+    "pixel_zero_tick_value": [
+      351,
+      38,
+      4
+    ],
+    "x": [
+      117,
+      172,
+      226,
+      281,
+      335,
+      389
+    ],
+    "IAA": {
+      "marker_rows": [
+        200,
+        290,
+        338,
+        347,
+        347,
+        347
+      ],
+      "pmol_equivalent": [
+        1.9297124600638977,
+        0.779552715654952,
+        0.16613418530351437,
+        0.051118210862619806,
+        0.051118210862619806,
+        0.051118210862619806
+      ],
+      "reading_halfwidth_pmol": 0.025559105431309903
+    },
+    "IBA": {
+      "marker_rows": [
+        91,
+        247,
+        322,
+        344,
+        350,
+        347
+      ],
+      "pmol_equivalent": [
+        3.322683706070287,
+        1.329073482428115,
+        0.3706070287539936,
+        0.08945686900958466,
+        0.012779552715654952,
+        0.051118210862619806
+      ],
+      "reading_halfwidth_pmol": 0.025559105431309903
+    }
+  },
+  "rootward_fig3b": {
+    "label_min": 10,
+    "chase_min": 50,
+    "donor_from_tip_mm": 20,
+    "segment_edges_from_donor_mm": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "pixel_zero_tick_value": [
+      754,
+      433,
+      12
+    ],
+    "x": [
+      109,
+      141,
+      173,
+      206,
+      237,
+      269,
+      301,
+      333,
+      365,
+      397
+    ],
+    "IAA": {
+      "marker_rows": [
+        679,
+        683,
+        709,
+        710,
+        717,
+        735,
+        734,
+        729,
+        738,
+        734
+      ],
+      "pmol_equivalent": [
+        2.803738317757009,
+        2.6542056074766354,
+        1.6822429906542056,
+        1.644859813084112,
+        1.3831775700934579,
+        0.7102803738317757,
+        0.7476635514018691,
+        0.9345794392523363,
+        0.5981308411214953,
+        0.7476635514018691
+      ],
+      "reading_halfwidth_pmol": 0.07476635514018691,
+      "mean_12_to_20_mm_pmol": 0.7570093457943925,
+      "last_two_bins_before_10mm_minus_background_pmol": [
+        0.8878504672897196,
+        0.6261682242990654
+      ]
+    },
+    "IBA": {
+      "marker_rows": [
+        518,
+        592,
+        594,
+        659,
+        665,
+        725,
+        721,
+        710,
+        732,
+        715
+      ],
+      "pmol_equivalent": [
+        8.822429906542055,
+        6.05607476635514,
+        5.981308411214953,
+        3.5514018691588785,
+        3.3271028037383177,
+        1.0841121495327102,
+        1.233644859813084,
+        1.644859813084112,
+        0.822429906542056,
+        1.4579439252336448
+      ],
+      "reading_halfwidth_pmol": 0.07476635514018691,
+      "mean_12_to_20_mm_pmol": 1.2897196261682242,
+      "last_two_bins_before_10mm_minus_background_pmol": [
+        2.2616822429906542,
+        2.0373831775700935
+      ]
+    }
+  },
+  "table_1": {
+    "rootward": {
+      "IAA": {
+        "control_and_NPA_pmol": [
+          4.5,
+          3.3
+        ],
+        "NPA_over_control": 0.7333333333333333
+      },
+      "IBA": {
+        "control_and_NPA_pmol": [
+          11.4,
+          11.8
+        ],
+        "NPA_over_control": 1.0350877192982457
+      }
+    },
+    "shootward": {
+      "IAA": {
+        "control_and_NPA_pmol": [
+          2.7,
+          1.6
+        ],
+        "NPA_over_control": 0.5925925925925926
+      },
+      "IBA": {
+        "control_and_NPA_pmol": [
+          10.2,
+          10.6
+        ],
+        "NPA_over_control": 1.0392156862745099
+      }
+    }
+  },
+  "reported_front_mm_after_one_hour": [
+    8,
+    10
+  ],
+  "individual_arrival_time_available": false,
+  "chemical_scope": "The whole-seedling IBA TLC and the isotope measurements of individual segments used different samples.",
+  "checks": {
+    "figure_dimensions": true,
+    "both_profiles_complete": true,
+    "distance_sum_matches_pulse_donor": true,
+    "matched_table_treatments": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E49_root_pulse/run.py": "e21296f6a47eeb52e07afaf596959c168d6781c58ebeaf2a51f62c494c282ddd",
+    "experiments/turning_path_sources.py": "23013de4b259f03c9bdf1e53bd7b30ec765a435fe2fd5bb6d098f84634e04b69"
+  }
+}
