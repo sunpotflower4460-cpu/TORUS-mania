@@ -144,6 +144,23 @@ def run(raw, out):
     vehicle = vehicle_work(rows, time, strain, force)
     peak = np.sort([row["peak_work_pj"] for row in vehicle])
     example = example_work(worksheet(raw / names[1], "FigS8"))
+    impulse_nn_min = compare(control_impulse, treated_impulse, rng)
+    impulse_nn_s = {
+        "vehicle_n": impulse_nn_min["vehicle_n"],
+        "rock_inhibition_n": impulse_nn_min["rock_inhibition_n"],
+        **{
+            key: 60 * impulse_nn_min[key]
+            for key in (
+                "vehicle_mean",
+                "rock_inhibition_mean",
+                "vehicle_minus_rock_inhibition",
+            )
+        },
+        "bootstrap_percentile_95_ci_difference": [
+            60 * bound
+            for bound in impulse_nn_min["bootstrap_percentile_95_ci_difference"]
+        ],
+    }
     summary = {
         "experiment": "E72",
         "doi": "10.1038/s41563-024-01942-9",
@@ -160,10 +177,8 @@ def run(raw, out):
             "comparisons_at_minutes": force_stats,
         },
         "signed_impulse_0_to_60_min": {
-            "complete_cases_nn_min": compare(control_impulse, treated_impulse, rng),
-            "complete_cases_nn_s": compare(
-                control_impulse * 60, treated_impulse * 60, rng
-            ),
+            "complete_cases_nn_min": impulse_nn_min,
+            "complete_cases_nn_s": impulse_nn_s,
             "interpolated_30_min_if_missing_nn_min": compare(
                 control_imputed, treated_imputed, rng
             ),
