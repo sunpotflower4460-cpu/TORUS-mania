@@ -1,0 +1,206 @@
+{
+  "experiment": "E32",
+  "model_base_period_h": 1.8295520085568402,
+  "cell_production_per_h": 2.5,
+  "E29_training_estimates_sha256": "f57796a45c501ea06ba46f9c831fd977a483a92bf936b0d096bef17fae2244d7",
+  "period_units_note": "E29 supplies the base interval only. These are hypothetical pulse sequences.",
+  "N_cycles": 40000,
+  "rng_seed": 29032,
+  "weak_peak_amplitude_arbitrary": 0.35,
+  "fixed_rate_and_fluctuating_comparisons": {
+    "0.25": {
+      "fixed_period_thinned": {
+        "retained_sites": 10044,
+        "rate_per_hour_for_full_window": 0.13724671330773972,
+        "mean_interval_h": 7.286327958403658,
+        "coefficient_of_variation": 0.8715161870531957,
+        "mean_spacing_in_mature_cell_lengths": 18.215819896009144
+      },
+      "longer_fixed_period": {
+        "retained_sites": 10000,
+        "rate_per_hour_for_full_window": 0.13664547322554732,
+        "mean_interval_h": 7.318208034227361,
+        "coefficient_of_variation": 4.5047561385541243e-13,
+        "mean_spacing_in_mature_cell_lengths": 18.295520085568402
+      },
+      "longer_fluctuating_period_matched_sites": {
+        "retained_sites": 10044,
+        "rate_per_hour_for_full_window": 0.13724671330773972,
+        "mean_interval_h": 7.286327958403658,
+        "coefficient_of_variation": 0.8715161870531957,
+        "mean_spacing_in_mature_cell_lengths": 18.215819896009144
+      },
+      "exact_mean_interval_h": 7.318208034227361,
+      "exact_site_rate_per_hour": 0.1366454732255473,
+      "exact_thinned_interval_cv": 0.8660254037844386,
+      "all_site_times_equal_under_coupling": true
+    },
+    "0.5": {
+      "fixed_period_thinned": {
+        "retained_sites": 19937,
+        "rate_per_hour_for_full_window": 0.27243007996977364,
+        "mean_interval_h": 3.670483654406068,
+        "coefficient_of_variation": 0.703544997442262,
+        "mean_spacing_in_mature_cell_lengths": 9.17620913601517
+      },
+      "longer_fixed_period": {
+        "retained_sites": 20000,
+        "rate_per_hour_for_full_window": 0.27329094645109464,
+        "mean_interval_h": 3.659104017113681,
+        "coefficient_of_variation": 8.966714473727561e-13,
+        "mean_spacing_in_mature_cell_lengths": 9.147760042784203
+      },
+      "longer_fluctuating_period_matched_sites": {
+        "retained_sites": 19937,
+        "rate_per_hour_for_full_window": 0.27243007996977364,
+        "mean_interval_h": 3.670483654406068,
+        "coefficient_of_variation": 0.703544997442262,
+        "mean_spacing_in_mature_cell_lengths": 9.17620913601517
+      },
+      "exact_mean_interval_h": 3.6591040171136804,
+      "exact_site_rate_per_hour": 0.2732909464510946,
+      "exact_thinned_interval_cv": 0.7071067811865476,
+      "all_site_times_equal_under_coupling": true
+    },
+    "0.8": {
+      "fixed_period_thinned": {
+        "retained_sites": 31991,
+        "rate_per_hour_for_full_window": 0.4371425333958484,
+        "mean_interval_h": 2.287483328735478,
+        "coefficient_of_variation": 0.44469256849315475,
+        "mean_spacing_in_mature_cell_lengths": 5.718708321838695
+      },
+      "longer_fixed_period": {
+        "retained_sites": 32000,
+        "rate_per_hour_for_full_window": 0.43726551432175137,
+        "mean_interval_h": 2.2869400106960502,
+        "coefficient_of_variation": 1.849521192449506e-12,
+        "mean_spacing_in_mature_cell_lengths": 5.717350026740125
+      },
+      "longer_fluctuating_period_matched_sites": {
+        "retained_sites": 31991,
+        "rate_per_hour_for_full_window": 0.4371425333958484,
+        "mean_interval_h": 2.287483328735478,
+        "coefficient_of_variation": 0.44469256849315475,
+        "mean_spacing_in_mature_cell_lengths": 5.718708321838695
+      },
+      "exact_mean_interval_h": 2.2869400106960502,
+      "exact_site_rate_per_hour": 0.4372655143217514,
+      "exact_thinned_interval_cv": 0.44721359549995787,
+      "all_site_times_equal_under_coupling": true
+    }
+  },
+  "preview": {
+    "all_pulse_times_fixed_period_h": [
+      1.8295520085568402,
+      3.6591040171136804,
+      5.488656025670521,
+      7.318208034227361,
+      9.147760042784201,
+      10.977312051341041,
+      12.806864059897881,
+      14.636416068454722,
+      16.46596807701156,
+      18.295520085568402,
+      20.125072094125244,
+      21.954624102682082,
+      23.78417611123892,
+      25.613728119795763,
+      27.443280128352605,
+      29.272832136909443,
+      31.10238414546628,
+      32.93193615402312,
+      34.761488162579965,
+      36.591040171136804,
+      38.42059217969364,
+      40.25014418825049,
+      42.079696196807326,
+      43.909248205364165
+    ],
+    "weak_amplitude_and_strong_amplitude": [
+      0.35,
+      0.35,
+      0.35,
+      1.0,
+      1.0,
+      1.0,
+      0.35,
+      1.0,
+      0.35,
+      0.35,
+      1.0,
+      0.35,
+      0.35,
+      1.0,
+      0.35,
+      1.0,
+      0.35,
+      0.35,
+      1.0,
+      0.35,
+      1.0,
+      1.0,
+      0.35,
+      1.0
+    ],
+    "common_persistent_site_times_h": [
+      7.318208034227361,
+      9.147760042784201,
+      10.977312051341041,
+      14.636416068454722,
+      20.125072094125244,
+      25.613728119795763,
+      29.272832136909443,
+      34.761488162579965,
+      38.42059217969364,
+      40.25014418825049,
+      43.909248205364165
+    ]
+  },
+  "threshold_detector_by_noise_sd": {
+    "0.05": {
+      "threshold_at_5_percent_false_positives": 0.08224268134757362,
+      "largest_threshold_at_80_percent_sensitivity": 0.30791893832135425,
+      "both_requirements_possible": true,
+      "theory_sensitivity_at_5_percent_false_positives": 0.9999999572564078,
+      "simulated_false_positive_rate": 0.050625,
+      "simulated_sensitivity": 1.0
+    },
+    "0.1": {
+      "threshold_at_5_percent_false_positives": 0.16448536269514724,
+      "largest_threshold_at_80_percent_sensitivity": 0.2658378766427085,
+      "both_requirements_possible": true,
+      "theory_sensitivity_at_5_percent_false_positives": 0.9682123363949391,
+      "simulated_false_positive_rate": 0.050625,
+      "simulated_sensitivity": 0.96755
+    },
+    "0.2": {
+      "threshold_at_5_percent_false_positives": 0.3289707253902945,
+      "largest_threshold_at_80_percent_sensitivity": 0.1816757532854171,
+      "both_requirements_possible": false,
+      "theory_sensitivity_at_5_percent_false_positives": 0.5418701685774873,
+      "simulated_false_positive_rate": 0.050625,
+      "simulated_sensitivity": 0.538525
+    },
+    "0.35": {
+      "threshold_at_5_percent_false_positives": 0.5756987694330152,
+      "largest_threshold_at_80_percent_sensitivity": 0.05543256824948001,
+      "both_requirements_possible": false,
+      "theory_sensitivity_at_5_percent_false_positives": 0.2595110228414442,
+      "simulated_false_positive_rate": 0.050625,
+      "simulated_sensitivity": 0.257825
+    }
+  },
+  "largest_sd_with_both_requirements": 0.14076152771807496,
+  "detector_note": "Measurements are at known windows with no stable site. No reporter kinetics or peak-timing uncertainty included.",
+  "checks": {
+    "geometric_expected_spacing_within_three_percent": true,
+    "geometric_interval_cv_within_three_percentage_points": true,
+    "paired_site_times_equal": true,
+    "gaussian_detection_simulation_matches_analytic_percentages": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E32_pulse_visibility/run.py": "6e06532e1dcf2cf3868335333a3a98311f3fa355e57a61370d86202a8ba0dee8"
+  }
+}

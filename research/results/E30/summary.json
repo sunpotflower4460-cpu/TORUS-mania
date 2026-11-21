@@ -1,0 +1,132 @@
+{
+  "experiment": "E30",
+  "study_doi": "10.1126/science.abb7250",
+  "figure_panel": "3C",
+  "figure_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84bd/7758939/40e6006dffcc/nihms-1649559-f0003.jpg",
+  "figure_sha256": "5648f6afab9948182d38dc82be3017e0982c425e8cb8409a6fd4b99c178f297c",
+  "units": "prebranch sites per centimetre of primary root",
+  "marker": "pCLE44::LUC",
+  "axis_y_zero_fifteen": [
+    250.5,
+    60.5
+  ],
+  "box_values": {
+    "WT_mock": {
+      "median": 5.921052631578947,
+      "quartiles_q1_q3": [
+        5.407894736842105,
+        6.7105263157894735
+      ],
+      "top_median_bottom_rows": [
+        165.5,
+        175.5,
+        182.0
+      ]
+    },
+    "gnom184_mock": {
+      "median": 0.0,
+      "quartiles_q1_q3": [
+        0.0,
+        0.0
+      ],
+      "top_median_bottom_rows": [
+        250.5,
+        250.5,
+        250.5
+      ]
+    },
+    "agd3_26_mock": {
+      "median": 5.723684210526315,
+      "quartiles_q1_q3": [
+        5.289473684210526,
+        6.7105263157894735
+      ],
+      "top_median_bottom_rows": [
+        165.5,
+        178.0,
+        183.5
+      ]
+    },
+    "agd3_SALK_mock": {
+      "median": 6.0,
+      "quartiles_q1_q3": [
+        5.328947368421052,
+        7.105263157894736
+      ],
+      "top_median_bottom_rows": [
+        160.5,
+        174.5,
+        183.0
+      ]
+    },
+    "gnom184_agd3_26_mock": {
+      "median": 3.0789473684210527,
+      "quartiles_q1_q3": [
+        2.56578947368421,
+        3.6710526315789473
+      ],
+      "top_median_bottom_rows": [
+        204.0,
+        211.5,
+        218.0
+      ]
+    },
+    "WT_BFA": {
+      "median": 0.0,
+      "quartiles_q1_q3": [
+        0.0,
+        0.0
+      ],
+      "top_median_bottom_rows": [
+        250.5,
+        250.5,
+        250.5
+      ]
+    },
+    "agd3_26_BFA": {
+      "median": 2.4473684210526314,
+      "quartiles_q1_q3": [
+        1.4605263157894737,
+        3.0789473684210527
+      ],
+      "top_median_bottom_rows": [
+        211.5,
+        219.5,
+        232.0
+      ]
+    },
+    "agd3_SALK_BFA": {
+      "median": 3.789473684210526,
+      "quartiles_q1_q3": [
+        2.6052631578947367,
+        4.7368421052631575
+      ],
+      "top_median_bottom_rows": [
+        190.5,
+        202.5,
+        217.5
+      ]
+    }
+  },
+  "contrasts_of_medians": {
+    "gnom184_minus_WT_mock": -5.921052631578947,
+    "suppressor_double_minus_gnom184_mock": 3.0789473684210527,
+    "suppressor_double_minus_WT_mock": -2.8421052631578942,
+    "BFA_minus_mock_by_genotype": {
+      "WT": -5.921052631578947,
+      "agd3_26": -3.2763157894736836,
+      "agd3_SALK": -2.210526315789474
+    },
+    "genetic_recovery_fraction_of_WT_gnom_deficit": 0.52
+  },
+  "reading_halfwidth_per_box_line": 0.23684210526315788,
+  "reading_halfwidth_for_median_difference": 0.47368421052631576,
+  "checks": {
+    "eight_boxes_read": true,
+    "median_between_read_quartiles": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E30_vesicle_transport/run.py": "158929080c82a6dc9ac0ca88e90d2afa9c601fd09127a618c7198352f58d9156"
+  }
+}

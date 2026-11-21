@@ -1,0 +1,104 @@
+{
+  "experiment": "E31",
+  "study_doi": "10.1126/sciadv.abd4722",
+  "sources": {
+    "perianez_article.pdf": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7775764.1/PMC7775764.1.pdf",
+      "sha256": "77b9b645725ee549d666cdab90431c42eff5cd77149810180547951b575e2d2c"
+    },
+    "perianez_sm.pdf": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7775764.1/abd4722_SM.pdf",
+      "sha256": "c6681d011aa2a5550a72cb44c840ab7814ebcfd2608132a1e7b63b5f7d04745f"
+    }
+  },
+  "figure_1E_founder_marker_cell_counts": {
+    "dose_muM_estradiol": [
+      0,
+      0.1,
+      0.5,
+      10
+    ],
+    "founder_marker_group_means": [
+      19.322766570605186,
+      31.902017291066283,
+      30.47550432276657,
+      764.7391304347826
+    ],
+    "bar_top_rows": [
+      1368,
+      1271,
+      1282,
+      1019
+    ],
+    "readout_halfwidth_by_group": [
+      0.38904899135446686,
+      0.38904899135446686,
+      0.38904899135446686,
+      0.3913043478260869
+    ],
+    "note": "Inducible line scored in a separate experiment from the root and primordium counts."
+  },
+  "figure_S2C_post_initiation_counts": {
+    "days_post_imbibition": [
+      6,
+      9,
+      12
+    ],
+    "reported_min_n_per_sample": 20,
+    "primordia_plus_lateral_roots": {
+      "WT": {
+        "marker_rows": [
+          415.0,
+          355.0,
+          301.5
+        ],
+        "organs_per_plant": [
+          6.2,
+          18.2,
+          28.9
+        ]
+      },
+      "iaa18_potent": {
+        "marker_rows": [
+          446.0,
+          446.0,
+          446.0
+        ],
+        "organs_per_plant": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "potent_transgene": {
+        "marker_rows": [
+          442.42857142857144,
+          441.75,
+          441.75
+        ],
+        "organs_per_plant": [
+          0.7142857142857111,
+          0.85,
+          0.85
+        ]
+      }
+    },
+    "readout_halfwidth": 0.6,
+    "note": "A sum of primordia and lateral roots. Mutant and transgene markers nearly overlap at the zero line."
+  },
+  "within_figure_1E_change_from_mock": [
+    12.579250720461097,
+    11.152737752161386,
+    745.4163638641775
+  ],
+  "figure_S2C_WT_minus_potent_at_12dpi": 28.9,
+  "checks": {
+    "upper_marker_in_separate_axis_segment": true,
+    "lower_bars_in_lower_axis_segment": true,
+    "three_readouts_for_each_group": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E31_stage_progression/run.py": "54ac4b22cbf4cf358f77bb10f494b60caa9cb280d080ad7684d971453ced02a1"
+  }
+}

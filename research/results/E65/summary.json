@@ -1,0 +1,2062 @@
+{
+  "experiment": "E65",
+  "doi": "10.1038/s41592-025-02778-0",
+  "evidence": "two separately distributed automated tracking outputs on the same image sequence",
+  "primary_return_candidates": 115,
+  "alignment_at_12_timepoints": [
+    {
+      "frame": 0,
+      "number_of_points_in_primary": 18996,
+      "exact_matches_with_offset_0": 2330,
+      "exact_matches_with_offset_10": 1
+    },
+    {
+      "frame": 47,
+      "number_of_points_in_primary": 21262,
+      "exact_matches_with_offset_-10": 4,
+      "exact_matches_with_offset_0": 2570,
+      "exact_matches_with_offset_10": 5
+    },
+    {
+      "frame": 94,
+      "number_of_points_in_primary": 21414,
+      "exact_matches_with_offset_-10": 6,
+      "exact_matches_with_offset_0": 2640,
+      "exact_matches_with_offset_10": 6
+    },
+    {
+      "frame": 142,
+      "number_of_points_in_primary": 21232,
+      "exact_matches_with_offset_-10": 3,
+      "exact_matches_with_offset_0": 2423,
+      "exact_matches_with_offset_10": 1
+    },
+    {
+      "frame": 189,
+      "number_of_points_in_primary": 21574,
+      "exact_matches_with_offset_-10": 9,
+      "exact_matches_with_offset_0": 2096,
+      "exact_matches_with_offset_10": 4
+    },
+    {
+      "frame": 236,
+      "number_of_points_in_primary": 22446,
+      "exact_matches_with_offset_-10": 5,
+      "exact_matches_with_offset_0": 1993,
+      "exact_matches_with_offset_10": 13
+    },
+    {
+      "frame": 284,
+      "number_of_points_in_primary": 23162,
+      "exact_matches_with_offset_-10": 9,
+      "exact_matches_with_offset_0": 1844,
+      "exact_matches_with_offset_10": 7
+    },
+    {
+      "frame": 331,
+      "number_of_points_in_primary": 23508,
+      "exact_matches_with_offset_-10": 7,
+      "exact_matches_with_offset_0": 1818,
+      "exact_matches_with_offset_10": 8
+    },
+    {
+      "frame": 378,
+      "number_of_points_in_primary": 23343,
+      "exact_matches_with_offset_-10": 10,
+      "exact_matches_with_offset_0": 1681,
+      "exact_matches_with_offset_10": 9
+    },
+    {
+      "frame": 426,
+      "number_of_points_in_primary": 24245,
+      "exact_matches_with_offset_-10": 16,
+      "exact_matches_with_offset_0": 1543,
+      "exact_matches_with_offset_10": 20
+    },
+    {
+      "frame": 473,
+      "number_of_points_in_primary": 24924,
+      "exact_matches_with_offset_-10": 21,
+      "exact_matches_with_offset_0": 1622,
+      "exact_matches_with_offset_10": 21
+    },
+    {
+      "frame": 521,
+      "number_of_points_in_primary": 24494,
+      "exact_matches_with_offset_-10": 13,
+      "exact_matches_with_offset_0": 1404
+    }
+  ],
+  "match_distance_and_gap_to_second_neighbor": {
+    "primary": [
+      3,
+      2
+    ],
+    "relaxed": [
+      5,
+      1
+    ]
+  },
+  "counts_by_match_rule_and_time_shift_frames": {
+    "primary": {
+      "-30": {
+        "nearest_detection_unresolved": 113,
+        "outside_recording": 2
+      },
+      "0": {
+        "nearest_detection_unresolved": 115
+      },
+      "30": {
+        "nearest_detection_unresolved": 105,
+        "outside_recording": 10
+      }
+    },
+    "relaxed": {
+      "-30": {
+        "nearest_detection_unresolved": 113,
+        "outside_recording": 2
+      },
+      "0": {
+        "alternative_track_id_changes": 7,
+        "curving_return": 6,
+        "insufficient_travel": 3,
+        "nearest_detection_unresolved": 93,
+        "no_near_return": 4,
+        "nonrotational_return": 2
+      },
+      "30": {
+        "nearest_detection_unresolved": 105,
+        "outside_recording": 10
+      }
+    }
+  },
+  "same_id_for_all_frames_and_3d_rescore": {
+    "primary": [],
+    "relaxed": [
+      {
+        "primary_track_id": 37622,
+        "start_frame": 289,
+        "last_frame_for_match": 308,
+        "status": "curving_return",
+        "alternate_track_id": 46636,
+        "largest_match_distance": 4.898979485566356,
+        "smallest_distance_to_competing_hit_above_match": 9.029840812348244,
+        "alternate_start_xyz": [
+          1752.0,
+          464.0,
+          732.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            2.0,
+            0.0
+          ],
+          [
+            6.0,
+            2.0,
+            0.0
+          ],
+          [
+            6.0,
+            2.0,
+            -4.0
+          ],
+          [
+            4.0,
+            -1.0,
+            -4.0
+          ],
+          [
+            -1.0,
+            -7.0,
+            0.0
+          ],
+          [
+            -3.0,
+            -8.0,
+            0.0
+          ],
+          [
+            -2.0,
+            -7.0,
+            -4.0
+          ],
+          [
+            -3.0,
+            -9.0,
+            0.0
+          ],
+          [
+            -7.0,
+            -11.0,
+            4.0
+          ],
+          [
+            -7.0,
+            -15.0,
+            8.0
+          ],
+          [
+            -9.0,
+            -14.0,
+            12.0
+          ],
+          [
+            -11.0,
+            -19.0,
+            16.0
+          ],
+          [
+            -8.0,
+            -20.0,
+            12.0
+          ],
+          [
+            -6.0,
+            -16.0,
+            12.0
+          ],
+          [
+            -4.0,
+            -11.0,
+            12.0
+          ],
+          [
+            -2.0,
+            -7.0,
+            8.0
+          ],
+          [
+            -1.0,
+            -4.0,
+            8.0
+          ],
+          [
+            -3.0,
+            -3.0,
+            4.0
+          ],
+          [
+            -3.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 19,
+          "return_gap": 3.0,
+          "furthest_distance": 27.16615541441225,
+          "path_length": 90.9190346549759,
+          "largest_step": 8.774964387392123,
+          "aspect": 0.30134059014304065,
+          "winding": 1.0109954355364716,
+          "direction_consistency": 0.8731334544649958
+        }
+      },
+      {
+        "primary_track_id": 59876,
+        "start_frame": 468,
+        "last_frame_for_match": 485,
+        "status": "curving_return",
+        "alternate_track_id": 369312,
+        "largest_match_distance": 4.47213595499958,
+        "smallest_distance_to_competing_hit_above_match": 19.899979258908303,
+        "alternate_start_xyz": [
+          1360.0,
+          197.0,
+          488.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            1.0,
+            -4.0
+          ],
+          [
+            4.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.0,
+            2.0,
+            -4.0
+          ],
+          [
+            2.0,
+            2.0,
+            -8.0
+          ],
+          [
+            4.0,
+            3.0,
+            -12.0
+          ],
+          [
+            2.0,
+            3.0,
+            -16.0
+          ],
+          [
+            1.0,
+            4.0,
+            -16.0
+          ],
+          [
+            -2.0,
+            6.0,
+            -16.0
+          ],
+          [
+            -4.0,
+            6.0,
+            -20.0
+          ],
+          [
+            -3.0,
+            7.0,
+            -20.0
+          ],
+          [
+            -2.0,
+            6.0,
+            -20.0
+          ],
+          [
+            -3.0,
+            7.0,
+            -16.0
+          ],
+          [
+            -2.0,
+            4.0,
+            -12.0
+          ],
+          [
+            1.0,
+            -1.0,
+            -8.0
+          ],
+          [
+            0.0,
+            0.0,
+            -8.0
+          ],
+          [
+            -2.0,
+            -1.0,
+            -4.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 17,
+          "return_gap": 4.58257569495584,
+          "furthest_distance": 21.400934559032695,
+          "path_length": 63.19591947859175,
+          "largest_step": 7.0710678118654755,
+          "aspect": 0.2697441593939984,
+          "winding": 0.9517504165268307,
+          "direction_consistency": 0.7936413899026877
+        }
+      },
+      {
+        "primary_track_id": 60826,
+        "start_frame": 417,
+        "last_frame_for_match": 437,
+        "status": "insufficient_travel",
+        "alternate_track_id": 275712,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 7.115176004481262,
+        "alternate_start_xyz": [
+          552.0,
+          1789.0,
+          1312.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            2.0,
+            0.0
+          ],
+          [
+            2.0,
+            1.0,
+            4.0
+          ],
+          [
+            2.0,
+            2.0,
+            12.0
+          ],
+          [
+            1.0,
+            1.0,
+            16.0
+          ],
+          [
+            1.0,
+            1.0,
+            20.0
+          ],
+          [
+            2.0,
+            2.0,
+            16.0
+          ],
+          [
+            2.0,
+            2.0,
+            16.0
+          ],
+          [
+            2.0,
+            2.0,
+            16.0
+          ],
+          [
+            3.0,
+            1.0,
+            16.0
+          ],
+          [
+            3.0,
+            3.0,
+            16.0
+          ],
+          [
+            2.0,
+            2.0,
+            12.0
+          ],
+          [
+            2.0,
+            2.0,
+            16.0
+          ],
+          [
+            3.0,
+            1.0,
+            12.0
+          ],
+          [
+            3.0,
+            1.0,
+            8.0
+          ],
+          [
+            4.0,
+            1.0,
+            8.0
+          ],
+          [
+            3.0,
+            1.0,
+            4.0
+          ],
+          [
+            3.0,
+            1.0,
+            4.0
+          ],
+          [
+            3.0,
+            0.0,
+            4.0
+          ],
+          [
+            3.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 77326,
+        "start_frame": 111,
+        "last_frame_for_match": 139,
+        "status": "no_near_return",
+        "alternate_track_id": 191756,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 16.09975124224178,
+        "alternate_start_xyz": [
+          1315.0,
+          676.0,
+          256.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -2.0,
+            -5.0,
+            0.0
+          ],
+          [
+            -8.0,
+            -6.0,
+            0.0
+          ],
+          [
+            -6.0,
+            -9.0,
+            0.0
+          ],
+          [
+            -6.0,
+            -9.0,
+            0.0
+          ],
+          [
+            -7.0,
+            -11.0,
+            0.0
+          ],
+          [
+            -6.0,
+            -16.0,
+            4.0
+          ],
+          [
+            -4.0,
+            -17.0,
+            4.0
+          ],
+          [
+            -1.0,
+            -17.0,
+            4.0
+          ],
+          [
+            0.0,
+            -18.0,
+            4.0
+          ],
+          [
+            4.0,
+            -19.0,
+            4.0
+          ],
+          [
+            7.0,
+            -18.0,
+            8.0
+          ],
+          [
+            9.0,
+            -17.0,
+            8.0
+          ],
+          [
+            13.0,
+            -15.0,
+            12.0
+          ],
+          [
+            13.0,
+            -10.0,
+            12.0
+          ],
+          [
+            14.0,
+            -9.0,
+            12.0
+          ],
+          [
+            16.0,
+            -11.0,
+            16.0
+          ],
+          [
+            18.0,
+            -9.0,
+            12.0
+          ],
+          [
+            16.0,
+            -12.0,
+            12.0
+          ],
+          [
+            14.0,
+            -14.0,
+            12.0
+          ],
+          [
+            12.0,
+            -14.0,
+            16.0
+          ],
+          [
+            12.0,
+            -13.0,
+            16.0
+          ],
+          [
+            9.0,
+            -10.0,
+            12.0
+          ],
+          [
+            8.0,
+            -7.0,
+            8.0
+          ],
+          [
+            5.0,
+            -2.0,
+            8.0
+          ],
+          [
+            5.0,
+            -4.0,
+            8.0
+          ],
+          [
+            5.0,
+            -4.0,
+            8.0
+          ],
+          [
+            2.0,
+            -3.0,
+            8.0
+          ],
+          [
+            -4.0,
+            -2.0,
+            4.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 86928,
+        "start_frame": 314,
+        "last_frame_for_match": 325,
+        "status": "no_near_return",
+        "alternate_track_id": 320847,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 16.75750739220344,
+        "alternate_start_xyz": [
+          1820.0,
+          1422.0,
+          744.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -3.0,
+            0.0,
+            -4.0
+          ],
+          [
+            -4.0,
+            -1.0,
+            -8.0
+          ],
+          [
+            -5.0,
+            -4.0,
+            -20.0
+          ],
+          [
+            -6.0,
+            -5.0,
+            -24.0
+          ],
+          [
+            -6.0,
+            -6.0,
+            -24.0
+          ],
+          [
+            -5.0,
+            -8.0,
+            -20.0
+          ],
+          [
+            -3.0,
+            -10.0,
+            -12.0
+          ],
+          [
+            -1.0,
+            -7.0,
+            -8.0
+          ],
+          [
+            0.0,
+            -4.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            -2.0,
+            -8.0
+          ],
+          [
+            3.0,
+            -2.0,
+            4.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 103537,
+        "start_frame": 176,
+        "last_frame_for_match": 193,
+        "status": "curving_return",
+        "alternate_track_id": 155675,
+        "largest_match_distance": 4.47213595499958,
+        "smallest_distance_to_competing_hit_above_match": 14.681541692269406,
+        "alternate_start_xyz": [
+          1531.0,
+          844.0,
+          348.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.0,
+            5.0,
+            0.0
+          ],
+          [
+            -9.0,
+            5.0,
+            4.0
+          ],
+          [
+            -10.0,
+            10.0,
+            4.0
+          ],
+          [
+            -10.0,
+            14.0,
+            8.0
+          ],
+          [
+            -10.0,
+            11.0,
+            8.0
+          ],
+          [
+            -11.0,
+            13.0,
+            12.0
+          ],
+          [
+            -10.0,
+            12.0,
+            8.0
+          ],
+          [
+            -5.0,
+            14.0,
+            12.0
+          ],
+          [
+            -4.0,
+            17.0,
+            12.0
+          ],
+          [
+            -1.0,
+            16.0,
+            12.0
+          ],
+          [
+            0.0,
+            12.0,
+            4.0
+          ],
+          [
+            3.0,
+            16.0,
+            12.0
+          ],
+          [
+            3.0,
+            14.0,
+            4.0
+          ],
+          [
+            4.0,
+            9.0,
+            0.0
+          ],
+          [
+            4.0,
+            6.0,
+            4.0
+          ],
+          [
+            4.0,
+            5.0,
+            8.0
+          ],
+          [
+            2.0,
+            -1.0,
+            4.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 17,
+          "return_gap": 4.58257569495584,
+          "furthest_distance": 21.18962010041709,
+          "path_length": 98.10912494021959,
+          "largest_step": 9.433981132056603,
+          "aspect": 0.8290378060632515,
+          "winding": 0.9724772155855209,
+          "direction_consistency": 0.7837535166208122
+        }
+      },
+      {
+        "primary_track_id": 142761,
+        "start_frame": 392,
+        "last_frame_for_match": 415,
+        "status": "curving_return",
+        "alternate_track_id": 175558,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 13.455290205629286,
+        "alternate_start_xyz": [
+          713.0,
+          764.0,
+          1536.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            4.0,
+            0.0
+          ],
+          [
+            -1.0,
+            8.0,
+            0.0
+          ],
+          [
+            -1.0,
+            8.0,
+            0.0
+          ],
+          [
+            1.0,
+            12.0,
+            0.0
+          ],
+          [
+            -1.0,
+            13.0,
+            0.0
+          ],
+          [
+            -2.0,
+            17.0,
+            0.0
+          ],
+          [
+            -1.0,
+            21.0,
+            -4.0
+          ],
+          [
+            -2.0,
+            17.0,
+            -4.0
+          ],
+          [
+            -3.0,
+            15.0,
+            -4.0
+          ],
+          [
+            -3.0,
+            8.0,
+            -8.0
+          ],
+          [
+            -5.0,
+            3.0,
+            -8.0
+          ],
+          [
+            -7.0,
+            1.0,
+            -8.0
+          ],
+          [
+            -6.0,
+            -2.0,
+            -8.0
+          ],
+          [
+            -6.0,
+            -4.0,
+            -4.0
+          ],
+          [
+            -6.0,
+            -6.0,
+            -4.0
+          ],
+          [
+            -5.0,
+            -6.0,
+            -8.0
+          ],
+          [
+            -2.0,
+            -5.0,
+            -12.0
+          ],
+          [
+            -1.0,
+            -4.0,
+            -12.0
+          ],
+          [
+            -2.0,
+            -5.0,
+            -12.0
+          ],
+          [
+            0.0,
+            -4.0,
+            -8.0
+          ],
+          [
+            1.0,
+            -3.0,
+            -4.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 23,
+          "return_gap": 5.0990195135927845,
+          "furthest_distance": 21.400934559032695,
+          "path_length": 78.4206745973106,
+          "largest_step": 8.06225774829855,
+          "aspect": 0.3536699226756331,
+          "winding": 0.9067747745880301,
+          "direction_consistency": 0.8395896488301737
+        }
+      },
+      {
+        "primary_track_id": 145597,
+        "start_frame": 253,
+        "last_frame_for_match": 277,
+        "status": "no_near_return",
+        "alternate_track_id": 292152,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 18.090722034374522,
+        "alternate_start_xyz": [
+          1743.0,
+          1135.0,
+          1516.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -5.0,
+            4.0
+          ],
+          [
+            -2.0,
+            -7.0,
+            4.0
+          ],
+          [
+            -2.0,
+            -12.0,
+            8.0
+          ],
+          [
+            -2.0,
+            -13.0,
+            8.0
+          ],
+          [
+            -3.0,
+            -16.0,
+            8.0
+          ],
+          [
+            -2.0,
+            -16.0,
+            4.0
+          ],
+          [
+            -3.0,
+            -18.0,
+            4.0
+          ],
+          [
+            -3.0,
+            -19.0,
+            8.0
+          ],
+          [
+            -3.0,
+            -20.0,
+            8.0
+          ],
+          [
+            -4.0,
+            -22.0,
+            8.0
+          ],
+          [
+            -4.0,
+            -21.0,
+            8.0
+          ],
+          [
+            -2.0,
+            -18.0,
+            4.0
+          ],
+          [
+            -2.0,
+            -20.0,
+            4.0
+          ],
+          [
+            -1.0,
+            -20.0,
+            4.0
+          ],
+          [
+            1.0,
+            -20.0,
+            0.0
+          ],
+          [
+            2.0,
+            -21.0,
+            4.0
+          ],
+          [
+            1.0,
+            -20.0,
+            4.0
+          ],
+          [
+            2.0,
+            -18.0,
+            4.0
+          ],
+          [
+            3.0,
+            -15.0,
+            4.0
+          ],
+          [
+            2.0,
+            -14.0,
+            4.0
+          ],
+          [
+            3.0,
+            -11.0,
+            4.0
+          ],
+          [
+            3.0,
+            -9.0,
+            0.0
+          ],
+          [
+            3.0,
+            -8.0,
+            4.0
+          ],
+          [
+            4.0,
+            -4.0,
+            0.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 164164,
+        "start_frame": 0,
+        "last_frame_for_match": 12,
+        "status": "no_near_return",
+        "alternate_track_id": 190453,
+        "largest_match_distance": 4.58257569495584,
+        "smallest_distance_to_competing_hit_above_match": 12.505431795679222,
+        "alternate_start_xyz": [
+          749.0,
+          1522.0,
+          592.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -2.0,
+            1.0,
+            0.0
+          ],
+          [
+            -3.0,
+            1.0,
+            4.0
+          ],
+          [
+            -4.0,
+            4.0,
+            4.0
+          ],
+          [
+            -1.0,
+            5.0,
+            12.0
+          ],
+          [
+            0.0,
+            9.0,
+            20.0
+          ],
+          [
+            -2.0,
+            3.0,
+            24.0
+          ],
+          [
+            8.0,
+            -2.0,
+            28.0
+          ],
+          [
+            7.0,
+            -2.0,
+            24.0
+          ],
+          [
+            8.0,
+            -2.0,
+            24.0
+          ],
+          [
+            8.0,
+            -9.0,
+            16.0
+          ],
+          [
+            6.0,
+            -1.0,
+            16.0
+          ],
+          [
+            -1.0,
+            -1.0,
+            8.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 188374,
+        "start_frame": 239,
+        "last_frame_for_match": 267,
+        "status": "nonrotational_return",
+        "alternate_track_id": 229370,
+        "largest_match_distance": 4.58257569495584,
+        "smallest_distance_to_competing_hit_above_match": 11.141231896856088,
+        "alternate_start_xyz": [
+          606.0,
+          1641.0,
+          1496.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            7.0,
+            -4.0,
+            4.0
+          ],
+          [
+            8.0,
+            -3.0,
+            4.0
+          ],
+          [
+            9.0,
+            -2.0,
+            4.0
+          ],
+          [
+            7.0,
+            -2.0,
+            8.0
+          ],
+          [
+            12.0,
+            -1.0,
+            8.0
+          ],
+          [
+            13.0,
+            -2.0,
+            8.0
+          ],
+          [
+            15.0,
+            -2.0,
+            12.0
+          ],
+          [
+            17.0,
+            -4.0,
+            12.0
+          ],
+          [
+            15.0,
+            -6.0,
+            12.0
+          ],
+          [
+            17.0,
+            -5.0,
+            12.0
+          ],
+          [
+            15.0,
+            -6.0,
+            12.0
+          ],
+          [
+            15.0,
+            -6.0,
+            8.0
+          ],
+          [
+            16.0,
+            -8.0,
+            8.0
+          ],
+          [
+            13.0,
+            -8.0,
+            8.0
+          ],
+          [
+            13.0,
+            -8.0,
+            8.0
+          ],
+          [
+            12.0,
+            -7.0,
+            12.0
+          ],
+          [
+            11.0,
+            -6.0,
+            12.0
+          ],
+          [
+            9.0,
+            -7.0,
+            8.0
+          ],
+          [
+            7.0,
+            -7.0,
+            8.0
+          ],
+          [
+            7.0,
+            -7.0,
+            4.0
+          ],
+          [
+            6.0,
+            -9.0,
+            0.0
+          ],
+          [
+            5.0,
+            -7.0,
+            4.0
+          ],
+          [
+            4.0,
+            -6.0,
+            4.0
+          ],
+          [
+            3.0,
+            -5.0,
+            4.0
+          ],
+          [
+            1.0,
+            -4.0,
+            4.0
+          ],
+          [
+            3.0,
+            -3.0,
+            4.0
+          ],
+          [
+            5.0,
+            -6.0,
+            0.0
+          ],
+          [
+            3.0,
+            -3.0,
+            0.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 28,
+          "return_gap": 4.242640687119285,
+          "furthest_distance": 21.400934559032695,
+          "path_length": 88.34685078940711,
+          "largest_step": 9.0,
+          "aspect": 0.3876109386820063,
+          "winding": 0.9601886391149892,
+          "direction_consistency": 0.7307958665635308
+        }
+      },
+      {
+        "primary_track_id": 251354,
+        "start_frame": 308,
+        "last_frame_for_match": 338,
+        "status": "curving_return",
+        "alternate_track_id": 415514,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 15.4164878389476,
+        "alternate_start_xyz": [
+          1085.0,
+          685.0,
+          312.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -4.0,
+            -3.0,
+            0.0
+          ],
+          [
+            -4.0,
+            -3.0,
+            0.0
+          ],
+          [
+            -5.0,
+            -5.0,
+            4.0
+          ],
+          [
+            -4.0,
+            -6.0,
+            0.0
+          ],
+          [
+            -9.0,
+            -6.0,
+            4.0
+          ],
+          [
+            -12.0,
+            -12.0,
+            4.0
+          ],
+          [
+            -15.0,
+            -15.0,
+            4.0
+          ],
+          [
+            -17.0,
+            -18.0,
+            4.0
+          ],
+          [
+            -21.0,
+            -20.0,
+            0.0
+          ],
+          [
+            -21.0,
+            -25.0,
+            4.0
+          ],
+          [
+            -24.0,
+            -28.0,
+            4.0
+          ],
+          [
+            -24.0,
+            -25.0,
+            4.0
+          ],
+          [
+            -25.0,
+            -26.0,
+            4.0
+          ],
+          [
+            -26.0,
+            -28.0,
+            4.0
+          ],
+          [
+            -29.0,
+            -31.0,
+            4.0
+          ],
+          [
+            -26.0,
+            -41.0,
+            12.0
+          ],
+          [
+            -26.0,
+            -42.0,
+            12.0
+          ],
+          [
+            -27.0,
+            -41.0,
+            16.0
+          ],
+          [
+            -24.0,
+            -41.0,
+            16.0
+          ],
+          [
+            -22.0,
+            -40.0,
+            16.0
+          ],
+          [
+            -20.0,
+            -38.0,
+            16.0
+          ],
+          [
+            -21.0,
+            -36.0,
+            16.0
+          ],
+          [
+            -18.0,
+            -36.0,
+            12.0
+          ],
+          [
+            -18.0,
+            -32.0,
+            12.0
+          ],
+          [
+            -15.0,
+            -28.0,
+            12.0
+          ],
+          [
+            -10.0,
+            -21.0,
+            12.0
+          ],
+          [
+            -3.0,
+            -12.0,
+            12.0
+          ],
+          [
+            0.0,
+            -7.0,
+            8.0
+          ],
+          [
+            0.0,
+            -3.0,
+            4.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 30,
+          "return_gap": 5.0,
+          "furthest_distance": 51.633322573702344,
+          "path_length": 137.77134028819478,
+          "largest_step": 13.152946437965905,
+          "aspect": 0.3478550030131618,
+          "winding": 0.9761424385701504,
+          "direction_consistency": 0.9356769132497978
+        }
+      },
+      {
+        "primary_track_id": 338496,
+        "start_frame": 440,
+        "last_frame_for_match": 467,
+        "status": "nonrotational_return",
+        "alternate_track_id": 79948,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 11.009640324803897,
+        "alternate_start_xyz": [
+          975.0,
+          1298.0,
+          288.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            2.0,
+            4.0
+          ],
+          [
+            -2.0,
+            3.0,
+            0.0
+          ],
+          [
+            -2.0,
+            1.0,
+            -4.0
+          ],
+          [
+            -2.0,
+            3.0,
+            -12.0
+          ],
+          [
+            -6.0,
+            6.0,
+            -16.0
+          ],
+          [
+            -7.0,
+            5.0,
+            -20.0
+          ],
+          [
+            -7.0,
+            6.0,
+            -20.0
+          ],
+          [
+            -7.0,
+            8.0,
+            -20.0
+          ],
+          [
+            -6.0,
+            10.0,
+            -20.0
+          ],
+          [
+            -6.0,
+            10.0,
+            -16.0
+          ],
+          [
+            -6.0,
+            9.0,
+            -16.0
+          ],
+          [
+            -5.0,
+            13.0,
+            -16.0
+          ],
+          [
+            -5.0,
+            13.0,
+            -12.0
+          ],
+          [
+            -3.0,
+            10.0,
+            -12.0
+          ],
+          [
+            -3.0,
+            8.0,
+            -16.0
+          ],
+          [
+            -5.0,
+            7.0,
+            -12.0
+          ],
+          [
+            -3.0,
+            8.0,
+            -12.0
+          ],
+          [
+            -3.0,
+            7.0,
+            -12.0
+          ],
+          [
+            -4.0,
+            6.0,
+            -12.0
+          ],
+          [
+            -2.0,
+            7.0,
+            -8.0
+          ],
+          [
+            -2.0,
+            5.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            5.0,
+            -8.0
+          ],
+          [
+            0.0,
+            4.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            4.0,
+            -8.0
+          ],
+          [
+            -2.0,
+            2.0,
+            -8.0
+          ],
+          [
+            -1.0,
+            2.0,
+            -4.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 27,
+          "return_gap": 4.58257569495584,
+          "furthest_distance": 23.15167380558045,
+          "path_length": 85.104569701762,
+          "largest_step": 8.246211251235321,
+          "aspect": 0.31929450307392687,
+          "winding": 1.0042613523497903,
+          "direction_consistency": 0.5966452833662379
+        }
+      },
+      {
+        "primary_track_id": 377750,
+        "start_frame": 289,
+        "last_frame_for_match": 305,
+        "status": "insufficient_travel",
+        "alternate_track_id": 328274,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 11.537093150940215,
+        "alternate_start_xyz": [
+          1038.0,
+          290.0,
+          1160.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            -1.0,
+            4.0
+          ],
+          [
+            1.0,
+            -1.0,
+            0.0
+          ],
+          [
+            2.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -2.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -6.0,
+            1.0,
+            4.0
+          ],
+          [
+            -9.0,
+            0.0,
+            0.0
+          ],
+          [
+            -14.0,
+            1.0,
+            0.0
+          ],
+          [
+            -15.0,
+            1.0,
+            4.0
+          ],
+          [
+            -16.0,
+            1.0,
+            0.0
+          ],
+          [
+            -18.0,
+            -1.0,
+            4.0
+          ],
+          [
+            -18.0,
+            -1.0,
+            8.0
+          ],
+          [
+            -16.0,
+            -2.0,
+            8.0
+          ],
+          [
+            -12.0,
+            -4.0,
+            12.0
+          ],
+          [
+            -7.0,
+            -4.0,
+            8.0
+          ],
+          [
+            -5.0,
+            -5.0,
+            8.0
+          ],
+          [
+            1.0,
+            -5.0,
+            4.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 385705,
+        "start_frame": 354,
+        "last_frame_for_match": 373,
+        "status": "insufficient_travel",
+        "alternate_track_id": 315887,
+        "largest_match_distance": 4.58257569495584,
+        "smallest_distance_to_competing_hit_above_match": 12.88167350161714,
+        "alternate_start_xyz": [
+          1562.0,
+          935.0,
+          420.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            2.0,
+            0.0
+          ],
+          [
+            0.0,
+            2.0,
+            0.0
+          ],
+          [
+            3.0,
+            2.0,
+            -8.0
+          ],
+          [
+            3.0,
+            2.0,
+            -16.0
+          ],
+          [
+            5.0,
+            2.0,
+            -12.0
+          ],
+          [
+            4.0,
+            1.0,
+            -16.0
+          ],
+          [
+            1.0,
+            3.0,
+            -16.0
+          ],
+          [
+            -1.0,
+            4.0,
+            -16.0
+          ],
+          [
+            -5.0,
+            5.0,
+            -16.0
+          ],
+          [
+            -7.0,
+            3.0,
+            -16.0
+          ],
+          [
+            -9.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -8.0,
+            -1.0,
+            -16.0
+          ],
+          [
+            -10.0,
+            1.0,
+            -16.0
+          ],
+          [
+            -9.0,
+            0.0,
+            -16.0
+          ],
+          [
+            -12.0,
+            0.0,
+            -12.0
+          ],
+          [
+            -12.0,
+            0.0,
+            -12.0
+          ],
+          [
+            -11.0,
+            -1.0,
+            -12.0
+          ],
+          [
+            -6.0,
+            -1.0,
+            -4.0
+          ],
+          [
+            -3.0,
+            -1.0,
+            -4.0
+          ]
+        ],
+        "alternate_return": null
+      },
+      {
+        "primary_track_id": 393074,
+        "start_frame": 276,
+        "last_frame_for_match": 287,
+        "status": "curving_return",
+        "alternate_track_id": 79424,
+        "largest_match_distance": 4.242640687119285,
+        "smallest_distance_to_competing_hit_above_match": 18.61077083212769,
+        "alternate_start_xyz": [
+          247.0,
+          1222.0,
+          1068.0
+        ],
+        "alternate_xyz_relative_to_start": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            2.0,
+            6.0,
+            0.0
+          ],
+          [
+            3.0,
+            12.0,
+            4.0
+          ],
+          [
+            3.0,
+            20.0,
+            12.0
+          ],
+          [
+            4.0,
+            27.0,
+            12.0
+          ],
+          [
+            6.0,
+            28.0,
+            20.0
+          ],
+          [
+            8.0,
+            30.0,
+            20.0
+          ],
+          [
+            9.0,
+            23.0,
+            20.0
+          ],
+          [
+            8.0,
+            13.0,
+            12.0
+          ],
+          [
+            7.0,
+            8.0,
+            0.0
+          ],
+          [
+            5.0,
+            3.0,
+            0.0
+          ],
+          [
+            3.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "alternate_return": {
+          "end_offset": 11,
+          "return_gap": 3.1622776601683795,
+          "furthest_distance": 36.932370625238775,
+          "path_length": 84.29278964094837,
+          "largest_step": 13.038404810405298,
+          "aspect": 0.25725350292452653,
+          "winding": 0.9857916827214546,
+          "direction_consistency": 0.9787122402787908
+        }
+      }
+    ]
+  },
+  "scope": "The second archive is published with Ultrack's sparse-label validation article. Coordinate agreement aligns the same acquisition. Matching IDs are computational cross-checks, without identifying hand-curated red labels or verifying nuclear identity directly in volumes.",
+  "checks": {
+    "counts_include_each_primary_candidate_per_condition": true,
+    "many_more_exact_coordinate_matches_at_the_same_frame": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E65_crosscheck_returns/run.py": "08c8b94d868221aa0f3f45bc55233c024ec3e7ed16c0e654564d1a3ef92b4d70",
+    "experiments/embryo_history_sources.py": "649b52f51df30117a22f78ae17aa49e5ca60ccb3d48bb39c6177df3d5a1ddc0b",
+    "E62_cell_returns/run.py": "ebabf16007533e63e0f1d94f9a246a75a6870eeb06d46b6713cb2ce5ce42d78d",
+    "E65_crosscheck_returns/archive.py": "5a7f7e131327c5c64b375a2c50beca59d4dea361cdc40fc1f9dacf5a414a6e19"
+  }
+}

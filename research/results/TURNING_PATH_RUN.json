@@ -1,0 +1,120 @@
+{
+  "code_commit": "e3993768d16f1762be9b9ab3892a177d5e4b8bee",
+  "base_commit": "02edd102cf97bc26cf1534cb5f9d2308829544bd",
+  "preregistration_commits": {
+    "E49_to_E53": "1ae8c737b168b15547bbd5775a407bcc22879e85",
+    "E49_spatial_endpoint_and_E51_sign_conventions": "f5ad77c670aa4f7dd91d2d16f8d5971ed3217ae5",
+    "E54_daughter_polarity": "d6076327e677ca5e52bbb9818802d8683e3e8eaa"
+  },
+  "environment": {
+    "system": "Debian 13 x86_64",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "13.0.0",
+      "PyMuPDF": "1.26.6",
+      "OpenPyXL": "3.1.5"
+    },
+    "numeric_threads_per_process": 1,
+    "random_seed": {}
+  },
+  "initial": {
+    "runs": [
+      {
+        "module": "E49_root_pulse.run",
+        "returncode": 0,
+        "wall_s": 0.47
+      },
+      {
+        "module": "E50_directional_root_transport.run",
+        "returncode": 0,
+        "wall_s": 0.421
+      },
+      {
+        "module": "E51_turning_flow.run",
+        "returncode": 0,
+        "wall_s": 0.875
+      },
+      {
+        "module": "E52_division_rotation.run",
+        "returncode": 0,
+        "wall_s": 1.33
+      },
+      {
+        "module": "E53_polarity_prediction.run",
+        "returncode": 0,
+        "wall_s": 1.586
+      },
+      {
+        "module": "E54_daughter_polarity.run",
+        "returncode": 0,
+        "wall_s": 0.3
+      },
+      {
+        "module": "turning_path_figures",
+        "returncode": 0,
+        "wall_s": 1.472
+      }
+    ],
+    "wall_s": 6.455
+  },
+  "clean_git_archive_replay": {
+    "runs": [
+      {
+        "module": "E49_root_pulse.run",
+        "returncode": 0,
+        "wall_s": 0.385
+      },
+      {
+        "module": "E50_directional_root_transport.run",
+        "returncode": 0,
+        "wall_s": 0.428
+      },
+      {
+        "module": "E51_turning_flow.run",
+        "returncode": 0,
+        "wall_s": 0.804
+      },
+      {
+        "module": "E52_division_rotation.run",
+        "returncode": 0,
+        "wall_s": 1.498
+      },
+      {
+        "module": "E53_polarity_prediction.run",
+        "returncode": 0,
+        "wall_s": 1.494
+      },
+      {
+        "module": "E54_daughter_polarity.run",
+        "returncode": 0,
+        "wall_s": 0.47
+      },
+      {
+        "module": "turning_path_figures",
+        "returncode": 0,
+        "wall_s": 1.388
+      }
+    ],
+    "wall_s": 6.468
+  },
+  "fresh_external_downloads_verified": 11,
+  "input_types": {
+    "byte_exact_originals": 9,
+    "canonical_published_tables": 2
+  },
+  "source_record": "research/access/2026-11-20-turning-paths.md",
+  "checks_passed": {
+    "E49": 4,
+    "E50": 4,
+    "E51": 5,
+    "E52": 4,
+    "E53": 5,
+    "E54": 4
+  },
+  "byte_identical_generated_outputs": 8,
+  "prior_manifest_items_verified": 183,
+  "existing_unit_tests_passed": 22
+}

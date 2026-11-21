@@ -1,0 +1,126 @@
+{
+  "experiment": "E39",
+  "study_doi": "10.1111/nph.17183",
+  "source": {
+    "url": "https://eprints.whiterose.ac.uk/id/eprint/172333/7/nph.17183%20%281%29.pdf",
+    "sha256": "41deaad34df8776a6bfa40151b5089ec066ecfd5016c83290b5b21897df7a98a"
+  },
+  "figure": "Fig. 2a,b",
+  "pixel_clipping_pdf_points": [
+    125,
+    55,
+    487,
+    174
+  ],
+  "pixel_y_axis_zero_and_600": [
+    458.5,
+    101.0
+  ],
+  "pixel_marker_rows": {
+    "FluorA_I": {
+      "parent_tracer": [
+        260.5,
+        246.0,
+        258.0,
+        244.5
+      ],
+      "free_2_4_D": [
+        456.0,
+        452.5,
+        452.0,
+        445.5
+      ]
+    },
+    "FluorA_II": {
+      "parent_tracer": [
+        304.0,
+        275.0,
+        226.5,
+        154.5
+      ],
+      "free_2_4_D": [
+        452.5,
+        454.0,
+        448.5,
+        441.0
+      ]
+    }
+  },
+  "times_h_at_plotted_nonzero_times": [
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "one_marker_reading_half_width_pmol_per_50_roots": 5.034965034965035,
+  "per_probe_results": {
+    "FluorA_I": {
+      "parent_pmol_per_50_roots": [
+        332.3076923076923,
+        356.64335664335664,
+        336.5034965034965,
+        359.16083916083915
+      ],
+      "free_2_4_D_pmol_per_50_roots": [
+        4.195804195804196,
+        10.06993006993007,
+        10.90909090909091,
+        21.81818181818182
+      ],
+      "free_fraction_of_two_measured_species": [
+        0.012468827930174562,
+        0.02745995423340961,
+        0.03140096618357488,
+        0.05726872246696036
+      ],
+      "free_fraction_at_3h_pixel_reading_range": [
+        0.04405286343612336,
+        0.07048458149779736
+      ],
+      "slope_pmol_per_50_roots_per_h_through_origin": 6.978284873021715,
+      "slope_reading_half_width": 2.2966507177033493,
+      "estimated_free_pmol_per_50_roots_at_15_min": 1.7445712182554287,
+      "estimate_reading_half_width_at_15_min": 0.5741626794258373
+    },
+    "FluorA_II": {
+      "parent_pmol_per_50_roots": [
+        259.3006993006993,
+        307.972027972028,
+        389.3706293706294,
+        510.2097902097902
+      ],
+      "free_2_4_D_pmol_per_50_roots": [
+        10.06993006993007,
+        7.5524475524475525,
+        16.783216783216783,
+        29.37062937062937
+      ],
+      "free_fraction_of_two_measured_species": [
+        0.037383177570093455,
+        0.023936170212765954,
+        0.04132231404958677,
+        0.05443234836702955
+      ],
+      "free_fraction_at_3h_pixel_reading_range": [
+        0.04510108864696734,
+        0.06376360808709176
+      ],
+      "slope_pmol_per_50_roots_per_h_through_origin": 9.422156790577843,
+      "slope_reading_half_width": 2.2966507177033493,
+      "estimated_free_pmol_per_50_roots_at_15_min": 2.3555391976444606,
+      "estimate_reading_half_width_at_15_min": 0.5741626794258373
+    }
+  },
+  "reported_15_min_free_2_4_D_estimate_pmol_per_50_roots": 2.7,
+  "interpreting_probe": "Parents are fluorescent derivatives of 2,4-D, not native IAA. Root extracts have no tissue history.",
+  "checks": {
+    "registered_axes_and_original_scale": true,
+    "all_four_positive_plot_times_extracted": true,
+    "chemical_share_gives_bounded_fraction": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E39_auxin_probe_identity/run.py": "dccb9d1c11e3e4729b6c96c06589504902f06676575423b06776ad2fac312788",
+    "experiments/return_energy_data.py": "819f9f9ad2c784416db27be8c77de0c193d1d12f528e2fa81a85ce64155a160d"
+  }
+}
