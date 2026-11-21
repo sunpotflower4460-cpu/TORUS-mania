@@ -1,0 +1,260 @@
+{
+  "experiment": "E75",
+  "doi": "10.1104/pp.86.3.890",
+  "inputs_sha256": {
+    "hasenstein-p890.png": "aadd9c67dc91d3a885c21371245a097fea1e7608870bf9b94b678bddbc1f583c",
+    "hasenstein-p891.png": "52d045654c49e27aa36a2ddb7424e908b6cb1395dfae4ae09c88f5733eaf916f",
+    "hasenstein-p892.png": "ba2af383b55389758bee90fc6597d58bb492b702d0455adf0f7d6ecf4e0e31b2",
+    "hasenstein-p893.png": "e8418c31041f0ff47899f783c073366ee9cea34152b4d96cac0b31971b2e157e"
+  },
+  "root": "Zea mays B73 x Missouri 17 apical root segments",
+  "assay_duration_hours": 3,
+  "reported_apical_segment_length_mm": 5,
+  "applied_iaa_tracer": "tritiated IAA; chemical identity in recovered fractions assumed by the authors",
+  "reported_replications": {
+    "repetitions": 3,
+    "replicates_per_repetition": 3
+  },
+  "table_1_cap_present_dpm": {
+    "control_ph6": {
+      "toward_tip_mean": 1615,
+      "toward_tip_se": 99,
+      "toward_shoot_mean": 10219,
+      "toward_shoot_se": 724,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 6.3275541795665635,
+      "printed_ratio": 6.3
+    },
+    "control_ph4_5": {
+      "toward_tip_mean": 1260,
+      "toward_tip_se": 53,
+      "toward_shoot_mean": 8180,
+      "toward_shoot_se": 801,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 6.492063492063492,
+      "printed_ratio": 6.5
+    },
+    "aluminum_chloride_5_mM": {
+      "toward_tip_mean": 3758,
+      "toward_tip_se": 218,
+      "toward_shoot_mean": 8012,
+      "toward_shoot_se": 744,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 2.1319850984566258,
+      "printed_ratio": 2.1
+    },
+    "calcium_chloride_5_mM": {
+      "toward_tip_mean": 1871,
+      "toward_tip_se": 55,
+      "toward_shoot_mean": 14253,
+      "toward_shoot_se": 1409,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 7.61785141635489,
+      "printed_ratio": 7.6
+    },
+    "potassium_chloride_5_mM": {
+      "toward_tip_mean": 1111,
+      "toward_tip_se": 39,
+      "toward_shoot_mean": 6051,
+      "toward_shoot_se": 556,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 5.446444644464447,
+      "printed_ratio": 5.4
+    },
+    "lanthanum_chloride_5_mM": {
+      "toward_tip_mean": 5314,
+      "toward_tip_se": 560,
+      "toward_shoot_mean": 7757,
+      "toward_shoot_se": 895,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.459729017689123,
+      "printed_ratio": 1.5
+    },
+    "magnesium_chloride_5_mM": {
+      "toward_tip_mean": 1101,
+      "toward_tip_se": 49,
+      "toward_shoot_mean": 8594,
+      "toward_shoot_se": 938,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 7.805631244323342,
+      "printed_ratio": 7.8
+    },
+    "egta_5_mM": {
+      "toward_tip_mean": 1219,
+      "toward_tip_se": 31,
+      "toward_shoot_mean": 4487,
+      "toward_shoot_se": 963,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 3.6808859721082854,
+      "printed_ratio": 3.7
+    },
+    "chlorpromazine_10_uM": {
+      "toward_tip_mean": 1518,
+      "toward_tip_se": 45,
+      "toward_shoot_mean": 9067,
+      "toward_shoot_se": 1219,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 5.9729907773386035,
+      "printed_ratio": 6.0
+    }
+  },
+  "table_2_cap_removed_dpm": {
+    "control_ph6": {
+      "toward_tip_mean": 13982,
+      "toward_tip_se": 643,
+      "toward_shoot_mean": 8867,
+      "toward_shoot_se": 475,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.6341725075096553,
+      "printed_ratio": 0.63
+    },
+    "control_ph4_5": {
+      "toward_tip_mean": 10422,
+      "toward_tip_se": 625,
+      "toward_shoot_mean": 7377,
+      "toward_shoot_se": 342,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.7078295912492804,
+      "printed_ratio": 0.71
+    },
+    "aluminum_chloride_5_mM": {
+      "toward_tip_mean": 17489,
+      "toward_tip_se": 574,
+      "toward_shoot_mean": 15974,
+      "toward_shoot_se": 1322,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.9133741208759791,
+      "printed_ratio": 0.91
+    },
+    "calcium_chloride_5_mM": {
+      "toward_tip_mean": 17408,
+      "toward_tip_se": 1324,
+      "toward_shoot_mean": 13799,
+      "toward_shoot_se": 836,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.7926815257352942,
+      "printed_ratio": 0.79
+    }
+  },
+  "removed_to_present_fold_change": {
+    "control_ph6": {
+      "toward_tip_mean": 8.657585139318886,
+      "toward_shoot_mean": 0.8676974263626578,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.10022395534084483
+    },
+    "control_ph4_5": {
+      "toward_tip_mean": 8.271428571428572,
+      "toward_shoot_mean": 0.9018337408312959,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.1090299859381532
+    },
+    "aluminum_chloride_5_mM": {
+      "toward_tip_mean": 4.653805215540181,
+      "toward_shoot_mean": 1.9937593609585622,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.42841487097502867
+    },
+    "calcium_chloride_5_mM": {
+      "toward_tip_mean": 9.304115446285408,
+      "toward_shoot_mean": 0.9681470567599804,
+      "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.10405578717818953
+    }
+  },
+  "treatment_to_matching_control_fold_change": {
+    "cap_present": {
+      "aluminum_chloride": {
+        "toward_tip_mean": 2.9825396825396826,
+        "toward_shoot_mean": 0.9794621026894865,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.3283986826473531
+      },
+      "calcium_chloride": {
+        "toward_tip_mean": 1.158513931888545,
+        "toward_shoot_mean": 1.394754868382425,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.2039172166956793
+      }
+    },
+    "cap_removed": {
+      "aluminum_chloride": {
+        "toward_tip_mean": 1.6780848205718673,
+        "toward_shoot_mean": 2.1653788803036464,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.290387025588919
+      },
+      "calcium_chloride": {
+        "toward_tip_mean": 1.2450293234158203,
+        "toward_shoot_mean": 1.5562196909890607,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.249946215499141
+      }
+    }
+  },
+  "table_3_cap_present_percent_of_uptake": {
+    "IAA": {
+      "control_ph6": {
+        "toward_tip_mean": 1.17,
+        "toward_tip_se": 0.07,
+        "toward_shoot_mean": 6.82,
+        "toward_shoot_se": 0.53,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 5.82905982905983,
+        "printed_ratio": 5.83
+      },
+      "control_ph4_5": {
+        "toward_tip_mean": 0.93,
+        "toward_tip_se": 0.04,
+        "toward_shoot_mean": 5.16,
+        "toward_shoot_se": 0.46,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 5.548387096774193,
+        "printed_ratio": 5.55
+      },
+      "aluminum_chloride_5_mM": {
+        "toward_tip_mean": 2.26,
+        "toward_tip_se": 0.45,
+        "toward_shoot_mean": 4.33,
+        "toward_shoot_se": 0.35,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.9159292035398232,
+        "printed_ratio": 1.92
+      },
+      "calcium_chloride_5_mM": {
+        "toward_tip_mean": 1.25,
+        "toward_tip_se": 0.16,
+        "toward_shoot_mean": 8.78,
+        "toward_shoot_se": 0.92,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 7.023999999999999,
+        "printed_ratio": 7.02
+      }
+    },
+    "ABA": {
+      "control_ph6": {
+        "toward_tip_mean": 0.75,
+        "toward_tip_se": 0.03,
+        "toward_shoot_mean": 0.72,
+        "toward_shoot_se": 0.05,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.96,
+        "printed_ratio": 0.96
+      },
+      "control_ph4_5": {
+        "toward_tip_mean": 0.72,
+        "toward_tip_se": 0.05,
+        "toward_shoot_mean": 0.76,
+        "toward_shoot_se": 0.09,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.0555555555555556,
+        "printed_ratio": 1.06
+      },
+      "aluminum_chloride_5_mM": {
+        "toward_tip_mean": 0.75,
+        "toward_tip_se": 0.04,
+        "toward_shoot_mean": 0.73,
+        "toward_shoot_se": 0.06,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 0.9733333333333333,
+        "printed_ratio": 0.97
+      },
+      "calcium_chloride_5_mM": {
+        "toward_tip_mean": 0.8,
+        "toward_tip_se": 0.04,
+        "toward_shoot_mean": 0.97,
+        "toward_shoot_se": 0.03,
+        "toward_shoot_to_toward_tip_ratio_of_reported_means": 1.2125,
+        "printed_ratio": 1.21
+      }
+    }
+  },
+  "interpretation_limits": [
+    "Acropetal (tipward) donor on the basal cut surface; basipetal (shootward) donor on the tip.",
+    "Decapping changes the apical contact surface of both preparations.",
+    "Opposite directions are measured in separate segments, and do not form a joint trajectory.",
+    "pH is a control for Al precipitation; the design does not separate all cap physiology from contact geometry.",
+    "Table 3 is expressed as percent of uptake. It uses a separate denominator from Tables 1 and 2."
+  ],
+  "checks": {
+    "table_1_and_2_recomputed_ratios_round_as_printed": true,
+    "table_3_ratios_consistent_with_rounding_of_both_displayed_means": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E75_axial_root_cap/run.py": "4f04d9fdcad78e14fa98747c9985ba69a9758bd1da49697cbbe162d16c891d50",
+    "experiments/calibrated_formation_sources.py": "d4266c6fe7f6351fa29748b9b05cdec9e87f1d09818e0d0b4316ca5bf6a3c47a"
+  }
+}
