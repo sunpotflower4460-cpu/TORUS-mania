@@ -1,0 +1,890 @@
+{
+  "experiment": "E67",
+  "doi": "10.1038/s41592-025-02778-0",
+  "archive_primary_track_id": 251354,
+  "paper_linked_track_id": 415514,
+  "frames_inclusive": [
+    308,
+    338
+  ],
+  "image_level": 1,
+  "image_channel": 0,
+  "images_source_manifest_sha256": "31a5754f35645f7724c5395ab011b2685f9c6594cb31e94645daf5aa3fa6c3fb",
+  "archive_units_xyz_per_voxel": [
+    2.0,
+    2.0,
+    8.0
+  ],
+  "recorded_peak_method_comparison": {
+    "number_of_frames_tracked": 3,
+    "completed_all_frames": false,
+    "distances_from_paper_linked_tracking": [
+      3.367317445567506,
+      3.8773987231881564,
+      5.244469230637304
+    ],
+    "median_distance": 3.8773987231881564,
+    "max_distance": 5.244469230637304,
+    "fraction_of_target_frames_within_16": 0.0967741935483871,
+    "matches_image_position_criterion": false,
+    "image_path_relative_to_first_position": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.2813140693276637,
+        -0.7153949863409252,
+        -0.6911697509819987
+      ],
+      [
+        -2.9592045771159974,
+        -2.7964136780229865,
+        -1.8089087241377797
+      ]
+    ],
+    "first_image_position_xyz": [
+      1085.6558760578741,
+      683.6738359801722,
+      308.9751128337664
+    ],
+    "return_screen_by_neighborhood_radius_fraction": {
+      "0.005": {
+        "status": "insufficient_observations",
+        "measures": null
+      },
+      "0.01": {
+        "status": "insufficient_observations",
+        "measures": null
+      }
+    }
+  },
+  "normalized_template_match": {
+    "forward, 0.50": {
+      "number_of_frames_tracked": 31,
+      "completed_all_frames": true,
+      "distances_from_paper_linked_tracking": [
+        1.4142135623730951,
+        2.0,
+        1.0,
+        1.0,
+        4.0,
+        3.1622776601683795,
+        4.58257569495584,
+        5.0990195135927845,
+        4.47213595499958,
+        4.58257569495584,
+        2.23606797749979,
+        4.47213595499958,
+        4.242640687119285,
+        5.385164807134504,
+        7.54983443527075,
+        5.830951894845301,
+        4.898979485566356,
+        4.123105625617661,
+        4.242640687119285,
+        2.0,
+        2.23606797749979,
+        1.4142135623730951,
+        1.4142135623730951,
+        2.23606797749979,
+        4.242640687119285,
+        4.242640687119285,
+        17.46424919657298,
+        20.42057785666214,
+        25.39685019840059,
+        33.83784863137726,
+        39.25557285278104
+      ],
+      "median_distance": 4.242640687119285,
+      "max_distance": 39.25557285278104,
+      "fraction_of_target_frames_within_16": 0.8387096774193549,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -10.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -14.0,
+          -10.0,
+          0.0
+        ],
+        [
+          -16.0,
+          -14.0,
+          0.0
+        ],
+        [
+          -18.0,
+          -18.0,
+          0.0
+        ],
+        [
+          -22.0,
+          -20.0,
+          0.0
+        ],
+        [
+          -22.0,
+          -24.0,
+          0.0
+        ],
+        [
+          -24.0,
+          -28.0,
+          0.0
+        ],
+        [
+          -26.0,
+          -22.0,
+          0.0
+        ],
+        [
+          -28.0,
+          -20.0,
+          0.0
+        ],
+        [
+          -28.0,
+          -24.0,
+          0.0
+        ],
+        [
+          -30.0,
+          -28.0,
+          0.0
+        ],
+        [
+          -26.0,
+          -40.0,
+          8.0
+        ],
+        [
+          -26.0,
+          -42.0,
+          16.0
+        ],
+        [
+          -28.0,
+          -40.0,
+          16.0
+        ],
+        [
+          -24.0,
+          -42.0,
+          16.0
+        ],
+        [
+          -22.0,
+          -40.0,
+          16.0
+        ],
+        [
+          -20.0,
+          -38.0,
+          16.0
+        ],
+        [
+          -22.0,
+          -36.0,
+          16.0
+        ],
+        [
+          -18.0,
+          -36.0,
+          16.0
+        ],
+        [
+          -18.0,
+          -32.0,
+          16.0
+        ],
+        [
+          -6.0,
+          -42.0,
+          16.0
+        ],
+        [
+          -8.0,
+          -40.0,
+          16.0
+        ],
+        [
+          -12.0,
+          -34.0,
+          8.0
+        ],
+        [
+          -18.0,
+          -34.0,
+          8.0
+        ],
+        [
+          -24.0,
+          -32.0,
+          8.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        684.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "no_near_return",
+          "measures": null
+        },
+        "0.01": {
+          "status": "no_near_return",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 40.792156108742276,
+      "maximum_distance_from_own_start": 51.92301994298868,
+      "tracked_normalized_correlations": [
+        0.9522785258319493,
+        0.9326099780275829,
+        0.8765395628435991,
+        0.8363566123213894,
+        0.8422048697851284,
+        0.8242209990194672,
+        0.8063939038867042,
+        0.8158130572402438,
+        0.7927798087778951,
+        0.7788377681023292,
+        0.7416988657710681,
+        0.7014429337864178,
+        0.6490241989454246,
+        0.6535499346872244,
+        0.6606570093816028,
+        0.6760133580427335,
+        0.675013382088827,
+        0.6804526528542445,
+        0.7162437021289022,
+        0.804329997917982,
+        0.8362143334361296,
+        0.823077502769569,
+        0.8323481243896296,
+        0.6876006516224493,
+        0.5783926855600937,
+        0.6463556855587796,
+        0.6153279597694068,
+        0.6648486733109583,
+        0.6275670527342356,
+        0.6300480532599896
+      ],
+      "correlation_at_stopping_frame_below_threshold": null
+    },
+    "reverse, 0.50": {
+      "number_of_frames_tracked": 3,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        4.123105625617661,
+        8.06225774829855,
+        5.385164807134504
+      ],
+      "median_distance": 5.385164807134504,
+      "max_distance": 8.06225774829855,
+      "fraction_of_target_frames_within_16": 0.0967741935483871,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.0,
+          0.0
+        ],
+        [
+          0.0,
+          -6.0,
+          8.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        682.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 10.0,
+      "maximum_distance_from_own_start": 10.0,
+      "tracked_normalized_correlations": [
+        0.9383511449290041,
+        0.7115210201946236
+      ],
+      "correlation_at_stopping_frame_below_threshold": 0.4167438645452542
+    },
+    "forward, 0.65": {
+      "number_of_frames_tracked": 13,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        1.4142135623730951,
+        2.0,
+        1.0,
+        1.0,
+        4.0,
+        3.1622776601683795,
+        4.58257569495584,
+        5.0990195135927845,
+        4.47213595499958,
+        4.58257569495584,
+        2.23606797749979,
+        4.47213595499958,
+        4.242640687119285
+      ],
+      "median_distance": 4.0,
+      "max_distance": 5.0990195135927845,
+      "fraction_of_target_frames_within_16": 0.41935483870967744,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -10.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -14.0,
+          -10.0,
+          0.0
+        ],
+        [
+          -16.0,
+          -14.0,
+          0.0
+        ],
+        [
+          -18.0,
+          -18.0,
+          0.0
+        ],
+        [
+          -22.0,
+          -20.0,
+          0.0
+        ],
+        [
+          -22.0,
+          -24.0,
+          0.0
+        ],
+        [
+          -24.0,
+          -28.0,
+          0.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        684.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_travel",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_travel",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 36.87817782917155,
+      "maximum_distance_from_own_start": 36.87817782917155,
+      "tracked_normalized_correlations": [
+        0.9522785258319493,
+        0.9326099780275829,
+        0.8765395628435991,
+        0.8363566123213894,
+        0.8422048697851284,
+        0.8242209990194672,
+        0.8063939038867042,
+        0.8158130572402438,
+        0.7927798087778951,
+        0.7788377681023292,
+        0.7416988657710681,
+        0.7014429337864178
+      ],
+      "correlation_at_stopping_frame_below_threshold": 0.6490241989454246
+    },
+    "reverse, 0.65": {
+      "number_of_frames_tracked": 3,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        4.123105625617661,
+        8.06225774829855,
+        5.385164807134504
+      ],
+      "median_distance": 5.385164807134504,
+      "max_distance": 8.06225774829855,
+      "fraction_of_target_frames_within_16": 0.0967741935483871,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.0,
+          0.0
+        ],
+        [
+          0.0,
+          -6.0,
+          8.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        682.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 10.0,
+      "maximum_distance_from_own_start": 10.0,
+      "tracked_normalized_correlations": [
+        0.9383511449290041,
+        0.7115210201946236
+      ],
+      "correlation_at_stopping_frame_below_threshold": 0.4167438645452542
+    },
+    "forward, 0.80": {
+      "number_of_frames_tracked": 9,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        1.4142135623730951,
+        2.0,
+        1.0,
+        1.0,
+        4.0,
+        3.1622776601683795,
+        4.58257569495584,
+        5.0990195135927845,
+        4.47213595499958
+      ],
+      "median_distance": 3.1622776601683795,
+      "max_distance": 5.0990195135927845,
+      "fraction_of_target_frames_within_16": 0.2903225806451613,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -2.0,
+          0.0
+        ],
+        [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -10.0,
+          -6.0,
+          0.0
+        ],
+        [
+          -14.0,
+          -10.0,
+          0.0
+        ],
+        [
+          -16.0,
+          -14.0,
+          0.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        684.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 21.2602916254693,
+      "maximum_distance_from_own_start": 21.2602916254693,
+      "tracked_normalized_correlations": [
+        0.9522785258319493,
+        0.9326099780275829,
+        0.8765395628435991,
+        0.8363566123213894,
+        0.8422048697851284,
+        0.8242209990194672,
+        0.8063939038867042,
+        0.8158130572402438
+      ],
+      "correlation_at_stopping_frame_below_threshold": 0.7927798087778951
+    },
+    "reverse, 0.80": {
+      "number_of_frames_tracked": 2,
+      "completed_all_frames": false,
+      "distances_from_paper_linked_tracking": [
+        4.123105625617661,
+        8.06225774829855
+      ],
+      "median_distance": 6.092681686958105,
+      "max_distance": 8.06225774829855,
+      "fraction_of_target_frames_within_16": 0.06451612903225806,
+      "matches_image_position_criterion": false,
+      "image_path_relative_to_first_position": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.0,
+          0.0
+        ]
+      ],
+      "first_image_position_xyz": [
+        1084.0,
+        682.0,
+        312.0
+      ],
+      "return_screen_by_neighborhood_radius_fraction": {
+        "0.005": {
+          "status": "insufficient_observations",
+          "measures": null
+        },
+        "0.01": {
+          "status": "insufficient_observations",
+          "measures": null
+        }
+      },
+      "final_distance_from_own_start": 4.0,
+      "maximum_distance_from_own_start": 4.0,
+      "tracked_normalized_correlations": [
+        0.9383511449290041
+      ],
+      "correlation_at_stopping_frame_below_threshold": 0.7115210201946236
+    }
+  },
+  "reference_start_xyz": [
+    1085.0,
+    685.0,
+    312.0
+  ],
+  "centered_reference_track_xyz": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -1.0,
+      -1.0,
+      0.0
+    ],
+    [
+      -4.0,
+      -3.0,
+      0.0
+    ],
+    [
+      -4.0,
+      -3.0,
+      0.0
+    ],
+    [
+      -5.0,
+      -5.0,
+      4.0
+    ],
+    [
+      -4.0,
+      -6.0,
+      0.0
+    ],
+    [
+      -9.0,
+      -6.0,
+      4.0
+    ],
+    [
+      -12.0,
+      -12.0,
+      4.0
+    ],
+    [
+      -15.0,
+      -15.0,
+      4.0
+    ],
+    [
+      -17.0,
+      -18.0,
+      4.0
+    ],
+    [
+      -21.0,
+      -20.0,
+      0.0
+    ],
+    [
+      -21.0,
+      -25.0,
+      4.0
+    ],
+    [
+      -24.0,
+      -28.0,
+      4.0
+    ],
+    [
+      -24.0,
+      -25.0,
+      4.0
+    ],
+    [
+      -25.0,
+      -26.0,
+      4.0
+    ],
+    [
+      -26.0,
+      -28.0,
+      4.0
+    ],
+    [
+      -29.0,
+      -31.0,
+      4.0
+    ],
+    [
+      -26.0,
+      -41.0,
+      12.0
+    ],
+    [
+      -26.0,
+      -42.0,
+      12.0
+    ],
+    [
+      -27.0,
+      -41.0,
+      16.0
+    ],
+    [
+      -24.0,
+      -41.0,
+      16.0
+    ],
+    [
+      -22.0,
+      -40.0,
+      16.0
+    ],
+    [
+      -20.0,
+      -38.0,
+      16.0
+    ],
+    [
+      -21.0,
+      -36.0,
+      16.0
+    ],
+    [
+      -18.0,
+      -36.0,
+      12.0
+    ],
+    [
+      -18.0,
+      -32.0,
+      12.0
+    ],
+    [
+      -15.0,
+      -28.0,
+      12.0
+    ],
+    [
+      -10.0,
+      -21.0,
+      12.0
+    ],
+    [
+      -3.0,
+      -12.0,
+      12.0
+    ],
+    [
+      0.0,
+      -7.0,
+      8.0
+    ],
+    [
+      0.0,
+      -3.0,
+      4.0
+    ]
+  ],
+  "nearest_brightness_peak_given_reference_distance": [
+    3.367317445567506,
+    3.8773987231881564,
+    5.244469230637304,
+    28.45701762911662,
+    30.372890790419973,
+    5.126996978680579,
+    9.653793720215688,
+    22.093427486883332,
+    23.859458525200033,
+    9.925910263071001,
+    4.938072457868251,
+    7.393238804990355,
+    6.9615679718763115,
+    6.368403883071478,
+    4.010685971701021,
+    5.705844581248866,
+    5.2213770535463615,
+    5.76856469116525,
+    3.6217414648033768,
+    6.0133721387619765,
+    5.0565671204203015,
+    5.811453813637171,
+    28.422821914693206,
+    5.892586347553705,
+    5.12576942342843,
+    25.015609666422918,
+    21.43552132788866,
+    22.359591842791673,
+    28.11775447748294,
+    7.931687179280371,
+    35.380409193081796
+  ],
+  "scope": "Two seeded directions and the comparison positions come from the same green-channel acquisition and do not add a second embryo or an independent fluorescent identity marker. The image peak diagnostics use all reference positions and are kept outside the blinded tracking comparison.",
+  "synthetic_controls": {
+    "directed_translation_continuous_points": 9,
+    "maximum_forward_error": 0.0,
+    "points_before_signal_loss": 4
+  },
+  "checks": {
+    "translated_texture_recovered": true,
+    "blank_frame_censors_without_filling": true,
+    "all_registered_target_frames_available": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E67_half_resolution/run.py": "9e5da6f5ce7d42877491d640bb635e42c62f91ca2630c74e3b4af7536655c18b",
+    "E67_half_resolution/archive.py": "567f557ac62f9e055ce96dbc8b57491aaf92fdeb7f6cc52648b99dc891424d13",
+    "E66_image_only_track/run.py": "82ee2a95e2669d4b5b7962b76e4352b6f773015ef7ca32f89c1a38e6c7d1fd23"
+  }
+}

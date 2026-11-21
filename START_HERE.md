@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E60を実行済み。第15回は根端で回収したオーキシンの化学形、根の新生IAA、洗出し、抱合体からの再生成を確認した。線虫胚の動画では同じ輝点の連続時間を記録して、7分の対向流と、粒子の一周を判定できる長さが足りなかったことを確かめた。次の識別点は、根では通過履歴と化学変換、胚では流れが作られる時間順と同じ胚の三次元軌道・仕事の測定である。[第15回報告](docs/24_PARTICLE_RETURN_AND_AUXIN_REPORT.md)・[資料の検証範囲](research/notes/E55_E60_particle_return_evidence.md)・[実験の再開点](research/STATUS.md)
+E01〜E76を実行済み。第18回は無傷根の反対側で回収されたIAA由来標識の化学確認と、根冠を切除した根片の軸方向の偏りを調べた。胚では神経管の閉鎖中の力を仕事に換算し、被包中の仕事率の表示を再集計した。同じ収支でも内部の流束の閉路が異なる数理対照を加えた。[第18回報告](docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E72_E76_calibrated_formation_evidence.md)・[実験の再開点](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

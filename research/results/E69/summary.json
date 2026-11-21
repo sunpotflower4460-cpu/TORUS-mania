@@ -1,0 +1,132 @@
+{
+  "experiment": "E69",
+  "doi": "10.1103/PRXLife.1.013004",
+  "stage": "blue light intervention starts at onset of Drosophila germband extension",
+  "figure_1c": {
+    "control": {
+      "0": {
+        "relative_mean_length": 1.0001155072251862,
+        "local_line_readings": 27,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.005383091772526605
+      },
+      "10": {
+        "relative_mean_length": 1.4672756983262003,
+        "local_line_readings": 52,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.00872903636193989
+      },
+      "15": {
+        "relative_mean_length": 1.7108066510592437,
+        "local_line_readings": 37,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.007295106081726455
+      }
+    },
+    "optoGEF": {
+      "0": {
+        "relative_mean_length": 1.007207099004071,
+        "local_line_readings": 37,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.007072470694840738
+      },
+      "10": {
+        "relative_mean_length": 1.2718517572255268,
+        "local_line_readings": 26,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.007064250989186283
+      },
+      "15": {
+        "relative_mean_length": 1.3564208201753798,
+        "local_line_readings": 30,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.006026257497313892
+      }
+    },
+    "optoGAP": {
+      "0": {
+        "relative_mean_length": 1.0012661975832342,
+        "local_line_readings": 21,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.0060410175557829016
+      },
+      "10": {
+        "relative_mean_length": 1.1824702108802987,
+        "local_line_readings": 39,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.006297494777977697
+      },
+      "15": {
+        "relative_mean_length": 1.2914911744217463,
+        "local_line_readings": 25,
+        "local_window_minutes_either_side": 0.3,
+        "max_stroke_half_width_plus_fit_residual": 0.006975230643732844
+      }
+    }
+  },
+  "available_times_note": "Common shown range ends around minute 17. Final values not extracted at 20 or 25 minutes.",
+  "n_embryos_per_genotype_reported": [
+    3,
+    5
+  ],
+  "figure_1c_15_minute_text_means": {
+    "control": 1.71,
+    "optoGEF": 1.37,
+    "optoGAP": 1.29
+  },
+  "figure_1c_15_minute_text_sem": {
+    "control": 0.09,
+    "optoGEF": 0.09,
+    "optoGAP": 0.05
+  },
+  "figure_1c_text_p_versus_control": {
+    "optoGEF": 0.06,
+    "optoGAP": 0.02
+  },
+  "relative_length_15_minute_minus_control": {
+    "optoGEF": -0.3543858308838639,
+    "optoGAP": -0.41931547663749735
+  },
+  "figure_4a_reported_medial_myosin_percent_change_mean_sem": {
+    "control": {
+      "minute_1": [
+        3,
+        2
+      ],
+      "minute_5": [
+        9,
+        2
+      ]
+    },
+    "optoGEF": {
+      "minute_1": [
+        22,
+        4
+      ],
+      "minute_5": [
+        66,
+        14
+      ]
+    }
+  },
+  "figure_3d_text_initial_retraction_um_per_s_control_mean_sem": {
+    "ap_junctions": [
+      0.36,
+      0.04
+    ],
+    "dv_junctions": [
+      0.11,
+      0.03
+    ]
+  },
+  "scope": "Tissue length changes after the intervention at extension onset. Published group mean curves, not independent embryo values or calibrated stress-energy measurements. The optoGEF mean difference had reported p=0.06.",
+  "checks": {
+    "all_prespecified_times_in_common_figure_range_read": true,
+    "all_group_endpoints_match_printed_means_within_002": true
+  },
+  "code_sha256": {
+    "experiments/common.py": "0e8a6247f2df53885eff5253001b7fceb7bba3f1c0cc58545c873328ef2bc464",
+    "E69_myosin_axis/run.py": "cd684d3c8d086766fa9c8d0ccab2260af446997fb61099ab7d51b61992011be5",
+    "experiments/iaa_embryo_sources.py": "c9c6b775926e7a6043ec82a0b498e0281e998abf68e6956143f7b82a3accef8f"
+  }
+}
