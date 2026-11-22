@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E76を実行済み。第18回は無傷根の反対側で回収されたIAA由来標識の化学確認と、根冠を切除した根片の軸方向の偏りを調べた。胚では神経管の閉鎖中の力を仕事に換算し、被包中の仕事率の表示を再集計した。同じ収支でも内部の流束の閉路が異なる数理対照を加えた。[第18回報告](docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E72_E76_calibrated_formation_evidence.md)・[実験の再開点](research/STATUS.md)
+E01〜E80を実行済み、主張はH01〜H82。第20回はABCBの輸送介入について、著者公開表の振幅・周期・IAA回収を再計算した。振幅の低下と周期の掲載値の中心の6〜10%程度の延長を記述できたが、root IDがなく周期の同等性は未判定。成長指標の年齢・組織も時計とそろわない。原本取得CLI、セル・ハッシュのmanifest、観測単位監査を公開した。[第20回報告](docs/29_ABCB_CLOCK_INTERVENTION_REPORT.md)・[原表の対応](research/notes/chen_2023_source_schema.md)・[再実行と次の測定](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

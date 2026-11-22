@@ -1,0 +1,578 @@
+{
+  "experiment": "E79",
+  "base_commit": "39513901949d240066e066f5dfd41a1db9808c6f",
+  "registration": {
+    "path": "research/registrations/E79-abcb-clock-source-data.md",
+    "sha256": "82cac4071cb71cf3c798aee09be5472155294bfe2f64de265d469ee523507c98",
+    "commit": "6ccbe7dfcab0e96db4ee4fec4badfd19cd631e4e"
+  },
+  "analysis_type": "retrospective_descriptive_reanalysis_of_published_author_tables",
+  "study_doi": "10.15252/embr.202256271",
+  "datasets": {
+    "fig2I_clock_period": {
+      "panel": "2I",
+      "measure": "DR5_LUC_period",
+      "unit": "h",
+      "age_days": 3,
+      "source": {
+        "manifest_path": "research/sources/chen2023_manifest.json",
+        "manifest_sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9",
+        "file_id": "chen2023_fig2_source",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM6_ESM.xlsx",
+        "sha256": "8f12998383b368adeb33db2f0de497bb1f6f1f7c4804863f2286bd4ba789b059",
+        "archive_member": null,
+        "workbook_sha256": "8f12998383b368adeb33db2f0de497bb1f6f1f7c4804863f2286bd4ba789b059",
+        "sheet": "Figure 2"
+      },
+      "headers": [
+        {
+          "cell": "G76",
+          "text": "Figure 2I",
+          "matches_manifest": true
+        },
+        {
+          "cell": "F77",
+          "text": "Oscillation Period",
+          "matches_manifest": true
+        },
+        {
+          "cell": "G77",
+          "text": "WT",
+          "matches_manifest": true
+        },
+        {
+          "cell": "H77",
+          "text": "amiR-2572",
+          "matches_manifest": true
+        },
+        {
+          "cell": "F78",
+          "text": "(Hours)",
+          "matches_manifest": true
+        }
+      ],
+      "groups": {
+        "wt": {
+          "label": "WT",
+          "range": "G78:G173",
+          "n_numeric_values": 96,
+          "n_registered_cells": 96,
+          "xml_cell_type_counts": {
+            "n": 96
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 21,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 96,
+            "arithmetic_mean": 3.4375,
+            "sample_standard_deviation": 1.0960455234494981,
+            "median": 3.25,
+            "q1": 2.6875,
+            "q3": 4.25,
+            "interquartile_range": 1.5625,
+            "minimum": 1.5,
+            "maximum": 6.5,
+            "geometric_mean": 3.2684371459598376,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 0.0
+        },
+        "amir": {
+          "label": "amiR-2572",
+          "range": "H78:H166",
+          "n_numeric_values": 89,
+          "n_registered_cells": 89,
+          "xml_cell_type_counts": {
+            "n": 89
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 21,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 89,
+            "arithmetic_mean": 3.7668539325842696,
+            "sample_standard_deviation": 1.2538564107888928,
+            "median": 3.75,
+            "q1": 3.0,
+            "q3": 4.75,
+            "interquartile_range": 1.75,
+            "minimum": 1.5,
+            "maximum": 7.0,
+            "geometric_mean": 3.5522016872694477,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.2501801669697164e-16
+        }
+      },
+      "comparison": {
+        "arithmetic_mean_difference_intervention_minus_WT": 0.3293539325842696,
+        "arithmetic_mean_ratio_intervention_over_WT": 1.0958120531154238,
+        "geometric_mean_ratio_intervention_over_WT": 1.0868196415098192
+      },
+      "comparison_numerator": "amir",
+      "comparison_denominator": "wt",
+      "independent_contrast_max_scaled_difference": 0.0,
+      "excluded_summary_cells": [
+        "F174:H174"
+      ],
+      "unit_audit": {
+        "descriptive_unit": "numeric entries in the published source table",
+        "root_id_available": false,
+        "batch_id_available": false,
+        "cross_measure_pairing_identified": false,
+        "root_level_effect_and_equivalence": "not_identifiable_without_unit_ids",
+        "count_mismatch_is_not_proof_of_original_analysis_error": true
+      }
+    },
+    "fig2J_clock_amplitude": {
+      "panel": "2J",
+      "measure": "DR5_LUC_amplitude",
+      "unit": "ADU 15min^-1",
+      "age_days": 3,
+      "source": {
+        "manifest_path": "research/sources/chen2023_manifest.json",
+        "manifest_sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9",
+        "file_id": "chen2023_fig2_source",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM6_ESM.xlsx",
+        "sha256": "8f12998383b368adeb33db2f0de497bb1f6f1f7c4804863f2286bd4ba789b059",
+        "archive_member": null,
+        "workbook_sha256": "8f12998383b368adeb33db2f0de497bb1f6f1f7c4804863f2286bd4ba789b059",
+        "sheet": "Figure 2"
+      },
+      "headers": [
+        {
+          "cell": "K76",
+          "text": "Figure 2J",
+          "matches_manifest": true
+        },
+        {
+          "cell": "J77",
+          "text": "Oscillation Amplitude",
+          "matches_manifest": true
+        },
+        {
+          "cell": "K77",
+          "text": "WT",
+          "matches_manifest": true
+        },
+        {
+          "cell": "L77",
+          "text": "amiR-2572",
+          "matches_manifest": true
+        },
+        {
+          "cell": "J78",
+          "text": "(ADU 15min-1)",
+          "matches_manifest": true
+        }
+      ],
+      "groups": {
+        "wt": {
+          "label": "WT",
+          "range": "K78:K97",
+          "n_numeric_values": 20,
+          "n_registered_cells": 20,
+          "xml_cell_type_counts": {
+            "n": 20
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 21,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 20,
+            "arithmetic_mean": 43.004000000000005,
+            "sample_standard_deviation": 24.859263316349075,
+            "median": 35.28,
+            "q1": 27.52,
+            "q3": 52.22,
+            "interquartile_range": 24.7,
+            "minimum": 14.88,
+            "maximum": 96.0,
+            "geometric_mean": 36.79599477986855,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.9310328203134895e-16
+        },
+        "amir": {
+          "label": "amiR-2572",
+          "range": "L78:L97",
+          "n_numeric_values": 20,
+          "n_registered_cells": 20,
+          "xml_cell_type_counts": {
+            "n": 20
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 21,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 20,
+            "arithmetic_mean": 25.4,
+            "sample_standard_deviation": 14.837505819623743,
+            "median": 21.4,
+            "q1": 17.479999999999997,
+            "q3": 28.98,
+            "interquartile_range": 11.500000000000004,
+            "minimum": 5.04,
+            "maximum": 68.48,
+            "geometric_mean": 21.867157653504144,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.6246801413768512e-16
+        }
+      },
+      "comparison": {
+        "arithmetic_mean_difference_intervention_minus_WT": -17.604000000000006,
+        "arithmetic_mean_ratio_intervention_over_WT": 0.5906427309087525,
+        "geometric_mean_ratio_intervention_over_WT": 0.5942809206361742
+      },
+      "comparison_numerator": "amir",
+      "comparison_denominator": "wt",
+      "independent_contrast_max_scaled_difference": 4.0362573037951614e-16,
+      "excluded_summary_cells": [
+        "J98:L98"
+      ],
+      "unit_audit": {
+        "descriptive_unit": "numeric entries in the published source table",
+        "root_id_available": false,
+        "batch_id_available": false,
+        "cross_measure_pairing_identified": false,
+        "root_level_effect_and_equivalence": "not_identifiable_without_unit_ids",
+        "count_mismatch_is_not_proof_of_original_analysis_error": true
+      }
+    },
+    "fig6G_clock_period": {
+      "panel": "6G",
+      "measure": "DR5_LUC_period",
+      "unit": "h",
+      "age_days": 3,
+      "source": {
+        "manifest_path": "research/sources/chen2023_manifest.json",
+        "manifest_sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9",
+        "file_id": "chen2023_fig6_source",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM9_ESM.xlsx",
+        "sha256": "afe491baa0888b5e4f74971bf8cd672c8d29485ee88b892b5c0143d908e8592e",
+        "archive_member": null,
+        "workbook_sha256": "afe491baa0888b5e4f74971bf8cd672c8d29485ee88b892b5c0143d908e8592e",
+        "sheet": "Figure 6"
+      },
+      "headers": [
+        {
+          "cell": "G61",
+          "text": "Figure 6G",
+          "matches_manifest": true
+        },
+        {
+          "cell": "F62",
+          "text": "Oscillation Period",
+          "matches_manifest": true
+        },
+        {
+          "cell": "G62",
+          "text": "WT",
+          "matches_manifest": true
+        },
+        {
+          "cell": "H62",
+          "text": "syn-tasi-1522A #1",
+          "matches_manifest": true
+        },
+        {
+          "cell": "F63",
+          "text": "(Hours)",
+          "matches_manifest": true
+        }
+      ],
+      "groups": {
+        "wt": {
+          "label": "WT",
+          "range": "G63:G159",
+          "n_numeric_values": 97,
+          "n_registered_cells": 97,
+          "xml_cell_type_counts": {
+            "n": 97
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 27,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 97,
+            "arithmetic_mean": 3.829896907216495,
+            "sample_standard_deviation": 1.3470388008249188,
+            "median": 3.5,
+            "q1": 2.75,
+            "q3": 4.5,
+            "interquartile_range": 1.75,
+            "minimum": 1.5,
+            "maximum": 8.75,
+            "geometric_mean": 3.608644708817857,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 0.0
+        },
+        "syntasi": {
+          "label": "syn-tasi-1522A #1",
+          "range": "H63:H127",
+          "n_numeric_values": 65,
+          "n_registered_cells": 65,
+          "xml_cell_type_counts": {
+            "n": 65
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 23,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 65,
+            "arithmetic_mean": 4.061538461538461,
+            "sample_standard_deviation": 1.3028145382800447,
+            "median": 4.25,
+            "q1": 3.25,
+            "q3": 5.0,
+            "interquartile_range": 1.75,
+            "minimum": 1.0,
+            "maximum": 7.5,
+            "geometric_mean": 3.8162496093601317,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.1636796732604784e-16
+        }
+      },
+      "comparison": {
+        "arithmetic_mean_difference_intervention_minus_WT": 0.23164155432196631,
+        "arithmetic_mean_ratio_intervention_over_WT": 1.0604824515995444,
+        "geometric_mean_ratio_intervention_over_WT": 1.0575298809647247
+      },
+      "comparison_numerator": "syntasi",
+      "comparison_denominator": "wt",
+      "independent_contrast_max_scaled_difference": 0.0,
+      "excluded_summary_cells": [
+        "F160:H160"
+      ],
+      "unit_audit": {
+        "descriptive_unit": "numeric entries in the published source table",
+        "root_id_available": false,
+        "batch_id_available": false,
+        "cross_measure_pairing_identified": false,
+        "root_level_effect_and_equivalence": "not_identifiable_without_unit_ids",
+        "count_mismatch_is_not_proof_of_original_analysis_error": true
+      }
+    },
+    "fig6H_clock_amplitude": {
+      "panel": "6H",
+      "measure": "DR5_LUC_amplitude",
+      "unit": "ADU 15min^-1",
+      "age_days": 3,
+      "source": {
+        "manifest_path": "research/sources/chen2023_manifest.json",
+        "manifest_sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9",
+        "file_id": "chen2023_fig6_source",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM9_ESM.xlsx",
+        "sha256": "afe491baa0888b5e4f74971bf8cd672c8d29485ee88b892b5c0143d908e8592e",
+        "archive_member": null,
+        "workbook_sha256": "afe491baa0888b5e4f74971bf8cd672c8d29485ee88b892b5c0143d908e8592e",
+        "sheet": "Figure 6"
+      },
+      "headers": [
+        {
+          "cell": "K61",
+          "text": "Figure 6H",
+          "matches_manifest": true
+        },
+        {
+          "cell": "J62",
+          "text": "Oscillation Amplitude",
+          "matches_manifest": true
+        },
+        {
+          "cell": "K62",
+          "text": "WT",
+          "matches_manifest": true
+        },
+        {
+          "cell": "L62",
+          "text": "syn-tasi-1522A #1",
+          "matches_manifest": true
+        },
+        {
+          "cell": "J63",
+          "text": "(ADU 15min-1)",
+          "matches_manifest": true
+        }
+      ],
+      "groups": {
+        "wt": {
+          "label": "WT",
+          "range": "K63:K88",
+          "n_numeric_values": 26,
+          "n_registered_cells": 26,
+          "xml_cell_type_counts": {
+            "n": 26
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 27,
+          "numeric_count_equals_caption_n": false,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 26,
+            "arithmetic_mean": 93.58788461538461,
+            "sample_standard_deviation": 27.536817767239445,
+            "median": 93.136,
+            "q1": 73.90100000000001,
+            "q3": 111.23499999999999,
+            "interquartile_range": 37.333999999999975,
+            "minimum": 51.556000000000004,
+            "maximum": 156.544,
+            "geometric_mean": 89.61137480833028,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.585831569440553e-16
+        },
+        "syntasi": {
+          "label": "syn-tasi-1522A #1",
+          "range": "L63:L85",
+          "n_numeric_values": 23,
+          "n_registered_cells": 23,
+          "xml_cell_type_counts": {
+            "n": 23
+          },
+          "numeric_string_count": 0,
+          "missing_cells": [],
+          "n_nonpositive": 0,
+          "n_zero": 0,
+          "caption_n": 23,
+          "numeric_count_equals_caption_n": true,
+          "independent_read_max_cell_difference": 0.0,
+          "independent_read_sum_difference": 0.0,
+          "statistics": {
+            "n": 23,
+            "arithmetic_mean": 43.713086956521735,
+            "sample_standard_deviation": 21.7220846687359,
+            "median": 35.556,
+            "q1": 26.715999999999998,
+            "q3": 57.9255,
+            "interquartile_range": 31.209500000000002,
+            "minimum": 17.086000000000002,
+            "maximum": 89.08599999999998,
+            "geometric_mean": 38.92830550814365,
+            "geometric_mean_status": "computed_all_values_positive"
+          },
+          "independent_statistic_max_scaled_difference": 1.8252598629330463e-16
+        }
+      },
+      "comparison": {
+        "arithmetic_mean_difference_intervention_minus_WT": -49.874797658862875,
+        "arithmetic_mean_ratio_intervention_over_WT": 0.4670806177120909,
+        "geometric_mean_ratio_intervention_over_WT": 0.43441254630237935
+      },
+      "comparison_numerator": "syntasi",
+      "comparison_denominator": "wt",
+      "independent_contrast_max_scaled_difference": 0.0,
+      "excluded_summary_cells": [
+        "J89:L89"
+      ],
+      "unit_audit": {
+        "descriptive_unit": "numeric entries in the published source table",
+        "root_id_available": false,
+        "batch_id_available": false,
+        "cross_measure_pairing_identified": false,
+        "root_level_effect_and_equivalence": "not_identifiable_without_unit_ids",
+        "count_mismatch_is_not_proof_of_original_analysis_error": true
+      }
+    }
+  },
+  "statistic_definitions": {
+    "weighting": "Equal weight per published numeric entry; no reconstruction of root-level weights.",
+    "standard_deviation": "Sample standard deviation, denominator n-1; descriptive dispersion, not standard error.",
+    "quartiles": "Linear interpolation at (n-1)*q (inclusive/type 7), q=0.25 and 0.75.",
+    "geometric_mean": "exp(mean(log(value))) only if every value in the group is positive.",
+    "ratio": "Intervention group center divided by its own figure's WT center."
+  },
+  "observation_method": {
+    "age_days": 3,
+    "frame_interval_minutes": 15,
+    "exposure_minutes": 7,
+    "reporter": "DR5:LUC auxin-response reporter",
+    "amplitude": "Movie maximum minus minimum of the ROI mean signal (ADU per pixel), in a square ROI selected where a prebranch site forms.",
+    "period": "Frames between reporter maxima in the oscillation zone.",
+    "source": "Chen 2023 article Methods p.12; Fig.2 I/J and Fig.6 G/H captions."
+  },
+  "root_level_inference": {
+    "status": "not_identifiable_without_unit_ids",
+    "confidence_intervals": null,
+    "p_values": null,
+    "equivalence_test": null,
+    "ICC_sensitivity": null,
+    "independent_row_intervals": null,
+    "E78_period_ratio_exclusion": "not_assessed",
+    "reason": "Root/event/batch links and non-detected or excluded events are unavailable. Row-weighted centers need not equal equally weighted root centers."
+  },
+  "scope_limits": [
+    "Fig.2 and Fig.6 are two comparisons in one published study, not two independent studies.",
+    "No rows are paired across groups or between amplitude and period; no root or batch IDs are invented.",
+    "A descriptive period ratio near one is not biological equivalence or proof of a constant period.",
+    "No correction for weak-event selection, missing events, reporter delay or ROI selection is fitted.",
+    "Reporter contrasts do not measure same-molecule return time or establish autonomous circulation or a physical torus."
+  ],
+  "reproduction": {
+    "primary": "ElementTree OOXML extraction; float/math.fsum/statistics aggregation.",
+    "independent": "minidom re-read of the same registered cells; 50-digit Decimal mean, SD and geometric mean.",
+    "maximum_scaled_statistic_or_ratio_difference": 4.0362573037951614e-16,
+    "original_workbooks_modified": false,
+    "individual_values_redistributed": false
+  },
+  "checks": {
+    "registration_bytes_match_public_commit": true,
+    "all_source_and_inner_workbook_hashes_match": true,
+    "four_registered_panels_recorded": true,
+    "fig2I_clock_period_headers_match_manifest": true,
+    "fig2I_clock_period_registered_counts_and_cell_types": true,
+    "fig2I_clock_period_independent_statistics_and_ratios": true,
+    "fig2J_clock_amplitude_headers_match_manifest": true,
+    "fig2J_clock_amplitude_registered_counts_and_cell_types": true,
+    "fig2J_clock_amplitude_independent_statistics_and_ratios": true,
+    "fig6G_clock_period_headers_match_manifest": true,
+    "fig6G_clock_period_registered_counts_and_cell_types": true,
+    "fig6G_clock_period_independent_statistics_and_ratios": true,
+    "fig6H_clock_amplitude_headers_match_manifest": true,
+    "fig6H_clock_amplitude_registered_counts_and_cell_types": true,
+    "fig6H_clock_amplitude_independent_statistics_and_ratios": true
+  },
+  "code_sha256": {
+    "experiments/abcb_source.py": "60c1b114656b6e059c17f814f29bfb87355d757e2c84c9d5aca0251c56c37821",
+    "experiments/E79_abcb_clock/run.py": "f1ff7d3cfc6a239f88b88ca4535b035657ca1baf7f39a1b7ca6caedd0b926fe2"
+  }
+}

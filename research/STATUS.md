@@ -1,4 +1,53 @@
-# 再開メモ　無傷根の横断と胚の力・仕事をE72〜E76で検証
+# 再開メモ　ABCB輸送介入の信号振幅・周期をE79・E80で再集計
+
+2026-11-22（Asia/Tokyo）。第19回の3951390を継承。研究ブランチ `research/reflux-clock-identifiability-20261122`。効果量計算前の公開登録は `6ccbe7dfcab0e96db4ee4fec4badfd19cd631e4e`。原著の方向性は既知の追解析で、Chen2023の著者図データ1研究を追加。独立外部データ5、公表図表45、著者図数値9研究。生体の独立再現数ではない。[第20回報告](../docs/29_ABCB_CLOCK_INTERVENTION_REPORT.md)・[全82主張](claims.json)
+
+| 実験 | 今回分かったこと |
+|---|---|
+| [E79](results/E79/summary.json) | 全身的/外層特異的ABCB抑制で振幅の幾何平均比0.594281/0.434413、周期1.086820/1.057530。周期の算術平均は3.4375→3.7669 h、3.8299→4.0615 h。公開表の数値行数とcaption nが異なり、根単位の信頼区間・同等性は未同定。 |
+| [E80](results/E80/summary.json) | IAA回収平均256.667→139.333 dpm（0.542857倍）、BA842.25→799（0.948649倍）。掲載平均は再現、S.E.行のBA列はSD一致。3日齢時計と5日齢LRC形態を区別し、成長統制・全閉路の測定は未到達。 |
+
+新しい主張はH81・H82。H44・H45と普遍的生成仮説は未判定。輸送の経路に関わる介入と応答振幅への根拠が加わったが、周期が変わらないという強い判定やE78の輸送率半減予測との直接比較は行わない。
+
+## 今回の再実行
+
+```bash
+python -m pip install -r experiments/requirements.txt
+python -m experiments.run_abcb_clock --cache /tmp/torus-chen2023-cache --out /tmp/torus-abcb-replay
+cd /tmp/torus-abcb-replay
+sha256sum -c ABCB_CLOCK_SHA256SUMS
+```
+
+公開原本3点は固定URLとSHA-256で取得し、cacheに保存する。取得済みの原本だけを使うときは `--offline`。ソースxlsxや全観測値の転載表はGitへ含めず、セル範囲、集計値、コードを残す。[実行記録](results/ABCB_CLOCK_RUN.json)・[SHA-256](results/ABCB_CLOCK_SHA256SUMS)・[source manifest](sources/chen2023_manifest.json)・[アクセス記録](access/2026-11-22-abcb-clock.md)
+
+23項目の入力・数値検算が通過。別のread-only workbook readerで12群が一致し、別エンジンによる時計8列の最大スケール差は7.30e-16。空cacheへ3原本を再取得した再実行で、数値2点・図2点・実行記録・SHA一覧の6ファイルがバイト一致した。同じ計算環境での再現で、生体試料の独立再現ではない。
+
+**次に進む焦点。** 根ごとの全ピーク・振幅・検出不能記録と、同じ時間窓の伸長速度・成熟皮層細胞長を対応させる。Wang2023は成熟細胞長と時計の比較候補だが、今回数値再解析していない。Berg2021/PBSroot2022の原著コードは追加探索でも未取得。2026年の別モデルを原著コードとして代用せず、著者への連絡も行っていない。[資料監査](notes/chen_2023_source_schema.md)
+
+## 引き継いだ第19回
+
+2026-11-22（Asia/Tokyo）。main `f014dbd642342b9e2682c9bb677c529a672a01be` から `research/reflux-clock-identifiability-20261122` で実行。登録は解析前の公開コミット `4d27d24822b51697c989ad6e3ddfa56a8601ef57`。E29・E34の結果を知った上での探索的追解析と数理検証であり、新しい独立生体データの加算は0。[第19回報告](../docs/28_REFLUX_CLOCK_IDENTIFIABILITY_REPORT.md)・[全80主張](claims.json)
+
+| 実験 | 今回分かったこと |
+|---|---|
+| [E77](results/E77/summary.json) | 同じ二係数のべき則はE29の頻度0.337778・間隔0.371964、二待ち時間は0.336481・0.375243。E34 q=1では二待ち0.083994が最良だが、未測定の成熟細胞長の仮定で順位が変わる。tauの訓練SSE1%感度集合は0.65〜1.48時間。 |
+| [E78](results/E78/summary.json) | 正の損失・一定供給の線形循環は解析的に安定、81条件で照合。同じ辺流束J=1を異なる補給で保つと分子一周率は92.56/50/2.20%。E28の課した周期は輸送率半分で1.591倍、2倍で0.791倍。 |
+
+原著の成長する細胞模型とE28の反復規則を区別した。集団循環・同じ分子の一周・持続時計・実空間のトーラスは別の観測対象。H29・H34の元の対照への条件内支持を保持し、機構を一意に識別できないことを追記。H44・H45と上位の生成仮説は未判定。同一分子が戻ることを、集団循環一般の必要条件とはしない。
+
+## 今回の再実行
+
+```bash
+python -m experiments.run_reflux_clock --out /tmp/torus-reflux-clock-replay
+cd /tmp/torus-reflux-clock-replay
+sha256sum -c REFLUX_CLOCK_SHA256SUMS
+```
+
+入力は元のE29・E34の固定済みJSON、E78は既存E22・E28のコード。ネットワーク取得は不要。E77の14項目、E78の17項目を確認し、別の空の出力先への再実行で数値表・時系列・図9点、実行記録、ハッシュ一覧がバイト一致した。これは同じ環境での計算再現で、独立な生体追試ではない。[実行記録](results/REFLUX_CLOCK_RUN.json)・[SHA-256](results/REFLUX_CLOCK_SHA256SUMS)
+
+**次に進む焦点。** 同じ根の細胞生産を独立に測り、戻り輸送への操作が信号の振幅・位置・周期のどれを変えるか比較する。個体ID、伸長速度、成熟細胞長、初期核信号、DR5ピーク時刻をそろえる。原著コードの公式配布先は今回503、個体データは未取得。De Gernierの補足にImageJマクロはあるが原画像・CSVは未取得で、著者への依頼が必要な段階。外部連絡はしていない。[一次資料メモ](notes/E77_E78_reflux_clock_mechanisms.md)・[アクセス記録](access/2026-11-22-reflux-clock.md)
+
+## 引き継いだ第18回
 
 2026-11-21 UTC。第17回 `research/iaa-return-and-embryo-work`（`b55c87c`）を継承し、`research/calibrated-embryo-work-and-root-tip` で実行した。根冠が軸方向の回収に与える影響と無傷根の横断、局所の校正された機械仕事、エネルギー収支と閉路の識別を調べた。同じ天然IAAの一周（H44）と、身体形成に先行する三次元のエネルギー循環（H45）は未判定。[第18回報告](../docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[全78主張](claims.json)
 

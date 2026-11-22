@@ -1,0 +1,69 @@
+{
+  "analysis": "E77_E78_reflux_clock_identifiability",
+  "registration_commit": "4d27d24822b51697c989ad6e3ddfa56a8601ef57",
+  "base_commit": "f014dbd642342b9e2682c9bb677c529a672a01be",
+  "date": "2026-11-22",
+  "timezone": "Asia/Tokyo",
+  "run_kind": "retrospective_reanalysis_and_analytic_model_checks",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "new_independent_biological_datasets": 0,
+  "inputs": "Pinned E29/E34 JSON and existing E22/E28 code; no network needed.",
+  "checks": {
+    "E77": {
+      "all_input_hashes_equal_registered_base": true,
+      "published_registration_hash_matches": true,
+      "existing_three_E29_models_reproduced": true,
+      "existing_three_E34_models_reproduced": true,
+      "existing_digitization_ranges_reproduced": true,
+      "original_spacing_offset_rule_reproduced": true,
+      "power_fit_agrees_with_independent_closed_form": true,
+      "all_four_models_match_target_WT": true,
+      "q_one_reproduces_target_baseline": true,
+      "all_401_tau_points_and_three_starts_recorded": true,
+      "tau_multistart_optima_agree_in_parameters_and_SSE": true,
+      "all_five_common_and_sixteen_endpoint_q_conditions_recorded": true,
+      "all_1024_reading_corners_recorded": true,
+      "original_corner_comparison_reproduced": true
+    },
+    "E78": {
+      "A_column_loss_identity": true,
+      "A_eigenpair_residuals": true,
+      "A_numerical_spectrum_respects_analytic_bound": true,
+      "A_equilibrium_equations": true,
+      "A_ode_matches_matrix_exponential": true,
+      "A_affine_material_budgets": true,
+      "A_semigroup_l1_contraction_bound": true,
+      "B_prescribed_steady_amounts_satisfy_balances": true,
+      "B_probability_formula_matches_absorbing_matrix": true,
+      "B_conditional_time_formula_matches_matrix_moment": true,
+      "B_lap_formula_matches_recurrent_reward": true,
+      "B_ode_matches_absorbing_matrix_exponential": true,
+      "B_five_state_mass_budget": true,
+      "B_time_80_resolves_probability_and_first_moment": true,
+      "C_ode_cdf_matches_E28_analytic_formula": true,
+      "C_independent_threshold_event_times_agree": true,
+      "C_first_pass_material_budgets": true
+    }
+  },
+  "all_checks_passed": true,
+  "output_sha256": {
+    "E77/E34_reading_corners.csv": "1eae9712525b0fe3894c1aecd33b0aa342b84090a30b11e813be71085c48fe96",
+    "E77/summary.json": "e6803ee3c96af594fa456134ca193f8b7ad12baf3bcfda9fb12323d20b028783",
+    "E77/tau_profile.csv": "b3df544fd328c8ce3b343b9eae00dea87f0982edd217683e2bddd920838b440c",
+    "E78/histories.npz": "7d8fb27531d282721665c35859a8643cf9c00b3b66ebbfc2feacf135c0b25cd5",
+    "E78/summary.json": "0774d9530e94ac300b9317e52eccc90bd54b951f8ef56c8624d044a4105dfcbc",
+    "reflux_clock_figures/circulation_vs_clock.png": "dc02b1cd4c56f5448e968eec995a1f8ea8ff2498af8df4f1ab50a9eda4ef7376",
+    "reflux_clock_figures/circulation_vs_clock.svg": "9eb37d6ea75ea6d7ae196c801d6cff5c4e65b6034ea065adf6a0804cb8e456ff",
+    "reflux_clock_figures/growth_law_specificity.png": "e694678beb63352deff10712839860aeafb122ceab14b1ff0dc7ff85530807a0",
+    "reflux_clock_figures/growth_law_specificity.svg": "41617f70a4a4616eef40e3af869f1f75e6cbad8e830672e1533695e66f1093ec"
+  },
+  "orchestration_code_sha256": {
+    "run_reflux_clock.py": "6fca565f1e96ef8eeac825f4e6e6daf09a4f49a87a44a84f9e3e31a5974606eb",
+    "reflux_clock_figures.py": "e2db4f2f261cf1e4284ccc2ef6061080e8e8c0bd2e6373e01c3d5b94c27b3358"
+  }
+}

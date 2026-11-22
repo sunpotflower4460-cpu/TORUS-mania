@@ -1,0 +1,67 @@
+{
+  "analysis": "E79_E80_ABCB_clock_observation_units_and_transport",
+  "registration_commit": "6ccbe7dfcab0e96db4ee4fec4badfd19cd631e4e",
+  "base_commit": "39513901949d240066e066f5dfd41a1db9808c6f",
+  "date": "2026-11-22",
+  "timezone": "Asia/Tokyo",
+  "run_kind": "retrospective_descriptive_reanalysis_and_measurement_audit",
+  "environment": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8",
+    "data_reader": "standard-library OOXML ElementTree and independent minidom/Decimal"
+  },
+  "source_manifest": {
+    "path": "research/sources/chen2023_manifest.json",
+    "sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9"
+  },
+  "study_doi": "10.15252/embr.202256271",
+  "newly_analyzed_author_studies": 1,
+  "new_biological_experiments": 0,
+  "independent_replications_performed": 0,
+  "root_level_confidence_intervals_or_equivalence_tests": "not_identifiable_without_unit_ids",
+  "source_originals_redistributed": false,
+  "individual_observation_tables_redistributed": false,
+  "checks": {
+    "E79": {
+      "registration_bytes_match_public_commit": true,
+      "all_source_and_inner_workbook_hashes_match": true,
+      "four_registered_panels_recorded": true,
+      "fig2I_clock_period_headers_match_manifest": true,
+      "fig2I_clock_period_registered_counts_and_cell_types": true,
+      "fig2I_clock_period_independent_statistics_and_ratios": true,
+      "fig2J_clock_amplitude_headers_match_manifest": true,
+      "fig2J_clock_amplitude_registered_counts_and_cell_types": true,
+      "fig2J_clock_amplitude_independent_statistics_and_ratios": true,
+      "fig6G_clock_period_headers_match_manifest": true,
+      "fig6G_clock_period_registered_counts_and_cell_types": true,
+      "fig6G_clock_period_independent_statistics_and_ratios": true,
+      "fig6H_clock_amplitude_headers_match_manifest": true,
+      "fig6H_clock_amplitude_registered_counts_and_cell_types": true,
+      "fig6H_clock_amplitude_independent_statistics_and_ratios": true
+    },
+    "E80": {
+      "registration_bytes_match_public_commit": true,
+      "original_archive_and_internal_workbook_hashes_match": true,
+      "Fig4A_headers_match_manifest": true,
+      "four_registered_source_groups_recorded": true,
+      "registered_cell_counts_and_types_match": true,
+      "independent_descriptive_statistics_and_ratios_match": true,
+      "author_mean_and_spread_cells_are_finite": true,
+      "Fig4C_header_definitions_match_manifest": true
+    }
+  },
+  "all_checks_passed": true,
+  "output_sha256": {
+    "E79/summary.json": "35674e5acd2c141bc4ef9cb3e6193a41fb08bef0356e2a1887e1d9cd0d120dea",
+    "E80/summary.json": "216524eb06d4145b91f10e3d61c36f3c4a396b5042a3d896f24e3649a4eeea75",
+    "abcb_clock_figures/abcb_clock_ratios.png": "94084fd389f8bf0b9d682485778de20f9f5fe6f15e3aa15610cedf5fd1e52930",
+    "abcb_clock_figures/abcb_clock_ratios.svg": "45bb070234624b7a899c2e44f7f366da6b4d389d08e117bfab1b8c9d2506fc0d"
+  },
+  "code_sha256": {
+    "experiments/run_abcb_clock.py": "36c03360bfe58fbf6834c031c350f28984424ba4aae298a8dde90d358ae8808f",
+    "experiments/abcb_source.py": "60c1b114656b6e059c17f814f29bfb87355d757e2c84c9d5aca0251c56c37821",
+    "experiments/E79_abcb_clock/run.py": "f1ff7d3cfc6a239f88b88ca4535b035657ca1baf7f39a1b7ca6caedd0b926fe2",
+    "experiments/E80_abcb_transport/run.py": "7d2496894327ddda4b2ee823917f1a4a0d8cc34bd4a38fd9584fbf37ce7d3d80",
+    "experiments/abcb_clock_figures.py": "a88a0fa909ca4f03686f0e10fd2802fe5d92fec7f09adb2398c4d4707fa0466c"
+  }
+}
