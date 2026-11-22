@@ -1,0 +1,1889 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-22",
+  "study": {
+    "id": "chen2023_abcb_root_clock",
+    "title": "ABCB-mediated shootward auxin transport feeds into the root clock",
+    "doi": "10.15252/embr.202256271",
+    "pmcid": "PMC10074126",
+    "publisher_url": "https://link.springer.com/article/10.15252/embr.202256271",
+    "public_repository_url": "https://escholarship.org/uc/item/7dk806pr"
+  },
+  "purpose": "Source access, worksheet schema and biological-unit audit for E79/E80. No new effect estimates, P values or confidence intervals are contained here.",
+  "known_outcomes_before_registration": "The original paper reports lower DR5:LUC amplitude and no detected period change after ABCB perturbation. Published figures and tests were visible during source inspection.",
+  "raw_data_redistribution": false,
+  "rights": {
+    "status": "redistribution_license_not_confirmed",
+    "checked_at": "2026-11-22",
+    "publisher_notice": "Copyright The Author(s); no explicit reusable CC license was established from the accessed publisher rights section or supplied files.",
+    "policy": "Preserve URLs, hashes, cell-range metadata and original Japanese summaries. Do not commit publisher PDFs, images, ZIPs, XLSX files or full observation exports."
+  },
+  "files": [
+    {
+      "id": "chen2023_article",
+      "role": "article_pdf",
+      "local_basename": "abcb.pdf",
+      "url": "https://escholarship.org/content/qt7dk806pr/qt7dk806pr_noSplash_cd5a588c61ba6269e9b00b32ce9bfbad.pdf",
+      "final_url": "https://escholarship.org/content/qt7dk806pr/qt7dk806pr_noSplash_cd5a588c61ba6269e9b00b32ce9bfbad.pdf",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:53:14.434287+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "795f822ed3fd37992cbeaa39a13fd3171f1e28d006e60342a08bf1dee669a228",
+      "bytes": 3345899,
+      "content_type": "application/pdf",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false
+    },
+    {
+      "id": "chen2023_appendix",
+      "role": "appendix_pdf",
+      "local_basename": "abcb_appendix.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM1_ESM.pdf",
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM1_ESM.pdf",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:54:55.050070+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "f6e3e3b03658745f9dc3421d4b0f3b2148c7327ca5918c09af952bcd0a3d4943",
+      "bytes": 3181019,
+      "content_type": "application/pdf",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false
+    },
+    {
+      "id": "chen2023_appendix_source",
+      "role": "source_data_archive",
+      "local_basename": "abcb_appendix_data.zip",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM3_ESM.zip",
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM3_ESM.zip",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:54:55.050841+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "50372230d93b67ce57600d55ced0de7c20b3e81b3f08eaf8bb2eaf3dbcf114fe",
+      "bytes": 11265445,
+      "content_type": "application/octet-stream",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false,
+      "archive_members": [
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S1.xlsx",
+          "bytes": 37156,
+          "sha256": "d0ac27a063219f143cc201a7827b7697afb618daa2ac78dfdeebd9e711e7cee1",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 1"
+            ],
+            "sheet_dimension": "A1:AU105",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S6.xlsx",
+          "bytes": 12849,
+          "sha256": "2347c23d8b2daad2714cddd7c8068b4d64ce409026d63b338fbe747816bee8eb",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 6"
+            ],
+            "sheet_dimension": "A1:U44",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S9.xlsx",
+          "bytes": 22386,
+          "sha256": "28f95fed2a71b9430644a05b4338b42940e908448f86d31d911fe5cc61584871",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 9"
+            ],
+            "sheet_dimension": "A1:AE91",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S4.xlsx",
+          "bytes": 13322,
+          "sha256": "2a41d8de32353a96645ecfd5d759c1af72d59fe8a973693974557234b20076fb",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 4"
+            ],
+            "sheet_dimension": "A1:G104",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S8.xlsx",
+          "bytes": 22356,
+          "sha256": "fffd68904cd9b3c353003f79e3d5b4b9b0da0fd819ccaa964119d492fb432523",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 8"
+            ],
+            "sheet_dimension": "A1:AC92",
+            "comments_present": false,
+            "hidden_rows": [
+              17
+            ],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S3.xlsx",
+          "bytes": 15128,
+          "sha256": "b8bef3366548d0917482dedc3d60231e5d3b43455c3ef3d672df7d3c9abddbef",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 3"
+            ],
+            "sheet_dimension": "A1:V35",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Appendix_Figure_Source_Data/Appendix Figure S2.xlsx",
+          "bytes": 16019813,
+          "sha256": "e0c4f9b8a4eb4fdb8685252cec10f8fc5aee2fedc4c4b3d2d522d36d3bcb1ff8",
+          "workbook": {
+            "sheet_names": [
+              "Appendix Figure 2"
+            ],
+            "sheet_dimension": "A2:Y96",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "chen2023_fig2_source",
+      "role": "source_workbook",
+      "local_basename": "abcb_fig2.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM6_ESM.xlsx",
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM6_ESM.xlsx",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:54:55.051698+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "8f12998383b368adeb33db2f0de497bb1f6f1f7c4804863f2286bd4ba789b059",
+      "bytes": 20644,
+      "content_type": "application/octet-stream",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false,
+      "workbook": {
+        "sheet_names": [
+          "Figure 2"
+        ],
+        "sheet_dimension": "A1:S174",
+        "comments_present": false,
+        "hidden_rows": [
+          64
+        ],
+        "hidden_columns": []
+      }
+    },
+    {
+      "id": "chen2023_fig4_source",
+      "role": "source_data_archive",
+      "local_basename": "abcb_fig4.zip",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM8_ESM.zip",
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM8_ESM.zip",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:54:55.052538+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "e24bf364680d68a41551b9a480e3b0496c4147d3464ae078d3c0bad82d2d0108",
+      "bytes": 1629448,
+      "content_type": "application/octet-stream",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false,
+      "archive_members": [
+        {
+          "name": "Figure 4.xlsx",
+          "bytes": 18812,
+          "sha256": "66b2fe0db6ac1557cfc3c3f41519758d8aad177477fd7f40bf9d854d751488c6",
+          "workbook": {
+            "sheet_names": [
+              "Figure 4"
+            ],
+            "sheet_dimension": "A1:W164",
+            "comments_present": false,
+            "hidden_rows": [],
+            "hidden_columns": []
+          }
+        },
+        {
+          "name": "Figure 4B pWOX5-0h.czi",
+          "bytes": 1099072,
+          "sha256": "26b963f55e6b029948c60190c4a01281d10f7b24470fb92a29696d3992e8a77e",
+          "content_inspection": "inventory_only_not_image_analysis"
+        },
+        {
+          "name": "Figure 4B pWOX5-7.5h.czi",
+          "bytes": 1105600,
+          "sha256": "61f23ba09dfb54d4159d51ecb891de5d2fc3fab55545dde480752f21f1fabf20",
+          "content_inspection": "inventory_only_not_image_analysis"
+        },
+        {
+          "name": "Figure 4B pWOX5-9 h.czi",
+          "bytes": 1103744,
+          "sha256": "6902b22c50a6e5067c7db55ea0c4f05b386ccd0e8b76ddbe9d8b1703912d7b1b",
+          "content_inspection": "inventory_only_not_image_analysis"
+        },
+        {
+          "name": "Figure 4B pWOX5-amiRNA2572-0h.czi",
+          "bytes": 1100064,
+          "sha256": "80884a5d8a8a45630ff819042d21fec0bf07da2bc9a40c22669aa99cd017e276",
+          "content_inspection": "inventory_only_not_image_analysis"
+        },
+        {
+          "name": "Figure 4B pWOX5-amiRNA2572-7.5h.czi",
+          "bytes": 1103680,
+          "sha256": "bbbb33491cd20da8100555f23473745929b48a53d29f6b76e57bcd7763f83be1",
+          "content_inspection": "inventory_only_not_image_analysis"
+        },
+        {
+          "name": "Figure 4B pWOX5-amiRNA2572-9h.czi",
+          "bytes": 1103200,
+          "sha256": "3f1aee7e23ff4a61313063e4bd9c90143df93fa90a83c93e6f319557fabc9410",
+          "content_inspection": "inventory_only_not_image_analysis"
+        }
+      ]
+    },
+    {
+      "id": "chen2023_fig6_source",
+      "role": "source_workbook",
+      "local_basename": "abcb_fig6.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM9_ESM.xlsx",
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM9_ESM.xlsx",
+      "http_status": 200,
+      "accessed_at_utc": "2026-11-22T05:55:07.318103+00:00",
+      "access_timestamp_definition": "request_start",
+      "sha256": "afe491baa0888b5e4f74971bf8cd672c8d29485ee88b892b5c0143d908e8592e",
+      "bytes": 18327,
+      "content_type": "application/octet-stream",
+      "license_status": "redistribution_license_not_confirmed",
+      "included_in_git": false,
+      "workbook": {
+        "sheet_names": [
+          "Figure 6"
+        ],
+        "sheet_dimension": "A1:Q160",
+        "comments_present": false,
+        "hidden_rows": [],
+        "hidden_columns": []
+      }
+    }
+  ],
+  "datasets": [
+    {
+      "id": "fig2B_pbs_density",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2B",
+      "measure": "prebranch_site_density",
+      "unit": "sites/cm",
+      "age_days": 10,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B3:B28",
+          "n_values": 26,
+          "caption_n": 26,
+          "xml_cell_type_counts": {
+            "n": 26
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "C3:C28",
+          "n_values": 26,
+          "caption_n": 26,
+          "xml_cell_type_counts": {
+            "n": 26
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "age_conflict_note": "Figure caption says 10 days, while general PBS methods on p12 say 8 days; no reconciliation supplied."
+    },
+    {
+      "id": "fig2D_meristem_length",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2D",
+      "measure": "meristem_length_QC_to_first_elongating_cortex_cell",
+      "unit": "um",
+      "age_days": 5,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "G3:G35",
+          "n_values": 33,
+          "caption_n": 33,
+          "xml_cell_type_counts": {
+            "n": 33
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "H3:H36",
+          "n_values": 34,
+          "caption_n": 34,
+          "xml_cell_type_counts": {
+            "n": 34
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "I3:I39",
+          "n_values": 37,
+          "caption_n": 37,
+          "xml_cell_type_counts": {
+            "n": 37
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "biological_repeats_reported": 3,
+      "cell_production_measured": false
+    },
+    {
+      "id": "fig2E_lrc_cell_number",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2E",
+      "measure": "lateral_root_cap_cell_number",
+      "unit": "cells/root",
+      "age_days": 5,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B44:B73",
+          "n_values": 30,
+          "caption_n": 30,
+          "xml_cell_type_counts": {
+            "n": 30
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "C44:C73",
+          "n_values": 30,
+          "caption_n": 30,
+          "xml_cell_type_counts": {
+            "n": 30
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "D44:D73",
+          "n_values": 30,
+          "caption_n": 30,
+          "xml_cell_type_counts": {
+            "n": 30
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "biological_repeats_reported": 3,
+      "cell_production_measured": false
+    },
+    {
+      "id": "fig2F_distal_lrc_length",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2F",
+      "measure": "distal_lateral_root_cap_cell_length",
+      "unit": "um",
+      "age_days": 5,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "G44:G65",
+          "n_values": 22,
+          "caption_n": 22,
+          "xml_cell_type_counts": {
+            "n": 22
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "H44:H69",
+          "n_values": 26,
+          "caption_n": 26,
+          "xml_cell_type_counts": {
+            "n": 26
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "I44:I66",
+          "n_values": 23,
+          "caption_n": 23,
+          "xml_cell_type_counts": {
+            "n": 23
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "Distal LRC cell measurement; root-to-cell mapping and repeated-measure structure are not supplied.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "biological_repeats_reported": 3,
+      "is_mature_cortex_cell_length": false
+    },
+    {
+      "id": "fig2H_lrc_stripe_interval",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2H",
+      "measure": "DR5_VENUS_distal_LRC_stripe_disappearance_interval",
+      "unit": "h",
+      "age_days": 3,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B78:B92",
+          "n_values": 15,
+          "caption_n": 15,
+          "xml_cell_type_counts": {
+            "n": 15
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "C78:C95",
+          "n_values": 18,
+          "caption_n": 18,
+          "xml_cell_type_counts": {
+            "n": 18
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "D78:D94",
+          "n_values": 17,
+          "caption_n": 17,
+          "xml_cell_type_counts": {
+            "n": 17
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "Time interval between consecutive stripe disappearance events; root identity is not supplied.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "imaging_interval_minutes": 10,
+      "exposure_seconds": 1
+    },
+    {
+      "id": "fig2I_clock_period",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2I",
+      "measure": "DR5_LUC_period",
+      "unit": "h",
+      "age_days": 3,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "G78:G173",
+          "n_values": 96,
+          "caption_n": 21,
+          "xml_cell_type_counts": {
+            "n": 96
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "H78:H166",
+          "n_values": 89,
+          "caption_n": 21,
+          "xml_cell_type_counts": {
+            "n": 89
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        }
+      ],
+      "observation_unit": "Source-table sample value. The paper does not map each period interval or amplitude ROI to a root; independence and clustering are unresolved.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "G76",
+          "text": "Figure 2I"
+        },
+        {
+          "cell": "F77",
+          "text": "Oscillation Period"
+        },
+        {
+          "cell": "G77",
+          "text": "WT"
+        },
+        {
+          "cell": "H77",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "F78",
+          "text": "(Hours)"
+        }
+      ],
+      "excluded_summary_cells": [
+        "F174:H174"
+      ],
+      "same_measure_as_priming_onset_not_established": true
+    },
+    {
+      "id": "fig2J_clock_amplitude",
+      "file_id": "chen2023_fig2_source",
+      "archive_member": null,
+      "sheet": "Figure 2",
+      "panel": "2J",
+      "measure": "DR5_LUC_amplitude",
+      "unit": "ADU 15min^-1",
+      "age_days": 3,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "K78:K97",
+          "n_values": 20,
+          "caption_n": 21,
+          "xml_cell_type_counts": {
+            "n": 20
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "L78:L97",
+          "n_values": 20,
+          "caption_n": 21,
+          "xml_cell_type_counts": {
+            "n": 20
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        }
+      ],
+      "observation_unit": "Source-table sample value. The paper does not map each period interval or amplitude ROI to a root; independence and clustering are unresolved.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "K76",
+          "text": "Figure 2J"
+        },
+        {
+          "cell": "J77",
+          "text": "Oscillation Amplitude"
+        },
+        {
+          "cell": "K77",
+          "text": "WT"
+        },
+        {
+          "cell": "L77",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "J78",
+          "text": "(ADU 15min-1)"
+        }
+      ],
+      "excluded_summary_cells": [
+        "J98:L98"
+      ]
+    },
+    {
+      "id": "fig6C_stele_expression",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6C",
+      "measure": "ABCB17_YFP_mean_intensity_stele",
+      "unit": "A.U.",
+      "age_days": 3,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B3:B18",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "C3:C18",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "D3:D16",
+          "n_values": 14,
+          "caption_n": 14,
+          "xml_cell_type_counts": {
+            "n": 14
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "ROI mean intensity; leaf values explicitly average five cells per leaf, whereas no cross-panel root pairing is given.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": []
+    },
+    {
+      "id": "fig6D_outer_expression",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6D",
+      "measure": "ABCB17_YFP_mean_intensity_epidermis_and_LRC",
+      "unit": "A.U.",
+      "age_days": 3,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B23:B38",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "C23:C38",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "D23:D36",
+          "n_values": 14,
+          "caption_n": 14,
+          "xml_cell_type_counts": {
+            "n": 14
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "ROI mean intensity; leaf values explicitly average five cells per leaf, whereas no cross-panel root pairing is given.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": []
+    },
+    {
+      "id": "fig6E_leaf_expression",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6E",
+      "measure": "ABCB17_YFP_mean_intensity_leaf",
+      "unit": "A.U.",
+      "age_days": 3,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B43:B58",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "C43:C58",
+          "n_values": 16,
+          "caption_n": 16,
+          "xml_cell_type_counts": {
+            "n": 16
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir",
+          "label": "amiR-2572",
+          "range": "D43:D56",
+          "n_values": 14,
+          "caption_n": 14,
+          "xml_cell_type_counts": {
+            "n": 14
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "ROI mean intensity; leaf values explicitly average five cells per leaf, whereas no cross-panel root pairing is given.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": []
+    },
+    {
+      "id": "fig6F_pbs_density",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6F",
+      "measure": "prebranch_site_density",
+      "unit": "sites/cm",
+      "age_days": 10,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "B63:B77",
+          "n_values": 15,
+          "caption_n": 15,
+          "xml_cell_type_counts": {
+            "n": 15
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "C63:C76",
+          "n_values": 14,
+          "caption_n": 14,
+          "xml_cell_type_counts": {
+            "n": 14
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "age_conflict_note": "Figure caption says 10 days, while general PBS methods on p12 say 8 days; no reconciliation supplied."
+    },
+    {
+      "id": "fig6G_clock_period",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6G",
+      "measure": "DR5_LUC_period",
+      "unit": "h",
+      "age_days": 3,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "G63:G159",
+          "n_values": 97,
+          "caption_n": 27,
+          "xml_cell_type_counts": {
+            "n": 97
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "H63:H127",
+          "n_values": 65,
+          "caption_n": 23,
+          "xml_cell_type_counts": {
+            "n": 65
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        }
+      ],
+      "observation_unit": "Source-table sample value. The paper does not map each period interval or amplitude ROI to a root; independence and clustering are unresolved.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "G61",
+          "text": "Figure 6G"
+        },
+        {
+          "cell": "F62",
+          "text": "Oscillation Period"
+        },
+        {
+          "cell": "G62",
+          "text": "WT"
+        },
+        {
+          "cell": "H62",
+          "text": "syn-tasi-1522A #1"
+        },
+        {
+          "cell": "F63",
+          "text": "(Hours)"
+        }
+      ],
+      "excluded_summary_cells": [
+        "F160:H160"
+      ],
+      "same_measure_as_priming_onset_not_established": true
+    },
+    {
+      "id": "fig6H_clock_amplitude",
+      "file_id": "chen2023_fig6_source",
+      "archive_member": null,
+      "sheet": "Figure 6",
+      "panel": "6H",
+      "measure": "DR5_LUC_amplitude",
+      "unit": "ADU 15min^-1",
+      "age_days": 3,
+      "caption_pdf_page": 10,
+      "groups": [
+        {
+          "id": "wt",
+          "label": "WT",
+          "range": "K63:K88",
+          "n_values": 26,
+          "caption_n": 27,
+          "xml_cell_type_counts": {
+            "n": 26
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": false
+        },
+        {
+          "id": "syntasi",
+          "label": "syn-tasi-1522A #1",
+          "range": "L63:L85",
+          "n_values": 23,
+          "caption_n": 23,
+          "xml_cell_type_counts": {
+            "n": 23
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "Source-table sample value. The paper does not map each period interval or amplitude ROI to a root; independence and clustering are unresolved.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "K61",
+          "text": "Figure 6H"
+        },
+        {
+          "cell": "J62",
+          "text": "Oscillation Amplitude"
+        },
+        {
+          "cell": "K62",
+          "text": "WT"
+        },
+        {
+          "cell": "L62",
+          "text": "syn-tasi-1522A #1"
+        },
+        {
+          "cell": "J63",
+          "text": "(ADU 15min-1)"
+        }
+      ],
+      "excluded_summary_cells": [
+        "J89:L89"
+      ]
+    },
+    {
+      "id": "fig4A_shootward_transport",
+      "file_id": "chen2023_fig4_source",
+      "archive_member": "Figure 4.xlsx",
+      "sheet": "Figure 4",
+      "panel": "4A",
+      "measure": "root_shootward_radiotracer_transport",
+      "unit": "dpm",
+      "age_days": null,
+      "caption_pdf_page": 8,
+      "groups": [
+        {
+          "id": "wt_iaa",
+          "label": "Col-0; IAA",
+          "range": "B4:B6",
+          "n_values": 3,
+          "caption_n": 3,
+          "xml_cell_type_counts": {
+            "n": 3
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_iaa",
+          "label": "amiR-2572; IAA",
+          "range": "C4:C6",
+          "n_values": 3,
+          "caption_n": 3,
+          "xml_cell_type_counts": {
+            "n": 3
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_ba",
+          "label": "Col-0; BA",
+          "range": "D4:D7",
+          "n_values": 4,
+          "caption_n": 4,
+          "xml_cell_type_counts": {
+            "n": 4
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_ba",
+          "label": "amiR-2572; BA",
+          "range": "E4:E6",
+          "n_values": 3,
+          "caption_n": 3,
+          "xml_cell_type_counts": {
+            "n": 3
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "Transport-assay replicate value; root count per pooled sample, biological/technical replicate hierarchy, and individual identifiers are not specified in Chen et al.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "B1",
+          "text": "Figure 4A"
+        },
+        {
+          "cell": "A2",
+          "text": "Shoot-ward transport"
+        },
+        {
+          "cell": "B2",
+          "text": "IAA"
+        },
+        {
+          "cell": "D2",
+          "text": "BA"
+        },
+        {
+          "cell": "A3",
+          "text": "(dpm)"
+        },
+        {
+          "cell": "B3",
+          "text": "Col-0"
+        },
+        {
+          "cell": "C3",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "D3",
+          "text": "Col-0"
+        },
+        {
+          "cell": "E3",
+          "text": "amiR-2572"
+        }
+      ],
+      "archive_member_sha256": "66b2fe0db6ac1557cfc3c3f41519758d8aad177477fd7f40bf9d854d751488c6",
+      "tracer_labels": {
+        "IAA": "3H-IAA",
+        "BA": "14C-benzoic acid"
+      },
+      "direction": "root tip toward shoot",
+      "root_count_per_pool": null,
+      "assay_duration_minutes": null,
+      "sampled_segment_geometry": null,
+      "methods_pdf_page": 13,
+      "cited_protocol_doi": "10.1038/nprot.2009.1",
+      "protocol_import_policy": "Referenced protocol details are not treated as confirmed Chen-specific ages, pool sizes or timing.",
+      "tissue_specific_syntasi_assayed": false,
+      "excluded_summary_cells": [
+        "A8:E10"
+      ],
+      "chemical_identity_limit": "Measured radioactivity does not independently resolve the chemistry of each molecule at the root endpoint; D5-IAA integrity controls elsewhere concern tobacco protoplast export."
+    },
+    {
+      "id": "fig4C_induced_auxin_reporter",
+      "file_id": "chen2023_fig4_source",
+      "archive_member": "Figure 4.xlsx",
+      "sheet": "Figure 4",
+      "panel": "4C",
+      "measure": "elongation_zone_epidermal_DR5_VENUS_mean_intensity",
+      "unit": "A.U.",
+      "age_days": 4,
+      "caption_pdf_page": 8,
+      "groups": [
+        {
+          "id": "wt_0h",
+          "label": "WOX5>>YUC1-TAA1 Control; 0h",
+          "range": "H4:H43",
+          "n_values": 40,
+          "caption_n": 40,
+          "xml_cell_type_counts": {
+            "n": 40
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_0h",
+          "label": "WOX5>>YUC1-TAA1 amiR-2572; 0h",
+          "range": "I4:I43",
+          "n_values": 40,
+          "caption_n": 40,
+          "xml_cell_type_counts": {
+            "n": 40
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_7_5h",
+          "label": "WOX5>>YUC1-TAA1 Control; 7.5h",
+          "range": "J4:J73",
+          "n_values": 70,
+          "caption_n": 70,
+          "xml_cell_type_counts": {
+            "n": 70
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_7_5h",
+          "label": "WOX5>>YUC1-TAA1 amiR-2572; 7.5h",
+          "range": "K4:K73",
+          "n_values": 70,
+          "caption_n": 70,
+          "xml_cell_type_counts": {
+            "n": 70
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_9h",
+          "label": "WOX5>>YUC1-TAA1 Control; 9h",
+          "range": "L4:L143",
+          "n_values": 140,
+          "caption_n": 140,
+          "xml_cell_type_counts": {
+            "n": 140
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_9h",
+          "label": "WOX5>>YUC1-TAA1 amiR-2572; 9h",
+          "range": "M4:M163",
+          "n_values": 160,
+          "caption_n": 160,
+          "xml_cell_type_counts": {
+            "n": 160
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "Cell/ROI fluorescence measurements nested within seedlings. Caption reports at least 4, 7 and 14 seedlings per group at 0, 7.5 and 9 hours respectively; source table has no seedling IDs.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "H1",
+          "text": "Figure 4C"
+        },
+        {
+          "cell": "G2",
+          "text": "Intensity mean vaule"
+        },
+        {
+          "cell": "H2",
+          "text": "0h"
+        },
+        {
+          "cell": "J2",
+          "text": "7.5h"
+        },
+        {
+          "cell": "L2",
+          "text": "9h"
+        },
+        {
+          "cell": "G3",
+          "text": "(A.U)"
+        },
+        {
+          "cell": "H3",
+          "text": "WOX5>>YUC1-TAA1 Control"
+        },
+        {
+          "cell": "I3",
+          "text": "WOX5>>YUC1-TAA1 amiR-2572"
+        },
+        {
+          "cell": "J3",
+          "text": "WOX5>>YUC1-TAA1 Control"
+        },
+        {
+          "cell": "K3",
+          "text": "WOX5>>YUC1-TAA1 amiR-2572"
+        },
+        {
+          "cell": "L3",
+          "text": "WOX5>>YUC1-TAA1 Control"
+        },
+        {
+          "cell": "M3",
+          "text": "WOX5>>YUC1-TAA1 amiR-2572"
+        }
+      ],
+      "archive_member_sha256": "66b2fe0db6ac1557cfc3c3f41519758d8aad177477fd7f40bf9d854d751488c6",
+      "seedlings_minimum_by_time": {
+        "0h": 4,
+        "7.5h": 7,
+        "9h": 14
+      },
+      "intervention": "5 uM beta-estradiol induces QC-localized YUC1-2A-TAA1 in pWOX5:XVE background",
+      "same_seedlings_followed_over_time_not_established": true,
+      "is_direct_flux_measurement": false,
+      "excluded_summary_cells": [
+        "G164:M164"
+      ]
+    },
+    {
+      "id": "fig4D_induced_lr_density",
+      "file_id": "chen2023_fig4_source",
+      "archive_member": "Figure 4.xlsx",
+      "sheet": "Figure 4",
+      "panel": "4D",
+      "measure": "lateral_root_density_after_induction",
+      "unit": "LRs/cm",
+      "age_days": null,
+      "caption_pdf_page": 8,
+      "groups": [
+        {
+          "id": "wt_mock_5d",
+          "label": "Col-0 Mock 5d",
+          "range": "P5:P13",
+          "n_values": 9,
+          "caption_n": 9,
+          "xml_cell_type_counts": {
+            "n": 9
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_mock_5d",
+          "label": "amiR-2572 Mock 5d",
+          "range": "Q5:Q11",
+          "n_values": 7,
+          "caption_n": 7,
+          "xml_cell_type_counts": {
+            "n": 7
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_estradiol_5d",
+          "label": "Col-0 Estradiol 5d",
+          "range": "R5:R15",
+          "n_values": 11,
+          "caption_n": 11,
+          "xml_cell_type_counts": {
+            "n": 11
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_estradiol_5d",
+          "label": "amiR-2572 Estradiol 5d",
+          "range": "S5:S14",
+          "n_values": 10,
+          "caption_n": 10,
+          "xml_cell_type_counts": {
+            "n": 10
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_mock_8d",
+          "label": "Col-0 Mock 8d",
+          "range": "T5:T13",
+          "n_values": 9,
+          "caption_n": 9,
+          "xml_cell_type_counts": {
+            "n": 9
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_mock_8d",
+          "label": "amiR-2572 Mock 8d",
+          "range": "U5:U11",
+          "n_values": 7,
+          "caption_n": 7,
+          "xml_cell_type_counts": {
+            "n": 7
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "wt_estradiol_8d",
+          "label": "Col-0 Estradiol 8d",
+          "range": "V5:V15",
+          "n_values": 11,
+          "caption_n": 11,
+          "xml_cell_type_counts": {
+            "n": 11
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "amir_estradiol_8d",
+          "label": "amiR-2572 Estradiol 8d",
+          "range": "W5:W14",
+          "n_values": 10,
+          "caption_n": 10,
+          "xml_cell_type_counts": {
+            "n": 10
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [
+        {
+          "cell": "P1",
+          "text": "Figure 4D"
+        },
+        {
+          "cell": "O2",
+          "text": "LR density"
+        },
+        {
+          "cell": "P2",
+          "text": "5 days "
+        },
+        {
+          "cell": "T2",
+          "text": "8 days"
+        },
+        {
+          "cell": "O3",
+          "text": "(LRs cm-1)"
+        },
+        {
+          "cell": "P3",
+          "text": "Mock"
+        },
+        {
+          "cell": "R3",
+          "text": "Estradiol"
+        },
+        {
+          "cell": "T3",
+          "text": "Mock"
+        },
+        {
+          "cell": "V3",
+          "text": "Estradiol"
+        },
+        {
+          "cell": "P4",
+          "text": "Col-0"
+        },
+        {
+          "cell": "Q4",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "R4",
+          "text": "Col-0"
+        },
+        {
+          "cell": "S4",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "T4",
+          "text": "Col-0"
+        },
+        {
+          "cell": "U4",
+          "text": "amiR-2572"
+        },
+        {
+          "cell": "V4",
+          "text": "Col-0"
+        },
+        {
+          "cell": "W4",
+          "text": "amiR-2572"
+        }
+      ],
+      "archive_member_sha256": "66b2fe0db6ac1557cfc3c3f41519758d8aad177477fd7f40bf9d854d751488c6",
+      "treatment_start_age_days": 7,
+      "treatment_duration_days": [
+        5,
+        8
+      ],
+      "estradiol_nM": 500,
+      "excluded_summary_cells": [
+        "O16:W16"
+      ]
+    },
+    {
+      "id": "appendixS4_example_trace",
+      "file_id": "chen2023_appendix_source",
+      "archive_member": "Appendix_Figure_Source_Data/Appendix Figure S4.xlsx",
+      "sheet": "Appendix Figure 4",
+      "panel": "S4D-F",
+      "measure": "representative_DR5_LUC_trace",
+      "unit": "ADU 15min^-1",
+      "age_days": null,
+      "caption_pdf_page": 6,
+      "groups": [
+        {
+          "id": "pbs1",
+          "label": "PBS 1",
+          "range": "B29:B104",
+          "n_values": 76,
+          "caption_n": null,
+          "xml_cell_type_counts": {
+            "n": 76
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": null
+        },
+        {
+          "id": "pbs2",
+          "label": "PBS 2",
+          "range": "C29:C104",
+          "n_values": 76,
+          "caption_n": null,
+          "xml_cell_type_counts": {
+            "n": 76
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": null
+        }
+      ],
+      "observation_unit": "Time points in the illustrative single-root profile, not 76 independent roots per series.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "archive_member_sha256": "2a41d8de32353a96645ecfd5d759c1af72d59fe8a973693974557234b20076fb",
+      "caption_pdf": "appendix",
+      "time_range": "A29:A104",
+      "time_unit": "min",
+      "time_start": 0,
+      "time_end": 1125,
+      "time_step": 15,
+      "source_label": "Appendix Figure 4C,D",
+      "genotype_for_trace_not_identified": true,
+      "total_cohort_recording_duration_not_established": true
+    },
+    {
+      "id": "appendixS9B_lr_density_A",
+      "file_id": "chen2023_appendix_source",
+      "archive_member": "Appendix_Figure_Source_Data/Appendix Figure S9.xlsx",
+      "sheet": "Appendix Figure 9",
+      "panel": "S9B",
+      "measure": "lateral_root_density",
+      "unit": "LRs/cm",
+      "age_days": 10,
+      "caption_pdf_page": 13,
+      "groups": [
+        {
+          "id": "group_1",
+          "label": "WT",
+          "range": "B3:B68",
+          "n_values": 66,
+          "caption_n": 66,
+          "xml_cell_type_counts": {
+            "n": 66
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_2",
+          "label": "syn-tasi-1522A #1",
+          "range": "C3:C32",
+          "n_values": 30,
+          "caption_n": 30,
+          "xml_cell_type_counts": {
+            "n": 30
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_3",
+          "label": "syn-tasi-1522A #5",
+          "range": "D3:D37",
+          "n_values": 35,
+          "caption_n": 35,
+          "xml_cell_type_counts": {
+            "n": 35
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "archive_member_sha256": "28f95fed2a71b9430644a05b4338b42940e908448f86d31d911fe5cc61584871",
+      "caption_pdf": "appendix",
+      "cell_production_measured": false,
+      "paired_to_3_day_clock": false
+    },
+    {
+      "id": "appendixS9C_root_length_A",
+      "file_id": "chen2023_appendix_source",
+      "archive_member": "Appendix_Figure_Source_Data/Appendix Figure S9.xlsx",
+      "sheet": "Appendix Figure 9",
+      "panel": "S9C",
+      "measure": "primary_root_length",
+      "unit": "cm",
+      "age_days": 10,
+      "caption_pdf_page": 13,
+      "groups": [
+        {
+          "id": "group_1",
+          "label": "WT",
+          "range": "G3:G68",
+          "n_values": 66,
+          "caption_n": 66,
+          "xml_cell_type_counts": {
+            "n": 66
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_2",
+          "label": "syn-tasi-1522A #1",
+          "range": "H3:H32",
+          "n_values": 30,
+          "caption_n": 30,
+          "xml_cell_type_counts": {
+            "n": 30
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_3",
+          "label": "syn-tasi-1522A #5",
+          "range": "I3:I37",
+          "n_values": 35,
+          "caption_n": 35,
+          "xml_cell_type_counts": {
+            "n": 35
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "archive_member_sha256": "28f95fed2a71b9430644a05b4338b42940e908448f86d31d911fe5cc61584871",
+      "caption_pdf": "appendix",
+      "cell_production_measured": false,
+      "paired_to_3_day_clock": false
+    },
+    {
+      "id": "appendixS9E_lr_density_B",
+      "file_id": "chen2023_appendix_source",
+      "archive_member": "Appendix_Figure_Source_Data/Appendix Figure S9.xlsx",
+      "sheet": "Appendix Figure 9",
+      "panel": "S9E",
+      "measure": "lateral_root_density",
+      "unit": "LRs/cm",
+      "age_days": 10,
+      "caption_pdf_page": 13,
+      "groups": [
+        {
+          "id": "group_1",
+          "label": "WT",
+          "range": "L3:L68",
+          "n_values": 66,
+          "caption_n": 66,
+          "xml_cell_type_counts": {
+            "n": 66
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_2",
+          "label": "syn-tasi-1522B #2",
+          "range": "M3:M35",
+          "n_values": 33,
+          "caption_n": 33,
+          "xml_cell_type_counts": {
+            "n": 33
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_3",
+          "label": "syn-tasi-1522B #6",
+          "range": "N3:N31",
+          "n_values": 29,
+          "caption_n": 29,
+          "xml_cell_type_counts": {
+            "n": 29
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "archive_member_sha256": "28f95fed2a71b9430644a05b4338b42940e908448f86d31d911fe5cc61584871",
+      "caption_pdf": "appendix",
+      "cell_production_measured": false,
+      "paired_to_3_day_clock": false
+    },
+    {
+      "id": "appendixS9F_root_length_B",
+      "file_id": "chen2023_appendix_source",
+      "archive_member": "Appendix_Figure_Source_Data/Appendix Figure S9.xlsx",
+      "sheet": "Appendix Figure 9",
+      "panel": "S9F",
+      "measure": "primary_root_length",
+      "unit": "cm",
+      "age_days": 10,
+      "caption_pdf_page": 13,
+      "groups": [
+        {
+          "id": "group_1",
+          "label": "WT",
+          "range": "Q3:Q68",
+          "n_values": 66,
+          "caption_n": 66,
+          "xml_cell_type_counts": {
+            "n": 66
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_2",
+          "label": "syn-tasi-1522B #2",
+          "range": "R3:R35",
+          "n_values": 33,
+          "caption_n": 33,
+          "xml_cell_type_counts": {
+            "n": 33
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        },
+        {
+          "id": "group_3",
+          "label": "syn-tasi-1522B #6",
+          "range": "S3:S31",
+          "n_values": 29,
+          "caption_n": 29,
+          "xml_cell_type_counts": {
+            "n": 29
+          },
+          "formula_cell_count": 0,
+          "non_numeric_or_empty_cells": [],
+          "count_matches_caption_n": true
+        }
+      ],
+      "observation_unit": "One source value per measured root/seedling phenotype is suggested by the caption; individual and batch labels are absent.",
+      "root_id_available": false,
+      "batch_id_available": false,
+      "cross_measure_pairing_identified": false,
+      "header_cells": [],
+      "archive_member_sha256": "28f95fed2a71b9430644a05b4338b42940e908448f86d31d911fe5cc61584871",
+      "caption_pdf": "appendix",
+      "cell_production_measured": false,
+      "paired_to_3_day_clock": false
+    }
+  ],
+  "clock_methods": {
+    "methods_pdf_page": 12,
+    "seedling_age_days": 3,
+    "luciferin_mM": 1,
+    "imaging_interval_minutes": 15,
+    "exposure_minutes": 7,
+    "measurement": "Fiji analog digital units per pixel in a square region at a future prebranch site, covering the preceding OZ oscillation.",
+    "amplitude_definition": "Highest minus lowest DR5:LUC signal in the OZ region.",
+    "period_definition": "Time spacing between DR5:LUC maxima, determined from image frames.",
+    "source_unit": "ADU 15min^-1",
+    "unit_interpretation": "Retain the published unit. It is not a measured IAA concentration or a molecular transport rate; do not infer derivative units from the label.",
+    "root_ids_available": false,
+    "event_ids_available": false,
+    "batch_ids_available": false,
+    "period_amplitude_pairing_identified": false,
+    "total_recording_duration_hours": null,
+    "instrument_assignment_by_panel": null,
+    "independence": "Unknown; multiple period intervals per root are a possible explanation of the counts, not an established assignment.",
+    "methods_crossreference_discrepancy": "Methods cite Appendix S7B/C for extraction, while the accessible Appendix illustrates the clock trace and amplitude in S4D-F."
+  },
+  "visual_verification": {
+    "date": "2026-11-22",
+    "article_pdf_pages_rendered_and_inspected": [
+      5,
+      10
+    ],
+    "caption_pdf_pages_read": [
+      6,
+      8,
+      10
+    ],
+    "result": "Fig2 I/J and Fig6 G/H axis labels match period/amplitude source columns. Caption n values differ from numeric observation counts. Point density visually agrees with more period observations than amplitude observations, without identifying roots."
+  },
+  "inference_limits": [
+    "Do not treat all clock rows as independent roots, pair adjacent period/amplitude rows, infer batch membership or fill missing amplitudes to match captions.",
+    "Fig4C cell values are nested in seedlings whose identities are not provided; do not reconstruct clusters by assuming every ten consecutive rows are one seedling.",
+    "Fig4A pools, age and precise endpoint timing are not specified in Chen et al.; referenced-protocol defaults are not confirmed Chen assay parameters.",
+    "Global amiR and outer-tissue syn-tasi are mechanistically related interventions in one paper, not independent laboratories or a second experiment on the identical root cohort.",
+    "Morphology at five days and root length at ten days do not independently identify cell production at the three-day clock measurement.",
+    "Distal LRC cell length is not mature cortex cell length; meristem length and cell counts are not division rates.",
+    "Directional shootward transport plus altered reporter amplitude does not directly establish a full reflux cycle, a cycle time or a same-molecule return."
+  ],
+  "next_candidate_not_reanalyzed": {
+    "title": "GH3-mediated auxin inactivation attenuates multiple stages of lateral root development",
+    "doi": "10.1111/nph.19284",
+    "author_manuscript_url": "https://backoffice.biblio.ugent.be/download/01HBBJMFJ3F8GJ69B3YSN7PYQG/01HBBKEEA6YHECM74PZGPTAEEY",
+    "supplement_url": "https://backoffice.biblio.ugent.be/download/01HBBJMFJ3F8GJ69B3YSN7PYQG/01HBBKP1D0TCDF3VJF5BPXNTN1",
+    "status": "Full text and supplement retrieved; no effect-size extraction or reanalysis, and not part of E79/E80."
+  }
+}

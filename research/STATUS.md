@@ -1,4 +1,30 @@
-# 再開メモ　根の周期予測と循環の識別をE77・E78で検証
+# 再開メモ　ABCB輸送介入の信号振幅・周期をE79・E80で再集計
+
+2026-11-22（Asia/Tokyo）。第19回の3951390を継承。研究ブランチ `research/reflux-clock-identifiability-20261122`。効果量計算前の公開登録は `6ccbe7dfcab0e96db4ee4fec4badfd19cd631e4e`。原著の方向性は既知の追解析で、Chen2023の著者図データ1研究を追加。独立外部データ5、公表図表45、著者図数値9研究。生体の独立再現数ではない。[第20回報告](../docs/29_ABCB_CLOCK_INTERVENTION_REPORT.md)・[全82主張](claims.json)
+
+| 実験 | 今回分かったこと |
+|---|---|
+| [E79](results/E79/summary.json) | 全身的/外層特異的ABCB抑制で振幅の幾何平均比0.594281/0.434413、周期1.086820/1.057530。周期の算術平均は3.4375→3.7669 h、3.8299→4.0615 h。公開表の数値行数とcaption nが異なり、根単位の信頼区間・同等性は未同定。 |
+| [E80](results/E80/summary.json) | IAA回収平均256.667→139.333 dpm（0.542857倍）、BA842.25→799（0.948649倍）。掲載平均は再現、S.E.行のBA列はSD一致。3日齢時計と5日齢LRC形態を区別し、成長統制・全閉路の測定は未到達。 |
+
+新しい主張はH81・H82。H44・H45と普遍的生成仮説は未判定。輸送の経路に関わる介入と応答振幅への根拠が加わったが、周期が変わらないという強い判定やE78の輸送率半減予測との直接比較は行わない。
+
+## 今回の再実行
+
+```bash
+python -m pip install -r experiments/requirements.txt
+python -m experiments.run_abcb_clock --cache /tmp/torus-chen2023-cache --out /tmp/torus-abcb-replay
+cd /tmp/torus-abcb-replay
+sha256sum -c ABCB_CLOCK_SHA256SUMS
+```
+
+公開原本3点は固定URLとSHA-256で取得し、cacheに保存する。取得済みの原本だけを使うときは `--offline`。ソースxlsxや全観測値の転載表はGitへ含めず、セル範囲、集計値、コードを残す。[実行記録](results/ABCB_CLOCK_RUN.json)・[SHA-256](results/ABCB_CLOCK_SHA256SUMS)・[source manifest](sources/chen2023_manifest.json)・[アクセス記録](access/2026-11-22-abcb-clock.md)
+
+23項目の入力・数値検算が通過。別のread-only workbook readerで12群が一致し、別エンジンによる時計8列の最大スケール差は7.30e-16。空cacheへ3原本を再取得した再実行で、数値2点・図2点・実行記録・SHA一覧の6ファイルがバイト一致した。同じ計算環境での再現で、生体試料の独立再現ではない。
+
+**次に進む焦点。** 根ごとの全ピーク・振幅・検出不能記録と、同じ時間窓の伸長速度・成熟皮層細胞長を対応させる。Wang2023は成熟細胞長と時計の比較候補だが、今回数値再解析していない。Berg2021/PBSroot2022の原著コードは追加探索でも未取得。2026年の別モデルを原著コードとして代用せず、著者への連絡も行っていない。[資料監査](notes/chen_2023_source_schema.md)
+
+## 引き継いだ第19回
 
 2026-11-22（Asia/Tokyo）。main `f014dbd642342b9e2682c9bb677c529a672a01be` から `research/reflux-clock-identifiability-20261122` で実行。登録は解析前の公開コミット `4d27d24822b51697c989ad6e3ddfa56a8601ef57`。E29・E34の結果を知った上での探索的追解析と数理検証であり、新しい独立生体データの加算は0。[第19回報告](../docs/28_REFLUX_CLOCK_IDENTIFIABILITY_REPORT.md)・[全80主張](claims.json)
 

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_at": "2026-11-22",
   "timezone": "Asia/Tokyo",
-  "stage": "reflux_clock_identifiability",
+  "stage": "abcb_clock_intervention_and_observation_units",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -82,7 +82,9 @@
     "E75",
     "E76",
     "E77",
-    "E78"
+    "E78",
+    "E79",
+    "E80"
   ],
   "independent_external_data_reanalyses": 5,
   "evidence_fields": {
@@ -93,7 +95,7 @@
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。 E58は同じNiwayamaらの原著の動画を初めて追跡した。別個体の独立再現として再加算しない。 E62・E65・E66で同じゼブラフィッシュ撮影の追跡版と体積像を1データセットとして追加。 E67の体積像はE62・E65・E66と同じ1胚。別のデータセットとして加算しない。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
     "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。 E61のAsaiらの図・本文の数値を1研究として追加。 E68のKerk、E69のHerrera-Perez、E71のMartin・Piletを3研究として追加。Wilkinsの抄録は図表の集計件数に含めない。 E73のHernández-Vega、E74のLee・Evans、E75のHasenstein・Evansを3研究として追加。 E77はE29・E34と同じ公表マーカー・中央値を再利用し、研究数を加算しない。E78は解析的な模型で、新しい生体データではない。",
-    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。 E63のKunzらのSource Dataを1研究として追加。 E72のManiouらの主図・拡張図のSource Dataを1研究として追加。"
+    "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。 E63のKunzらのSource Dataを1研究として追加。 E72のManiouらの主図・拡張図のSource Dataを1研究として追加。 E79/E80はChenら2023年のFig.2/4/6 source workbookを合わせて1研究として追加。個体対応のない掲載値の記述統計と測定条件監査であり、新規生体試料の独立再現ではない。"
   },
   "claims": [
     {
@@ -2707,6 +2709,12 @@
           "role": "analytic_scope_distinction_only",
           "path": "research/results/E78/summary.json",
           "finding": "同じ量と各辺流束J=1でも、補給と損失を変えると同一標識の一周率は92.56/50/2.20%。植物での帰還を検証した結果ではなく、集団循環と分子再使用の論理的区別。"
+        },
+        {
+          "experiment_id": "E80",
+          "role": "directional_transport_not_complete_return",
+          "path": "research/results/E80/summary.json",
+          "finding": "外側の地上部方向の輸送に関わるABCB介入を確認。根端投与の回収標識とDR5応答は、全閉路・同一分子の初回帰還を直接測っていない。H44は未判定。"
         }
       ],
       "next_action": "一つの無傷根で、内側の投与領域、根端、外層、初回に戻った内側を対応させる。途中の抱合体・酸化型、残留・外部経由の再流入と分けて遊離IAAを読む。",
@@ -2718,7 +2726,8 @@
         "research/notes/E61_E66_embryo_history_evidence.md",
         "research/notes/E67_E71_iaa_embryo_work_evidence.md",
         "research/notes/E72_E76_calibrated_formation_evidence.md",
-        "research/notes/E77_E78_reflux_clock_mechanisms.md"
+        "research/notes/E77_E78_reflux_clock_mechanisms.md",
+        "research/notes/chen_2023_source_schema.md"
       ],
       "tested_subclaims": [
         {
@@ -4317,8 +4326,87 @@
       "literature_notes": [
         "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ]
+    },
+    {
+      "id": "H81",
+      "statement": "ABCB群の全身的・外層特異的抑制で、DR5:LUC振幅の公開掲載値の中心が低下する。",
+      "status": "supported_within_scope",
+      "scope": "Chen2023 Fig.2 I/JとFig.6 G/H、3日齢。数値行に等しい重みを置く記述統計で、根単位の周期不変性は判定しない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E79",
+        "E80"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.15252/embr.202256271"
+      ],
+      "evidence_role": "原著の傾向と表の構造は既知。効果計算前に6ccbe7dで登録。著者図データの再集計で、生体の独立追試ではない。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E79",
+          "role": "archived_figure_array_descriptive_reanalysis",
+          "path": "research/results/E79/summary.json",
+          "finding": "介入/WTの幾何平均比は振幅0.594281/0.434413、周期1.086820/1.057530。周期の掲載値96/89、97/65と図説明n21/21、27/23の対応がなく、根単位の効果・同等性は未同定。"
+        }
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "根を等しく重み付けした周期が介入前後で同等である。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "成長と細胞生産をそろえて輸送だけの効果を比較できる。",
+          "status": "not_identifiable"
+        }
+      ],
+      "next_action": "root/event/batch ID、全ピークと検出不能記録、同じ時間窓の伸長速度・成熟皮層細胞長をそろえる。",
+      "literature_notes": [
+        "research/notes/chen_2023_source_schema.md"
+      ]
+    },
+    {
+      "id": "H82",
+      "statement": "ABCB群の全身的抑制で、根端投与後の地上部向きIAA由来標識回収の公開平均が低下する。",
+      "status": "supported_within_scope",
+      "scope": "Chen2023 Fig.4A、WT対amiR-2572。回収dpmの3対3値とBA対照4対3値。根のpool本数・年齢・時刻を参照protocolから補完しない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E80"
+      ],
+      "evidence_urls": [
+        "https://doi.org/10.15252/embr.202256271"
+      ],
+      "evidence_role": "E79と同一原著の別パネル。IAA/BAの平均とSDを観測値から計算し、掲載SE行の列別対応を監査。",
+      "independently_reproduced": false,
+      "results": [
+        {
+          "experiment_id": "E80",
+          "role": "directional_transport_measurement_audit",
+          "path": "research/results/E80/summary.json",
+          "finding": "回収dpmの介入/WT平均比はIAA0.542857、BA0.948649。掲載平均行は再現、S.E.と表示された行はIAA列でSEM、BA列でSDに一致。直接の輸送速度・全閉路・同一分子帰還の測定ではない。"
+        }
+      ],
+      "tested_subclaims": [
+        {
+          "statement": "回収dpm比が二つの一階輸送率の同率変化を表す。",
+          "status": "not_identifiable"
+        },
+        {
+          "statement": "組織特異的syn-tasi系統で同じ輸送低下が直接測定されている。",
+          "status": "open"
+        }
+      ],
+      "next_action": "直接輸送測定のpoolと採取条件を確定し、同じ根の時計・細胞生産へ対応させる。",
+      "literature_notes": [
+        "research/notes/chen_2023_source_schema.md"
+      ]
     }
   ],
   "published_measurement_reanalyses": 45,
-  "archived_experimental_figure_array_reanalyses": 8
+  "archived_experimental_figure_array_reanalyses": 9
 }

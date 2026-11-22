@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E78を実行済み、主張はH01〜H80。第19回は、E29・E34の良い周期予測から戻り輸送をどこまで特定できるかを再検討した。同じ自由度の成長則、待ち時間の推定幅、成熟細胞長への仮定感度を比較。線形区画模型で、集団循環・同じ標識の帰還・持続時計を分けた。元の生体データを再利用しており、新規の独立試験には加算しない。[第19回報告](docs/28_REFLUX_CLOCK_IDENTIFIABILITY_REPORT.md)・[原著と簡略模型の対応](research/notes/E77_E78_reflux_clock_mechanisms.md)・[再実行と次の測定](research/STATUS.md)
+E01〜E80を実行済み、主張はH01〜H82。第20回はABCBの輸送介入について、著者公開表の振幅・周期・IAA回収を再計算した。振幅の低下と周期の掲載値の中心の6〜10%程度の延長を記述できたが、root IDがなく周期の同等性は未判定。成長指標の年齢・組織も時計とそろわない。原本取得CLI、セル・ハッシュのmanifest、観測単位監査を公開した。[第20回報告](docs/29_ABCB_CLOCK_INTERVENTION_REPORT.md)・[原表の対応](research/notes/chen_2023_source_schema.md)・[再実行と次の測定](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

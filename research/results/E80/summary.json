@@ -1,0 +1,552 @@
+{
+  "experiment": "E80",
+  "base_commit": "39513901949d240066e066f5dfd41a1db9808c6f",
+  "registration": {
+    "path": "research/registrations/E80-abcb-transport-growth-audit.md",
+    "sha256": "edc561ad946708d49ed842a145eddd9077ca05b10c928b965fb8a2fc8f4d8cc0",
+    "commit": "6ccbe7dfcab0e96db4ee4fec4badfd19cd631e4e"
+  },
+  "analysis_type": "published_radiotracer_descriptive_summary_and_identifiability_audit",
+  "study_doi": "10.15252/embr.202256271",
+  "transport": {
+    "panel": "4A",
+    "unit": "dpm",
+    "source": {
+      "manifest_path": "research/sources/chen2023_manifest.json",
+      "manifest_sha256": "799fe43dbb76d26c10f1099bc5f9f0b8c0d2c658ed657ebe1f1831537eabbaa9",
+      "file_id": "chen2023_fig4_source",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.15252%2Fembr.202256271/MediaObjects/44319_2023_BFEMBR202256271_MOESM8_ESM.zip",
+      "sha256": "e24bf364680d68a41551b9a480e3b0496c4147d3464ae078d3c0bad82d2d0108",
+      "archive_member": "Figure 4.xlsx",
+      "workbook_sha256": "66b2fe0db6ac1557cfc3c3f41519758d8aad177477fd7f40bf9d854d751488c6",
+      "sheet": "Figure 4"
+    },
+    "headers": [
+      {
+        "cell": "B1",
+        "text": "Figure 4A",
+        "matches_manifest": true
+      },
+      {
+        "cell": "A2",
+        "text": "Shoot-ward transport",
+        "matches_manifest": true
+      },
+      {
+        "cell": "B2",
+        "text": "IAA",
+        "matches_manifest": true
+      },
+      {
+        "cell": "D2",
+        "text": "BA",
+        "matches_manifest": true
+      },
+      {
+        "cell": "A3",
+        "text": "(dpm)",
+        "matches_manifest": true
+      },
+      {
+        "cell": "B3",
+        "text": "Col-0",
+        "matches_manifest": true
+      },
+      {
+        "cell": "C3",
+        "text": "amiR-2572",
+        "matches_manifest": true
+      },
+      {
+        "cell": "D3",
+        "text": "Col-0",
+        "matches_manifest": true
+      },
+      {
+        "cell": "E3",
+        "text": "amiR-2572",
+        "matches_manifest": true
+      }
+    ],
+    "groups": {
+      "wt_iaa": {
+        "label": "Col-0; IAA",
+        "range": "B4:B6",
+        "n_numeric_values": 3,
+        "n_registered_cells": 3,
+        "xml_cell_type_counts": {
+          "n": 3
+        },
+        "numeric_string_count": 0,
+        "missing_cells": [],
+        "n_nonpositive": 0,
+        "n_zero": 0,
+        "caption_n": 3,
+        "numeric_count_equals_caption_n": true,
+        "independent_read_max_cell_difference": 0.0,
+        "independent_read_sum_difference": 0.0,
+        "statistics": {
+          "n": 3,
+          "arithmetic_mean": 256.6666666666667,
+          "sample_standard_deviation": 49.80294502670834
+        },
+        "independent_statistic_max_scaled_difference": 0.0
+      },
+      "amir_iaa": {
+        "label": "amiR-2572; IAA",
+        "range": "C4:C6",
+        "n_numeric_values": 3,
+        "n_registered_cells": 3,
+        "xml_cell_type_counts": {
+          "n": 3
+        },
+        "numeric_string_count": 0,
+        "missing_cells": [],
+        "n_nonpositive": 0,
+        "n_zero": 0,
+        "caption_n": 3,
+        "numeric_count_equals_caption_n": true,
+        "independent_read_max_cell_difference": 0.0,
+        "independent_read_sum_difference": 0.0,
+        "statistics": {
+          "n": 3,
+          "arithmetic_mean": 139.33333333333334,
+          "sample_standard_deviation": 15.50268793897798
+        },
+        "independent_statistic_max_scaled_difference": 0.0
+      },
+      "wt_ba": {
+        "label": "Col-0; BA",
+        "range": "D4:D7",
+        "n_numeric_values": 4,
+        "n_registered_cells": 4,
+        "xml_cell_type_counts": {
+          "n": 4
+        },
+        "numeric_string_count": 0,
+        "missing_cells": [],
+        "n_nonpositive": 0,
+        "n_zero": 0,
+        "caption_n": 4,
+        "numeric_count_equals_caption_n": true,
+        "independent_read_max_cell_difference": 0.0,
+        "independent_read_sum_difference": 0.0,
+        "statistics": {
+          "n": 4,
+          "arithmetic_mean": 842.25,
+          "sample_standard_deviation": 216.91991609808446
+        },
+        "independent_statistic_max_scaled_difference": 0.0
+      },
+      "amir_ba": {
+        "label": "amiR-2572; BA",
+        "range": "E4:E6",
+        "n_numeric_values": 3,
+        "n_registered_cells": 3,
+        "xml_cell_type_counts": {
+          "n": 3
+        },
+        "numeric_string_count": 0,
+        "missing_cells": [],
+        "n_nonpositive": 0,
+        "n_zero": 0,
+        "caption_n": 3,
+        "numeric_count_equals_caption_n": true,
+        "independent_read_max_cell_difference": 0.0,
+        "independent_read_sum_difference": 0.0,
+        "statistics": {
+          "n": 3,
+          "arithmetic_mean": 799.0,
+          "sample_standard_deviation": 157.6927392114171
+        },
+        "independent_statistic_max_scaled_difference": 0.0
+      }
+    },
+    "comparisons": {
+      "IAA": {
+        "arithmetic_mean_difference_intervention_minus_WT": -117.33333333333334,
+        "arithmetic_mean_ratio_intervention_over_WT": 0.5428571428571428,
+        "control": "wt_iaa",
+        "intervention": "amir_iaa",
+        "independent_contrast_max_scaled_difference": 0.0
+      },
+      "BA": {
+        "arithmetic_mean_difference_intervention_minus_WT": -43.25,
+        "arithmetic_mean_ratio_intervention_over_WT": 0.9486494508756308,
+        "control": "wt_ba",
+        "intervention": "amir_ba",
+        "independent_contrast_max_scaled_difference": 0.0
+      }
+    },
+    "excluded_summary_cells": [
+      "A8:E10"
+    ],
+    "replicate_unit": "Transport-assay replicate value; root count per pooled sample, biological/technical replicate hierarchy, and individual identifiers are not specified in Chen et al."
+  },
+  "published_summary_cell_audit": {
+    "groups": {
+      "wt_iaa": {
+        "mean_cell": "B8",
+        "published_mean": 256.6666666666667,
+        "recomputed_mean": 256.6666666666667,
+        "mean_absolute_difference": 0.0,
+        "spread_cell": "B9",
+        "row_label": "S.E.",
+        "published_spread": 28.75374372,
+        "recomputed_sample_SD": 49.80294502670834,
+        "recomputed_sample_SD_over_sqrt_n": 28.7537437176062,
+        "absolute_difference_from_SD": 21.049201306708344,
+        "absolute_difference_from_SD_over_sqrt_n": 2.3938007132073835e-09,
+        "matches_sample_SD": false,
+        "matches_sample_SD_over_sqrt_n": true,
+        "diagnosis": "matches_SD_over_sqrt_n",
+        "original_summary_cells_modified": false
+      },
+      "amir_iaa": {
+        "mean_cell": "C8",
+        "published_mean": 139.33333333333334,
+        "recomputed_mean": 139.33333333333334,
+        "mean_absolute_difference": 0.0,
+        "spread_cell": "C9",
+        "row_label": "S.E.",
+        "published_spread": 8.950481055,
+        "recomputed_sample_SD": 15.50268793897798,
+        "recomputed_sample_SD_over_sqrt_n": 8.950481054731702,
+        "absolute_difference_from_SD": 6.552206883977981,
+        "absolute_difference_from_SD_over_sqrt_n": 2.6829738430933503e-10,
+        "matches_sample_SD": false,
+        "matches_sample_SD_over_sqrt_n": true,
+        "diagnosis": "matches_SD_over_sqrt_n",
+        "original_summary_cells_modified": false
+      },
+      "wt_ba": {
+        "mean_cell": "D8",
+        "published_mean": 842.25,
+        "recomputed_mean": 842.25,
+        "mean_absolute_difference": 0.0,
+        "spread_cell": "D9",
+        "row_label": "S.E.",
+        "published_spread": 216.9199161,
+        "recomputed_sample_SD": 216.91991609808446,
+        "recomputed_sample_SD_over_sqrt_n": 108.45995804904223,
+        "absolute_difference_from_SD": 1.915537950480939e-09,
+        "absolute_difference_from_SD_over_sqrt_n": 108.45995805095777,
+        "matches_sample_SD": true,
+        "matches_sample_SD_over_sqrt_n": false,
+        "diagnosis": "matches_sample_SD",
+        "original_summary_cells_modified": false
+      },
+      "amir_ba": {
+        "mean_cell": "E8",
+        "published_mean": 799.0,
+        "recomputed_mean": 799.0,
+        "mean_absolute_difference": 0.0,
+        "spread_cell": "E9",
+        "row_label": "S.E.",
+        "published_spread": 157.6927392,
+        "recomputed_sample_SD": 157.6927392114171,
+        "recomputed_sample_SD_over_sqrt_n": 91.04394543296112,
+        "absolute_difference_from_SD": 1.1417085943321581e-08,
+        "absolute_difference_from_SD_over_sqrt_n": 66.64879376703888,
+        "matches_sample_SD": true,
+        "matches_sample_SD_over_sqrt_n": false,
+        "diagnosis": "matches_sample_SD",
+        "original_summary_cells_modified": false
+      }
+    },
+    "interpretation": "Compare the original row labelled S.E. separately with sample SD and SD/sqrt(n). A label/value mismatch is recorded, not silently repaired. These summary cells are excluded from all observation aggregates and do not affect the arithmetic mean ratios."
+  },
+  "measurement_linkage_audit": {
+    "source_schema_note": "research/notes/chen_2023_source_schema.md",
+    "source_access_record": "research/access/2026-11-22-abcb-clock.md",
+    "measurements": [
+      {
+        "id": "radiotracer_transport",
+        "panel": "4A",
+        "genotypes": [
+          "WT",
+          "amiR-2572"
+        ],
+        "observed_quantity": "Recovered radiolabel, dpm, after application to the root tip",
+        "direction": "root tip toward shoot",
+        "age_days": null,
+        "root_count_per_pool": null,
+        "assay_duration_minutes": null,
+        "sampled_segment_geometry": null,
+        "replicate_unit": "Transport-assay replicate value; root count per pooled sample, biological/technical replicate hierarchy, and individual identifiers are not specified in Chen et al.",
+        "chemical_identity_limit": "Measured radioactivity does not independently resolve the chemistry of each molecule at the root endpoint; D5-IAA integrity controls elsewhere concern tobacco protoplast export.",
+        "evidence": [
+          "chen2023_manifest.json:fig4A_shootward_transport",
+          "article pp.8,13"
+        ],
+        "protocol_doi": "10.1038/nprot.2009.1",
+        "protocol_import_policy": "Referenced protocol details are not treated as confirmed Chen-specific ages, pool sizes or timing."
+      },
+      {
+        "id": "induced_auxin_response",
+        "panel": "4C",
+        "age_days": 4,
+        "observed_quantity": "DR5:VENUS fluorescence in elongation-zone epidermal cells after QC-specific auxin synthesis induction",
+        "treatment": "5 uM beta-estradiol induces QC-localized YUC1-2A-TAA1 in pWOX5:XVE background",
+        "times_hours": [
+          0,
+          7.5,
+          9
+        ],
+        "source_cell_counts": {
+          "wt_0h": 40,
+          "amir_0h": 40,
+          "wt_7_5h": 70,
+          "amir_7_5h": 70,
+          "wt_9h": 140,
+          "amir_9h": 160
+        },
+        "seedlings_minimum_by_time": {
+          "0h": 4,
+          "7.5h": 7,
+          "9h": 14
+        },
+        "root_id_available": false,
+        "same_seedlings_followed_over_time_not_established": true,
+        "is_direct_flux_measurement": false,
+        "new_value_aggregation": false,
+        "headers": [
+          {
+            "cell": "H1",
+            "text": "Figure 4C",
+            "matches_manifest": true
+          },
+          {
+            "cell": "G2",
+            "text": "Intensity mean vaule",
+            "matches_manifest": true
+          },
+          {
+            "cell": "H2",
+            "text": "0h",
+            "matches_manifest": true
+          },
+          {
+            "cell": "J2",
+            "text": "7.5h",
+            "matches_manifest": true
+          },
+          {
+            "cell": "L2",
+            "text": "9h",
+            "matches_manifest": true
+          },
+          {
+            "cell": "G3",
+            "text": "(A.U)",
+            "matches_manifest": true
+          },
+          {
+            "cell": "H3",
+            "text": "WOX5>>YUC1-TAA1 Control",
+            "matches_manifest": true
+          },
+          {
+            "cell": "I3",
+            "text": "WOX5>>YUC1-TAA1 amiR-2572",
+            "matches_manifest": true
+          },
+          {
+            "cell": "J3",
+            "text": "WOX5>>YUC1-TAA1 Control",
+            "matches_manifest": true
+          },
+          {
+            "cell": "K3",
+            "text": "WOX5>>YUC1-TAA1 amiR-2572",
+            "matches_manifest": true
+          },
+          {
+            "cell": "L3",
+            "text": "WOX5>>YUC1-TAA1 Control",
+            "matches_manifest": true
+          },
+          {
+            "cell": "M3",
+            "text": "WOX5>>YUC1-TAA1 amiR-2572",
+            "matches_manifest": true
+          }
+        ],
+        "evidence": [
+          "chen2023_manifest.json:fig4C_induced_auxin_reporter",
+          "article Fig.4 caption p.8"
+        ]
+      },
+      {
+        "id": "meristem_and_LRC_shape",
+        "panels": [
+          "2D",
+          "2E",
+          "2F"
+        ],
+        "age_days": 5,
+        "observed_quantities": [
+          "QC-to-first-elongating-cortical-cell distance",
+          "LRC cell number",
+          "distal LRC cell length"
+        ],
+        "clock_age_days": 3,
+        "same_root_same_time_as_clock": "not_established",
+        "is_mature_cortical_cell_length": false,
+        "is_growth_velocity": false,
+        "is_cell_production_rate": false,
+        "new_value_aggregation": false,
+        "evidence": [
+          "chen2023_manifest.json:fig2D_meristem_length,fig2E_lrc_cell_number,fig2F_distal_lrc_length",
+          "article Fig.2 caption p.6"
+        ]
+      },
+      {
+        "id": "appendix_growth_context",
+        "panels": [
+          "S9B",
+          "S9C",
+          "S9E",
+          "S9F"
+        ],
+        "source_metadata": [
+          {
+            "dataset_id": "appendixS9B_lr_density_A",
+            "age_days": 10,
+            "measure": "lateral_root_density",
+            "unit": "LRs/cm"
+          },
+          {
+            "dataset_id": "appendixS9C_root_length_A",
+            "age_days": 10,
+            "measure": "primary_root_length",
+            "unit": "cm"
+          },
+          {
+            "dataset_id": "appendixS9E_lr_density_B",
+            "age_days": 10,
+            "measure": "lateral_root_density",
+            "unit": "LRs/cm"
+          },
+          {
+            "dataset_id": "appendixS9F_root_length_B",
+            "age_days": 10,
+            "measure": "primary_root_length",
+            "unit": "cm"
+          }
+        ],
+        "is_same_age_cell_production_measurement": false,
+        "new_value_aggregation": false,
+        "evidence": [
+          "chen2023_manifest.json:appendixS9 datasets",
+          "article appendix Fig.S9"
+        ]
+      },
+      {
+        "id": "outer_tissue_specific_clock",
+        "panels": [
+          "6G",
+          "6H"
+        ],
+        "age_days": 3,
+        "genotypes": [
+          "WT",
+          "syn-tasi-1522A#1"
+        ],
+        "direct_transport_in_same_tissue_specific_line": false,
+        "transport_figure_genotype": "global amiR-2572, not the tissue-specific line",
+        "root_id_available": false,
+        "new_value_aggregation": "E79 only",
+        "evidence": [
+          "chen2023_manifest.json:fig6G_clock_period,fig6H_clock_amplitude",
+          "article Fig.6 caption p.10"
+        ]
+      }
+    ],
+    "identifiability": [
+      {
+        "target": "root_level_clock_equivalence",
+        "status": "not_identified",
+        "missing": [
+          "root/event/batch mapping",
+          "exclusion and non-detection records"
+        ]
+      },
+      {
+        "target": "within_root_transport_amplitude_period_mediation",
+        "status": "not_identified",
+        "missing": [
+          "matched transport and clock measurements in the same roots"
+        ]
+      },
+      {
+        "target": "transport_effect_at_fixed_cell_production",
+        "status": "not_identified",
+        "missing": [
+          "same-condition same-age growth velocity",
+          "mature cortical cell length or direct production rate"
+        ]
+      },
+      {
+        "target": "E78_two_first_order_rate_multipliers",
+        "status": "not_identified",
+        "missing": [
+          "mapping from recovered dpm to both model transport rates",
+          "supply, retention, loss, geometry and time calibration"
+        ]
+      },
+      {
+        "target": "same_molecule_complete_return_or_torus",
+        "status": "not_measured",
+        "missing": [
+          "all loop segments",
+          "molecular identity and complete-return trajectories",
+          "three-dimensional geometry"
+        ]
+      }
+    ],
+    "observation_selection": {
+      "clock_reporter": "DR5:LUC response, not a direct count of transported IAA",
+      "amplitude_definition": "Movie max-minus-min of the ROI mean signal (ADU per pixel), in a square ROI selected where a PBS forms",
+      "period_definition": "Frames between OZ reporter maxima",
+      "frame_minutes": 15,
+      "exposure_minutes": 7,
+      "raw_movie_and_peak_identity_available": false,
+      "correction_for_missing_events_performed": false,
+      "E32_relation": "No new Bernoulli thinning or detection model is added.",
+      "evidence": [
+        "article Methods p.12",
+        "chen2023_manifest.json:clock_methods"
+      ]
+    },
+    "scope": "This is a provenance/identifiability audit, not a new growth or oscillation model."
+  },
+  "inference": {
+    "paired_tests": null,
+    "causal_transport_period_coefficient": null,
+    "fixed_cell_production_effect": null,
+    "E78_model_rate_conversion": null,
+    "new_growth_or_oscillation_model": false
+  },
+  "structural_clarification": "Registration's workbook '4A' means the panel heading. The original ZIP member is Figure 4.xlsx and its sole worksheet is Figure 4. Registered cell ranges are unchanged.",
+  "reproduction": {
+    "independent": "minidom OOXML reread and 50-digit Decimal mean/SD/ratios",
+    "maximum_scaled_statistic_or_ratio_difference": 0.0,
+    "all_individual_values_redistributed": false,
+    "original_workbooks_modified": false
+  },
+  "checks": {
+    "registration_bytes_match_public_commit": true,
+    "original_archive_and_internal_workbook_hashes_match": true,
+    "Fig4A_headers_match_manifest": true,
+    "four_registered_source_groups_recorded": true,
+    "registered_cell_counts_and_types_match": true,
+    "independent_descriptive_statistics_and_ratios_match": true,
+    "author_mean_and_spread_cells_are_finite": true,
+    "Fig4C_header_definitions_match_manifest": true
+  },
+  "code_sha256": {
+    "experiments/abcb_source.py": "60c1b114656b6e059c17f814f29bfb87355d757e2c84c9d5aca0251c56c37821",
+    "experiments/E80_abcb_transport/run.py": "7d2496894327ddda4b2ee823917f1a4a0d8cc34bd4a38fd9584fbf37ce7d3d80"
+  }
+}
