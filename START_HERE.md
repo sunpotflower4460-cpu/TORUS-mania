@@ -19,7 +19,7 @@
 
 ## 現在の再開地点
 
-E01〜E76を実行済み。第18回は無傷根の反対側で回収されたIAA由来標識の化学確認と、根冠を切除した根片の軸方向の偏りを調べた。胚では神経管の閉鎖中の力を仕事に換算し、被包中の仕事率の表示を再集計した。同じ収支でも内部の流束の閉路が異なる数理対照を加えた。[第18回報告](docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[一次資料と計算の条件](research/notes/E72_E76_calibrated_formation_evidence.md)・[実験の再開点](research/STATUS.md)
+E01〜E78を実行済み、主張はH01〜H80。第19回は、E29・E34の良い周期予測から戻り輸送をどこまで特定できるかを再検討した。同じ自由度の成長則、待ち時間の推定幅、成熟細胞長への仮定感度を比較。線形区画模型で、集団循環・同じ標識の帰還・持続時計を分けた。元の生体データを再利用しており、新規の独立試験には加算しない。[第19回報告](docs/28_REFLUX_CLOCK_IDENTIFIABILITY_REPORT.md)・[原著と簡略模型の対応](research/notes/E77_E78_reflux_clock_mechanisms.md)・[再実行と次の測定](research/STATUS.md)
 
 ## 準備時点での最初の作業
 

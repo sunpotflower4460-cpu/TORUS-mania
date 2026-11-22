@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21",
+  "updated_at": "2026-11-22",
   "timezone": "Asia/Tokyo",
-  "stage": "root_cap_transport_and_calibrated_formation_work",
+  "stage": "reflux_clock_identifiability",
   "experiments_run": true,
   "completed_experiments": [
     "E01",
@@ -80,7 +80,9 @@
     "E73",
     "E74",
     "E75",
-    "E76"
+    "E76",
+    "E77",
+    "E78"
   ],
   "independent_external_data_reanalyses": 5,
   "evidence_fields": {
@@ -90,7 +92,7 @@
     "completed_experiments": "登録された計算または資料調査を走らせた実験ID。主張の成立や実測での独立予測成功を意味しない。",
     "independent_external_data_reanalyses": "外部公開の一次データを自作コードで再集計したデータセット数。S012補足v1の植物5群を合わせて1件。著者の図データは別項目。 E38のMaranasらの個体別・器官別の一つのDryadデータセットを追加。 E42のMannaらの胚別Dryadデータを1件追加。 E46のNiwayamaらの実測流速ベクトル群を1件追加。再解析の件数であり、新しい生体試料での独立再現の件数ではない。 E51はE46と同じNiwayamaらの配列であり、再加算しない。 E58は同じNiwayamaらの原著の動画を初めて追跡した。別個体の独立再現として再加算しない。 E62・E65・E66で同じゼブラフィッシュ撮影の追跡版と体積像を1データセットとして追加。 E67の体積像はE62・E65・E66と同じ1胚。別のデータセットとして加算しない。",
     "tested_subclaims": "全体のstatusと別に、測定対象を限定した命題の判定を保存する。",
-    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。 E61のAsaiらの図・本文の数値を1研究として追加。 E68のKerk、E69のHerrera-Perez、E71のMartin・Piletを3研究として追加。Wilkinsの抄録は図表の集計件数に含めない。 E73のHernández-Vega、E74のLee・Evans、E75のHasenstein・Evansを3研究として追加。",
+    "published_measurement_reanalyses": "公表図・表・本文の数値から再計算した研究単位。E10の4研究、E16のDjenoune、E18のDitengou・Richter・Pien、E20のKircher & Schopfer、E21のReed・Rashotte・Casimiro。図表を複数読んでも1研究。 E24とE25でMarhavýらの2013年と2016年の研究を各1件追加。 E27のMellorとE29のvan den Bergは各1件の公表図から再集計。 E30のWachsmanとE31のPerianez-Rodriguezを公表図から各1件再集計。 E34のDe Gernier、E35のDuan、E36のLimbourg・NedićとBaskaran・Mullenersを4件追加。 E39のPařízkováとE41のLuの各1件を追加。 E44のOhwaki・Tsurumi（1976）とTsurumi・Ohwaki（1978）、E45のRůžičkaとLiuを4件追加。E48の横断面はE46と同一原著のため、別の研究として加算しない。 E49のRashotteら（2003）、E50のLewisらとWuら、E52のMittaschら、E53のKimura・Kimura、E54のNgらを6研究として追加。LewisとWuは著者と材料、MittaschとNgは技術と一部の著者が重なる。 E55のPěnčík、E56のLjung、E57のHerud-Sikimić、E59のHai-Yin Wuを4研究として追加。Peterssonの図は補助資料。 E61のAsaiらの図・本文の数値を1研究として追加。 E68のKerk、E69のHerrera-Perez、E71のMartin・Piletを3研究として追加。Wilkinsの抄録は図表の集計件数に含めない。 E73のHernández-Vega、E74のLee・Evans、E75のHasenstein・Evansを3研究として追加。 E77はE29・E34と同じ公表マーカー・中央値を再利用し、研究数を加算しない。E78は解析的な模型で、新しい生体データではない。",
     "archived_experimental_figure_array_reanalyses": "著者が公開した測定図の数値配列を自作コードで再集計した研究単位。E15のMatsuzawa、E23のVega、E26のLiの3件。画像からの読取りや、図になる前の元の速度計測・顕微鏡像とは別。 E33のHuらの掲載図の数値ワークブックを1件追加。 E47のDehapiotらの図・補足図の元になるS1 Dataを1件追加。 E60のHayashiらのSource Dataを1研究として追加。 E63のKunzらのSource Dataを1研究として追加。 E72のManiouらの主図・拡張図のSource Dataを1研究として追加。"
   },
   "claims": [
@@ -1898,7 +1900,8 @@
         "T-F"
       ],
       "planned_experiments": [
-        "E28"
+        "E28",
+        "E78"
       ],
       "evidence_urls": [
         "https://doi.org/10.1016/j.devcel.2021.07.005"
@@ -1911,11 +1914,18 @@
           "role": "matched_supply_counterexample_with_first_pass_tracer",
           "path": "research/results/E28/summary.json",
           "finding": "初回帰還を待つ条件で生産率0.5→1.5に対し頻度0.190→0.386、間隔2.63→3.89細胞分。同じ待ち時間を与えた独立供給が両者を再現。"
+        },
+        {
+          "experiment_id": "E78",
+          "role": "imposed_clock_and_transport_sensitivity",
+          "path": "research/results/E78/summary.json",
+          "finding": "E28のイベント反復は明示的な規則。輸送を0.5/2倍にすると課した周期比は1.591/0.791。一定供給下の線形循環そのものから持続時計は出ない。Berg原著の成長する細胞模型とは別。"
         }
       ],
-      "next_action": "成長の影響を揃えた実験で、同じ標識の再到達が次の準備信号より先に変わるかを調べる。",
+      "next_action": "原著模型と簡略式の対応を定め、細胞生産を独立に測った条件で戻り輸送の操作が振幅・位置・周期のどれを変えるか比較する。",
       "literature_notes": [
-        "research/notes/E27_E29_root_reflux_literature.md"
+        "research/notes/E27_E29_root_reflux_literature.md",
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ],
       "tested_subclaims": [
         {
@@ -1941,13 +1951,14 @@
         "E30",
         "E31",
         "E32",
-        "E34"
+        "E34",
+        "E77"
       ],
       "evidence_urls": [
         "https://doi.org/10.1016/j.devcel.2021.07.005",
         "https://doi.org/10.1093/plphys/kiaf382"
       ],
-      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。 E30・E31で確認した別の介入には同じ根での細胞生産率と周期がそろわず、数値予測の外部検証は保留。 2025年の別試料で固定待ち時間を使った相対予測は条件内で支持。野生型1群で基準をそろえ、成熟皮層細胞長の一定を仮定した。",
+      "evidence_role": "公開済みの増減方向は既知。高生産側の個々の測定値の抽出前に予測をコミットした。同一研究内の範囲分割。重なった点と個体ID、ホルモン群は復元していない。 E30・E31で確認した別の介入には同じ根での細胞生産率と周期がそろわず、数値予測の外部検証は保留。 2025年の別試料で固定待ち時間を使った相対予測は条件内で支持。野生型1群で基準をそろえ、成熟皮層細胞長の一定を仮定した。 E77で同じ自由度のべき則と比較。既知データの追解析であり、同程度の予測から機構は一意に決まらない。",
       "independently_reproduced": false,
       "results": [
         {
@@ -1967,13 +1978,20 @@
           "role": "held_out_treatments_in_separate_study",
           "path": "research/results/E34/summary.json",
           "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
+        },
+        {
+          "experiment_id": "E77",
+          "role": "retrospective_equal_complexity_comparator",
+          "path": "research/results/E77/summary.json",
+          "finding": "同じ二係数のべき則は高生産側の頻度0.337778・間隔0.371964。二待ち時間は0.336481・0.375243で数値上近い。低生産側頻度の訓練SSE1%感度集合でtauは0.65〜1.48時間。信頼区間ではない。"
         }
       ],
-      "next_action": "別試料で細胞生産率と周期を同じ根で測り、E29の2係数をそのまま使う予測と、弱いピークを含む時系列を比べる。",
+      "next_action": "個体ID・成熟細胞長・処置を対応させたデータで、成長則の予測と輸送機構の介入を分けて検証する。",
       "literature_notes": [
         "research/notes/E27_E29_root_reflux_literature.md",
         "research/notes/E30_E32_root_clock_evidence.md",
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ],
       "tested_subclaims": [
         {
@@ -1991,6 +2009,10 @@
         {
           "statement": "別の試料の4系統で、E29の待ち時間と野生型の基準を使った相対予測が、固定周期・固定距離よりよく合う。",
           "status": "supported_within_scope"
+        },
+        {
+          "statement": "二待ち時間式が、同じ二自由度のべき則よりE29の頻度と間隔の両方で誤差が小さい。",
+          "status": "not_supported_in_test"
         }
       ]
     },
@@ -2168,17 +2190,18 @@
       "id": "H34",
       "statement": "二つの待ち時間を持つ式が、別試料での伸長介入による準備周期の変化を固定周期・固定距離よりよく予測する",
       "status": "supported_within_scope",
-      "scope": "De GernierらFig. 3、S3の野生型基準から他の4系統を評価。成熟皮層細胞長を共通と仮定。",
+      "scope": "De GernierらFig. 3、S3の野生型基準から他の4系統を評価。成熟皮層細胞長を共通と仮定。 評価量はDR5::LUCのピーク周期で、初期primingや分子帰還の直接時刻ではない。E77は既知の4系統中央値の再利用。",
       "torus_kinds": [
         "T-F"
       ],
       "planned_experiments": [
-        "E34"
+        "E34",
+        "E77"
       ],
       "evidence_urls": [
         "https://doi.org/10.1093/plphys/kiaf382"
       ],
-      "evidence_role": "E29の固定待ち時間1.062時を使い、試料の野生型1群で基準をそろえた。読取り幅で969/1,024の組み合わせで最良。",
+      "evidence_role": "E29の固定待ち時間1.062時を使い、試料の野生型1群で基準をそろえた。読取り幅の1,024組み合わせのうち、従来の固定周期・固定距離の両対照より良いものが969。 E77の同等自由度の比較でもq=1の優位は残るが、未測定の細胞長への依存がある。対象WTの再基準化を伴う。",
       "independently_reproduced": false,
       "results": [
         {
@@ -2186,11 +2209,18 @@
           "role": "held_out_treatments_in_separate_study",
           "path": "research/results/E34/summary.json",
           "finding": "E29の固定待ち時間と別試験の野生型基準を使い4系統を予測。対数RMSEは二待ち時間0.084、固定距離0.274、固定周期0.541。"
+        },
+        {
+          "experiment_id": "E77",
+          "role": "retrospective_cell_length_sensitivity",
+          "path": "research/results/E77/summary.json",
+          "finding": "q=1では二待ち時間0.083994がべき則0.148594より良い。全4系統の細胞長比を0.75と置くと固定細胞間隔、1.125と置くとべき則が最良。実測細胞長分布ではなく仮定感度。"
         }
       ],
-      "next_action": "同じ根で速度・成熟皮層細胞長・準備信号をそろえ、E29の2係数を独立に検証する。",
+      "next_action": "同じ根の伸長速度・成熟細胞長・初期核信号・DR5発光を対応付ける。対象WTでの再基準化と、4系統での係数調整なしを明確に分ける。",
       "literature_notes": [
-        "research/notes/E33_E38_return_and_energy_evidence.md"
+        "research/notes/E33_E38_return_and_energy_evidence.md",
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ],
       "tested_subclaims": [
         {
@@ -2537,7 +2567,7 @@
       "id": "H44",
       "statement": "同じ天然IAA分子が根端から外層を経て、内側の出発領域に帰還する。",
       "status": "open",
-      "scope": "シロイヌナズナの根端付近。投与した同じ標識の天然IAAの化学形と一周の経路を同じ根で記録する。 標識の帰還と遊離型を保ったままの帰還を分け、後者は途中の抱合などの履歴を扱う。 トウモロコシの横断・軸方向試験は同じ測定での一周に先立つ別種の証拠。",
+      "scope": "シロイヌナズナの根端付近。投与した同じ標識の天然IAAの化学形と一周の経路を同じ根で記録する。 標識の帰還と遊離型を保ったままの帰還を分け、後者は途中の抱合などの履歴を扱う。 トウモロコシの横断・軸方向試験は同じ測定での一周に先立つ別種の証拠。 この強い分子同一性の命題を、集団の循環や元の共通生成仮説すべての必要条件とはしない。",
       "torus_kinds": [
         "T-F"
       ],
@@ -2556,7 +2586,8 @@
         "E68",
         "E71",
         "E74",
-        "E75"
+        "E75",
+        "E78"
       ],
       "evidence_urls": [
         "https://doi.org/10.1111/nph.17183",
@@ -2670,6 +2701,12 @@
           "role": "axial_tracer_polarity_and_root_cap",
           "path": "research/results/E75/summary.json",
           "finding": "トウモロコシの5 mm根端片、3時間、無添加pH 6。基部向き／根端向きの回収比は根冠あり6.33、切除0.634。主に根端向きの回収の8.66倍増が寄与。"
+        },
+        {
+          "experiment_id": "E78",
+          "role": "analytic_scope_distinction_only",
+          "path": "research/results/E78/summary.json",
+          "finding": "同じ量と各辺流束J=1でも、補給と損失を変えると同一標識の一周率は92.56/50/2.20%。植物での帰還を検証した結果ではなく、集団循環と分子再使用の論理的区別。"
         }
       ],
       "next_action": "一つの無傷根で、内側の投与領域、根端、外層、初回に戻った内側を対応させる。途中の抱合体・酸化型、残留・外部経由の再流入と分けて遊離IAAを読む。",
@@ -2680,7 +2717,8 @@
         "research/notes/E55_E60_particle_return_evidence.md",
         "research/notes/E61_E66_embryo_history_evidence.md",
         "research/notes/E67_E71_iaa_embryo_work_evidence.md",
-        "research/notes/E72_E76_calibrated_formation_evidence.md"
+        "research/notes/E72_E76_calibrated_formation_evidence.md",
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ],
       "tested_subclaims": [
         {
@@ -4224,6 +4262,60 @@
           "statement": "境界の仕事率と内部のスカラー収支だけで内部の閉路を一意に復元できる。",
           "status": "invalid_general_inference"
         }
+      ]
+    },
+    {
+      "id": "H79",
+      "statement": "正の損失率を持つ一定係数の線形循環区画系は、一定供給下で自律的な持続周期を生成しない。",
+      "status": "analytic_baseline",
+      "scope": "E22の3区画と同じ非対角非負・列和が負の模型。成長する細胞、時間依存係数、非線形系への一般化をしない。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E78"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "解析境界または構成例を、独立な行列計算・ODE・収支で照合。新しい生体試料の証拠ではない。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E78",
+          "role": "analytic_baseline",
+          "path": "research/results/E78/summary.json",
+          "finding": "列Gershgorin境界Re(lambda)<=-min(loss)<0。81条件すべて安定、行列指数と独立ODEの最大差5.18e-10。"
+        }
+      ],
+      "next_action": "周期の機構を説明するとき、輸送経路に加えて成長・反応・遅延・反復規則のどれを与えたか明示する。",
+      "literature_notes": [
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
+      ]
+    },
+    {
+      "id": "H80",
+      "statement": "同じ区画量と循環する集団流束を保っても、損失と補給が違えば同一分子の完全一周率は異なり得る。",
+      "status": "analytic_baseline",
+      "scope": "I→T→O→Iの規格化輸送率を固定、各辺J=1。損失を補う区画別の補給を変更する構成例。幾何・仕事率・IAA化学変換は対象外。",
+      "torus_kinds": [
+        "T-F"
+      ],
+      "planned_experiments": [
+        "E78"
+      ],
+      "evidence_urls": [],
+      "evidence_role": "解析境界または構成例を、独立な行列計算・ODE・収支で照合。新しい生体試料の証拠ではない。",
+      "independently_reproduced": true,
+      "results": [
+        {
+          "experiment_id": "E78",
+          "role": "analytic_baseline",
+          "path": "research/results/E78/summary.json",
+          "finding": "同じ各辺流束1で完全一周率92.5626/50/2.1978%、総補給0.078333/0.783333/7.833333。同じ補給費用の比較ではない。"
+        }
+      ],
+      "next_action": "生体の循環を調べるとき、集団流束・分子の生存と帰還・局所補給を別々に測定する。",
+      "literature_notes": [
+        "research/notes/E77_E78_reflux_clock_mechanisms.md"
       ]
     }
   ],

@@ -1,4 +1,27 @@
-# 再開メモ　無傷根の横断と胚の力・仕事をE72〜E76で検証
+# 再開メモ　根の周期予測と循環の識別をE77・E78で検証
+
+2026-11-22（Asia/Tokyo）。main `f014dbd642342b9e2682c9bb677c529a672a01be` から `research/reflux-clock-identifiability-20261122` で実行。登録は解析前の公開コミット `4d27d24822b51697c989ad6e3ddfa56a8601ef57`。E29・E34の結果を知った上での探索的追解析と数理検証であり、新しい独立生体データの加算は0。[第19回報告](../docs/28_REFLUX_CLOCK_IDENTIFIABILITY_REPORT.md)・[全80主張](claims.json)
+
+| 実験 | 今回分かったこと |
+|---|---|
+| [E77](results/E77/summary.json) | 同じ二係数のべき則はE29の頻度0.337778・間隔0.371964、二待ち時間は0.336481・0.375243。E34 q=1では二待ち0.083994が最良だが、未測定の成熟細胞長の仮定で順位が変わる。tauの訓練SSE1%感度集合は0.65〜1.48時間。 |
+| [E78](results/E78/summary.json) | 正の損失・一定供給の線形循環は解析的に安定、81条件で照合。同じ辺流束J=1を異なる補給で保つと分子一周率は92.56/50/2.20%。E28の課した周期は輸送率半分で1.591倍、2倍で0.791倍。 |
+
+原著の成長する細胞模型とE28の反復規則を区別した。集団循環・同じ分子の一周・持続時計・実空間のトーラスは別の観測対象。H29・H34の元の対照への条件内支持を保持し、機構を一意に識別できないことを追記。H44・H45と上位の生成仮説は未判定。同一分子が戻ることを、集団循環一般の必要条件とはしない。
+
+## 今回の再実行
+
+```bash
+python -m experiments.run_reflux_clock --out /tmp/torus-reflux-clock-replay
+cd /tmp/torus-reflux-clock-replay
+sha256sum -c REFLUX_CLOCK_SHA256SUMS
+```
+
+入力は元のE29・E34の固定済みJSON、E78は既存E22・E28のコード。ネットワーク取得は不要。E77の14項目、E78の17項目を確認し、別の空の出力先への再実行で数値表・時系列・図9点、実行記録、ハッシュ一覧がバイト一致した。これは同じ環境での計算再現で、独立な生体追試ではない。[実行記録](results/REFLUX_CLOCK_RUN.json)・[SHA-256](results/REFLUX_CLOCK_SHA256SUMS)
+
+**次に進む焦点。** 同じ根の細胞生産を独立に測り、戻り輸送への操作が信号の振幅・位置・周期のどれを変えるか比較する。個体ID、伸長速度、成熟細胞長、初期核信号、DR5ピーク時刻をそろえる。原著コードの公式配布先は今回503、個体データは未取得。De Gernierの補足にImageJマクロはあるが原画像・CSVは未取得で、著者への依頼が必要な段階。外部連絡はしていない。[一次資料メモ](notes/E77_E78_reflux_clock_mechanisms.md)・[アクセス記録](access/2026-11-22-reflux-clock.md)
+
+## 引き継いだ第18回
 
 2026-11-21 UTC。第17回 `research/iaa-return-and-embryo-work`（`b55c87c`）を継承し、`research/calibrated-embryo-work-and-root-tip` で実行した。根冠が軸方向の回収に与える影響と無傷根の横断、局所の校正された機械仕事、エネルギー収支と閉路の識別を調べた。同じ天然IAAの一周（H44）と、身体形成に先行する三次元のエネルギー循環（H45）は未判定。[第18回報告](../docs/27_ROOT_CAP_AND_CALIBRATED_WORK_REPORT.md)・[全78主張](claims.json)
 
